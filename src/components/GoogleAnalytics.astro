@@ -1,0 +1,18 @@
+---
+// TODO: Replace with section1983.org GA property ID once created
+// Using placeholder — create a new GA4 property for section1983.org
+const GA_ID = "G-XXXXXXXXXX";
+---
+
+<script
+  type="text/javascript"
+  is:inline
+  src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+<script type="text/javascript" is:inline define:vars={{ GA_ID }}>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", GA_ID);
+</script>

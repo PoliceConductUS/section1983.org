@@ -1,0 +1,43 @@
+flowchart TD
+    PREP["1. Preparing Your Case<br/>FOIA + War Room"] --> A["2. Filing<br/>Complaint + IFP + Summons"]
+    A --> B["3. Service<br/>Deliver lawsuit to defendants"]
+    B --> C{"4. Rule 12 Motions<br/>Defendant attacks complaint"}
+    C -->|Denied| D["5. Answer<br/>Defendant responds"]
+    C -->|"Granted w/ Leave"| A2["Amend Complaint"]
+    C -->|"Granted w/o Leave"| APP["Appeal"]
+    A2 --> C
+    C -.->|"QI Denied"| IA["Interlocutory Appeal"]
+    IA -->|Reversed| DONE[Case Dismissed]
+    IA -->|Affirmed| D
+    D --> E["6. Discovery<br/>Evidence exchange"]
+    E --> F{"7. Summary Judgment<br/>Decide without trial?"}
+    F -->|Denied| G["8. Pretrial<br/>Prepare for trial"]
+    F -->|Granted| APP
+    F -.->|"QI Denied"| IA2["Interlocutory Appeal"]
+    IA2 -->|Reversed| DONE
+    IA2 -->|Affirmed| G
+    G --> H["9. Trial<br/>Present evidence"]
+    H --> I{Verdict}
+    I -->|"Plaintiff Wins"| J["10. Post-Trial<br/>Fee petition + motions"]
+    I -->|"Defendant Wins"| K["10. Post-Trial<br/>Rule 59/60 motions"]
+    J --> APP2["11. Appeal"]
+    K --> APP2
+    click PREP "/process/preparing-your-case" _self
+    click A "/process/filing" _self
+    click B "/process/service" _self
+    click C "/process/rule-12-motions" _self
+    click D "/process/answer" _self
+    click E "/process/discovery" _self
+    click F "/process/summary-judgment" _self
+    click IA "/process/interlocutory-appeal" _self
+    click IA2 "/process/interlocutory-appeal" _self
+    click G "/process/pretrial" _self
+    click H "/process/trial" _self
+    click J "/process/post-trial-and-appeal" _self
+    click K "/process/post-trial-and-appeal" _self
+    click APP2 "/process/post-trial-and-appeal" _self
+    click A2 "/primer/amended-complaint" _self
+    style PREP fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style IA fill:#fee2e2,stroke:#dc2626,color:#000
+    style IA2 fill:#fee2e2,stroke:#dc2626,color:#000
+    style DONE fill:#f5f5f5,stroke:#999,color:#666

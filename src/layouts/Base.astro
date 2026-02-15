@@ -1,0 +1,462 @@
+---
+import "../styles/global.css";
+import GoogleAnalytics from "../components/GoogleAnalytics.astro";
+import SuggestChange from "../components/SuggestChange.astro";
+import DonateBanner from "../components/DonateBanner.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  canonicalUrl?: string;
+  robots?: string;
+  structuredData?: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const {
+  title,
+  description = "Your free guide to holding police accountable in federal court. Independent of police and government. Real cases, plain language, for people representing themselves.",
+  canonicalUrl,
+  robots = "index,follow",
+  structuredData,
+} = Astro.props;
+
+const canonicalHref = canonicalUrl || Astro.url?.pathname || "/";
+const structuredDataEntries = structuredData
+  ? Array.isArray(structuredData)
+    ? structuredData
+    : [structuredData]
+  : [];
+const serializeStructuredData = (value: unknown) =>
+  JSON.stringify(value).replace(/</g, "\\u003c");
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <GoogleAnalytics />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    <meta name="author" content="Institute for Police Conduct, Inc." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={`${title} | section1983.org`} />
+    <meta property="og:description" content={description} />
+    <meta
+      property="og:url"
+      content={new URL(canonicalHref, "https://www.section1983.org").toString()}
+    />
+    <meta property="og:site_name" content="section1983.org" />
+    <!-- TODO: Replace og-image.svg with a proper 1200x630 PNG before deploy -->
+    <meta
+      property="og:image"
+      content="https://www.section1983.org/og-image.svg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${title} | section1983.org`} />
+    <meta name="twitter:description" content={description} />
+    <meta
+      name="twitter:image"
+      content="https://www.section1983.org/og-image.svg"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalHref} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="section1983.org"
+      href="/rss.xml"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={`${title} | section1983.org`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="section1983.org" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={`${title} | section1983.org`} />
+    <meta name="twitter:description" content={description} />
+
+    {
+      structuredDataEntries.map((entry) => (
+        <script
+          type="application/ld+json"
+          set:html={serializeStructuredData(entry)}
+          is:inline
+        />
+      ))
+    }
+
+    <title>{title} | section1983.org</title>
+  </head>
+  <body class="bg-cream min-h-screen flex flex-col">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-gold focus:text-navy focus:px-4 focus:py-2 focus:rounded focus:z-50 focus:font-bold"
+      >Skip to main content</a
+    >
+
+    <header class="bg-navy text-white">
+      <nav
+        class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between"
+        aria-label="Main navigation"
+      >
+        <a
+          href="/"
+          class="text-xl font-bold tracking-tight"
+          aria-label="section1983.org home"
+        >
+          <span class="text-gold">§</span>1983<span class="text-slate-400"
+            >.org</span
+          >
+        </a>
+
+        <!-- Desktop nav -->
+        <div class="hidden md:flex items-center gap-6 text-sm">
+          <a href="/process" class="hover:text-gold transition-colors"
+            >📋 The Process</a
+          >
+          <a href="/primer" class="hover:text-gold transition-colors"
+            >📖 Primer</a
+          >
+          <a href="/articles" class="hover:text-gold transition-colors"
+            >✏️ Articles</a
+          >
+          <a href="/cases" class="hover:text-gold transition-colors">⚖️ Cases</a
+          >
+          <a href="/get-involved" class="hover:text-gold transition-colors"
+            >🤝 Get Involved</a
+          >
+          <a href="/search" class="hover:text-gold transition-colors"
+            >🔍 Search</a
+          >
+        </div>
+
+        <!-- Mobile hamburger -->
+        <button
+          id="mobile-menu-toggle"
+          class="md:hidden p-2 -mr-2 text-white hover:text-gold transition-colors"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open menu"
+        >
+          <svg
+            id="menu-icon-open"
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg
+            id="menu-icon-close"
+            class="w-6 h-6 hidden"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile menu panel -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden border-t border-slate-700"
+        role="navigation"
+        aria-label="Mobile navigation"
+      >
+        <div class="max-w-4xl mx-auto px-6 py-4 flex flex-col gap-3 text-sm">
+          <a href="/process" class="hover:text-gold transition-colors py-1"
+            >📋 The Process</a
+          >
+          <a href="/primer" class="hover:text-gold transition-colors py-1"
+            >📖 Primer</a
+          >
+          <a href="/articles" class="hover:text-gold transition-colors py-1"
+            >✏️ Articles</a
+          >
+          <a href="/cases" class="hover:text-gold transition-colors py-1"
+            >⚖️ Cases</a
+          >
+          <a href="/get-involved" class="hover:text-gold transition-colors py-1"
+            >🤝 Get Involved</a
+          >
+          <a href="/search" class="hover:text-gold transition-colors py-1"
+            >🔍 Search</a
+          >
+          <hr class="border-slate-700" />
+          <a
+            href="https://policeconduct.org/donate/"
+            class="bg-gold text-navy text-center font-bold py-2 rounded hover:bg-yellow-400 transition-colors mt-1"
+            target="_blank"
+            rel="noopener">Donate ↗</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <script is:inline>
+      const toggle = document.getElementById("mobile-menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+      const iconOpen = document.getElementById("menu-icon-open");
+      const iconClose = document.getElementById("menu-icon-close");
+      toggle.addEventListener("click", () => {
+        const open = menu.classList.toggle("hidden");
+        toggle.setAttribute("aria-expanded", !open);
+        toggle.setAttribute("aria-label", open ? "Open menu" : "Close menu");
+        iconOpen.classList.toggle("hidden");
+        iconClose.classList.toggle("hidden");
+      });
+    </script>
+
+    <DonateBanner />
+
+    <main id="main-content" class="max-w-4xl mx-auto px-6 py-12 flex-1">
+      <slot />
+      <SuggestChange pagePath={Astro.url.pathname} />
+    </main>
+
+    <footer class="bg-navy text-slate-400 text-sm" role="contentinfo">
+      <div class="max-w-4xl mx-auto px-6 py-10">
+        <!-- Donate CTA -->
+        <div class="text-center mb-8 pb-8 border-b border-slate-700">
+          <p class="text-white font-semibold mb-2">
+            This work is funded entirely by donations.
+          </p>
+          <a
+            href="https://policeconduct.org/donate/"
+            class="inline-block bg-gold text-navy px-6 py-2 rounded font-bold hover:bg-yellow-400 transition-colors"
+            target="_blank"
+            rel="noopener">Support This Project ↗</a
+          >
+        </div>
+
+        <!-- Four-column grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <!-- About -->
+          <div>
+            <h3 class="text-white font-semibold mb-3">About</h3>
+            <p class="mb-2">
+              Your free guide to holding police accountable in federal court.
+              Independent of police and government.
+            </p>
+            <p class="text-xs">
+              A project of the <a
+                href="https://policeconduct.org/about"
+                class="hover:text-gold transition-colors"
+                target="_blank"
+                rel="noopener">Institute for Police Conduct, Inc.</a>
+            </p>
+          </div>
+
+          <!-- Site Links -->
+          <div>
+            <h3 class="text-white font-semibold mb-3">Site</h3>
+            <ul class="space-y-1">
+              <li>
+                <a href="/process" class="hover:text-gold transition-colors"
+                  >The Process</a>
+              </li>
+              <li>
+                <a href="/primer" class="hover:text-gold transition-colors"
+                  >Pro Se Primer</a>
+              </li>
+              <li>
+                <a href="/articles" class="hover:text-gold transition-colors"
+                  >Articles</a>
+              </li>
+              <li>
+                <a href="/cases" class="hover:text-gold transition-colors"
+                  >Case Law Library</a>
+              </li>
+              <li>
+                <a
+                  href="/get-involved"
+                  class="hover:text-gold transition-colors">Get Involved</a>
+              </li>
+              <li>
+                <a href="/about" class="hover:text-gold transition-colors"
+                  >About</a>
+              </li>
+              <li>
+                <a
+                  href="https://policeconduct.org"
+                  class="hover:text-gold transition-colors"
+                  target="_blank"
+                  rel="noopener">Report an Incident ↗</a>
+              </li>
+              <li>
+                <a
+                  href="https://policeconduct.org/about/contact/"
+                  class="hover:text-gold transition-colors"
+                  target="_blank"
+                  rel="noopener">Contact ↗</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Our Projects -->
+          <div>
+            <h3 class="text-white font-semibold mb-3">Our Projects</h3>
+            <ul class="space-y-1">
+              <li>
+                <a
+                  href="https://policeconduct.org"
+                  class="hover:text-gold transition-colors"
+                  target="_blank"
+                  rel="noopener">policeconduct.org ↗</a>
+              </li>
+              <li>
+                <a
+                  href="https://reddit.com/r/Section1983_pro_se"
+                  class="hover:text-gold transition-colors"
+                  target="_blank"
+                  rel="noopener">r/Section1983_pro_se ↗</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Allied Organizations -->
+          <div>
+            <h3 class="text-white font-semibold mb-3">Allied Organizations</h3>
+            <ul class="space-y-1">
+              <li>
+                <a
+                  href="https://free.law"
+                  class="hover:text-gold transition-colors"
+                  target="_blank"
+                  rel="noopener">Free Law Project ↗</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.courtlistener.com"
+                  class="hover:text-gold transition-colors"
+                  target="_blank"
+                  rel="noopener">CourtListener ↗</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.aclu.org"
+                  class="hover:text-gold transition-colors"
+                  target="_blank"
+                  rel="noopener">ACLU ↗</a>
+              </li>
+              <li>
+                <a
+                  href="https://ij.org"
+                  class="hover:text-gold transition-colors"
+                  target="_blank"
+                  rel="noopener">Institute for Justice ↗</a>
+              </li>
+              <li>
+                <a
+                  href="https://joincampaignzero.org"
+                  class="hover:text-gold transition-colors"
+                  target="_blank"
+                  rel="noopener">Campaign Zero ↗</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.nlg-npap.org"
+                  class="hover:text-gold transition-colors"
+                  target="_blank"
+                  rel="noopener">Nat'l Police Accountability Project ↗</a>
+              </li>
+              <li>
+                <a
+                  href="https://innocenceproject.org"
+                  class="hover:text-gold transition-colors"
+                  target="_blank"
+                  rel="noopener">Innocence Project ↗</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.naacpldf.org"
+                  class="hover:text-gold transition-colors"
+                  target="_blank"
+                  rel="noopener">NAACP Legal Defense Fund ↗</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.cato.org/qualified-immunity"
+                  class="hover:text-gold transition-colors"
+                  target="_blank"
+                  rel="noopener">Cato Institute (QI) ↗</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Disclaimers -->
+        <div
+          class="border-t border-slate-700 pt-6 mb-6 space-y-2 text-xs text-slate-400"
+        >
+          <p>
+            <strong class="text-slate-400">⚖️ Not Legal Advice.</strong> Nothing on
+            this site constitutes legal advice. This is an educational resource. For
+            advice about your specific situation, consult a licensed attorney in your
+            jurisdiction.
+          </p>
+          <p>
+            <strong class="text-slate-400">🤖 AI Disclosure.</strong> Some content
+            on this site was researched and drafted with the assistance of AI tools.
+            All legal citations are verified against public court records. Errors
+            are possible — <a
+              href="https://policeconduct.org/about/contact/"
+              class="hover:text-gold transition-colors"
+              target="_blank"
+              rel="noopener">report them</a
+            >.
+          </p>
+          <p>
+            <strong class="text-slate-400">⚠️ Use at Your Own Risk.</strong> Laws
+            change. Courts disagree. What applies in one circuit may not apply in
+            yours. Verify everything independently before relying on it in any legal
+            proceeding.
+          </p>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="text-center text-xs text-slate-400">
+          <p>
+            © 2026 Institute for Police Conduct, Inc. All rights reserved. · <a
+              href="/legal-notice"
+              class="hover:text-gold transition-colors">Legal Notice</a
+            > · <a href="/terms" class="hover:text-gold transition-colors"
+              >Terms &amp; Conditions</a
+            > · <a
+              href="/accessibility"
+              class="hover:text-gold transition-colors">Accessibility</a
+            > · <a href="/sitemap" class="hover:text-gold transition-colors"
+              >Site Map</a
+            > · <a href="/rss.xml" class="hover:text-gold transition-colors"
+              >RSS</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

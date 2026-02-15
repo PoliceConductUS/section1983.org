@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1f36"/>
+  <rect y="610" width="1200" height="20" fill="#c9a84c"/>
+  <text x="600" y="260" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#f5f1e8">section1983.org</text>
+  <text x="600" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" fill="#c9a84c">Your free guide to holding police accountable</text>
+  <text x="600" y="380" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" fill="#c9a84c">in federal court</text>
+  <text x="600" y="460" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#8890a8">Institute for Police Conduct, Inc.</text>
+</svg>

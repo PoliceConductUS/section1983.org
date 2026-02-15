@@ -1,0 +1,71 @@
+---
+import Base from "./Base.astro";
+import DisqusComments from "../components/DisqusComments.astro";
+import ShareButtons from "../components/ShareButtons.astro";
+
+interface Props {
+  title: string;
+  term: string;
+  description: string;
+  category: string;
+  related?: string[];
+}
+
+const { title, term, description, category, related } = Astro.props;
+
+const categoryLabels: Record<string, string> = {
+  "constitutional-law": "Constitutional Law",
+  procedure: "Procedure",
+  evidence: "Evidence",
+  remedies: "Remedies",
+  "qualified-immunity": "Qualified Immunity",
+  statute: "Statute",
+  doctrine: "Doctrine",
+};
+---
+
+<Base title={title} description={description}>
+  <slot name="breadcrumbs" />
+  <article class="prose prose-slate max-w-none">
+    <div class="mb-8">
+      <span
+        class="inline-block bg-navy text-gold text-xs font-bold px-3 py-1 rounded uppercase tracking-wide mb-3"
+      >
+        {categoryLabels[category] || category}
+      </span>
+      <h1 class="text-3xl font-bold text-navy mb-2">{title}</h1>
+      <p class="text-lg text-slate-600 italic">{description}</p>
+    </div>
+
+    <slot />
+
+    {
+      related && related.length > 0 && (
+        <div class="mt-12 pt-8 border-t border-slate-200">
+          <h2 class="text-lg font-bold text-navy mb-3">Related Terms</h2>
+          <div class="flex flex-wrap gap-2">
+            {related.map((slug) => (
+              <a
+                href={`/primer/${slug}`}
+                class="text-sm bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors"
+              >
+                {slug.replace(/-/g, " ")}
+              </a>
+            ))}
+          </div>
+        </div>
+      )
+    }
+    <ShareButtons
+      title={title}
+      description={description}
+      url={`https://www.section1983.org/primer/${Astro.params.slug}/`}
+    />
+
+    <slot name="pagination" />
+  </article>
+
+  <div class="mt-16">
+    <DisqusComments />
+  </div>
+</Base>

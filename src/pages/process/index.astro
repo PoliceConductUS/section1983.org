@@ -1,0 +1,284 @@
+---
+import Base from "../../layouts/Base.astro";
+import fs from "node:fs";
+import path from "node:path";
+
+const svgContent = fs.readFileSync(
+  path.join(process.cwd(), "public/diagrams/process-flowchart.svg"),
+  "utf-8",
+);
+---
+
+<Base
+  title="The Legal Process"
+  description="A visual, step-by-step guide to the entire lifecycle of a § 1983 case in federal court."
+>
+  <div class="prose">
+    <h1 class="text-3xl font-bold text-navy mb-6">The Legal Process</h1>
+
+    <p>
+      A § 1983 case in federal court follows a predictable path. Defendants know
+      it. Their lawyers know it. Now you will too. Below is every stage of the
+      process, who moves, and what's at stake. Click any step in the flowchart
+      to jump to that section.
+    </p>
+
+    <div
+      class="my-10 overflow-x-auto"
+      role="img"
+      aria-label="Flowchart showing the stages of a § 1983 federal lawsuit from filing through appeal, including interlocutory appeal branches"
+    >
+      <Fragment set:html={svgContent} />
+    </div>
+
+    <p class="text-sm text-slate italic">
+      Dashed lines show interlocutory appeals — mid-case appeals that defendants
+      use to delay your case.
+      <a href="/process/interlocutory-appeal/"
+        >Learn how they're abused and what you can do</a
+      >.
+    </p>
+
+    <hr class="my-10" />
+
+    <h2>Stages</h2>
+
+    <div class="space-y-6">
+      <a href="/process/preparing-your-case/" class="block group">
+        <article
+          class="p-5 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-green-500"
+        >
+          <h3
+            class="text-lg font-semibold text-navy group-hover:text-gold transition-colors"
+          >
+            1. Preparing Your Case
+          </h3>
+          <p class="text-slate text-sm mt-1">
+            Before you file anything, you need evidence. FOIA requests for body
+            camera footage, arrest data, department policies, and statistical
+            comparisons — get it all before the complaint, because agencies get
+            less cooperative after you sue.
+          </p>
+          <p class="text-xs text-slate mt-2">
+            <strong>You move.</strong> Government agencies respond to records requests.
+          </p>
+          <div class="mt-3 flex gap-3 text-xs">
+            <a
+              href="/process/foia-and-records-requests/"
+              class="text-navy underline decoration-gold hover:text-gold"
+              >→ FOIA & Records Requests</a
+            >
+            <a
+              href="/process/organizing-your-war-room/"
+              class="text-navy underline decoration-gold hover:text-gold"
+              >→ Organizing Your War Room</a
+            >
+          </div>
+        </article>
+      </a>
+
+      <a href="/process/filing/" class="block group">
+        <article
+          class="p-5 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+        >
+          <h3
+            class="text-lg font-semibold text-navy group-hover:text-gold transition-colors"
+          >
+            2. Filing
+          </h3>
+          <p class="text-slate text-sm mt-1">
+            You file the complaint, pay the fee (or apply for IFP), and get
+            summons issued. This is where your case begins — and where IFP
+            screening can end it before defendants even know you sued.
+          </p>
+          <p class="text-xs text-slate mt-2">
+            <strong>You move.</strong> No opponent yet.
+          </p>
+        </article>
+      </a>
+
+      <a href="/process/service/" class="block group">
+        <article
+          class="p-5 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+        >
+          <h3
+            class="text-lg font-semibold text-navy group-hover:text-gold transition-colors"
+          >
+            3. Service of Process
+          </h3>
+          <p class="text-slate text-sm mt-1">
+            Formally deliver the lawsuit to each defendant. Miss the 90-day
+            deadline or serve the wrong person and your case can be dismissed.
+          </p>
+          <p class="text-xs text-slate mt-2">
+            <strong>You move.</strong> Defendants receive.
+          </p>
+        </article>
+      </a>
+
+      <a href="/process/rule-12-motions/" class="block group">
+        <article
+          class="p-5 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+        >
+          <h3
+            class="text-lg font-semibold text-navy group-hover:text-gold transition-colors"
+          >
+            4. Rule 12 Motions
+          </h3>
+          <p class="text-slate text-sm mt-1">
+            Defendants attack your complaint before answering it. They'll argue
+            you failed to state a plausible claim, the court lacks jurisdiction,
+            or qualified immunity bars your suit. This is your first fight.
+          </p>
+          <p class="text-xs text-slate mt-2">
+            <strong>Defendant moves.</strong> You respond.
+          </p>
+        </article>
+      </a>
+
+      <a href="/process/answer/" class="block group">
+        <article
+          class="p-5 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+        >
+          <h3
+            class="text-lg font-semibold text-navy group-hover:text-gold transition-colors"
+          >
+            5. Answer & Affirmative Defenses
+          </h3>
+          <p class="text-slate text-sm mt-1">
+            If your complaint survives Rule 12, defendants must respond to each
+            allegation — admit, deny, or claim insufficient knowledge. Watch for
+            affirmative defenses like qualified immunity and statute of
+            limitations.
+          </p>
+          <p class="text-xs text-slate mt-2">
+            <strong>Defendant moves.</strong> You read carefully.
+          </p>
+        </article>
+      </a>
+
+      <a href="/process/discovery/" class="block group">
+        <article
+          class="p-5 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+        >
+          <h3
+            class="text-lg font-semibold text-navy group-hover:text-gold transition-colors"
+          >
+            6. Discovery
+          </h3>
+          <p class="text-slate text-sm mt-1">
+            Both sides exchange evidence — documents, written questions,
+            depositions. This is where you get the body camera footage, training
+            records, and internal files. It's also where most pro se litigants
+            get overwhelmed.
+          </p>
+          <p class="text-xs text-slate mt-2">
+            <strong>Both sides move.</strong> Discovery is mutual.
+          </p>
+        </article>
+      </a>
+
+      <a href="/process/summary-judgment/" class="block group">
+        <article
+          class="p-5 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+        >
+          <h3
+            class="text-lg font-semibold text-navy group-hover:text-gold transition-colors"
+          >
+            7. Summary Judgment
+          </h3>
+          <p class="text-slate text-sm mt-1">
+            Defendants ask the court to end your case without a trial. They'll
+            argue there's no genuine factual dispute — and qualified immunity
+            comes back for round two. This is the second gate.
+          </p>
+          <p class="text-xs text-slate mt-2">
+            <strong>Usually defendant moves.</strong> You respond with evidence.
+          </p>
+        </article>
+      </a>
+
+      <a href="/process/interlocutory-appeal/" class="block group">
+        <article
+          class="p-5 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-red-400"
+        >
+          <h3
+            class="text-lg font-semibold text-navy group-hover:text-gold transition-colors"
+          >
+            ⚠ Interlocutory Appeal
+          </h3>
+          <p class="text-slate text-sm mt-1">
+            When a court denies qualified immunity, defendants can appeal
+            immediately — freezing your case for 6-18 months. They can do this
+            twice: once at Rule 12, once at summary judgment. It's the single
+            most effective delay weapon in § 1983 litigation.
+          </p>
+          <p class="text-xs text-slate mt-2">
+            <strong>Defendant moves.</strong> You defend in the circuit court.
+          </p>
+        </article>
+      </a>
+
+      <a href="/process/pretrial/" class="block group">
+        <article
+          class="p-5 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+        >
+          <h3
+            class="text-lg font-semibold text-navy group-hover:text-gold transition-colors"
+          >
+            8. Pretrial
+          </h3>
+          <p class="text-slate text-sm mt-1">
+            The court prepares for trial — conferences, motions in limine,
+            exhibit and witness lists, jury instructions. Settlement pressure
+            intensifies here. This is where cases end or get real.
+          </p>
+          <p class="text-xs text-slate mt-2">
+            <strong>Both sides move.</strong> Court manages.
+          </p>
+        </article>
+      </a>
+
+      <a href="/process/trial/" class="block group">
+        <article
+          class="p-5 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+        >
+          <h3
+            class="text-lg font-semibold text-navy group-hover:text-gold transition-colors"
+          >
+            9. Trial
+          </h3>
+          <p class="text-slate text-sm mt-1">
+            You present your evidence to a judge or jury. You go first (burden
+            of proof). Jury selection, opening statements, witness examination,
+            closing arguments, verdict. Nothing like TV.
+          </p>
+          <p class="text-xs text-slate mt-2">
+            <strong>You present first.</strong> Defendant follows.
+          </p>
+        </article>
+      </a>
+
+      <a href="/process/post-trial-and-appeal/" class="block group">
+        <article
+          class="p-5 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+        >
+          <h3
+            class="text-lg font-semibold text-navy group-hover:text-gold transition-colors"
+          >
+            10–11. Post-Trial & Appeal
+          </h3>
+          <p class="text-slate text-sm mt-1">
+            After the verdict: motions for new trial, relief from judgment, fee
+            petitions. If you lose (or win and they appeal), the case goes to
+            the circuit court. You have 30 days to file notice of appeal — miss
+            it and it's over. This deadline cannot be waived.
+          </p>
+          <p class="text-xs text-slate mt-2">
+            <strong>Either side can move.</strong> 30-day appeal deadline is jurisdictional.
+          </p>
+        </article>
+      </a>
+    </div>
+  </div>
+</Base>

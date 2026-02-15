@@ -1,0 +1,570 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+
+const cases = await getCollection("cases");
+const sorted = cases.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+// Collect all tags with counts
+const tagCounts = new Map<string, number>();
+sorted.forEach((c) =>
+  c.data.tags?.forEach((t) => tagCounts.set(t, (tagCounts.get(t) || 0) + 1)),
+);
+
+// Group tags by category
+const behaviorTags = [
+  "beaten-by-police",
+  "police-shooting",
+  "tased",
+  "wrongful-arrest",
+  "searched-illegally",
+  "lied-in-report",
+  "lied-to-get-warrant",
+  "held-too-long",
+  "arrested-for-filming",
+  "arrested-for-speech",
+  "ignored-medical-needs",
+  "killed-by-police",
+  "body-camera",
+  "stopped-for-no-reason",
+  "not-resisting",
+  "mental-health-crisis",
+  "destroyed-evidence",
+  "police-chase",
+  "traffic-stop",
+  "coerced-confession",
+  "sexual-assault",
+  "domestic-violence",
+]
+  .filter((t) => tagCounts.has(t))
+  .sort((a, b) => (tagCounts.get(b) || 0) - (tagCounts.get(a) || 0));
+
+const outcomeTags = [
+  "qualified-immunity",
+  "qi-defeated",
+  "case-dismissed",
+  "survived-mtd",
+  "plaintiff-won",
+  "summary-judgment",
+  "malicious-prosecution",
+  "punitive-damages",
+  "attorneys-fees",
+]
+  .filter((t) => tagCounts.has(t))
+  .sort((a, b) => (tagCounts.get(b) || 0) - (tagCounts.get(a) || 0));
+
+const typeTags = [
+  "landmark",
+  "suing-the-city",
+  "how-to-plead",
+  "section-1983",
+  "conspiracy",
+  "prisoner-case",
+  "school-case",
+  "federal-agents",
+  "pro-se",
+]
+  .filter((t) => tagCounts.has(t))
+  .sort((a, b) => (tagCounts.get(b) || 0) - (tagCounts.get(a) || 0));
+
+const stateTags = [
+  "national",
+  "alabama",
+  "alaska",
+  "arizona",
+  "arkansas",
+  "california",
+  "colorado",
+  "connecticut",
+  "delaware",
+  "florida",
+  "georgia",
+  "hawaii",
+  "idaho",
+  "illinois",
+  "indiana",
+  "iowa",
+  "kansas",
+  "kentucky",
+  "louisiana",
+  "maine",
+  "maryland",
+  "massachusetts",
+  "michigan",
+  "minnesota",
+  "mississippi",
+  "missouri",
+  "montana",
+  "nebraska",
+  "nevada",
+  "new-hampshire",
+  "new-jersey",
+  "new-mexico",
+  "new-york",
+  "north-carolina",
+  "north-dakota",
+  "ohio",
+  "oklahoma",
+  "oregon",
+  "pennsylvania",
+  "puerto-rico",
+  "rhode-island",
+  "south-carolina",
+  "south-dakota",
+  "tennessee",
+  "texas",
+  "utah",
+  "vermont",
+  "virginia",
+  "washington",
+  "west-virginia",
+  "wisconsin",
+  "wyoming",
+].filter((t) => tagCounts.has(t));
+
+const stateLabels: Record<string, string> = {
+  national: "U.S. Supreme Court",
+  alabama: "Alabama",
+  alaska: "Alaska",
+  arizona: "Arizona",
+  arkansas: "Arkansas",
+  california: "California",
+  colorado: "Colorado",
+  connecticut: "Connecticut",
+  delaware: "Delaware",
+  florida: "Florida",
+  georgia: "Georgia",
+  hawaii: "Hawaii",
+  idaho: "Idaho",
+  illinois: "Illinois",
+  indiana: "Indiana",
+  iowa: "Iowa",
+  kansas: "Kansas",
+  kentucky: "Kentucky",
+  louisiana: "Louisiana",
+  maine: "Maine",
+  maryland: "Maryland",
+  massachusetts: "Massachusetts",
+  michigan: "Michigan",
+  minnesota: "Minnesota",
+  mississippi: "Mississippi",
+  missouri: "Missouri",
+  montana: "Montana",
+  nebraska: "Nebraska",
+  nevada: "Nevada",
+  "new-hampshire": "New Hampshire",
+  "new-jersey": "New Jersey",
+  "new-mexico": "New Mexico",
+  "new-york": "New York",
+  "north-carolina": "North Carolina",
+  "north-dakota": "North Dakota",
+  ohio: "Ohio",
+  oklahoma: "Oklahoma",
+  oregon: "Oregon",
+  pennsylvania: "Pennsylvania",
+  "puerto-rico": "Puerto Rico",
+  "rhode-island": "Rhode Island",
+  "south-carolina": "South Carolina",
+  "south-dakota": "South Dakota",
+  tennessee: "Tennessee",
+  texas: "Texas",
+  utah: "Utah",
+  vermont: "Vermont",
+  virginia: "Virginia",
+  washington: "Washington",
+  "west-virginia": "West Virginia",
+  wisconsin: "Wisconsin",
+  wyoming: "Wyoming",
+};
+
+const legalTags = [
+  "fourth-amendment",
+  "first-amendment",
+  "fourteenth-amendment",
+  "due-process",
+  "eighth-amendment",
+  "fifth-amendment",
+  "probable-cause",
+  "reasonable-suspicion",
+  "retaliation",
+  "failure-to-intervene",
+  "sovereign-immunity",
+  "respondeat-superior",
+  "miranda",
+  "jail-conditions",
+  "official-capacity",
+  "individual-capacity",
+  "color-of-law",
+  "brady-violation",
+  "equal-protection",
+  "video-evidence",
+]
+  .filter((t) => tagCounts.has(t))
+  .sort((a, b) => (tagCounts.get(b) || 0) - (tagCounts.get(a) || 0));
+
+// Group by first letter
+const grouped = new Map<string, typeof sorted>();
+for (const c of sorted) {
+  const letter = c.data.title[0].toUpperCase();
+  if (!grouped.has(letter)) grouped.set(letter, []);
+  grouped.get(letter)!.push(c);
+}
+
+const crumbs = [{ label: "Home", href: "/" }, { label: "Case Law Library" }];
+---
+
+<Base
+  title="Case Law Library"
+  description="Key § 1983 cases explained in plain language — what happened, what it means, and how to use it in your case."
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <h1 class="text-3xl font-bold text-navy mb-2">Case Law Library</h1>
+  <p class="text-lg text-slate-600 mb-8">
+    The key § 1983 cases explained in plain language — what happened, what the
+    court decided, and how to use each case in your own litigation.
+  </p>
+
+  <!-- Tag filter -->
+  <div class="mb-8" id="case-filters">
+    <div class="bg-cream border border-gold/30 rounded-lg p-4 mb-4">
+      <p class="text-sm font-semibold text-navy mb-2">
+        How to use these filters
+      </p>
+      <p class="text-sm text-slate-700 mb-2">
+        Cases are tagged five ways to help you find what's relevant:
+      </p>
+      <ul class="text-sm text-slate-700 space-y-1 list-disc list-inside">
+        <li>
+          <strong>State</strong> — where the case is <a
+            href="/primer/binding-precedent"
+            class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+            >binding precedent</a
+          >. <a
+            href="/primer/federal-circuit-courts"
+            class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+            >Federal circuit court</a
+          > decisions apply to every state in that circuit, not just the state where
+          the case was filed. U.S. Supreme Court decisions apply everywhere.
+        </li>
+        <li>
+          <strong>What the police did</strong> — the specific behavior (tackled, tased,
+          arrested for filming, lied in report, etc.)
+        </li>
+        <li>
+          <strong>What happened in court</strong> — whether the officer got immunity
+          or was held accountable (qualified immunity defeated, plaintiff won, case
+          dismissed, etc.)
+        </li>
+        <li>
+          <strong>What kind of case</strong> — broader categories like suing the city,
+          landmark decisions, or how courts evaluate complaints
+        </li>
+        <li>
+          <strong>Legal basis</strong> — the constitutional amendment or legal doctrine
+          at issue (Fourth Amendment, due process, etc.)
+        </li>
+      </ul>
+      <p class="text-sm text-slate-700 mt-2">
+        Click tags below to filter — you can select <strong
+          >more than one</strong
+        > to narrow results. For example, click "Texas" and "qi-defeated" to find
+        Texas cases where qualified immunity was defeated. Click a tag again to remove
+        it. Click "All" to reset.
+      </p>
+      <p class="text-sm text-slate-700 mt-2">
+        Want to see how hard it is to win pro se? Try filtering by <a
+          href="/cases?tags=plaintiff-won%2Cpro-se"
+          class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+          >plaintiff won + pro se</a
+        >. The silence speaks for itself.
+      </p>
+    </div>
+    <div class="flex flex-wrap items-center gap-2 mb-4">
+      <button
+        class="tag-btn text-xs bg-navy text-white px-3 py-1 rounded cursor-pointer"
+        data-tag="all"
+      >
+        All ({sorted.length})
+      </button>
+    </div>
+
+    <div class="space-y-3">
+      <div>
+        <p class="text-xs font-bold text-navy uppercase tracking-wide mb-1">
+          📍 State
+        </p>
+        <div class="flex flex-wrap gap-1.5">
+          {
+            stateTags.map((tag) => (
+              <button
+                class="tag-btn text-xs bg-purple-50 hover:bg-purple-200 text-purple-800 px-2.5 py-1 rounded cursor-pointer transition-colors"
+                data-tag={tag}
+              >
+                {stateLabels[tag] || tag.replace(/-/g, " ")} (
+                {tagCounts.get(tag)})
+              </button>
+            ))
+          }
+        </div>
+      </div>
+
+      <div>
+        <p class="text-xs font-bold text-navy uppercase tracking-wide mb-1">
+          🚨 What the police did
+        </p>
+        <div class="flex flex-wrap gap-1.5">
+          {
+            behaviorTags.map((tag) => (
+              <button
+                class="tag-btn text-xs bg-red-50 hover:bg-red-200 text-red-800 px-2.5 py-1 rounded cursor-pointer transition-colors"
+                data-tag={tag}
+              >
+                {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
+              </button>
+            ))
+          }
+        </div>
+      </div>
+
+      <div>
+        <p class="text-xs font-bold text-navy uppercase tracking-wide mb-1">
+          ⚖️ What happened in court
+        </p>
+        <div class="flex flex-wrap gap-1.5">
+          {
+            outcomeTags.map((tag) => (
+              <button
+                class="tag-btn text-xs bg-blue-50 hover:bg-blue-200 text-blue-800 px-2.5 py-1 rounded cursor-pointer transition-colors"
+                data-tag={tag}
+              >
+                {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
+              </button>
+            ))
+          }
+        </div>
+      </div>
+
+      <div>
+        <p class="text-xs font-bold text-navy uppercase tracking-wide mb-1">
+          📂 What kind of case
+        </p>
+        <div class="flex flex-wrap gap-1.5">
+          {
+            typeTags.map((tag) => (
+              <button
+                class="tag-btn text-xs bg-green-50 hover:bg-green-200 text-green-800 px-2.5 py-1 rounded cursor-pointer transition-colors"
+                data-tag={tag}
+              >
+                {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
+              </button>
+            ))
+          }
+        </div>
+      </div>
+
+      <div>
+        <p class="text-xs font-bold text-navy uppercase tracking-wide mb-1">
+          📜 Legal basis
+        </p>
+        <div class="flex flex-wrap gap-1.5">
+          {
+            legalTags.map((tag) => (
+              <button
+                class="tag-btn text-xs bg-slate-100 hover:bg-gold hover:text-navy px-2.5 py-1 rounded cursor-pointer transition-colors"
+                data-tag={tag}
+              >
+                {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
+              </button>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="active-filters"
+    class="mb-4"
+    aria-live="polite"
+    style="display:none;"
+  >
+    <div
+      class="bg-white border border-slate-200 rounded-lg p-3 flex flex-wrap items-center gap-2"
+    >
+      <span class="text-sm font-semibold text-navy">Active filters:</span>
+      <div id="active-tags-list" class="flex flex-wrap gap-2"></div>
+      <button
+        id="clear-filters"
+        class="text-xs text-slate-500 hover:text-red-600 underline ml-2 cursor-pointer"
+        >clear all</button
+      >
+      <span id="active-count" class="text-sm font-medium text-gold ml-auto"
+      ></span>
+    </div>
+  </div>
+
+  <!-- Case listing -->
+  <div id="case-list">
+    {
+      [...grouped.entries()].map(([letter, entries]) => (
+        <div class="mb-8">
+          <h2 class="text-xl font-bold text-navy border-b-2 border-gold pb-1 mb-4">
+            {letter}
+          </h2>
+          <div class="space-y-4">
+            {entries.map((c) => (
+              <div class="case-card" data-tags={c.data.tags?.join(",") || ""}>
+                <a href={`/cases/${c.id}`} class="block group">
+                  <p class="font-semibold text-navy group-hover:text-gold transition-colors italic">
+                    {c.data.title}
+                  </p>
+                  <p class="text-sm text-slate-500 font-mono">
+                    {c.data.citation} — {c.data.court}
+                  </p>
+                  <p class="text-sm text-slate-700 mt-1">{c.data.holding}</p>
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll(".tag-btn");
+      const cards = document.querySelectorAll(".case-card");
+      const activeTags = new Set<string>();
+      const countEl = document.getElementById("active-count");
+      const filtersEl = document.getElementById("active-filters");
+      const tagsListEl = document.getElementById("active-tags-list");
+      const clearBtn = document.getElementById("clear-filters");
+
+      clearBtn?.addEventListener("click", () => {
+        activeTags.clear();
+        updateDisplay();
+      });
+
+      // Load tags from URL on page load
+      const params = new URLSearchParams(window.location.search);
+      const urlTags = params.get("tags");
+      if (urlTags) {
+        urlTags
+          .split(",")
+          .filter(Boolean)
+          .forEach((t) => activeTags.add(t));
+        updateDisplay();
+      }
+
+      function updateDisplay() {
+        // Update URL
+        const url = new URL(window.location.href);
+        if (activeTags.size > 0) {
+          url.searchParams.set("tags", [...activeTags].join(","));
+        } else {
+          url.searchParams.delete("tags");
+        }
+        history.replaceState(null, "", url.toString());
+
+        // Update active filters bar
+        if (filtersEl && tagsListEl) {
+          if (activeTags.size === 0) {
+            filtersEl.style.display = "none";
+            tagsListEl.innerHTML = "";
+          } else {
+            filtersEl.style.display = "";
+            tagsListEl.innerHTML = [...activeTags]
+              .map(
+                (tag) =>
+                  `<button class="active-tag-pill text-xs bg-navy text-white px-2 py-0.5 rounded-full cursor-pointer hover:bg-red-600 transition-colors" data-remove-tag="${tag}" title="Click to remove">${tag.replace(/-/g, " ")} ✕</button>`,
+              )
+              .join("");
+            // Add remove handlers to pills
+            tagsListEl.querySelectorAll(".active-tag-pill").forEach((pill) => {
+              pill.addEventListener("click", () => {
+                const t = pill.getAttribute("data-remove-tag");
+                if (t) {
+                  activeTags.delete(t);
+                  updateDisplay();
+                }
+              });
+            });
+          }
+        }
+        // Update button styles
+        buttons.forEach((b) => {
+          const tag = b.getAttribute("data-tag");
+          if (tag === "all") {
+            if (activeTags.size === 0) {
+              b.classList.remove("bg-slate-100");
+              b.classList.add("bg-navy", "text-white");
+            } else {
+              b.classList.remove("bg-navy", "text-white");
+              b.classList.add("bg-slate-100");
+            }
+          } else if (activeTags.has(tag!)) {
+            b.className =
+              "tag-btn text-xs bg-navy text-white px-2.5 py-1 rounded cursor-pointer transition-colors";
+          } else {
+            b.className =
+              (b as HTMLElement).dataset.origClass ||
+              "tag-btn text-xs bg-slate-100 hover:bg-gold hover:text-navy px-2.5 py-1 rounded cursor-pointer transition-colors";
+          }
+        });
+
+        // Filter cards
+        let visibleCount = 0;
+        cards.forEach((card) => {
+          if (activeTags.size === 0) {
+            (card as HTMLElement).style.display = "";
+            visibleCount++;
+          } else {
+            const tags = (card.getAttribute("data-tags") || "").split(",");
+            const matches = [...activeTags].every((t) => tags.includes(t));
+            (card as HTMLElement).style.display = matches ? "" : "none";
+            if (matches) visibleCount++;
+          }
+        });
+
+        // Hide empty letter groups
+        document.querySelectorAll("#case-list > div").forEach((group) => {
+          const visible = group.querySelectorAll(
+            '.case-card:not([style*="display: none"])',
+          );
+          (group as HTMLElement).style.display = visible.length ? "" : "none";
+        });
+
+        // Update count
+        if (countEl) {
+          if (activeTags.size === 0) {
+            countEl.textContent = "";
+          } else {
+            countEl.textContent = `Showing ${visibleCount} case${visibleCount !== 1 ? "s" : ""}`;
+          }
+        }
+      }
+
+      // Save original classes for restoring after toggle
+      buttons.forEach((b) => {
+        (b as HTMLElement).dataset.origClass = b.className;
+      });
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const tag = btn.getAttribute("data-tag");
+          if (tag === "all") {
+            activeTags.clear();
+          } else if (activeTags.has(tag!)) {
+            activeTags.delete(tag!);
+          } else {
+            activeTags.add(tag!);
+          }
+          updateDisplay();
+        });
+      });
+    });
+  </script>
+</Base>

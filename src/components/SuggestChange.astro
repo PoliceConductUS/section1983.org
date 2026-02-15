@@ -1,0 +1,20 @@
+---
+interface Props {
+  pagePath: string;
+}
+
+const { pagePath } = Astro.props;
+const contactUrl = `https://policeconduct.org/about/contact/?whoami=other&message=${encodeURIComponent(`Correction/suggestion for section1983.org page: ${pagePath}\n\n`)}`;
+---
+
+<div class="mt-10 pt-6 border-t border-slate-200 text-sm text-slate">
+  <p>
+    Have corrections or want to suggest a change?
+    <a
+      href={contactUrl}
+      target="_blank"
+      rel="noopener"
+      class="text-navy hover:text-gold font-semibold">Let us know ↗</a
+    >
+  </p>
+</div>

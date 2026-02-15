@@ -1,0 +1,52 @@
+---
+/**
+ * Previous/Next navigation between items in a collection.
+ * Usage: <PrevNext prev={{ href: "/articles/foo", label: "Foo" }} next={{ href: "/articles/bar", label: "Bar" }} />
+ * Either prev or next can be null.
+ */
+interface Link {
+  href: string;
+  label: string;
+}
+
+interface Props {
+  prev?: Link | null;
+  next?: Link | null;
+}
+
+const { prev, next } = Astro.props;
+---
+
+{
+  (prev || next) && (
+    <nav
+      aria-label="Pagination"
+      class="mt-12 pt-8 border-t border-slate-200 flex justify-between gap-4"
+    >
+      <div class="flex-1">
+        {prev && (
+          <a href={prev.href} class="group block">
+            <span class="text-xs text-slate-400 uppercase tracking-wide">
+              ← Previous
+            </span>
+            <span class="block text-navy font-semibold group-hover:text-gold transition-colors mt-1">
+              {prev.label}
+            </span>
+          </a>
+        )}
+      </div>
+      <div class="flex-1 text-right">
+        {next && (
+          <a href={next.href} class="group block">
+            <span class="text-xs text-slate-400 uppercase tracking-wide">
+              Next →
+            </span>
+            <span class="block text-navy font-semibold group-hover:text-gold transition-colors mt-1">
+              {next.label}
+            </span>
+          </a>
+        )}
+      </div>
+    </nav>
+  )
+}

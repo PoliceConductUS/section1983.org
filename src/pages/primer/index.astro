@@ -1,0 +1,87 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+
+const entries = await getCollection("primer");
+
+// Group by category
+const grouped = entries.reduce(
+  (acc, entry) => {
+    const cat = entry.data.category;
+    if (!acc[cat]) acc[cat] = [];
+    acc[cat].push(entry);
+    return acc;
+  },
+  {} as Record<string, typeof entries>,
+);
+
+// Sort entries within each category alphabetically
+for (const cat of Object.keys(grouped)) {
+  grouped[cat].sort((a, b) => a.data.term.localeCompare(b.data.term));
+}
+
+const categoryOrder = [
+  "constitutional-law",
+  "qualified-immunity",
+  "statute",
+  "doctrine",
+  "procedure",
+  "evidence",
+  "remedies",
+];
+
+const categoryLabels: Record<string, string> = {
+  "constitutional-law": "Constitutional Law",
+  procedure: "Procedure",
+  evidence: "Evidence",
+  remedies: "Remedies",
+  "qualified-immunity": "Qualified Immunity",
+  statute: "Statute",
+  doctrine: "Doctrine",
+};
+---
+
+<Base
+  title="Pro Se Primer"
+  description="The legal terms you're most likely to encounter in a § 1983 case, explained in plain English."
+>
+  <h1 class="text-3xl font-bold text-navy mb-4">Pro Se Primer</h1>
+  <p class="text-lg text-slate-600 mb-10">
+    The legal terms you're most likely to encounter in a § 1983 case, explained
+    like you're a human being — not a law student. Click any term to learn what
+    it means, why it matters, and how courts actually use it.
+  </p>
+
+  {
+    categoryOrder
+      .filter((cat) => grouped[cat])
+      .map((cat) => (
+        <section class="mb-10">
+          <h2 class="text-xl font-bold text-navy mb-4 border-b border-slate-200 pb-2">
+            {categoryLabels[cat]}
+          </h2>
+          <div class="grid gap-3">
+            {grouped[cat].map((entry) => (
+              <a
+                href={`/primer/${entry.id}`}
+                class="block p-4 bg-white rounded border border-slate-200 hover:border-gold hover:shadow-sm transition-all"
+              >
+                <span class="font-semibold text-navy">{entry.data.term}</span>
+                <span class="text-slate-500 ml-2 text-sm">
+                  {entry.data.description}
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))
+  }
+
+  {
+    entries.length === 0 && (
+      <p class="text-slate-500 italic">
+        Primer entries are being written. Check back soon.
+      </p>
+    )
+  }
+</Base>

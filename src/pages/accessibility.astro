@@ -1,0 +1,129 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  title="Accessibility"
+  description="Accessibility statement and commitment for section1983.org."
+>
+  <article class="prose prose-slate max-w-none">
+    <h1 class="text-3xl font-bold text-navy mb-8">Accessibility Statement</h1>
+    <p class="text-sm text-slate-500 italic mb-8">
+      Last updated: February 2026
+    </p>
+
+    <h2>Our Commitment</h2>
+    <p>
+      section1983.org is committed to ensuring digital accessibility for people
+      with disabilities. Civil rights are for everyone — and that includes the
+      right to access information about civil rights.
+    </p>
+    <p>
+      We strive to conform to the <a
+        href="https://www.w3.org/WAI/WCAG21/quickref/"
+        target="_blank"
+        rel="noopener">Web Content Accessibility Guidelines (WCAG) 2.1</a
+      > at the AA level.
+    </p>
+
+    <h2>What We Do</h2>
+    <ul>
+      <li>
+        <strong>Semantic HTML</strong> — We use proper heading hierarchy, landmark
+        regions, lists, and navigation elements so screen readers can parse the page
+        structure.
+      </li>
+      <li>
+        <strong>Skip navigation</strong> — A "Skip to main content" link appears on
+        focus for keyboard users.
+      </li>
+      <li>
+        <strong>Keyboard navigation</strong> — All interactive elements are accessible
+        via keyboard. The mobile menu is togglable and announces its state.
+      </li>
+      <li>
+        <strong>Color contrast</strong> — Our color palette is designed with sufficient
+        contrast ratios. Text meets WCAG AA contrast requirements against all backgrounds.
+      </li>
+      <li>
+        <strong>No auto-playing media</strong> — We don't auto-play audio or video.
+      </li>
+      <li>
+        <strong>Responsive design</strong> — The site works on all screen sizes, from
+        mobile phones to large desktop monitors.
+      </li>
+      <li>
+        <strong>Focus indicators</strong> — Interactive elements have visible focus
+        states for keyboard navigation.
+      </li>
+      <li>
+        <strong>ARIA labels</strong> — Navigation, search, and dynamic content regions
+        use appropriate ARIA attributes.
+      </li>
+      <li>
+        <strong>Plain language</strong> — Legal content is complex by nature, but
+        we write in the plainest language possible and link legal terms to our <a
+          href="/primer">Pro Se Primer</a
+        > for definitions.
+      </li>
+    </ul>
+
+    <h2>Known Limitations</h2>
+    <ul>
+      <li>
+        <strong>Third-party content</strong> — Comments (via Disqus) and analytics
+        (Google Analytics) are third-party services with their own accessibility profiles
+        that we don't control.
+      </li>
+      <li>
+        <strong>Mermaid diagrams</strong> — Our process flowchart is rendered as an
+        SVG. While it includes text content, complex visual relationships may not
+        be fully conveyed to screen reader users. We provide the same information
+        in text form on individual process pages.
+      </li>
+      <li>
+        <strong>PDF documents</strong> — Any linked court documents or PDFs may not
+        be fully accessible. We provide HTML summaries where possible.
+      </li>
+    </ul>
+
+    <h2>Feedback</h2>
+    <p>
+      If you encounter an accessibility barrier on this site, please let us
+      know. We take accessibility seriously and will work to fix issues
+      promptly.
+    </p>
+    <ul>
+      <li>
+        <strong>Email</strong>: <a
+          href="https://policeconduct.org/about/contact/"
+          target="_blank"
+          rel="noopener">Contact form</a>
+      </li>
+      <li>
+        <strong>Community</strong>: <a
+          href="https://reddit.com/r/Section1983_pro_se"
+          target="_blank"
+          rel="noopener">r/Section1983_pro_se</a>
+      </li>
+    </ul>
+    <p>We aim to respond to accessibility feedback within 5 business days.</p>
+
+    <h2>Technical Specifications</h2>
+    <p>
+      This site is built with <a
+        href="https://astro.build"
+        target="_blank"
+        rel="noopener">Astro</a
+      > and generates static HTML. It relies on standard HTML, CSS, and minimal JavaScript.
+      The site is designed to work with:
+    </p>
+    <ul>
+      <li>Screen readers (VoiceOver, NVDA, JAWS)</li>
+      <li>Screen magnifiers</li>
+      <li>Voice control software</li>
+      <li>Keyboard-only navigation</li>
+      <li>Browser zoom up to 400%</li>
+    </ul>
+  </article>
+</Base>

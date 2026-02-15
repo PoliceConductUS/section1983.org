@@ -1,0 +1,118 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  url: string;
+}
+
+const { title, description = "", url } = Astro.props;
+const encodedUrl = encodeURIComponent(url);
+const encodedTitle = encodeURIComponent(title);
+const encodedDesc = encodeURIComponent(description);
+const encodedText = encodeURIComponent(`${title} — ${description}`);
+---
+
+<div
+  class="share-buttons flex flex-wrap items-center gap-3 py-3 border-t border-slate-200 mt-6"
+>
+  <span class="text-sm font-semibold text-navy">Share this page:</span>
+
+  <a
+    href={`https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}`}
+    target="_blank"
+    rel="noopener"
+    title="Share on X (Twitter)"
+    class="inline-flex items-center gap-1 text-xs bg-slate-100 hover:bg-[#1da1f2] hover:text-white px-3 py-1.5 rounded transition-colors"
+  >
+    𝕏 Twitter
+  </a>
+
+  <a
+    href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
+    target="_blank"
+    rel="noopener"
+    title="Share on Facebook"
+    class="inline-flex items-center gap-1 text-xs bg-slate-100 hover:bg-[#1877f2] hover:text-white px-3 py-1.5 rounded transition-colors"
+  >
+    Facebook
+  </a>
+
+  <a
+    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`}
+    target="_blank"
+    rel="noopener"
+    title="Share on LinkedIn"
+    class="inline-flex items-center gap-1 text-xs bg-slate-100 hover:bg-[#0a66c2] hover:text-white px-3 py-1.5 rounded transition-colors"
+  >
+    LinkedIn
+  </a>
+
+  <a
+    href={`https://www.reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`}
+    target="_blank"
+    rel="noopener"
+    title="Share on Reddit"
+    class="inline-flex items-center gap-1 text-xs bg-slate-100 hover:bg-[#ff4500] hover:text-white px-3 py-1.5 rounded transition-colors"
+  >
+    Reddit
+  </a>
+
+  <a
+    href={`https://api.whatsapp.com/send?text=${encodedText}%20${encodedUrl}`}
+    target="_blank"
+    rel="noopener"
+    title="Share on WhatsApp"
+    class="inline-flex items-center gap-1 text-xs bg-slate-100 hover:bg-[#25d366] hover:text-white px-3 py-1.5 rounded transition-colors"
+  >
+    WhatsApp
+  </a>
+
+  <a
+    href={`mailto:?subject=${encodedTitle}&body=${encodedText}%0A%0A${encodedUrl}`}
+    title="Share via email"
+    class="inline-flex items-center gap-1 text-xs bg-slate-100 hover:bg-navy hover:text-white px-3 py-1.5 rounded transition-colors"
+  >
+    ✉ Email
+  </a>
+
+  <button
+    id="copy-link"
+    data-url={url}
+    title="Copy link to clipboard"
+    class="inline-flex items-center gap-1 text-xs bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1.5 rounded transition-colors cursor-pointer"
+  >
+    📋 Copy Link
+  </button>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("copy-link");
+    if (btn) {
+      btn.addEventListener("click", async () => {
+        const url = btn.getAttribute("data-url") || window.location.href;
+        try {
+          await navigator.clipboard.writeText(url);
+          const orig = btn.textContent;
+          btn.textContent = "✓ Copied!";
+          setTimeout(() => {
+            btn.textContent = orig;
+          }, 2000);
+        } catch {
+          // Fallback
+          const input = document.createElement("input");
+          input.value = url;
+          document.body.appendChild(input);
+          input.select();
+          document.execCommand("copy");
+          document.body.removeChild(input);
+          const orig = btn.textContent;
+          btn.textContent = "✓ Copied!";
+          setTimeout(() => {
+            btn.textContent = orig;
+          }, 2000);
+        }
+      });
+    }
+  });
+</script>

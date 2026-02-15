@@ -1,0 +1,88 @@
+---
+import Base from "./Base.astro";
+import DisqusComments from "../components/DisqusComments.astro";
+import ShareButtons from "../components/ShareButtons.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  pubDate?: Date | null;
+  author?: string;
+  tags?: string[];
+}
+
+const { title, description, pubDate, author, tags } = Astro.props;
+
+const formattedDate = pubDate
+  ? new Intl.DateTimeFormat("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    }).format(pubDate)
+  : null;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description: description,
+  author: {
+    "@type": "Organization",
+    name: "Institute for Police Conduct, Inc.",
+    url: "https://policeconduct.org",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Institute for Police Conduct, Inc.",
+    url: "https://policeconduct.org",
+  },
+  ...(pubDate && { datePublished: pubDate.toISOString() }),
+};
+---
+
+<Base title={title} description={description} structuredData={structuredData}>
+  <slot name="breadcrumbs" />
+  <article>
+    <header class="mb-10">
+      <h1 class="text-3xl md:text-4xl font-bold text-navy leading-tight mb-4">
+        {title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-sm text-slate">
+        {
+          formattedDate && (
+            <time datetime={pubDate?.toISOString()}>{formattedDate}</time>
+          )
+        }
+        {author && <span>by {author}</span>}
+      </div>
+      {
+        tags && tags.length > 0 && (
+          <div class="flex flex-wrap gap-2 mt-3">
+            {tags.map((tag) => (
+              <span class="bg-navy/10 text-navy text-xs px-2 py-1 rounded">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )
+      }
+    </header>
+
+    <div class="prose">
+      <slot />
+    </div>
+
+    <ShareButtons
+      title={title}
+      description={description}
+      url={`https://www.section1983.org/articles/${Astro.params.slug}/`}
+    />
+
+    <slot name="pagination" />
+  </article>
+
+  <DisqusComments
+    pageUrl={`https://www.section1983.org/articles/${Astro.params.slug}/`}
+    disqusIdentifier={`article-${Astro.params.slug}`}
+  />
+</Base>

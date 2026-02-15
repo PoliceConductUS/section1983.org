@@ -1,0 +1,132 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+
+const articles = await getCollection("articles", ({ data }) => !data.draft);
+const primer = await getCollection("primer");
+const process = await getCollection("process");
+
+const sortedArticles = articles.sort((a, b) => {
+  const da = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
+  const db = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
+  return db - da;
+});
+const sortedPrimer = primer.sort((a, b) =>
+  a.data.term.localeCompare(b.data.term),
+);
+const sortedProcess = process.sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base
+  title="Site Map"
+  description="Complete directory of all pages on section1983.org."
+>
+  <h1 class="text-3xl font-bold text-navy mb-8">Site Map</h1>
+
+  <div class="grid gap-8">
+    <section>
+      <h2 class="text-xl font-bold text-navy mb-3 border-b-2 border-gold pb-2">
+        Pages
+      </h2>
+      <ul class="space-y-1 text-sm">
+        <li>
+          <a href="/" class="text-navy hover:text-gold transition-colors"
+            >Home</a>
+        </li>
+        <li>
+          <a href="/about" class="text-navy hover:text-gold transition-colors"
+            >About</a>
+        </li>
+        <li>
+          <a
+            href="/about/section-1983"
+            class="text-navy hover:text-gold transition-colors">About § 1983</a>
+        </li>
+        <li>
+          <a
+            href="/get-involved"
+            class="text-navy hover:text-gold transition-colors">Get Involved</a>
+        </li>
+        <li>
+          <a href="/search" class="text-navy hover:text-gold transition-colors"
+            >Search</a>
+        </li>
+        <li>
+          <a
+            href="/legal-notice"
+            class="text-navy hover:text-gold transition-colors">Legal Notice</a>
+        </li>
+        <li>
+          <a href="/terms" class="text-navy hover:text-gold transition-colors"
+            >Terms & Conditions</a>
+        </li>
+        <li>
+          <a
+            href="/accessibility"
+            class="text-navy hover:text-gold transition-colors"
+            >Accessibility</a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-bold text-navy mb-3 border-b-2 border-gold pb-2">
+        Articles ({sortedArticles.length})
+      </h2>
+      <ul class="space-y-1 text-sm">
+        {
+          sortedArticles.map((a) => (
+            <li>
+              <a
+                href={`/articles/${a.id}/`}
+                class="text-navy hover:text-gold transition-colors"
+              >
+                {a.data.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-bold text-navy mb-3 border-b-2 border-gold pb-2">
+        Pro Se Primer ({sortedPrimer.length})
+      </h2>
+      <ul class="space-y-1 text-sm columns-2">
+        {
+          sortedPrimer.map((p) => (
+            <li>
+              <a
+                href={`/primer/${p.id}/`}
+                class="text-navy hover:text-gold transition-colors"
+              >
+                {p.data.term}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-bold text-navy mb-3 border-b-2 border-gold pb-2">
+        The Legal Process ({sortedProcess.length})
+      </h2>
+      <ul class="space-y-1 text-sm">
+        {
+          sortedProcess.map((p) => (
+            <li>
+              <a
+                href={`/process/${p.id}/`}
+                class="text-navy hover:text-gold transition-colors"
+              >
+                Step {p.data.order}: {p.data.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
+</Base>

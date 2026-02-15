@@ -1,0 +1,179 @@
+---
+import Base from "./Base.astro";
+import DisqusComments from "../components/DisqusComments.astro";
+import ShareButtons from "../components/ShareButtons.astro";
+
+interface Props {
+  title: string;
+  citation: string;
+  court: string;
+  dateDecided: Date;
+  docketNumber: string;
+  courtlistener?: string;
+  holding: string;
+  officers?: { name: string; profile?: string }[];
+  tags?: string[];
+  cites?: string[];
+  citedBy?: string[];
+}
+
+const {
+  title,
+  citation,
+  court,
+  dateDecided,
+  docketNumber,
+  courtlistener,
+  holding,
+  officers,
+  tags,
+  cites,
+  citedBy,
+} = Astro.props;
+
+const formattedDate = dateDecided.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<Base title={`${title} — Case Law Library`} description={holding}>
+  <slot name="breadcrumbs" />
+  <article class="prose prose-slate max-w-none">
+    <!-- Case Info Header -->
+    <div class="mb-8 bg-navy-light/5 border border-slate-200 rounded-lg p-6">
+      <h1 class="text-3xl font-bold text-navy mb-1 italic">{title}</h1>
+      <p class="text-lg text-slate-700 font-mono mb-4">{citation}</p>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm text-slate-600 mb-4"
+      >
+        <div><span class="font-semibold text-navy">Court:</span> {court}</div>
+        <div>
+          <span class="font-semibold text-navy">Decided:</span>
+          {formattedDate}
+        </div>
+        <div>
+          <span class="font-semibold text-navy">Docket:</span>
+          {docketNumber}
+        </div>
+        {
+          courtlistener && (
+            <div>
+              <a
+                href={courtlistener}
+                target="_blank"
+                rel="noopener"
+                class="text-navy underline decoration-gold decoration-2 underline-offset-2 hover:text-gold"
+              >
+                View on CourtListener ↗
+              </a>
+            </div>
+          )
+        }
+      </div>
+
+      {
+        officers && officers.length > 0 && (
+          <div class="text-sm text-slate-600 mb-4">
+            <span class="font-semibold text-navy">Officers named:</span>{" "}
+            {officers.map((o, i) => (
+              <>
+                {i > 0 && ", "}
+                {o.profile ? (
+                  <a
+                    href={o.profile}
+                    target="_blank"
+                    rel="noopener"
+                    class="text-navy underline decoration-gold decoration-2 underline-offset-2 hover:text-gold"
+                  >
+                    {o.name} ↗
+                  </a>
+                ) : (
+                  <span>{o.name}</span>
+                )}
+              </>
+            ))}
+          </div>
+        )
+      }
+
+      <div class="bg-cream rounded p-4 border-l-4 border-gold">
+        <p class="font-semibold text-navy text-sm mb-1">Holding</p>
+        <p class="text-slate-800">{holding}</p>
+      </div>
+    </div>
+
+    {
+      tags && tags.length > 0 && (
+        <div class="flex flex-wrap gap-2 mb-8">
+          {tags.map((tag) => (
+            <a
+              href={`/cases?tag=${tag}`}
+              class="text-xs bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors"
+            >
+              {tag.replace(/-/g, " ")}
+            </a>
+          ))}
+        </div>
+      )
+    }
+
+    <!-- Article content (summary, how to use it, how it can be used against you) -->
+    <slot />
+
+    <!-- Cross-references -->
+    {
+      cites && cites.length > 0 && (
+        <div class="mt-12 pt-8 border-t border-slate-200">
+          <h2 class="text-lg font-bold text-navy mb-3">Cases Cited</h2>
+          <div class="flex flex-wrap gap-2">
+            {cites.map((slug) => (
+              <a
+                href={`/cases/${slug}`}
+                class="text-sm bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors italic"
+              >
+                {slug
+                  .replace(/-/g, " ")
+                  .replace(/\b\w/g, (c) => c.toUpperCase())}
+              </a>
+            ))}
+          </div>
+        </div>
+      )
+    }
+
+    {
+      citedBy && citedBy.length > 0 && (
+        <div class="mt-8 pt-8 border-t border-slate-200">
+          <h2 class="text-lg font-bold text-navy mb-3">Cited By</h2>
+          <div class="flex flex-wrap gap-2">
+            {citedBy.map((slug) => (
+              <a
+                href={`/cases/${slug}`}
+                class="text-sm bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors italic"
+              >
+                {slug
+                  .replace(/-/g, " ")
+                  .replace(/\b\w/g, (c) => c.toUpperCase())}
+              </a>
+            ))}
+          </div>
+        </div>
+      )
+    }
+
+    <ShareButtons
+      title={title}
+      description={holding}
+      url={`https://www.section1983.org/cases/${Astro.params.slug}/`}
+    />
+
+    <slot name="pagination" />
+  </article>
+
+  <div class="mt-16">
+    <DisqusComments />
+  </div>
+</Base>

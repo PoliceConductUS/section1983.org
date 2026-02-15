@@ -1,0 +1,56 @@
+---
+import { getCollection, render } from "astro:content";
+import Process from "../../layouts/Process.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import PrevNext from "../../components/PrevNext.astro";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("process");
+  const sorted = pages.sort((a, b) => a.data.order - b.data.order);
+  return sorted.map((page, i) => ({
+    params: { slug: page.id },
+    props: {
+      page,
+      prev: i > 0 ? sorted[i - 1] : null,
+      next: i < sorted.length - 1 ? sorted[i + 1] : null,
+    },
+  }));
+}
+
+const { page, prev, next } = Astro.props;
+const { Content } = await render(page);
+---
+
+<Process
+  title={page.data.title}
+  description={page.data.description}
+  order={page.data.order}
+  movant={page.data.movant}
+  respondent={page.data.respondent}
+  slug={page.id}
+>
+  <Breadcrumbs
+    slot="breadcrumbs"
+    crumbs={[
+      { label: "Home", href: "/" },
+      { label: "The Process", href: "/process" },
+      { label: page.data.title },
+    ]}
+  />
+  <Content />
+  <PrevNext
+    slot="pagination"
+    prev={prev
+      ? {
+          href: `/process/${prev.id}`,
+          label: `Step ${prev.data.order}: ${prev.data.title}`,
+        }
+      : null}
+    next={next
+      ? {
+          href: `/process/${next.id}`,
+          label: `Step ${next.data.order}: ${next.data.title}`,
+        }
+      : null}
+  />
+</Process>

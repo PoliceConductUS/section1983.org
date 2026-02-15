@@ -1,0 +1,42 @@
+---
+import { getCollection, render } from "astro:content";
+import Case from "../../layouts/Case.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import PrevNext from "../../components/PrevNext.astro";
+
+export async function getStaticPaths() {
+  const cases = await getCollection("cases");
+  const sorted = cases.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+  return sorted.map((entry, i) => ({
+    params: { slug: entry.id },
+    props: {
+      entry,
+      prev: sorted[i - 1] || null,
+      next: sorted[i + 1] || null,
+    },
+  }));
+}
+
+const { entry, prev, next } = Astro.props;
+const { Content } = await render(entry);
+
+const crumbs = [
+  { label: "Home", href: "/" },
+  { label: "Case Law Library", href: "/cases" },
+  { label: entry.data.title },
+];
+
+const prevLink = prev
+  ? { label: prev.data.title, href: `/cases/${prev.id}` }
+  : null;
+const nextLink = next
+  ? { label: next.data.title, href: `/cases/${next.id}` }
+  : null;
+---
+
+<Case {...entry.data}>
+  <Breadcrumbs crumbs={crumbs} slot="breadcrumbs" />
+  <Content />
+  <PrevNext prev={prevLink} next={nextLink} slot="pagination" />
+</Case>

@@ -1,0 +1,45 @@
+---
+import { getCollection, render } from "astro:content";
+import Primer from "../../layouts/Primer.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import PrevNext from "../../components/PrevNext.astro";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("primer");
+  const sorted = entries.sort((a, b) => a.data.term.localeCompare(b.data.term));
+  return sorted.map((entry, i) => ({
+    params: { slug: entry.id },
+    props: {
+      entry,
+      prev: i > 0 ? sorted[i - 1] : null,
+      next: i < sorted.length - 1 ? sorted[i + 1] : null,
+    },
+  }));
+}
+
+const { entry, prev, next } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Primer
+  title={entry.data.title}
+  term={entry.data.term}
+  description={entry.data.description}
+  category={entry.data.category}
+  related={entry.data.related}
+>
+  <Breadcrumbs
+    slot="breadcrumbs"
+    crumbs={[
+      { label: "Home", href: "/" },
+      { label: "Pro Se Primer", href: "/primer" },
+      { label: entry.data.term },
+    ]}
+  />
+  <Content />
+  <PrevNext
+    slot="pagination"
+    prev={prev ? { href: `/primer/${prev.id}`, label: prev.data.term } : null}
+    next={next ? { href: `/primer/${next.id}`, label: next.data.term } : null}
+  />
+</Primer>

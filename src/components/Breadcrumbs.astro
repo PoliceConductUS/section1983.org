@@ -1,0 +1,56 @@
+---
+/**
+ * Breadcrumb trail with JSON-LD structured data for Google rich snippets.
+ * Usage: <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Articles", href: "/articles" }, { label: "Current Page" }]} />
+ * The last crumb should omit href (it's the current page).
+ */
+interface Crumb {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  crumbs: Crumb[];
+}
+
+const { crumbs } = Astro.props;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: crumbs.map((crumb, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: crumb.label,
+    ...(crumb.href && { item: `https://www.section1983.org${crumb.href}` }),
+  })),
+};
+---
+
+<nav aria-label="Breadcrumb" class="text-sm text-slate-500 mb-6">
+  <ol class="flex flex-wrap items-center gap-1">
+    {
+      crumbs.map((crumb, i) => (
+        <li class="flex items-center gap-1">
+          {i > 0 && <span class="text-slate-400">/</span>}
+          {crumb.href ? (
+            <a
+              href={crumb.href}
+              class="text-navy hover:text-gold transition-colors"
+            >
+              {crumb.label}
+            </a>
+          ) : (
+            <span class="text-slate-600">{crumb.label}</span>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>
+
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify(structuredData)}
+  is:inline
+/>

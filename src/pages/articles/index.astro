@@ -1,0 +1,79 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const allArticles = await getCollection("articles");
+const published = allArticles
+  .filter((a) => !a.data.draft)
+  .sort((a, b) => {
+    const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
+    const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
+    return dateB - dateA;
+  });
+const upcoming = allArticles
+  .filter((a) => a.data.draft)
+  .sort((a, b) => {
+    const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
+    const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
+    return dateA - dateB;
+  });
+---
+
+<Base title="Articles">
+  <h1 class="text-3xl font-bold text-navy mb-8">Articles</h1>
+
+  <div class="space-y-6">
+    {
+      published.map((article) => (
+        <a
+          href={`/articles/${article.id.replace(/\.md$/, "")}`}
+          class="block group"
+        >
+          <article class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h2 class="text-xl font-semibold text-navy group-hover:text-gold transition-colors mb-2">
+              {article.data.title}
+            </h2>
+            <p class="text-slate text-sm mb-2">{article.data.description}</p>
+            {article.data.pubDate && (
+              <time class="text-xs text-slate/60">
+                {new Intl.DateTimeFormat("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                }).format(new Date(article.data.pubDate))}
+              </time>
+            )}
+          </article>
+        </a>
+      ))
+    }
+  </div>
+
+  {
+    upcoming.length > 0 && (
+      <div class="mt-12">
+        <h2 class="text-2xl font-bold text-navy mb-2">Coming Soon</h2>
+        <p class="text-slate text-sm mb-6">
+          These articles are in progress. Subscribe to our{" "}
+          <a
+            href="/rss.xml"
+            class="text-navy underline decoration-gold decoration-2 hover:text-gold transition-colors"
+          >
+            RSS feed
+          </a>{" "}
+          to know when they publish.
+        </p>
+        <div class="space-y-4">
+          {upcoming.map((article) => (
+            <article class="p-5 bg-cream/50 border border-slate-200 rounded-lg opacity-80">
+              <h3 class="text-lg font-semibold text-navy mb-1">
+                {article.data.title}
+              </h3>
+              <p class="text-slate text-sm">{article.data.description}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    )
+  }
+</Base>

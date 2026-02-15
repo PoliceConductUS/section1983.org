@@ -1,0 +1,51 @@
+name: Infrastructure Setup
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Action to perform"
+        required: true
+        default: "plan"
+        type: choice
+        options:
+          - plan
+          - apply
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  infrastructure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: us-east-1
+
+      - name: Run infrastructure setup
+        if: inputs.action == 'apply'
+        run: |
+          # Non-interactive mode — skip read prompts
+          export NONINTERACTIVE=true
+          bash infrastructure/setup.sh
+
+      - name: Plan (dry run)
+        if: inputs.action == 'plan'
+        run: |
+          echo "=== Infrastructure Plan ==="
+          echo ""
+          echo "This will create/update:"
+          echo "  - S3 bucket: section1983.org (production)"
+          echo "  - S3 bucket: section1983.org-preview (PR previews)"
+          echo "  - ACM certificate for section1983.org, www.section1983.org, *.preview.section1983.org"
+          echo "  - CloudFront distribution for production"
+          echo "  - CloudFront distribution for previews (wildcard subdomain routing)"
+          echo "  - CloudFront Origin Access Control"
+          echo "  - Route 53 hosted zone + DNS records"
+          echo ""
+          echo "Run with action=apply to execute."

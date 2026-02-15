@@ -1,0 +1,128 @@
+---
+import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const articles = (
+  await getCollection("articles", ({ data }) => !data.draft)
+).sort((a, b) => {
+  const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
+  const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
+  return dateB - dateA;
+});
+
+const drafts = (
+  await getCollection("articles", ({ data }) => data.draft === true)
+).sort((a, b) => {
+  const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
+  const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
+  return dateA - dateB;
+});
+---
+
+<Base title="Home">
+  <section class="mb-16">
+    <p class="text-sm font-semibold text-gold uppercase tracking-wide mb-3">
+      A project of the Institute for Police Conduct, Inc.
+    </p>
+    <h1 class="text-4xl md:text-5xl font-bold text-navy leading-tight mb-6">
+      Your free guide to holding<br />
+      <span class="text-gold">police accountable in federal court.</span>
+    </h1>
+    <p class="text-lg text-slate max-w-2xl leading-relaxed mb-4">
+      When police violate your constitutional rights, federal law gives you the
+      right to sue. This site explains how — in plain language, with real cases,
+      for people representing themselves.
+    </p>
+    <p class="text-base text-slate max-w-2xl leading-relaxed mb-8">
+      We are <strong class="text-navy">completely independent</strong> of police and
+      government. No sponsors. No agenda. Just the law, explained honestly.
+    </p>
+    <div class="flex gap-4 flex-wrap">
+      <a
+        href="/articles"
+        class="bg-navy text-white px-6 py-3 rounded font-semibold hover:bg-navy-light transition-colors"
+      >
+        Read Articles
+      </a>
+      <a
+        href="/primer"
+        class="border-2 border-navy text-navy px-6 py-3 rounded font-semibold hover:bg-navy hover:text-white transition-colors"
+      >
+        Learn the Terms
+      </a>
+      <a
+        href="/process"
+        class="border-2 border-navy text-navy px-6 py-3 rounded font-semibold hover:bg-navy hover:text-white transition-colors"
+      >
+        Understand the Process
+      </a>
+      <a
+        href="https://policeconduct.org"
+        class="border-2 border-gold text-navy px-6 py-3 rounded font-semibold hover:bg-gold hover:text-white transition-colors"
+        target="_blank"
+        rel="noopener"
+      >
+        Report an Incident ↗
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-bold text-navy mb-6 border-b-2 border-gold pb-2">
+      Latest Articles
+    </h2>
+    <div class="space-y-6">
+      {
+        articles.map((article) => (
+          <a
+            href={`/articles/${article.id.replace(/\.md$/, "")}`}
+            class="block group"
+          >
+            <article class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <h3 class="text-xl font-semibold text-navy group-hover:text-gold transition-colors mb-2">
+                {article.data.title}
+              </h3>
+              <p class="text-slate text-sm mb-3">{article.data.description}</p>
+              {article.data.tags && (
+                <div class="flex flex-wrap gap-2">
+                  {article.data.tags.map((tag: string) => (
+                    <span class="bg-navy/5 text-navy/70 text-xs px-2 py-0.5 rounded">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </article>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  {
+    drafts.length > 0 && (
+      <section class="mt-16">
+        <h2 class="text-2xl font-bold text-navy mb-6 border-b-2 border-slate-200 pb-2">
+          Coming Soon
+        </h2>
+        <div class="space-y-4">
+          {drafts.map((draft) => (
+            <article class="p-5 bg-white/50 rounded-lg border border-dashed border-slate-300">
+              <h3 class="text-lg font-semibold text-navy/70 mb-1">
+                {draft.data.title}
+              </h3>
+              <p class="text-slate text-sm">{draft.data.description}</p>
+            </article>
+          ))}
+        </div>
+        <p class="text-sm text-slate mt-4">
+          Want to contribute?{" "}
+          <a href="/get-involved" class="text-navy underline hover:text-gold">
+            Get involved
+          </a>
+          .
+        </p>
+      </section>
+    )
+  }
+</Base>
