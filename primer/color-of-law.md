@@ -35,7 +35,17 @@ The test isn't whether the official was _authorized_ to do what they did. It's w
 
 [Monroe v. Pape, 365 U.S. 167 (1961)](https://www.courtlistener.com/opinion/106272/monroe-v-pape/) established this clearly: § 1983 reaches officials who act under color of law even when they violate state law.
 
+## The Historical Foundation
+
+The phrase "under color of" law wasn't an accident. When the Forty-Second Congress drafted § 1983 (originally Section 1 of the Ku Klux Act of 1871), Senator Frederick Frelinghuysen wrote an earlier draft that Representative Samuel Shellabarger then deliberately revised to use the broader "under color of" language. The choice was intentional: the statute was meant to reach officials who _abuse_ their state-granted authority, not just those who _follow_ state-authorized instructions.
+
+This matters because defendants sometimes argue that if their conduct violated state law or department policy, they weren't acting "under color of" state law. The history shows the opposite — covering unauthorized abuses of authority was the _entire purpose_ of the statute. The Ku Klux Act was enacted to address Southern officials who used their positions to terrorize citizens in ways that state law never authorized. _See_ David Achtenberg, _A "Milder Measure of Villainy": The Unknown History of 42 U.S.C. § 1983 and the Meaning of "Under Color of" Law_, 1999 Utah L. Rev. 1 (1999).
+
 ## Key Cases
 
 - [Monroe v. Pape, 365 U.S. 167 (1961)](https://www.courtlistener.com/opinion/106272/monroe-v-pape/) — Color of law includes conduct that violates state law
 - [West v. Atkins, 487 U.S. 42 (1988)](https://www.courtlistener.com/opinion/112067/west-v-atkins/) — Private physician under contract with prison acted under color of law
+
+## Further Reading
+
+- David Achtenberg, _A "Milder Measure of Villainy": The Unknown History of 42 U.S.C. § 1983 and the Meaning of "Under Color of" Law_, 1999 Utah L. Rev. 1 (1999)

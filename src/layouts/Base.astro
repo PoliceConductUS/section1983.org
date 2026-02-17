@@ -20,7 +20,9 @@ const {
   structuredData,
 } = Astro.props;
 
-const canonicalHref = canonicalUrl || Astro.url?.pathname || "/";
+const siteBase = "https://section1983.org";
+const canonicalHref =
+  canonicalUrl || new URL(Astro.url?.pathname || "/", siteBase).toString();
 const structuredDataEntries = structuredData
   ? Array.isArray(structuredData)
     ? structuredData
