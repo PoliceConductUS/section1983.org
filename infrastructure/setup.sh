@@ -282,18 +282,16 @@ echo "  ACM validation records added"
 CERT_STATUS=$(aws acm describe-certificate --certificate-arn "$CERT_ARN" --region "$REGION" \
   --query 'Certificate.Status' --output text)
 if [ "$CERT_STATUS" != "ISSUED" ]; then
-  if [ "$NONINTERACTIVE" = "true" ]; then
-    echo "  ⏳ Cert status is $CERT_STATUS — waiting up to 5 minutes for validation..."
-    for i in $(seq 1 30); do
-      sleep 10
-      CERT_STATUS=$(aws acm describe-certificate --certificate-arn "$CERT_ARN" --region "$REGION" \
-        --query 'Certificate.Status' --output text)
-      if [ "$CERT_STATUS" = "ISSUED" ]; then break; fi
-      echo "    ... still $CERT_STATUS ($((i * 10))s)"
-    done
-  fi
+  echo "  ⏳ Cert status is $CERT_STATUS — polling up to 10 minutes for validation..."
+  for i in $(seq 1 60); do
+    sleep 10
+    CERT_STATUS=$(aws acm describe-certificate --certificate-arn "$CERT_ARN" --region "$REGION" \
+      --query 'Certificate.Status' --output text)
+    if [ "$CERT_STATUS" = "ISSUED" ]; then break; fi
+    echo "    ... still $CERT_STATUS ($((i * 10))s)"
+  done
   if [ "$CERT_STATUS" != "ISSUED" ]; then
-    echo "  ❌ Cert status is $CERT_STATUS — must be ISSUED. Exiting."
+    echo "  ❌ Cert status is $CERT_STATUS after 10 minutes — must be ISSUED. Exiting."
     exit 1
   fi
 fi
@@ -359,8 +357,14 @@ create_distribution() {
   "DefaultCacheBehavior": {
     "TargetOriginId": "$ORIGIN_ID",
     "ViewerProtocolPolicy": "redirect-to-https",
-    "AllowedMethods": ["GET", "HEAD"],
-    "CachedMethods": ["GET", "HEAD"],
+    "AllowedMethods": {
+      "Quantity": 2,
+      "Items": ["GET", "HEAD"],
+      "CachedMethods": {
+        "Quantity": 2,
+        "Items": ["GET", "HEAD"]
+      }
+    },
     "Compress": true,
     "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
     "ResponseHeadersPolicyId": "67f7725c-6f97-4210-82d7-5512b31e9d03"
@@ -497,8 +501,14 @@ JSEOF
   "DefaultCacheBehavior": {
     "TargetOriginId": "S3-preview",
     "ViewerProtocolPolicy": "redirect-to-https",
-    "AllowedMethods": ["GET", "HEAD"],
-    "CachedMethods": ["GET", "HEAD"],
+    "AllowedMethods": {
+      "Quantity": 2,
+      "Items": ["GET", "HEAD"],
+      "CachedMethods": {
+        "Quantity": 2,
+        "Items": ["GET", "HEAD"]
+      }
+    },
     "Compress": true,
     "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
     "FunctionAssociations": {
