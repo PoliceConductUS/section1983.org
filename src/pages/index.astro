@@ -2,21 +2,36 @@
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
 
-const articles = (
-  await getCollection("articles", ({ data }) => !data.draft)
-).sort((a, b) => {
-  const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
-  const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
-  return dateB - dateA;
-});
+const allArticles = await getCollection("articles");
+const articles = allArticles
+  .filter(({ data }) => !data.draft)
+  .sort((a, b) => {
+    const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
+    const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
+    return dateB - dateA;
+  });
 
-const drafts = (
-  await getCollection("articles", ({ data }) => data.draft === true)
-).sort((a, b) => {
-  const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
-  const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
-  return dateA - dateB;
-});
+const drafts = allArticles
+  .filter(({ data }) => data.draft === true)
+  .sort((a, b) => {
+    const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
+    const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
+    return dateA - dateB;
+  });
+
+const cases = await getCollection("cases");
+const primer = await getCollection("primer");
+const process = await getCollection("process");
+
+const totalPages = allArticles.length + cases.length + primer.length + process.length;
+
+// Estimate reading time from content body lengths (~5 chars/word, ~250 wpm)
+const allContent = [...allArticles, ...cases, ...primer, ...process];
+const totalChars = allContent.reduce((sum, entry) => sum + (entry.body?.length || 0), 0);
+const totalWords = Math.round(totalChars / 5);
+const readingHours = Math.round(totalWords / 250 / 60);
+
+const uniqueCourts = new Set(cases.map(c => c.data.court)).size;
 ---
 
 <Base title="Home">
@@ -65,6 +80,30 @@ const drafts = (
         Report an Incident ↗
       </a>
     </div>
+  </section>
+
+  <section class="mb-16">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+        <p class="text-3xl font-bold text-navy">{cases.length}</p>
+        <p class="text-sm text-slate mt-1">Court Cases</p>
+      </div>
+      <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+        <p class="text-3xl font-bold text-navy">{primer.length}</p>
+        <p class="text-sm text-slate mt-1">Legal Terms Explained</p>
+      </div>
+      <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+        <p class="text-3xl font-bold text-navy">{process.length}</p>
+        <p class="text-sm text-slate mt-1">Step-by-Step Process Guides</p>
+      </div>
+      <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+        <p class="text-3xl font-bold text-navy">{articles.length + drafts.length}</p>
+        <p class="text-sm text-slate mt-1">In-Depth Articles</p>
+      </div>
+    </div>
+    <p class="text-center text-sm text-slate mt-4">
+      {totalPages} pages · {uniqueCourts} courts cited · ~{readingHours} hours of reading · 100% free
+    </p>
   </section>
 
   <section>

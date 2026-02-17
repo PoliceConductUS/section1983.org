@@ -31,7 +31,7 @@ PREVIEW_BUCKET="section1983.org-preview"
 REGION="us-east-1"
 ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 
-GITHUB_ORG="${GITHUB_ORG:-PoliceConduct-org}"
+GITHUB_ORG="${GITHUB_ORG:-PoliceConductUS}"
 GITHUB_REPO="${GITHUB_REPO:-section1983.org}"
 
 echo "=== Account: $ACCOUNT_ID | Region: $REGION ==="
@@ -367,7 +367,14 @@ create_distribution() {
     },
     "Compress": true,
     "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
-    "ResponseHeadersPolicyId": "67f7725c-6f97-4210-82d7-5512b31e9d03"
+    "ResponseHeadersPolicyId": "67f7725c-6f97-4210-82d7-5512b31e9d03",
+    "FunctionAssociations": {
+      "Quantity": 1,
+      "Items": [{
+        "FunctionARN": "$PROD_FUNC_ARN",
+        "EventType": "viewer-request"
+      }]
+    }
   },
   "CustomErrorResponses": {
     "Quantity": 1,
@@ -391,6 +398,50 @@ EOF
 
   echo "$CONFIG"
 }
+
+# Create CloudFront Function for index.html rewriting (prod)
+PROD_FUNC_NAME="section1983-index-rewrite"
+PROD_FUNC_CODE=$(cat <<'JSEOF'
+function handler(event) {
+  var request = event.request;
+  var uri = request.uri;
+  if (uri.endsWith('/')) {
+    request.uri += 'index.html';
+  } else if (!uri.includes('.')) {
+    request.uri += '/index.html';
+  }
+  return request;
+}
+JSEOF
+)
+
+EXISTING_PROD_FUNC=$(aws cloudfront list-functions \
+  --query "FunctionList.Items[?Name=='$PROD_FUNC_NAME'].FunctionMetadata.FunctionARN" \
+  --output text 2>/dev/null || true)
+
+if [ -n "$EXISTING_PROD_FUNC" ] && [ "$EXISTING_PROD_FUNC" != "None" ]; then
+  PROD_FUNC_ETAG=$(aws cloudfront describe-function --name "$PROD_FUNC_NAME" \
+    --query 'ETag' --output text)
+  aws cloudfront update-function --name "$PROD_FUNC_NAME" \
+    --function-config '{"Comment":"Rewrite directory paths to index.html","Runtime":"cloudfront-js-2.0"}' \
+    --function-code fileb://<(echo "$PROD_FUNC_CODE") \
+    --if-match "$PROD_FUNC_ETAG" > /dev/null
+  PROD_FUNC_ETAG=$(aws cloudfront describe-function --name "$PROD_FUNC_NAME" \
+    --query 'ETag' --output text)
+  aws cloudfront publish-function --name "$PROD_FUNC_NAME" --if-match "$PROD_FUNC_ETAG" > /dev/null
+  PROD_FUNC_ARN="$EXISTING_PROD_FUNC"
+  echo "  Updated function: $PROD_FUNC_NAME"
+else
+  PROD_FUNC_ARN=$(aws cloudfront create-function \
+    --name "$PROD_FUNC_NAME" \
+    --function-config '{"Comment":"Rewrite directory paths to index.html","Runtime":"cloudfront-js-2.0"}' \
+    --function-code fileb://<(echo "$PROD_FUNC_CODE") \
+    --query 'FunctionSummary.FunctionMetadata.FunctionARN' --output text)
+  PROD_FUNC_ETAG=$(aws cloudfront describe-function --name "$PROD_FUNC_NAME" \
+    --query 'ETag' --output text)
+  aws cloudfront publish-function --name "$PROD_FUNC_NAME" --if-match "$PROD_FUNC_ETAG" > /dev/null
+  echo "  Created function: $PROD_FUNC_NAME"
+fi
 
 # Check for existing prod distribution
 PROD_DIST_ID=$(aws cloudfront list-distributions \
@@ -444,6 +495,8 @@ function handler(event) {
   // Add index.html for directory requests
   if (request.uri.endsWith('/')) {
     request.uri += 'index.html';
+  } else if (!request.uri.includes('.')) {
+    request.uri += '/index.html';
   }
   return request;
 }
