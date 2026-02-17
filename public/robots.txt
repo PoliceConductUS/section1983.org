@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://section1983.org/sitemap-index.xml
