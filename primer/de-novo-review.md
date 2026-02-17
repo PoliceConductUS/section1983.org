@@ -31,14 +31,14 @@ Under 28 U.S.C. § 636(b)(1), when a magistrate judge issues a Findings, Conclus
 
 If you file **specific** objections, the district judge must review those portions de novo. If you don't file objections, or file only general objections, the district judge can adopt the FCR without independent review.
 
-**This matters enormously.** A vague objection like "the magistrate got it wrong" will be treated as no objection at all. You must identify the specific findings or legal conclusions you dispute and explain why. *See Thomas v. Arn*, 474 U.S. 140 (1985).
+**This matters enormously.** A vague objection like "the magistrate got it wrong" will be treated as no objection at all. You must identify the specific findings or legal conclusions you dispute and explain why. _See Thomas v. Arn_, 474 U.S. 140 (1985).
 
 ### On Appeal
 
 Federal circuit courts review certain district court decisions de novo:
 
 - **Questions of law** — including qualified immunity determinations based on law rather than facts
-- **12(b)(6) dismissals** — the appeals court applies the same *Iqbal*/*Twombly* plausibility standard the district court did
+- **12(b)(6) dismissals** — the appeals court applies the same _Iqbal_/_Twombly_ plausibility standard the district court did
 - **Summary judgment** — reviewed de novo, with facts viewed in the light most favorable to the non-moving party
 
 ### What Doesn't Get De Novo Review

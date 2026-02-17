@@ -23,15 +23,19 @@ const cases = await getCollection("cases");
 const primer = await getCollection("primer");
 const process = await getCollection("process");
 
-const totalPages = allArticles.length + cases.length + primer.length + process.length;
+const totalPages =
+  allArticles.length + cases.length + primer.length + process.length;
 
 // Estimate reading time from content body lengths (~5 chars/word, ~250 wpm)
 const allContent = [...allArticles, ...cases, ...primer, ...process];
-const totalChars = allContent.reduce((sum, entry) => sum + (entry.body?.length || 0), 0);
+const totalChars = allContent.reduce(
+  (sum, entry) => sum + (entry.body?.length || 0),
+  0,
+);
 const totalWords = Math.round(totalChars / 5);
 const readingHours = Math.round(totalWords / 250 / 60);
 
-const uniqueCourts = new Set(cases.map(c => c.data.court)).size;
+const uniqueCourts = new Set(cases.map((c) => c.data.court)).size;
 ---
 
 <Base title="Home">
@@ -97,12 +101,15 @@ const uniqueCourts = new Set(cases.map(c => c.data.court)).size;
         <p class="text-sm text-slate mt-1">Step-by-Step Process Guides</p>
       </div>
       <div class="text-center p-6 bg-white rounded-lg shadow-sm">
-        <p class="text-3xl font-bold text-navy">{articles.length + drafts.length}</p>
+        <p class="text-3xl font-bold text-navy">
+          {articles.length + drafts.length}
+        </p>
         <p class="text-sm text-slate mt-1">In-Depth Articles</p>
       </div>
     </div>
     <p class="text-center text-sm text-slate mt-4">
-      {totalPages} pages · {uniqueCourts} courts cited · ~{readingHours} hours of reading · 100% free
+      {totalPages} pages · {uniqueCourts} courts cited · ~{readingHours} hours of
+      reading · 100% free
     </p>
   </section>
 

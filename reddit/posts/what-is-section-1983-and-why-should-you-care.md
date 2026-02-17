@@ -27,8 +27,8 @@ Section 1983 is the vehicle for suing over:
 ### Who you can sue
 
 - **Individual officers** — in their personal ("individual") capacity. This is how you get past sovereign immunity.
-- **Cities and counties** — under *Monell v. Department of Social Services*. But only if you can show the violation resulted from an official policy, custom, or deliberate indifference (like failure to train).
-- **NOT the state.** The Eleventh Amendment blocks § 1983 suits against states. Also not federal officers (that's a *Bivens* action, which is mostly dead).
+- **Cities and counties** — under _Monell v. Department of Social Services_. But only if you can show the violation resulted from an official policy, custom, or deliberate indifference (like failure to train).
+- **NOT the state.** The Eleventh Amendment blocks § 1983 suits against states. Also not federal officers (that's a _Bivens_ action, which is mostly dead).
 
 ### Who you can't sue
 

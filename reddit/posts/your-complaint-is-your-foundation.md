@@ -12,7 +12,7 @@ I get it. You want to be heard. You want the court to know what happened. But yo
 
 ### What the court actually needs from your complaint
 
-After *Ashcroft v. Iqbal* and *Bell Atlantic v. Twombly*, your complaint must contain:
+After _Ashcroft v. Iqbal_ and _Bell Atlantic v. Twombly_, your complaint must contain:
 
 1. **Factual allegations** — specific, non-conclusory facts about what each defendant did
 2. **Plausibility** — enough factual content that the court can draw a "reasonable inference" the defendant is liable

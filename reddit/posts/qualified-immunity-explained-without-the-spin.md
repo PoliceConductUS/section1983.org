@@ -6,26 +6,27 @@
 
 ---
 
-Qualified immunity is the reason most § 1983 cases die. Not because the officer did nothing wrong — but because no court has previously said that *this specific* wrong was wrong in *this specific* way.
+Qualified immunity is the reason most § 1983 cases die. Not because the officer did nothing wrong — but because no court has previously said that _this specific_ wrong was wrong in _this specific_ way.
 
 Here's how it actually works, stripped of the political framing from both sides.
 
 ### The two-part test
 
-After *Pearson v. Callahan* (2009), courts ask:
+After _Pearson v. Callahan_ (2009), courts ask:
 
 1. Did the officer violate a constitutional right?
 2. Was that right "clearly established" at the time?
 
-Courts can address these in either order — or skip question 1 entirely. That's the trap. If a court jumps straight to "not clearly established" without deciding whether a violation occurred, the right *never gets established*. The next plaintiff faces the same gap.
+Courts can address these in either order — or skip question 1 entirely. That's the trap. If a court jumps straight to "not clearly established" without deciding whether a violation occurred, the right _never gets established_. The next plaintiff faces the same gap.
 
 ### What "clearly established" actually means
 
 It doesn't mean "a reasonable person would know this is wrong." It means a prior court decision — usually in your circuit — already addressed substantially similar facts and found a violation.
 
-The Supreme Court in *Ashcroft v. al-Kidd* said you need a case with facts specific enough that "every reasonable official" would have understood their conduct violated the law. General principles of law rarely suffice.
+The Supreme Court in _Ashcroft v. al-Kidd_ said you need a case with facts specific enough that "every reasonable official" would have understood their conduct violated the law. General principles of law rarely suffice.
 
 So an officer can:
+
 - Arrest you without probable cause
 - Use force that wasn't necessary
 - Retaliate against your speech
