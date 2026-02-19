@@ -45,6 +45,8 @@ locals {
   public_sentry_dsn_preview           = var.public_sentry_dsn_preview == null || trimspace(var.public_sentry_dsn_preview) == "" ? null : trimspace(var.public_sentry_dsn_preview)
   sentry_org                          = var.sentry_org == null || trimspace(var.sentry_org) == "" ? null : trimspace(var.sentry_org)
   sentry_project                      = var.sentry_project == null || trimspace(var.sentry_project) == "" ? null : trimspace(var.sentry_project)
+  sentry_auth_token                   = var.sentry_auth_token == null || trimspace(var.sentry_auth_token) == "" ? null : trimspace(var.sentry_auth_token)
+  has_sentry_auth_token               = nonsensitive(local.sentry_auth_token != null)
   github_environment_names            = toset(["production", "preview"])
   github_environment_variables = {
     production = merge(
@@ -587,9 +589,9 @@ resource "aws_cloudfront_distribution" "site" {
   web_acl_id          = var.waf_web_acl_arn
 
   origin {
-    domain_name              = aws_s3_bucket.site.bucket_regional_domain_name
-    origin_id                = local.origin_id
-    origin_access_control_id = aws_cloudfront_origin_access_control.site.id
+    domain_name                 = aws_s3_bucket.site.bucket_regional_domain_name
+    origin_id                   = local.origin_id
+    origin_access_control_id    = aws_cloudfront_origin_access_control.site.id
 
     s3_origin_config {
       origin_access_identity = ""
@@ -637,6 +639,10 @@ resource "aws_cloudfront_distribution" "site" {
     ssl_support_method       = "sni-only"
     minimum_protocol_version = "TLSv1.2_2021"
   }
+
+  lifecycle {
+    ignore_changes = [origin]
+  }
 }
 
 resource "aws_cloudfront_function" "preview_router" {
@@ -678,9 +684,9 @@ resource "aws_cloudfront_distribution" "preview" {
   web_acl_id          = var.waf_web_acl_arn
 
   origin {
-    domain_name              = aws_s3_bucket.preview.bucket_regional_domain_name
-    origin_id                = local.preview_origin_id
-    origin_access_control_id = aws_cloudfront_origin_access_control.site.id
+    domain_name                 = aws_s3_bucket.preview.bucket_regional_domain_name
+    origin_id                   = local.preview_origin_id
+    origin_access_control_id    = aws_cloudfront_origin_access_control.site.id
 
     s3_origin_config {
       origin_access_identity = ""
@@ -727,6 +733,10 @@ resource "aws_cloudfront_distribution" "preview" {
     acm_certificate_arn      = aws_acm_certificate_validation.site.certificate_arn
     ssl_support_method       = "sni-only"
     minimum_protocol_version = "TLSv1.2_2021"
+  }
+
+  lifecycle {
+    ignore_changes = [origin]
   }
 }
 
@@ -926,6 +936,17 @@ resource "github_actions_environment_variable" "environment_variables" {
   environment   = each.value.environment
   variable_name = each.value.name
   value         = each.value.value
+
+  depends_on = [github_repository_environment.environments]
+}
+
+resource "github_actions_environment_secret" "sentry_auth_token" {
+  for_each = local.has_sentry_auth_token ? local.github_environment_names : toset([])
+
+  repository      = var.github_repo
+  environment     = each.value
+  secret_name     = "SENTRY_AUTH_TOKEN"
+  plaintext_value = local.sentry_auth_token
 
   depends_on = [github_repository_environment.environments]
 }

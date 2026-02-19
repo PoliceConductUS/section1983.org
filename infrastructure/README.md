@@ -62,7 +62,8 @@ terraform -chdir=infrastructure/bootstrap output route53_name_servers
    `preview` (`AWS_ROLE_ARN`, `S3_BUCKET`, `CLOUDFRONT_DIST_ID`).
    If GA IDs are set in bootstrap tfvars, it also writes `PUBLIC_GA_MEASUREMENT_ID` per environment.
    If Sentry DSNs are set in bootstrap tfvars, it also writes `PUBLIC_SENTRY_DSN` and `PUBLIC_SENTRY_ENVIRONMENT` per environment.
-   If `sentry_org`/`sentry_project` are set and `SENTRY_AUTH_TOKEN` exists in each environment's secrets, workflows upload source maps to Sentry.
+   If `sentry_org`/`sentry_project` are set, workflows can upload source maps to Sentry.
+   If `sentry_auth_token` is set in bootstrap inputs, bootstrap also writes `SENTRY_AUTH_TOKEN` as a GitHub environment secret for both environments.
 
 If `bucket_name` is omitted in `infrastructure/bootstrap/terraform.tfvars`, bootstrap uses `<project_name>-site-<account_id>`.
 

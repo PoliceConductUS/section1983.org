@@ -16,6 +16,7 @@ public_sentry_dsn_production        = null
 public_sentry_dsn_preview           = null
 sentry_org                          = null
 sentry_project                      = null
+sentry_auth_token                   = null
 
 extra_dns_records = [
   {

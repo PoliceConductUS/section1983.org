@@ -58,6 +58,13 @@ variable "sentry_project" {
   default     = null
 }
 
+variable "sentry_auth_token" {
+  description = "Sentry auth token stored as SENTRY_AUTH_TOKEN GitHub environment secret for both production and preview. Leave null/empty to skip managing this secret."
+  type        = string
+  default     = null
+  sensitive   = true
+}
+
 variable "github_org" {
   description = "GitHub organization/user that owns the repository."
   type        = string

@@ -28,6 +28,14 @@ upsert_key() {
   local key="$1"
   local value="$2"
   local tmp
+  local rendered_line
+
+  rendered_line="${key}=$(env_quote "${value}")"
+
+  # If the exact key=value line already exists, leave the file untouched.
+  if grep -Fqx "${rendered_line}" "${ENV_FILE}"; then
+    return 0
+  fi
 
   tmp="$(mktemp)"
   awk -v key="${key}" '
@@ -41,7 +49,7 @@ upsert_key() {
   ' "${ENV_FILE}" > "${tmp}"
   mv "${tmp}" "${ENV_FILE}"
 
-  printf "%s=%s\n" "${key}" "$(env_quote "${value}")" >> "${ENV_FILE}"
+  printf "%s\n" "${rendered_line}" >> "${ENV_FILE}"
 }
 
 to_env_key() {

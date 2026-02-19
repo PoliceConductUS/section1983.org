@@ -44,6 +44,7 @@ Example `.env` keys:
 - `TF_VAR_public_sentry_dsn_preview`
 - `TF_VAR_sentry_org`
 - `TF_VAR_sentry_project`
+- `TF_VAR_sentry_auth_token`
 - `TF_STATE_BUCKET`
 - `AWS_ROLE_ARN`
 - `S3_BUCKET`
@@ -123,7 +124,8 @@ Optional Sentry inputs in `terraform.tfvars`:
 
 If set, Terraform creates `PUBLIC_SENTRY_DSN` and `PUBLIC_SENTRY_ENVIRONMENT` in the matching GitHub environment.
 If unset/null, Sentry is not initialized in that environment.
-If `sentry_org` and `sentry_project` are set and GitHub environment secret `SENTRY_AUTH_TOKEN` is present, deploy workflows upload frontend source maps to Sentry.
+If `sentry_org` and `sentry_project` are set, workflows can upload source maps to Sentry.
+If `sentry_auth_token` is set, Terraform also writes `SENTRY_AUTH_TOKEN` as a GitHub environment secret in both `production` and `preview`.
 
 ## Notes
 
