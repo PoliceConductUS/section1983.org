@@ -3,7 +3,16 @@ const SENTRY_DSN =
   typeof import.meta.env.PUBLIC_SENTRY_DSN === "string"
     ? import.meta.env.PUBLIC_SENTRY_DSN.trim()
     : "";
-const SENTRY_ENABLED = SENTRY_DSN.length > 0;
+const SENTRY_CDN_KEY = (() => {
+  const start = SENTRY_DSN.indexOf("//");
+  if (start === -1) return "";
+
+  const end = SENTRY_DSN.indexOf("@", start + 2);
+  if (end === -1) return "";
+
+  return SENTRY_DSN.slice(start + 2, end);
+})();
+const SENTRY_ENABLED = SENTRY_DSN.length > 0 && SENTRY_CDN_KEY.length > 0;
 const SENTRY_ENVIRONMENT =
   typeof import.meta.env.PUBLIC_SENTRY_ENVIRONMENT === "string" &&
   import.meta.env.PUBLIC_SENTRY_ENVIRONMENT.trim().length > 0
@@ -14,6 +23,9 @@ const SENTRY_RELEASE = (
   process.env.GITHUB_SHA ||
   "unknown"
 ).trim();
+const SENTRY_INLINE_SCRIPT = `
+
+`;
 ---
 
 {
@@ -22,20 +34,21 @@ const SENTRY_RELEASE = (
       <script
         type="text/javascript"
         is:inline
-        src="https://browser.sentry-cdn.com/8.55.0/bundle.tracing.min.js"
-        crossorigin="anonymous"></script>
+        src={`https://js.sentry-cdn.com/${SENTRY_CDN_KEY}.min.js`}
+        crossorigin="anonymous"
+      />
       <script
         type="text/javascript"
         is:inline
         define:vars={{ SENTRY_DSN, SENTRY_ENVIRONMENT, SENTRY_RELEASE }}>
-        if (typeof window.Sentry !== "undefined") {
-          window.Sentry.init({
-            dsn: SENTRY_DSN,
-            environment: SENTRY_ENVIRONMENT,
-            release: SENTRY_RELEASE,
-            tracesSampleRate: 0,
-          });
-        }
+            if (typeof window.Sentry !== "undefined") {
+              window.Sentry.init({
+                dsn: SENTRY_DSN,
+                environment: SENTRY_ENVIRONMENT,
+                release: SENTRY_RELEASE,
+                tracesSampleRate: 0,
+              });
+            }
       </script>
     </>
   )

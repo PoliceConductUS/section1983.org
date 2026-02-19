@@ -31,13 +31,24 @@ const structuredDataEntries = structuredData
   : [];
 const serializeStructuredData = (value: unknown) =>
   JSON.stringify(value).replace(/</g, "\\u003c");
-const fullCommitSha = (process.env.GIT_COMMIT_SHA || process.env.GITHUB_SHA || "unknown").trim();
-const shortCommitSha = fullCommitSha === "unknown" ? "unknown" : fullCommitSha.slice(0, 12);
-const commitDirtyRaw = (process.env.GIT_COMMIT_DIRTY || "").trim().toLowerCase();
-const isDirtyBuild = commitDirtyRaw === "1" || commitDirtyRaw === "true" || commitDirtyRaw === "yes";
-const commitDisplay = fullCommitSha === "unknown"
-  ? "unknown"
-  : `${shortCommitSha}${isDirtyBuild ? "-dirty" : ""}`;
+const fullCommitSha = (
+  process.env.GIT_COMMIT_SHA ||
+  process.env.GITHUB_SHA ||
+  "unknown"
+).trim();
+const shortCommitSha =
+  fullCommitSha === "unknown" ? "unknown" : fullCommitSha.slice(0, 12);
+const commitDirtyRaw = (process.env.GIT_COMMIT_DIRTY || "")
+  .trim()
+  .toLowerCase();
+const isDirtyBuild =
+  commitDirtyRaw === "1" ||
+  commitDirtyRaw === "true" ||
+  commitDirtyRaw === "yes";
+const commitDisplay =
+  fullCommitSha === "unknown"
+    ? "unknown"
+    : `${shortCommitSha}${isDirtyBuild ? "-dirty" : ""}`;
 ---
 
 <!doctype html>
