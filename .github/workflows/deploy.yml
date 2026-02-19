@@ -28,6 +28,8 @@ jobs:
 
       - run: npx astro build
         env:
+          GIT_COMMIT_SHA: ${{ github.sha }}
+          GIT_COMMIT_DIRTY: "0"
           PUBLIC_GA_MEASUREMENT_ID: ${{ vars.PUBLIC_GA_MEASUREMENT_ID }}
 
       - uses: aws-actions/configure-aws-credentials@v4

@@ -30,6 +30,13 @@ const structuredDataEntries = structuredData
   : [];
 const serializeStructuredData = (value: unknown) =>
   JSON.stringify(value).replace(/</g, "\\u003c");
+const fullCommitSha = (process.env.GIT_COMMIT_SHA || process.env.GITHUB_SHA || "unknown").trim();
+const shortCommitSha = fullCommitSha === "unknown" ? "unknown" : fullCommitSha.slice(0, 12);
+const commitDirtyRaw = (process.env.GIT_COMMIT_DIRTY || "").trim().toLowerCase();
+const isDirtyBuild = commitDirtyRaw === "1" || commitDirtyRaw === "true" || commitDirtyRaw === "yes";
+const commitDisplay = fullCommitSha === "unknown"
+  ? "unknown"
+  : `${shortCommitSha}${isDirtyBuild ? "-dirty" : ""}`;
 ---
 
 <!doctype html>
@@ -41,6 +48,8 @@ const serializeStructuredData = (value: unknown) =>
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
     <meta name="author" content="Institute for Police Conduct, Inc." />
+    <meta name="build-commit" content={fullCommitSha} />
+    <meta name="build-commit-dirty" content={isDirtyBuild ? "true" : "false"} />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -477,6 +486,9 @@ const serializeStructuredData = (value: unknown) =>
             > · <a href="/rss.xml" class="hover:text-gold transition-colors"
               >RSS</a
             >
+          </p>
+          <p class="mt-2">
+            Build commit: <code>{commitDisplay}</code>
           </p>
         </div>
       </div>
