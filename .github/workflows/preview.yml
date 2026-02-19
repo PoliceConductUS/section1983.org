@@ -16,6 +16,7 @@ concurrency:
 jobs:
   preview:
     runs-on: ubuntu-latest
+    environment: preview
     steps:
       - uses: actions/checkout@v4
 
@@ -30,6 +31,7 @@ jobs:
         run: npx astro build
         env:
           SITE_URL: https://pr-${{ github.event.pull_request.number }}.preview.section1983.org
+          PUBLIC_GA_MEASUREMENT_ID: ${{ vars.PUBLIC_GA_MEASUREMENT_ID }}
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -39,13 +41,13 @@ jobs:
       - name: Sync to S3 preview prefix
         run: |
           aws s3 sync dist/ \
-            s3://${{ vars.S3_BUCKET_PREVIEW }}/pr-${{ github.event.pull_request.number }}/ \
+            s3://${{ vars.S3_BUCKET }}/pr-${{ github.event.pull_request.number }}/ \
             --delete
 
       - name: Invalidate preview CloudFront
         run: |
           aws cloudfront create-invalidation \
-            --distribution-id ${{ vars.CLOUDFRONT_DIST_PREVIEW }} \
+            --distribution-id ${{ vars.CLOUDFRONT_DIST_ID }} \
             --paths "/pr-${{ github.event.pull_request.number }}/*"
 
       - name: Comment preview URL

@@ -1,43 +1,65 @@
-# Astro Starter Kit: Minimal
+# section1983.org
 
-```sh
-npm create astro@latest -- --template minimal
+Static Astro site with AWS infrastructure managed by Terraform.
+
+## Stack
+
+- Astro for site build
+- S3 + CloudFront for hosting/CDN
+- ACM for TLS certs
+- Route53 for DNS
+- GitHub Actions for deploys
+- Terraform bootstrap stack for all infrastructure
+
+## Local Dev
+
+```bash
+npm ci
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Build
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm run build
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Note: `npm run build` expects Mermaid CLI (`mmdc`) for diagram generation.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Infrastructure
 
-Any static assets, like images, can be placed in the `public/` directory.
+Single Terraform entrypoint:
 
-## 🧞 Commands
+- `infrastructure/bootstrap`
 
-All commands are run from the root of the project, from a terminal:
+Use:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+```bash
+export GITHUB_TOKEN=<github-token-with-repo-admin-access>
+terraform -chdir=infrastructure/bootstrap init
+terraform -chdir=infrastructure/bootstrap apply
+```
 
-## 👀 Want to learn more?
+Or load local `.env` first:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+set -a
+source .env
+set +a
+terraform -chdir=infrastructure/bootstrap apply
+```
+
+Full setup docs:
+
+- `infrastructure/README.md`
+- `infrastructure/bootstrap/README.md`
+
+## Deploy
+
+Deploys are handled by GitHub Actions:
+
+- `.github/workflows/deploy.yml` (production)
+- `.github/workflows/preview.yml` (PR previews)
+- `.github/workflows/preview-cleanup.yml` (preview cleanup on PR close)
+
+After bootstrap, deploy workflows only sync content to S3 and invalidate CloudFront.
