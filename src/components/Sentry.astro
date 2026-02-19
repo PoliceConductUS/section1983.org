@@ -1,0 +1,42 @@
+---
+const SENTRY_DSN =
+  typeof import.meta.env.PUBLIC_SENTRY_DSN === "string"
+    ? import.meta.env.PUBLIC_SENTRY_DSN.trim()
+    : "";
+const SENTRY_ENABLED = SENTRY_DSN.length > 0;
+const SENTRY_ENVIRONMENT =
+  typeof import.meta.env.PUBLIC_SENTRY_ENVIRONMENT === "string" &&
+  import.meta.env.PUBLIC_SENTRY_ENVIRONMENT.trim().length > 0
+    ? import.meta.env.PUBLIC_SENTRY_ENVIRONMENT.trim()
+    : "production";
+const SENTRY_RELEASE = (
+  process.env.GIT_COMMIT_SHA ||
+  process.env.GITHUB_SHA ||
+  "unknown"
+).trim();
+---
+
+{
+  SENTRY_ENABLED && (
+    <>
+      <script
+        type="text/javascript"
+        is:inline
+        src="https://browser.sentry-cdn.com/8.55.0/bundle.tracing.min.js"
+        crossorigin="anonymous"></script>
+      <script
+        type="text/javascript"
+        is:inline
+        define:vars={{ SENTRY_DSN, SENTRY_ENVIRONMENT, SENTRY_RELEASE }}>
+        if (typeof window.Sentry !== "undefined") {
+          window.Sentry.init({
+            dsn: SENTRY_DSN,
+            environment: SENTRY_ENVIRONMENT,
+            release: SENTRY_RELEASE,
+            tracesSampleRate: 0,
+          });
+        }
+      </script>
+    </>
+  )
+}

@@ -34,6 +34,30 @@ variable "public_ga_measurement_id_preview" {
   default     = null
 }
 
+variable "public_sentry_dsn_production" {
+  description = "Sentry DSN exposed to production frontend as PUBLIC_SENTRY_DSN. Leave null/empty to disable Sentry in production."
+  type        = string
+  default     = null
+}
+
+variable "public_sentry_dsn_preview" {
+  description = "Sentry DSN exposed to preview frontend as PUBLIC_SENTRY_DSN. Leave null/empty to disable Sentry in preview."
+  type        = string
+  default     = null
+}
+
+variable "sentry_org" {
+  description = "Sentry organization slug for source map uploads in GitHub Actions (example: institute-for-police-conduct-i)."
+  type        = string
+  default     = null
+}
+
+variable "sentry_project" {
+  description = "Sentry project slug for source map uploads in GitHub Actions."
+  type        = string
+  default     = null
+}
+
 variable "github_org" {
   description = "GitHub organization/user that owns the repository."
   type        = string

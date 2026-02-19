@@ -40,6 +40,10 @@ Example `.env` keys:
 - `GITHUB_TOKEN`
 - `TF_VAR_public_ga_measurement_id_production`
 - `TF_VAR_public_ga_measurement_id_preview`
+- `TF_VAR_public_sentry_dsn_production`
+- `TF_VAR_public_sentry_dsn_preview`
+- `TF_VAR_sentry_org`
+- `TF_VAR_sentry_project`
 - `TF_STATE_BUCKET`
 - `AWS_ROLE_ARN`
 - `S3_BUCKET`
@@ -109,6 +113,17 @@ Optional GA inputs in `terraform.tfvars`:
 
 If set, Terraform also creates `PUBLIC_GA_MEASUREMENT_ID` in the matching GitHub environment.
 If unset/null, no GA variable is written and the GA component renders nothing.
+
+Optional Sentry inputs in `terraform.tfvars`:
+
+- `public_sentry_dsn_production`
+- `public_sentry_dsn_preview`
+- `sentry_org`
+- `sentry_project`
+
+If set, Terraform creates `PUBLIC_SENTRY_DSN` and `PUBLIC_SENTRY_ENVIRONMENT` in the matching GitHub environment.
+If unset/null, Sentry is not initialized in that environment.
+If `sentry_org` and `sentry_project` are set and GitHub environment secret `SENTRY_AUTH_TOKEN` is present, deploy workflows upload frontend source maps to Sentry.
 
 ## Notes
 

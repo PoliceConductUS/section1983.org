@@ -12,6 +12,10 @@ site_bucket_force_destroy    = false
 enable_site_bucket_versioning = true
 public_ga_measurement_id_production = null
 public_ga_measurement_id_preview    = null
+public_sentry_dsn_production        = null
+public_sentry_dsn_preview           = null
+sentry_org                          = null
+sentry_project                      = null
 
 extra_dns_records = [
   {

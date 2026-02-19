@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import GoogleAnalytics from "../components/GoogleAnalytics.astro";
+import Sentry from "../components/Sentry.astro";
 import SuggestChange from "../components/SuggestChange.astro";
 import DonateBanner from "../components/DonateBanner.astro";
 
@@ -43,6 +44,7 @@ const commitDisplay = fullCommitSha === "unknown"
 <html lang="en">
   <head>
     <GoogleAnalytics />
+    <Sentry />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />

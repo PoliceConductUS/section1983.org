@@ -41,6 +41,10 @@ locals {
   }
   public_ga_measurement_id_production = var.public_ga_measurement_id_production == null || trimspace(var.public_ga_measurement_id_production) == "" ? null : trimspace(var.public_ga_measurement_id_production)
   public_ga_measurement_id_preview    = var.public_ga_measurement_id_preview == null || trimspace(var.public_ga_measurement_id_preview) == "" ? null : trimspace(var.public_ga_measurement_id_preview)
+  public_sentry_dsn_production        = var.public_sentry_dsn_production == null || trimspace(var.public_sentry_dsn_production) == "" ? null : trimspace(var.public_sentry_dsn_production)
+  public_sentry_dsn_preview           = var.public_sentry_dsn_preview == null || trimspace(var.public_sentry_dsn_preview) == "" ? null : trimspace(var.public_sentry_dsn_preview)
+  sentry_org                          = var.sentry_org == null || trimspace(var.sentry_org) == "" ? null : trimspace(var.sentry_org)
+  sentry_project                      = var.sentry_project == null || trimspace(var.sentry_project) == "" ? null : trimspace(var.sentry_project)
   github_environment_names            = toset(["production", "preview"])
   github_environment_variables = {
     production = merge(
@@ -51,6 +55,16 @@ locals {
       },
       local.public_ga_measurement_id_production == null ? {} : {
         PUBLIC_GA_MEASUREMENT_ID = local.public_ga_measurement_id_production
+      },
+      local.public_sentry_dsn_production == null ? {} : {
+        PUBLIC_SENTRY_DSN         = local.public_sentry_dsn_production
+        PUBLIC_SENTRY_ENVIRONMENT = "production"
+      },
+      local.sentry_org == null ? {} : {
+        SENTRY_ORG = local.sentry_org
+      },
+      local.sentry_project == null ? {} : {
+        SENTRY_PROJECT = local.sentry_project
       }
     )
     preview = merge(
@@ -61,6 +75,16 @@ locals {
       },
       local.public_ga_measurement_id_preview == null ? {} : {
         PUBLIC_GA_MEASUREMENT_ID = local.public_ga_measurement_id_preview
+      },
+      local.public_sentry_dsn_preview == null ? {} : {
+        PUBLIC_SENTRY_DSN         = local.public_sentry_dsn_preview
+        PUBLIC_SENTRY_ENVIRONMENT = "preview"
+      },
+      local.sentry_org == null ? {} : {
+        SENTRY_ORG = local.sentry_org
+      },
+      local.sentry_project == null ? {} : {
+        SENTRY_PROJECT = local.sentry_project
       }
     )
   }

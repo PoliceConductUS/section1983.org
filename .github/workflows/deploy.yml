@@ -31,6 +31,24 @@ jobs:
           GIT_COMMIT_SHA: ${{ github.sha }}
           GIT_COMMIT_DIRTY: "0"
           PUBLIC_GA_MEASUREMENT_ID: ${{ vars.PUBLIC_GA_MEASUREMENT_ID }}
+          PUBLIC_SENTRY_DSN: ${{ vars.PUBLIC_SENTRY_DSN }}
+          PUBLIC_SENTRY_ENVIRONMENT: ${{ vars.PUBLIC_SENTRY_ENVIRONMENT }}
+
+      - name: Upload source maps to Sentry
+        if: ${{ vars.PUBLIC_SENTRY_DSN != '' && vars.SENTRY_ORG != '' && vars.SENTRY_PROJECT != '' && secrets.SENTRY_AUTH_TOKEN != '' }}
+        env:
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: ${{ vars.SENTRY_ORG }}
+          SENTRY_PROJECT: ${{ vars.SENTRY_PROJECT }}
+          SENTRY_RELEASE: ${{ github.sha }}
+        run: |
+          npx -y @sentry/cli sourcemaps upload dist/_astro \
+            --release "$SENTRY_RELEASE" \
+            --url-prefix "~/_astro" \
+            --validate
+
+      - name: Remove source maps from deployment artifact
+        run: find dist -type f -name '*.map' -delete
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
