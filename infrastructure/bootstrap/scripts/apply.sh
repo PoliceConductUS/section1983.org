@@ -17,6 +17,25 @@ load_dotenv_if_present() {
   set +a
 }
 
+map_common_env_to_tf_vars() {
+  # Support plain env names in .env and map them to Terraform inputs.
+  if [[ -n "${SENTRY_AUTH_TOKEN+x}" ]] && [[ -z "${TF_VAR_sentry_auth_token+x}" ]] && [[ -z "${TF_VAR_SENTRY_AUTH_TOKEN+x}" ]]; then
+    export TF_VAR_sentry_auth_token="${SENTRY_AUTH_TOKEN}"
+  fi
+  if [[ -n "${SENTRY_ORG+x}" ]] && [[ -z "${TF_VAR_sentry_org+x}" ]] && [[ -z "${TF_VAR_SENTRY_ORG+x}" ]]; then
+    export TF_VAR_sentry_org="${SENTRY_ORG}"
+  fi
+  if [[ -n "${SENTRY_PROJECT+x}" ]] && [[ -z "${TF_VAR_sentry_project+x}" ]] && [[ -z "${TF_VAR_SENTRY_PROJECT+x}" ]]; then
+    export TF_VAR_sentry_project="${SENTRY_PROJECT}"
+  fi
+  if [[ -n "${PUBLIC_SENTRY_DSN_PRODUCTION+x}" ]] && [[ -z "${TF_VAR_public_sentry_dsn_production+x}" ]] && [[ -z "${TF_VAR_PUBLIC_SENTRY_DSN_PRODUCTION+x}" ]]; then
+    export TF_VAR_public_sentry_dsn_production="${PUBLIC_SENTRY_DSN_PRODUCTION}"
+  fi
+  if [[ -n "${PUBLIC_SENTRY_DSN_PREVIEW+x}" ]] && [[ -z "${TF_VAR_public_sentry_dsn_preview+x}" ]] && [[ -z "${TF_VAR_PUBLIC_SENTRY_DSN_PREVIEW+x}" ]]; then
+    export TF_VAR_public_sentry_dsn_preview="${PUBLIC_SENTRY_DSN_PREVIEW}"
+  fi
+}
+
 normalize_tf_var_names() {
   local vars_file="${ROOT_DIR}/variables.tf"
   if [[ ! -f "${vars_file}" ]]; then
@@ -77,6 +96,28 @@ preflight_explicit_tf_var_secrets() {
   fi
 }
 
+preflight_sentry_upload_requirements() {
+  # If upload is configured, fail before apply when required metadata is missing.
+  local has_token=0
+  local has_org=0
+  local has_project=0
+  if [[ -n "${TF_VAR_sentry_auth_token+x}" ]] || [[ -n "${TF_VAR_SENTRY_AUTH_TOKEN+x}" ]]; then
+    has_token=1
+  fi
+  if [[ -n "${TF_VAR_sentry_org+x}" ]] || [[ -n "${TF_VAR_SENTRY_ORG+x}" ]]; then
+    has_org=1
+  fi
+  if [[ -n "${TF_VAR_sentry_project+x}" ]] || [[ -n "${TF_VAR_SENTRY_PROJECT+x}" ]]; then
+    has_project=1
+  fi
+
+  if [[ ${has_token} -eq 1 ]] && ([[ ${has_org} -eq 0 ]] || [[ ${has_project} -eq 0 ]]); then
+    echo "Error: Sentry token is set, but sentry_org/sentry_project is missing." >&2
+    echo "Set SENTRY_ORG and SENTRY_PROJECT (or TF_VAR_sentry_org / TF_VAR_sentry_project)." >&2
+    exit 1
+  fi
+}
+
 warn_if_sentry_tf_var_missing() {
   if [[ -z "${TF_VAR_sentry_auth_token+x}" ]] && [[ -z "${TF_VAR_SENTRY_AUTH_TOKEN+x}" ]]; then
     echo "Warning: TF_VAR_sentry_auth_token is not set." >&2
@@ -132,8 +173,10 @@ preflight_account_check() {
 }
 
 load_dotenv_if_present
+map_common_env_to_tf_vars
 normalize_tf_var_names
 preflight_explicit_tf_var_secrets
+preflight_sentry_upload_requirements
 warn_if_sentry_tf_var_missing
 preflight_account_check
 terraform -chdir="${ROOT_DIR}" apply "$@"
