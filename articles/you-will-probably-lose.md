@@ -1,11 +1,11 @@
 ---
 title: "You Will Probably Lose. You Might Sue Anyway. Here's Why That Still Matters."
 description: "The honest reality of filing a pro se § 1983 civil rights lawsuit — and why documenting your case matters even when you lose."
-pubDate: 2026-02-23
+pubDate: 2026-03-10
 author: "Institute for Police Conduct, Inc."
 tags:
   ["reality-check", "qualified-immunity", "getting-started", "policeconduct"]
-draft: true
+draft: false
 ---
 
 Let me be honest with you in a way most people won't be.

@@ -47,6 +47,10 @@ const SENTRY_INLINE_SCRIPT = `
                 environment: SENTRY_ENVIRONMENT,
                 release: SENTRY_RELEASE,
                 tracesSampleRate: 0,
+                  integrations: [
+                      window.Sentry.consoleLoggingIntegration({ levels: ["log", "warn", "error"] }),
+                  ],
+                  enableLogs: true,
               });
             }
       </script>

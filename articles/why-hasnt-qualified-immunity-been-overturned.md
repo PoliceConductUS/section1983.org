@@ -25,6 +25,18 @@ Start with the text. Section 1983 reads:
 
 "Shall be liable." Not "shall be liable unless the constitutional right wasn't clearly established." Not "shall be liable unless a reasonable officer wouldn't have known." Just: shall be liable.
 
+## The original 1871 text was even clearer
+
+The current codified text is already bad news for qualified immunity. But the original 1871 enactment was even more explicit.
+
+When Congress passed the Civil Rights Act of 1871, it did not just say state actors who violate constitutional rights "shall be liable." It added a reinforcing clause making that liability apply notwithstanding any contrary state "law, statute, ordinance, regulation, custom, or usage."
+
+That matters because qualified immunity was justified in [_Pierson v. Ray_](/cases/pierson-v-ray) as a carryover from common-law defenses. The original statute anticipated exactly that kind of move and told courts not to do it. If state law, state custom, or state common-law immunity pointed one way, and the federal statute pointed the other, the federal statute controlled.
+
+Three years later, when Congress reorganized the federal statutes in the Revised Statutes of 1874, that "notwithstanding" language was omitted from the codified text. Qualified-immunity defenders sometimes treat that omission as proof that the clause does not matter. The better historical reading is the opposite: nineteenth-century codifiers routinely cut repetitive "notwithstanding" clauses for concision without changing substance. The point of the 1874 revision was to condense and reorganize the federal statutes, not quietly restore defenses that the 42nd Congress had just displaced.
+
+So the historical problem for qualified immunity is not just that modern § 1983 says "shall be liable." It is that the original Congress said so in even more emphatic terms, and specifically signaled that contrary state-law rules were not supposed to survive.
+
 The Court's original justification in _Pierson_ was that common-law defenses of good faith and probable cause survived the statute's enactment. But in _Harlow_, the Court stripped out the good-faith requirement entirely — replacing the subjective "did the officer act in good faith?" with the objective "was the right clearly established?" That severed even the tenuous connection to historical common law.
 
 What remains is a doctrine with no textual basis, no historical basis, and no democratic legitimacy. The Supreme Court has no Article I legislative power. The Constitution grants lawmaking authority to Congress alone. Qualified immunity is judge-made legislation pretending to be statutory interpretation.
