@@ -1,7 +1,5 @@
 ---
 import Base from "./Base.astro";
-import DisqusComments from "../components/DisqusComments.astro";
-import ShareButtons from "../components/ShareButtons.astro";
 
 interface Props {
   title: string;
@@ -164,16 +162,6 @@ const formattedDate = dateDecided.toLocaleDateString("en-US", {
       )
     }
 
-    <ShareButtons
-      title={title}
-      description={holding}
-      url={`https://www.section1983.org/cases/${Astro.params.slug}/`}
-    />
-
     <slot name="pagination" />
   </article>
-
-  <div class="mt-16">
-    <DisqusComments />
-  </div>
 </Base>

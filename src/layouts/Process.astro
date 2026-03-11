@@ -1,7 +1,5 @@
 ---
 import Base from "./Base.astro";
-import DisqusComments from "../components/DisqusComments.astro";
-import ShareButtons from "../components/ShareButtons.astro";
 
 interface Props {
   title: string;
@@ -45,17 +43,6 @@ const { title, description, order, movant, respondent, slug } = Astro.props;
       <slot />
     </div>
 
-    <ShareButtons
-      title={title}
-      description={description}
-      url={`https://www.section1983.org/process/${slug}/`}
-    />
-
     <slot name="pagination" />
   </article>
-
-  <DisqusComments
-    pageUrl={`https://www.section1983.org/process/${slug}/`}
-    disqusIdentifier={`process-${slug}`}
-  />
 </Base>

@@ -41,6 +41,12 @@ const structuredData = {
 ---
 
 <Base title={title} description={description} structuredData={structuredData}>
+  <ShareButtons
+    title={title}
+    description={description}
+    url={`https://www.section1983.org/articles/${Astro.params.slug}/`}
+  />
+
   <slot name="breadcrumbs" />
   <article>
     <header class="mb-10">
@@ -71,12 +77,6 @@ const structuredData = {
     <div class="prose">
       <slot />
     </div>
-
-    <ShareButtons
-      title={title}
-      description={description}
-      url={`https://www.section1983.org/articles/${Astro.params.slug}/`}
-    />
 
     <slot name="pagination" />
   </article>
