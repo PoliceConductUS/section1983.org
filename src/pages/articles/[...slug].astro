@@ -23,14 +23,104 @@ export async function getStaticPaths() {
 
 const { article, prev, next } = Astro.props;
 const { Content } = await render(article);
+const canonicalUrl = `https://www.section1983.org/articles/${article.id}/`;
+const wordCount = article.body
+  ? article.body.trim().split(/\s+/).filter(Boolean).length
+  : undefined;
+const ogImage = `/og/articles/${article.id}.svg`;
+
+const articleText = [
+  article.data.title,
+  article.data.description,
+  article.body || "",
+]
+  .join("\n")
+  .toLowerCase();
+const articleTags = article.data.tags || [];
+const primerEntries = await getCollection("primer");
+const caseEntries = await getCollection("cases");
+const processEntries = await getCollection("process");
+
+function countSharedTags(left: string[] = [], right: string[] = []) {
+  const rightSet = new Set(right);
+  return left.reduce((count, tag) => count + (rightSet.has(tag) ? 1 : 0), 0);
+}
+
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function containsPhrase(haystack: string, needle: string) {
+  if (!needle.trim()) return false;
+  return new RegExp(`\\b${escapeRegExp(needle.toLowerCase())}\\b`, "i").test(
+    haystack,
+  );
+}
+
+const relatedPrimer = primerEntries
+  .map((entry) => {
+    let score = 0;
+    if (articleText.includes(`/primer/${entry.id}`)) score += 8;
+    if (containsPhrase(articleText, entry.data.term)) score += 4;
+    score += countSharedTags(articleTags, entry.data.tags || []) * 2;
+    return { entry, score };
+  })
+  .filter(({ score }) => score > 0)
+  .sort((a, b) => b.score - a.score || a.entry.data.term.localeCompare(b.entry.data.term))
+  .slice(0, 4)
+  .map(({ entry }) => ({
+    href: `/primer/${entry.id}`,
+    label: entry.data.term,
+    description: entry.data.description,
+  }));
+
+const relatedCases = caseEntries
+  .map((entry) => {
+    let score = 0;
+    if (articleText.includes(`/cases/${entry.id}`)) score += 10;
+    if (containsPhrase(articleText, entry.data.title)) score += 4;
+    score += countSharedTags(articleTags, entry.data.tags || []) * 2;
+    return { entry, score };
+  })
+  .filter(({ score }) => score > 0)
+  .sort((a, b) => b.score - a.score || a.entry.data.title.localeCompare(b.entry.data.title))
+  .slice(0, 4)
+  .map(({ entry }) => ({
+    href: `/cases/${entry.id}`,
+    label: entry.data.title,
+    description: entry.data.holding,
+  }));
+
+const relatedProcess = processEntries
+  .map((entry) => {
+    let score = 0;
+    if (articleText.includes(`/process/${entry.id}`)) score += 8;
+    if (containsPhrase(articleText, entry.data.title)) score += 2;
+    score += countSharedTags(articleTags, entry.data.tags || []) * 2;
+    return { entry, score };
+  })
+  .filter(({ score }) => score > 0)
+  .sort((a, b) => a.entry.data.order - b.entry.data.order || b.score - a.score)
+  .slice(0, 3)
+  .map(({ entry }) => ({
+    href: `/process/${entry.id}`,
+    label: `Step ${entry.data.order}: ${entry.data.title}`,
+    description: entry.data.description,
+  }));
 ---
 
 <Article
   title={article.data.title}
+  canonicalUrl={canonicalUrl}
   description={article.data.description}
   pubDate={article.data.pubDate}
   author={article.data.author}
   tags={article.data.tags}
+  wordCount={wordCount}
+  ogImage={ogImage}
+  relatedPrimer={relatedPrimer}
+  relatedCases={relatedCases}
+  relatedProcess={relatedProcess}
 >
   <Breadcrumbs
     slot="breadcrumbs"

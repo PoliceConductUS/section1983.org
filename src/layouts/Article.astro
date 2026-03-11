@@ -6,12 +6,30 @@ import ShareButtons from "../components/ShareButtons.astro";
 interface Props {
   title: string;
   description?: string;
+  canonicalUrl: string;
   pubDate?: Date | null;
   author?: string;
   tags?: string[];
+  wordCount?: number;
+  ogImage?: string;
+  relatedCases?: { href: string; label: string; description: string }[];
+  relatedPrimer?: { href: string; label: string; description: string }[];
+  relatedProcess?: { href: string; label: string; description: string }[];
 }
 
-const { title, description, pubDate, author, tags } = Astro.props;
+const {
+  title,
+  description,
+  canonicalUrl,
+  pubDate,
+  author,
+  tags,
+  wordCount,
+  ogImage,
+  relatedCases = [],
+  relatedPrimer = [],
+  relatedProcess = [],
+} = Astro.props;
 
 const formattedDate = pubDate
   ? new Intl.DateTimeFormat("en-US", {
@@ -20,31 +38,54 @@ const formattedDate = pubDate
       day: "numeric",
     }).format(pubDate)
   : null;
+const imageUrl = new URL(
+  ogImage || "/og-image.png",
+  "https://www.section1983.org",
+).toString();
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: title,
   description: description,
-  author: {
-    "@type": "Organization",
-    name: "Institute for Police Conduct, Inc.",
-    url: "https://policeconduct.org",
-  },
+  author: author
+    ? {
+        "@type": "Person",
+        name: author,
+      }
+    : {
+        "@type": "Organization",
+        name: "Institute for Police Conduct, Inc.",
+        url: "https://policeconduct.org",
+      },
+  image: imageUrl,
+  isAccessibleForFree: true,
+  keywords: tags?.join(", "),
+  mainEntityOfPage: canonicalUrl,
   publisher: {
     "@type": "Organization",
     name: "Institute for Police Conduct, Inc.",
     url: "https://policeconduct.org",
   },
+  url: canonicalUrl,
   ...(pubDate && { datePublished: pubDate.toISOString() }),
+  ...(wordCount ? { wordCount } : {}),
 };
 ---
 
-<Base title={title} description={description} structuredData={structuredData}>
+<Base
+  title={title}
+  description={description}
+  canonicalUrl={canonicalUrl}
+  ogImage={ogImage}
+  ogType="article"
+  ogImageAlt={title}
+  structuredData={structuredData}
+>
   <ShareButtons
     title={title}
     description={description}
-    url={`https://www.section1983.org/articles/${Astro.params.slug}/`}
+    url={canonicalUrl}
   />
 
   <slot name="breadcrumbs" />
@@ -78,11 +119,77 @@ const structuredData = {
       <slot />
     </div>
 
+    {
+      (relatedPrimer.length > 0 ||
+        relatedCases.length > 0 ||
+        relatedProcess.length > 0) && (
+        <aside class="mt-12 border-t border-slate-200 pt-8 not-prose">
+          <h2 class="text-xl font-bold text-navy mb-4">Keep Reading</h2>
+          <div class="grid gap-6 md:grid-cols-3">
+            {relatedPrimer.length > 0 && (
+              <section>
+                <h3 class="text-sm font-bold uppercase tracking-wide text-navy mb-3">
+                  Primer Terms
+                </h3>
+                <div class="space-y-3">
+                  {relatedPrimer.map((entry) => (
+                    <a
+                      href={entry.href}
+                      class="block rounded border border-slate-200 bg-white p-4 hover:border-gold hover:shadow-sm transition-all"
+                    >
+                      <p class="font-semibold text-navy">{entry.label}</p>
+                      <p class="mt-1 text-sm text-slate">{entry.description}</p>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )}
+            {relatedCases.length > 0 && (
+              <section>
+                <h3 class="text-sm font-bold uppercase tracking-wide text-navy mb-3">
+                  Relevant Cases
+                </h3>
+                <div class="space-y-3">
+                  {relatedCases.map((entry) => (
+                    <a
+                      href={entry.href}
+                      class="block rounded border border-slate-200 bg-white p-4 hover:border-gold hover:shadow-sm transition-all"
+                    >
+                      <p class="font-semibold text-navy">{entry.label}</p>
+                      <p class="mt-1 text-sm text-slate">{entry.description}</p>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )}
+            {relatedProcess.length > 0 && (
+              <section>
+                <h3 class="text-sm font-bold uppercase tracking-wide text-navy mb-3">
+                  Process Stages
+                </h3>
+                <div class="space-y-3">
+                  {relatedProcess.map((entry) => (
+                    <a
+                      href={entry.href}
+                      class="block rounded border border-slate-200 bg-white p-4 hover:border-gold hover:shadow-sm transition-all"
+                    >
+                      <p class="font-semibold text-navy">{entry.label}</p>
+                      <p class="mt-1 text-sm text-slate">{entry.description}</p>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )}
+          </div>
+        </aside>
+      )
+    }
+
     <slot name="pagination" />
   </article>
 
   <DisqusComments
-    pageUrl={`https://www.section1983.org/articles/${Astro.params.slug}/`}
+    pageUrl={canonicalUrl}
     disqusIdentifier={`article-${Astro.params.slug}`}
   />
 </Base>

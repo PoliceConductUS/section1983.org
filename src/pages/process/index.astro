@@ -7,11 +7,92 @@ const svgContent = fs.readFileSync(
   path.join(process.cwd(), "public/diagrams/process-flowchart.svg"),
   "utf-8",
 );
+
+const processStages = [
+  {
+    order: 1,
+    name: "Preparing Your Case",
+    url: "https://www.section1983.org/process/preparing-your-case/",
+    text: "Gather records, preserve evidence, and organize the facts before filing.",
+  },
+  {
+    order: 2,
+    name: "Filing",
+    url: "https://www.section1983.org/process/filing/",
+    text: "File the complaint, pay the filing fee or request IFP status, and open the case.",
+  },
+  {
+    order: 3,
+    name: "Service of Process",
+    url: "https://www.section1983.org/process/service/",
+    text: "Serve each defendant correctly and on time.",
+  },
+  {
+    order: 4,
+    name: "Rule 12 Motions",
+    url: "https://www.section1983.org/process/rule-12-motions/",
+    text: "Defendants attack the complaint before answering.",
+  },
+  {
+    order: 5,
+    name: "Answer and Affirmative Defenses",
+    url: "https://www.section1983.org/process/answer/",
+    text: "Defendants admit, deny, and preserve defenses.",
+  },
+  {
+    order: 6,
+    name: "Discovery",
+    url: "https://www.section1983.org/process/discovery/",
+    text: "Both sides exchange evidence, documents, and testimony.",
+  },
+  {
+    order: 7,
+    name: "Summary Judgment",
+    url: "https://www.section1983.org/process/summary-judgment/",
+    text: "Defendants try to end the case without trial.",
+  },
+  {
+    order: 8,
+    name: "Interlocutory Appeal",
+    url: "https://www.section1983.org/process/interlocutory-appeal/",
+    text: "Qualified-immunity denials can trigger a mid-case appeal and stay the case.",
+  },
+  {
+    order: 9,
+    name: "Pretrial",
+    url: "https://www.section1983.org/process/pretrial/",
+    text: "Prepare exhibits, witnesses, motions in limine, and jury instructions.",
+  },
+  {
+    order: 10,
+    name: "Trial",
+    url: "https://www.section1983.org/process/trial/",
+    text: "Present the evidence to the judge or jury.",
+  },
+];
+const canonicalUrl = "https://www.section1983.org/process/";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How a Section 1983 Case Moves Through Federal Court",
+  description:
+    "A step-by-step guide to the lifecycle of a Section 1983 civil rights case in federal court, from pre-filing investigation through trial and appeal.",
+  url: canonicalUrl,
+  step: processStages.map((stage) => ({
+    "@type": "HowToStep",
+    position: stage.order,
+    name: stage.name,
+    url: stage.url,
+    text: stage.text,
+  })),
+};
 ---
 
 <Base
-  title="The Legal Process"
-  description="A visual, step-by-step guide to the entire lifecycle of a § 1983 case in federal court."
+  title="Section 1983 Legal Process Guide"
+  description="A step-by-step guide to the entire lifecycle of a Section 1983 case in federal court, from records requests through trial and appeal."
+  canonicalUrl={canonicalUrl}
+  structuredData={structuredData}
 >
   <div class="prose">
     <h1 class="text-3xl font-bold text-navy mb-6">The Legal Process</h1>
@@ -21,6 +102,14 @@ const svgContent = fs.readFileSync(
       it. Their lawyers know it. Now you will too. Below is every stage of the
       process, who moves, and what's at stake. Click any step in the flowchart
       to jump to that section.
+    </p>
+
+    <p class="text-sm text-slate">
+      Need terminology help while you read? The <a
+        href="/primer"
+        class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+        >pro se primer</a
+      > translates the motions, standards, and doctrines that show up at each stage.
     </p>
 
     <div

@@ -212,11 +212,31 @@ for (const c of sorted) {
 }
 
 const crumbs = [{ label: "Home", href: "/" }, { label: "Case Law Library" }];
+const canonicalUrl = "https://www.section1983.org/cases/";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Section 1983 Case Law Library",
+  description:
+    "Key Section 1983 cases explained in plain language, with holdings, procedural posture, and practical guidance for using each case in civil rights litigation.",
+  url: canonicalUrl,
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: sorted.map((entry, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: `https://www.section1983.org/cases/${entry.id}/`,
+      name: entry.data.title,
+    })),
+  },
+};
 ---
 
 <Base
-  title="Case Law Library"
-  description="Key § 1983 cases explained in plain language — what happened, what it means, and how to use it in your case."
+  title="Section 1983 Case Law Library"
+  description="Key Section 1983 cases explained in plain language, including holdings, procedural posture, and what each decision means for your civil rights case."
+  canonicalUrl={canonicalUrl}
+  structuredData={structuredData}
 >
   <Breadcrumbs crumbs={crumbs} />
 
@@ -224,6 +244,17 @@ const crumbs = [{ label: "Home", href: "/" }, { label: "Case Law Library" }];
   <p class="text-lg text-slate-600 mb-8">
     The key § 1983 cases explained in plain language — what happened, what the
     court decided, and how to use each case in your own litigation.
+  </p>
+  <p class="text-sm text-slate-600 mb-8">
+    If a case turns on an unfamiliar doctrine, check the <a
+      href="/primer"
+      class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+      >primer</a
+    >. If you need to place a ruling in the life of a lawsuit, use the <a
+      href="/process"
+      class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+      >process guide</a
+    >.
   </p>
 
   <!-- Tag filter -->

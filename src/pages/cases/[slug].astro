@@ -20,6 +20,7 @@ export async function getStaticPaths() {
 
 const { entry, prev, next } = Astro.props;
 const { Content } = await render(entry);
+const canonicalUrl = `https://www.section1983.org/cases/${entry.id}/`;
 
 const crumbs = [
   { label: "Home", href: "/" },
@@ -35,7 +36,7 @@ const nextLink = next
   : null;
 ---
 
-<Case {...entry.data}>
+<Case {...entry.data} canonicalUrl={canonicalUrl}>
   <Breadcrumbs crumbs={crumbs} slot="breadcrumbs" />
   <Content />
   <PrevNext prev={prevLink} next={nextLink} slot="pagination" />

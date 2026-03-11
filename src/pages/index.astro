@@ -36,9 +36,30 @@ const totalWords = Math.round(totalChars / 5);
 const readingHours = Math.round(totalWords / 250 / 60);
 
 const uniqueCourts = new Set(cases.map((c) => c.data.court)).size;
+const canonicalUrl = "https://www.section1983.org/";
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "section1983.org",
+    url: canonicalUrl,
+    description:
+      "A free, independent guide to Section 1983 litigation, case law, federal procedure, and police accountability.",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Institute for Police Conduct, Inc.",
+    url: "https://policeconduct.org",
+  },
+];
 ---
 
-<Base title="Home">
+<Base
+  title="Section 1983 Guide to Police Accountability"
+  canonicalUrl={canonicalUrl}
+  structuredData={structuredData}
+>
   <section class="mb-16">
     <p class="text-sm font-semibold text-gold uppercase tracking-wide mb-3">
       A project of the Institute for Police Conduct, Inc.

@@ -7,6 +7,7 @@ interface Props {
   court: string;
   dateDecided: Date;
   docketNumber: string;
+  canonicalUrl: string;
   courtlistener?: string;
   holding: string;
   officers?: { name: string; profile?: string }[];
@@ -21,6 +22,7 @@ const {
   court,
   dateDecided,
   docketNumber,
+  canonicalUrl,
   courtlistener,
   holding,
   officers,
@@ -34,9 +36,32 @@ const formattedDate = dateDecided.toLocaleDateString("en-US", {
   month: "long",
   day: "numeric",
 });
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LegalCase",
+  name: title,
+  headline: title,
+  description: holding,
+  url: canonicalUrl,
+  mainEntityOfPage: canonicalUrl,
+  datePublished: dateDecided.toISOString(),
+  dateCreated: dateDecided.toISOString(),
+  court,
+  legislationType: "Case law",
+  legislationIdentifier: citation,
+  keywords: tags?.join(", "),
+};
 ---
 
-<Base title={`${title} — Case Law Library`} description={holding}>
+<Base
+  title={`${title} — Case Law Library`}
+  description={holding}
+  canonicalUrl={canonicalUrl}
+  ogType="article"
+  ogImageAlt={title}
+  structuredData={structuredData}
+>
   <slot name="breadcrumbs" />
   <article class="prose prose-slate max-w-none">
     <!-- Case Info Header -->

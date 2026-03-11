@@ -19,6 +19,7 @@ export async function getStaticPaths() {
 
 const { entry, prev, next } = Astro.props;
 const { Content } = await render(entry);
+const canonicalUrl = `https://www.section1983.org/primer/${entry.id}/`;
 ---
 
 <Primer
@@ -26,6 +27,7 @@ const { Content } = await render(entry);
   term={entry.data.term}
   description={entry.data.description}
   category={entry.data.category}
+  canonicalUrl={canonicalUrl}
   related={entry.data.related}
 >
   <Breadcrumbs

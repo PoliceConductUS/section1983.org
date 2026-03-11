@@ -17,10 +17,45 @@ const upcoming = allArticles
     const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
     return dateA - dateB;
   });
+
+const canonicalUrl = "https://www.section1983.org/articles/";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Section 1983 Articles",
+  description:
+    "Plain-language articles about Section 1983 litigation, qualified immunity, pleading standards, damages, and the practical economics of civil rights cases.",
+  url: canonicalUrl,
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: published.map((article, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: `https://www.section1983.org/articles/${article.id}/`,
+      name: article.data.title,
+    })),
+  },
+};
 ---
 
-<Base title="Articles">
+<Base
+  title="Section 1983 Articles"
+  description="Plain-language articles on Section 1983 claims, qualified immunity, pleading standards, damages, and how federal civil rights cases actually work."
+  canonicalUrl={canonicalUrl}
+  structuredData={structuredData}
+>
   <h1 class="text-3xl font-bold text-navy mb-8">Articles</h1>
+  <p class="text-sm text-slate-600 mb-8">
+    Need background before diving in? Use the <a
+      href="/primer"
+      class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+      >pro se primer</a
+    > for legal terms and the <a
+      href="/process"
+      class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+      >process guide</a
+    > for the sequence of a federal case.
+  </p>
 
   <div class="space-y-6">
     {

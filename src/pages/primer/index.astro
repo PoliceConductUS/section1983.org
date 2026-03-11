@@ -39,17 +39,47 @@ const categoryLabels: Record<string, string> = {
   statute: "Statute",
   doctrine: "Doctrine",
 };
+
+const canonicalUrl = "https://www.section1983.org/primer/";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Section 1983 Pro Se Primer",
+  description:
+    "A plain-English primer explaining the legal terms, doctrines, rules, and remedies that appear in Section 1983 federal civil rights cases.",
+  url: canonicalUrl,
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: [...entries]
+      .sort((a, b) => a.data.term.localeCompare(b.data.term))
+      .map((entry, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: `https://www.section1983.org/primer/${entry.id}/`,
+        name: entry.data.term,
+      })),
+  },
+};
 ---
 
 <Base
-  title="Pro Se Primer"
-  description="The legal terms you're most likely to encounter in a § 1983 case, explained in plain English."
+  title="Section 1983 Pro Se Primer"
+  description="Plain-English explanations of the legal terms, doctrines, and procedural rules that come up in Section 1983 civil rights litigation."
+  canonicalUrl={canonicalUrl}
+  structuredData={structuredData}
 >
   <h1 class="text-3xl font-bold text-navy mb-4">Pro Se Primer</h1>
   <p class="text-lg text-slate-600 mb-10">
     The legal terms you're most likely to encounter in a § 1983 case, explained
     like you're a human being — not a law student. Click any term to learn what
     it means, why it matters, and how courts actually use it.
+  </p>
+  <p class="text-sm text-slate-600 mb-10">
+    New here? Start with the <a
+      href="/process"
+      class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+      >legal process guide</a
+    >, then come back here when a motion, doctrine, or damages rule needs translation.
   </p>
 
   {

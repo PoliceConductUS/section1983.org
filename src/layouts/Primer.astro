@@ -6,10 +6,11 @@ interface Props {
   term: string;
   description: string;
   category: string;
+  canonicalUrl: string;
   related?: string[];
 }
 
-const { title, term, description, category, related } = Astro.props;
+const { title, term, description, category, canonicalUrl, related } = Astro.props;
 
 const categoryLabels: Record<string, string> = {
   "constitutional-law": "Constitutional Law",
@@ -20,9 +21,26 @@ const categoryLabels: Record<string, string> = {
   statute: "Statute",
   doctrine: "Doctrine",
 };
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  name: term,
+  description,
+  url: canonicalUrl,
+  inDefinedTermSet: "https://www.section1983.org/primer/",
+  termCode: category,
+};
 ---
 
-<Base title={title} description={description}>
+<Base
+  title={title}
+  description={description}
+  canonicalUrl={canonicalUrl}
+  ogType="article"
+  ogImageAlt={term}
+  structuredData={structuredData}
+>
   <slot name="breadcrumbs" />
   <article class="prose prose-slate max-w-none">
     <div class="mb-8">

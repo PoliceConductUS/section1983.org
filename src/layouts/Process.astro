@@ -8,12 +8,30 @@ interface Props {
   movant: string;
   respondent: string;
   slug: string;
+  canonicalUrl: string;
 }
 
-const { title, description, order, movant, respondent, slug } = Astro.props;
+const { title, description, order, movant, respondent, slug, canonicalUrl } =
+  Astro.props;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "HowToStep",
+  name: title,
+  text: description,
+  position: order,
+  url: canonicalUrl,
+};
 ---
 
-<Base title={title} description={description}>
+<Base
+  title={title}
+  description={description}
+  canonicalUrl={canonicalUrl}
+  ogType="article"
+  ogImageAlt={`Step ${order}: ${title}`}
+  structuredData={structuredData}
+>
   <slot name="breadcrumbs" />
 
   <article>
