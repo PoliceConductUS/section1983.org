@@ -21,7 +21,7 @@ citedBy: []
 
 In April 1978, Canton, Ohio police officers arrested Geraldine Harris. When the patrol wagon arrived at the station, Harris was found sitting on the floor. She was asked if she needed medical attention and responded with something incoherent. Once inside the station for processing, she slumped to the floor twice. Eventually, the officers just left her lying on the floor to prevent her from falling again. No one called a doctor. No one summoned medical help. After about an hour, Harris was released. Her family called an ambulance, and she was taken to a hospital, where she was diagnosed with several emotional ailments requiring a week of hospitalization and a year of outpatient treatment.
 
-Harris sued the city under [§ 1983](/primer/section-1983), alleging that Canton had violated her right under the Due Process Clause to receive necessary medical attention while in police custody. The evidence at trial revealed a telling detail: under city regulations, shift commanders had sole discretion to decide whether a detainee needed medical care. But these commanders received no special training — beyond basic first aid — on how to recognize when a detainee required medical attention. A jury found for Harris.
+Harris sued the city under [§ 1983](/terms-and-concepts/section-1983), alleging that Canton had violated her right under the Due Process Clause to receive necessary medical attention while in police custody. The evidence at trial revealed a telling detail: under city regulations, shift commanders had sole discretion to decide whether a detainee needed medical care. But these commanders received no special training — beyond basic first aid — on how to recognize when a detainee required medical attention. A jury found for Harris.
 
 The city appealed, arguing that it couldn't be held liable for a "failure to train." The case reached the Supreme Court on the question of whether [_Monell_](/cases/monell-v-dep-t-of-soc-servs) liability could extend to a city's failure to train its employees.
 
@@ -45,7 +45,7 @@ The "deliberate indifference" standard is demanding but not impossible. You typi
 
 2. **Single-incident liability.** In rare cases, you can establish deliberate indifference even without a pattern. Where the need for training is so obvious — like training officers when to use deadly force, or when to summon medical care for someone in custody — a single incident can suffice. But this theory is narrow and hard to win.
 
-_Canton_ also matters because it gives plaintiffs a way around [qualified immunity](/primer/qualified-immunity). Individual officers may get QI, but the city cannot. If your failure-to-train claim succeeds, the city pays — even if every individual officer is immunized.
+_Canton_ also matters because it gives plaintiffs a way around [qualified immunity](/terms-and-concepts/qualified-immunity). Individual officers may get QI, but the city cannot. If your failure-to-train claim succeeds, the city pays — even if every individual officer is immunized.
 
 ## How You Can Use It
 

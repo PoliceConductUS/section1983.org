@@ -29,7 +29,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_Ramirez v. Martinez_ is a landmark Fifth Circuit case on [excessive force](/primer/excessive-force) involving taser use. It holds that tasing a person who is already handcuffed and lying face-down on the ground is clearly established as excessive force — while also illustrating how officers can have [arguable probable cause](/primer/probable-cause) for an arrest even during an otherwise constitutionally problematic encounter.
+_Ramirez v. Martinez_ is a landmark Fifth Circuit case on [excessive force](/terms-and-concepts/excessive-force) involving taser use. It holds that tasing a person who is already handcuffed and lying face-down on the ground is clearly established as excessive force — while also illustrating how officers can have [arguable probable cause](/terms-and-concepts/probable-cause) for an arrest even during an otherwise constitutionally problematic encounter.
 
 ## The Facts
 
@@ -43,24 +43,24 @@ Martinez grabbed Ramirez's hand. When Ramirez pulled his arm away, Martinez imme
 
 The Fifth Circuit split its analysis:
 
-**Excessive force — reversed (no qualified immunity)**: The court held that Martinez was not entitled to qualified immunity on the excessive force claim, particularly regarding the second tasing. Applying the [Graham factors](/primer/graham-factors), the court found:
+**Excessive force — reversed (no qualified immunity)**: The court held that Martinez was not entitled to qualified immunity on the excessive force claim, particularly regarding the second tasing. Applying the [Graham factors](/terms-and-concepts/graham-factors), the court found:
 
 - **Severity of the crime**: Ramirez was at most guilty of a minor offense — he was a bystander at his own business.
 - **Immediate threat**: By the time of the second tasing, Ramirez was handcuffed and prone. He posed no threat whatsoever.
 - **Active resistance**: After being taken down and handcuffed, Ramirez was not resisting.
 
-The right to be free from being tased while handcuffed and lying face-down was [clearly established](/primer/clearly-established-law). No reasonable officer could have believed this force was lawful.
+The right to be free from being tased while handcuffed and lying face-down was [clearly established](/terms-and-concepts/clearly-established-law). No reasonable officer could have believed this force was lawful.
 
 **False arrest — dismissed**: The court found that Martinez had arguable probable cause for the arrest. Ramirez had refused to comply with orders and pulled his arm away — conduct that could constitute interference with a public servant. Even though the encounter was aggressive and profanity-laced on both sides, Ramirez's non-compliance provided a basis for the arrest.
 
 ## Why This Case Matters for Your § 1983 Case
 
-- **Tasing someone who is handcuffed is clearly established excessive force**: If you were tased, struck, or subjected to force while restrained and not resisting, this case strongly supports your [excessive force](/primer/excessive-force) claim.
+- **Tasing someone who is handcuffed is clearly established excessive force**: If you were tased, struck, or subjected to force while restrained and not resisting, this case strongly supports your [excessive force](/terms-and-concepts/excessive-force) claim.
 - **The first use of force may be justified even if the second is not**: Courts evaluate each application of force separately. Martinez's initial tasing (when Ramirez pulled away) was arguably reasonable, but the second tasing (while handcuffed on the ground) was not.
 - **Profanity and argument don't justify arrest**: The exchange of profanities between Martinez and Ramirez was mutual, but words alone generally don't constitute a crime. However, physically pulling away from an officer _can_ provide arguable probable cause.
-- **Video evidence is crucial**: A news crew captured the encounter, providing objective evidence. Always try to preserve video evidence — from [body cameras](/primer/body-camera-footage), dash cameras, bystander recordings, or security cameras.
-- **"Taser Joe" earned his nickname**: The nickname itself suggests a pattern of taser overuse. If you can show an officer has a history of similar conduct, it strengthens [municipal liability](/primer/municipal-liability) claims through the [custom](/primer/custom) theory.
+- **Video evidence is crucial**: A news crew captured the encounter, providing objective evidence. Always try to preserve video evidence — from [body cameras](/terms-and-concepts/body-camera-footage), dash cameras, bystander recordings, or security cameras.
+- **"Taser Joe" earned his nickname**: The nickname itself suggests a pattern of taser overuse. If you can show an officer has a history of similar conduct, it strengthens [municipal liability](/terms-and-concepts/municipal-liability) claims through the [custom](/terms-and-concepts/custom) theory.
 
 ## Key Takeaway
 
-Once a suspect is handcuffed and lying face-down on the ground, using a taser constitutes clearly established [excessive force](/primer/excessive-force) that defeats [qualified immunity](/primer/qualified-immunity). Courts evaluate each use of force independently — an officer may be justified in the initial force used to subdue a resisting suspect but cannot continue applying force after the suspect is restrained and compliant.
+Once a suspect is handcuffed and lying face-down on the ground, using a taser constitutes clearly established [excessive force](/terms-and-concepts/excessive-force) that defeats [qualified immunity](/terms-and-concepts/qualified-immunity). Courts evaluate each use of force independently — an officer may be justified in the initial force used to subdue a resisting suspect but cannot continue applying force after the suspect is restrained and compliant.

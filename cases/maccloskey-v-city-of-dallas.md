@@ -14,7 +14,7 @@ citedBy: []
 
 ## What This Case Is About
 
-A plaintiff sued the City of Dallas and individual officers under [§ 1983](/primer/section-1983), alleging constitutional violations during an encounter with police. The court dismissed the claims against the city because the plaintiff failed to identify a specific [municipal policy or custom](/primer/monell-liability) that caused the alleged violations, instead relying on conclusory allegations of inadequate training and supervision.
+A plaintiff sued the City of Dallas and individual officers under [§ 1983](/terms-and-concepts/section-1983), alleging constitutional violations during an encounter with police. The court dismissed the claims against the city because the plaintiff failed to identify a specific [municipal policy or custom](/terms-and-concepts/monell-liability) that caused the alleged violations, instead relying on conclusory allegations of inadequate training and supervision.
 
 ## The Facts
 
@@ -22,17 +22,17 @@ The plaintiff alleged that Dallas police officers violated her constitutional ri
 
 ## What the Court Decided
 
-The court granted the City of Dallas's [motion to dismiss](/primer/motion-to-dismiss) under Rule 12(b)(6). The court reiterated that a municipality cannot be held liable under [§ 1983](/primer/section-1983) on a [respondeat superior](/primer/respondeat-superior) theory. Under _Monell_, the plaintiff must identify (1) an official policy or widespread custom (2) that was the [moving force](/primer/moving-force-causation) behind the constitutional violation.
+The court granted the City of Dallas's [motion to dismiss](/terms-and-concepts/motion-to-dismiss) under Rule 12(b)(6). The court reiterated that a municipality cannot be held liable under [§ 1983](/terms-and-concepts/section-1983) on a [respondeat superior](/terms-and-concepts/respondeat-superior) theory. Under _Monell_, the plaintiff must identify (1) an official policy or widespread custom (2) that was the [moving force](/terms-and-concepts/moving-force-causation) behind the constitutional violation.
 
-The court found the plaintiff's allegations too conclusory under [_Iqbal_](/cases/ashcroft-v-iqbal). Simply alleging that the city "failed to train" or "failed to supervise" without specific facts about the training deficiency, how it was connected to the specific constitutional violation, or evidence of [deliberate indifference](/primer/deliberate-indifference) was insufficient. The complaint did not identify what training was missing, how the city was on notice of the deficiency, or how different training would have prevented the violation.
+The court found the plaintiff's allegations too conclusory under [_Iqbal_](/cases/ashcroft-v-iqbal). Simply alleging that the city "failed to train" or "failed to supervise" without specific facts about the training deficiency, how it was connected to the specific constitutional violation, or evidence of [deliberate indifference](/terms-and-concepts/deliberate-indifference) was insufficient. The complaint did not identify what training was missing, how the city was on notice of the deficiency, or how different training would have prevented the violation.
 
 ## Why This Case Matters for Your § 1983 Case
 
-_MacCloskey_ is a cautionary tale about pleading [Monell liability](/primer/monell-liability):
+_MacCloskey_ is a cautionary tale about pleading [Monell liability](/terms-and-concepts/monell-liability):
 
 - **Specificity required**: You cannot simply allege that a city "failed to train" or "failed to supervise" its officers. You must identify the specific training deficiency and explain how it caused the constitutional violation.
 - **Moving force**: You must connect the policy or custom to the specific violation. Vague allegations about general inadequacies are not enough.
-- **Pattern or single-incident theory**: If you're relying on a [failure-to-train](/primer/failure-to-train) theory, you need either (a) a pattern of similar violations putting the city on notice, or (b) a complete failure to train in a clearly recurring situation (the _Canton_ single-incident exception).
+- **Pattern or single-incident theory**: If you're relying on a [failure-to-train](/terms-and-concepts/failure-to-train) theory, you need either (a) a pattern of similar violations putting the city on notice, or (b) a complete failure to train in a clearly recurring situation (the _Canton_ single-incident exception).
 - **Practical tips for pleading Monell**:
   - Identify the specific policy, custom, or training deficiency
   - Explain how the city knew or should have known about it
@@ -41,4 +41,4 @@ _MacCloskey_ is a cautionary tale about pleading [Monell liability](/primer/mone
 
 ## Key Takeaway
 
-To hold a city liable under [_Monell_](/cases/monell-v-department-of-social-services), your complaint must go beyond conclusory allegations of "failure to train" or "failure to supervise" — you must identify the specific policy or training deficiency, demonstrate [deliberate indifference](/primer/deliberate-indifference), and show how that deficiency was the [moving force](/primer/moving-force-causation) behind the constitutional violation you suffered.
+To hold a city liable under [_Monell_](/cases/monell-v-department-of-social-services), your complaint must go beyond conclusory allegations of "failure to train" or "failure to supervise" — you must identify the specific policy or training deficiency, demonstrate [deliberate indifference](/terms-and-concepts/deliberate-indifference), and show how that deficiency was the [moving force](/terms-and-concepts/moving-force-causation) behind the constitutional violation you suffered.

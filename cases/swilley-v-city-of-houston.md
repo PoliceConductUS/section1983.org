@@ -21,7 +21,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_Swilley v. City of Houston_ established a clear and frequently cited rule in the Fifth Circuit: employees of the same municipal entity cannot conspire with each other for purposes of [§ 1983](/primer/section-1983). Because the City of Houston is a single legal entity, its employees are legally incapable of forming the kind of agreement between distinct parties required for a conspiracy claim.
+_Swilley v. City of Houston_ established a clear and frequently cited rule in the Fifth Circuit: employees of the same municipal entity cannot conspire with each other for purposes of [§ 1983](/terms-and-concepts/section-1983). Because the City of Houston is a single legal entity, its employees are legally incapable of forming the kind of agreement between distinct parties required for a conspiracy claim.
 
 ## The Facts
 

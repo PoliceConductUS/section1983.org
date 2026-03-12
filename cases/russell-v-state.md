@@ -38,13 +38,13 @@ The court focused on the voluntariness of Russell's interactions with police. Sh
 
 ## Why This Case Matters for Your § 1983 Case
 
-**Voluntary encounters versus arrests.** This case illustrates the critical distinction between a voluntary encounter with police and an arrest. If you voluntarily accompany officers to the station and are free to leave, courts may find that no seizure occurred under the [Fourth Amendment](/primer/fourth-amendment), even if the interaction ultimately leads to your arrest.
+**Voluntary encounters versus arrests.** This case illustrates the critical distinction between a voluntary encounter with police and an arrest. If you voluntarily accompany officers to the station and are free to leave, courts may find that no seizure occurred under the [Fourth Amendment](/terms-and-concepts/fourth-amendment), even if the interaction ultimately leads to your arrest.
 
 **The "no arrest, no suppression" principle.** Before the exclusionary rule's protections kick in, there must first be an unlawful seizure. If the court finds your initial interaction with police was voluntary, evidence obtained from that interaction—including consent to search—may not be subject to suppression.
 
 **Consent to search after voluntary encounters.** When a person voluntarily goes to a police station, receives _Miranda_ warnings, and later consents to a search, courts will closely examine whether the consent was the product of an illegal arrest or a voluntary decision. The timing and circumstances matter enormously.
 
-**Relevance to [§ 1983](/primer/section-1983) claims.** Understanding the line between voluntary encounters and arrests is essential for [false arrest](/primer/false-arrest) claims. If no arrest occurred, there is no constitutional violation—and no basis for a § 1983 claim based on the Fourth Amendment.
+**Relevance to [§ 1983](/terms-and-concepts/section-1983) claims.** Understanding the line between voluntary encounters and arrests is essential for [false arrest](/terms-and-concepts/false-arrest) claims. If no arrest occurred, there is no constitutional violation—and no basis for a § 1983 claim based on the Fourth Amendment.
 
 ## Key Takeaway
 

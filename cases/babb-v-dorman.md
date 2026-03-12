@@ -22,7 +22,7 @@ citedBy: []
 
 ## What This Case Is About
 
-William Babb was pulled over by Officer David Anthony Dorman of the Richardson, Texas, Police Department after Babb's intoxicated passenger suddenly flung open the car door while the vehicle was moving. Despite Babb's explanation that he had pulled over to assist his ill passenger, Dorman arrested him for public intoxication. Babb sued Dorman and the City of Richardson under [§ 1983](/primer/section-1983), alleging false arrest and other constitutional violations. The Fifth Circuit held that Dorman had arguable [probable cause](/primer/probable-cause) for the arrest and was entitled to [qualified immunity](/primer/qualified-immunity).
+William Babb was pulled over by Officer David Anthony Dorman of the Richardson, Texas, Police Department after Babb's intoxicated passenger suddenly flung open the car door while the vehicle was moving. Despite Babb's explanation that he had pulled over to assist his ill passenger, Dorman arrested him for public intoxication. Babb sued Dorman and the City of Richardson under [§ 1983](/terms-and-concepts/section-1983), alleging false arrest and other constitutional violations. The Fifth Circuit held that Dorman had arguable [probable cause](/terms-and-concepts/probable-cause) for the arrest and was entitled to [qualified immunity](/terms-and-concepts/qualified-immunity).
 
 ## The Facts
 
@@ -32,7 +32,7 @@ Officer Dorman pulled up behind them in his squad car. He checked Babb's driver'
 
 Dorman administered field sobriety tests. The results of those tests were disputed—Babb claimed he passed them; Dorman apparently concluded he did not. Dorman arrested Babb for public intoxication under Texas Penal Code § 42.08.
 
-Babb was subsequently acquitted of the public intoxication charge. He then filed suit under § 1983, alleging that Dorman arrested him without probable cause in violation of the [Fourth Amendment](/primer/fourth-amendment), and that the City of Richardson was liable under [_Monell_](/cases/monell-v-dep-t-of-soc-servs) for maintaining unconstitutional policies or customs.
+Babb was subsequently acquitted of the public intoxication charge. He then filed suit under § 1983, alleging that Dorman arrested him without probable cause in violation of the [Fourth Amendment](/terms-and-concepts/fourth-amendment), and that the City of Richardson was liable under [_Monell_](/cases/monell-v-dep-t-of-soc-servs) for maintaining unconstitutional policies or customs.
 
 ## What the Court Decided
 
@@ -40,7 +40,7 @@ The Fifth Circuit affirmed the district court's dismissal. The court's analysis 
 
 **As to Officer Dorman**, the court held he was entitled to qualified immunity. The relevant question was not whether Dorman actually had probable cause, but whether he had "arguable probable cause"—that is, whether a reasonable officer in his position could have believed probable cause existed to arrest Babb for public intoxication. Given that Babb admitted to drinking five beers, was encountered on the side of the road in the early morning hours, and the field sobriety test results were disputed, the court found that a reasonable officer could have concluded Babb was publicly intoxicated. This was sufficient for qualified immunity even though Babb was ultimately acquitted.
 
-**As to the City of Richardson**, the court held that Babb failed to identify an unconstitutional municipal policy or custom under [_Monell_](/cases/monell-v-dep-t-of-soc-servs). A single arrest by one officer does not establish the kind of persistent, widespread practice necessary to impose [municipal liability](/primer/municipal-liability). Nor did Babb point to an official policy that authorized or encouraged arrests without probable cause.
+**As to the City of Richardson**, the court held that Babb failed to identify an unconstitutional municipal policy or custom under [_Monell_](/cases/monell-v-dep-t-of-soc-servs). A single arrest by one officer does not establish the kind of persistent, widespread practice necessary to impose [municipal liability](/terms-and-concepts/municipal-liability). Nor did Babb point to an official policy that authorized or encouraged arrests without probable cause.
 
 ## Why This Case Matters for Your § 1983 Case
 
@@ -48,7 +48,7 @@ The Fifth Circuit affirmed the district court's dismissal. The court's analysis 
 
 **Admissions matter.** Babb's admission that he had consumed five beers provided the officer with facts that, combined with the circumstances (early morning, roadside stop, ill passenger), could support a reasonable belief in probable cause. What you say to officers during an encounter can be used to establish arguable probable cause.
 
-**Municipal liability requires a pattern.** One officer's arguably unconstitutional arrest is not enough to hold the city liable. Plaintiffs must show a [policy or custom](/primer/monell-liability)—either an official policy, a widespread practice, or a decision by a [final policymaker](/primer/final-policymaker)—that caused the violation.
+**Municipal liability requires a pattern.** One officer's arguably unconstitutional arrest is not enough to hold the city liable. Plaintiffs must show a [policy or custom](/terms-and-concepts/monell-liability)—either an official policy, a widespread practice, or a decision by a [final policymaker](/terms-and-concepts/final-policymaker)—that caused the violation.
 
 **Field sobriety tests create factual disputes.** When the results of field tests are subject to interpretation, courts are likely to find that the officer's conclusion was at least arguable, making qualified immunity more likely.
 

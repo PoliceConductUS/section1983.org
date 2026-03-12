@@ -17,7 +17,7 @@ citedBy: []
 
 ## What This Case Is About
 
-This case involves the alleged use of [excessive force](/primer/excessive-force) by a 270-pound Frio County deputy sheriff against a 12-year-old, 87-pound boy during a Thanksgiving night arrest. Tony Gonzales was arrested for stealing beer, escaped from a patrol car, and was tackled during a foot chase. His leg was broken. The family sued the county under [§ 1983](/primer/section-1983), but the court granted [summary judgment](/primer/summary-judgment) because the plaintiffs failed to establish [municipal liability](/primer/municipal-liability).
+This case involves the alleged use of [excessive force](/terms-and-concepts/excessive-force) by a 270-pound Frio County deputy sheriff against a 12-year-old, 87-pound boy during a Thanksgiving night arrest. Tony Gonzales was arrested for stealing beer, escaped from a patrol car, and was tackled during a foot chase. His leg was broken. The family sued the county under [§ 1983](/terms-and-concepts/section-1983), but the court granted [summary judgment](/terms-and-concepts/summary-judgment) because the plaintiffs failed to establish [municipal liability](/terms-and-concepts/municipal-liability).
 
 ## The Facts
 
@@ -29,18 +29,18 @@ The family sued Deputy Westbrook individually and Frio County under § 1983. The
 
 ## What the Court Decided
 
-The court granted the county's motion for summary judgment. Applying the [_Monell_](/cases/monell-v-dep-t-of-soc-servs) framework, the court required the plaintiffs to show: (1) an official policy or [custom](/primer/custom) that was inadequate, (2) the policy was adopted with [deliberate indifference](/primer/deliberate-indifference), and (3) the policy directly caused the constitutional injury.
+The court granted the county's motion for summary judgment. Applying the [_Monell_](/cases/monell-v-dep-t-of-soc-servs) framework, the court required the plaintiffs to show: (1) an official policy or [custom](/terms-and-concepts/custom) that was inadequate, (2) the policy was adopted with [deliberate indifference](/terms-and-concepts/deliberate-indifference), and (3) the policy directly caused the constitutional injury.
 
-The plaintiffs failed on all three elements. They could not point to specific deficiencies in the county's training or supervision policies. Their argument that the FBI had the personnel records — and therefore they couldn't prove a pattern — was not enough to create a genuine issue of material fact. The court noted that the burden is on the plaintiff to establish [municipal liability](/primer/municipal-liability), and the inability to access evidence does not shift that burden to the defendant.
+The plaintiffs failed on all three elements. They could not point to specific deficiencies in the county's training or supervision policies. Their argument that the FBI had the personnel records — and therefore they couldn't prove a pattern — was not enough to create a genuine issue of material fact. The court noted that the burden is on the plaintiff to establish [municipal liability](/terms-and-concepts/municipal-liability), and the inability to access evidence does not shift that burden to the defendant.
 
 The court emphasized that the individual excessive force claim against Deputy Westbrook remained pending. The dismissal applied only to the county.
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Gonzales_ illustrates two important points. First, the gross disparity in size between the officer and the suspect — a 270-pound deputy versus an 87-pound child — is the kind of fact that makes an [excessive force](/primer/excessive-force) claim compelling against the individual officer. The [_Graham v. Connor_](/cases/graham-v-connor) factors weigh heavily when the "suspect" is a child arrested for a minor offense who poses no serious threat.
+_Gonzales_ illustrates two important points. First, the gross disparity in size between the officer and the suspect — a 270-pound deputy versus an 87-pound child — is the kind of fact that makes an [excessive force](/terms-and-concepts/excessive-force) claim compelling against the individual officer. The [_Graham v. Connor_](/cases/graham-v-connor) factors weigh heavily when the "suspect" is a child arrested for a minor offense who poses no serious threat.
 
-But second, even the most sympathetic facts against an individual officer do not automatically translate into [municipal liability](/primer/municipal-liability). Without evidence of deficient policies, a pattern of similar incidents, or deliberate indifference in [training](/primer/failure-to-train) or supervision, the county walks free.
+But second, even the most sympathetic facts against an individual officer do not automatically translate into [municipal liability](/terms-and-concepts/municipal-liability). Without evidence of deficient policies, a pattern of similar incidents, or deliberate indifference in [training](/terms-and-concepts/failure-to-train) or supervision, the county walks free.
 
 ## Key Takeaway
 
-You can have a powerful [excessive force](/primer/excessive-force) claim against an individual officer — a full-grown deputy breaking a 12-year-old's leg over stolen beer — and still lose against the county if you can't show a deficient [policy or custom](/primer/monell-liability). Always develop evidence of the municipality's training, supervision, and disciplinary history early in your case. If records are in third-party custody, pursue them aggressively through [discovery](/primer/discovery) — their absence at summary judgment will hurt you, not the defendant.
+You can have a powerful [excessive force](/terms-and-concepts/excessive-force) claim against an individual officer — a full-grown deputy breaking a 12-year-old's leg over stolen beer — and still lose against the county if you can't show a deficient [policy or custom](/terms-and-concepts/monell-liability). Always develop evidence of the municipality's training, supervision, and disciplinary history early in your case. If records are in third-party custody, pursue them aggressively through [discovery](/terms-and-concepts/discovery) — their absence at summary judgment will hurt you, not the defendant.

@@ -30,7 +30,7 @@ Trooper Edward Malley, the officer in charge, interpreted the calls as evidence 
 
 The Briggses, prominent members of their community with no criminal history, were arrested at their home before six in the morning. They were booked, held for several hours, arraigned, and released. Local and statewide newspapers published their arrests. The grand jury declined to indict, and all charges were dropped.
 
-The Briggses sued under [§ 1983](/primer/section-1983), alleging that Malley's affidavit — based on ambiguous wiretap conversations about drug slang — failed to establish probable cause and violated their Fourth and Fourteenth Amendment rights.
+The Briggses sued under [§ 1983](/terms-and-concepts/section-1983), alleging that Malley's affidavit — based on ambiguous wiretap conversations about drug slang — failed to establish probable cause and violated their Fourth and Fourteenth Amendment rights.
 
 ## What the Court Decided
 

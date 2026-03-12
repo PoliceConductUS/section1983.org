@@ -21,7 +21,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_Peterson v. City of Fort Worth_ is a cautionary tale about suing the wrong defendant. Kevin Peterson had a colorable [excessive force](/primer/excessive-force) claim against individual officers — but he chose to sue only the City of Fort Worth. The Fifth Circuit affirmed summary judgment for the city because Peterson could not satisfy the [_Monell_](/primer/monell-liability) requirements for [municipal liability](/primer/municipal-liability).
+_Peterson v. City of Fort Worth_ is a cautionary tale about suing the wrong defendant. Kevin Peterson had a colorable [excessive force](/terms-and-concepts/excessive-force) claim against individual officers — but he chose to sue only the City of Fort Worth. The Fifth Circuit affirmed summary judgment for the city because Peterson could not satisfy the [_Monell_](/terms-and-concepts/monell-liability) requirements for [municipal liability](/terms-and-concepts/municipal-liability).
 
 ## The Facts
 
@@ -29,26 +29,26 @@ On the night of August 14, 2005, Kevin Peterson and his wife Jodi went out in Fo
 
 A security guard spotted them sleeping and called Fort Worth police. Officers Samantha Horner and Roger Ballard arrived around 5:00 a.m. Officer Horner attempted to wake Peterson by shaking his leg, then tapping her baton on his sternum. Peterson kicked at her and told her to leave him alone. He swatted at her hand, and she told him she was a police officer.
 
-The situation escalated. According to Peterson, officers used excessive force to remove him from the truck and arrest him, resulting in significant injuries. The evidence was sufficient to establish that the officers' conduct may have been objectively unreasonable under the [Fourth Amendment](/primer/fourth-amendment).
+The situation escalated. According to Peterson, officers used excessive force to remove him from the truck and arrest him, resulting in significant injuries. The evidence was sufficient to establish that the officers' conduct may have been objectively unreasonable under the [Fourth Amendment](/terms-and-concepts/fourth-amendment).
 
-However, Peterson did not sue Officers Horner and Ballard individually. He filed his [§ 1983](/primer/section-1983) action solely against the City of Fort Worth.
+However, Peterson did not sue Officers Horner and Ballard individually. He filed his [§ 1983](/terms-and-concepts/section-1983) action solely against the City of Fort Worth.
 
 ## What the Court Decided
 
 The Fifth Circuit affirmed summary judgment for the city. While acknowledging that Peterson likely had a valid excessive force claim against the individual officers, the court held that municipal liability requires something more.
 
-Under [_Monell v. Department of Social Services_](/primer/monell-liability), a municipality is liable under § 1983 only when its official policy or custom is the [moving force](/primer/moving-force-causation) behind the constitutional violation. Peterson needed to show one of three things: (1) an officially adopted policy, (2) a widespread practice so common as to constitute custom, or (3) a decision by a [final policymaker](/primer/final-policymaker).
+Under [_Monell v. Department of Social Services_](/terms-and-concepts/monell-liability), a municipality is liable under § 1983 only when its official policy or custom is the [moving force](/terms-and-concepts/moving-force-causation) behind the constitutional violation. Peterson needed to show one of three things: (1) an officially adopted policy, (2) a widespread practice so common as to constitute custom, or (3) a decision by a [final policymaker](/terms-and-concepts/final-policymaker).
 
 Peterson's evidence fell short. He could not identify a Fort Worth policy that authorized excessive force. He offered no evidence of a pattern of similar incidents showing a widespread custom. And he could not point to any policymaker who ratified the officers' conduct. Without meeting any of these thresholds, his case against the city failed — regardless of how strong his underlying excessive force claim was.
 
 ## Why This Case Matters for Your § 1983 Case
 
-- **Always sue the individual officers**: This case is the clearest possible lesson. Peterson had a winning excessive force claim but lost everything because he sued only the city. Always name the individual officers in their [individual capacity](/primer/individual-capacity) alongside any municipal defendant.
-- **[Municipal liability](/primer/municipal-liability) has extra requirements**: Under _Monell_, you must prove a policy, practice, or custom — showing that an individual officer acted unconstitutionally is not enough to hold the city liable.
+- **Always sue the individual officers**: This case is the clearest possible lesson. Peterson had a winning excessive force claim but lost everything because he sued only the city. Always name the individual officers in their [individual capacity](/terms-and-concepts/individual-capacity) alongside any municipal defendant.
+- **[Municipal liability](/terms-and-concepts/municipal-liability) has extra requirements**: Under _Monell_, you must prove a policy, practice, or custom — showing that an individual officer acted unconstitutionally is not enough to hold the city liable.
 - **A single incident rarely establishes custom**: One instance of excessive force does not prove a "widespread practice." You need evidence of multiple similar incidents to establish the pattern required for a custom claim.
-- **[Failure to train](/primer/failure-to-train) requires deliberate indifference**: Even if training was deficient, you must show the city was on notice that its training was inadequate — typically through prior similar incidents — and deliberately chose not to improve it.
-- **Don't put all your eggs in the municipal basket**: Municipal defendants have deeper pockets but higher liability thresholds. Individual officer defendants have [qualified immunity](/primer/qualified-immunity) defenses but lower liability thresholds. You need both.
+- **[Failure to train](/terms-and-concepts/failure-to-train) requires deliberate indifference**: Even if training was deficient, you must show the city was on notice that its training was inadequate — typically through prior similar incidents — and deliberately chose not to improve it.
+- **Don't put all your eggs in the municipal basket**: Municipal defendants have deeper pockets but higher liability thresholds. Individual officer defendants have [qualified immunity](/terms-and-concepts/qualified-immunity) defenses but lower liability thresholds. You need both.
 
 ## Key Takeaway
 
-Having a strong [excessive force](/primer/excessive-force) claim against individual officers means nothing if you only sue the city. [Municipal liability](/primer/municipal-liability) under [_Monell_](/primer/monell-liability) requires proof that a city policy, practice, or custom was the [moving force](/primer/moving-force-causation) behind the violation — a burden that goes far beyond proving that an individual officer acted unconstitutionally. Always name both the officers and the municipality as defendants.
+Having a strong [excessive force](/terms-and-concepts/excessive-force) claim against individual officers means nothing if you only sue the city. [Municipal liability](/terms-and-concepts/municipal-liability) under [_Monell_](/terms-and-concepts/monell-liability) requires proof that a city policy, practice, or custom was the [moving force](/terms-and-concepts/moving-force-causation) behind the violation — a burden that goes far beyond proving that an individual officer acted unconstitutionally. Always name both the officers and the municipality as defendants.

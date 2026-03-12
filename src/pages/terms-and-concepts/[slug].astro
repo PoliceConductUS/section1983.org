@@ -1,0 +1,97 @@
+---
+import { getCollection, render } from "astro:content";
+import TermsAndConcepts from "../../layouts/TermsAndConcepts.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import PrevNext from "../../components/PrevNext.astro";
+import { getContentUpdatedDate } from "../../lib/content-metadata";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("termsAndConcepts");
+  const sorted = entries.sort((a, b) => a.data.term.localeCompare(b.data.term));
+  return sorted.map((entry, i) => ({
+    params: { slug: entry.id },
+    props: {
+      entry,
+      prev: i > 0 ? sorted[i - 1] : null,
+      next: i < sorted.length - 1 ? sorted[i + 1] : null,
+    },
+  }));
+}
+
+const { entry, prev, next } = Astro.props;
+const { Content } = await render(entry);
+const canonicalUrl = `https://www.section1983.org/terms-and-concepts/${entry.id}/`;
+const updatedDate = getContentUpdatedDate(
+  "termsAndConcepts",
+  entry.id,
+  entry.data.updatedDate,
+);
+const articles = await getCollection("articles", ({ data }) => !data.draft);
+const termText = [
+  entry.data.title,
+  entry.data.term,
+  entry.data.description,
+  entry.body || "",
+]
+  .join("\n")
+  .toLowerCase();
+const relatedArticles = articles
+  .map((article) => {
+    const articleText = [
+      article.data.title,
+      article.data.description,
+      article.body || "",
+    ]
+      .join("\n")
+      .toLowerCase();
+    let score = 0;
+    if (articleText.includes(`/terms-and-concepts/${entry.id}`)) score += 10;
+    if (articleText.includes(entry.data.term.toLowerCase())) score += 4;
+    if (entry.data.tags?.some((tag) => article.data.tags?.includes(tag)))
+      score += 2;
+    if (termText.includes(article.id.replace(/-/g, " "))) score += 1;
+    return { article, score };
+  })
+  .filter(({ score }) => score > 0)
+  .sort(
+    (a, b) =>
+      b.score - a.score ||
+      a.article.data.title.localeCompare(b.article.data.title),
+  )
+  .slice(0, 4)
+  .map(({ article }) => ({
+    href: `/articles/${article.id}`,
+    label: article.data.title,
+    description: article.data.description,
+  }));
+---
+
+<TermsAndConcepts
+  title={entry.data.title}
+  term={entry.data.term}
+  description={entry.data.description}
+  category={entry.data.category}
+  canonicalUrl={canonicalUrl}
+  updatedDate={updatedDate}
+  related={entry.data.related}
+  relatedArticles={relatedArticles}
+>
+  <Breadcrumbs
+    slot="breadcrumbs"
+    crumbs={[
+      { label: "Home", href: "/" },
+      { label: "Terms and Concepts", href: "/terms-and-concepts" },
+      { label: entry.data.term },
+    ]}
+  />
+  <Content />
+  <PrevNext
+    slot="pagination"
+    prev={prev
+      ? { href: `/terms-and-concepts/${prev.id}`, label: prev.data.term }
+      : null}
+    next={next
+      ? { href: `/terms-and-concepts/${next.id}`, label: next.data.term }
+      : null}
+  />
+</TermsAndConcepts>

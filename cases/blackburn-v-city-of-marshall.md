@@ -24,7 +24,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Jimmy Blackburn owned a towing and wrecker service in Harrison County, Texas. After he complained to the Marshall police chief about the bidding process for city towing contracts and spoke publicly about wrecker policies, Blackburn was removed from the city's towing rotation list and had his permission to use the police radio frequency revoked. He sued the City of Marshall, its police chief, and the county sheriff under [§ 1983](/primer/section-1983), alleging [First Amendment retaliation](/primer/first-amendment-retaliation) and due process violations.
+Jimmy Blackburn owned a towing and wrecker service in Harrison County, Texas. After he complained to the Marshall police chief about the bidding process for city towing contracts and spoke publicly about wrecker policies, Blackburn was removed from the city's towing rotation list and had his permission to use the police radio frequency revoked. He sued the City of Marshall, its police chief, and the county sheriff under [§ 1983](/terms-and-concepts/section-1983), alleging [First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation) and due process violations.
 
 ## The Facts
 
@@ -36,13 +36,13 @@ Following the phone call—and allegedly because of it—Williams removed Blackb
 
 Blackburn also alleged that Harrison County Sheriff Bill Oldham participated in the retaliation by contacting wrecker operators and discouraging them from doing business with Blackburn.
 
-Blackburn sued all three defendants under § 1983, alleging that the removal from the rotation and radio frequency constituted retaliation for his First Amendment-protected complaints, and that the removal deprived him of property without [due process](/primer/substantive-due-process).
+Blackburn sued all three defendants under § 1983, alleging that the removal from the rotation and radio frequency constituted retaliation for his First Amendment-protected complaints, and that the removal deprived him of property without [due process](/terms-and-concepts/substantive-due-process).
 
 ## What the Court Decided
 
 The Fifth Circuit affirmed in part and reversed and remanded in part.
 
-**On the First Amendment retaliation claim**, the court reversed the dismissal. Blackburn's complaints about the bidding process addressed a matter of public concern—the fairness and transparency of how the city awarded public contracts. The court found that Blackburn adequately alleged a causal connection between his complaints and the adverse actions taken against him (removal from the towing rotation and loss of radio access). This was sufficient to state a [First Amendment retaliation](/primer/first-amendment-retaliation) claim under § 1983.
+**On the First Amendment retaliation claim**, the court reversed the dismissal. Blackburn's complaints about the bidding process addressed a matter of public concern—the fairness and transparency of how the city awarded public contracts. The court found that Blackburn adequately alleged a causal connection between his complaints and the adverse actions taken against him (removal from the towing rotation and loss of radio access). This was sufficient to state a [First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation) claim under § 1983.
 
 **On the due process claim**, the court affirmed the dismissal. Blackburn had no protected property interest in remaining on the city's towing rotation list. The rotation system was discretionary—the city could add or remove operators without any formal process. Without a protected property interest, there was no due process violation.
 

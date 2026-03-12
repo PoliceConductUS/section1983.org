@@ -48,7 +48,7 @@ Justice Sotomayor dissented, arguing that Mullenix fired without any training, a
 
 _Mullenix_ is the defense bar's favorite qualified immunity case. It dramatically raised the bar for what counts as "clearly established law" in excessive force cases. After _Mullenix_, plaintiffs must identify precedent with closely analogous facts — general principles like "deadly force requires a sufficient threat" are not enough.
 
-For [§ 1983](/primer/section-1983) plaintiffs, this means:
+For [§ 1983](/terms-and-concepts/section-1983) plaintiffs, this means:
 
 - You need case law involving facts substantially similar to yours — not just the same legal rule
 - The more "hazy" the border between acceptable and excessive force in your fact pattern, the more likely QI will be granted

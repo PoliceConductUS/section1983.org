@@ -18,7 +18,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_Torrez v. Barron_ is a [§ 1983](/primer/section-1983) civil rights action arising from a traffic stop by the Irving Police Department. Plaintiffs Bobby Torrez and Dorothy Torrez (Bobby's sister) sued Officer Jacoby Barron for excessive force. The court's initial ruling addressed a threshold service-of-process issue before reaching the merits.
+_Torrez v. Barron_ is a [§ 1983](/terms-and-concepts/section-1983) civil rights action arising from a traffic stop by the Irving Police Department. Plaintiffs Bobby Torrez and Dorothy Torrez (Bobby's sister) sued Officer Jacoby Barron for excessive force. The court's initial ruling addressed a threshold service-of-process issue before reaching the merits.
 
 ## The Facts
 
@@ -50,4 +50,4 @@ The court also noted that if Dorothy Torrez wished to proceed under Texas common
 
 ## Key Takeaway
 
-When suing individual police officers under [§ 1983](/primer/section-1983), proper service of process on each individual defendant is essential. Service on a city office is not substitute for personal service on an individual. If you miss the service deadline, you may get an extension if the statute of limitations would bar refiling—but don't count on it.
+When suing individual police officers under [§ 1983](/terms-and-concepts/section-1983), proper service of process on each individual defendant is essential. Service on a city office is not substitute for personal service on an individual. If you miss the service deadline, you may get an extension if the statute of limitations would bar refiling—but don't count on it.

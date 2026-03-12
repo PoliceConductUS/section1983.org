@@ -25,7 +25,7 @@ citedBy:
 
 ## What This Case Is About
 
-Jill Brown was arrested by Deputy Stacy Burns of the Bryan County, Oklahoma, Sheriff's Department, who allegedly used excessive force that caused her serious knee injury. Brown sued Bryan County under [§ 1983](/primer/section-1983), arguing the county was liable because Sheriff Moore hired Burns without adequately reviewing his criminal background—a background that included guilty pleas to assault and battery and various driving offenses. The Supreme Court held that a single hiring decision can trigger [municipal liability](/primer/municipal-liability) only under very narrow circumstances, requiring proof of [deliberate indifference](/primer/deliberate-indifference) to a plainly obvious risk.
+Jill Brown was arrested by Deputy Stacy Burns of the Bryan County, Oklahoma, Sheriff's Department, who allegedly used excessive force that caused her serious knee injury. Brown sued Bryan County under [§ 1983](/terms-and-concepts/section-1983), arguing the county was liable because Sheriff Moore hired Burns without adequately reviewing his criminal background—a background that included guilty pleas to assault and battery and various driving offenses. The Supreme Court held that a single hiring decision can trigger [municipal liability](/terms-and-concepts/municipal-liability) only under very narrow circumstances, requiring proof of [deliberate indifference](/terms-and-concepts/deliberate-indifference) to a plainly obvious risk.
 
 ## The Facts
 
@@ -55,9 +55,9 @@ The Court found that neither the District Court nor the Fifth Circuit properly t
 
 **Single-incident municipal liability is extremely hard to prove.** This case raised the bar for holding cities liable based on individual hiring decisions. You must show not just that the city was negligent in screening an officer's background, but that the screening failure made the specific constitutional violation "plainly obvious."
 
-**Deliberate indifference is the standard.** For claims based on hiring, [failure to train](/primer/failure-to-train), or failure to supervise, the plaintiff must demonstrate that the municipality acted with deliberate indifference—not mere negligence or even gross negligence.
+**Deliberate indifference is the standard.** For claims based on hiring, [failure to train](/terms-and-concepts/failure-to-train), or failure to supervise, the plaintiff must demonstrate that the municipality acted with deliberate indifference—not mere negligence or even gross negligence.
 
-**[Moving force causation](/primer/moving-force-causation) is required.** It is not enough to show the city did something wrong (like sloppy background checks). You must draw a direct line from the city's action to the specific constitutional violation you suffered. This causal link is often the most challenging element.
+**[Moving force causation](/terms-and-concepts/moving-force-causation) is required.** It is not enough to show the city did something wrong (like sloppy background checks). You must draw a direct line from the city's action to the specific constitutional violation you suffered. This causal link is often the most challenging element.
 
 **Criminal background is not automatically disqualifying.** A prior record of misdemeanor offenses does not automatically make it "plainly obvious" that a hire will violate someone's rights. Plaintiffs need expert testimony or pattern evidence to connect the applicant's specific background to the specific type of violation that occurred.
 

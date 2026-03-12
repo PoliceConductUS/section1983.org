@@ -26,7 +26,7 @@ citedBy: []
 
 ## What This Case Is About
 
-George Russell witnessed a utility crew trimming trees on his property during Hurricane Ike recovery operations and complained about their methods. After confrontations with the crew and police over two days, Russell was arrested for violating an emergency management order. A grand jury later indicted him on felony charges, which were dismissed three months later. Russell sued the arresting officer under [§ 1983](/primer/section-1983), claiming his arrest violated his [First Amendment](/primer/first-amendment-retaliation) right to free speech and his [Fourth Amendment](/primer/fourth-amendment) right against unlawful arrest. The Fifth Circuit affirmed summary judgment for the officer based on [qualified immunity](/primer/qualified-immunity).
+George Russell witnessed a utility crew trimming trees on his property during Hurricane Ike recovery operations and complained about their methods. After confrontations with the crew and police over two days, Russell was arrested for violating an emergency management order. A grand jury later indicted him on felony charges, which were dismissed three months later. Russell sued the arresting officer under [§ 1983](/terms-and-concepts/section-1983), claiming his arrest violated his [First Amendment](/terms-and-concepts/first-amendment-retaliation) right to free speech and his [Fourth Amendment](/terms-and-concepts/fourth-amendment) right against unlawful arrest. The Fifth Circuit affirmed summary judgment for the officer based on [qualified immunity](/terms-and-concepts/qualified-immunity).
 
 ## The Facts
 
@@ -40,7 +40,7 @@ In November 2008, Weeks presented the case to a grand jury. The grand jury upgra
 
 The Fifth Circuit affirmed the district court's grant of summary judgment to Officer Altom on all constitutional claims.
 
-On Russell's First and Fourth Amendment claims, the court held that a grand jury indictment is sufficient to establish [probable cause](/primer/probable-cause). Because both claims require an absence of probable cause, the indictment defeated both claims. The court explained that when facts supporting an arrest are placed before an independent intermediary such as a grand jury, the intermediary's decision "breaks the chain of causation," insulating the officer from liability.
+On Russell's First and Fourth Amendment claims, the court held that a grand jury indictment is sufficient to establish [probable cause](/terms-and-concepts/probable-cause). Because both claims require an absence of probable cause, the indictment defeated both claims. The court explained that when facts supporting an arrest are placed before an independent intermediary such as a grand jury, the intermediary's decision "breaks the chain of causation," insulating the officer from liability.
 
 Russell argued the grand jury's deliberations were tainted because DA Weeks: (1) was too involved in the arrest decision to be impartial, (2) presented charges under a statute carrying no criminal penalties, and (3) omitted vital facts. The court rejected all three arguments. First, prosecutors routinely participate in charging decisions—the grand jury, not the prosecutor, is the impartial intermediary. Second, including an inapplicable statute did not undermine the other valid charges. Third, "[t]he grand jury sits not to determine guilt or innocence, but to assess whether there is adequate basis for bringing a criminal charge," and it is sufficient to hear only the prosecutor's side.
 

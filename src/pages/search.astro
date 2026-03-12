@@ -1,11 +1,31 @@
 ---
 import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+
+const canonicalUrl = "https://www.section1983.org/search/";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "SearchResultsPage",
+  name: "Search section1983.org",
+  description:
+    "Search articles, cases, terms and concepts entries, and process guides on section1983.org.",
+  url: canonicalUrl,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://www.section1983.org/search/?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
 ---
 
 <Base
-  title="Search"
-  description="Search articles, cases, primer entries, and process guides on section1983.org."
+  title="Search Section 1983 Articles, Cases, and Terms and Concepts"
+  description="Search Section 1983 articles, case summaries, terms and concepts entries, and process guides on section1983.org."
+  canonicalUrl={canonicalUrl}
+  structuredData={structuredData}
 >
+  <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Search" }]} />
+
   <h1 class="text-3xl font-bold text-navy mb-6">Search</h1>
 
   <div class="mb-8">
@@ -13,7 +33,7 @@ import Base from "../layouts/Base.astro";
     <input
       id="search-input"
       type="search"
-      placeholder="Search cases, articles, primer terms, process steps... (try 'tased' or 'beaten')"
+      placeholder="Search cases, articles, terms and concepts, process steps... (try 'tased' or 'beaten')"
       autocomplete="off"
       class="w-full px-4 py-3 border-2 border-slate-300 rounded-lg text-navy focus:border-gold focus:outline-none text-lg"
     />
@@ -36,13 +56,13 @@ import Base from "../layouts/Base.astro";
 
     const typeLabels = {
       article: "Article",
-      primer: "Primer",
+      termsAndConcepts: "Terms and Concepts",
       process: "Process",
       case: "Case",
     };
     const typeColors = {
       article: "bg-gold/20 text-navy",
-      primer: "bg-navy/10 text-navy",
+      termsAndConcepts: "bg-navy/10 text-navy",
       process: "bg-green-100 text-green-800",
       case: "bg-red-50 text-red-800",
     };

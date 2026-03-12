@@ -10,7 +10,7 @@ tags: ["pretrial", "motions-in-limine", "settlement", "trial-prep"]
 
 ## What happens at this stage
 
-If your case survives [summary judgment](/primer/summary-judgment), you're going to trial. The pretrial phase is where the court and both parties prepare for it. This phase is mechanical but demanding — miss a deadline or fail to disclose something and it may be excluded at trial.
+If your case survives [summary judgment](/terms-and-concepts/summary-judgment), you're going to trial. The pretrial phase is where the court and both parties prepare for it. This phase is mechanical but demanding — miss a deadline or fail to disclose something and it may be excluded at trial.
 
 ## Pretrial conference (Rule 16)
 
@@ -36,7 +36,7 @@ Some judges hold multiple conferences. Some do it all in one. The pretrial confe
 
 ### Motions defendants will file
 
-- **Exclude damages evidence** — if you didn't disclose medical bills or [expert](/primer/expert-witness) reports during [discovery](/primer/discovery)
+- **Exclude damages evidence** — if you didn't disclose medical bills or [expert](/terms-and-concepts/expert-witness) reports during [discovery](/terms-and-concepts/discovery)
 - **Exclude witnesses not disclosed** — Rule 26(a) and 26(e) require timely disclosure. Undisclosed witnesses get excluded.
 - **Limit your testimony** — defendants may argue you can't testify about legal conclusions or opinions outside your personal knowledge
 - **Exclude "prior bad acts" of officers** — defendants will fight hard to keep prior complaints and disciplinary records out. You'll argue they're relevant to pattern/practice, notice, or motive.
@@ -68,7 +68,7 @@ In § 1983 cases, pattern jury instructions exist for most claims:
 
 - Fifth Circuit Pattern Jury Instructions (if you're in the Fifth Circuit)
 - Your circuit's equivalent pattern instructions
-- Specific instructions for [qualified immunity](/primer/qualified-immunity), [excessive force](/primer/excessive-force), [false arrest](/primer/false-arrest), etc.
+- Specific instructions for [qualified immunity](/terms-and-concepts/qualified-immunity), [excessive force](/terms-and-concepts/excessive-force), [false arrest](/terms-and-concepts/false-arrest), etc.
 
 You can propose modifications to pattern instructions, but courts generally stick to the patterns. Submit yours early and be prepared to argue for any modifications.
 

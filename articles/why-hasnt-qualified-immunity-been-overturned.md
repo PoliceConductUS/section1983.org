@@ -1,15 +1,15 @@
 ---
 title: "Why Hasn't Qualified Immunity Been Overturned?"
 description: "The Supreme Court invented qualified immunity with no statutory basis. Congress has tried and failed to remove it. Here's why it persists — and what would have to change."
-pubDate: 2026-04-06
+pubDate: 2026-02-27
 author: "Institute for Police Conduct, Inc."
 tags: ["qualified-immunity", "scotus", "policy", "deep-dive"]
-draft: true
+draft: false
 ---
 
-[Section 1983](/primer/section-1983) says that any person who, under color of law, deprives someone of their constitutional rights "shall be liable." No exceptions. No immunity clause. No escape hatch.
+[Section 1983](/terms-and-concepts/section-1983) says that any person who, under color of law, deprives someone of their constitutional rights "shall be liable." No exceptions. No immunity clause. No escape hatch.
 
-[Qualified immunity](/primer/qualified-immunity) appears nowhere in that statute. It appears nowhere in the Constitution. Congress never voted on it. No president signed it into law.
+[Qualified immunity](/terms-and-concepts/qualified-immunity) appears nowhere in that statute. It appears nowhere in the Constitution. Congress never voted on it. No president signed it into law.
 
 The Supreme Court made it up.
 
@@ -29,7 +29,7 @@ Start with the text. Section 1983 reads:
 
 The current codified text is already bad news for qualified immunity. But the original 1871 enactment was even more explicit.
 
-When Congress passed the Civil Rights Act of 1871, it did not just say state actors who violate constitutional rights "shall be liable." It added a reinforcing clause making that liability apply notwithstanding any contrary state "law, statute, ordinance, regulation, custom, or usage."
+When Congress passed the Civil Rights Act of 1871, also called the Ku Klux Klan Act, it did not just say state actors who violate constitutional rights "shall be liable." It added a reinforcing clause making that liability apply notwithstanding any contrary state "law, statute, ordinance, regulation, custom, or usage."
 
 That matters because qualified immunity was justified in [_Pierson v. Ray_](/cases/pierson-v-ray) as a carryover from common-law defenses. The original statute anticipated exactly that kind of move and told courts not to do it. If state law, state custom, or state common-law immunity pointed one way, and the federal statute pointed the other, the federal statute controlled.
 
@@ -127,7 +127,7 @@ But state reforms only apply to state-law claims. Federal § 1983 qualified immu
 
 ## The catch-22 of challenging QI at SCOTUS
 
-Getting a case to the Supreme Court costs $100,000 to $500,000+ in legal fees. The people most harmed by qualified immunity — people whose rights were violated by police — are disproportionately people who can't afford attorneys. That's why so many § 1983 plaintiffs are [pro se](/primer/pro-se) in the first place.
+Getting a case to the Supreme Court costs $100,000 to $500,000+ in legal fees. The people most harmed by qualified immunity — people whose rights were violated by police — are disproportionately people who can't afford attorneys. That's why so many § 1983 plaintiffs are [pro se](/terms-and-concepts/pro-se) in the first place.
 
 Civil rights organizations pick their vehicles carefully, crafting cert petitions with the best possible fact patterns and legal arguments. And the Court keeps denying cert anyway.
 
@@ -177,4 +177,4 @@ The doctrine is indefensible on textual, historical, and democratic grounds. The
 
 ---
 
-_For more on how qualified immunity works in practice, read our primer on [qualified immunity](/primer/qualified-immunity) and [clearly established law](/primer/clearly-established-law). For the argument that QI should be reformed through legislation, see the primer on [qualified immunity reform](/primer/qualified-immunity-reform)._
+_For more on how qualified immunity works in practice, read [Terms and Concepts: Qualified Immunity](/terms-and-concepts/qualified-immunity) and [Terms and Concepts: Clearly Established Law](/terms-and-concepts/clearly-established-law). For the argument that QI should be reformed through legislation, see [Terms and Concepts: Qualified Immunity Reform](/terms-and-concepts/qualified-immunity-reform)._

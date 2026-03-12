@@ -13,7 +13,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Tuchman v. DSC Communications Corp. is a securities fraud case, not a [§ 1983](/primer/section-1983) civil rights case. However, it is significant in civil rights litigation because it established important Fifth Circuit standards regarding pleading requirements—specifically, the level of factual specificity required to survive a motion to dismiss. These standards are frequently applied when courts evaluate the sufficiency of § 1983 complaints, particularly regarding [municipal liability](/primer/monell-liability) and conspiracy claims that must be pled with particularity.
+Tuchman v. DSC Communications Corp. is a securities fraud case, not a [§ 1983](/terms-and-concepts/section-1983) civil rights case. However, it is significant in civil rights litigation because it established important Fifth Circuit standards regarding pleading requirements—specifically, the level of factual specificity required to survive a motion to dismiss. These standards are frequently applied when courts evaluate the sufficiency of § 1983 complaints, particularly regarding [municipal liability](/terms-and-concepts/monell-liability) and conspiracy claims that must be pled with particularity.
 
 ## The Facts
 

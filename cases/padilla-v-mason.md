@@ -22,7 +22,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_Padilla v. Mason_ examines the use of force during a traffic stop when a suspect resists a pat-down search. The Texas Court of Appeals upheld summary judgment for two DPS troopers on both federal [qualified immunity](/primer/qualified-immunity) and state official immunity grounds, even though the plaintiff — a Border Patrol agent — suffered a spiral fracture of her arm.
+_Padilla v. Mason_ examines the use of force during a traffic stop when a suspect resists a pat-down search. The Texas Court of Appeals upheld summary judgment for two DPS troopers on both federal [qualified immunity](/terms-and-concepts/qualified-immunity) and state official immunity grounds, even though the plaintiff — a Border Patrol agent — suffered a spiral fracture of her arm.
 
 ## The Facts
 
@@ -51,4 +51,4 @@ The Texas Court of Appeals affirmed summary judgment for both troopers on all cl
 
 ## Key Takeaway
 
-When you physically resist a lawful pat-down — even instinctively — officers may use proportional force to gain compliance, and resulting injuries will be attributed to your resistance rather than excessive force. The [Graham factors](/primer/graham-factors) weigh heavily against [excessive force](/primer/excessive-force) claims when the suspect was actively resisting a search justified by officer safety concerns.
+When you physically resist a lawful pat-down — even instinctively — officers may use proportional force to gain compliance, and resulting injuries will be attributed to your resistance rather than excessive force. The [Graham factors](/terms-and-concepts/graham-factors) weigh heavily against [excessive force](/terms-and-concepts/excessive-force) claims when the suspect was actively resisting a search justified by officer safety concerns.

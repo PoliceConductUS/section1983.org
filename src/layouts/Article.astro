@@ -11,9 +11,14 @@ interface Props {
   author?: string;
   tags?: string[];
   wordCount?: number;
+  updatedDate?: Date;
   ogImage?: string;
   relatedCases?: { href: string; label: string; description: string }[];
-  relatedPrimer?: { href: string; label: string; description: string }[];
+  relatedTermsAndConcepts?: {
+    href: string;
+    label: string;
+    description: string;
+  }[];
   relatedProcess?: { href: string; label: string; description: string }[];
 }
 
@@ -25,9 +30,10 @@ const {
   author,
   tags,
   wordCount,
+  updatedDate,
   ogImage,
   relatedCases = [],
-  relatedPrimer = [],
+  relatedTermsAndConcepts = [],
   relatedProcess = [],
 } = Astro.props;
 
@@ -42,6 +48,10 @@ const imageUrl = new URL(
   ogImage || "/og-image.png",
   "https://www.section1983.org",
 ).toString();
+const readingMinutes = wordCount
+  ? Math.max(1, Math.round(wordCount / 225))
+  : null;
+const readingTimeLabel = readingMinutes ? `${readingMinutes} min read` : null;
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -69,7 +79,9 @@ const structuredData = {
   },
   url: canonicalUrl,
   ...(pubDate && { datePublished: pubDate.toISOString() }),
+  ...(updatedDate && { dateModified: updatedDate.toISOString() }),
   ...(wordCount ? { wordCount } : {}),
+  ...(readingMinutes ? { timeRequired: `PT${readingMinutes}M` } : {}),
 };
 ---
 
@@ -82,11 +94,7 @@ const structuredData = {
   ogImageAlt={title}
   structuredData={structuredData}
 >
-  <ShareButtons
-    title={title}
-    description={description}
-    url={canonicalUrl}
-  />
+  <ShareButtons title={title} description={description} url={canonicalUrl} />
 
   <slot name="breadcrumbs" />
   <article>
@@ -100,6 +108,7 @@ const structuredData = {
             <time datetime={pubDate?.toISOString()}>{formattedDate}</time>
           )
         }
+        {readingTimeLabel && <span>{readingTimeLabel}</span>}
         {author && <span>by {author}</span>}
       </div>
       {
@@ -120,19 +129,19 @@ const structuredData = {
     </div>
 
     {
-      (relatedPrimer.length > 0 ||
+      (relatedTermsAndConcepts.length > 0 ||
         relatedCases.length > 0 ||
         relatedProcess.length > 0) && (
         <aside class="mt-12 border-t border-slate-200 pt-8 not-prose">
           <h2 class="text-xl font-bold text-navy mb-4">Keep Reading</h2>
           <div class="grid gap-6 md:grid-cols-3">
-            {relatedPrimer.length > 0 && (
+            {relatedTermsAndConcepts.length > 0 && (
               <section>
                 <h3 class="text-sm font-bold uppercase tracking-wide text-navy mb-3">
-                  Primer Terms
+                  Terms and Concepts
                 </h3>
                 <div class="space-y-3">
-                  {relatedPrimer.map((entry) => (
+                  {relatedTermsAndConcepts.map((entry) => (
                     <a
                       href={entry.href}
                       class="block rounded border border-slate-200 bg-white p-4 hover:border-gold hover:shadow-sm transition-all"

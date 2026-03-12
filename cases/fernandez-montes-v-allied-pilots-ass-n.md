@@ -28,7 +28,7 @@ Fernandez-Montes was a member of the Allied Pilots Association (APA). He sought 
 
 Fernandez-Montes sued in federal court. The initial judge denied the union's motion to dismiss, and the plaintiff was given leave to amend his complaint. The case was then transferred to a different judge, who held a pretrial conference approximately two years after suit was filed. At the close of the conference, the new judge stated his intention to "withdraw" the prior judge's denial of the motion to dismiss and granted dismissal of the entire amended complaint that same day.
 
-Fernandez-Montes characterized this as effectively a [summary judgment](/primer/summary-judgment), arguing he was denied the notice and opportunity to respond required by Rule 56.
+Fernandez-Montes characterized this as effectively a [summary judgment](/terms-and-concepts/summary-judgment), arguing he was denied the notice and opportunity to respond required by Rule 56.
 
 ## What the Court Decided
 
@@ -44,4 +44,4 @@ The case also reinforces your right to amend your complaint. If your initial com
 
 ## Key Takeaway
 
-Courts must follow proper procedures when dismissing cases. If a judge considers matters outside the pleadings, a motion to dismiss becomes a [summary judgment](/primer/summary-judgment) motion, triggering notice requirements and the right to present evidence. And when a complaint falls short, leave to amend should be freely granted unless there's a good reason to deny it. Know your procedural rights — they can be the difference between your case surviving and being thrown out.
+Courts must follow proper procedures when dismissing cases. If a judge considers matters outside the pleadings, a motion to dismiss becomes a [summary judgment](/terms-and-concepts/summary-judgment) motion, triggering notice requirements and the right to present evidence. And when a complaint falls short, leave to amend should be freely granted unless there's a good reason to deny it. Know your procedural rights — they can be the difference between your case surviving and being thrown out.

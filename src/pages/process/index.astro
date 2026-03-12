@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import fs from "node:fs";
 import path from "node:path";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 
 const svgContent = fs.readFileSync(
   path.join(process.cwd(), "public/diagrams/process-flowchart.svg"),
@@ -95,6 +96,10 @@ const structuredData = {
   structuredData={structuredData}
 >
   <div class="prose">
+    <Breadcrumbs
+      crumbs={[{ label: "Home", href: "/" }, { label: "The Legal Process" }]}
+    />
+
     <h1 class="text-3xl font-bold text-navy mb-6">The Legal Process</h1>
 
     <p>
@@ -106,9 +111,9 @@ const structuredData = {
 
     <p class="text-sm text-slate">
       Need terminology help while you read? The <a
-        href="/primer"
+        href="/terms-and-concepts"
         class="text-navy underline decoration-gold decoration-2 hover:text-gold"
-        >pro se primer</a
+        >Terms and Concepts</a
       > translates the motions, standards, and doctrines that show up at each stage.
     </p>
 

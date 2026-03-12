@@ -27,7 +27,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_Hicks v. Stahl_ is a [§ 1983](/primer/section-1983) civil rights action filed in the Northern District of Texas against seven City of Irving police officers and the City of Irving. Plaintiff Daphne Hicks, proceeding pro se, alleged constitutional violations arising from two incidents: a warrantless entry and search of her apartment (the "First Incident") and a subsequent forced entry to serve arrest and search warrants (the "Second Incident"). The court dismissed all claims with prejudice.
+_Hicks v. Stahl_ is a [§ 1983](/terms-and-concepts/section-1983) civil rights action filed in the Northern District of Texas against seven City of Irving police officers and the City of Irving. Plaintiff Daphne Hicks, proceeding pro se, alleged constitutional violations arising from two incidents: a warrantless entry and search of her apartment (the "First Incident") and a subsequent forced entry to serve arrest and search warrants (the "Second Incident"). The court dismissed all claims with prejudice.
 
 ## The Facts
 
@@ -53,7 +53,7 @@ The court (Judge Jorge A. Solis) granted all three defense motions to dismiss, a
 
 **§ 1983 claims against the City**: Dismissed with prejudice under [_Monell_](/cases/monell-v-dep-t-of-soc-servs). Hicks alleged only that the City had a "negligent practice and custom of allowing its Police Department to Violate Individuals Civil Rights," but failed to identify a policymaker, an official policy, or a pattern of conduct. The court emphasized that conclusory allegations are insufficient—specific facts about the policy, custom, or training deficiency are required.
 
-**§ 1983 claims against the officers**: Dismissed under [_Heck v. Humphrey_](/primer/heck-bar). Because Hicks had been convicted of marijuana possession based on evidence obtained during the First Incident, a finding that the officers lacked probable cause or used false warrants would necessarily invalidate her conviction. Under _Heck_, she could not maintain a § 1983 suit until her conviction was reversed, expunged, or invalidated through proper channels (direct appeal or habeas corpus).
+**§ 1983 claims against the officers**: Dismissed under [_Heck v. Humphrey_](/terms-and-concepts/heck-bar). Because Hicks had been convicted of marijuana possession based on evidence obtained during the First Incident, a finding that the officers lacked probable cause or used false warrants would necessarily invalidate her conviction. Under _Heck_, she could not maintain a § 1983 suit until her conviction was reversed, expunged, or invalidated through proper channels (direct appeal or habeas corpus).
 
 ## Why This Case Matters for Your § 1983 Case
 
@@ -61,7 +61,7 @@ The court (Judge Jorge A. Solis) granted all three defense motions to dismiss, a
 
 **The TTCA election-of-remedies is absolute.** In Texas, if you sue both a governmental unit and its employees under the TTCA, the employees will be dismissed. You must choose one or the other. This is a common mistake for pro se plaintiffs.
 
-**Conclusory _Monell_ allegations will be dismissed.** Simply alleging a "practice and custom" of violating rights is not enough. You must identify: (1) a specific policymaker, (2) a specific official policy or widespread custom, and (3) how that policy was the [moving force](/primer/moving-force-causation) behind your specific injury.
+**Conclusory _Monell_ allegations will be dismissed.** Simply alleging a "practice and custom" of violating rights is not enough. You must identify: (1) a specific policymaker, (2) a specific official policy or widespread custom, and (3) how that policy was the [moving force](/terms-and-concepts/moving-force-causation) behind your specific injury.
 
 **Pro se pleadings get liberal construction—but not unlimited latitude.** Courts construe pro se complaints liberally, but they still must state plausible claims with factual support under [_Iqbal_](/cases/ashcroft-v-iqbal) and [_Twombly_](/cases/bell-atlantic-corp-v-twombly).
 

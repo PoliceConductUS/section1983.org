@@ -1,10 +1,35 @@
 ---
 import Base from "../layouts/Base.astro";
-import DisqusComments from "../components/DisqusComments.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+
+const canonicalUrl = "https://www.section1983.org/get-involved/";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Get Involved with section1983.org",
+  description:
+    "Ways to contribute to section1983.org through writing, review, partnerships, volunteer work, and donations.",
+  url: canonicalUrl,
+  mainEntity: {
+    "@type": "Organization",
+    name: "Institute for Police Conduct, Inc.",
+    url: "https://policeconduct.org",
+    email: "hello@section1983.org",
+  },
+};
 ---
 
-<Base title="Get Involved">
+<Base
+  title="Contribute to section1983.org"
+  description="Contribute to section1983.org by writing, reviewing, volunteering, partnering, or donating to support plain-language Section 1983 legal education."
+  canonicalUrl={canonicalUrl}
+  structuredData={structuredData}
+>
   <div class="prose">
+    <Breadcrumbs
+      crumbs={[{ label: "Home", href: "/" }, { label: "Get Involved" }]}
+    />
+
     <h1 class="text-3xl font-bold text-navy mb-6">Get Involved</h1>
 
     <p>
@@ -120,9 +145,4 @@ import DisqusComments from "../components/DisqusComments.astro";
       >.
     </p>
   </div>
-
-  <DisqusComments
-    pageUrl="https://www.section1983.org/get-involved/"
-    disqusIdentifier="get-involved"
-  />
 </Base>

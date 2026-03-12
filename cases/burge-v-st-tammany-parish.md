@@ -26,7 +26,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Burge v. St. Tammany Parish examines whether a sheriff can be held liable under [§ 1983](/primer/section-1983) in his official capacity for depriving a criminal defendant of his constitutional right to a fair trial through the destruction or loss of evidence. The Fifth Circuit reversed the judgment against the sheriff, finding the evidence insufficient.
+Burge v. St. Tammany Parish examines whether a sheriff can be held liable under [§ 1983](/terms-and-concepts/section-1983) in his official capacity for depriving a criminal defendant of his constitutional right to a fair trial through the destruction or loss of evidence. The Fifth Circuit reversed the judgment against the sheriff, finding the evidence insufficient.
 
 ## The Facts
 

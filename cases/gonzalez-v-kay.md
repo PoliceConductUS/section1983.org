@@ -12,7 +12,7 @@ citedBy: []
 
 ## What This Case Is About
 
-While not a [§ 1983](/primer/section-1983) case, _Gonzalez v. Kay_ is a Fifth Circuit decision addressing when a debt collection letter is deceptive under the Fair Debt Collection Practices Act (FDCPA). The case is relevant to civil rights practice because it involves the same [motion to dismiss](/primer/motion-to-dismiss) standards and [plausibility pleading](/primer/plausibility-pleading) analysis that govern § 1983 cases. The Fifth Circuit reversed the district court's dismissal, finding that Gonzalez stated a plausible claim.
+While not a [§ 1983](/terms-and-concepts/section-1983) case, _Gonzalez v. Kay_ is a Fifth Circuit decision addressing when a debt collection letter is deceptive under the Fair Debt Collection Practices Act (FDCPA). The case is relevant to civil rights practice because it involves the same [motion to dismiss](/terms-and-concepts/motion-to-dismiss) standards and [plausibility pleading](/terms-and-concepts/plausibility-pleading) analysis that govern § 1983 cases. The Fifth Circuit reversed the district court's dismissal, finding that Gonzalez stated a plausible claim.
 
 ## The Facts
 
@@ -30,10 +30,10 @@ The court found that reasonable consumers could be misled. The front of the lett
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Gonzalez v. Kay_ is primarily relevant as a procedural precedent. It demonstrates how the Fifth Circuit applies [motion to dismiss](/primer/motion-to-dismiss) standards — specifically, that courts must draw all reasonable inferences in favor of the plaintiff at the 12(b)(6) stage. If reasonable minds could differ about whether conduct was deceptive (or, in § 1983 terms, whether it was unreasonable), the case survives dismissal.
+_Gonzalez v. Kay_ is primarily relevant as a procedural precedent. It demonstrates how the Fifth Circuit applies [motion to dismiss](/terms-and-concepts/motion-to-dismiss) standards — specifically, that courts must draw all reasonable inferences in favor of the plaintiff at the 12(b)(6) stage. If reasonable minds could differ about whether conduct was deceptive (or, in § 1983 terms, whether it was unreasonable), the case survives dismissal.
 
 The case also illustrates the principle that disclaimers and fine print do not automatically insulate defendants from liability. In the § 1983 context, this is analogous to the principle that officers cannot rely on technical compliance with procedures to excuse substantively unconstitutional conduct.
 
 ## Key Takeaway
 
-At the [motion to dismiss](/primer/motion-to-dismiss) stage, courts must accept the plaintiff's factual allegations as true and draw all reasonable inferences in the plaintiff's favor. A claim that involves potentially misleading conduct — whether in debt collection or law enforcement — cannot be dismissed merely because the defendant offers a technical explanation. If reasonable people could disagree about the interpretation of the conduct, the case must proceed beyond the pleading stage.
+At the [motion to dismiss](/terms-and-concepts/motion-to-dismiss) stage, courts must accept the plaintiff's factual allegations as true and draw all reasonable inferences in the plaintiff's favor. A claim that involves potentially misleading conduct — whether in debt collection or law enforcement — cannot be dismissed merely because the defendant offers a technical explanation. If reasonable people could disagree about the interpretation of the conduct, the case must proceed beyond the pleading stage.

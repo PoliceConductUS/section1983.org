@@ -17,7 +17,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_Texas v. Brown_ is a landmark Supreme Court decision clarifying the plain view doctrine under the [Fourth Amendment](/primer/fourth-amendment). The Court held that when an officer is lawfully positioned to observe an object, the "immediately apparent" requirement of the plain view doctrine requires only [probable cause](/primer/probable-cause)—not certainty—to believe the item is contraband or evidence of a crime. A person "of reasonable caution" need only believe the item is associated with criminal activity.
+_Texas v. Brown_ is a landmark Supreme Court decision clarifying the plain view doctrine under the [Fourth Amendment](/terms-and-concepts/fourth-amendment). The Court held that when an officer is lawfully positioned to observe an object, the "immediately apparent" requirement of the plain view doctrine requires only [probable cause](/terms-and-concepts/probable-cause)—not certainty—to believe the item is contraband or evidence of a crime. A person "of reasonable caution" need only believe the item is associated with criminal activity.
 
 ## The Facts
 
@@ -27,7 +27,7 @@ Maples reached into the car and retrieved the balloon from the seat. It was late
 
 ## What the Court Decided
 
-The Supreme Court reversed, holding that the plain view doctrine does not require certainty. The Court established that the "immediately apparent" requirement means only that the officer must have [probable cause](/primer/probable-cause) to associate the object with criminal activity—the same standard of "reasonable cause to believe" that applies in other probable cause contexts.
+The Supreme Court reversed, holding that the plain view doctrine does not require certainty. The Court established that the "immediately apparent" requirement means only that the officer must have [probable cause](/terms-and-concepts/probable-cause) to associate the object with criminal activity—the same standard of "reasonable cause to believe" that applies in other probable cause contexts.
 
 The Court explained that probable cause is a "flexible, common-sense standard" that "merely requires that the facts available to the officer would warrant a man of reasonable caution in the belief that certain items may be contraband or stolen property or useful as evidence of a crime." The officer need not know the item is contraband—a reasonable belief is sufficient.
 

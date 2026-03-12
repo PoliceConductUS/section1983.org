@@ -23,7 +23,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Guadalupe Sustaita-Thompson sued the City of Galveston and two police detectives under [§ 1983](/primer/section-1983) after officers allegedly coerced her ten-year-old son, Jonathan, into confessing to a double murder arising from an arson fire. Thompson had been arrested on charges of contributing to the delinquency of a minor, and Jonathan was taken into custody where detectives allegedly "consistently placed words in the mouth of this 10-year old child." After another suspect later admitted to setting the fire, the charges against Jonathan were apparently dismissed, but he remained in state facilities for over a year and a half. The court dismissed all claims.
+Guadalupe Sustaita-Thompson sued the City of Galveston and two police detectives under [§ 1983](/terms-and-concepts/section-1983) after officers allegedly coerced her ten-year-old son, Jonathan, into confessing to a double murder arising from an arson fire. Thompson had been arrested on charges of contributing to the delinquency of a minor, and Jonathan was taken into custody where detectives allegedly "consistently placed words in the mouth of this 10-year old child." After another suspect later admitted to setting the fire, the charges against Jonathan were apparently dismissed, but he remained in state facilities for over a year and a half. The court dismissed all claims.
 
 ## The Facts
 

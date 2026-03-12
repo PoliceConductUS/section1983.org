@@ -14,7 +14,7 @@ citedBy:
 
 ## What This Case Is About
 
-In re Katrina Canal Breaches Litigation is a consolidated appeal arising from insurance disputes following Hurricane Katrina. While the substance of the case involves flood insurance coverage rather than civil rights, this decision is one of the most frequently cited Fifth Circuit cases in [§ 1983](/primer/section-1983) litigation because it articulates the standard courts apply when evaluating motions to dismiss under Federal Rule of Civil Procedure 12(b)(6). The key holding—that courts must "accept all well-pleaded facts as true, viewing them in the light most favorable to the plaintiff"—is cited in virtually every motion to dismiss ruling in the Fifth Circuit.
+In re Katrina Canal Breaches Litigation is a consolidated appeal arising from insurance disputes following Hurricane Katrina. While the substance of the case involves flood insurance coverage rather than civil rights, this decision is one of the most frequently cited Fifth Circuit cases in [§ 1983](/terms-and-concepts/section-1983) litigation because it articulates the standard courts apply when evaluating motions to dismiss under Federal Rule of Civil Procedure 12(b)(6). The key holding—that courts must "accept all well-pleaded facts as true, viewing them in the light most favorable to the plaintiff"—is cited in virtually every motion to dismiss ruling in the Fifth Circuit.
 
 ## The Facts
 

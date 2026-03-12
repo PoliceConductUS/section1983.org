@@ -35,7 +35,7 @@ Sergeant Jeffrey Cotton arrived as backup. He ordered Tolan's mother to stand ag
 
 When Tolan saw his mother being pushed, he rose up — to his knees, he said; to his feet, the officers said — and shouted: "Get your fucking hands off my mom." Cotton drew his pistol and fired three shots at the unarmed 23-year-old from about 15 to 20 feet away, with no verbal warning. One bullet punctured Tolan's right lung and pierced his liver. He survived, but the injury ended his professional baseball career and causes daily pain.
 
-Tolan sued under [§ 1983](/primer/section-1983). The District Court granted summary judgment to Cotton, and the Fifth Circuit affirmed — finding that Cotton was entitled to [qualified immunity](/primer/qualified-immunity) because he could have reasonably perceived Tolan as a threat.
+Tolan sued under [§ 1983](/terms-and-concepts/section-1983). The District Court granted summary judgment to Cotton, and the Fifth Circuit affirmed — finding that Cotton was entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) because he could have reasonably perceived Tolan as a threat.
 
 ## What the Court Decided
 
@@ -49,7 +49,7 @@ The Court identified specific errors. The Fifth Circuit said the porch was "diml
 
 ## What It Means in Practice
 
-_Tolan_ is a critical guardrail against courts granting [qualified immunity](/primer/qualified-immunity) by quietly adopting the officer's version of events at summary judgment. It reinforces a principle that should be obvious but is regularly violated: when the plaintiff tells one story and the officer tells another, the court must credit the plaintiff's story at the summary judgment stage.
+_Tolan_ is a critical guardrail against courts granting [qualified immunity](/terms-and-concepts/qualified-immunity) by quietly adopting the officer's version of events at summary judgment. It reinforces a principle that should be obvious but is regularly violated: when the plaintiff tells one story and the officer tells another, the court must credit the plaintiff's story at the summary judgment stage.
 
 This matters enormously in excessive force and other § 1983 cases, where the outcome almost always turns on disputed facts. Did the suspect reach for a weapon or just scratch his side? Did the plaintiff resist or comply? Did the officer give a warning or not? These factual disputes should go to a jury — not be resolved by a judge adopting the officer's narrative.
 

@@ -24,7 +24,7 @@ citedBy: []
 
 ## What This Case Is About
 
-The family of Juanita Hermosillo, a Tarrant County courthouse clerk who was taken hostage and killed by her ex-husband, sued Sheriff Don Carpenter under [§ 1983](/primer/section-1983) for the failed rescue operation. The Fifth Circuit reversed the denial of summary judgment, holding that no constitutional claim had been stated and that the sheriff was entitled to [qualified immunity](/primer/qualified-immunity).
+The family of Juanita Hermosillo, a Tarrant County courthouse clerk who was taken hostage and killed by her ex-husband, sued Sheriff Don Carpenter under [§ 1983](/terms-and-concepts/section-1983) for the failed rescue operation. The Fifth Circuit reversed the denial of summary judgment, holding that no constitutional claim had been stated and that the sheriff was entitled to [qualified immunity](/terms-and-concepts/qualified-immunity).
 
 ## The Facts
 
@@ -34,15 +34,15 @@ On August 1, 1989, Cabano entered Judge Ashmore's offices at the courthouse with
 
 ## What the Court Decided
 
-The Fifth Circuit reversed the district court's denial of summary judgment. The court found that no claim for deprivation of constitutional rights had been stated. The [Fourteenth Amendment's](/primer/fourteenth-amendment) Due Process Clause does not generally impose an affirmative duty on the government to protect individuals from harm inflicted by private actors. While there are narrow exceptions—such as when the state has a special relationship with the victim (like a prisoner) or has created the danger—the court found that neither exception applied here.
+The Fifth Circuit reversed the district court's denial of summary judgment. The court found that no claim for deprivation of constitutional rights had been stated. The [Fourteenth Amendment's](/terms-and-concepts/fourteenth-amendment) Due Process Clause does not generally impose an affirmative duty on the government to protect individuals from harm inflicted by private actors. While there are narrow exceptions—such as when the state has a special relationship with the victim (like a prisoner) or has created the danger—the court found that neither exception applied here.
 
 The court emphasized that a public official enjoys qualified immunity from suit, not just from liability. Even assuming some constitutional duty existed, the sheriff's decisions during the hostage crisis were the type of discretionary judgments that qualified immunity is designed to protect.
 
 ## Why This Case Matters for Your § 1983 Case
 
-**No general duty to protect.** The government generally has no constitutional obligation to protect you from harm caused by private individuals. This is a fundamental limitation on [§ 1983](/primer/section-1983) claims. The Due Process Clause is a limitation on state power, not a guarantee of protective services.
+**No general duty to protect.** The government generally has no constitutional obligation to protect you from harm caused by private individuals. This is a fundamental limitation on [§ 1983](/terms-and-concepts/section-1983) claims. The Due Process Clause is a limitation on state power, not a guarantee of protective services.
 
-**Failed rescue operations are generally not actionable.** If police attempt to rescue you but fail, the failure does not automatically constitute a constitutional violation. Law enforcement officers must make difficult tactical decisions under extreme pressure, and those decisions are protected by [qualified immunity](/primer/qualified-immunity).
+**Failed rescue operations are generally not actionable.** If police attempt to rescue you but fail, the failure does not automatically constitute a constitutional violation. Law enforcement officers must make difficult tactical decisions under extreme pressure, and those decisions are protected by [qualified immunity](/terms-and-concepts/qualified-immunity).
 
 **State-created danger is narrow.** To establish a constitutional claim when the government fails to protect you, you typically must show either a special custodial relationship or that the state affirmatively created or increased the danger you faced—a high bar that failed rescue efforts generally do not meet.
 

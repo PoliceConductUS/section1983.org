@@ -24,7 +24,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Linda Freeman was at home when Smith County deputies came to serve a felony arrest warrant on her son, Kevin. When Kevin wasn't there, the deputies interacted with Freeman, who came out of her house yelling at them. The encounter escalated, and the deputies arrested Freeman. She sued under [§ 1983](/primer/section-1983) for [unlawful arrest](/primer/false-arrest) and [excessive force](/primer/excessive-force). The Fifth Circuit split the baby: the deputies were not entitled to [qualified immunity](/primer/qualified-immunity) on the unlawful arrest claim but were immune on the excessive force claim.
+Linda Freeman was at home when Smith County deputies came to serve a felony arrest warrant on her son, Kevin. When Kevin wasn't there, the deputies interacted with Freeman, who came out of her house yelling at them. The encounter escalated, and the deputies arrested Freeman. She sued under [§ 1983](/terms-and-concepts/section-1983) for [unlawful arrest](/terms-and-concepts/false-arrest) and [excessive force](/terms-and-concepts/excessive-force). The Fifth Circuit split the baby: the deputies were not entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) on the unlawful arrest claim but were immune on the excessive force claim.
 
 ## The Facts
 
@@ -36,18 +36,18 @@ While Deputy Gore spoke with Sheila, Linda Freeman emerged from her house and be
 
 ## What the Court Decided
 
-The Fifth Circuit affirmed the district court's denial of summary judgment on the unlawful arrest claim. The court found genuine issues of material fact about whether the deputies had [probable cause](/primer/probable-cause) to arrest Freeman. Yelling at police officers is generally protected by the [First Amendment](/primer/first-amendment-retaliation), and verbal hostility toward officers — without more — does not establish probable cause for arrest. The deputies failed to show that Freeman's conduct constituted a criminal offense justifying arrest.
+The Fifth Circuit affirmed the district court's denial of summary judgment on the unlawful arrest claim. The court found genuine issues of material fact about whether the deputies had [probable cause](/terms-and-concepts/probable-cause) to arrest Freeman. Yelling at police officers is generally protected by the [First Amendment](/terms-and-concepts/first-amendment-retaliation), and verbal hostility toward officers — without more — does not establish probable cause for arrest. The deputies failed to show that Freeman's conduct constituted a criminal offense justifying arrest.
 
-However, the court reversed on the [excessive force](/primer/excessive-force) claim, finding that the deputies were entitled to qualified immunity. The force used during the arrest, viewed in the light most favorable to Freeman, did not constitute a clearly established constitutional violation under the circumstances.
+However, the court reversed on the [excessive force](/terms-and-concepts/excessive-force) claim, finding that the deputies were entitled to qualified immunity. The force used during the arrest, viewed in the light most favorable to Freeman, did not constitute a clearly established constitutional violation under the circumstances.
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Freeman v. Gore_ is significant for several reasons. First, it reinforces that police officers cannot arrest bystanders simply for being verbally hostile or uncooperative during a warrant service. Yelling at officers is not, by itself, a crime. If you were arrested for "mouthing off" to police, this case supports your [false arrest](/primer/false-arrest) claim.
+_Freeman v. Gore_ is significant for several reasons. First, it reinforces that police officers cannot arrest bystanders simply for being verbally hostile or uncooperative during a warrant service. Yelling at officers is not, by itself, a crime. If you were arrested for "mouthing off" to police, this case supports your [false arrest](/terms-and-concepts/false-arrest) claim.
 
-Second, the case illustrates the Fourth Amendment's application to encounters at a person's own home. The deputies were at Freeman's house to find someone else. Freeman's rights in her own home carry special weight under the [Fourth Amendment](/primer/fourth-amendment).
+Second, the case illustrates the Fourth Amendment's application to encounters at a person's own home. The deputies were at Freeman's house to find someone else. Freeman's rights in her own home carry special weight under the [Fourth Amendment](/terms-and-concepts/fourth-amendment).
 
 Third, the split outcome — no immunity on unlawful arrest, immunity on excessive force — shows that qualified immunity is analyzed claim by claim, not globally. You can win on one theory and lose on another in the same case.
 
 ## Key Takeaway
 
-Police officers cannot arrest you simply for yelling at them or being uncooperative during an encounter at your own home. Verbal hostility toward police, without evidence of a criminal offense, does not establish [probable cause](/primer/probable-cause). If you were arrested under circumstances like these — as a bystander during a warrant service who expressed anger or displeasure — you likely have a viable [false arrest](/primer/false-arrest) claim under § 1983.
+Police officers cannot arrest you simply for yelling at them or being uncooperative during an encounter at your own home. Verbal hostility toward police, without evidence of a criminal offense, does not establish [probable cause](/terms-and-concepts/probable-cause). If you were arrested under circumstances like these — as a bystander during a warrant service who expressed anger or displeasure — you likely have a viable [false arrest](/terms-and-concepts/false-arrest) claim under § 1983.

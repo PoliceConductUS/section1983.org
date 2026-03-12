@@ -33,7 +33,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Constance Westfall called the Southlake Police Department when her grandson's father, Monte, came to her home to take the child. When officers arrived and attempted to enter the home to check on the child's welfare, Westfall reached for her front door. Officer Jose Luna then body-slammed her to the ground, and other officers helped hold her down. Westfall suffered a spinal injury and sued five officers and the City of Southlake under [§ 1983](/primer/section-1983), raising claims for false arrest, [excessive force](/primer/excessive-force), First Amendment retaliation, denial of medical treatment, and [failure to train](/primer/monell-liability). The Fifth Circuit issued a mixed ruling, reversing on false arrest but affirming qualified immunity on the remaining claims.
+Constance Westfall called the Southlake Police Department when her grandson's father, Monte, came to her home to take the child. When officers arrived and attempted to enter the home to check on the child's welfare, Westfall reached for her front door. Officer Jose Luna then body-slammed her to the ground, and other officers helped hold her down. Westfall suffered a spinal injury and sued five officers and the City of Southlake under [§ 1983](/terms-and-concepts/section-1983), raising claims for false arrest, [excessive force](/terms-and-concepts/excessive-force), First Amendment retaliation, denial of medical treatment, and [failure to train](/terms-and-concepts/monell-liability). The Fifth Circuit issued a mixed ruling, reversing on false arrest but affirming qualified immunity on the remaining claims.
 
 ## The Facts
 

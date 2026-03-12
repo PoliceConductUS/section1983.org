@@ -25,7 +25,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Richard Gladden was arrested twice — once by North Texas State University police and once by Denton, Texas police. Both times, he refused to provide his name and biographical information during booking, asserting his Fifth Amendment right to remain silent. He was charged with failure to identify himself. In one arrest, he was held for 87 hours before being arraigned. He sued under [§ 1983](/primer/section-1983). The Fifth Circuit held that routine booking questions are not "interrogation" under [Miranda](/primer/fifth-amendment), but that the extended detention violated his constitutional rights.
+Richard Gladden was arrested twice — once by North Texas State University police and once by Denton, Texas police. Both times, he refused to provide his name and biographical information during booking, asserting his Fifth Amendment right to remain silent. He was charged with failure to identify himself. In one arrest, he was held for 87 hours before being arraigned. He sued under [§ 1983](/terms-and-concepts/section-1983). The Fifth Circuit held that routine booking questions are not "interrogation" under [Miranda](/terms-and-concepts/fifth-amendment), but that the extended detention violated his constitutional rights.
 
 ## The Facts
 
@@ -35,16 +35,16 @@ On September 15, 1984, Denton police arrested Gladden at a loud party after he i
 
 ## What the Court Decided
 
-The Fifth Circuit addressed two key issues. First, the court held that routine booking questions seeking biographical data — name, address, date of birth — are not "interrogation" under the [Fifth Amendment](/primer/fifth-amendment) and _Miranda v. Arizona_. Following established Circuit precedent from _United States v. Menichino_, the court explained that these straightforward questions are part of the booking routine and are not designed to elicit incriminating responses. Since identity was not an element of either public intoxication or disorderly conduct, the questions were not incriminating.
+The Fifth Circuit addressed two key issues. First, the court held that routine booking questions seeking biographical data — name, address, date of birth — are not "interrogation" under the [Fifth Amendment](/terms-and-concepts/fifth-amendment) and _Miranda v. Arizona_. Following established Circuit precedent from _United States v. Menichino_, the court explained that these straightforward questions are part of the booking routine and are not designed to elicit incriminating responses. Since identity was not an element of either public intoxication or disorderly conduct, the questions were not incriminating.
 
 Second, the court upheld the district court's finding that Gladden's 87-hour detention before arraignment following his September 1984 arrest violated his constitutional rights. The court awarded nominal damages of $1.00 for this violation, recognizing that while Gladden's rights were violated by the extended detention, his own refusal to accept the posted bond contributed to the situation.
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Gladden_ clarifies an important boundary: the [Fifth Amendment](/primer/fifth-amendment) right to remain silent does not extend to routine booking questions about your identity. You can be charged under state law for refusing to provide your name and biographical information during booking. This is important context for anyone considering refusing to cooperate during the booking process.
+_Gladden_ clarifies an important boundary: the [Fifth Amendment](/terms-and-concepts/fifth-amendment) right to remain silent does not extend to routine booking questions about your identity. You can be charged under state law for refusing to provide your name and biographical information during booking. This is important context for anyone considering refusing to cooperate during the booking process.
 
-However, the case also establishes that extended [pretrial detention](/primer/pretrial-detention) without a timely arraignment violates constitutional rights — even if the detention is only worth nominal damages. If you were held for an extended period without being brought before a magistrate, _Gladden_ supports your claim.
+However, the case also establishes that extended [pretrial detention](/terms-and-concepts/pretrial-detention) without a timely arraignment violates constitutional rights — even if the detention is only worth nominal damages. If you were held for an extended period without being brought before a magistrate, _Gladden_ supports your claim.
 
 ## Key Takeaway
 
-You do not have a [Fifth Amendment](/primer/fifth-amendment) right to refuse to answer basic booking questions about your identity. Routine questions asking for your name, address, and date of birth are not "interrogation" under _Miranda_ and do not trigger the right to counsel. However, you do have a constitutional right to a timely arraignment, and prolonged detention without one — even if partly caused by your own noncooperation — violates the [Fourth Amendment](/primer/fourth-amendment).
+You do not have a [Fifth Amendment](/terms-and-concepts/fifth-amendment) right to refuse to answer basic booking questions about your identity. Routine questions asking for your name, address, and date of birth are not "interrogation" under _Miranda_ and do not trigger the right to counsel. However, you do have a constitutional right to a timely arraignment, and prolonged detention without one — even if partly caused by your own noncooperation — violates the [Fourth Amendment](/terms-and-concepts/fourth-amendment).

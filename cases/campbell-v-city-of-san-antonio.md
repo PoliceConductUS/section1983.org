@@ -41,7 +41,7 @@ The Fifth Circuit affirmed the dismissal of all claims.
 
 On the false arrest claim, the court held that Detective Vidal had probable cause to arrest Campbell. Probable cause does not require certainty — it requires only a reasonable belief, based on the totality of circumstances, that the suspect committed a crime. Vidal used standard police identification procedures to match the drug seller to Campbell. While the identification turned out to be wrong, the procedures he followed were reasonable, and reasonable mistakes do not negate probable cause.
 
-The court found Vidal was entitled to [qualified immunity](/primer/qualified-immunity) because his actions were objectively reasonable. An officer who makes an honest mistake in identification, using accepted procedures, does not violate clearly established law.
+The court found Vidal was entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) because his actions were objectively reasonable. An officer who makes an honest mistake in identification, using accepted procedures, does not violate clearly established law.
 
 On the municipal liability claim against the City, the court applied [_Monell_](/cases/monell-v-dep-t-of-soc-servs) and found that Campbell failed to identify any official policy or custom that caused her arrest. The identification procedures Vidal used were standard SAPD practices, and Campbell did not show they were constitutionally deficient.
 

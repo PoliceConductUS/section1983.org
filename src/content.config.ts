@@ -8,6 +8,7 @@ const articles = defineCollection({
     title: z.string(),
     description: z.string(),
     pubDate: z.coerce.date().nullable().optional(),
+    updatedDate: z.coerce.date().nullable().optional(),
     author: z.string().optional(),
     tags: z.array(z.string()).optional(),
     draft: z.boolean().optional(),
@@ -23,12 +24,13 @@ const process = defineCollection({
     movant: z.string(),
     respondent: z.string(),
     stage: z.string(),
+    updatedDate: z.coerce.date().nullable().optional(),
     tags: z.array(z.string()).optional(),
   }),
 });
 
-const primer = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./primer" }),
+const termsAndConcepts = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./terms-and-concepts-content" }),
   schema: z.object({
     title: z.string(),
     term: z.string(),
@@ -42,6 +44,7 @@ const primer = defineCollection({
       "statute",
       "doctrine",
     ]),
+    updatedDate: z.coerce.date().nullable().optional(),
     related: z.array(z.string()).optional(),
     tags: z.array(z.string()).optional(),
   }),
@@ -54,6 +57,7 @@ const cases = defineCollection({
     citation: z.string(),
     court: z.string(),
     dateDecided: z.coerce.date(),
+    updatedDate: z.coerce.date().nullable().optional(),
     docketNumber: z.string(),
     courtlistener: z.string().url().optional(),
     holding: z.string(),
@@ -71,4 +75,4 @@ const cases = defineCollection({
   }),
 });
 
-export const collections = { articles, process, primer, cases };
+export const collections = { articles, process, termsAndConcepts, cases };

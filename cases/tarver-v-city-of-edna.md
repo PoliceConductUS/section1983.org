@@ -28,7 +28,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Fred Tarver, a grandfather, was handcuffed and placed in a police car during a custody dispute between his son and daughter-in-law. Tarver alleged that Officer Bubela slammed the police car door on his foot and then on his head. The Fifth Circuit held the officers were entitled to [qualified immunity](/primer/qualified-immunity) on the arrest and handcuffing claims but that genuine fact issues precluded immunity on the door-slamming claims.
+Fred Tarver, a grandfather, was handcuffed and placed in a police car during a custody dispute between his son and daughter-in-law. Tarver alleged that Officer Bubela slammed the police car door on his foot and then on his head. The Fifth Circuit held the officers were entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) on the arrest and handcuffing claims but that genuine fact issues precluded immunity on the door-slamming claims.
 
 ## The Facts
 
@@ -44,7 +44,7 @@ The Fifth Circuit reversed and dismissed in part, affirmed and remanded in part:
 
 **Unlawful arrest**: The officers were entitled to qualified immunity. Even if Tarver was arrested rather than merely detained, a reasonable officer could have believed probable cause existed—the officers were confronted with a custody dispute where a non-parent appeared to be interfering with a mother's custodial rights.
 
-**Handcuffing**: Tarver's "acute contusions of the wrist" were de minimis injuries insufficient to support an excessive force claim. The court emphasized that handcuffing too tightly, without more, does not amount to [excessive force](/primer/excessive-force).
+**Handcuffing**: Tarver's "acute contusions of the wrist" were de minimis injuries insufficient to support an excessive force claim. The court emphasized that handcuffing too tightly, without more, does not amount to [excessive force](/terms-and-concepts/excessive-force).
 
 **Door-slamming**: Genuine fact issues precluded qualified immunity. Under Tarver's version—supported by multiple witnesses—Bubela intentionally and angrily slammed the car door on Tarver's foot and head while he was handcuffed, had medical conditions, and posed no threat. The Graham factors weighed in Tarver's favor: minimal severity of crime, no immediate threat, and no risk of escape.
 

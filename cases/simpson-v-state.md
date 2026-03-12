@@ -32,11 +32,11 @@ Simpson's version differed substantially. He testified the dispute involved a fa
 
 ## What the Court Decided
 
-The court affirmed the conviction on all points of error. On the search issue, the court applied the [probable cause](/primer/probable-cause) standard from [Beck v. Ohio](/cases/beck-v-ohio): whether the facts and circumstances within the officer's knowledge at the moment of arrest were sufficient to warrant a prudent person in believing the arrested person was committing an offense.
+The court affirmed the conviction on all points of error. On the search issue, the court applied the [probable cause](/terms-and-concepts/probable-cause) standard from [Beck v. Ohio](/cases/beck-v-ohio): whether the facts and circumstances within the officer's knowledge at the moment of arrest were sufficient to warrant a prudent person in believing the arrested person was committing an offense.
 
 The court found that Ellis's observations of Simpson's physical manifestations of intoxication (slurred speech, bloodshot eyes, alcohol odor)—combined with evidence of potential danger (arguing violently in the middle of the street where vehicles posed a danger, and physically resisting arrest)—were sufficient to establish probable cause for public intoxication. Under Texas law, public intoxication requires not merely intoxication but intoxication to the extent that the person "may endanger himself or another."
 
-Because the arrest was lawful, the [search incident to arrest](/primer/search-incident-to-arrest) was proper and the cocaine was admissible.
+Because the arrest was lawful, the [search incident to arrest](/terms-and-concepts/search-incident-to-arrest) was proper and the cocaine was admissible.
 
 ## Why This Case Matters for Your § 1983 Case
 

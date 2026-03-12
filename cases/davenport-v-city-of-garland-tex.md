@@ -17,7 +17,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Davenport v. City of Garland is a textbook example of how municipal liability claims under [§ 1983](/primer/section-1983) fail when a plaintiff does not plead sufficient facts. The court dismissed the claims against the City of Garland because the plaintiff offered nothing more than conclusory allegations about city policies and customs — without identifying the policymaker, prior incidents, or any causal connection.
+Davenport v. City of Garland is a textbook example of how municipal liability claims under [§ 1983](/terms-and-concepts/section-1983) fail when a plaintiff does not plead sufficient facts. The court dismissed the claims against the City of Garland because the plaintiff offered nothing more than conclusory allegations about city policies and customs — without identifying the policymaker, prior incidents, or any causal connection.
 
 ## The Facts
 

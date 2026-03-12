@@ -19,7 +19,7 @@ citedBy: []
 
 Afton Callahan was suspected of selling methamphetamine in his home in Utah. Police used a confidential informant to set up a controlled buy. After the informant entered Callahan's home, purchased drugs, and gave a pre-arranged signal, officers entered without a warrant under what they called the "consent-once-removed" doctrine — the theory that the informant's lawful entry and observation of illegal activity justified the officers' warrantless entry.
 
-Callahan sued the officers under [§ 1983](/primer/section-1983), arguing that the warrantless entry violated the Fourth Amendment. The officers claimed [qualified immunity](/primer/qualified-immunity). The case reached the Supreme Court not primarily on the Fourth Amendment question, but on a procedural issue that had been frustrating courts for nearly a decade: the rigid two-step sequence for analyzing qualified immunity claims.
+Callahan sued the officers under [§ 1983](/terms-and-concepts/section-1983), arguing that the warrantless entry violated the Fourth Amendment. The officers claimed [qualified immunity](/terms-and-concepts/qualified-immunity). The case reached the Supreme Court not primarily on the Fourth Amendment question, but on a procedural issue that had been frustrating courts for nearly a decade: the rigid two-step sequence for analyzing qualified immunity claims.
 
 Under _Saucier v. Katz_ (2001), courts were required to address qualified immunity in a mandatory order. First, decide whether the officer violated a constitutional right. Second, decide whether that right was "clearly established." Courts could not skip to the second step even if it was obvious that the law wasn't clearly established. This meant courts were forced to issue constitutional rulings in cases where the answer didn't matter to the outcome — creating what many judges saw as unnecessary advisory opinions.
 
@@ -33,7 +33,7 @@ On the merits, the Court held that the officers were entitled to qualified immun
 
 ## What It Means in Practice
 
-_Pearson_ has had a profound and somewhat paradoxical effect on [§ 1983](/primer/section-1983) litigation. By allowing courts to skip the constitutional question and jump straight to "clearly established law," the decision made it easier for courts to grant qualified immunity without ever saying whether the officer violated the Constitution.
+_Pearson_ has had a profound and somewhat paradoxical effect on [§ 1983](/terms-and-concepts/section-1983) litigation. By allowing courts to skip the constitutional question and jump straight to "clearly established law," the decision made it easier for courts to grant qualified immunity without ever saying whether the officer violated the Constitution.
 
 This creates a vicious cycle: Courts skip the constitutional question → the law never gets "clearly established" → future officers get qualified immunity because the law isn't clearly established → courts skip the constitutional question again. Civil rights scholars call this the "qualified immunity catch-22" — the doctrine feeds on its own silence.
 

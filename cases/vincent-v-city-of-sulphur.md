@@ -24,7 +24,7 @@ citedBy: []
 
 ## What This Case Is About
 
-After Carol Vincent allegedly threatened to kill the mayor and a city council member during a heated encounter at a bank, police issued a no-trespass order prohibiting her from entering city-owned property, including City Hall. The district attorney later determined that the allegations did not support prosecution, and the order was lifted. Vincent sued under [§ 1983](/primer/section-1983), claiming the no-trespass order violated her procedural due process rights because it was issued without notice or an opportunity to be heard. The Fifth Circuit reversed the denial of [qualified immunity](/primer/qualified-immunity), holding that the law was not clearly established.
+After Carol Vincent allegedly threatened to kill the mayor and a city council member during a heated encounter at a bank, police issued a no-trespass order prohibiting her from entering city-owned property, including City Hall. The district attorney later determined that the allegations did not support prosecution, and the order was lifted. Vincent sued under [§ 1983](/terms-and-concepts/section-1983), claiming the no-trespass order violated her procedural due process rights because it was issued without notice or an opportunity to be heard. The Fifth Circuit reversed the denial of [qualified immunity](/terms-and-concepts/qualified-immunity), holding that the law was not clearly established.
 
 ## The Facts
 

@@ -22,7 +22,7 @@ citedBy: []
 
 ## What Happened
 
-Ray Will was a Michigan state police officer who was denied a promotion. He sued the Michigan Department of State Police and the Director of State Police in both individual and official capacity, alleging the denial violated his constitutional rights under [§ 1983](/primer/section-1983).
+Ray Will was a Michigan state police officer who was denied a promotion. He sued the Michigan Department of State Police and the Director of State Police in both individual and official capacity, alleging the denial violated his constitutional rights under [§ 1983](/terms-and-concepts/section-1983).
 
 The Michigan Supreme Court held that § 1983 did not authorize suits against states. Will appealed to the U.S. Supreme Court.
 

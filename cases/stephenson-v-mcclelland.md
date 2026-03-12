@@ -27,15 +27,15 @@ citedBy: []
 
 ## What This Case Is About
 
-This [§ 1983](/primer/section-1983) case addressed the [pleading standards](/primer/pleading-standards) a plaintiff must meet to overcome a [qualified immunity](/primer/qualified-immunity) defense at the [motion to dismiss](/primer/motion-to-dismiss) stage. The court examined whether the plaintiff's allegations of [excessive force](/primer/excessive-force) and [false arrest](/primer/false-arrest) were sufficient to state a claim that overcame the officers' assertion of qualified immunity.
+This [§ 1983](/terms-and-concepts/section-1983) case addressed the [pleading standards](/terms-and-concepts/pleading-standards) a plaintiff must meet to overcome a [qualified immunity](/terms-and-concepts/qualified-immunity) defense at the [motion to dismiss](/terms-and-concepts/motion-to-dismiss) stage. The court examined whether the plaintiff's allegations of [excessive force](/terms-and-concepts/excessive-force) and [false arrest](/terms-and-concepts/false-arrest) were sufficient to state a claim that overcame the officers' assertion of qualified immunity.
 
 ## The Facts
 
-The plaintiff brought § 1983 claims against officers, alleging violations of the [Fourth Amendment](/primer/fourth-amendment) through false arrest and excessive force. The officers moved to dismiss based on qualified immunity, arguing that the plaintiff's complaint failed to allege facts sufficient to show a violation of clearly established constitutional rights.
+The plaintiff brought § 1983 claims against officers, alleging violations of the [Fourth Amendment](/terms-and-concepts/fourth-amendment) through false arrest and excessive force. The officers moved to dismiss based on qualified immunity, arguing that the plaintiff's complaint failed to allege facts sufficient to show a violation of clearly established constitutional rights.
 
 ## What the Court Decided
 
-The court applied the two-step qualified immunity framework: (1) whether the facts alleged show the officer's conduct violated a constitutional right; and (2) whether the right at issue was [clearly established](/primer/clearly-established-law) at the time of the conduct. Applying the [plausibility pleading](/primer/plausibility-pleading) standard from [Ashcroft v. Iqbal](/cases/ashcroft-v-iqbal) and [Bell Atlantic Corp. v. Twombly](/cases/bell-atlantic-corp-v-twombly), the court evaluated whether the complaint contained sufficient factual allegations—as opposed to mere legal conclusions—to make the claims plausible.
+The court applied the two-step qualified immunity framework: (1) whether the facts alleged show the officer's conduct violated a constitutional right; and (2) whether the right at issue was [clearly established](/terms-and-concepts/clearly-established-law) at the time of the conduct. Applying the [plausibility pleading](/terms-and-concepts/plausibility-pleading) standard from [Ashcroft v. Iqbal](/cases/ashcroft-v-iqbal) and [Bell Atlantic Corp. v. Twombly](/cases/bell-atlantic-corp-v-twombly), the court evaluated whether the complaint contained sufficient factual allegations—as opposed to mere legal conclusions—to make the claims plausible.
 
 For the excessive force claim, the court applied the [Graham v. Connor](/cases/graham-v-connor) factors: the severity of the crime, whether the suspect posed an immediate threat, and whether the suspect was resisting or fleeing. The court assessed whether the plaintiff alleged specific facts addressing these factors that would render the officers' conduct objectively unreasonable.
 

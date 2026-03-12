@@ -22,7 +22,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Michael Goodman sued Harris County Deputy Constable Terry Ashabranner under [§ 1983](/primer/section-1983) for [excessive force](/primer/excessive-force) in violation of the [Fourth Amendment](/primer/fourth-amendment). The case went to trial, and the jury found that Ashabranner's use of force was "clearly excessive to the need and objectively unreasonable." On appeal, Ashabranner challenged the jury instructions, arguing they failed to properly present the [qualified immunity](/primer/qualified-immunity) defense. The Fifth Circuit affirmed.
+Michael Goodman sued Harris County Deputy Constable Terry Ashabranner under [§ 1983](/terms-and-concepts/section-1983) for [excessive force](/terms-and-concepts/excessive-force) in violation of the [Fourth Amendment](/terms-and-concepts/fourth-amendment). The case went to trial, and the jury found that Ashabranner's use of force was "clearly excessive to the need and objectively unreasonable." On appeal, Ashabranner challenged the jury instructions, arguing they failed to properly present the [qualified immunity](/terms-and-concepts/qualified-immunity) defense. The Fifth Circuit affirmed.
 
 ## The Facts
 
@@ -34,7 +34,7 @@ Ashabranner appealed, arguing that the jury instruction failed to properly submi
 
 ## What the Court Decided
 
-The Fifth Circuit affirmed the jury's verdict. The court held that the jury instruction was adequate when read as a whole and in conjunction with the general charge. The instruction asked whether the force was "objectively unreasonable" — the very standard required by the second step of the [qualified immunity](/primer/qualified-immunity) analysis. The trial court had also separately instructed the jury on qualified immunity.
+The Fifth Circuit affirmed the jury's verdict. The court held that the jury instruction was adequate when read as a whole and in conjunction with the general charge. The instruction asked whether the force was "objectively unreasonable" — the very standard required by the second step of the [qualified immunity](/terms-and-concepts/qualified-immunity) analysis. The trial court had also separately instructed the jury on qualified immunity.
 
 The court applied a deferential standard of review for jury instructions: whether the charge "as a whole is a correct statement of the law" and whether it "clearly instructs the jury on the law applicable to the facts." The court examined three factors: (1) whether the interrogatories adequately presented the contested issues; (2) whether the submission was "fair"; and (3) whether the "ultimate questions of fact" were clearly submitted. All factors were satisfied.
 
@@ -42,7 +42,7 @@ The court concluded that the district court did not abuse its discretion in fram
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Goodman_ is important for litigants who get past summary judgment and actually reach trial on an excessive force claim. The case establishes that a jury instruction asking whether force was "clearly excessive and objectively unreasonable" properly captures the [qualified immunity](/primer/qualified-immunity) standard. You don't need an instruction that uses the exact formulation from every qualified immunity case — the instruction just needs to correctly state the law and fairly submit the ultimate factual questions to the jury.
+_Goodman_ is important for litigants who get past summary judgment and actually reach trial on an excessive force claim. The case establishes that a jury instruction asking whether force was "clearly excessive and objectively unreasonable" properly captures the [qualified immunity](/terms-and-concepts/qualified-immunity) standard. You don't need an instruction that uses the exact formulation from every qualified immunity case — the instruction just needs to correctly state the law and fairly submit the ultimate factual questions to the jury.
 
 If you're preparing jury instructions for an excessive force trial, _Goodman_ is your authority for a straightforward instruction that tracks the [_Graham v. Connor_](/cases/graham-v-connor) objective reasonableness standard. The defendant officer cannot demand an instruction that makes it harder for the jury to find liability, as long as the existing instruction correctly states the law.
 

@@ -31,7 +31,7 @@ Officer Bart Turek pulled Atwater over. According to her complaint, Turek approa
 
 A friend arrived to take the children. Turek handcuffed Atwater, placed her in his squad car, and drove her to the police station. There, she was made to remove her shoes, jewelry, and eyeglasses, empty her pockets, and pose for a mug shot. She was placed alone in a jail cell for about an hour before being taken before a magistrate and released on $310 bond.
 
-Atwater pleaded no contest and paid a $50 fine. She sued under [§ 1983](/primer/section-1983), arguing the arrest violated her Fourth Amendment right to be free from unreasonable seizure.
+Atwater pleaded no contest and paid a $50 fine. She sued under [§ 1983](/terms-and-concepts/section-1983), arguing the arrest violated her Fourth Amendment right to be free from unreasonable seizure.
 
 ## What the Court Decided
 

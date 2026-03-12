@@ -23,7 +23,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Lee Andrew Siglar, a Texas prisoner, filed a [§ 1983](/primer/section-1983) action against prison officials after a corrections officer twisted his arm and ear during a pat-down search triggered by a biscuit found in his jacket pocket. The Fifth Circuit affirmed the district court's dismissal, holding that Siglar's injuries were de minimis and insufficient to support either an [Eighth Amendment](/primer/eighth-amendment) excessive force claim or claims for mental and emotional suffering under the [Prison Litigation Reform Act](/primer/plra) (PLRA).
+Lee Andrew Siglar, a Texas prisoner, filed a [§ 1983](/terms-and-concepts/section-1983) action against prison officials after a corrections officer twisted his arm and ear during a pat-down search triggered by a biscuit found in his jacket pocket. The Fifth Circuit affirmed the district court's dismissal, holding that Siglar's injuries were de minimis and insufficient to support either an [Eighth Amendment](/terms-and-concepts/eighth-amendment) excessive force claim or claims for mental and emotional suffering under the [Prison Litigation Reform Act](/terms-and-concepts/plra) (PLRA).
 
 ## The Facts
 

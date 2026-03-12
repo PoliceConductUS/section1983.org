@@ -27,7 +27,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Marcus Hanks was driving slowly on Interstate 30 in Grand Prairie, Texas, searching for a lost cell phone when Officer Randall Rogers stopped him. After Hanks questioned the officer's commands, Rogers physically took Hanks down with a "half spear" blow to the upper back despite Hanks standing with his empty hands displayed behind his back. The Fifth Circuit reversed [summary judgment](/primer/summary-judgment) for the officer, holding that [qualified immunity](/primer/qualified-immunity) did not protect the use of physical force against a passively resisting motorist stopped for a minor traffic violation who posed no immediate threat.
+Marcus Hanks was driving slowly on Interstate 30 in Grand Prairie, Texas, searching for a lost cell phone when Officer Randall Rogers stopped him. After Hanks questioned the officer's commands, Rogers physically took Hanks down with a "half spear" blow to the upper back despite Hanks standing with his empty hands displayed behind his back. The Fifth Circuit reversed [summary judgment](/terms-and-concepts/summary-judgment) for the officer, holding that [qualified immunity](/terms-and-concepts/qualified-immunity) did not protect the use of physical force against a passively resisting motorist stopped for a minor traffic violation who posed no immediate threat.
 
 ## The Facts
 
@@ -43,7 +43,7 @@ Hanks received treatment for contusions, strains, and bruised ribs. The Grand Pr
 
 ## What the Court Decided
 
-The Fifth Circuit reversed summary judgment and held Rogers was not entitled to [qualified immunity](/primer/qualified-immunity). The court conducted a thorough [_Graham v. Connor_](/cases/graham-v-connor) analysis:
+The Fifth Circuit reversed summary judgment and held Rogers was not entitled to [qualified immunity](/terms-and-concepts/qualified-immunity). The court conducted a thorough [_Graham v. Connor_](/cases/graham-v-connor) analysis:
 
 **Severity of the crime**: Hanks was stopped for a minor traffic violation — driving under the speed limit. This substantially lowered the need for force.
 
@@ -55,7 +55,7 @@ The court held this was an "obvious case" under _Graham_ where the use of force 
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Hanks_ is one of the strongest Fifth Circuit cases for plaintiffs in [excessive force](/primer/excessive-force) claims arising from traffic stops. It establishes that:
+_Hanks_ is one of the strongest Fifth Circuit cases for plaintiffs in [excessive force](/terms-and-concepts/excessive-force) claims arising from traffic stops. It establishes that:
 
 1. **Passive resistance does not justify physical takedowns.** Questioning commands, brief delays in compliance, and asking "Am I under arrest?" are passive — not active — resistance.
 2. **Officers must continue verbal negotiation.** When someone is not threatening and not fleeing, the officer should keep talking rather than escalating to physical force.
@@ -64,4 +64,4 @@ _Hanks_ is one of the strongest Fifth Circuit cases for plaintiffs in [excessive
 
 ## Key Takeaway
 
-An officer who physically takes down a passively resisting person who poses no immediate threat, has not attempted to flee, and is stopped for a minor traffic violation — without even telling the person they are under arrest — violates [clearly established law](/primer/clearly-established-law). The [Fourth Amendment](/primer/fourth-amendment) requires officers to use "measured and ascending" responses that correspond to the level of resistance, and to continue verbal negotiation before resorting to physical force when the situation allows.
+An officer who physically takes down a passively resisting person who poses no immediate threat, has not attempted to flee, and is stopped for a minor traffic violation — without even telling the person they are under arrest — violates [clearly established law](/terms-and-concepts/clearly-established-law). The [Fourth Amendment](/terms-and-concepts/fourth-amendment) requires officers to use "measured and ascending" responses that correspond to the level of resistance, and to continue verbal negotiation before resorting to physical force when the situation allows.
