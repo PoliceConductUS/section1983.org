@@ -56,6 +56,6 @@ The same is true of public-safety questioning. The exception is narrow. It is fo
 
 If you treat post-invocation questioning as only a bad jail condition, you may lose the constitutional point.
 
-The core issue is not just that confinement was unpleasant. The core issue is that government actors allegedly used official power to pressure you into giving information after you tried to invoke a constitutional right.
+The core issue is that government actors allegedly used official power to pressure you into giving information after you tried to invoke a constitutional right. Harsh conditions matter here only because they may show that pressure.
 
 That deserves its own factual section and often its own count, even when it also overlaps with broader due-process or coercion theories.

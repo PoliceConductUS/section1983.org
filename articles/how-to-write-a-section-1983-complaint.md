@@ -17,13 +17,13 @@ Your complaint starts the lawsuit. It tells the court what happened, who did it,
 
 In a § 1983 case, this is often the most important document you will write. The defense will usually file a [motion to dismiss](/terms-and-concepts/motion-to-dismiss). If the judge agrees with them, the case may end before [discovery](/process/discovery) begins.
 
-The standard is called [plausibility pleading](/terms-and-concepts/plausibility-pleading). Your facts must make it plausible, not just possible, that each defendant violated your rights. Legal conclusions do not do that work. Facts do.
+The standard is called [plausibility pleading](/terms-and-concepts/plausibility-pleading). Your facts must give the judge a real reason to let each claim go forward. A bare possibility is not enough. Legal conclusions do not do that work. Facts do.
 
 If you have not read [How the Defense Will Try to Shrink, Reframe, or Kill Your § 1983 Case](/articles/how-the-defense-will-try-to-shrink-reframe-or-kill-your-section-1983-case), read that too. It will help you see why the complaint needs to be this concrete.
 
 ## What the judge and the defense are going to do with your complaint
 
-Your complaint is not just your story. It is the document the judge and the defense will use to test whether your case gets to continue at all.
+Your complaint does more than tell your story. It is the document the judge and the defense will use to test whether your case gets to continue at all.
 
 One of the first questions the judge is going to ask is:
 
@@ -51,9 +51,10 @@ They will usually try to say:
 - you named a city claim without facts that support it
 - you named the wrong defendant for the theory you are trying to bring
 
-When you draft, do not ask only whether the complaint tells your story. Also ask whether the defense can point to an easy paragraph and say:
+When you draft, ask two questions:
 
-- `This is too vague to go forward.`
+- `Does this complaint tell my story clearly?`
+- `Can the defense point to an easy paragraph and say this is too vague to go forward?`
 
 That question will usually make your draft stronger.
 
@@ -111,7 +112,7 @@ For each count, identify:
 3. The specific conduct that violated the right
 4. How that defendant's conduct caused your harm
 
-That separation is not just for neatness. It makes it harder for the defense to say your complaint is a blur of accusations with no clear legal structure.
+That separation does more than make the complaint look neat. It makes it harder for the defense to say your complaint is a blur of accusations with no clear legal structure.
 
 ### Be clear about capacity
 
@@ -204,10 +205,22 @@ Before [filing](/process/filing), check each item below:
 ## Check Your Understanding
 
 1. The judge is going to test whether each claim is tied to specific facts and specific defendants. Looking at your draft, where is the defense most likely to say you used group pleading or conclusions instead of facts?
+   <details>
+     <summary>Show answer</summary>
+     A strong answer points to a specific paragraph or section where you lump defendants together or rely on labels instead of facts. If you cannot point to one, reread the complaint count by count and identify where you stopped naming who did what.
+   </details>
 
 2. This article explains that a city claim needs facts, not labels. If you named the city in your draft, what is the strongest concrete fact you have right now for that claim?
+   <details>
+     <summary>Show answer</summary>
+     A strong answer names one concrete fact such as a written policy, a prior similar lawsuit, a public report, repeated complaints, or a policymaker decision. If all you have is a label like `policy` or `failure to train`, the city claim probably needs more work.
+   </details>
 
 3. Before you file, what is the weakest part of your current complaint: the facts section, the defendant list, the separate counts, or the city claim? Start there.
+   <details>
+     <summary>Show answer</summary>
+     The right answer depends on your draft, but a strong answer names the weakest section and says what you will fix first. The point is to improve the most vulnerable part before the defense builds its motion around it.
+   </details>
 
 ---
 

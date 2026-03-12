@@ -29,7 +29,7 @@ These are often called routine booking questions.
 
 The theory is that they are administrative, not investigative.
 
-If you are reviewing a past encounter, the question is not just `were booking questions asked?`
+If you are reviewing a past encounter, ask a more precise question than `were booking questions asked?`
 
 The question is whether the government is likely to argue that the later questions fell inside this exception.
 
@@ -56,7 +56,7 @@ Classic examples are questions about:
 - whether someone else is in immediate danger
 - whether there is an immediate hazard nearby
 
-This is not a general permission slip for more interrogation. It is supposed to be narrow and tied to immediate danger.
+This exception is supposed to stay narrow and tied to immediate danger. It does not give officers general permission to keep interrogating you.
 
 ## What should raise concern
 

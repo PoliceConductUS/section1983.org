@@ -64,7 +64,7 @@ Even if the arrest looks weak, the officers will usually argue [qualified immuni
 
 In practice, many courts frame the qualified-immunity fight this way: even if actual probable cause was missing, was there at least **arguable probable cause**?
 
-That is a dangerous standard for plaintiffs because it gives the officer room to be wrong without being liable. Your job is to show not just that the arrest was bad, but that no reasonable officer could have thought the facts added up to the offense.
+That is a dangerous standard for plaintiffs because it gives the officer room to be wrong without being liable. Your job is to show that the arrest was bad and that no reasonable officer could have thought the facts added up to the offense.
 
 That means you should focus on:
 
@@ -141,3 +141,23 @@ If you have a city-liability theory, pair this with [Monell: What a Monell Claim
 - [You Will Probably Lose. You Might Sue Anyway. Here's Why That Still Matters.](/articles/you-will-probably-lose-you-might-sue-anyway-heres-why-that-still-matters)
 
 False arrest cases are often won or lost before filing, when you decide whether the record really disproves probable cause.
+
+## Check Your Understanding
+
+1. If the officer arrested you for one offense, what is one of the first fallback moves the defense may try later?
+   <details>
+     <summary>Show answer</summary>
+     A strong answer would say that the defense may point to probable cause for a different offense. That is one reason you need to test your facts against obvious fallback charges before you file.
+   </details>
+
+2. If you were convicted or took a plea tied to the same arrest, what is the first extra issue you need to analyze before assuming you can bring a false-arrest claim?
+   <details>
+     <summary>Show answer</summary>
+     The Heck problem. You need to ask whether winning the false-arrest claim would require the court to say the conviction or plea-based result was invalid.
+   </details>
+
+3. What is the strongest concrete fact in your own record against probable cause: video, witness statements, the charge being dropped, inconsistent reports, or something else?
+   <details>
+     <summary>Show answer</summary>
+     The right answer depends on your case, but a strong answer picks one record that directly undercuts probable cause and explains why it matters more than a general sense that the arrest felt unfair.
+   </details>

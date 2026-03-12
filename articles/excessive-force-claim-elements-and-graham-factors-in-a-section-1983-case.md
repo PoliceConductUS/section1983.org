@@ -98,3 +98,23 @@ They usually fail because they:
 - [Monell: What a Monell Claim Is and How to Plead It](/articles/monell-what-a-monell-claim-is-and-how-to-plead-it)
 
 These cases get stronger when you stop calling the force outrageous and start showing exactly when, where, and how it happened.
+
+## Check Your Understanding
+
+1. If you want a judge to take your excessive-force claim seriously, what kind of detail matters more: scene details like handcuffs, position, resistance, and timing, or adjectives like brutal and outrageous?
+   <details>
+     <summary>Show answer</summary>
+     Scene details matter more. The judge needs facts about what happened, when it happened, and what threat or resistance existed, not just emotional descriptions of the force.
+   </details>
+
+2. Which Graham factor is most favorable to you right now: the seriousness of the offense, the threat level, or resistance and flight?
+   <details>
+     <summary>Show answer</summary>
+     The right answer depends on your facts, but a strong answer names one factor and ties it to the record. For example, a minor offense, no visible threat, or force after you were under control can each matter a lot.
+   </details>
+
+3. What is the one fact the defense is most likely to emphasize to justify the force, and what record cuts against that?
+   <details>
+     <summary>Show answer</summary>
+     A strong answer identifies the defense story, such as resistance or threat cues, and then names the record that weakens it, such as video, medical records, or witness statements.
+   </details>

@@ -77,7 +77,7 @@ The plaintiff won at trial. The jury found the defendant liable and awarded $1 i
 
 The Supreme Court held that winning $1 doesn't entitle you to meaningful attorney fees. The attorney who spent years on the case got nothing.
 
-This is a nightmare scenario for many civil rights lawyers: you prove the violation happened, a jury agrees with you, and you still do not get paid. Cities know this. Their defense strategy often focuses on minimizing your damages so the fee recovery does not justify the risk, even if they cannot seriously dispute the constitutional violation itself.
+This is one of the hardest outcomes for many civil-rights lawyers: you prove the violation happened, a jury agrees with you, and the fee recovery still does not justify the work. Cities know this. Their defense strategy often focuses on minimizing your damages so the fee recovery does not justify the risk, even if they cannot seriously dispute the constitutional violation itself.
 
 ## Which § 1983 cases lawyers take and which they avoid
 
@@ -145,9 +145,9 @@ In practice, [qualified immunity](/terms-and-concepts/qualified-immunity) + [Iqb
 
 And the people most likely to have their rights violated — low income, minorities, the people with the least power — are the least likely to find representation.
 
-## You do not have to sue to make your case matter
+## You can make your case matter even if you do not sue
 
-Whether you find a lawyer, go pro se, or decide the legal fight isn't worth it — don't let what happened to you disappear.
+Whether you find a lawyer, go pro se, or decide the legal fight is not worth it, do not let what happened to you disappear.
 
 **[Report your experience on policeconduct.org](https://policeconduct.org).** Your report might be the pattern evidence that a future lawyer needs to take someone else's case against the same officer — the case with serious injury or death where the math finally works. Your "minor" interaction could be the data point that makes the next case viable.
 

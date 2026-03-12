@@ -9,7 +9,7 @@ draft: false
 
 Most Section 1983 cases start with the officer. The officer stopped you, searched you, beat you, arrested you, jailed you, or retaliated against you.
 
-But sometimes the bigger problem is not just the officer. Sometimes the bigger problem is the department, sheriff's office, city, or county behind the officer.
+But sometimes the bigger problem goes beyond the officer. Sometimes the bigger problem is the department, sheriff's office, city, or county behind the officer.
 
 That is what a Monell claim is for.
 
@@ -35,7 +35,7 @@ A serious Monell claim can:
 
 That is why cities fight these claims so hard.
 
-They are not just defending one officer's conduct. They are defending the institution itself: its money, its policies, its training, its leadership, and its public legitimacy.
+They are defending more than one officer's conduct. They are defending the institution itself: its money, its policies, its training, its leadership, and its public legitimacy.
 
 ## Why Monell is harder than suing the officer
 
@@ -148,7 +148,7 @@ The practical sources are usually:
 
 ## What facts usually survive a motion to dismiss
 
-Courts want facts that make the municipal theory plausible, not just possible.
+Courts want facts that give the municipal theory real support. A bare possibility is not enough.
 
 The strongest complaint-stage facts usually include some combination of:
 
@@ -320,4 +320,24 @@ Before adding a Monell count, ask:
 
 If you cannot answer those questions yet, keep gathering.
 
-The short version is this: Monell is where you try to show the violation was not just personal misconduct, but institutional misconduct. That is why it matters. That is also why your complaint has to be strategic, fact-heavy, and disciplined.
+The short version is this: Monell is where you try to show the violation was institutional misconduct, not only one officer's misconduct. That is why it matters. That is also why your complaint has to be strategic, fact-heavy, and disciplined.
+
+## Check Your Understanding
+
+1. What is the first Monell question you should ask: did the city employ the officer, or did the city itself cause the violation through policy, custom, training, supervision, or a policymaker decision?
+   <details>
+     <summary>Show answer</summary>
+     The second one. A Monell claim is not about employment alone. It is about tying the violation to something the city or county itself did, knew, tolerated, or failed to correct.
+   </details>
+
+2. If you want to plead more than one Monell theory, what is the safer structure: one shapeless paragraph listing every theory, or separate theories with separate supporting facts?
+   <details>
+     <summary>Show answer</summary>
+     Separate theories with separate supporting facts. The article's main warning is that courts often treat a shapeless Monell paragraph as boilerplate.
+   </details>
+
+3. What is the strongest municipal fact you have right now: a written policy, a pattern of similar incidents, a policymaker decision, a training gap with notice, or something else?
+   <details>
+     <summary>Show answer</summary>
+     A strong answer names one concrete municipal fact and explains which Monell theory it supports. If you cannot name one yet, that is a sign you may need more records before filing the city claim.
+   </details>

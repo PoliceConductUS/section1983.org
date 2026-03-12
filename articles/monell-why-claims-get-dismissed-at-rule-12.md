@@ -9,7 +9,7 @@ draft: false
 
 Most Monell dismissals are not mysterious.
 
-They happen because the complaint never gave the judge enough facts to separate a real municipal theory from a conclusion.
+They happen because the complaint did not give the judge enough facts to separate a real municipal theory from a conclusion.
 
 ## The most common reason: labels without facts
 
@@ -22,7 +22,7 @@ These phrases appear constantly in dismissed Monell claims:
 - failure to supervise
 - ratification
 
-Those words are not enough by themselves. The court wants to know what happened, how often, who knew, and why the city is plausibly responsible.
+Those words are not enough by themselves. The court wants to know what happened, how often, who knew, and why the city is realistically being tied to it.
 
 ## The complaint is officer-specific but not city-specific
 
@@ -44,7 +44,7 @@ If your complaint cannot answer that, the Monell count is in danger.
 
 ## No causation allegations
 
-Sometimes plaintiffs show a policy problem but never connect it to their own injury.
+Sometimes plaintiffs show a policy problem but do not connect it to their own injury.
 
 The complaint should explain how the municipal act was the moving force behind the violation.
 
@@ -66,7 +66,7 @@ Custom claims often fail because the alleged pattern is:
 - too vague
 - too different from the plaintiff's facts
 
-The incidents need to look like a real municipal problem, not just a few bad stories.
+The incidents need to look like a real municipal problem, not merely a few bad stories.
 
 ## What helps avoid dismissal
 
@@ -87,3 +87,23 @@ At Rule 12, you are not trying to win the Monell claim.
 You are trying to plead enough credible facts to get discovery.
 
 That is the whole point of careful Monell drafting.
+
+## Check Your Understanding
+
+1. If your complaint describes the arrest in detail but says almost nothing concrete about the city, what Monell problem is the defense most likely to raise first?
+   <details>
+     <summary>Show answer</summary>
+     That the complaint is officer-specific but not city-specific. This is one of the most common reasons Monell counts get dismissed early.
+   </details>
+
+2. If you say the city failed to train officers, what extra kind of fact usually matters most at the pleading stage?
+   <details>
+     <summary>Show answer</summary>
+     Notice facts. The judge will usually want to know why the city should have known this training gap was a real problem before your incident happened.
+   </details>
+
+3. What is your Monell count missing most right now: notice, causation, policymaker facts, pattern evidence, or a real city-level theory?
+   <details>
+     <summary>Show answer</summary>
+     A strong answer names the weakest Monell component in your draft and says what record or fact you need next. The goal is to identify the cleanest dismissal target before the defense does.
+   </details>

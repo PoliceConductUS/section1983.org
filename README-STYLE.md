@@ -599,6 +599,23 @@ Good near the end of the article, especially for drafting or evidence-gathering 
 
 Use this near the end of an article when it helps the reader test whether they can actually apply the concept.
 
+For this site, `Check Your Understanding` should usually be treated as required, not optional, in:
+
+- claim articles
+- doctrine or defense articles
+- drafting articles
+- records or evidence-gathering articles
+- strategy or case-system articles
+- series lead pages when the article is training the reader how to spot and use the concept
+
+It may be optional in:
+
+- sample or model documents, if the sample is mainly there to be copied structurally rather than taught as a concept article
+- short commentary or policy pieces where the main goal is explanation, not skill training
+- very short bridge articles that mainly route the reader elsewhere
+
+If you skip `Check Your Understanding` in an article that is supposed to train the reader, there should be a specific reason.
+
 Do not use it as trivia.
 
 The goal is to test:

@@ -63,7 +63,7 @@ The Complaint alleges:
 - Plaintiff's conduct consisted of recording police from a public sidewalk without
   interfering.
 
-Taken as true, those facts plausibly state a Fourth Amendment false arrest claim.
+Taken as true, those facts give the court a solid reason to let the Fourth Amendment false-arrest claim go forward.
 
 IV. THE FIRST AMENDMENT RETALIATION CLAIM IS PLAUSIBLY PLED
 
@@ -108,7 +108,7 @@ You are not required to prove the case in the complaint. You are required to ple
 
 ### Treat qualified immunity as a prong-by-prong argument
 
-Do not just write "qualified immunity should be denied." Break it down:
+Write more than "qualified immunity should be denied." Break it down:
 
 - what constitutional right was violated
 - what facts make that violation plausible

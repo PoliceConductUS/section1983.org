@@ -137,7 +137,7 @@ The basic point is:
 - recover only nominal damages
 - and still not get meaningful attorney-fee recovery
 
-That does not just affect lawyers. It affects whether anyone will invest time in lower-damages cases at all.
+That affects more than lawyers. It affects whether anyone will invest time in lower-damages cases at all.
 
 ### Twombly and Iqbal made the complaint stage harsher
 

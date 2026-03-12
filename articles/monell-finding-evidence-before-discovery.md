@@ -164,7 +164,7 @@ You are aiming for enough facts to say:
 - the city knew it happened before
 - the city had authority to fix it
 - the city failed to fix it
-- that failure plausibly caused what happened to me
+- that failure helps explain what happened to me
 
 That is a complaint-stage target, not a final-proof target.
 

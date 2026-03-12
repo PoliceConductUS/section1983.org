@@ -76,7 +76,7 @@ This isn't a rare glitch. It's a fundamental limitation of how these tools work.
 
 **Attorneys have been fined for this.** In _Mata v. Avianca_, a New York federal court fined attorneys $5,000 for filing a brief containing six AI-fabricated case citations. The attorneys used ChatGPT to write the brief and never verified the citations. The court called it "an unprecedented circumstance" — but it won't be the last time.
 
-**The rule is absolute: never file a document containing a case citation you haven't personally verified.** For every case an AI tool suggests:
+**Make this a fixed habit: do not file a document containing a case citation you have not personally verified.** For every case an AI tool suggests:
 
 1. **Search for it on [CourtListener](https://www.courtlistener.com/)** (free) or Google Scholar's case law section (free)
 2. **Verify the citation** — correct reporter, correct volume and page number, correct year

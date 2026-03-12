@@ -92,7 +92,12 @@ If your circuit has decisions granting qualified immunity on facts similar to yo
 
 ## When obvious clarity may help
 
-Sometimes the conduct is so extreme that a plaintiff does not need a nearly identical prior case. The Supreme Court has recognized this in rare situations. But do not assume your facts qualify. Most courts read the obvious-clarity path narrowly.
+Sometimes the conduct is so extreme that a plaintiff does not need a nearly identical prior case. The Supreme Court has recognized this in rare situations. But do not assume your facts qualify. Many courts are reluctant to treat a case as obvious enough to fit the obvious-clarity path.
+
+One useful example is [_Taylor v. Riojas_](/cases/taylor-v-riojas). The prisoner there was kept in shockingly filthy cells, including one covered in feces. Lower courts still gave the officers qualified immunity. The Supreme Court finally said no reasonable officer could think those conditions were constitutional, even without a closely matched prior case. That shows two things at once:
+
+- obvious-clarity arguments can work
+- even very strong facts may lose repeatedly before a higher court finally agrees
 
 ## How to use the research in your briefing
 
@@ -112,3 +117,23 @@ That is how you turn research into a qualified-immunity argument the judge can a
 - [False Arrest Claim Elements and Defenses](/articles/false-arrest-claim-elements-and-defenses-in-a-section-1983-case)
 
 Clearly established law research is not about finding a quote you like. It is about finding a case whose facts a judge cannot easily distinguish away.
+
+## Check Your Understanding
+
+1. What is usually stronger in a qualified-immunity fight: a broad statement that unreasonable searches violate the Fourth Amendment, or a case with facts close to yours?
+   <details>
+     <summary>Show answer</summary>
+     A case with facts close to yours. The fight is usually over factual similarity, not over broad constitutional principles.
+   </details>
+
+2. If you find a case that feels emotionally satisfying but the facts are materially different, how should you treat it?
+   <details>
+     <summary>Show answer</summary>
+     Treat it cautiously. It may still help with background or general framing, but it is not the kind of case you should build your qualified-immunity argument around.
+   </details>
+
+3. What is the next case you should look for in your own research: one from your circuit with similar facts, one from any court saying the Constitution matters, or one with the strongest rhetoric?
+   <details>
+     <summary>Show answer</summary>
+     Usually a case from your circuit with similar facts. That is the kind of precedent most likely to matter when the court asks whether the law was clearly established.
+   </details>

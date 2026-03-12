@@ -59,7 +59,7 @@ That lets the judge infer the problem was persistent enough to count as a custom
 
 ## Similarity matters more than volume
 
-If your case is about retaliatory arrest for recording police, the best pattern evidence is not just "other civil-rights problems."
+If your case is about retaliatory arrest for recording police, the best pattern evidence is more specific than "other civil-rights problems."
 
 It is:
 
@@ -67,11 +67,11 @@ It is:
 - other arrests of people recording police
 - other misuse of the same offense as a pretext
 
-Pattern evidence should resemble your facts closely enough that the city was on notice of this problem, not just some general problem.
+Pattern evidence should resemble your facts closely enough that the city was on notice of this problem, not merely some general problem.
 
 ## Notice still matters
 
-A custom claim is stronger when you can plausibly allege that policymakers knew or should have known about the pattern.
+A custom claim is stronger when you can allege concrete facts showing that policymakers knew or should have known about the pattern.
 
 Useful facts include:
 

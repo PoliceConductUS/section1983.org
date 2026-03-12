@@ -45,7 +45,7 @@ If the answer is yes, the claim against that defendant is usually over.
 
 So your job is to look for the exceptions before you name that defendant. The main exceptions are:
 
-- a judge acting outside all jurisdiction, not just making a bad or biased ruling
+- a judge acting outside all jurisdiction, rather than simply making a bad or biased ruling
 - a prosecutor acting as an investigator or administrator, not as an advocate in court
 - a legislator acting outside the legislative role
 - a witness being sued for conduct outside the testimony itself, such as fabricating evidence before testifying

@@ -9,7 +9,7 @@ draft: false
 
 If you file a § 1983 case without a lawyer, one of the first things the court and the defense will notice is whether you seem organized, selective, and reasonable.
 
-That matters because judges are often looking for ways to narrow weak cases, control their docket, and move problem cases out of the way. You do not want your behavior to give them an easy reason to treat you as the problem instead of looking at what happened to you.
+That matters because judges are often looking for ways to narrow weak cases, control their docket, and move problem cases out of the way. Your job is to keep your behavior from giving them an easy reason to treat you as the problem instead of looking at what happened to you.
 
 After reading this article, you should be able to:
 
@@ -97,7 +97,7 @@ The question is not `Can I object?` The better question is `What do I gain if I 
 
 ## When to agree, when to narrow, and when to fight
 
-You do not always need three positions. Most of the time you have these options:
+Most of the time you have three options:
 
 ### Agree
 
@@ -148,7 +148,7 @@ If you look impulsive or impossible to work with, those judgment calls usually g
 
 ## How to communicate without sounding weak
 
-You do not have to sound aggressive to sound serious.
+You can sound serious without sounding aggressive.
 
 Usually better:
 
@@ -178,14 +178,26 @@ Those questions will usually help you more than asking whether the other side "d
 
 ## The bottom line
 
-You do not need to become a different person to litigate your case. But you do need to show the court that you can focus on facts, pick your fights, and behave reasonably under pressure.
+You can stay yourself and still litigate your case well. The key is showing the court that you can focus on facts, pick your fights, and behave reasonably under pressure.
 
 If the judge sees you as disciplined and selective, your case has a better chance of being heard on the merits. If the judge sees you as the problem, everything gets harder.
 
 ## Check Your Understanding
 
 1. The defense asks for a short extension because one attorney is unavailable for a week. Nothing important changes for your case. Based on this article, is that usually something to fight, or something you should usually let go?
+   <details>
+     <summary>Show answer</summary>
+     Usually something you should let go. This is the kind of small scheduling dispute that often makes a pro se plaintiff look harder to work with than the issue is worth.
+   </details>
 
 2. The defense files a motion that could dismiss two of your claims. Based on this article, what makes that different from a minor scheduling dispute?
+   <details>
+     <summary>Show answer</summary>
+     That motion could cost you something important if you lose. This is the kind of issue you usually need to take seriously, because it affects the shape of the case rather than just the calendar.
+   </details>
 
 3. Think about the next disagreement you expect in your own case. Should you agree, narrow the dispute, or fight it? Write down one sentence explaining why.
+   <details>
+     <summary>Show answer</summary>
+     A strong answer identifies the real stakes and then chooses the smallest sensible response. If the issue is minor, narrowing or agreeing may make more sense. If the issue could cut claims or evidence out of the case, fighting it may be the reasonable choice.
+   </details>

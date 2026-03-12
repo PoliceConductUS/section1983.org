@@ -7,13 +7,13 @@ tags: ["fifth-amendment", "silence", "miranda", "criminal-case", "defenses"]
 draft: true
 ---
 
-Many people think silence can never be used against them.
+Many people think silence protects them automatically.
 
 That is wrong.
 
 In some situations, your silence gets more protection. In other situations, it can still create risk. The rules change depending on timing and context.
 
-That is why you should not rely on "I just stayed quiet" as if it always solves the problem.
+That is why "I just stayed quiet" is not enough by itself.
 
 Read this with [Miranda: When Police Actually Have to Warn You](/articles/miranda-when-police-actually-have-to-warn-you) and [Fifth Amendment: What Counts as a Clear Invocation](/articles/fifth-amendment-what-counts-as-a-clear-invocation).
 
@@ -52,7 +52,7 @@ People often think:
 
 - `I was already under arrest, so silence could not be used against me.`
 
-That is not always true.
+That rule has exceptions.
 
 The post-arrest, pre-warning period can still create ugly disputes about how your silence may be characterized later.
 

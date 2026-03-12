@@ -39,7 +39,7 @@ One of the first questions the judge is going to ask is:
 
 - `Does this person qualify financially, and does this complaint survive screening?`
 
-That second question is the one many pro se readers do not expect.
+Many pro se readers expect the financial question. The screening question is the one that catches them off guard.
 
 ## What `IFP` gets you
 
@@ -47,7 +47,7 @@ If the court grants `IFP`, it can help with:
 
 - filing without prepaying the fee
 - service by the U.S. Marshals in many cases
-- keeping the case moving when you do not have the money to open it the ordinary way
+- keeping the case moving when the filing fee would otherwise stop you from starting
 
 That is why `IFP` matters. For many people, it is the only realistic way to get into federal court at all.
 
@@ -67,7 +67,7 @@ If you pay the filing fee, the defendants usually have to appear and make their 
 
 ## Why this is a real trap
 
-The `IFP` trap is not just about money. It is about timing and leverage.
+The `IFP` trap is about more than money. It is about timing and leverage.
 
 When the judge screens your complaint early:
 
@@ -119,11 +119,9 @@ So `IFP` does not replace the need for a strong complaint. It makes that need mo
 - you understand which defendants belong in the case
 - you have already pressure-tested the complaint for early dismissal problems
 
-The point is not `never file IFP`.
+The practical lesson is simple:
 
-The point is:
-
-- do not treat `IFP` as free filing with no downside
+- treat `IFP` as a tradeoff, not as free filing with no downside
 
 ## What to look for before you file `IFP`
 
@@ -152,12 +150,9 @@ If `IFP` is still your path, read these next:
 
 It can also get your complaint screened and dismissed before the defendants even appear.
 
-So the question is not just:
+So ask two questions before you file:
 
 - `Can I afford the filing fee?`
-
-It is also:
-
 - `Is my complaint strong enough to survive the IFP trap?`
 
 ## Check Your Understanding

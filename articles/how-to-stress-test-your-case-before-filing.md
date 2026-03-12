@@ -34,7 +34,7 @@ For every factual allegation in your complaint, ask:
 2. **Does that contrary evidence exist?** If so, you need to address it — either in your complaint or in your strategy documents.
 3. **If this turns out to be wrong, does my case survive?** Some facts are load-bearing. Others aren't. Know which are which.
 
-## Ask "what if this is not true?" paragraph by paragraph
+## Ask "what if this fact is wrong?" paragraph by paragraph
 
 Go through your complaint paragraph by paragraph. For every factual statement, ask: **what if this isn't true?**
 
@@ -175,3 +175,23 @@ You don't need a perfect complaint. You need one that's strong enough to survive
 ---
 
 _Ready to file? Read [Filing Your Case](/process/filing) for the mechanics, then [how to write a declaration](/articles/how-to-write-a-declaration-in-a-section-1983-case) so you are prepared for the evidentiary fight that comes next. Or go back to [preparing your case](/process/preparing-your-case) for the full pre-filing checklist._
+
+## Check Your Understanding
+
+1. If you cannot write the motion to dismiss the defense is likely to file, what does that usually tell you?
+   <details>
+     <summary>Show answer</summary>
+     It usually tells you that you do not yet understand your weak points well enough. The whole point of stress-testing is to find those weaknesses before the defense does.
+   </details>
+
+2. Which is the more dangerous problem before filing: a fact you cannot source, or a dramatic sentence that adds emotion but no legal value?
+   <details>
+     <summary>Show answer</summary>
+     Both matter, but an unsupported fact is usually more dangerous because it can become a credibility problem once the defense challenges it. Emotional filler should still be cut because it does not help you survive.
+   </details>
+
+3. What is the weakest part of your current case right now: the facts, the records, the legal theory, the defendants, or the expected defense response?
+   <details>
+     <summary>Show answer</summary>
+     The right answer depends on your case, but a strong answer names one weak point clearly and says what you will do next to strengthen it before filing.
+   </details>

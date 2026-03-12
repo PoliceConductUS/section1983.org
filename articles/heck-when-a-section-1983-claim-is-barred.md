@@ -63,7 +63,7 @@ Heck risk is usually highest when your civil claim depends on saying:
 
 - you were arrested with no lawful basis and the conviction depends on that same arrest
 - officers fabricated the facts needed for the conviction
-- officers lied in a way that, if proven, would mean the conviction should never have happened
+- officers lied in a way that, if proven, would mean the conviction could not lawfully stand
 - the sentence itself was unlawful and your civil win would say so directly
 
 For your case, look closely at any claim where your win would sound like:
@@ -105,7 +105,7 @@ For your claim, look for:
 - the factual basis for the plea
 - whether your civil claim would directly contradict that factual basis
 
-If your civil claim depends on saying the conduct behind the plea never happened, Heck risk is high.
+If your civil claim depends on saying the conduct behind the plea could not lawfully support the conviction, Heck risk is high.
 
 ## Deferred prosecution and diversion are different
 

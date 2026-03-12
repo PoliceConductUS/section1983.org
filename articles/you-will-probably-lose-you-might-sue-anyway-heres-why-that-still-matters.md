@@ -37,15 +37,15 @@ That sequence is what this article is training you to see.
 
 The officer often does not have to prove they acted reasonably. _You_ have to prove that a prior court decision — in your circuit, with materially similar facts — already declared this exact conduct unconstitutional. Not similar conduct. Not obviously wrong conduct. _This_ conduct, under _these_ circumstances, with a prior case on point. If you can't point to that case, the officer often wins on qualified immunity.
 
-And here's the real catch-22: after [_Pearson v. Callahan_](/terms-and-concepts/pearson-v-callahan) (2009), courts can dismiss your case on qualified immunity _without ever deciding whether the officer violated your rights_. They skip the constitutional question entirely and just say "it wasn't clearly established." Which means no court ever _makes_ it clearly established. The right never gets declared. The next plaintiff walks in with the same facts, and the cycle repeats.
+The next barrier is even worse: after [_Pearson v. Callahan_](/terms-and-concepts/pearson-v-callahan) (2009), courts can dismiss your case on qualified immunity without deciding whether the officer violated your rights. The court can skip the constitutional question, say the law was not clearly established, and end the case there. That means the next person may face the same problem because no court answered the underlying rights question.
 
 It took until 2017 — [_Turner v. Driver_, 848 F.3d 678 (5th Cir.)](https://www.courtlistener.com/opinion/4356889/phillip-turner-v-lieutenant-driver/) — for the Fifth Circuit to clearly establish that you have a [First Amendment right to film the police](/terms-and-concepts/right-to-record-police). Officers who retaliated against someone for recording before that decision likely had qualified immunity. Not because what they did was legal. Because no court had said it was illegal yet, _because courts kept dismissing without reaching the question_.
 
-The practical lesson for you is not just that qualified immunity is unfair. It is that your case will usually be tested through fact matching. The defense will try to redefine your case at the level of detail that helps them most and then argue there is no prior case close enough.
+The practical lesson is larger than "qualified immunity is unfair." Your case will usually be tested through fact matching. The defense will try to redefine your case at the level of detail that helps them most and then argue there is no prior case close enough.
 
 ### Iqbal and Twombly will test your complaint before anyone reads the facts
 
-Your complaint can't just say "the officer violated my [Fourth Amendment](/terms-and-concepts/fourth-amendment) rights." It has to allege specific facts that, taken as true, _plausibly_ state a claim. If your factual allegations are too thin or too conclusory, the case dies at the [motion to dismiss](/terms-and-concepts/motion-to-dismiss) — before discovery, before anyone answers for what they did. If you need a concrete model, compare your draft against the [sample Section 1983 complaint for a false arrest case](/articles/sample-section-1983-complaint-for-a-false-arrest-case).
+Your complaint cannot just say "the officer violated my [Fourth Amendment](/terms-and-concepts/fourth-amendment) rights." It has to allege specific facts that, taken as true, give the court a real reason to let the claim go forward. If your factual allegations are too thin or too conclusory, the case may be dismissed at the [motion to dismiss](/terms-and-concepts/motion-to-dismiss) stage, before discovery and before anyone answers for what they did. If you need a concrete model, compare your draft against the [sample Section 1983 complaint for a false arrest case](/articles/sample-section-1983-complaint-for-a-false-arrest-case).
 
 **Here's what failing looks like:**
 
@@ -53,7 +53,7 @@ Your complaint can't just say "the officer violated my [Fourth Amendment](/terms
 
 - Pro se complaints routinely die for alleging things like "Officer Smith used [excessive force](/terms-and-concepts/excessive-force) in violation of my constitutional rights" without describing _what the officer actually did_. Did he punch you? Tase you while handcuffed? Kneel on your back for six minutes? The specific physical facts _are_ the complaint. The constitutional label is for the judge to apply.
 
-And here's the cruel irony: the court demands these details up front so it can use them against you. You're required to plead specific facts to survive Iqbal — but those same specific facts become the basis for the qualified immunity analysis. The court takes your detailed allegations, compares them to existing case law, and if your exact facts don't match a prior case closely enough? Dismissed. Not clearly established.
+The practical trap is obvious once you see it. The court requires specific facts to get past Iqbal, and those same facts then become the basis for the qualified-immunity fight. The court takes your detailed allegations, compares them to existing case law, and may dismiss the case if your facts do not match a prior case closely enough.
 
 Your own complaint becomes part of the fight. You cannot be vague or you fail Iqbal. But once you are specific, the defense will use that same detail to argue your facts do not match clearly established law closely enough.
 
@@ -148,15 +148,15 @@ Each complaint above is freely readable on [CourtListener](https://www.courtlist
 
 ---
 
-## You don't have to sue. You should still document it.
+## You may decide not to sue. You should still document it.
 
-Want to know how hard it is to win a § 1983 case pro se? Search our [Case Law Library for pro se plaintiff wins](/cases?tags=plaintiff-won%2Cpro-se). As of this writing, **there are no results.**
+Want to know how hard it is to win a § 1983 case pro se? Search our [Case Law Library for pro se plaintiff wins](/cases?tags=plaintiff-won%2Cpro-se). As of this writing, that search returns no results.
 
 Most people shouldn't file a § 1983 lawsuit. The deck is stacked, the cost is enormous, and the odds are terrible. That's the honest truth.
 
 But you can still make what happened to you matter.
 
-**[Report your experience on policeconduct.org](https://policeconduct.org)** — good or bad. You don't need a lawyer. You don't need to file anything with a court. You just need to write down what happened.
+**[Report your experience on policeconduct.org](https://policeconduct.org)** — good or bad. You do not need a lawyer or a court filing to do that. You only need to write down what happened.
 
 If you do decide to file, start with [how to stress-test your case before filing](/articles/how-to-stress-test-your-case-before-filing), [how to write your complaint](/articles/how-to-write-a-section-1983-complaint), [how to write a declaration](/articles/how-to-write-a-declaration-in-a-section-1983-case), and the [sample response to a motion to dismiss in a Section 1983 case](/articles/sample-response-to-a-motion-to-dismiss-in-a-section-1983-case).
 
@@ -169,15 +169,27 @@ Your report helps:
 - **Researchers and journalists** documenting systemic problems
 - **The next person** who gets pulled over by that officer and wants to know what they're dealing with
 
-You don't have to sue. You probably shouldn't. But don't let what happened to you disappear.
+You may decide not to sue. But do not let what happened to you disappear.
 
 ## Check Your Understanding
 
 1. This article explains that most cases do not fail because a judge first decides no violation happened. They usually fail earlier and more narrowly. Which of these is most likely to be the first serious problem in your case: thin pleading, qualified immunity, weak evidence, or low damages?
+   <details>
+     <summary>Show answer</summary>
+     The right answer depends on your case, but a strong answer picks the first practical barrier and ties it to your facts. If your complaint is thin, pleading may be first. If the law in your circuit is weak, qualified immunity may be first. If the injury is small, damages may be first.
+   </details>
 
 2. The defense will try to narrow and reframe your facts in the way that helps them most. In your case, what is the one fact dispute or doctrinal fight they are most likely to build around?
+   <details>
+     <summary>Show answer</summary>
+     A strong answer names one issue the defense is likely to center, such as probable cause, clearly established law, causation, damages, or a plea-related Heck problem. The point is to identify the fight they are most likely to use to shrink the case.
+   </details>
 
 3. If you still decide to file, what is the next practical step you should take after reading this article: improve the complaint, gather stronger records, research clearly established law, document the case publicly, or some combination? Write down the first two.
+   <details>
+     <summary>Show answer</summary>
+     A strong answer names the next two steps that address the earliest barriers in your case. For many readers, that will be some combination of improving the complaint, gathering records, and researching the doctrine most likely to block the case.
+   </details>
 
 ---
 

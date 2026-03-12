@@ -195,7 +195,7 @@ These tactics work less well when you have:
 - a complaint that separates each claim and each defendant
 - a calm and disciplined litigation record
 
-You do not need a perfect case. You need to stop giving the defense easy wins.
+You need a disciplined case more than a perfect one. The real goal is to stop giving the defense easy wins.
 
 ## What to look for in your own case
 
@@ -211,14 +211,26 @@ If you can answer those questions now, you are already thinking more like a liti
 
 ## The bottom line
 
-The defense is not just going to argue that you lose. They are going to look for the easiest way to make the case smaller, weaker, or easier to dismiss.
+The defense is going to do more than argue that you lose. They are going to look for the easiest way to make the case smaller, weaker, or easier to dismiss.
 
 If you can see those moves coming, you can build the complaint and the record around them instead of reacting too late.
 
 ## Check Your Understanding
 
 1. In your case, what is the first label the defense is likely to use to rename your claim: lawful arrest, routine booking, one isolated incident, minor force, or something else?
+   <details>
+     <summary>Show answer</summary>
+     A strong answer picks the defense label that best fits your facts and names the record that cuts against it. If your claim is false arrest, for example, the defense may try to call it a lawful arrest supported by probable cause.
+   </details>
 
 2. Which record would most help you fight that first defense move: video, plea paperwork, body-camera footage, medical records, prior lawsuits, or something else?
+   <details>
+     <summary>Show answer</summary>
+     The best answer is the record that most directly blocks the defense story. If the defense will say you resisted, video or body-camera footage may matter most. If the defense will raise Heck, the plea paperwork may matter most.
+   </details>
 
 3. What is the easiest argument the defense could make against your case right now: wrong defendant, thin complaint, qualified immunity, Heck, weak damages, or your own litigation behavior?
+   <details>
+     <summary>Show answer</summary>
+     A strong answer identifies the earliest clean way the defense could narrow or end the case. The point is to name that risk now so you can strengthen the case before the defense uses it.
+   </details>

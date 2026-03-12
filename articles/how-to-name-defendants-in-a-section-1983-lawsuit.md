@@ -77,7 +77,7 @@ Once filed, your case name persists across multiple systems:
 - **Academic citations** — if your case makes new law, scholars cite it by name
 - **<a href="https://policeconduct.org" target="_blank" rel="noopener">policeconduct.org ↗</a>** — indexes cases by officer name, building accountability records
 
-Your case name is not just a label. It's a searchable, permanent, public record that connects a specific officer to a specific allegation of constitutional misconduct.
+Your case name does more than label the file. It becomes a searchable, permanent, public record that connects a specific officer to a specific allegation of constitutional misconduct.
 
 ## The district-court name is the one that usually matters
 
@@ -124,3 +124,23 @@ Name the officers. Put them first. Make the record.
 ---
 
 _Ready to write the actual pleading? Read [how to write a § 1983 complaint](/articles/how-to-write-a-section-1983-complaint), then [stress-test your draft](/articles/how-to-stress-test-your-case-before-filing) before you file. For the full pre-filing checklist, start at [Preparing Your Case](/process/preparing-your-case)._
+
+## Check Your Understanding
+
+1. If you know the officer's real name, which creates a stronger public accountability record: naming the city first and the officer second, or naming the officer directly?
+   <details>
+     <summary>Show answer</summary>
+     Naming the officer directly. The article's point is that the officer's name in the caption is what makes the case more searchable and personally tied to the allegation.
+   </details>
+
+2. If you only use a John Doe placeholder, what are the two biggest practical risks?
+   <details>
+     <summary>Show answer</summary>
+     A strong answer would mention service problems and statute-of-limitations risk. The placeholder may buy time, but it does not solve the problem of identifying and serving the real officer.
+   </details>
+
+3. Which defendant name in your draft needs the most verification right now, and what record will you use to verify it?
+   <details>
+     <summary>Show answer</summary>
+     A strong answer identifies one person and one source, such as the arrest report, incident report, dispatch log, or body-camera records. The goal is to stop guessing before you file.
+   </details>
