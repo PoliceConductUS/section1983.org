@@ -150,11 +150,4 @@ This is the standard municipal defense. You answer it by pointing to actual fact
 
 If you need those materials, start with [FOIA and Records Requests](/process/foia-and-records-requests).
 
-## What to read next
-
-- [How to Research Clearly Established Law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case)
-- [Monell: What a Monell Claim Is and How to Plead It](/articles/monell-what-a-monell-claim-is-and-how-to-plead-it)
-- [Sample Declaration for a Section 1983 Case](/articles/sample-declaration-for-a-section-1983-case)
-- [You Will Probably Lose. You Might Sue Anyway. Here's Why That Still Matters.](/articles/you-will-probably-lose-you-might-sue-anyway-heres-why-that-still-matters)
-
 A good dismissal response does not pretend the pleading standard is low. It shows, paragraph by paragraph, that you met it.

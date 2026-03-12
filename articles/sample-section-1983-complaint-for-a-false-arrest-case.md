@@ -209,11 +209,4 @@ Draft with the obvious defense arguments in mind:
 
 That is why you should also read [how to stress-test your case before filing](/articles/how-to-stress-test-your-case-before-filing).
 
-## What to read next
-
-- [How to Write Your Complaint](/articles/how-to-write-a-section-1983-complaint)
-- [How to Name Your Defendants](/articles/how-to-name-defendants-in-a-section-1983-lawsuit)
-- [False Arrest Claim Elements and Defenses](/articles/false-arrest-claim-elements-and-defenses-in-a-section-1983-case)
-- [Monell: What a Monell Claim Is and How to Plead It](/articles/monell-what-a-monell-claim-is-and-how-to-plead-it)
-
 The point of a sample is not to do the work for you. It is to show you what a usable structure looks like before you build your own.

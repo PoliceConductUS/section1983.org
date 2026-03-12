@@ -109,13 +109,6 @@ Your brief should do more than drop citations. Explain the fit:
 
 That is how you turn research into a qualified-immunity argument the judge can actually use.
 
-## What to read next
-
-- [Qualified Immunity](/terms-and-concepts/qualified-immunity)
-- [Sample Response to a Motion to Dismiss in a Section 1983 Case](/articles/sample-response-to-a-motion-to-dismiss-in-a-section-1983-case)
-- [Excessive Force Claim Elements and Graham Factors](/articles/excessive-force-claim-elements-and-graham-factors-in-a-section-1983-case)
-- [False Arrest Claim Elements and Defenses](/articles/false-arrest-claim-elements-and-defenses-in-a-section-1983-case)
-
 Clearly established law research is not about finding a quote you like. It is about finding a case whose facts a judge cannot easily distinguish away.
 
 ## Check Your Understanding

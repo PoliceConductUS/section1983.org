@@ -135,15 +135,6 @@ Before you file, ask:
 
 If the answer to those questions is no, the safer move is often to fix the complaint first instead of rushing to file `IFP`.
 
-## What to read next
-
-If `IFP` is still your path, read these next:
-
-- [How to Write a § 1983 Complaint](/articles/how-to-write-a-section-1983-complaint)
-- [Who You Cannot Sue Under § 1983](/articles/who-you-cannot-sue-under-section-1983)
-- [How the Defense Will Try to Shrink, Reframe, or Kill Your § 1983 Case](/articles/how-the-defense-will-try-to-shrink-reframe-or-kill-your-section-1983-case)
-- [The Process: Filing Your Case](/process/filing)
-
 ## The bottom line
 
 `IFP` can open the courthouse door if you cannot afford the filing fee.

@@ -133,13 +133,6 @@ The cases with better odds usually have one or more of these features:
 
 If you have a city-liability theory, pair this with [Monell: What a Monell Claim Is and How to Plead It](/articles/monell-what-a-monell-claim-is-and-how-to-plead-it).
 
-## What to read next
-
-- [Sample Section 1983 Complaint for a False Arrest Case](/articles/sample-section-1983-complaint-for-a-false-arrest-case)
-- [How to Research Clearly Established Law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case)
-- [How to Name Your Defendants](/articles/how-to-name-defendants-in-a-section-1983-lawsuit)
-- [You Will Probably Lose. You Might Sue Anyway. Here's Why That Still Matters.](/articles/you-will-probably-lose-you-might-sue-anyway-heres-why-that-still-matters)
-
 False arrest cases are often won or lost before filing, when you decide whether the record really disproves probable cause.
 
 ## Check Your Understanding

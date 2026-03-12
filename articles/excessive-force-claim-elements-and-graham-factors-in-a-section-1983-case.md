@@ -90,13 +90,6 @@ They usually fail because they:
 - do not connect the facts to the [Graham factors](/terms-and-concepts/graham-factors)
 - rely on conclusions instead of scene details
 
-## What to read next
-
-- [Sample Declaration for a Section 1983 Case](/articles/sample-declaration-for-a-section-1983-case)
-- [How to Research Clearly Established Law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case)
-- [You Will Probably Lose. You Might Sue Anyway. Here's Why That Still Matters.](/articles/you-will-probably-lose-you-might-sue-anyway-heres-why-that-still-matters)
-- [Monell: What a Monell Claim Is and How to Plead It](/articles/monell-what-a-monell-claim-is-and-how-to-plead-it)
-
 These cases get stronger when you stop calling the force outrageous and start showing exactly when, where, and how it happened.
 
 ## Check Your Understanding

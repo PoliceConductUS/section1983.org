@@ -160,11 +160,4 @@ If you mention video, jail paperwork, dispatch logs, or public-record responses,
 
 Use the 28 U.S.C. Section 1746 form. Without it, the declaration may not count as evidence.
 
-## What to read next
-
-- [How to Write a Declaration](/articles/how-to-write-a-declaration-in-a-section-1983-case)
-- [Sample Response to a Motion to Dismiss in a Section 1983 Case](/articles/sample-response-to-a-motion-to-dismiss-in-a-section-1983-case)
-- [Excessive Force Claim Elements and Graham Factors](/articles/excessive-force-claim-elements-and-graham-factors-in-a-section-1983-case)
-- [False Arrest Claim Elements and Defenses](/articles/false-arrest-claim-elements-and-defenses-in-a-section-1983-case)
-
 The declaration is where you stop telling the court what the law is and start showing the court what happened.
