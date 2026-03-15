@@ -45,7 +45,7 @@ The statute promises liability without carving out these later protections:
 
 Those limits came later.
 
-That is why [Who You Cannot Sue Under § 1983](/articles/who-you-cannot-sue-under-section-1983) matters so much. The statute is broad on purpose. It contains no immunity exceptions and no special defenses. The actual defendant list is much narrower.
+That is why [Who You Cannot Sue Under § 1983](/articles/who-you-cannot-sue-under-section-1983) matters so much. Congress wrote the statute broadly and did not list immunity exceptions or special defenses. In real life, courts cut the defendant list down anyway.
 
 ## The first question to ask
 
