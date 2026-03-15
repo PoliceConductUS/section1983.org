@@ -54,9 +54,9 @@ So your job is to look for the exceptions before you name that defendant. The ma
 
 ### Judges have absolute judicial immunity
 
-Judges have **absolute immunity** for acts performed in their role as judges. It doesn't matter if the judge was biased, wrong, or even corrupt. If they were doing judge work, like ruling on motions, issuing orders, or presiding over your case, they usually cannot be sued under § 1983.
+Judges have **absolute immunity** for acts performed in their role as judges. It doesn't matter if the judge was biased, wrong, or even corrupt. If they were doing judge work, like ruling on motions, issuing orders, or presiding over your case, the judge will usually dismiss the claim against them under § 1983.
 
-This comes from _[Pierson v. Ray](/cases/pierson-v-ray)_, 386 U.S. 547 (1967), and it's been reaffirmed repeatedly. The Supreme Court has extended judicial immunity even to judges who acted with malice or in excess of their authority, as long as they didn't act in the "clear absence of all jurisdiction."
+That rule comes from _[Pierson v. Ray](/cases/pierson-v-ray)_, 386 U.S. 547 (1967). In real life, it means the judge can end that part of your case even if you say the ruling was malicious or wildly wrong, as long as the judge was still acting within the court's general power.
 
 **What does "clear absence of all jurisdiction" mean?** Almost nothing defeats it. A traffic court judge sentencing someone to death would be acting without jurisdiction. A family court judge issuing a criminal warrant might be. But a judge who makes a terrible, biased ruling within their general jurisdiction? Immune.
 
@@ -70,7 +70,7 @@ Prosecutors have **absolute immunity** for anything related to their advocacy fu
 
 In plain English, that usually means work a prosecutor does as the government's lawyer in the case.
 
-This comes from _Imbler v. Pachtman_, 424 U.S. 409 (1976). The rationale is that prosecutors need to make tough decisions without fear of personal liability.
+That rule comes from _Imbler v. Pachtman_, 424 U.S. 409 (1976). In your case, the practical point is that if your complaint is really about filing charges or handling the case in court, the judge will usually throw those claims out.
 
 **When you may be able to sue:** Prosecutors can sometimes be sued when they act as investigators or administrators rather than advocates. If a prosecutor personally directed the police to conduct an illegal search, fabricated evidence before charges were filed, or made statements at a press conference, those acts may fall outside absolute immunity.
 
@@ -100,11 +100,11 @@ Yes, even perjury is shielded by absolute immunity in the context of § 1983. Th
 
 ### Grand jurors cannot be sued for indicting you
 
-Grand jurors have absolute immunity for their actions as grand jurors. You cannot sue a grand jury member for returning an indictment against you, even if the indictment was baseless.
+Grand jurors have absolute immunity for their actions as grand jurors. If you sue a grand jury member because the indictment was baseless, the judge will usually dismiss that claim right away.
 
-### Court clerks and similar officials often have quasi-judicial immunity
+### Court clerks and similar officials often get clerk immunity tied to court work
 
-Court clerks and similar officials generally have **quasi-judicial immunity**. That means they are usually protected when they are doing routine court-process work like filing documents, issuing summonses, and recording proceedings.
+Court clerks and similar officials usually get **quasi-judicial immunity**. In plain English, that means the judge will usually protect them when they were doing routine court-process work like filing documents, issuing summonses, or recording proceedings.
 
 ## Who you can still sue in a Section 1983 case
 

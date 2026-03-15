@@ -18,15 +18,19 @@ citedBy: []
 
 ## What Happened
 
-The plaintiffs sought millions in damages in a civil-rights case but won only nominal damages at trial.
+The plaintiffs sought millions in damages in a civil-rights case but won only $1 at trial.
 
 They then sought attorney fees under [Section 1988](/terms-and-concepts/section-1988), and the fee fight reached the Supreme Court.
+
+A lower court had awarded about $280,000 in attorney's fees.
 
 ## What the Court Decided
 
 The Supreme Court said a plaintiff who wins nominal damages is still a prevailing party.
 
 But the Court also said that when the plaintiff wins only nominal damages because they failed to prove actual compensable injury, the reasonable attorney-fee award may be very small or even zero.
+
+In _Farrar_ itself, that meant wiping out the roughly $280,000 fee award.
 
 That is the part of the decision that matters most to the economics of civil-rights litigation.
 
@@ -38,10 +42,12 @@ It means a lawyer can:
 
 - spend years on the case
 - prove liability
-- win only nominal damages
+- win only $1
 - and still recover little or no meaningful fee award
 
-That risk affects which cases lawyers can rationally take.
+That risk affects which cases lawyers can rationally take and whether victims can find counsel at all.
+
+It also sits in tension with [_City of Riverside v. Rivera_](/cases/city-of-riverside-v-rivera), where the Supreme Court said civil-rights fees do not have to be proportional to the damages recovered.
 
 ## How You Can Use It
 

@@ -11,15 +11,17 @@ If you read [Section 1983](/terms-and-concepts/section-1983) itself, the statute
 
 If you try to use it in real life, history shows that courts have repeatedly added barriers that do not exist in the statute.
 
-And as the last article showed, this has not been a one-time event. Courts have added more and more barriers over time.
+And as the last article showed, courts have done this again and again. The barriers kept piling up over time.
 
 This article explains one major reason why: courts added limits and defenses that are not written in the statute's text.
+
+This is why people read the statute and then get blindsided when they try to use it in court.
 
 After reading this article, you should be able to:
 
 - explain the difference between what § 1983 says and how courts apply it
 - identify the biggest court-made barriers layered on top of the statute
-- see how courts narrowed § 1983 beyond the remedy Congress wrote
+- see how courts narrowed § 1983 far beyond the remedy Congress wrote
 
 Read this after [Section 1983 Is Getting Harder to Win](/articles/section-1983-is-getting-harder-to-win) and before [Why Hasn't Qualified Immunity Been Overturned?](/articles/why-hasnt-qualified-immunity-been-overturned). The first article gives you the practical timeline. This article explains how courts built those barriers even though Congress did not write them into § 1983.
 
@@ -27,11 +29,13 @@ Read this after [Section 1983 Is Getting Harder to Win](/articles/section-1983-i
 
 Section 1983 says that a person acting under color of law who deprives someone of federal rights `shall be liable` to the injured party.
 
-That is broad language.
+Congress wrote that sentence broadly.
 
-The original 1871 text makes the point even clearer. Congress wrote the remedy broadly, included no immunity exceptions or special defenses, and said contrary state law, custom, or usage did not stop liability.
+The original 1871 text makes the point even clearer. Congress wrote the remedy broadly, included no immunity exceptions or special defenses, and said contrary state law, custom, or usage could not block liability.
 
-The text does not say:
+There is a strong argument that contrary common-law rules fit comfortably within the original text's reference to contrary law, custom, or usage, especially given how closely nineteenth-century lawyers connected common law to custom and usage.
+
+The statute promises liability without carving out these later protections:
 
 - judges are immune
 - prosecutors are immune
@@ -49,17 +53,13 @@ One of the first questions to ask is:
 
 - `Did Congress write this barrier into the statute, or did courts add it later?`
 
-That question matters because people often talk as if every modern § 1983 barrier came from Congress.
-
-It did not.
+That question matters because many of the biggest modern barriers came from courts, not Congress.
 
 ## What courts said instead
 
-Courts usually did not say:
+Courts narrowed the statute without saying so directly.
 
-- `We are rewriting the statute.`
-
-They usually said something closer to:
+Instead, they usually said something closer to:
 
 - `Congress legislated against a common-law background.`
 - `Longstanding immunities survived unless Congress clearly abolished them.`
@@ -85,23 +85,17 @@ That is why many § 1983 barriers are best understood as court-made rather than 
 
 Take [absolute immunity](/terms-and-concepts/absolute-immunity).
 
-Section 1983 does not say judges cannot be sued for judicial acts. It does not say prosecutors cannot be sued for advocacy acts. It does not say witnesses cannot be sued for testimony.
-
-Courts imported those immunities anyway. [_Pierson v. Ray_](/cases/pierson-v-ray) is one of the core examples.
+Courts imported immunity for judges, prosecutors acting as advocates, and witnesses testifying in court even though the statute itself never lists those carveouts. [_Pierson v. Ray_](/cases/pierson-v-ray) is one of the core examples.
 
 Courts said they were preserving old common-law protections. The practical effect was that whole categories of defendants could be dismissed from § 1983 cases even though the statute itself does not name those exceptions.
 
-That is why [Who You Cannot Sue Under § 1983](/articles/who-you-cannot-sue-under-section-1983) matters so much. The statute is broad on purpose. It contains no immunity exceptions and no special defenses. The actual defendant list is much narrower.
+That is why [Who You Cannot Sue Under § 1983](/articles/who-you-cannot-sue-under-section-1983) matters so much. In real life, judges, prosecutors, and some other defendants can be off the table before the facts ever get tested.
 
 ## Qualified immunity is an even stronger example
 
 [Qualified immunity](/terms-and-concepts/qualified-immunity) is one of the clearest examples of a court-made barrier.
 
-The text does not say:
-
-- `Officials are only liable if the right was clearly established.`
-
-Courts created that rule.
+Courts created the rule that officials are only liable if the right was clearly established.
 
 Then courts made it stronger by requiring more fact-specific precedent, making early dismissal easier, and letting judges skip the question whether the Constitution was violated at all.
 
@@ -119,7 +113,7 @@ But it also said a city is not liable just because it employed the wrongdoer.
 
 That rule is not written in § 1983's text either. Courts built a separate framework requiring policy, custom, final policymaker action, or a similarly demanding city-level theory.
 
-That is a sharp break from the ordinary private-employer rule in tort law, where an employer is usually exposed to vicarious liability for an employee's misconduct within the scope of employment. Under § 1983, cities do not face that default rule just because they employed the officer.
+That is a sharp break from what people usually expect from employer liability. In ordinary tort law, an employer is usually exposed to liability for an employee's misconduct within the scope of the job. Under § 1983, cities do not face that default rule just because they employed the officer.
 
 So even where city liability exists, it exists in a court-built form that is much narrower than many readers expect from the statute's language.
 
@@ -127,21 +121,29 @@ So even where city liability exists, it exists in a court-built form that is muc
 
 The [Heck doctrine](/terms-and-concepts/heck-doctrine) is another example.
 
-Section 1983 does not say:
-
-- `You cannot bring a damages claim if winning it would imply your conviction was invalid.`
-
-[_Heck v. Humphrey_](/cases/heck-v-humphrey) created that barrier.
+[_Heck v. Humphrey_](/cases/heck-v-humphrey) created the rule that a damages claim gets blocked if winning it would imply your conviction was invalid.
 
 The Court justified it as a way to protect the finality of criminal judgments and stop civil cases from becoming backdoor attacks on convictions. But that was not the only possible way to handle overlap between criminal and civil cases. Courts already had narrower tools like stays, harmless-error analysis, reversal, and issue-by-issue decisionmaking.
 
 That is still a major filter that the statute itself does not spell out.
 
+## Courts also strengthened everyday defense filters
+
+Some of the most important barriers are not full immunity doctrines. They are the everyday filters that kill cases before the facts are fully developed.
+
+Take [probable cause](/terms-and-concepts/probable-cause). Courts turned it into a broader defense filter by letting officers point to some other offense later, even if that was not the reason you were given at the time. [_Devenpeck v. Alford_](/cases/devenpeck-v-alford) moved the law in that direction. In retaliatory-arrest cases, [_Nieves v. Bartlett_](/cases/nieves-v-bartlett) made probable cause an even stronger defense filter.
+
+Then there is arguable probable cause, which usually shows up through [qualified immunity](/terms-and-concepts/qualified-immunity). The statute does not say an officer escapes liability because the court thinks the probable-cause call was close enough. Courts built that protection too.
+
+And the same pattern appears at the complaint stage. Courts made [plausibility pleading](/terms-and-concepts/plausibility-pleading) a major early barrier through [_Twombly_](/cases/bell-atlantic-corp-v-twombly) and [_Iqbal_](/cases/ashcroft-v-iqbal), especially in civil-rights cases where much of the key evidence is still in the government's hands.
+
+These are not side details. They are part of how courts turned a broad civil-rights remedy into a system full of early exits.
+
 ## The common-law-backdrop argument
 
 The standard defense of these doctrines is that Congress legislated against the backdrop of common law.
 
-That means courts assume old common-law rules survive unless Congress clearly says otherwise.
+In practice, courts use that idea to say old common-law rules survive unless Congress clearly says otherwise.
 
 But codification does not make substantive changes unless Congress clearly says it is making one. That means the later omission of the old notwithstanding clause is not a good reason to pretend Congress silently created immunity exceptions or special defenses.
 
@@ -169,7 +171,7 @@ This is another reason the textualist objection is strong.
 
 If the rule were really that Congress always legislates against the backdrop of common law and old protections survive unless Congress clearly abolishes them, you would expect the Court to apply that rule consistently.
 
-It does not.
+The Court does not follow that method consistently.
 
 In some cases, the Court has refused to extend common-law-style protections where the statute did not include them:
 
@@ -204,7 +206,9 @@ If you are the person who was arrested, beaten, searched, jailed, or ignored, th
 - `Yes, the statute says you can sue.`
 - `No, not against that defendant.`
 - `No, not unless a prior case was close enough.`
+- `No, not if the court thinks there was probable cause or close enough to probable cause.`
 - `No, not if this affects a conviction.`
+- `No, not unless your complaint is detailed enough before you get discovery.`
 - `No, not unless you meet a court-built city-liability standard.`
 
 That is a very different system from the one the bare text suggests.
@@ -213,12 +217,9 @@ That is a very different system from the one the bare text suggests.
 
 This history matters because it changes how you should evaluate your case.
 
-Do not ask only:
+Ask both of these questions:
 
 - `Did my rights get violated?`
-
-Also ask:
-
 - `Which court-made barrier is most likely to be used against me first?`
 
 For your case, that might be:
@@ -255,7 +256,7 @@ The main barriers discussed in this article are not in the text of § 1983. Cong
 
 > A right without a remedy is no right at all.
 
-That is why readers often feel like the law says one thing and the courts do another. If the right exists on paper but the remedy keeps shrinking, the practical value of the right shrinks with it.
+That is why readers often feel like the law says one thing and the courts do another. If the right exists in the statute but the remedy keeps shrinking, the practical value of the right shrinks with it.
 
 If you understand that gap, you will understand both your case and this site better.
 
@@ -273,8 +274,8 @@ If you understand that gap, you will understand both your case and this site bet
      The difference between what § 1983 says and the extra barriers courts added later. That gap is one of the main reasons the system feels much narrower than the text first suggests.
    </details>
 
-3. For your own case, which court-made rule is most likely to matter first: absolute immunity, qualified immunity, Heck, Monell limits, or something else?
+3. For your own case, which court-made rule is most likely to matter first: absolute immunity, qualified immunity, probable cause, pleading, Heck, Monell limits, or something else?
    <details>
      <summary>Show answer</summary>
-     A strong answer picks the first likely filter and ties it to the facts. If your target is a judge or prosecutor, immunity may come first. If your target is an officer, qualified immunity may come first. If you have a conviction, Heck may come first.
+     A strong answer picks the first likely filter and ties it to the facts. If your target is a judge or prosecutor, immunity may come first. If the defense will argue probable cause or arguable probable cause, that may come first. If your complaint is still thin, pleading may come first. If you have a conviction, Heck may come first.
    </details>

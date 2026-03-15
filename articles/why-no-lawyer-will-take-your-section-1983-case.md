@@ -29,7 +29,7 @@ When a lawyer says no, they are usually saying something closer to:
 
 - `This case is too risky, too expensive, too hard to win, or too small to justify the investment.`
 
-That distinction matters because it changes what you do next. If the problem is economic risk, you need to understand the economics of your case.
+That changes what you do next. If the problem is economic risk, you need to understand the economics of your case.
 
 ## What the judge and the defense will do to the case
 
@@ -71,13 +71,24 @@ If any one of those factors is low, the case may stop making economic sense for 
 
 ### Why nominal damages do not save the case: _Farrar v. Hobby_
 
-If the math wasn't bad enough, there's [_Farrar v. Hobby_, 506 U.S. 103 (1992)](https://www.courtlistener.com/opinion/112798/farrar-v-hobby/).
+[_Farrar v. Hobby_](/cases/farrar-v-hobby) made the math even worse.
 
-The person suing won at trial. The jury found the defendant liable and awarded $1 in [nominal damages](/terms-and-concepts/nominal-damages). One dollar. Then that person asked for attorney fees under [§ 1988](/terms-and-concepts/section-1988) — the statute that's supposed to make civil rights enforcement economically viable.
+Before _Farrar_, the Supreme Court had already said in [_City of Riverside v. Rivera_](/cases/city-of-riverside-v-rivera) that civil-rights fee awards do not have to be proportional to the damages recovered. That mattered because fee shifting is what makes many civil-rights cases economically possible in the first place. Without fee recovery, many victims cannot find a lawyer even when the violation is real.
 
-The Supreme Court held that winning $1 doesn't entitle you to meaningful attorney fees. The attorney who spent years on the case got nothing.
+Then _Farrar_ went the other direction. The victim proved a rights violation and recovered only $1 in [nominal damages](/terms-and-concepts/nominal-damages). A lower court said the government should have to pay about $280,000 in attorney's fees. The Supreme Court cut that fee award to zero.
 
-This is one of the hardest outcomes for many civil-rights lawyers: you prove the violation happened, a jury agrees with you, and the fee recovery still does not justify the work. Cities know this. Their defense strategy often focuses on minimizing your damages so the fee recovery does not justify the risk, even if they cannot seriously dispute the constitutional violation itself.
+That has little to do with what it actually costs to bring the case. A civil-rights case can still require years of work, discovery fights, motions, experts, and trial preparation even when the final damages number is small.
+
+The practical message is brutal:
+
+- the victim can prove the violation happened
+- technically win
+- recover only $1
+- and still not get the fee award that made the case financially possible to bring
+
+That is why low-dollar cases are so hard to place. The lawyer is not just asking whether the violation happened. The lawyer is asking whether winning will produce anything that can pay for the years of work it took to get there.
+
+Cities know this. Their lawyers often focus on minimizing your damages and then fighting the fee request so the case stops looking worth the risk, even if they cannot seriously dispute the constitutional violation itself.
 
 ## Which § 1983 cases lawyers take and which they avoid
 
@@ -85,7 +96,7 @@ This is one of the hardest outcomes for many civil-rights lawyers: you prove the
 
 - **Clear video evidence** — body camera or bystander footage that shows the violation unambiguously
 - **Serious physical injury or death** — high damages mean higher expected recovery
-- **Multiple plaintiffs** — pattern cases or class actions offer efficiency of scale
+- **Multiple victims** — pattern cases or class actions offer efficiency of scale
 - **Departments with prior findings** — DOJ [consent decrees](/terms-and-concepts/consent-decree) or documented patterns make [Monell claims](/terms-and-concepts/monell-liability) stronger
 - **Qualified immunity looks beatable** — the officer's conduct closely matches existing circuit precedent establishing [clearly established law](/terms-and-concepts/clearly-established-law)
 - **Media attention** — public pressure creates settlement incentive the city can't ignore
@@ -97,7 +108,7 @@ This is one of the hardest outcomes for many civil-rights lawyers: you prove the
 - **Novel facts** — the officer's conduct doesn't match existing case law closely enough, which means qualified immunity is likely
 - **Small municipality with no insurance** — even if you win, you can't collect
 - **Primarily emotional harm, humiliation, or loss of dignity** — real harm, but hard to quantify in a way that moves juries
-- **Plaintiff credibility concerns** — prior criminal history, inconsistent statements, anything the defense can use to make the trial about _you_ instead of the officer
+- **Credibility problems the defense can exploit** — prior criminal history, inconsistent statements, anything the defense can use to make the trial about _you_ instead of the officer
 
 These facts do not necessarily mean your rights were not violated. They mean the system often does not offer a workable remedy for lower-damages violations.
 
@@ -121,7 +132,7 @@ That is the reality you need to understand if you are deciding whether to keep l
 
 **Legal aid and law school clinics.** Capacity is limited, but they sometimes take cases private attorneys will not because they are not driven by the same economic calculation. Search the [Legal Services Corporation](https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help) directory.
 
-**Civil liberties organizations.** The ACLU, the Institute for Justice, and similar organizations exist, but they have their own filter: your case has to align with their mission. They take cases that will set precedent, challenge a widespread policy, or effect systemic change — cases with broad impact beyond just you. A single wrongful arrest by a single officer in a single city? That's not what they're looking for. They need cases that will move the law forward for everyone, which means they're selecting for the same kinds of cases private attorneys take: the ones with the best facts, the clearest legal questions, and the highest likelihood of creating a ruling that matters beyond the individual plaintiff. Your case probably isn't that. Most aren't.
+**Civil liberties organizations.** The ACLU, the Institute for Justice, and similar organizations exist, but they have their own filter: your case has to align with their mission. They take cases that will set precedent, challenge a widespread policy, or create systemic change — cases with broad impact beyond just you. A single wrongful arrest by a single officer in a single city? That usually is not what they are looking for. They want cases that could move the law for a lot of people, which means they still select for the best facts, the clearest legal questions, and the highest chance of producing a ruling that matters beyond your case. Your case probably is not that. Most cases are not.
 
 **Hybrid approach.** Do the work yourself and hire an attorney for specific motions, trial prep, or the trial itself. Some attorneys will do limited-scope representation (sometimes called "unbundled" legal services). If you reach that stage, read the [sample response to a motion to dismiss in a Section 1983 case](/articles/sample-response-to-a-motion-to-dismiss-in-a-section-1983-case) and [sample declaration for a Section 1983 case](/articles/sample-declaration-for-a-section-1983-case) so you understand what a lawyer would actually be trying to protect.
 
@@ -163,7 +174,7 @@ Don't let that stay true.
      Usually that the lawyer sees too much economic risk. It does not necessarily mean the lawyer thinks no violation happened.
    </details>
 
-2. This article explains that lawyers worry about things like qualified immunity, weak damages, thin pleading, and no Monell facts. Which one of those is most likely to be the first serious problem in your own case?
+2. This article explains that lawyers are looking for the first serious problem that can kill the case or make the math collapse. In your own case, which comes first: qualified immunity, weak damages, thin pleading, no Monell facts, or something else?
    <details>
      <summary>Show answer</summary>
      The right answer depends on your facts, but a strong answer names the first barrier and connects it to the record. For example, if the injury is small, damages may be the first problem. If the city claim is thin, Monell may be the first problem.

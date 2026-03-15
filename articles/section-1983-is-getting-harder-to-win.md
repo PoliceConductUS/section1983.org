@@ -9,7 +9,7 @@ draft: false
 
 If you are trying to understand why § 1983 cases are so hard to win, one major reason is that courts added barriers over time that are not written into the statute itself.
 
-Section 1983 did not start out with every modern barrier already in place. Courts added those barriers in layers. That matters because it helps you see that you are not walking into a neutral system that simply asks what happened. You are walking into a system that has spent decades creating extra reasons to narrow, block, or dismiss these cases.
+Section 1983 started much earlier than most of today's major barriers. Courts added those barriers in layers. That matters because it helps you see that you are not walking into a neutral system that simply asks what happened. You are walking into a system that has spent decades creating extra reasons to narrow, block, or dismiss these cases.
 
 After reading this article, you should be able to:
 
@@ -41,7 +41,7 @@ The chart is easier to read if you treat it as a numbered map of court-created b
 2. `1967` — [_Pierson v. Ray_](/cases/pierson-v-ray): the Court gives judges immunity under Section 1983 and starts the doctrine that later becomes qualified immunity
 3. `1976` — [_Imbler v. Pachtman_](/cases/imbler-v-pachtman): the Court adds broad absolute immunity for prosecutors acting as advocates
 4. `1982` — [_Harlow v. Fitzgerald_](/cases/harlow-v-fitzgerald): the Court reshapes qualified immunity into a stronger court-created defense
-5. `1992` — [_Farrar v. Hobby_](/cases/farrar-v-hobby): the person suing won only nominal damages and was denied legal fees, creating a rule that can also wipe out fee recovery in later low-dollar cases
+5. `1992` — [_Farrar v. Hobby_](/cases/farrar-v-hobby): the victim recovered only $1, and the Supreme Court cut a $280,000 fee award to zero, making some low-dollar wins economically hollow
 6. `1994` — [_Heck v. Humphrey_](/cases/heck-v-humphrey): the Court says some Section 1983 damages claims cannot go forward unless the conviction or sentence has already been reversed, vacated, expunged, or otherwise set aside
 7. `2004` — [_Devenpeck v. Alford_](/cases/devenpeck-v-alford): the Court says probable cause for any offense, even if the officer gave a different reason at the time, will usually defeat a false-arrest claim
 8. `2007` — [_Twombly_](/cases/bell-atlantic-corp-v-twombly): the Court makes it easier to dismiss thin complaints before you can get discovery
@@ -60,11 +60,11 @@ Section 1983 is still usable in some cases. But it is harder now because you oft
 
 ## Section 1983 existed long before it became a real modern lawsuit
 
-Congress passed the Civil Rights Act of 1871, also called the Ku Klux Klan Act, later codified in part as [§ 1983](/terms-and-concepts/section-1983). On paper, the statute gave people a way to sue state actors who violated constitutional rights.
+Congress passed the Civil Rights Act of 1871, also called the Ku Klux Klan Act, later codified in part as [§ 1983](/terms-and-concepts/section-1983). The statute gave people a way to sue state actors who violated constitutional rights.
 
-But the modern action did not really become usable until [_Monroe v. Pape_](/cases/monroe-v-pape) in 1961. That is why people sometimes say Section 1983 was on the books for about 90 years before it became an active modern remedy.
+[_Monroe v. Pape_](/cases/monroe-v-pape) in 1961 turned that old statute into a real modern lawsuit people could actually use.
 
-The story is closer to:
+The practical history looks like this:
 
 - Congress created the remedy
 - later courts recognized it
@@ -98,7 +98,7 @@ That can block claims before you ever get to the evidence.
 
 ### Qualified immunity became one of the biggest barriers
 
-[Qualified immunity](/terms-and-concepts/qualified-immunity) did not always operate the way it does now.
+[Qualified immunity](/terms-and-concepts/qualified-immunity) grew into the harsh defense filter you see now.
 
 Over time, cases like [_Harlow v. Fitzgerald_](/cases/harlow-v-fitzgerald), [_Anderson v. Creighton_](/cases/anderson-v-creighton), and [_Pearson v. Callahan_](/cases/pearson-v-callahan) made the defense stronger and easier for courts to use.
 
@@ -129,15 +129,13 @@ For your case, the practical lesson is:
 
 ### Farrar weakened the economics of smaller wins
 
-[_Farrar v. Hobby_](/cases/farrar-v-hobby) matters because it made some low-dollar wins much less valuable to the lawyers who might take these cases.
+[_Farrar v. Hobby_](/cases/farrar-v-hobby) matters because it made some low-dollar wins economically hollow.
 
-The basic point is:
+The victim recovered only $1. A lower court said the government should have to pay about $280,000 in attorney's fees. The Supreme Court cut that fee award to zero.
 
-- you can technically win
-- recover only nominal damages
-- and still not get meaningful attorney-fee recovery
+That matters because fee shifting is what makes many civil-rights cases economically possible in the first place. After _Farrar_, even a real win may still leave the victim with a case that made no financial sense to bring. City lawyers can use that pressure too by fighting damages down and fighting the fee request after the verdict.
 
-That affects more than lawyers. It affects whether anyone will invest time in lower-damages cases at all.
+If you want the deeper economics behind that problem, read [Why No Lawyer Will Take Your § 1983 Case](/articles/why-no-lawyer-will-take-your-section-1983-case).
 
 ### Twombly and Iqbal made the complaint stage harsher
 
@@ -154,7 +152,7 @@ This is why [How to Write a § 1983 Complaint](/articles/how-to-write-a-section-
 
 ### New limits kept appearing even later
 
-The barriers did not stop in the 1980s or 2000s.
+Courts kept adding new barriers even after the 1980s and 2000s.
 
 For example, [_Vega v. Tekoh_](/cases/vega-v-tekoh) limited the ability to turn a Miranda violation by itself into a damages claim under § 1983.
 
@@ -190,7 +188,7 @@ Your facts may be strong and you can still lose because:
 - the officer gets qualified immunity
 - the economics make the case unattractive even if you survive
 
-That does not mean your case is fake. It means you are moving through a system with several built-in filters.
+That does not mean your case is fake. It means the defense and the judge may end it at one of several built-in filters before anyone fully deals with what happened.
 
 ## What to look for in your own case
 
@@ -206,13 +204,13 @@ Those questions will help you more than treating the case as one giant all-or-no
 
 ## The bottom line
 
-Section 1983 did not become hard to win by accident. Over time, courts added court-created immunity rules, pleading rules, procedural bars, and economic barriers that make it easier to dismiss cases early and protect the government from the burdens of litigation, including discovery and trial.
+Section 1983 became hard to win through a long series of court-created immunity rules, pleading rules, procedural bars, and economic barriers that make it easier to dismiss cases early and protect the government from the burdens of litigation, including discovery and trial.
 
 If you understand that history, you can evaluate your own case more realistically. You can also see why so much of this site is focused on surviving early barriers instead of just proving that something bad happened.
 
 ## Check Your Understanding
 
-1. This article explains that Section 1983 did not become difficult all at once. Which barrier do you think is most likely to hit your case first: immunity, Heck, pleading, qualified immunity, or damages?
+1. This article explains that courts built these barriers over time. Which barrier do you think is most likely to hit your case first: immunity, Heck, pleading, qualified immunity, or damages?
    <details>
      <summary>Show answer</summary>
      The right answer depends on your case, but a strong answer picks one early filter and ties it to your facts. For example, if you pleaded guilty, Heck may be first. If your complaint still feels vague, pleading may be first.
@@ -224,8 +222,8 @@ If you understand that history, you can evaluate your own case more realisticall
      It matters because it shows these barriers are not simply the natural text of Section 1983. Courts added them later, which helps you understand why a real violation can still get filtered out before a judge or jury ever fully deals with what happened.
    </details>
 
-3. Based on your own case, what is the first issue you should research next: who you can sue, how to draft the complaint, Heck, or clearly established law?
+3. Based on your own case, what is the first issue you should research next: who you can sue, probable cause, how to draft the complaint, Heck, clearly established law, or damages?
    <details>
      <summary>Show answer</summary>
-     A strong answer picks the next issue that could stop the case earliest. If you are unsure who belongs in the case, start there. If you have a conviction or plea, Heck may come first. If those are not the problem, complaint drafting or clearly established law may be next.
+     A strong answer picks the next issue that could stop the case earliest. If you are unsure who belongs in the case, start there. If the defense will claim probable cause, that may be first. If you have a conviction or plea, Heck may come first. If those are not the problem, complaint drafting, clearly established law, or damages may be next.
    </details>

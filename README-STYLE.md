@@ -26,6 +26,7 @@ Audience: pro se readers under stress, often reading on a phone, often without l
   - "What document do I file next?"
 - Treat the reader as capable but overloaded.
 - When referring to the original 1871 statute, name it as the `Civil Rights Act of 1871` the first time, followed by `also called the Ku Klux Klan Act`.
+- Treat style review as rule enforcement, not a general prose pass.
 
 ## Preferred voice
 
@@ -119,6 +120,16 @@ Avoid openings like:
 - "This is not really about..."
 - "The court is not saying..."
 
+During review, explicitly search for and rewrite negative-first setup, including patterns like:
+
+- "did not"
+- "not X"
+- "this is not"
+- "it is not"
+- "not really"
+
+Do not leave those patterns in place unless there is a specific reason the negative-first version is clearer.
+
 Only lead with the negative case when the exception or contrast is the actual point of the paragraph.
 
 For example:
@@ -138,6 +149,8 @@ These are common problem patterns:
 - "not X" openings
 - internal or lawyerly labels that the reader would not use in real life
 - broad category words where a simpler everyday word would work
+- softened thesis language that distances the article from its own point
+- treating the statute's own elements as if they were court-made barriers
 
 Use these rewrite patterns:
 
@@ -152,6 +165,10 @@ Use these rewrite patterns:
 - direct point instead of "not really" language
   - weaker: "The defense is not really arguing that nothing happened."
   - stronger: "The defense will argue that this person cannot be sued for this kind of act."
+
+- direct thesis instead of distancing language
+  - weaker: "Some people say the courts protect the government more than the text does."
+  - stronger: "These court-made rules protect the government more than the text does."
 
 - everyday wording instead of internal labels
   - weaker: "reachable defendants"
@@ -171,6 +188,8 @@ When you revise, ask:
 - Does the sentence lead with the point, or does it make the reader wait for the point?
 - Can I swap a category word like `act`, `issue`, `capacity`, or `conduct` for a more concrete word like `behavior`, `role`, `decision`, or `what happened`?
 - Does the sentence tell the reader what the judge or defense will actually do with the fact?
+- Is the article saying what it means directly, or hiding behind phrases like `people say` or `critics say`?
+- Am I calling one of the statute's own elements a `barrier` when the real point is about extra court-made limits?
 
 ## Defense Reframing
 
@@ -195,6 +214,30 @@ Use explicit lines when helpful:
 - "The defense will try to treat this as one bad incident, not a city policy problem."
 
 The reader should come away knowing not just what their claim is, but what it will be called by the other side.
+
+## Thesis Discipline
+
+If the article is taking a position as true, state it directly.
+
+Do not soften the article's own thesis with phrases like:
+
+- "people say"
+- "critics say"
+- "some argue"
+
+unless the article is actually describing a disputed outside view rather than making the point itself.
+
+## Statutory Elements Versus Court-Made Barriers
+
+Do not call the statute's own elements or scope limits `barriers` when the article is criticizing extra court-made restrictions.
+
+For example:
+
+- `under color of law`
+- `deprivation of a federal right`
+- `person`
+
+are basic parts of the statute's coverage, not the same thing as immunity doctrines, pleading filters, or other court-made barriers layered on top of the text.
 
 ## Use Concrete Weak-vs-Strong Examples
 

@@ -48,7 +48,7 @@ Your job is to test whether that is actually true.
 
 ## The basic rule in plain language
 
-The rule is narrower than many people think:
+Use this rule:
 
 - if winning your damages claim would require the court to say your conviction or sentence was invalid, Heck blocks the claim
 - if winning your damages claim would not require that conclusion, the claim may still go forward
@@ -126,11 +126,11 @@ This matters because people often use the same everyday words for very different
 
 ## Deferred adjudication can be messy
 
-Deferred adjudication often creates harder questions than a clean dismissal.
+Deferred adjudication can create a mess that the defense will try to use against you.
 
-Sometimes it functions enough like a conviction, or enough like an unresolved criminal judgment, that defendants will still raise Heck aggressively.
+Sometimes it works enough like a conviction, or enough like an unresolved criminal judgment, that the defense will still raise Heck aggressively and ask the judge to dismiss first and sort out the details later.
 
-That means you need to know exactly what happened in your criminal case before you decide whether Heck applies.
+That means you need the exact paperwork before you decide whether Heck applies or let the defense define the criminal result for you.
 
 ## What it means to get the conviction or sentence set aside
 
