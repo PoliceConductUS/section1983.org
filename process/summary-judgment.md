@@ -10,7 +10,7 @@ tags: ["summary-judgment", "rule-56", "qualified-immunity", "critical"]
 
 ## What happens at this stage
 
-After [discovery](/primer/discovery) closes, defendants file a motion for [summary judgment](/primer/summary-judgment) under Federal Rule of Civil Procedure 56. They're asking the court to decide the case without a trial — arguing that even with all the evidence gathered, there's no genuine dispute of material fact and they're entitled to judgment as a matter of law.
+After [discovery](/terms-and-concepts/discovery) closes, defendants file a motion for [summary judgment](/terms-and-concepts/summary-judgment) under Federal Rule of Civil Procedure 56. They're asking the court to decide the case without a trial — arguing that even with all the evidence gathered, there's no genuine dispute of material fact and they're entitled to judgment as a matter of law.
 
 If Rule 12 was the first gate, summary judgment is the second. Most § 1983 cases that survive Rule 12 die here.
 
@@ -96,8 +96,8 @@ For each claim:
 
 The court can grant summary judgment on some claims and deny it on others. For example:
 
-- QI granted for the [excessive force](/primer/excessive-force) claim but denied for the [false arrest](/primer/false-arrest) claim
-- [Monell](/primer/monell-liability) claim dismissed but [individual-capacity](/primer/individual-capacity) claims survive
+- QI granted for the [excessive force](/terms-and-concepts/excessive-force) claim but denied for the [false arrest](/terms-and-concepts/false-arrest) claim
+- [Monell](/terms-and-concepts/monell-liability) claim dismissed but [individual-capacity](/terms-and-concepts/individual-capacity) claims survive
 - One defendant dismissed but others remain
 
 Partial summary judgment narrows your case. It can be tactically devastating (losing your strongest claim) or manageable (losing a weak claim you expected to lose).

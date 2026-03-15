@@ -25,7 +25,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_Prim v. Stein_ highlights the critical distinction between symptoms of intoxication and symptoms of disability — and how officers' failure to distinguish between the two can create liability under [§ 1983](/primer/section-1983). The Fifth Circuit affirmed summary judgment on the husband's arrest but reversed on the wife's arrest, finding genuine fact issues about whether the officer had [probable cause](/primer/probable-cause).
+_Prim v. Stein_ highlights the critical distinction between symptoms of intoxication and symptoms of disability — and how officers' failure to distinguish between the two can create liability under [§ 1983](/terms-and-concepts/section-1983). The Fifth Circuit affirmed summary judgment on the husband's arrest but reversed on the wife's arrest, finding genuine fact issues about whether the officer had [probable cause](/terms-and-concepts/probable-cause).
 
 ## The Facts
 
@@ -41,7 +41,7 @@ Both Prims were taken to the hospital; their blood alcohol levels were 0.113 (Er
 
 The Fifth Circuit split its decision:
 
-**Eric's arrest — affirmed**: Summary judgment for the officers was proper. Deputy Stein personally observed Eric swaying, having difficulty standing, with bloodshot eyes and slurred speech, and Eric admitted to drinking. These observations, combined with the failed sobriety test, provided [probable cause](/primer/probable-cause) for public intoxication. The officers were entitled to [qualified immunity](/primer/qualified-immunity).
+**Eric's arrest — affirmed**: Summary judgment for the officers was proper. Deputy Stein personally observed Eric swaying, having difficulty standing, with bloodshot eyes and slurred speech, and Eric admitted to drinking. These observations, combined with the failed sobriety test, provided [probable cause](/terms-and-concepts/probable-cause) for public intoxication. The officers were entitled to [qualified immunity](/terms-and-concepts/qualified-immunity).
 
 **Janet's arrest — reversed and remanded**: Genuine issues of material fact precluded summary judgment. Janet's symptoms — stumbling, instability, cognitive difficulty — could be attributable to her MS rather than intoxication. The officers were informed of her MS condition, yet they arrested her anyway. A reasonable jury could find that a reasonable officer, knowing about the MS diagnosis, would not have concluded that probable cause existed for public intoxication.
 
@@ -49,12 +49,12 @@ The court emphasized that probable cause requires more than observing symptoms t
 
 ## Why This Case Matters for Your § 1983 Case
 
-- **Disability symptoms ≠ intoxication**: When officers know you have a medical condition that explains your physical symptoms, arresting you for intoxication may lack [probable cause](/primer/probable-cause). Document your medical conditions and communicate them to officers.
+- **Disability symptoms ≠ intoxication**: When officers know you have a medical condition that explains your physical symptoms, arresting you for intoxication may lack [probable cause](/terms-and-concepts/probable-cause). Document your medical conditions and communicate them to officers.
 - **Officers must consider known alternative explanations**: Once officers are informed of a medical condition, they cannot simply ignore it and arrest based on symptoms that could be caused by either intoxication or the medical condition.
 - **Admitting to drinking doesn't automatically create probable cause**: Even if you consumed alcohol, if your observable symptoms are primarily caused by a medical condition, the arrest may still lack probable cause.
 - **The split outcome matters**: This case shows that courts can reach different results for different plaintiffs arising from the same incident. Each arrest is evaluated independently based on the specific facts known to the arresting officer.
-- **Blood alcohol results don't retroactively create probable cause**: Even though Janet's BAC was above the legal driving limit, [probable cause](/primer/probable-cause) is evaluated based on what the officer knew _at the time of arrest_, not based on later-obtained evidence.
+- **Blood alcohol results don't retroactively create probable cause**: Even though Janet's BAC was above the legal driving limit, [probable cause](/terms-and-concepts/probable-cause) is evaluated based on what the officer knew _at the time of arrest_, not based on later-obtained evidence.
 
 ## Key Takeaway
 
-When you have a medical condition with symptoms that mimic intoxication — such as multiple sclerosis, diabetes, or epilepsy — and officers are informed of your condition before arresting you, the arrest may lack [probable cause](/primer/probable-cause). Officers must consider known medical explanations for your symptoms, and their failure to do so can defeat [qualified immunity](/primer/qualified-immunity).
+When you have a medical condition with symptoms that mimic intoxication — such as multiple sclerosis, diabetes, or epilepsy — and officers are informed of your condition before arresting you, the arrest may lack [probable cause](/terms-and-concepts/probable-cause). Officers must consider known medical explanations for your symptoms, and their failure to do so can defeat [qualified immunity](/terms-and-concepts/qualified-immunity).

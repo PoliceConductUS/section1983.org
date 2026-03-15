@@ -30,7 +30,7 @@ At Thomas Elementary, students were having a "Winter Break" party where they cou
 
 At Rasor Elementary, Zachary Hood tried to distribute candy cane pens with religious messages during a similar exchange event. His teacher, Lynn Huff, allowed students to hand out secular items but told Zachary he could not distribute items with religious content. Principal Jackie Bomchill backed the decision.
 
-The children's parents sued under § 1983, alleging First Amendment viewpoint discrimination. The school officials raised [qualified immunity](/primer/qualified-immunity).
+The children's parents sued under § 1983, alleging First Amendment viewpoint discrimination. The school officials raised [qualified immunity](/terms-and-concepts/qualified-immunity).
 
 ## What the Court Decided
 

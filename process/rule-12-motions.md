@@ -11,13 +11,13 @@ tags:
 
 ## What happens at this stage
 
-Instead of answering your complaint, defendants file a [motion to dismiss](/primer/motion-to-dismiss) under Federal Rule of Civil Procedure 12. This is their first chance to kill your case — and in [§ 1983](/primer/section-1983) litigation, they almost always take it.
+Instead of answering your complaint, defendants file a [motion to dismiss](/terms-and-concepts/motion-to-dismiss) under Federal Rule of Civil Procedure 12. This is their first chance to kill your case — and in [§ 1983](/terms-and-concepts/section-1983) litigation, they almost always take it.
 
 The most common grounds:
 
 - **Rule 12(b)(6)** — failure to state a claim upon which relief can be granted
-- **Rule 12(b)(1)** — lack of [federal jurisdiction](/primer/federal-jurisdiction)
-- **[Qualified immunity](/primer/qualified-immunity)** — raised within a 12(b)(6) motion, arguing the officer is immune
+- **Rule 12(b)(1)** — lack of [federal jurisdiction](/terms-and-concepts/federal-jurisdiction)
+- **[Qualified immunity](/terms-and-concepts/qualified-immunity)** — raised within a 12(b)(6) motion, arguing the officer is immune
 
 You will file a response (opposition). They may file a reply. Then the court decides.
 
@@ -27,7 +27,7 @@ At the Rule 12 stage, the court asks one question: **taking all your factual all
 
 The court does **not** weigh evidence. There is no evidence yet. The court reads your complaint, accepts the facts as true, and decides whether those facts — if proven — would entitle you to relief.
 
-This is the [_Ashcroft v. Iqbal_](/cases/ashcroft-v-iqbal) / [_Bell Atlantic v. Twombly_](/cases/bell-atlantic-corp-v-twombly) [plausibility pleading](/primer/plausibility-pleading) standard:
+This is the [_Ashcroft v. Iqbal_](/cases/ashcroft-v-iqbal) / [_Bell Atlantic v. Twombly_](/cases/bell-atlantic-corp-v-twombly) [plausibility pleading](/terms-and-concepts/plausibility-pleading) standard:
 
 - **Factual allegations** are accepted as true
 - **Legal conclusions** ("the defendant violated my rights") are stripped out
@@ -77,18 +77,18 @@ They know the Iqbal standard well. They will argue:
 - Your allegations are "conclusory" (legal conclusions, not facts)
 - Alternative explanations exist for the conduct (the Iqbal "more likely explanation" test)
 - No clearly established law prohibits the specific conduct alleged
-- [Municipal liability](/primer/municipal-liability) fails because you haven't identified a specific policy
+- [Municipal liability](/terms-and-concepts/municipal-liability) fails because you haven't identified a specific policy
 
 ## Possible outcomes
 
 - **Motion denied** — your case proceeds. Defendants must answer. This is a major milestone.
-- **Motion granted with leave to amend** — the court found deficiencies but gives you a chance to fix them with an [amended complaint](/primer/amended-complaint). Take it seriously. You may only get one shot.
+- **Motion granted with leave to amend** — the court found deficiencies but gives you a chance to fix them with an [amended complaint](/terms-and-concepts/amended-complaint). Take it seriously. You may only get one shot.
 - **Motion granted without leave to amend** — the claim is dismissed. If it's all claims, the case is over (subject to appeal). If it's some claims, the surviving claims proceed.
 - **Motion granted in part, denied in part** — some claims survive, others don't. Common in multi-claim § 1983 cases.
 
 ## Interlocutory appeal
 
-If the court denies qualified immunity, defendants can file an immediate [interlocutory appeal](/primer/interlocutory-appeal) under the [collateral order doctrine](/primer/collateral-order-doctrine). This freezes your case and sends the QI question to the circuit court. See the [interlocutory appeal](/process/interlocutory-appeal/) page for how this works and how it's abused.
+If the court denies qualified immunity, defendants can file an immediate [interlocutory appeal](/terms-and-concepts/interlocutory-appeal) under the [collateral order doctrine](/terms-and-concepts/collateral-order-doctrine). This freezes your case and sends the QI question to the circuit court. See the [interlocutory appeal](/process/interlocutory-appeal/) page for how this works and how it's abused.
 
 ## Timeline
 

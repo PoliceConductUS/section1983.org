@@ -30,7 +30,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Gregory Brooks called 911 to complain about harassing phone calls from his sister. When Officer Birchfield responded and told Brooks he couldn't immediately press charges, Brooks became angry and used profanity in telling Birchfield to leave his property. Birchfield decided to arrest Brooks for disorderly conduct, called for backup, and when Officer Spradling arrived, the officers used physical force that left Brooks with injuries. The Fifth Circuit held the officers were not entitled to [qualified immunity](/primer/qualified-immunity) on the [excessive force](/primer/excessive-force) claim but were entitled to immunity on the [false arrest](/primer/false-arrest) claim.
+Gregory Brooks called 911 to complain about harassing phone calls from his sister. When Officer Birchfield responded and told Brooks he couldn't immediately press charges, Brooks became angry and used profanity in telling Birchfield to leave his property. Birchfield decided to arrest Brooks for disorderly conduct, called for backup, and when Officer Spradling arrived, the officers used physical force that left Brooks with injuries. The Fifth Circuit held the officers were not entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) on the [excessive force](/terms-and-concepts/excessive-force) claim but were entitled to immunity on the [false arrest](/terms-and-concepts/false-arrest) claim.
 
 ## The Facts
 
@@ -50,9 +50,9 @@ After this disputed stage, both officers pushed Brooks against his garage door, 
 
 The Fifth Circuit affirmed in part and reversed in part.
 
-**On the excessive force claim**, the court reversed the grant of summary judgment. Under the summary judgment standard, the court was required to view the facts in Brooks's favor. Under Brooks's version, he made no threatening gestures, did not physically resist, and was grabbed, slammed against a garage door, and forced to the ground for what was at most a misdemeanor offense (disorderly conduct). Applying [_Graham v. Connor_](/cases/graham-v-connor), all three factors weighed in Brooks's favor: the crime was minor, Brooks posed no immediate threat, and he was not resisting. The force used was clearly excessive under this version of events, and the law was [clearly established](/primer/clearly-established-law) to that effect.
+**On the excessive force claim**, the court reversed the grant of summary judgment. Under the summary judgment standard, the court was required to view the facts in Brooks's favor. Under Brooks's version, he made no threatening gestures, did not physically resist, and was grabbed, slammed against a garage door, and forced to the ground for what was at most a misdemeanor offense (disorderly conduct). Applying [_Graham v. Connor_](/cases/graham-v-connor), all three factors weighed in Brooks's favor: the crime was minor, Brooks posed no immediate threat, and he was not resisting. The force used was clearly excessive under this version of events, and the law was [clearly established](/terms-and-concepts/clearly-established-law) to that effect.
 
-**On the false arrest claim**, the court affirmed qualified immunity. Mississippi's disorderly conduct statute could arguably have applied to Brooks's conduct—using profanity and telling an officer to leave in an aggressive manner. The officers had at least arguable [probable cause](/primer/probable-cause), which was sufficient for qualified immunity.
+**On the false arrest claim**, the court affirmed qualified immunity. Mississippi's disorderly conduct statute could arguably have applied to Brooks's conduct—using profanity and telling an officer to leave in an aggressive manner. The officers had at least arguable [probable cause](/terms-and-concepts/probable-cause), which was sufficient for qualified immunity.
 
 **On the First Amendment retaliation claim**, the court analyzed whether Brooks's speech (telling the officer to get off his property) was protected and whether the arrest was retaliatory.
 
@@ -60,7 +60,7 @@ The Fifth Circuit affirmed in part and reversed in part.
 
 **Excessive force and false arrest are analyzed separately.** Even when an officer has arguable probable cause for an arrest (defeating the false arrest claim), the force used to execute that arrest may still be excessive. The two claims operate independently.
 
-**Minor crimes + no resistance = limited force.** When the suspected offense is minor (like disorderly conduct), the suspect is not threatening the officers, and the suspect is not resisting, the [Graham factors](/primer/graham-factors) strongly favor the plaintiff. Slamming someone against a wall and forcing them to the ground in this context is likely excessive.
+**Minor crimes + no resistance = limited force.** When the suspected offense is minor (like disorderly conduct), the suspect is not threatening the officers, and the suspect is not resisting, the [Graham factors](/terms-and-concepts/graham-factors) strongly favor the plaintiff. Slamming someone against a wall and forcing them to the ground in this context is likely excessive.
 
 **Whose version controls at summary judgment.** The court must accept the plaintiff's version of events when deciding summary judgment. If the plaintiff says he didn't resist, and the officer says he did, the court assumes no resistance for purposes of the motion.
 

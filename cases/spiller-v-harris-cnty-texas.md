@@ -27,7 +27,7 @@ citedBy: []
 
 ## What This Case Is About
 
-This case is part of the _Spiller_ litigation involving [§ 1983](/primer/section-1983) claims against Harris County. Corey Spiller sued Sergeant Jared Lindsay and Harris County after Lindsay seized Spiller at his neck and slammed him onto the hood of a car during an encounter at the scene of his girlfriend's minor car accident. The Fifth Circuit addressed qualified immunity and [municipal liability](/primer/municipal-liability) claims.
+This case is part of the _Spiller_ litigation involving [§ 1983](/terms-and-concepts/section-1983) claims against Harris County. Corey Spiller sued Sergeant Jared Lindsay and Harris County after Lindsay seized Spiller at his neck and slammed him onto the hood of a car during an encounter at the scene of his girlfriend's minor car accident. The Fifth Circuit addressed qualified immunity and [municipal liability](/terms-and-concepts/municipal-liability) claims.
 
 ## The Facts
 
@@ -35,7 +35,7 @@ At approximately 4:00 a.m. on December 21, 2019, Corey Spiller drove to assist h
 
 ## What the Court Decided
 
-The Fifth Circuit addressed Spiller's Fourth Amendment excessive force, false arrest, First Amendment retaliation, bystander liability claims against Lindsay, and his [Monell](/primer/monell-liability) claim against Harris County. The court reaffirmed that [municipal liability](/primer/municipal-liability) requires identification of an official policy or [custom](/primer/custom) that was the [moving force](/primer/moving-force-causation) behind the constitutional violation.
+The Fifth Circuit addressed Spiller's Fourth Amendment excessive force, false arrest, First Amendment retaliation, bystander liability claims against Lindsay, and his [Monell](/terms-and-concepts/monell-liability) claim against Harris County. The court reaffirmed that [municipal liability](/terms-and-concepts/municipal-liability) requires identification of an official policy or [custom](/terms-and-concepts/custom) that was the [moving force](/terms-and-concepts/moving-force-causation) behind the constitutional violation.
 
 ## Why This Case Matters for Your § 1983 Case
 
@@ -43,4 +43,4 @@ The Fifth Circuit addressed Spiller's Fourth Amendment excessive force, false ar
 
 ## Key Takeaway
 
-Individual officer misconduct, even when captured on bodycam, does not automatically create [municipal liability](/primer/municipal-liability). You must identify a specific policy or [custom](/primer/custom) of the municipality that was the [moving force](/primer/moving-force-causation) behind the constitutional violation.
+Individual officer misconduct, even when captured on bodycam, does not automatically create [municipal liability](/terms-and-concepts/municipal-liability). You must identify a specific policy or [custom](/terms-and-concepts/custom) of the municipality that was the [moving force](/terms-and-concepts/moving-force-causation) behind the constitutional violation.

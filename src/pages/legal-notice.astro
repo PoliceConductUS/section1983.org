@@ -1,9 +1,18 @@
 ---
 import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
 ---
 
-<Base title="Legal Notice" robots="noindex,follow">
+<Base
+  title="Legal Notice for section1983.org"
+  description="Operator information, disclaimer, copyright notice, and legal disclosures for section1983.org."
+  robots="noindex,follow"
+>
   <div class="prose">
+    <Breadcrumbs
+      crumbs={[{ label: "Home", href: "/" }, { label: "Legal Notice" }]}
+    />
+
     <h1 class="text-3xl font-bold text-navy mb-6">Legal Notice</h1>
 
     <p><strong>Last updated:</strong> February 16, 2026</p>

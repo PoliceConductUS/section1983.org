@@ -1,17 +1,12 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { getCollection } from "astro:content";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import ArticleCard from "../../components/ArticleCard.astro";
 
 const allArticles = await getCollection("articles");
 const published = allArticles
   .filter((a) => !a.data.draft)
-  .sort((a, b) => {
-    const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
-    const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
-    return dateB - dateA;
-  });
-const upcoming = allArticles
-  .filter((a) => a.data.draft)
   .sort((a, b) => {
     const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
     const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
@@ -44,71 +39,28 @@ const structuredData = {
   canonicalUrl={canonicalUrl}
   structuredData={structuredData}
 >
+  <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Articles" }]} />
+
   <h1 class="text-3xl font-bold text-navy mb-8">Articles</h1>
   <p class="text-sm text-slate-600 mb-8">
     Need background before diving in? Use the <a
-      href="/primer"
+      href="/terms-and-concepts"
       class="text-navy underline decoration-gold decoration-2 hover:text-gold"
-      >pro se primer</a
+      >Terms and Concepts</a
     > for legal terms and the <a
       href="/process"
       class="text-navy underline decoration-gold decoration-2 hover:text-gold"
       >process guide</a
     > for the sequence of a federal case.
   </p>
-
+  <p class="text-sm text-slate-600 mb-8">
+    Read the articles in order from oldest to newest.
+  </p>
   <div class="space-y-6">
     {
       published.map((article) => (
-        <a
-          href={`/articles/${article.id.replace(/\.md$/, "")}`}
-          class="block group"
-        >
-          <article class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-            <h2 class="text-xl font-semibold text-navy group-hover:text-gold transition-colors mb-2">
-              {article.data.title}
-            </h2>
-            <p class="text-slate text-sm mb-2">{article.data.description}</p>
-            {article.data.pubDate && (
-              <time class="text-xs text-slate/60">
-                {new Intl.DateTimeFormat("en-US", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                }).format(new Date(article.data.pubDate))}
-              </time>
-            )}
-          </article>
-        </a>
+        <ArticleCard article={article} headingLevel="h2" />
       ))
     }
   </div>
-
-  {
-    upcoming.length > 0 && (
-      <div class="mt-12">
-        <h2 class="text-2xl font-bold text-navy mb-2">Coming Soon</h2>
-        <p class="text-slate text-sm mb-6">
-          These articles are in progress. Subscribe to our{" "}
-          <a
-            href="/rss.xml"
-            class="text-navy underline decoration-gold decoration-2 hover:text-gold transition-colors"
-          >
-            RSS feed
-          </a>{" "}
-          to know when they publish.
-        </p>
-        <div class="space-y-4">
-          {upcoming.map((article) => (
-            <article class="p-5 bg-cream/50 border border-slate-200 rounded-lg opacity-80">
-              <h3 class="text-lg font-semibold text-navy mb-1">
-                {article.data.title}
-              </h3>
-              <p class="text-slate text-sm">{article.data.description}</p>
-            </article>
-          ))}
-        </div>
-      </div>
-    )
-  }
 </Base>

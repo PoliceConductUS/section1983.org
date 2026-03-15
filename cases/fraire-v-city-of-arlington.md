@@ -25,7 +25,7 @@ citedBy: []
 
 ## What This Case Is About
 
-This is one of the Fifth Circuit's important [deadly force](/primer/deadly-force) cases. A plainclothes Arlington police officer followed a suspected drunk driver, who pulled into a residential driveway. When the officer approached and identified himself, the driver backed out and drove his pickup truck at the officer, who shot and killed the driver. The family sued under [§ 1983](/primer/section-1983), but the Fifth Circuit affirmed that the officer was entitled to [qualified immunity](/primer/qualified-immunity) and that the city faced no [Monell liability](/primer/monell-liability).
+This is one of the Fifth Circuit's important [deadly force](/terms-and-concepts/deadly-force) cases. A plainclothes Arlington police officer followed a suspected drunk driver, who pulled into a residential driveway. When the officer approached and identified himself, the driver backed out and drove his pickup truck at the officer, who shot and killed the driver. The family sued under [§ 1983](/terms-and-concepts/section-1983), but the Fifth Circuit affirmed that the officer was entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) and that the city faced no [Monell liability](/terms-and-concepts/monell-liability).
 
 ## The Facts
 
@@ -37,18 +37,18 @@ What happened next is the crux of the case. Lowery said Fraire drove the truck d
 
 ## What the Court Decided
 
-The Fifth Circuit affirmed [summary judgment](/primer/summary-judgment) for both Officer Lowery and the City of Arlington. On [qualified immunity](/primer/qualified-immunity), the court applied the [_Graham v. Connor_](/cases/graham-v-connor) objective reasonableness test and the [_Tennessee v. Garner_](/cases/tennessee-v-garner) deadly force framework.
+The Fifth Circuit affirmed [summary judgment](/terms-and-concepts/summary-judgment) for both Officer Lowery and the City of Arlington. On [qualified immunity](/terms-and-concepts/qualified-immunity), the court applied the [_Graham v. Connor_](/cases/graham-v-connor) objective reasonableness test and the [_Tennessee v. Garner_](/cases/tennessee-v-garner) deadly force framework.
 
-The court found that a reasonable officer in Lowery's position — facing a pickup truck being driven at him — would reasonably believe he faced a threat of serious physical harm. The use of deadly force was objectively reasonable under the circumstances. The court emphasized that officers facing split-second decisions about deadly threats should not be judged with "20/20 vision of hindsight." Importantly, the court rejected the argument that Lowery should have simply jumped out of the way rather than shooting — noting that the [Fourth Amendment](/primer/fourth-amendment) does not require officers to choose the least intrusive alternative.
+The court found that a reasonable officer in Lowery's position — facing a pickup truck being driven at him — would reasonably believe he faced a threat of serious physical harm. The use of deadly force was objectively reasonable under the circumstances. The court emphasized that officers facing split-second decisions about deadly threats should not be judged with "20/20 vision of hindsight." Importantly, the court rejected the argument that Lowery should have simply jumped out of the way rather than shooting — noting that the [Fourth Amendment](/terms-and-concepts/fourth-amendment) does not require officers to choose the least intrusive alternative.
 
-On [municipal liability](/primer/municipal-liability), the court found that the plaintiffs failed to plead with sufficient particularity any official policy or [custom](/primer/custom) of the City of Arlington that caused the alleged constitutional violation, as required by [_Monell_](/cases/monell-v-dep-t-of-soc-servs).
+On [municipal liability](/terms-and-concepts/municipal-liability), the court found that the plaintiffs failed to plead with sufficient particularity any official policy or [custom](/terms-and-concepts/custom) of the City of Arlington that caused the alleged constitutional violation, as required by [_Monell_](/cases/monell-v-dep-t-of-soc-servs).
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Fraire_ is frequently cited in Fifth Circuit deadly force cases for two key propositions. First, when a suspect uses a vehicle as a weapon against an officer, deadly force is typically deemed reasonable. Second, officers are not required to retreat or choose alternative courses of action — the [Fourth Amendment](/primer/fourth-amendment) asks only whether the force used was objectively reasonable given the totality of circumstances, not whether the officer could have done something different.
+_Fraire_ is frequently cited in Fifth Circuit deadly force cases for two key propositions. First, when a suspect uses a vehicle as a weapon against an officer, deadly force is typically deemed reasonable. Second, officers are not required to retreat or choose alternative courses of action — the [Fourth Amendment](/terms-and-concepts/fourth-amendment) asks only whether the force used was objectively reasonable given the totality of circumstances, not whether the officer could have done something different.
 
-The case also illustrates the high bar for [Monell liability](/primer/monell-liability) — vague allegations about city policies or training deficiencies, without specific evidence, will not survive summary judgment.
+The case also illustrates the high bar for [Monell liability](/terms-and-concepts/monell-liability) — vague allegations about city policies or training deficiencies, without specific evidence, will not survive summary judgment.
 
 ## Key Takeaway
 
-When a suspect drives a vehicle at a police officer, the officer's use of [deadly force](/primer/deadly-force) will almost always be found objectively reasonable under [_Graham v. Connor_](/cases/graham-v-connor). Courts in the Fifth Circuit consistently refuse to second-guess an officer's split-second decision not to jump out of the way. If you're challenging a vehicle-related shooting, you'll need strong evidence that the officer was never actually in the vehicle's path or that the threat had clearly passed before the officer fired.
+When a suspect drives a vehicle at a police officer, the officer's use of [deadly force](/terms-and-concepts/deadly-force) will almost always be found objectively reasonable under [_Graham v. Connor_](/cases/graham-v-connor). Courts in the Fifth Circuit consistently refuse to second-guess an officer's split-second decision not to jump out of the way. If you're challenging a vehicle-related shooting, you'll need strong evidence that the officer was never actually in the vehicle's path or that the threat had clearly passed before the officer fired.

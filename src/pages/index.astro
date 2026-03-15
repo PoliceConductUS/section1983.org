@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
+import ArticleCard from "../components/ArticleCard.astro";
 
 const allArticles = await getCollection("articles");
 const articles = allArticles
@@ -8,26 +9,34 @@ const articles = allArticles
   .sort((a, b) => {
     const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
     const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
-    return dateB - dateA;
-  });
-
-const drafts = allArticles
-  .filter(({ data }) => data.draft === true)
-  .sort((a, b) => {
-    const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
-    const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
     return dateA - dateB;
   });
 
 const cases = await getCollection("cases");
-const primer = await getCollection("primer");
+const termsAndConcepts = await getCollection("termsAndConcepts");
 const process = await getCollection("process");
+const staticPages = [
+  "/",
+  "/about/",
+  "/about/section-1983/",
+  "/accessibility/",
+  "/articles/",
+  "/cases/",
+  "/get-involved/",
+  "/legal-notice/",
+  "/process/",
+  "/search/",
+  "/sitemap/",
+  "/terms/",
+  "/terms-and-concepts/",
+];
 
-const totalPages =
-  allArticles.length + cases.length + primer.length + process.length;
+const contentPages =
+  articles.length + cases.length + termsAndConcepts.length + process.length;
+const totalPages = contentPages + staticPages.length;
 
 // Estimate reading time from content body lengths (~5 chars/word, ~250 wpm)
-const allContent = [...allArticles, ...cases, ...primer, ...process];
+const allContent = [...articles, ...cases, ...termsAndConcepts, ...process];
 const totalChars = allContent.reduce(
   (sum, entry) => sum + (entry.body?.length || 0),
   0,
@@ -85,10 +94,10 @@ const structuredData = [
         Read Articles
       </a>
       <a
-        href="/primer"
+        href="/terms-and-concepts"
         class="border-2 border-navy text-navy px-6 py-3 rounded font-semibold hover:bg-navy hover:text-white transition-colors"
       >
-        Learn the Terms
+        Terms and Concepts
       </a>
       <a
         href="/process"
@@ -97,7 +106,7 @@ const structuredData = [
         Understand the Process
       </a>
       <a
-        href="https://policeconduct.org"
+        href="https://policeconduct.org/report/new"
         class="border-2 border-gold text-navy px-6 py-3 rounded font-semibold hover:bg-gold hover:text-white transition-colors"
         target="_blank"
         rel="noopener"
@@ -108,88 +117,63 @@ const structuredData = [
   </section>
 
   <section class="mb-16">
+    <h2 class="text-2xl font-bold text-navy mb-3 border-b-2 border-gold pb-2">
+      What Is On The Site Right Now
+    </h2>
+    <p class="text-sm text-slate mb-6 max-w-3xl">
+      These numbers show what is live on the public site right now: articles to
+      train you, case summaries to show how courts rule, terms and concepts
+      entries to translate legal language, and process guides to walk you
+      through a federal case step by step. The total page count below also
+      includes the home page and the main section pages.
+    </p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
       <div class="text-center p-6 bg-white rounded-lg shadow-sm">
         <p class="text-3xl font-bold text-navy">{cases.length}</p>
-        <p class="text-sm text-slate mt-1">Court Cases</p>
+        <p class="text-sm text-slate mt-1">Case Summaries</p>
       </div>
       <div class="text-center p-6 bg-white rounded-lg shadow-sm">
-        <p class="text-3xl font-bold text-navy">{primer.length}</p>
-        <p class="text-sm text-slate mt-1">Legal Terms Explained</p>
+        <p class="text-3xl font-bold text-navy">{termsAndConcepts.length}</p>
+        <p class="text-sm text-slate mt-1">Terms and Concepts</p>
       </div>
       <div class="text-center p-6 bg-white rounded-lg shadow-sm">
         <p class="text-3xl font-bold text-navy">{process.length}</p>
-        <p class="text-sm text-slate mt-1">Step-by-Step Process Guides</p>
+        <p class="text-sm text-slate mt-1">Process Guides</p>
       </div>
       <div class="text-center p-6 bg-white rounded-lg shadow-sm">
         <p class="text-3xl font-bold text-navy">
-          {articles.length + drafts.length}
+          {articles.length}
         </p>
-        <p class="text-sm text-slate mt-1">In-Depth Articles</p>
+        <p class="text-sm text-slate mt-1">Articles</p>
       </div>
     </div>
     <p class="text-center text-sm text-slate mt-4">
-      {totalPages} pages · {uniqueCourts} courts cited · ~{readingHours} hours of
-      reading · 100% free
+      {totalPages} published pages · {uniqueCourts} courts cited · about{" "}
+      {readingHours} hours of reading · free to use
     </p>
   </section>
 
   <section>
-    <h2 class="text-2xl font-bold text-navy mb-6 border-b-2 border-gold pb-2">
-      Latest Articles
+    <h2 class="text-2xl font-bold text-navy mb-3 border-b-2 border-gold pb-2">
+      Articles
     </h2>
+    <p class="text-sm text-slate mb-6">
+      Read the articles in order from oldest to newest.
+    </p>
     <div class="space-y-6">
       {
-        articles.map((article) => (
-          <a
-            href={`/articles/${article.id.replace(/\.md$/, "")}`}
-            class="block group"
-          >
-            <article class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <h3 class="text-xl font-semibold text-navy group-hover:text-gold transition-colors mb-2">
-                {article.data.title}
-              </h3>
-              <p class="text-slate text-sm mb-3">{article.data.description}</p>
-              {article.data.tags && (
-                <div class="flex flex-wrap gap-2">
-                  {article.data.tags.map((tag: string) => (
-                    <span class="bg-navy/5 text-navy/70 text-xs px-2 py-0.5 rounded">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
-            </article>
-          </a>
-        ))
+        articles
+          .slice(0, 5)
+          .map((article) => <ArticleCard article={article} headingLevel="h3" />)
       }
     </div>
+    <p class="text-sm text-slate mt-6">
+      Want more articles? Browse all <a
+        href="/articles"
+        class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+      >
+        Section 1983 articles
+      </a>.
+    </p>
   </section>
-
-  {
-    drafts.length > 0 && (
-      <section class="mt-16">
-        <h2 class="text-2xl font-bold text-navy mb-6 border-b-2 border-slate-200 pb-2">
-          Coming Soon
-        </h2>
-        <div class="space-y-4">
-          {drafts.map((draft) => (
-            <article class="p-5 bg-white/50 rounded-lg border border-dashed border-slate-300">
-              <h3 class="text-lg font-semibold text-navy/70 mb-1">
-                {draft.data.title}
-              </h3>
-              <p class="text-slate text-sm">{draft.data.description}</p>
-            </article>
-          ))}
-        </div>
-        <p class="text-sm text-slate mt-4">
-          Want to contribute?{" "}
-          <a href="/get-involved" class="text-navy underline hover:text-gold">
-            Get involved
-          </a>
-          .
-        </p>
-      </section>
-    )
-  }
 </Base>

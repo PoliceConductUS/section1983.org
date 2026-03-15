@@ -14,7 +14,7 @@ You file three things with the federal district court clerk:
 
 1. **Your complaint** — the document that tells the court what happened, who did it, and why it violates the Constitution
 2. **Civil cover sheet** — a standardized form (JS 44) with basic case information
-3. **Filing fee ($405) or IFP application** — if you can't afford the fee, you apply to proceed _in forma pauperis_ (as a poor person) under 28 U.S.C. § 1915
+3. **Filing fee ($405) or IFP application** — if you can't afford the fee, you apply to proceed _in forma pauperis_ under 28 U.S.C. § 1915
 
 Once the clerk accepts your filing, you get a case number and a judge assignment. Your case exists.
 
@@ -29,7 +29,7 @@ Under the pleading standard set by _Ashcroft v. Iqbal_ and _Bell Atlantic v. Two
 - **Each constitutional violation identified** — which amendment, how the facts establish the violation
 - **A plausible claim** — the facts, accepted as true, must make the claim more than merely possible
 
-"The defendant violated my rights" is a conclusion. "Officer Markham arrested Plaintiff without [probable cause](/primer/probable-cause) after Plaintiff criticized his surveillance" is a factual allegation. The first gets stripped out. The second survives.
+"The defendant violated my rights" is a conclusion. "Officer Markham arrested Plaintiff without [probable cause](/terms-and-concepts/probable-cause) after Plaintiff criticized his surveillance" is a factual allegation. The first gets stripped out. The second survives.
 
 ### Common mistakes
 
@@ -38,23 +38,18 @@ Under the pleading standard set by _Ashcroft v. Iqbal_ and _Bell Atlantic v. Two
 - **Wrong court** — venue matters. Generally, you file where the violation occurred (28 U.S.C. § 1391).
 - **Shotgun pleading** — dumping every fact into every claim instead of organizing by count. Courts hate this.
 
-## [In forma pauperis](/primer/in-forma-pauperis) (IFP)
+## [In forma pauperis](/terms-and-concepts/in-forma-pauperis) (IFP)
 
-If you can't afford the $405 filing fee, you file a motion to proceed [IFP](/primer/in-forma-pauperis) with a financial affidavit showing your income, assets, and expenses.
+If you can't afford the $405 filing fee, you can file a motion to proceed [IFP](/terms-and-concepts/in-forma-pauperis) with a financial affidavit.
 
-### The IFP trap
+But `IFP` is not just free filing. It also triggers early screening under `28 U.S.C. § 1915`, which means the court can dismiss your complaint before the defendants are even served.
 
-Here's what most pro se litigants don't know: when you file IFP, the court screens your complaint _before_ the defendant even sees it. Under 28 U.S.C. § 1915(e)(2), the court can dismiss your case sua sponte (on its own) if it determines the complaint is:
+Read [In Forma Pauperis: The IFP Trap in a § 1983 Case](/articles/in-forma-pauperis-the-ifp-trap-in-a-section-1983-case) before you file. That article covers:
 
-- Frivolous or malicious
-- Fails to state a claim
-- Seeks monetary relief against an immune defendant
-
-This means the judge reads your complaint and decides — without any argument from you — whether your case should exist. Paying plaintiffs don't face this screening. IFP plaintiffs do. Your complaint has to be strong enough to survive a judge reading it cold.
-
-### Three-strikes rule
-
-Under 28 U.S.C. § 1915(g), if you've had three prior IFP cases dismissed as frivolous, malicious, or for failure to state a claim, you lose IFP eligibility entirely — unless you're in imminent danger of serious physical injury. This is the "three strikes" provision. It means your first filing matters. Don't waste it on a complaint that isn't ready.
+- what `IFP` gets you
+- what screening it triggers
+- why weak complaints often die there
+- how the three-strikes rule works
 
 ## Summons
 
@@ -62,7 +57,7 @@ After filing, the clerk issues a summons for each defendant. This is the formal 
 
 ## Timeline
 
-- **[Statute of limitations](/primer/statute-of-limitations)**: varies by state (§ 1983 borrows the state's personal injury statute of limitations). In Texas, it's 2 years. In many states, it's 2-3 years. Miss it and your case is dead.
+- **[Statute of limitations](/terms-and-concepts/statute-of-limitations)**: varies by state (§ 1983 borrows the state's personal injury statute of limitations). In Texas, it's 2 years. In many states, it's 2-3 years. Miss it and your case is dead.
 - **Accrual**: the clock usually starts when you knew or should have known about the violation — typically the date of the incident.
 - **Tolling**: some circumstances pause the clock (minority, mental incapacity, defendant concealment). Don't count on this without research.
 
@@ -74,5 +69,5 @@ If the answer is no, rewrite it before you file. You'll likely get one chance to
 
 ## Cost
 
-- Filing fee: **$405** (or IFP application — free but triggers screening)
+- Filing fee: **$405** (or IFP application — no prepayment, but it triggers screening)
 - PACER access: **$0.10/page** (capped at $3.00/document, free if under $30/quarter). Install the <a href="https://free.law/recap" target="_blank" rel="noopener">RECAP browser extension ↗</a> — it automatically saves every PACER document you view to the free <a href="https://www.courtlistener.com/" target="_blank" rel="noopener">CourtListener ↗</a> archive, and lets you access documents others have already saved. You'll save money and help make court records accessible to everyone.

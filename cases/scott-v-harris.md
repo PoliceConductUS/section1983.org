@@ -34,7 +34,7 @@ During the pursuit, Harris pulled into a shopping center parking lot, where poli
 
 Scott applied his push bumper to the rear of Harris's car. Harris lost control, his car left the road, ran down an embankment, overturned, and crashed. Harris was rendered a quadriplegic.
 
-Harris sued Scott under [§ 1983](/primer/section-1983), alleging excessive force in violation of the Fourth Amendment. Scott claimed qualified immunity. The District Court denied summary judgment, finding genuine disputes of material fact. The Eleventh Circuit affirmed, concluding that Scott's actions could constitute "deadly force" under [_Tennessee v. Garner_](/cases/tennessee-v-garner) and that a reasonable jury could find them unconstitutional.
+Harris sued Scott under [§ 1983](/terms-and-concepts/section-1983), alleging excessive force in violation of the Fourth Amendment. Scott claimed qualified immunity. The District Court denied summary judgment, finding genuine disputes of material fact. The Eleventh Circuit affirmed, concluding that Scott's actions could constitute "deadly force" under [_Tennessee v. Garner_](/cases/tennessee-v-garner) and that a reasonable jury could find them unconstitutional.
 
 Critically, the entire chase was captured on the dashcam of Scott's police cruiser. The Supreme Court made the unusual move of posting the video online so anyone could watch it.
 

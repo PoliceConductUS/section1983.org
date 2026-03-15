@@ -26,7 +26,7 @@ citedBy: []
 
 ## What This Case Is About
 
-David Allen was a street preacher in Houston, Texas, who regularly used a shofar (a ram's horn trumpet) as part of his public ministry. After multiple encounters with police led to detentions and arrests, Allen sued officers Aaron Cisneros and Juan Montelongo under [§ 1983](/primer/section-1983), claiming they violated his constitutional rights. The Fifth Circuit reversed the district court's denial of [qualified immunity](/primer/qualified-immunity), finding the officers had arguable [probable cause](/primer/probable-cause) for their actions.
+David Allen was a street preacher in Houston, Texas, who regularly used a shofar (a ram's horn trumpet) as part of his public ministry. After multiple encounters with police led to detentions and arrests, Allen sued officers Aaron Cisneros and Juan Montelongo under [§ 1983](/terms-and-concepts/section-1983), claiming they violated his constitutional rights. The Fifth Circuit reversed the district court's denial of [qualified immunity](/terms-and-concepts/qualified-immunity), finding the officers had arguable [probable cause](/terms-and-concepts/probable-cause) for their actions.
 
 ## The Facts
 
@@ -36,7 +36,7 @@ Two encounters were at issue on appeal:
 
 **The Cisneros Incident (January 14, 2012).** Allen was again street preaching, this time near a different location in Houston. Sergeant Cisneros encountered Allen and, after an interaction, detained and arrested him. The specific details of this encounter involved Allen's refusal to comply with what he viewed as unconstitutional restrictions on his preaching.
 
-Allen filed a complaint alleging violations of his First and [Fourth Amendment](/primer/fourth-amendment) rights, including unlawful seizure, [false arrest](/primer/false-arrest), and [First Amendment retaliation](/primer/first-amendment-retaliation).
+Allen filed a complaint alleging violations of his First and [Fourth Amendment](/terms-and-concepts/fourth-amendment) rights, including unlawful seizure, [false arrest](/terms-and-concepts/false-arrest), and [First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation).
 
 ## What the Court Decided
 
@@ -54,7 +54,7 @@ The court also held that the officers did not violate Allen's First Amendment ri
 
 **Arguable probable cause is a low bar.** Even if an officer ultimately lacked actual probable cause, qualified immunity applies if a reasonable officer could have believed probable cause existed. This makes it harder for plaintiffs to overcome immunity in cases where the law or facts are ambiguous.
 
-**Vague ordinances can shield officers.** When a local ordinance is vague or susceptible to multiple interpretations, officers who enforce it in a reasonable (if mistaken) manner may receive qualified immunity. This puts the burden on plaintiffs to show the law was [clearly established](/primer/clearly-established-law).
+**Vague ordinances can shield officers.** When a local ordinance is vague or susceptible to multiple interpretations, officers who enforce it in a reasonable (if mistaken) manner may receive qualified immunity. This puts the burden on plaintiffs to show the law was [clearly established](/terms-and-concepts/clearly-established-law).
 
 **First Amendment activities are not absolute shields.** While street preaching and religious expression are protected, officers may still have qualified immunity if they reasonably believed the manner of the expression (not the content) violated a neutral ordinance.
 
@@ -62,4 +62,4 @@ The court also held that the officers did not violate Allen's First Amendment ri
 
 ## Key Takeaway
 
-Officers who make reasonable but mistaken judgments about whether probable cause exists are protected by qualified immunity. In cases involving the enforcement of local ordinances against First Amendment activity, plaintiffs face the added challenge of showing that the law clearly prohibited the officers' specific conduct. This case illustrates why the arguable-probable-cause standard is one of the most significant hurdles in [§ 1983](/primer/section-1983) litigation.
+Officers who make reasonable but mistaken judgments about whether probable cause exists are protected by qualified immunity. In cases involving the enforcement of local ordinances against First Amendment activity, plaintiffs face the added challenge of showing that the law clearly prohibited the officers' specific conduct. This case illustrates why the arguable-probable-cause standard is one of the most significant hurdles in [§ 1983](/terms-and-concepts/section-1983) litigation.

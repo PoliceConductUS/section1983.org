@@ -18,7 +18,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Burns-Toole v. Byrne involves a dental license applicant who alleged that members of the Texas State Board of Dental Examiners discriminated against her on the basis of her religion during the licensing examination process. The Fifth Circuit affirmed dismissal, finding no evidence to support the discrimination claim. While not a typical police misconduct case, it addresses the standards for proving constitutional violations under [§ 1983](/primer/section-1983) against state actors.
+Burns-Toole v. Byrne involves a dental license applicant who alleged that members of the Texas State Board of Dental Examiners discriminated against her on the basis of her religion during the licensing examination process. The Fifth Circuit affirmed dismissal, finding no evidence to support the discrimination claim. While not a typical police misconduct case, it addresses the standards for proving constitutional violations under [§ 1983](/terms-and-concepts/section-1983) against state actors.
 
 ## The Facts
 

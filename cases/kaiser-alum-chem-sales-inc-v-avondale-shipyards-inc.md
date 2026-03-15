@@ -22,18 +22,18 @@ Avondale agreed and entered into a $70,955,000 subcontract with Kaiser in May 19
 
 ## What the Court Decided
 
-The Fifth Circuit affirmed on both issues. On the antitrust counterclaim, the court held that the four-year [statute of limitations](/primer/statute-of-limitations) for antitrust claims began to run when Avondale entered into the allegedly coerced contract in 1973, not when the harm was later felt. Avondale's counterclaim, filed years later, was time-barred.
+The Fifth Circuit affirmed on both issues. On the antitrust counterclaim, the court held that the four-year [statute of limitations](/terms-and-concepts/statute-of-limitations) for antitrust claims began to run when Avondale entered into the allegedly coerced contract in 1973, not when the harm was later felt. Avondale's counterclaim, filed years later, was time-barred.
 
 On the antitrust defense, the court upheld the district court's decision to strike it under Rule 12(f), finding that the defense was insufficient as a matter of law. The court applied the established principle that an antitrust violation does not automatically render a contract void and unenforceable — it merely gives rise to a damages remedy.
 
 ## Why This Case Matters for Your § 1983 Case
 
-While _Kaiser v. Avondale_ is an antitrust and contract case, it is cited in [§ 1983](/primer/section-1983) litigation for several procedural principles:
+While _Kaiser v. Avondale_ is an antitrust and contract case, it is cited in [§ 1983](/terms-and-concepts/section-1983) litigation for several procedural principles:
 
-- **[Statute of limitations](/primer/statute-of-limitations)**: The case reinforces that limitations periods run from when the plaintiff knows or should know of the injury, not when consequences fully materialize. This principle applies directly to [§ 1983](/primer/section-1983) claims, where the [statute of limitations](/primer/statute-of-limitations) is borrowed from the state's personal injury statute.
+- **[Statute of limitations](/terms-and-concepts/statute-of-limitations)**: The case reinforces that limitations periods run from when the plaintiff knows or should know of the injury, not when consequences fully materialize. This principle applies directly to [§ 1983](/terms-and-concepts/section-1983) claims, where the [statute of limitations](/terms-and-concepts/statute-of-limitations) is borrowed from the state's personal injury statute.
 - **Rule 12(b)(6) and 12(f) practice**: The case illustrates how courts handle motions to dismiss counterclaims and motions to strike defenses — procedural tools that appear frequently in civil rights litigation.
 - **Contract defenses**: If your § 1983 case involves a government contract, settlement agreement, or release, this case shows that alleged illegality in a contract does not automatically void it.
 
 ## Key Takeaway
 
-Claims and defenses based on alleged wrongdoing are subject to strict [statutes of limitations](/primer/statute-of-limitations) that run from the time the wrongful act occurs — and procedural tools like Rule 12(b)(6) and Rule 12(f) can eliminate stale or legally insufficient claims at an early stage.
+Claims and defenses based on alleged wrongdoing are subject to strict [statutes of limitations](/terms-and-concepts/statute-of-limitations) that run from the time the wrongful act occurs — and procedural tools like Rule 12(b)(6) and Rule 12(f) can eliminate stale or legally insufficient claims at an early stage.

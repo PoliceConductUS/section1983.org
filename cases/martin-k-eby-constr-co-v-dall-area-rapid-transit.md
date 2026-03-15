@@ -28,13 +28,13 @@ The court rejected Eby's arguments that governmental immunity (or its absence) e
 
 ## Why This Case Matters for Your § 1983 Case
 
-Although _Martin K. Eby_ is a government contract case, the [exhaustion of remedies](/primer/exhaustion-of-remedies) principles it discusses are relevant to [§ 1983](/primer/section-1983) litigation:
+Although _Martin K. Eby_ is a government contract case, the [exhaustion of remedies](/terms-and-concepts/exhaustion-of-remedies) principles it discusses are relevant to [§ 1983](/terms-and-concepts/section-1983) litigation:
 
-- **[Exhaustion of remedies](/primer/exhaustion-of-remedies)**: While § 1983 generally does not require exhaustion of state administrative remedies (under _Patsy v. Board of Regents_), the [PLRA](/primer/plra) does require exhaustion for prisoner civil rights suits. Understanding exhaustion doctrine is essential.
+- **[Exhaustion of remedies](/terms-and-concepts/exhaustion-of-remedies)**: While § 1983 generally does not require exhaustion of state administrative remedies (under _Patsy v. Board of Regents_), the [PLRA](/terms-and-concepts/plra) does require exhaustion for prisoner civil rights suits. Understanding exhaustion doctrine is essential.
 - **Contractual exhaustion agreements**: If you signed a settlement agreement, consent decree, or employment contract with a dispute-resolution clause, defendants may argue you must exhaust that process before filing in court.
 - **Rule 12(b)(6) as exhaustion vehicle**: This case confirms that failure to exhaust administrative remedies can be raised as a Rule 12(b)(6) motion, resulting in dismissal without prejudice.
-- **Texas government entities**: If your [§ 1983](/primer/section-1983) case involves a Texas regional authority (transit, water, housing), be aware that statutory dispute-resolution processes may exist and defendants may argue they must be exhausted first — though this argument generally does not apply to constitutional claims under § 1983.
+- **Texas government entities**: If your [§ 1983](/terms-and-concepts/section-1983) case involves a Texas regional authority (transit, water, housing), be aware that statutory dispute-resolution processes may exist and defendants may argue they must be exhausted first — though this argument generally does not apply to constitutional claims under § 1983.
 
 ## Key Takeaway
 
-When a government contract or enabling statute establishes an administrative dispute-resolution process, a contractor must exhaust that process before filing suit — and the [exhaustion of remedies](/primer/exhaustion-of-remedies) doctrine applies regardless of whether the government entity enjoys immunity, though [§ 1983](/primer/section-1983) constitutional claims generally do not require exhaustion of state administrative remedies.
+When a government contract or enabling statute establishes an administrative dispute-resolution process, a contractor must exhaust that process before filing suit — and the [exhaustion of remedies](/terms-and-concepts/exhaustion-of-remedies) doctrine applies regardless of whether the government entity enjoys immunity, though [§ 1983](/terms-and-concepts/section-1983) constitutional claims generally do not require exhaustion of state administrative remedies.

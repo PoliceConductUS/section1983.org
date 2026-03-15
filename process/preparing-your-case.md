@@ -10,9 +10,9 @@ tags: ["preparation", "foia", "evidence", "getting-started", "organization"]
 
 ## Why preparation comes first
 
-Most pro se § 1983 cases die at the [motion to dismiss](/process/rule-12-motions) stage. The reason is almost always the same: the complaint doesn't contain enough _specific facts_ to satisfy the [plausibility standard](/primer/plausibility-pleading) set by [_Ashcroft v. Iqbal_](/cases/ashcroft-v-iqbal) and [_Bell Atlantic v. Twombly_](/cases/bell-atlantic-corp-v-twombly).
+Most pro se § 1983 cases die at the [motion to dismiss](/process/rule-12-motions) stage. The reason is almost always the same: the complaint doesn't contain enough _specific facts_ to satisfy the [plausibility standard](/terms-and-concepts/plausibility-pleading) set by [_Ashcroft v. Iqbal_](/cases/ashcroft-v-iqbal) and [_Bell Atlantic v. Twombly_](/cases/bell-atlantic-corp-v-twombly).
 
-"Officer Smith used [excessive force](/primer/excessive-force)" is a legal conclusion. A judge will ignore it. "Officer Smith struck Plaintiff in the head with a closed fist three times while Plaintiff was handcuffed and lying face-down" is a factual allegation. The second version survives because it contains _facts_ — specific, verifiable, plausible facts.
+"Officer Smith used [excessive force](/terms-and-concepts/excessive-force)" is a legal conclusion. A judge will ignore it. "Officer Smith struck Plaintiff in the head with a closed fist three times while Plaintiff was handcuffed and lying face-down" is a factual allegation. The second version survives because it contains _facts_ — specific, verifiable, plausible facts.
 
 Where do those facts come from? You already have some — you were there. But your memory alone isn't enough. You need documents, footage, data, and records that corroborate what happened and reveal what you don't yet know.
 
@@ -38,13 +38,13 @@ By the time you finish this preparation stage, you should have:
 - [ ] Strategy documents mapping each claim to its elements and evidence
 - [ ] An honest assessment of your case's weaknesses
 
-Not every item will be available in every case. Some agencies will deny requests or drag their feet. That's fine — document the denials. A refusal to produce public records is itself evidence, and it becomes relevant if you later bring [spoliation](/primer/spoliation) claims or argue [deliberate indifference](/primer/deliberate-indifference) to accountability.
+Not every item will be available in every case. Some agencies will deny requests or drag their feet. That's fine — document the denials. A refusal to produce public records is itself evidence, and it becomes relevant if you later bring [spoliation](/terms-and-concepts/spoliation) claims or argue [deliberate indifference](/terms-and-concepts/deliberate-indifference) to accountability.
 
 ## How long this takes
 
 Plan for **6 months or more** before you're ready to file. That sounds like a long time. It isn't.
 
-You're not just collecting records during this period — you're learning an entirely new field. Constitutional law, civil procedure, [qualified immunity](/primer/qualified-immunity), [Monell liability](/primer/monell-liability), the [plausibility pleading](/primer/plausibility-pleading) standard. The more you learn, the more clearly you see your own evidence. Facts that seemed minor when you started — the officer's tone of voice, the sequence of commands, the backup officer who stood and watched — become significant once you understand the legal frameworks they fit into.
+You're not just collecting records during this period — you're learning an entirely new field. Constitutional law, civil procedure, [qualified immunity](/terms-and-concepts/qualified-immunity), [Monell liability](/terms-and-concepts/monell-liability), the [plausibility pleading](/terms-and-concepts/plausibility-pleading) standard. The more you learn, the more clearly you see your own evidence. Facts that seemed minor when you started — the officer's tone of voice, the sequence of commands, the backup officer who stood and watched — become significant once you understand the legal frameworks they fit into.
 
 A complaint written after two weeks of preparation reads like a victim's account. A complaint written after six months of preparation reads like a lawyer's. The judge can tell the difference, and so can the defense attorneys deciding whether to take your case seriously or steamroll you at the [motion to dismiss](/process/rule-12-motions).
 
@@ -58,13 +58,13 @@ A complaint written after two weeks of preparation reads like a victim's account
 
 Use this time. Every fact you nail down now is a fact the defense can't muddy later. Every document you obtain now is one you won't have to fight for in [discovery](/process/discovery). Every statistical pattern you identify now is one that transforms a conclusory allegation into a plausible claim.
 
-## The [statute of limitations](/primer/statute-of-limitations) clock
+## The [statute of limitations](/terms-and-concepts/statute-of-limitations) clock
 
 While you prepare, the clock is running. § 1983 borrows the state's personal injury statute of limitations — typically 2–3 years from the date of the incident. In Texas, it's 2 years. In New York, it's 3.
 
 Don't let preparation become procrastination. If you're within 8 months of the deadline, consider filing first and preparing in parallel. A thin complaint that preserves your claims is better than a perfect complaint filed one day late.
 
-If you're within 90 days, stop preparing and [file now](/process/filing). You can [amend your complaint](/primer/amended-complaint) later with the additional facts.
+If you're within 90 days, stop preparing and [file now](/process/filing). You can [amend your complaint](/terms-and-concepts/amended-complaint) later with the additional facts.
 
 ## Cost
 
@@ -77,7 +77,7 @@ Before you file, **[stress-test your case](/articles/how-to-stress-test-your-cas
 
 ## Template: Evidence Preservation Demand Letter
 
-Send this **immediately** — before your FOIA requests, before your complaint, as early as possible. This creates a dated record that the agency was on notice to preserve evidence. If records later disappear, this letter is the foundation of a [spoliation](/primer/spoliation) argument.
+Send this **immediately** — before your FOIA requests, before your complaint, as early as possible. This creates a dated record that the agency was on notice to preserve evidence. If records later disappear, this letter is the foundation of a [spoliation](/terms-and-concepts/spoliation) argument.
 
 **Send by certified mail, return receipt requested.** Keep the receipt.
 

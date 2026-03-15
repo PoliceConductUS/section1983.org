@@ -31,7 +31,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Olivia Sligh's partner called 911 to report that she was suicidal, had hurt herself, and had left the house on foot. He requested an ambulance and indicated she was unarmed and not violent. Police responded with a K9 unit and sicced the dog on Sligh after she resisted being physically restrained. The Fifth Circuit found the force was likely excessive but held the officer was entitled to [qualified immunity](/primer/qualified-immunity) because the right was not clearly established under these specific facts.
+Olivia Sligh's partner called 911 to report that she was suicidal, had hurt herself, and had left the house on foot. He requested an ambulance and indicated she was unarmed and not violent. Police responded with a K9 unit and sicced the dog on Sligh after she resisted being physically restrained. The Fifth Circuit found the force was likely excessive but held the officer was entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) because the right was not clearly established under these specific facts.
 
 ## The Facts
 
@@ -49,7 +49,7 @@ The Fifth Circuit applied the [Graham v. Connor](/cases/graham-v-connor) factors
 2. **Immediate threat**: Also favored Sligh—she did not pose a threat to officers, despite her self-harm. Using a dog bite to prevent self-harm was counterproductive.
 3. **Active resistance**: Weighed against Sligh—bodycam showed she physically resisted and broke free from Montes.
 
-Despite finding a likely constitutional violation, the court held the right was not clearly established. The case was distinguishable from _Cooper v. Brown_ (the leading dog-bite case) because Sligh actively resisted, and the prolonged bite was unintentional (Sutton tried to recall Thor). The court also affirmed dismissal of bystander liability (Montes), [Monell](/primer/monell-liability) claims (inadequate policy, failure to train, ratification), and ADA/Rehabilitation Act claims.
+Despite finding a likely constitutional violation, the court held the right was not clearly established. The case was distinguishable from _Cooper v. Brown_ (the leading dog-bite case) because Sligh actively resisted, and the prolonged bite was unintentional (Sutton tried to recall Thor). The court also affirmed dismissal of bystander liability (Montes), [Monell](/terms-and-concepts/monell-liability) claims (inadequate policy, failure to train, ratification), and ADA/Rehabilitation Act claims.
 
 ## Why This Case Matters for Your § 1983 Case
 

@@ -23,7 +23,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Lewis Anderson, an employee of the Pasadena Independent School District (PISD), sued the district and individual school board members under [§ 1983](/primer/section-1983) after he was subjected to adverse employment actions for opposing a school bond election and an administrative reorganization. The case addresses when public employees' speech is protected under the First Amendment and when school officials can claim [qualified immunity](/primer/qualified-immunity) for retaliatory employment decisions.
+Lewis Anderson, an employee of the Pasadena Independent School District (PISD), sued the district and individual school board members under [§ 1983](/terms-and-concepts/section-1983) after he was subjected to adverse employment actions for opposing a school bond election and an administrative reorganization. The case addresses when public employees' speech is protected under the First Amendment and when school officials can claim [qualified immunity](/terms-and-concepts/qualified-immunity) for retaliatory employment decisions.
 
 ## The Facts
 
@@ -31,7 +31,7 @@ Anderson worked for PISD and publicly opposed a school bond election and an admi
 
 After Anderson voiced his opposition, the school board and Superintendent Frederick Schneider took adverse employment actions against him. Anderson alleged these actions were motivated by retaliation for his protected speech and associational activities.
 
-Anderson filed suit on November 6, 1995, under [§ 1983](/primer/section-1983), naming PISD, Superintendent Schneider, and seven school board members as defendants. He alleged violations of his free speech rights and asserted state law claims as well.
+Anderson filed suit on November 6, 1995, under [§ 1983](/terms-and-concepts/section-1983), naming PISD, Superintendent Schneider, and seven school board members as defendants. He alleged violations of his free speech rights and asserted state law claims as well.
 
 The individual defendants moved to dismiss on the basis of qualified immunity and sought to halt discovery until the immunity question was resolved. The district court ordered Anderson to replead with particularity, and he filed a Second Amended Complaint adding claims for violations of his rights to freedom of association and due process. The individual defendants again moved to dismiss.
 

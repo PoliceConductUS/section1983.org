@@ -22,7 +22,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Decided the same day as [Terry v. Ohio](/cases/terry-v-ohio), _Sibron v. New York_ addressed the limits of stop-and-frisk authority. While _Terry_ approved a limited pat-down for weapons based on reasonable suspicion, _Sibron_ held that an officer who observed a man talking with known drug addicts for eight hours did not have the right to reach into the man's pocket—a search that exceeded the scope of a permissible _Terry_ frisk and was not supported by [probable cause](/primer/probable-cause).
+Decided the same day as [Terry v. Ohio](/cases/terry-v-ohio), _Sibron v. New York_ addressed the limits of stop-and-frisk authority. While _Terry_ approved a limited pat-down for weapons based on reasonable suspicion, _Sibron_ held that an officer who observed a man talking with known drug addicts for eight hours did not have the right to reach into the man's pocket—a search that exceeded the scope of a permissible _Terry_ frisk and was not supported by [probable cause](/terms-and-concepts/probable-cause).
 
 ## The Facts
 
@@ -30,7 +30,7 @@ At about 4:00 p.m., Patrolman Martin spotted Nelson Sibron in the vicinity of 74
 
 While Sibron was eating in the restaurant, the officer approached and asked him to come outside. Sibron complied. The officer then said, "You know what I am after." Sibron mumbled something and reached into his left coat pocket. The officer also moved his hand to the pocket and seized what was inside—which turned out to be heroin. The officer testified that he "thought he might have been" reaching for a gun.
 
-New York's counsel attempted to confess error, suggesting the search violated the [Fourth Amendment](/primer/fourth-amendment), but the Supreme Court declined to accept this confession.
+New York's counsel attempted to confess error, suggesting the search violated the [Fourth Amendment](/terms-and-concepts/fourth-amendment), but the Supreme Court declined to accept this confession.
 
 ## What the Court Decided
 
@@ -40,7 +40,7 @@ First, the officer lacked probable cause to arrest Sibron. Merely observing some
 
 Second, even under the newly announced _Terry_ framework, the officer's actions exceeded the permissible scope of a stop-and-frisk. A _Terry_ frisk is limited to a pat-down of outer clothing to detect weapons when the officer reasonably believes the suspect is armed and dangerous. Here, the officer did not conduct a limited pat-down but instead reached directly into Sibron's pocket—a full search. Moreover, the officer's stated justification shifted between searching for drugs and protecting himself from a weapon, undermining both rationales.
 
-Justice Harlan's concurrence emphasized that probable cause for an arrest and [reasonable suspicion](/primer/reasonable-suspicion) for a stop are distinct standards, and that the officer's observations, while perhaps justifying a brief stop, did not justify the invasive search that occurred.
+Justice Harlan's concurrence emphasized that probable cause for an arrest and [reasonable suspicion](/terms-and-concepts/reasonable-suspicion) for a stop are distinct standards, and that the officer's observations, while perhaps justifying a brief stop, did not justify the invasive search that occurred.
 
 ## Why This Case Matters for Your § 1983 Case
 

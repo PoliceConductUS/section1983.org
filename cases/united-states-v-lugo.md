@@ -21,7 +21,7 @@ citedBy: []
 
 ## What This Case Is About
 
-United States v. Lugo is a federal criminal case addressing the constitutionality of interrogation practices used by Border Patrol agents in the BORCAP (Border Patrol Criminal Alien Program) program. While not a [§ 1983](/primer/section-1983) case, Lugo is relevant to civil rights litigation because it examines important [Fifth Amendment](/primer/fifth-amendment) issues—specifically, when Miranda warnings are required, what constitutes a valid waiver of the right to counsel, and what happens when a suspect invokes and then allegedly waives that right. These issues frequently arise in § 1983 cases involving coerced confessions and custodial interrogation.
+United States v. Lugo is a federal criminal case addressing the constitutionality of interrogation practices used by Border Patrol agents in the BORCAP (Border Patrol Criminal Alien Program) program. While not a [§ 1983](/terms-and-concepts/section-1983) case, Lugo is relevant to civil rights litigation because it examines important [Fifth Amendment](/terms-and-concepts/fifth-amendment) issues—specifically, when Miranda warnings are required, what constitutes a valid waiver of the right to counsel, and what happens when a suspect invokes and then allegedly waives that right. These issues frequently arise in § 1983 cases involving coerced confessions and custodial interrogation.
 
 ## The Facts
 

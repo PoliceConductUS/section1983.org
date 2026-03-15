@@ -1,13 +1,13 @@
 ---
 title: "How to Use AI in Your § 1983 Case"
 description: "AI tools like ChatGPT and Claude can help you research, draft, and organize your civil rights case — but they can also get you fined or have your case dismissed. Here's how to use them effectively and safely."
-pubDate: 2026-04-13
+pubDate: 2026-02-25
 author: "Institute for Police Conduct, Inc."
 tags: ["ai", "tools", "research", "drafting", "strategy", "pro-se"]
-draft: true
+draft: false
 ---
 
-AI tools have fundamentally changed what a [pro se](/primer/pro-se) litigant can accomplish alone. Tasks that once required a law library, a paralegal, and hundreds of billable hours — legal research, draft writing, case analysis, deposition preparation — can now be done from your kitchen table with a $20/month subscription and your case file.
+AI tools have fundamentally changed what a [pro se](/terms-and-concepts/pro-se) litigant can accomplish alone. Tasks that once required a law library, a paralegal, and hundreds of billable hours — legal research, draft writing, case analysis, deposition preparation — can now be done from your kitchen table with a $20/month subscription and your case file.
 
 But AI tools also create new risks. They hallucinate case citations. They state legal conclusions with supreme confidence that turns out to be completely wrong. And federal courts are increasingly punishing litigants — and attorneys — who file AI-generated work without verification, with fines, case dismissals, and public reprimands.
 
@@ -17,7 +17,7 @@ This guide covers what AI is good at, what it's dangerous for, and how to use it
 
 ### Research assistance
 
-AI tools can explain legal concepts in plain language, identify relevant doctrines, and point you toward case law you should research further. If you don't understand what "[clearly established law](/primer/clearly-established-law)" means or how [Monell liability](/primer/monell-liability) works, asking an AI to explain it is a reasonable starting point.
+AI tools can explain legal concepts in plain language, identify relevant doctrines, and point you toward case law you should research further. If you don't understand what "[clearly established law](/terms-and-concepts/clearly-established-law)" means or how [Monell liability](/terms-and-concepts/monell-liability) works, asking an AI to explain it is a reasonable starting point.
 
 **Good prompt**: "Explain the elements of a Fourth Amendment excessive force claim under Graham v. Connor. What does a plaintiff need to prove?"
 
@@ -30,7 +30,7 @@ AI won't replace reading the actual cases — but it can tell you _which_ cases 
 AI tools are strong first-draft generators. Give them your facts, tell them what you're trying to argue, and they'll produce a structured draft that you can refine. This is particularly useful for:
 
 - **Motions and briefs** — AI can structure arguments, organize sections, and suggest frameworks
-- **Discovery requests** — [interrogatories](/primer/interrogatories), [requests for production](/primer/requests-for-production), [requests for admission](/primer/requests-for-admission)
+- **Discovery requests** — [interrogatories](/terms-and-concepts/interrogatories), [requests for production](/terms-and-concepts/requests-for-production), [requests for admission](/terms-and-concepts/requests-for-admission)
 - **Deposition outlines** — question sequences organized by topic
 - **Demand letters** — pre-suit correspondence
 - **Declarations** — organizing your factual narrative
@@ -74,9 +74,9 @@ This is one of the most immediately useful applications. Every pro se litigant h
 
 This isn't a rare glitch. It's a fundamental limitation of how these tools work. They generate text that _looks right_ based on patterns, but they have no reliable mechanism for verifying that a case actually exists.
 
-**Attorneys have been fined for this.** In _Mata v. Avianca_, a New York federal court fined attorneys $5,000 for filing a brief containing six AI-fabricated case citations. The attorneys used ChatGPT to write the brief and never verified the citations. The court called it "an unprecedented circumstance" — but it won't be the last time.
+**Attorneys have been fined for this.** In [_Mata v. Avianca, Inc._](/cases/mata-v-avianca-inc), a New York federal court fined attorneys $5,000 for filing a brief containing six AI-fabricated case citations. The attorneys used ChatGPT to write the brief and never verified the citations. The court called it "an unprecedented circumstance" — but it won't be the last time.
 
-**The rule is absolute: never file a document containing a case citation you haven't personally verified.** For every case an AI tool suggests:
+**Make this a fixed habit: do not file a document containing a case citation you have not personally verified.** For every case an AI tool suggests:
 
 1. **Search for it on [CourtListener](https://www.courtlistener.com/)** (free) or Google Scholar's case law section (free)
 2. **Verify the citation** — correct reporter, correct volume and page number, correct year

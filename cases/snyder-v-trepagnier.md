@@ -29,7 +29,7 @@ citedBy: []
 
 ## What This Case Is About
 
-James Snyder was shot in the back by New Orleans police officer Sidney Trepagnier while fleeing on foot through swamps after a high-speed chase. The shooting left Snyder paralyzed from the waist down. A jury found Trepagnier committed a constitutional violation but was entitled to [qualified immunity](/primer/qualified-immunity), and that the City of New Orleans was liable under [Monell](/primer/monell-liability). The Fifth Circuit reversed the city's liability and affirmed the officer's qualified immunity.
+James Snyder was shot in the back by New Orleans police officer Sidney Trepagnier while fleeing on foot through swamps after a high-speed chase. The shooting left Snyder paralyzed from the waist down. A jury found Trepagnier committed a constitutional violation but was entitled to [qualified immunity](/terms-and-concepts/qualified-immunity), and that the City of New Orleans was liable under [Monell](/terms-and-concepts/monell-liability). The Fifth Circuit reversed the city's liability and affirmed the officer's qualified immunity.
 
 ## The Facts
 
@@ -53,7 +53,7 @@ The court affirmed qualified immunity, holding the jury's answers were reconcila
 
 ## Why This Case Matters for Your § 1983 Case
 
-**Expert testimony alone is not enough for Monell.** An expert's opinion that a city's practices fell short of "national standards" does not establish the deliberate indifference required for [municipal liability](/primer/municipal-liability) without supporting facts showing the city's bad motive.
+**Expert testimony alone is not enough for Monell.** An expert's opinion that a city's practices fell short of "national standards" does not establish the deliberate indifference required for [municipal liability](/terms-and-concepts/municipal-liability) without supporting facts showing the city's bad motive.
 
 **Pattern evidence is critical.** To prove failure to train, you generally must show a pattern of similar constitutional violations—not just one incident. A single shooting, without more, cannot establish that the city was deliberately indifferent.
 

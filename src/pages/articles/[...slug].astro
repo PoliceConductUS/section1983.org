@@ -3,20 +3,21 @@ import { getCollection, render } from "astro:content";
 import Article from "../../layouts/Article.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import PrevNext from "../../components/PrevNext.astro";
+import { getContentUpdatedDate } from "../../lib/content-metadata";
 
 export async function getStaticPaths() {
   const articles = await getCollection("articles", ({ data }) => !data.draft);
   const sorted = articles.sort((a, b) => {
     const da = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
     const db = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
-    return db - da;
+    return da - db;
   });
   return sorted.map((article, i) => ({
     params: { slug: article.id },
     props: {
       article,
-      prev: i < sorted.length - 1 ? sorted[i + 1] : null,
-      next: i > 0 ? sorted[i - 1] : null,
+      prev: i > 0 ? sorted[i - 1] : null,
+      next: i < sorted.length - 1 ? sorted[i + 1] : null,
     },
   }));
 }
@@ -24,6 +25,11 @@ export async function getStaticPaths() {
 const { article, prev, next } = Astro.props;
 const { Content } = await render(article);
 const canonicalUrl = `https://www.section1983.org/articles/${article.id}/`;
+const updatedDate = getContentUpdatedDate(
+  "articles",
+  article.id,
+  article.data.updatedDate,
+);
 const wordCount = article.body
   ? article.body.trim().split(/\s+/).filter(Boolean).length
   : undefined;
@@ -37,7 +43,7 @@ const articleText = [
   .join("\n")
   .toLowerCase();
 const articleTags = article.data.tags || [];
-const primerEntries = await getCollection("primer");
+const termsAndConceptsEntries = await getCollection("termsAndConcepts");
 const caseEntries = await getCollection("cases");
 const processEntries = await getCollection("process");
 
@@ -57,56 +63,87 @@ function containsPhrase(haystack: string, needle: string) {
   );
 }
 
-const relatedPrimer = primerEntries
-  .map((entry) => {
-    let score = 0;
-    if (articleText.includes(`/primer/${entry.id}`)) score += 8;
-    if (containsPhrase(articleText, entry.data.term)) score += 4;
-    score += countSharedTags(articleTags, entry.data.tags || []) * 2;
-    return { entry, score };
-  })
-  .filter(({ score }) => score > 0)
-  .sort((a, b) => b.score - a.score || a.entry.data.term.localeCompare(b.entry.data.term))
-  .slice(0, 4)
-  .map(({ entry }) => ({
-    href: `/primer/${entry.id}`,
-    label: entry.data.term,
-    description: entry.data.description,
-  }));
+function selectRelatedEntries<T extends { score: number }>(
+  items: T[],
+  {
+    base = 4,
+    max = 10,
+    strongScore = 4,
+  }: { base?: number; max?: number; strongScore?: number } = {},
+) {
+  if (items.length <= base) return items;
 
-const relatedCases = caseEntries
-  .map((entry) => {
-    let score = 0;
-    if (articleText.includes(`/cases/${entry.id}`)) score += 10;
-    if (containsPhrase(articleText, entry.data.title)) score += 4;
-    score += countSharedTags(articleTags, entry.data.tags || []) * 2;
-    return { entry, score };
-  })
-  .filter(({ score }) => score > 0)
-  .sort((a, b) => b.score - a.score || a.entry.data.title.localeCompare(b.entry.data.title))
-  .slice(0, 4)
-  .map(({ entry }) => ({
-    href: `/cases/${entry.id}`,
-    label: entry.data.title,
-    description: entry.data.holding,
-  }));
+  let count = Math.min(base, items.length);
+  while (
+    count < items.length &&
+    count < max &&
+    items[count].score >= strongScore
+  ) {
+    count += 1;
+  }
 
-const relatedProcess = processEntries
-  .map((entry) => {
-    let score = 0;
-    if (articleText.includes(`/process/${entry.id}`)) score += 8;
-    if (containsPhrase(articleText, entry.data.title)) score += 2;
-    score += countSharedTags(articleTags, entry.data.tags || []) * 2;
-    return { entry, score };
-  })
-  .filter(({ score }) => score > 0)
-  .sort((a, b) => a.entry.data.order - b.entry.data.order || b.score - a.score)
-  .slice(0, 3)
-  .map(({ entry }) => ({
-    href: `/process/${entry.id}`,
-    label: `Step ${entry.data.order}: ${entry.data.title}`,
-    description: entry.data.description,
-  }));
+  return items.slice(0, count);
+}
+
+const relatedTermsAndConcepts = selectRelatedEntries(
+  termsAndConceptsEntries
+    .map((entry) => {
+      let score = 0;
+      if (articleText.includes(`/terms-and-concepts/${entry.id}`)) score += 8;
+      if (containsPhrase(articleText, entry.data.term)) score += 4;
+      score += countSharedTags(articleTags, entry.data.tags || []) * 2;
+      return { entry, score };
+    })
+    .filter(({ score }) => score > 0)
+    .sort(
+      (a, b) =>
+        b.score - a.score || a.entry.data.term.localeCompare(b.entry.data.term),
+    ),
+).map(({ entry }) => ({
+  href: `/terms-and-concepts/${entry.id}`,
+  label: entry.data.term,
+  description: entry.data.description,
+}));
+
+const relatedCases = selectRelatedEntries(
+  caseEntries
+    .map((entry) => {
+      let score = 0;
+      if (articleText.includes(`/cases/${entry.id}`)) score += 10;
+      if (containsPhrase(articleText, entry.data.title)) score += 4;
+      score += countSharedTags(articleTags, entry.data.tags || []) * 2;
+      return { entry, score };
+    })
+    .filter(({ score }) => score > 0)
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        a.entry.data.title.localeCompare(b.entry.data.title),
+    ),
+).map(({ entry }) => ({
+  href: `/cases/${entry.id}`,
+  label: entry.data.title,
+  description: entry.data.holding,
+}));
+
+const relatedProcess = selectRelatedEntries(
+  processEntries
+    .map((entry) => {
+      let score = 0;
+      if (articleText.includes(`/process/${entry.id}`)) score += 8;
+      if (containsPhrase(articleText, entry.data.title)) score += 2;
+      score += countSharedTags(articleTags, entry.data.tags || []) * 2;
+      return { entry, score };
+    })
+    .filter(({ score }) => score > 0)
+    .sort(
+      (a, b) => a.entry.data.order - b.entry.data.order || b.score - a.score,
+    ),
+).map(({ entry }) => ({
+  href: `/process/${entry.id}`,
+  label: `Step ${entry.data.order}: ${entry.data.title}`,
+  description: entry.data.description,
+}));
 ---
 
 <Article
@@ -114,11 +151,12 @@ const relatedProcess = processEntries
   canonicalUrl={canonicalUrl}
   description={article.data.description}
   pubDate={article.data.pubDate}
+  updatedDate={updatedDate}
   author={article.data.author}
   tags={article.data.tags}
   wordCount={wordCount}
   ogImage={ogImage}
-  relatedPrimer={relatedPrimer}
+  relatedTermsAndConcepts={relatedTermsAndConcepts}
   relatedCases={relatedCases}
   relatedProcess={relatedProcess}
 >

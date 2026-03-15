@@ -24,7 +24,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Brown v. Tarrant County asks whether a civilly committed sexually violent predator can sue a county and its sheriff under [§ 1983](/primer/section-1983) for failing to provide sex offender treatment during a brief period of confinement in the county jail. The Fifth Circuit said no — the sheriff was protected by [qualified immunity](/primer/qualified-immunity), and the plaintiff failed to state a viable claim against the county.
+Brown v. Tarrant County asks whether a civilly committed sexually violent predator can sue a county and its sheriff under [§ 1983](/terms-and-concepts/section-1983) for failing to provide sex offender treatment during a brief period of confinement in the county jail. The Fifth Circuit said no — the sheriff was protected by [qualified immunity](/terms-and-concepts/qualified-immunity), and the plaintiff failed to state a viable claim against the county.
 
 ## The Facts
 

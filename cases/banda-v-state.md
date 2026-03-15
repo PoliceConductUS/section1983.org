@@ -38,7 +38,7 @@ While _Banda_ is a state criminal case rather than a civil rights action, it pro
 
 **The _Anders_ procedure protects defendants.** When appellate counsel determines there are no meritorious issues, the court does not simply take counsel's word for it. The appellate court independently reviews the entire record, providing a safeguard against overlooked issues.
 
-**Criminal convictions can affect § 1983 claims.** Under the [Heck doctrine](/primer/heck-doctrine) (from [_Heck v. Humphrey_](/cases/heck-v-humphrey)), a § 1983 claim that would necessarily imply the invalidity of a criminal conviction is barred unless the conviction has been reversed or otherwise invalidated. A conviction affirmed through the _Anders_ process remains intact and may bar related civil rights claims.
+**Criminal convictions can affect § 1983 claims.** Under the [Heck doctrine](/terms-and-concepts/heck-doctrine) (from [_Heck v. Humphrey_](/cases/heck-v-humphrey)), a § 1983 claim that would necessarily imply the invalidity of a criminal conviction is barred unless the conviction has been reversed or otherwise invalidated. A conviction affirmed through the _Anders_ process remains intact and may bar related civil rights claims.
 
 **Guilty pleas and their consequences.** A voluntary guilty plea typically waives many potential constitutional challenges. If you are considering bringing a § 1983 claim related to the circumstances of an arrest or prosecution, the existence of a guilty plea can significantly complicate your case.
 

@@ -13,7 +13,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Bryant v. Ditech Financial is not a § 1983 case — it involves a quiet-title action in a property dispute. However, it is relevant to civil rights litigation because it applies the same [pleading standards](/primer/pleading-standards) established in [_Bell Atlantic Corp. v. Twombly_](/cases/bell-atlantic-corp-v-twombly) and _Ashcroft v. Iqbal_ that govern [§ 1983](/primer/section-1983) claims. The Fifth Circuit reversed a district court's dismissal, finding that the plaintiff's complaint stated a plausible claim for relief.
+Bryant v. Ditech Financial is not a § 1983 case — it involves a quiet-title action in a property dispute. However, it is relevant to civil rights litigation because it applies the same [pleading standards](/terms-and-concepts/pleading-standards) established in [_Bell Atlantic Corp. v. Twombly_](/cases/bell-atlantic-corp-v-twombly) and _Ashcroft v. Iqbal_ that govern [§ 1983](/terms-and-concepts/section-1983) claims. The Fifth Circuit reversed a district court's dismissal, finding that the plaintiff's complaint stated a plausible claim for relief.
 
 ## The Facts
 

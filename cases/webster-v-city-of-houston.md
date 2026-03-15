@@ -20,7 +20,7 @@ citedBy:
 
 ## What This Case Is About
 
-Webster v. City of Houston is a landmark en banc Fifth Circuit decision that defines the framework for [municipal liability](/primer/monell-liability) under [§ 1983](/primer/section-1983). Arising from a fatal police shooting, the case established the crucial distinction between formal written policies and informal customs or practices and defined what constitutes a "policymaker" for purposes of municipal liability. This decision is one of the most cited cases in Fifth Circuit § 1983 jurisprudence and remains the foundational framework for all municipal liability claims in the circuit.
+Webster v. City of Houston is a landmark en banc Fifth Circuit decision that defines the framework for [municipal liability](/terms-and-concepts/monell-liability) under [§ 1983](/terms-and-concepts/section-1983). Arising from a fatal police shooting, the case established the crucial distinction between formal written policies and informal customs or practices and defined what constitutes a "policymaker" for purposes of municipal liability. This decision is one of the most cited cases in Fifth Circuit § 1983 jurisprudence and remains the foundational framework for all municipal liability claims in the circuit.
 
 ## The Facts
 

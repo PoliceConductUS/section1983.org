@@ -54,7 +54,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Deronnius Young, a JD/MBA student, was pulled over by Irving Police Sergeant Adam Landry for allegedly honking his car horn in a non-emergency situation as he exited a parking garage after a concert. When Young questioned the legality of the stop and called 911 for a supervisor, additional officers arrived and used tasers and physical force to arrest him. Young sued the City of Irving, its former Police Chief, and individual officers under [§ 1983](/primer/section-1983). The court granted all motions to dismiss but allowed Young to replead, finding that video evidence contradicted his allegations and that his municipal liability claims were insufficiently pled.
+Deronnius Young, a JD/MBA student, was pulled over by Irving Police Sergeant Adam Landry for allegedly honking his car horn in a non-emergency situation as he exited a parking garage after a concert. When Young questioned the legality of the stop and called 911 for a supervisor, additional officers arrived and used tasers and physical force to arrest him. Young sued the City of Irving, its former Police Chief, and individual officers under [§ 1983](/terms-and-concepts/section-1983). The court granted all motions to dismiss but allowed Young to replead, finding that video evidence contradicted his allegations and that his municipal liability claims were insufficiently pled.
 
 ## The Facts
 

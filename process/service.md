@@ -10,7 +10,7 @@ tags: ["service", "rule-4", "procedure"]
 
 ## What happens at this stage
 
-After filing your complaint and getting summons issued, you must formally deliver (serve) the lawsuit on each defendant. This isn't optional and it isn't a formality — it's a constitutional requirement. A defendant has a [due process](/primer/fourteenth-amendment) right to know they've been sued.
+After filing your complaint and getting summons issued, you must formally deliver (serve) the lawsuit on each defendant. This isn't optional and it isn't a formality — it's a constitutional requirement. A defendant has a [due process](/terms-and-concepts/fourteenth-amendment) right to know they've been sued.
 
 Until a defendant is properly served, the court has no power over them.
 
@@ -27,7 +27,7 @@ You can serve an individual by:
 - **State law methods** — whatever your state allows for personal service
 - **Waiver of service** — mailing a request to the defendant asking them to accept service voluntarily (Rule 4(d))
 
-You **cannot** serve the defendant yourself. A process server, the [U.S. Marshals](/primer/in-forma-pauperis) (if [IFP](/primer/in-forma-pauperis)), or any person over 18 who isn't a party can serve.
+You **cannot** serve the defendant yourself. A process server, the [U.S. Marshals](/terms-and-concepts/in-forma-pauperis) (if [IFP](/terms-and-concepts/in-forma-pauperis)), or any person over 18 who isn't a party can serve.
 
 ### Municipal defendants (the city)
 
@@ -51,14 +51,14 @@ If they refuse without good cause, the court can order them to pay your service 
 
 You have **90 days** from filing to serve each defendant (Rule 4(m)). If you miss this deadline, the court can:
 
-- Dismiss the defendant without prejudice (you can re-serve if still within the [statute of limitations](/primer/statute-of-limitations))
+- Dismiss the defendant without prejudice (you can re-serve if still within the [statute of limitations](/terms-and-concepts/statute-of-limitations))
 - Grant an extension if you show good cause
 
-"I didn't know about the deadline" is not good cause. "The [U.S. Marshals](/primer/in-forma-pauperis) lost the paperwork" might be.
+"I didn't know about the deadline" is not good cause. "The [U.S. Marshals](/terms-and-concepts/in-forma-pauperis) lost the paperwork" might be.
 
 ### IFP plaintiffs and the Marshals
 
-If you're proceeding [IFP](/primer/in-forma-pauperis), the court typically directs the U.S. Marshals to serve on your behalf (Rule 4(c)(3)). This sounds helpful, but:
+If you're proceeding [IFP](/terms-and-concepts/in-forma-pauperis), the court typically directs the U.S. Marshals to serve on your behalf (Rule 4(c)(3)). This sounds helpful, but:
 
 - The Marshals are understaffed and slow
 - They may not prioritize your case
@@ -76,7 +76,7 @@ Without proof of service on the docket, the court may treat the defendant as uns
 
 - **Serving the wrong person** — serving a random employee at city hall doesn't count. You need the designated agent.
 - **Missing the 90-day deadline** — especially with multiple defendants. Track each one separately.
-- **Not following up on Marshals service** — [IFP](/primer/in-forma-pauperis) plaintiffs lose defendants this way.
+- **Not following up on Marshals service** — [IFP](/terms-and-concepts/in-forma-pauperis) plaintiffs lose defendants this way.
 - **Forgetting to file proof** — service happened but the court doesn't know about it.
 - **Not serving all defendants** — if your complaint names 5 defendants, you need 5 separate services.
 

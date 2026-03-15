@@ -29,7 +29,7 @@ Officers then moved Taylor to a second cell. This one was frigidly cold and equi
 
 The cruelty wasn't inadvertent. One officer, upon placing Taylor in the first cell, remarked to another that Taylor was "going to have a long weekend." Another officer, putting Taylor in the second cell, told him he hoped Taylor would "f\*\*\*ing freeze."
 
-Taylor sued the officers under [§ 1983](/primer/section-1983), alleging violations of the Eighth Amendment. The Fifth Circuit agreed that the conditions violated the Constitution. But it granted the officers [qualified immunity](/primer/qualified-immunity), reasoning that "the law wasn't clearly established" that "prisoners couldn't be housed in cells teeming with human waste" "for only six days." The court cited what it called "ambiguity in the caselaw" about whether such a "short" period violated the Constitution.
+Taylor sued the officers under [§ 1983](/terms-and-concepts/section-1983), alleging violations of the Eighth Amendment. The Fifth Circuit agreed that the conditions violated the Constitution. But it granted the officers [qualified immunity](/terms-and-concepts/qualified-immunity), reasoning that "the law wasn't clearly established" that "prisoners couldn't be housed in cells teeming with human waste" "for only six days." The court cited what it called "ambiguity in the caselaw" about whether such a "short" period violated the Constitution.
 
 ## What the Court Decided
 

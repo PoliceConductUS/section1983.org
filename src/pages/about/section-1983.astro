@@ -1,18 +1,38 @@
 ---
 import Base from "../../layouts/Base.astro";
-import DisqusComments from "../../components/DisqusComments.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+
+const canonicalUrl = "https://www.section1983.org/about/section-1983/";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "The History and Purpose of Section 1983",
+  description:
+    "How a Reconstruction-era civil rights law was narrowed by later courts and what that means for police accountability today.",
+  url: canonicalUrl,
+  mainEntityOfPage: canonicalUrl,
+  author: {
+    "@type": "Organization",
+    name: "Institute for Police Conduct, Inc.",
+    url: "https://policeconduct.org",
+  },
+};
 ---
 
 <Base
-  title="The History of § 1983"
-  description="How a Reconstruction-era civil rights law was gutted by the courts that were supposed to enforce it."
+  title="The History of Section 1983"
+  description="How 42 U.S.C. Section 1983 began as a Reconstruction-era civil rights law and how later courts narrowed it through qualified immunity and related doctrines."
+  canonicalUrl={canonicalUrl}
+  structuredData={structuredData}
 >
   <div class="prose">
-    <p class="text-sm text-slate mb-6">
-      <a href="/about" class="text-navy hover:text-gold"
-        >← About section1983.org</a
-      >
-    </p>
+    <Breadcrumbs
+      crumbs={[
+        { label: "Home", href: "/" },
+        { label: "About", href: "/about" },
+        { label: "The History of Section 1983" },
+      ]}
+    />
 
     <h1 class="text-3xl font-bold text-navy mb-6">
       The History & Purpose of § 1983
@@ -209,9 +229,4 @@ import DisqusComments from "../../components/DisqusComments.astro";
       That's why <a href="/about">section1983.org</a> exists.
     </p>
   </div>
-
-  <DisqusComments
-    pageUrl="https://www.section1983.org/about/section-1983/"
-    disqusIdentifier="about-section-1983"
-  />
 </Base>

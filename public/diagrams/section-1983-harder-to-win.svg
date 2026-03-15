@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">Section 1983 is getting harder to win</title>
+  <desc id="desc">A chart with year on the horizontal axis and barriers to win on the vertical axis, showing how courts added court-created barriers to Section 1983 from Monroe in 1961 through Vega in 2022, including Devenpeck and Nieves as probable-cause barriers.</desc>
+  <style>
+    text { font-family: Georgia, "Times New Roman", serif; fill: #122033; }
+    .axis { stroke: #20324a; stroke-width: 3; }
+    .grid { stroke: #d8e0e8; stroke-width: 1; }
+    .line { fill: none; stroke: #9e2f2f; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+    .marker { fill: #9e2f2f; stroke: #fff8ef; stroke-width: 4; }
+    .marker-label { font-size: 15px; font-weight: 700; fill: #fffdf8; text-anchor: middle; dominant-baseline: middle; }
+    .axis-label { font-size: 24px; font-weight: 700; }
+    .tick { font-size: 18px; }
+    .year { font-size: 18px; font-weight: 700; text-anchor: middle; }
+    .title { font-size: 34px; font-weight: 700; }
+    .subtitle { font-size: 20px; fill: #4a5b72; }
+  </style>
+
+  <rect width="1200" height="780" fill="#fffdf8" />
+
+  <text x="90" y="70" class="title">Section 1983 Is Getting Harder to Win</text>
+  <text x="90" y="102" class="subtitle">Monroe marks the modern starting point. Later courts add court-created barriers one by one.</text>
+
+  <line x1="120" y1="670" x2="1120" y2="670" class="axis" />
+  <line x1="120" y1="670" x2="120" y2="130" class="axis" />
+
+  <line x1="120" y1="670" x2="1120" y2="670" class="grid" />
+  <line x1="120" y1="625" x2="1120" y2="625" class="grid" />
+  <line x1="120" y1="580" x2="1120" y2="580" class="grid" />
+  <line x1="120" y1="535" x2="1120" y2="535" class="grid" />
+  <line x1="120" y1="490" x2="1120" y2="490" class="grid" />
+  <line x1="120" y1="445" x2="1120" y2="445" class="grid" />
+  <line x1="120" y1="400" x2="1120" y2="400" class="grid" />
+  <line x1="120" y1="355" x2="1120" y2="355" class="grid" />
+  <line x1="120" y1="310" x2="1120" y2="310" class="grid" />
+  <line x1="120" y1="265" x2="1120" y2="265" class="grid" />
+  <line x1="120" y1="220" x2="1120" y2="220" class="grid" />
+  <line x1="120" y1="175" x2="1120" y2="175" class="grid" />
+  <line x1="120" y1="130" x2="1120" y2="130" class="grid" />
+
+  <line x1="120" y1="130" x2="120" y2="670" class="grid" />
+  <line x1="197" y1="130" x2="197" y2="670" class="grid" />
+  <line x1="274" y1="130" x2="274" y2="670" class="grid" />
+  <line x1="351" y1="130" x2="351" y2="670" class="grid" />
+  <line x1="428" y1="130" x2="428" y2="670" class="grid" />
+  <line x1="505" y1="130" x2="505" y2="670" class="grid" />
+  <line x1="582" y1="130" x2="582" y2="670" class="grid" />
+  <line x1="658" y1="130" x2="658" y2="670" class="grid" />
+  <line x1="735" y1="130" x2="735" y2="670" class="grid" />
+  <line x1="812" y1="130" x2="812" y2="670" class="grid" />
+  <line x1="889" y1="130" x2="889" y2="670" class="grid" />
+  <line x1="966" y1="130" x2="966" y2="670" class="grid" />
+  <line x1="1043" y1="130" x2="1043" y2="670" class="grid" />
+  <line x1="1120" y1="130" x2="1120" y2="670" class="grid" />
+
+  <text x="26" y="430" class="axis-label" transform="rotate(-90 26 430)">Barriers to win</text>
+  <text x="590" y="740" class="axis-label">Year</text>
+
+  <text x="90" y="675" class="tick">0</text>
+  <text x="90" y="630" class="tick">1</text>
+  <text x="90" y="585" class="tick">2</text>
+  <text x="90" y="540" class="tick">3</text>
+  <text x="90" y="495" class="tick">4</text>
+  <text x="90" y="450" class="tick">5</text>
+  <text x="90" y="405" class="tick">6</text>
+  <text x="90" y="360" class="tick">7</text>
+  <text x="90" y="315" class="tick">8</text>
+  <text x="90" y="270" class="tick">9</text>
+  <text x="82" y="225" class="tick">10</text>
+  <text x="82" y="180" class="tick">11</text>
+  <text x="82" y="135" class="tick">12</text>
+
+  <text x="120" y="710" class="year">1960</text>
+  <text x="197" y="710" class="year">1965</text>
+  <text x="274" y="710" class="year">1970</text>
+  <text x="351" y="710" class="year">1975</text>
+  <text x="428" y="710" class="year">1980</text>
+  <text x="505" y="710" class="year">1985</text>
+  <text x="582" y="710" class="year">1990</text>
+  <text x="658" y="710" class="year">1995</text>
+  <text x="735" y="710" class="year">2000</text>
+  <text x="812" y="710" class="year">2005</text>
+  <text x="889" y="710" class="year">2010</text>
+  <text x="966" y="710" class="year">2015</text>
+  <text x="1043" y="710" class="year">2020</text>
+  <text x="1120" y="710" class="year">2025</text>
+
+  <polyline class="line" points="135,670 228,625 366,580 459,535 612,490 643,445 797,400 843,355 874,310 874,265 1028,220 1074,175" />
+
+  <circle cx="135" cy="670" r="16" class="marker" />
+  <text x="135" y="670" class="marker-label">1</text>
+
+  <circle cx="228" cy="625" r="16" class="marker" />
+  <text x="228" y="625" class="marker-label">2</text>
+
+  <circle cx="366" cy="580" r="16" class="marker" />
+  <text x="366" y="580" class="marker-label">3</text>
+
+  <circle cx="459" cy="535" r="16" class="marker" />
+  <text x="459" y="535" class="marker-label">4</text>
+
+  <circle cx="612" cy="490" r="16" class="marker" />
+  <text x="612" y="490" class="marker-label">5</text>
+
+  <circle cx="643" cy="445" r="16" class="marker" />
+  <text x="643" y="445" class="marker-label">6</text>
+
+  <circle cx="797" cy="400" r="16" class="marker" />
+  <text x="797" y="400" class="marker-label">7</text>
+
+  <circle cx="843" cy="355" r="16" class="marker" />
+  <text x="843" y="355" class="marker-label">8</text>
+
+  <circle cx="874" cy="310" r="16" class="marker" />
+  <text x="874" y="310" class="marker-label">9</text>
+
+  <circle cx="874" cy="265" r="16" class="marker" />
+  <text x="874" y="265" class="marker-label">10</text>
+
+  <circle cx="1028" cy="220" r="16" class="marker" />
+  <text x="1028" y="220" class="marker-label">11</text>
+
+  <circle cx="1074" cy="175" r="16" class="marker" />
+  <text x="1074" y="175" class="marker-label">12</text>
+</svg>

@@ -26,12 +26,12 @@ The court found that Keane's allegations were insufficient because the attached 
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Keane v. Fox Television_ is cited in [§ 1983](/primer/section-1983) cases for its articulation of Rule 12(b)(6) principles:
+_Keane v. Fox Television_ is cited in [§ 1983](/terms-and-concepts/section-1983) cases for its articulation of Rule 12(b)(6) principles:
 
-- **Documents attached to complaints**: If you attach exhibits to your complaint, make sure they support your allegations. Courts will credit the documents over inconsistent narrative allegations. This matters in [§ 1983](/primer/section-1983) cases where plaintiffs attach police reports, incident reports, or [body camera](/primer/body-camera-footage) transcripts that may contradict their version of events.
+- **Documents attached to complaints**: If you attach exhibits to your complaint, make sure they support your allegations. Courts will credit the documents over inconsistent narrative allegations. This matters in [§ 1983](/terms-and-concepts/section-1983) cases where plaintiffs attach police reports, incident reports, or [body camera](/terms-and-concepts/body-camera-footage) transcripts that may contradict their version of events.
 - **Specificity matters**: While Federal Rule 8 requires only a "short and plain statement," your factual allegations must be specific enough that a court can reasonably infer the defendant is liable. Conclusory assertions — "the officer violated my rights" — are not enough.
 - **Practical tip**: Before attaching documents to your complaint, review them carefully. If they contain facts favorable to the defense, consider whether attaching them is necessary. If the document is central to your claim, the defense will likely introduce it anyway, but attaching it yourself removes the opportunity to explain its context in your narrative.
 
 ## Key Takeaway
 
-Documents attached to a complaint control over inconsistent narrative allegations — so when filing a [§ 1983](/primer/section-1983) complaint, ensure that any exhibits you attach actually support your claims, and make sure your factual allegations are specific enough to state a plausible basis for recovery.
+Documents attached to a complaint control over inconsistent narrative allegations — so when filing a [§ 1983](/terms-and-concepts/section-1983) complaint, ensure that any exhibits you attach actually support your claims, and make sure your factual allegations are specific enough to state a plausible basis for recovery.

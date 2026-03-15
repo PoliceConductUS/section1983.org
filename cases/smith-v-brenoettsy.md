@@ -24,7 +24,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Eric Smith, a prisoner at Louisiana State Penitentiary at Angola, sued guard Steve Brengettsy and Warden John Whitley under [§ 1983](/primer/section-1983) after Brengettsy allegedly stabbed Smith. Smith claimed Whitley's [failure to supervise](/primer/failure-to-supervise) Brengettsy—despite receiving multiple letters warning of Brengettsy's threats and verbal abuse—enabled the stabbing. The Fifth Circuit dismissed Whitley's [interlocutory appeal](/primer/interlocutory-appeal) because his arguments raised only factual disputes, not separable legal issues.
+Eric Smith, a prisoner at Louisiana State Penitentiary at Angola, sued guard Steve Brengettsy and Warden John Whitley under [§ 1983](/terms-and-concepts/section-1983) after Brengettsy allegedly stabbed Smith. Smith claimed Whitley's [failure to supervise](/terms-and-concepts/failure-to-supervise) Brengettsy—despite receiving multiple letters warning of Brengettsy's threats and verbal abuse—enabled the stabbing. The Fifth Circuit dismissed Whitley's [interlocutory appeal](/terms-and-concepts/interlocutory-appeal) because his arguments raised only factual disputes, not separable legal issues.
 
 ## The Facts
 
@@ -42,11 +42,11 @@ The court rejected all three. On specificity, the court noted that a prisoner ne
 
 **Written complaints create a record.** Smith's letters to the warden created a paper trail that was essential to his failure-to-supervise claim. If you are in custody and face threats, documenting your complaints in writing to supervisory officials creates evidence of their knowledge.
 
-**[Deliberate indifference](/primer/deliberate-indifference) requires awareness and failure to act.** A supervisory official must be aware of facts suggesting a substantial risk of serious harm and must draw the inference that such risk exists—but that inference can be proven circumstantially, including by showing the risk was obvious.
+**[Deliberate indifference](/terms-and-concepts/deliberate-indifference) requires awareness and failure to act.** A supervisory official must be aware of facts suggesting a substantial risk of serious harm and must draw the inference that such risk exists—but that inference can be proven circumstantially, including by showing the risk was obvious.
 
 **Volume of complaints is not an excuse.** A prison warden cannot escape liability simply because the prison receives thousands of complaints annually. Each complaint must be assessed on its own terms.
 
-**[Supervisory liability](/primer/supervisory-liability) requires a causal link.** To hold a supervisor liable, you must show: (1) the supervisor failed to train or supervise; (2) a causal connection between that failure and the violation of your rights; and (3) the failure amounted to deliberate indifference.
+**[Supervisory liability](/terms-and-concepts/supervisory-liability) requires a causal link.** To hold a supervisor liable, you must show: (1) the supervisor failed to train or supervise; (2) a causal connection between that failure and the violation of your rights; and (3) the failure amounted to deliberate indifference.
 
 ## Key Takeaway
 

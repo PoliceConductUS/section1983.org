@@ -47,7 +47,7 @@ The Fifth Circuit affirmed summary judgment for the defendants.
 
 On the excessive force claims, the court applied the [_Graham v. Connor_](/cases/graham-v-connor) objective reasonableness standard and the deadly force framework from [_Tennessee v. Garner_](/cases/tennessee-v-garner). The court found that the officers reasonably believed Carnaby posed a serious threat of death or great bodily harm. He had fled from police at high speeds, was known to possess a concealed weapons permit, and reached toward an area of his vehicle where a loaded gun was later found. Under these circumstances, the use of deadly force was objectively reasonable.
 
-The court also found the officers entitled to [qualified immunity](/primer/qualified-immunity), as no clearly established law prohibited the use of deadly force under these circumstances.
+The court also found the officers entitled to [qualified immunity](/terms-and-concepts/qualified-immunity), as no clearly established law prohibited the use of deadly force under these circumstances.
 
 On the municipal liability claim against the City, the court applied [_Piotrowski v. City of Houston_](/cases/piotrowski-v-city-of-houston) and found no evidence of an official policy or custom that was the moving force behind the alleged violation.
 

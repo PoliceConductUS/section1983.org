@@ -22,13 +22,13 @@ citedBy:
 
 A group of female employees of the New York City Department of Social Services and the Board of Education were forced to take unpaid maternity leave well before it was medically necessary. The city had an official policy requiring pregnant employees to leave work before the end of their pregnancy — regardless of whether they could still do their jobs.
 
-The women sued under [§ 1983](/primer/section-1983), naming the Department, the Board of Education, the city of New York, and their respective leaders as defendants. Each individual was sued only in their official capacity. The women sought backpay for the periods of unconstitutional forced leave.
+The women sued under [§ 1983](/terms-and-concepts/section-1983), naming the Department, the Board of Education, the city of New York, and their respective leaders as defendants. Each individual was sued only in their official capacity. The women sought backpay for the periods of unconstitutional forced leave.
 
 The problem was _Monroe v. Pape_ (1961), which had held that municipalities were completely immune from suit under § 1983. Under _Monroe_, even though the city's policy was unconstitutional, the city itself couldn't be sued. The District Court and Court of Appeals both followed _Monroe_ and denied backpay, reasoning that any damages would ultimately come from the city's coffers.
 
 ## What the Court Decided
 
-In a landmark 7-2 decision written by Justice Brennan, the Supreme Court overruled _Monroe v. Pape_ and held that local governments are "persons" subject to suit under § 1983. The Court undertook an exhaustive re-examination of the legislative history of the Civil Rights Act of 1871 and concluded that _Monroe_ had misread the historical record. Congress in 1871 did intend municipalities to be covered by the statute.
+In a landmark 7-2 decision written by Justice Brennan, the Supreme Court overruled _Monroe v. Pape_ and held that local governments are "persons" subject to suit under § 1983. The Court undertook an exhaustive re-examination of the legislative history of the Civil Rights Act of 1871, also called the Ku Klux Klan Act, and concluded that _Monroe_ had misread the historical record. Congress in 1871 did intend municipalities to be covered by the statute.
 
 But the Court drew a critical line: a municipality can be sued only when the constitutional violation was caused by an official "policy statement, ordinance, regulation, or decision officially adopted or promulgated by those whose edicts or acts may fairly be said to represent official policy." 436 U.S. at 690. Cities can also be liable for constitutional deprivations caused by governmental "custom" even if that custom hasn't been formally adopted through official channels.
 
@@ -38,9 +38,9 @@ However — and this is the part that matters most in practice — "a local gove
 
 _Monell_ opened the courthouse door to suits against cities, counties, school boards, and other local government entities — but it installed a demanding gatekeeper. The "no _respondeat superior_" rule means that the most common scenario — a single officer violating your rights — isn't enough by itself to establish municipal liability. You need to connect the officer's conduct to something bigger: a policy, a custom, a failure to train, or a deliberate choice by a final policymaker.
 
-This matters enormously because [qualified immunity](/primer/qualified-immunity) often shields individual officers from damages. If you can't get past QI against the officer and you can't establish _Monell_ liability against the city, you have no one left to pay damages — even if your rights were clearly violated.
+This matters enormously because [qualified immunity](/terms-and-concepts/qualified-immunity) often shields individual officers from damages. If you can't get past QI against the officer and you can't establish _Monell_ liability against the city, you have no one left to pay damages — even if your rights were clearly violated.
 
-_Monell_ also established that municipalities cannot claim [qualified immunity](/primer/qualified-immunity). Unlike individual officers, cities are on the hook if their policies or customs cause constitutional violations, regardless of whether the illegality was "clearly established."
+_Monell_ also established that municipalities cannot claim [qualified immunity](/terms-and-concepts/qualified-immunity). Unlike individual officers, cities are on the hook if their policies or customs cause constitutional violations, regardless of whether the illegality was "clearly established."
 
 ## How You Can Use It
 

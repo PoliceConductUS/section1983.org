@@ -14,7 +14,7 @@ citedBy:
 
 ## What This Case Is About
 
-After Hurricane Katrina devastated New Orleans in 2005, homeowners filed massive insurance claims. Insurers argued the damage was caused by flooding (excluded from most policies) rather than wind (covered). This Fifth Circuit case, while primarily about insurance coverage, became one of the earliest and most-cited applications of the Supreme Court's _Twombly_ [plausibility pleading](/primer/plausibility-pleading) standard in the Fifth Circuit, making it a key procedural citation in [§ 1983](/primer/section-1983) litigation.
+After Hurricane Katrina devastated New Orleans in 2005, homeowners filed massive insurance claims. Insurers argued the damage was caused by flooding (excluded from most policies) rather than wind (covered). This Fifth Circuit case, while primarily about insurance coverage, became one of the earliest and most-cited applications of the Supreme Court's _Twombly_ [plausibility pleading](/terms-and-concepts/plausibility-pleading) standard in the Fifth Circuit, making it a key procedural citation in [§ 1983](/terms-and-concepts/section-1983) litigation.
 
 ## The Facts
 
@@ -24,21 +24,21 @@ The insurers moved to dismiss, arguing that the flood exclusion clauses in their
 
 ## What the Court Decided
 
-The Fifth Circuit addressed the [motion to dismiss](/primer/motion-to-dismiss) standard, articulating the test that would become standard in the circuit: "The ultimate question in a Rule 12(b)(6) motion is whether the complaint states a valid claim when all well-pleaded facts are assumed true and are viewed in the light most favorable to the plaintiff." The court applied the then-new [plausibility standard](/primer/plausibility-pleading) from [_Bell Atlantic Corp. v. Twombly_](/cases/bell-atlantic-corp-v-twombly) — decided just two months earlier — holding that a complaint must state enough facts to "raise a right to relief above the speculative level."
+The Fifth Circuit addressed the [motion to dismiss](/terms-and-concepts/motion-to-dismiss) standard, articulating the test that would become standard in the circuit: "The ultimate question in a Rule 12(b)(6) motion is whether the complaint states a valid claim when all well-pleaded facts are assumed true and are viewed in the light most favorable to the plaintiff." The court applied the then-new [plausibility standard](/terms-and-concepts/plausibility-pleading) from [_Bell Atlantic Corp. v. Twombly_](/cases/bell-atlantic-corp-v-twombly) — decided just two months earlier — holding that a complaint must state enough facts to "raise a right to relief above the speculative level."
 
 On the merits, the court analyzed the insurance policies' anti-concurrent-cause clauses and flood exclusions, ultimately ruling that the exclusions applied to bar coverage for flood damage regardless of whether wind was a concurrent cause. The court held that the policies' plain language excluded damage from flooding, even when it occurred alongside wind damage.
 
 ## Why This Case Matters for Your § 1983 Case
 
-Although _In re Katrina_ is an insurance case, it matters for [§ 1983](/primer/section-1983) practitioners because it is one of the most frequently cited Fifth Circuit cases for the [motion to dismiss](/primer/motion-to-dismiss) standard. When courts in the Fifth Circuit evaluate a [motion to dismiss](/primer/motion-to-dismiss) your civil rights complaint, they routinely cite this case for the proposition that:
+Although _In re Katrina_ is an insurance case, it matters for [§ 1983](/terms-and-concepts/section-1983) practitioners because it is one of the most frequently cited Fifth Circuit cases for the [motion to dismiss](/terms-and-concepts/motion-to-dismiss) standard. When courts in the Fifth Circuit evaluate a [motion to dismiss](/terms-and-concepts/motion-to-dismiss) your civil rights complaint, they routinely cite this case for the proposition that:
 
 - All well-pleaded facts are assumed true
 - Facts are viewed in the light most favorable to the plaintiff
 - The complaint must state a claim that is "plausible on its face"
 - The court's review is limited to the complaint, documents attached to it, and documents central to the claim referenced by the complaint
 
-This formulation appears in hundreds of Fifth Circuit opinions addressing [§ 1983](/primer/section-1983) claims, including cases involving [qualified immunity](/primer/qualified-immunity), [Monell liability](/primer/monell-liability), and [failure to train](/primer/failure-to-train).
+This formulation appears in hundreds of Fifth Circuit opinions addressing [§ 1983](/terms-and-concepts/section-1983) claims, including cases involving [qualified immunity](/terms-and-concepts/qualified-immunity), [Monell liability](/terms-and-concepts/monell-liability), and [failure to train](/terms-and-concepts/failure-to-train).
 
 ## Key Takeaway
 
-_In re Katrina Canal Breaches Litigation_ is the Fifth Circuit's foundational articulation of the post-_Twombly_ [motion to dismiss](/primer/motion-to-dismiss) standard — requiring that a complaint's well-pleaded facts, taken as true, state a plausible claim for relief — and it is routinely cited in [§ 1983](/primer/section-1983) cases across the circuit.
+_In re Katrina Canal Breaches Litigation_ is the Fifth Circuit's foundational articulation of the post-_Twombly_ [motion to dismiss](/terms-and-concepts/motion-to-dismiss) standard — requiring that a complaint's well-pleaded facts, taken as true, state a plausible claim for relief — and it is routinely cited in [§ 1983](/terms-and-concepts/section-1983) cases across the circuit.

@@ -27,13 +27,13 @@ citedBy: []
 
 ## What This Case Is About
 
-Whitley v. Hanna involves a [§ 1983](/primer/section-1983) lawsuit brought by a plaintiff who was wrongfully prosecuted based on fabricated evidence and the suppression of exculpatory material. The case addresses the intersection of Brady v. Maryland obligations and § 1983 liability—specifically, when law enforcement officers can be held personally liable for withholding evidence favorable to the accused that could have changed the outcome of a prosecution. The Fifth Circuit reversed summary judgment for the defendants, finding genuine fact issues about whether officers fabricated evidence and suppressed material exculpatory information.
+Whitley v. Hanna involves a [§ 1983](/terms-and-concepts/section-1983) lawsuit brought by a plaintiff who was wrongfully prosecuted based on fabricated evidence and the suppression of exculpatory material. The case addresses the intersection of Brady v. Maryland obligations and § 1983 liability—specifically, when law enforcement officers can be held personally liable for withholding evidence favorable to the accused that could have changed the outcome of a prosecution. The Fifth Circuit reversed summary judgment for the defendants, finding genuine fact issues about whether officers fabricated evidence and suppressed material exculpatory information.
 
 ## The Facts
 
 The plaintiff was charged with a serious crime based on evidence gathered by law enforcement. During the investigation, officers allegedly fabricated certain evidence linking the plaintiff to the crime and suppressed exculpatory evidence that would have undermined the prosecution's case. The exculpatory evidence included information favorable to the defense that the officers were aware of but failed to disclose to prosecutors or the defense.
 
-The plaintiff was ultimately exonerated and filed a § 1983 action against the individual officers, alleging violations of due process under the [Fourteenth Amendment](/primer/fourteenth-amendment). The claims centered on two theories: (1) that officers fabricated evidence used against the plaintiff, and (2) that officers withheld material exculpatory evidence in violation of Brady v. Maryland, 373 U.S. 83 (1963).
+The plaintiff was ultimately exonerated and filed a § 1983 action against the individual officers, alleging violations of due process under the [Fourteenth Amendment](/terms-and-concepts/fourteenth-amendment). The claims centered on two theories: (1) that officers fabricated evidence used against the plaintiff, and (2) that officers withheld material exculpatory evidence in violation of Brady v. Maryland, 373 U.S. 83 (1963).
 
 The district court granted summary judgment in favor of the defendant officers on qualified immunity grounds.
 

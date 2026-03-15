@@ -17,7 +17,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_Gallagher v. State_ is a Texas state criminal case addressing when police have [probable cause](/primer/probable-cause) to make a warrantless arrest for public intoxication. While not a [§ 1983](/primer/section-1983) case itself, it is relevant to civil rights litigation because it establishes the circumstances under which an officer's arrest for public intoxication is supported by probable cause — the absence of which is the foundation of a [false arrest](/primer/false-arrest) claim.
+_Gallagher v. State_ is a Texas state criminal case addressing when police have [probable cause](/terms-and-concepts/probable-cause) to make a warrantless arrest for public intoxication. While not a [§ 1983](/terms-and-concepts/section-1983) case itself, it is relevant to civil rights litigation because it establishes the circumstances under which an officer's arrest for public intoxication is supported by probable cause — the absence of which is the foundation of a [false arrest](/terms-and-concepts/false-arrest) claim.
 
 ## The Facts
 
@@ -35,10 +35,10 @@ The court found that Officer Torres had probable cause based on the combination 
 
 ## Why This Case Matters for Your § 1983 Case
 
-If you were arrested for public intoxication and are considering a [false arrest](/primer/false-arrest) claim under § 1983, _Gallagher_ illustrates how broadly Texas courts interpret the "danger to self or others" element. Courts have found this element satisfied even when the suspect was merely near a vehicle while intoxicated — not actually driving. This makes public intoxication arrests difficult to challenge on probable cause grounds.
+If you were arrested for public intoxication and are considering a [false arrest](/terms-and-concepts/false-arrest) claim under § 1983, _Gallagher_ illustrates how broadly Texas courts interpret the "danger to self or others" element. Courts have found this element satisfied even when the suspect was merely near a vehicle while intoxicated — not actually driving. This makes public intoxication arrests difficult to challenge on probable cause grounds.
 
 However, the case also shows the importance of reliable informant information. The officer here had specific, detailed information from an identified citizen who personally witnessed Gallagher's condition. An arrest based on a vague anonymous tip, without the officer's own corroborating observations, would stand on weaker footing.
 
 ## Key Takeaway
 
-Texas courts interpret public intoxication probable cause broadly — being visibly intoxicated near a vehicle on a public road can be enough, even if the suspect was a passenger. For [false arrest](/primer/false-arrest) claims, this means challenging public intoxication arrests requires showing either that the person was not actually intoxicated or that they posed no plausible danger. The combination of a reliable citizen report plus the officer's own observations creates strong probable cause that is difficult to overcome.
+Texas courts interpret public intoxication probable cause broadly — being visibly intoxicated near a vehicle on a public road can be enough, even if the suspect was a passenger. For [false arrest](/terms-and-concepts/false-arrest) claims, this means challenging public intoxication arrests requires showing either that the person was not actually intoxicated or that they posed no plausible danger. The combination of a reliable citizen report plus the officer's own observations creates strong probable cause that is difficult to overcome.

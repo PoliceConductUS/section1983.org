@@ -61,7 +61,7 @@ Buehler v. Dear is significant for several reasons:
 
 - **The right to record police has limits.** While [_Turner v. Driver_](/cases/turner-v-driver) established that citizens have a First Amendment right to film police performing their duties in public, Buehler shows that this right must be balanced against officers' need to perform their duties without physical interference.
 
-- **"Arguable probable cause" protects officers.** For [qualified immunity](/primer/qualified-immunity) purposes, an officer need not have actual probable cause — only "arguable" probable cause. If reasonable officers could disagree about whether the circumstances justified an arrest, qualified immunity applies.
+- **"Arguable probable cause" protects officers.** For [qualified immunity](/terms-and-concepts/qualified-immunity) purposes, an officer need not have actual probable cause — only "arguable" probable cause. If reasonable officers could disagree about whether the circumstances justified an arrest, qualified immunity applies.
 
 - **Excessive force is fact-specific.** Even where an arrest is lawful, the force used to effectuate it must be reasonable under the [_Graham v. Connor_](/cases/graham-v-connor) framework. Minor offenses generally do not justify significant force.
 

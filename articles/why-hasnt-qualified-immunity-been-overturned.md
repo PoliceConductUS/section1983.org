@@ -1,19 +1,19 @@
 ---
 title: "Why Hasn't Qualified Immunity Been Overturned?"
 description: "The Supreme Court invented qualified immunity with no statutory basis. Congress has tried and failed to remove it. Here's why it persists — and what would have to change."
-pubDate: 2026-04-06
+pubDate: 2026-02-27
 author: "Institute for Police Conduct, Inc."
 tags: ["qualified-immunity", "scotus", "policy", "deep-dive"]
-draft: true
+draft: false
 ---
 
-[Section 1983](/primer/section-1983) says that any person who, under color of law, deprives someone of their constitutional rights "shall be liable." No exceptions. No immunity clause. No escape hatch.
+[Section 1983](/terms-and-concepts/section-1983) says that any person who, under color of law, deprives someone of their constitutional rights "shall be liable." The statute does not contain a qualified-immunity exception.
 
-[Qualified immunity](/primer/qualified-immunity) appears nowhere in that statute. It appears nowhere in the Constitution. Congress never voted on it. No president signed it into law.
+[Qualified immunity](/terms-and-concepts/qualified-immunity) does not appear in that statute. It does not appear in the Constitution. Congress did not vote on it, and no president signed it into law.
 
-The Supreme Court made it up.
+The Supreme Court created it.
 
-That's not a rhetorical flourish — it's a factual description. The Court created qualified immunity in [_Pierson v. Ray_](/cases/pierson-v-ray) (1967), expanded it dramatically in _Harlow v. Fitzgerald_ (1982), and has been tightening it ever since. The result is a judge-made doctrine that effectively overrides the plain text of a statute passed by Congress and signed by the President in 1871.
+That is a factual description. The Court created qualified immunity in [_Pierson v. Ray_](/cases/pierson-v-ray) (1967), expanded it dramatically in [_Harlow v. Fitzgerald_](/cases/harlow-v-fitzgerald) (1982), and has been tightening it ever since. The result is a court-created doctrine that effectively overrides the plain text of a statute passed by Congress and signed by the President in 1871.
 
 The obvious question is: why hasn't it been overturned?
 
@@ -29,21 +29,21 @@ Start with the text. Section 1983 reads:
 
 The current codified text is already bad news for qualified immunity. But the original 1871 enactment was even more explicit.
 
-When Congress passed the Civil Rights Act of 1871, it did not just say state actors who violate constitutional rights "shall be liable." It added a reinforcing clause making that liability apply notwithstanding any contrary state "law, statute, ordinance, regulation, custom, or usage."
+When Congress passed the Civil Rights Act of 1871, also called the Ku Klux Klan Act, it said state actors who violate constitutional rights "shall be liable." It also added a reinforcing clause making that liability apply notwithstanding any contrary state "law, statute, ordinance, regulation, custom, or usage."
 
 That matters because qualified immunity was justified in [_Pierson v. Ray_](/cases/pierson-v-ray) as a carryover from common-law defenses. The original statute anticipated exactly that kind of move and told courts not to do it. If state law, state custom, or state common-law immunity pointed one way, and the federal statute pointed the other, the federal statute controlled.
 
 Three years later, when Congress reorganized the federal statutes in the Revised Statutes of 1874, that "notwithstanding" language was omitted from the codified text. Qualified-immunity defenders sometimes treat that omission as proof that the clause does not matter. The better historical reading is the opposite: nineteenth-century codifiers routinely cut repetitive "notwithstanding" clauses for concision without changing substance. The point of the 1874 revision was to condense and reorganize the federal statutes, not quietly restore defenses that the 42nd Congress had just displaced.
 
-So the historical problem for qualified immunity is not just that modern § 1983 says "shall be liable." It is that the original Congress said so in even more emphatic terms, and specifically signaled that contrary state-law rules were not supposed to survive.
+So the historical problem for qualified immunity is larger than the modern text saying "shall be liable." The original Congress said so in even more emphatic terms and specifically signaled that contrary state-law rules were not supposed to survive.
 
 The Court's original justification in _Pierson_ was that common-law defenses of good faith and probable cause survived the statute's enactment. But in _Harlow_, the Court stripped out the good-faith requirement entirely — replacing the subjective "did the officer act in good faith?" with the objective "was the right clearly established?" That severed even the tenuous connection to historical common law.
 
-What remains is a doctrine with no textual basis, no historical basis, and no democratic legitimacy. The Supreme Court has no Article I legislative power. The Constitution grants lawmaking authority to Congress alone. Qualified immunity is judge-made legislation pretending to be statutory interpretation.
+What remains is a doctrine with no textual basis, no historical basis, and no democratic legitimacy. The Supreme Court has no Article I legislative power. The Constitution gives lawmaking authority to Congress. Qualified immunity is a court-created rule now being treated as if Congress had written it into the statute.
 
 ## Under the Court's own framework, QI can't survive
 
-The current Supreme Court majority is committed to textualism — the principle that statutes mean what they say. In _Bostock v. Clayton County_ (2020), Justice Gorsuch wrote for the majority: "Only the written word is the law, and all persons are entitled to its benefit."
+The current Supreme Court majority is committed to textualism — the principle that statutes mean what they say. In [_Bostock v. Clayton County_](/cases/bostock-v-clayton-county) (2020), Justice Gorsuch wrote for the majority: "Only the written word is the law, and all persons are entitled to its benefit."
 
 Apply that principle to § 1983. The written word says "shall be liable." There is no immunity exception. Under honest textualist analysis, qualified immunity cannot survive.
 
@@ -57,7 +57,7 @@ If any lower court had invented a doctrine that contradicted the plain text of a
 
 Overturning qualified immunity means admitting that the Court — not a lower court, not a legislature, not an executive agency — created an illegitimate doctrine that has blocked accountability for constitutional violations for 55+ years. The Court rarely admits error on this scale.
 
-But it has before. _Brown v. Board of Education_ overturned _Plessy v. Ferguson_ after 58 years. _Dobbs v. Jackson_ overturned _Roe v. Wade_ after 49 years. The Court is capable of reversing long-standing precedent when a majority decides the original decision was wrong. The question is whether a majority of the current Court believes qualified immunity was wrong — and whether they're willing to say so.
+But it has before. [_Brown v. Board of Education_](/cases/brown-v-board-of-education) overturned [_Plessy v. Ferguson_](/cases/plessy-v-ferguson) after 58 years. [_Dobbs v. Jackson Women's Health Organization_](/cases/dobbs-v-jackson-womens-health-organization) overturned [_Roe v. Wade_](/cases/roe-v-wade) after 49 years. The Court is capable of reversing long-standing precedent when a majority decides the original decision was wrong. The question is whether a majority of the current Court believes qualified immunity was wrong and whether they're willing to say so.
 
 ### The floodgates argument
 
@@ -69,7 +69,7 @@ This argument has several problems:
 
 **Other countries don't have qualified immunity and function fine.** The United Kingdom, Canada, and most European democracies hold government officials accountable for constitutional violations without a clearly-established-law shield. Their police forces still function. Their courts aren't overwhelmed.
 
-**Officers are almost always indemnified.** Studies consistently show that individual officers virtually never pay § 1983 judgments out of pocket. The municipality pays. Removing QI wouldn't bankrupt officers — it would make cities pay for the constitutional violations their employees commit. That's an incentive to train better, supervise better, and discipline officers who violate rights.
+**Officers are usually indemnified.** Studies consistently show that individual officers rarely pay § 1983 judgments out of pocket. The municipality usually pays. Removing QI would shift more financial pressure onto cities, which can create stronger incentives to train better, supervise better, and discipline officers who violate rights.
 
 ### Political pressure
 
@@ -83,7 +83,7 @@ The most effective way the Court protects qualified immunity is the simplest: it
 
 In June 2020 — weeks after George Floyd's murder, with nationwide protests demanding police accountability — the Court denied certiorari in every pending qualified immunity case. Over a dozen petitions, presenting various fact patterns and legal arguments for reconsidering the doctrine, were all declined without comment.
 
-The Court doesn't have to defend qualified immunity if it never agrees to hear the arguments against it.
+The Court does not have to defend qualified immunity if it never agrees to hear the arguments against it.
 
 ## Why Congress hasn't fixed it
 
@@ -91,7 +91,7 @@ The Court doesn't have to defend qualified immunity if it never agrees to hear t
 
 The **George Floyd Justice in Policing Act** passed the House of Representatives in March 2021. Section 102 would have eliminated qualified immunity for law enforcement officers in § 1983 actions. The bill died in the Senate without a floor vote.
 
-The **Ending Qualified Immunity Act** has been introduced in multiple sessions of Congress. It has never received a committee vote.
+The **Ending Qualified Immunity Act** has been introduced in multiple sessions of Congress. It has not received a committee vote.
 
 ### The political math
 
@@ -125,9 +125,9 @@ While federal qualified immunity remains untouched, several states have created 
 
 But state reforms only apply to state-law claims. Federal § 1983 qualified immunity remains unchanged, because only Congress or the Supreme Court can modify it.
 
-## The catch-22 of challenging QI at SCOTUS
+## Why challenging QI at SCOTUS is so hard
 
-Getting a case to the Supreme Court costs $100,000 to $500,000+ in legal fees. The people most harmed by qualified immunity — people whose rights were violated by police — are disproportionately people who can't afford attorneys. That's why so many § 1983 plaintiffs are [pro se](/primer/pro-se) in the first place.
+Getting a case to the Supreme Court costs $100,000 to $500,000+ in legal fees. The people most harmed by qualified immunity — people whose rights were violated by police — are disproportionately people who can't afford attorneys. That's why so many § 1983 plaintiffs are [pro se](/terms-and-concepts/pro-se) in the first place.
 
 Civil rights organizations pick their vehicles carefully, crafting cert petitions with the best possible fact patterns and legal arguments. And the Court keeps denying cert anyway.
 
@@ -151,19 +151,19 @@ The most realistic path is probably a combination: continued state-level reform 
 
 In 1871, Congress said: if a government official violates your constitutional rights, they are liable.
 
-In 1967, the Supreme Court said: actually, not unless a prior case already told them it was wrong.
+In 1967, the Supreme Court said: not unless a prior case already gave officers enough notice that it was wrong.
 
 In 1982, the Court said: and it doesn't matter whether they personally knew it was wrong — only whether the law was "clearly established."
 
 In 2009, the Court said: and courts don't even have to decide whether it _was_ wrong — they can dismiss on "not clearly established" without ever ruling on the constitutional question. ([_Pearson v. Callahan_](/cases/pearson-v-callahan))
 
-No one voted for any of this. The people who benefit from qualified immunity — government officials — are the ones who get to decide whether to keep it. And the people harmed by it — citizens whose constitutional rights were violated — can't afford to challenge it at the only court that can change it.
+Congress did not vote for any of this. The people who benefit from qualified immunity often have the institutional power and resources to defend it. The people harmed by it often do not have the money or access needed to challenge it at the only court that can change it.
 
-That's not a legal doctrine. That's a moat.
+That is why qualified immunity can feel less like a neutral rule and more like a barrier built to protect the government from suit.
 
 ## What you can do
 
-**Challenge QI in your briefing.** Even if you lose on qualified immunity, make the court address it. Force the judge to write the words: "The officer violated the plaintiff's constitutional rights, but qualified immunity bars the claim." Every time a court says that out loud, it adds to the public record of the doctrine's absurdity.
+**Challenge QI in your briefing.** Even if you lose on qualified immunity, make the court address it. Force the judge to write the words: "The officer violated your constitutional rights, but qualified immunity bars the claim." Every time a court says that out loud, it adds to the public record of the doctrine's absurdity.
 
 **Support state-level reform.** Contact your state legislators about creating a state civil rights act without qualified immunity. Colorado, New Mexico, and Connecticut showed it's possible.
 
@@ -177,4 +177,4 @@ The doctrine is indefensible on textual, historical, and democratic grounds. The
 
 ---
 
-_For more on how qualified immunity works in practice, read our primer on [qualified immunity](/primer/qualified-immunity) and [clearly established law](/primer/clearly-established-law). For the argument that QI should be reformed through legislation, see the primer on [qualified immunity reform](/primer/qualified-immunity-reform)._
+_For more on how qualified immunity works in practice, read [Terms and Concepts: Qualified Immunity](/terms-and-concepts/qualified-immunity) and [Terms and Concepts: Clearly Established Law](/terms-and-concepts/clearly-established-law). For the argument that QI should be reformed through legislation, see [Terms and Concepts: Qualified Immunity Reform](/terms-and-concepts/qualified-immunity-reform)._
