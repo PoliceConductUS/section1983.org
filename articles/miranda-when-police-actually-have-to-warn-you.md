@@ -93,7 +93,7 @@ If the answer is no, then the absence of warnings may not matter much.
 
 A Miranda problem does not automatically become a Section 1983 claim.
 
-That is especially important after _Vega v. Tekoh_. A warning violation by itself is not enough for a damages claim under Section 1983.
+That is especially important after [_Vega v. Tekoh_](/cases/vega-v-tekoh). A warning violation by itself is not enough for a damages claim under Section 1983.
 
 That means your stronger civil-rights theory is often not "they forgot to Mirandize me." It is usually one of these:
 

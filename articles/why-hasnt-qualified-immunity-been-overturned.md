@@ -13,7 +13,7 @@ draft: false
 
 The Supreme Court created it.
 
-That is a factual description. The Court created qualified immunity in [_Pierson v. Ray_](/cases/pierson-v-ray) (1967), expanded it dramatically in _Harlow v. Fitzgerald_ (1982), and has been tightening it ever since. The result is a court-created doctrine that effectively overrides the plain text of a statute passed by Congress and signed by the President in 1871.
+That is a factual description. The Court created qualified immunity in [_Pierson v. Ray_](/cases/pierson-v-ray) (1967), expanded it dramatically in [_Harlow v. Fitzgerald_](/cases/harlow-v-fitzgerald) (1982), and has been tightening it ever since. The result is a court-created doctrine that effectively overrides the plain text of a statute passed by Congress and signed by the President in 1871.
 
 The obvious question is: why hasn't it been overturned?
 
@@ -43,7 +43,7 @@ What remains is a doctrine with no textual basis, no historical basis, and no de
 
 ## Under the Court's own framework, QI can't survive
 
-The current Supreme Court majority is committed to textualism — the principle that statutes mean what they say. In _Bostock v. Clayton County_ (2020), Justice Gorsuch wrote for the majority: "Only the written word is the law, and all persons are entitled to its benefit."
+The current Supreme Court majority is committed to textualism — the principle that statutes mean what they say. In [_Bostock v. Clayton County_](/cases/bostock-v-clayton-county) (2020), Justice Gorsuch wrote for the majority: "Only the written word is the law, and all persons are entitled to its benefit."
 
 Apply that principle to § 1983. The written word says "shall be liable." There is no immunity exception. Under honest textualist analysis, qualified immunity cannot survive.
 
@@ -57,7 +57,7 @@ If any lower court had invented a doctrine that contradicted the plain text of a
 
 Overturning qualified immunity means admitting that the Court — not a lower court, not a legislature, not an executive agency — created an illegitimate doctrine that has blocked accountability for constitutional violations for 55+ years. The Court rarely admits error on this scale.
 
-But it has before. _Brown v. Board of Education_ overturned _Plessy v. Ferguson_ after 58 years. _Dobbs v. Jackson_ overturned _Roe v. Wade_ after 49 years. The Court is capable of reversing long-standing precedent when a majority decides the original decision was wrong. The question is whether a majority of the current Court believes qualified immunity was wrong — and whether they're willing to say so.
+But it has before. [_Brown v. Board of Education_](/cases/brown-v-board-of-education) overturned [_Plessy v. Ferguson_](/cases/plessy-v-ferguson) after 58 years. [_Dobbs v. Jackson Women's Health Organization_](/cases/dobbs-v-jackson-womens-health-organization) overturned [_Roe v. Wade_](/cases/roe-v-wade) after 49 years. The Court is capable of reversing long-standing precedent when a majority decides the original decision was wrong. The question is whether a majority of the current Court believes qualified immunity was wrong and whether they're willing to say so.
 
 ### The floodgates argument
 
@@ -163,7 +163,7 @@ That is why qualified immunity can feel less like a neutral rule and more like a
 
 ## What you can do
 
-**Challenge QI in your briefing.** Even if you lose on qualified immunity, make the court address it. Force the judge to write the words: "The officer violated the plaintiff's constitutional rights, but qualified immunity bars the claim." Every time a court says that out loud, it adds to the public record of the doctrine's absurdity.
+**Challenge QI in your briefing.** Even if you lose on qualified immunity, make the court address it. Force the judge to write the words: "The officer violated your constitutional rights, but qualified immunity bars the claim." Every time a court says that out loud, it adds to the public record of the doctrine's absurdity.
 
 **Support state-level reform.** Contact your state legislators about creating a state civil rights act without qualified immunity. Colorado, New Mexico, and Connecticut showed it's possible.
 

@@ -121,7 +121,7 @@ This trips up many pro se litigants.
 - **[Individual capacity](/terms-and-concepts/individual-capacity)**: you are suing the officer personally for damages. The officer can raise [qualified immunity](/terms-and-concepts/qualified-immunity).
 - **[Official capacity](/terms-and-concepts/official-capacity)**: you are really suing the government entity. You usually need a [Monell](/terms-and-concepts/monell-liability) theory.
 
-Most plaintiffs sue officers in individual capacity and bring a separate Monell claim against the city if the facts support it.
+Most people sue officers in individual capacity and bring a separate Monell claim against the city if the facts support it.
 
 ### Only plead a city claim if you have facts
 

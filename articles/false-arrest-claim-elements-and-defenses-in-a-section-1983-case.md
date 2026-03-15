@@ -27,7 +27,7 @@ The second point does most of the work. If probable cause existed, the claim usu
 
 Probable cause does not mean proof beyond a reasonable doubt. It does not even mean the officer was right. It means the facts known at the time would lead a reasonable officer to believe you committed an offense.
 
-That standard is lower than most plaintiffs expect.
+That standard is lower than most people expect.
 
 ## The most common defense
 
@@ -64,7 +64,7 @@ Even if the arrest looks weak, the officers will usually argue [qualified immuni
 
 In practice, many courts frame the qualified-immunity fight this way: even if actual probable cause was missing, was there at least **arguable probable cause**?
 
-That is a dangerous standard for plaintiffs because it gives the officer room to be wrong without being liable. Your job is to show that the arrest was bad and that no reasonable officer could have thought the facts added up to the offense.
+That is a dangerous standard for you because it gives the officer room to be wrong without being liable. Your job is to show that the arrest was bad and that no reasonable officer could have thought the facts added up to the offense.
 
 That means you should focus on:
 

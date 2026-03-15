@@ -151,7 +151,7 @@ Then they may pivot to:
 - the jail stay was short
 - the emotional harm is real but not worth much money
 - there was no lasting medical damage
-- the plaintiff did not mitigate the harm
+- you did not do enough to reduce the harm after it happened
 
 This matters because damages affect settlement pressure, [attorney fees](/terms-and-concepts/attorneys-fees), and whether the case looks worth the time.
 
@@ -207,7 +207,7 @@ Ask yourself:
 - what record would make that harder?
 - what part of my own behavior could they use to make me look unreasonable?
 
-If you can answer those questions now, you are already thinking more like a litigator and less like a surprised plaintiff.
+If you can answer those questions now, you are already thinking ahead instead of getting blindsided.
 
 ## The bottom line
 

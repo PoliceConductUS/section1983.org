@@ -108,7 +108,7 @@ Then end with one causation paragraph alleging that these municipal acts were th
 
 ## Ratification needs caution
 
-Many plaintiffs add ratification because the city did not discipline the officer afterward.
+Many people add ratification because the city did not discipline the officer afterward.
 
 That is usually weak by itself. If you plead ratification, do not make it the center of the count unless you have unusually strong facts, such as:
 
@@ -118,7 +118,7 @@ That is usually weak by itself. If you plead ratification, do not make it the ce
 
 ## Kitchen-sink pleading makes the whole Monell count look weak
 
-Judges often react badly when a plaintiff pleads every Monell theory available in one generic block. Instead of thinking "this plaintiff has many theories," the judge may think "this plaintiff does not know which theory actually fits."
+Judges often react badly when someone pleads every Monell theory available in one generic block. Instead of thinking "this person has many theories," the judge may think "this person does not know which theory actually fits."
 
 A focused complaint is more credible.
 

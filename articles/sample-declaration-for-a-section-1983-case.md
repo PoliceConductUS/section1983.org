@@ -7,15 +7,17 @@ tags: ["sample", "declaration", "evidence", "summary-judgment", "drafting"]
 draft: false
 ---
 
-If you are litigating a [Section 1983](/terms-and-concepts/section-1983) case [pro se](/terms-and-concepts/pro-se), a declaration is one of the few tools you control completely. It is how you turn your version of events into admissible evidence for motions, especially [summary judgment](/terms-and-concepts/summary-judgment). Done well, it can keep the court from treating the officers' affidavits as the only record.
+If you are litigating a [Section 1983](/terms-and-concepts/section-1983) case [pro se](/terms-and-concepts/pro-se), a declaration is one of the few evidence tools you control completely.
+
+Use it to turn your version of events into admissible evidence for motions, especially [summary judgment](/terms-and-concepts/summary-judgment). Done well, it can keep the court from treating the officers' affidavits as the only record.
 
 Read this alongside [how to write a declaration](/articles/how-to-write-a-declaration-in-a-section-1983-case), [sample Section 1983 complaint for a false arrest case](/articles/sample-section-1983-complaint-for-a-false-arrest-case), and [how to research clearly established law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case).
 
 ## What a declaration does
 
-A declaration is not argument. It is not a brief. It is not where you say the officers "violated clearly established law."
+A declaration gives the court your facts in a form it can use as evidence.
 
-It is where you say:
+Use it to say:
 
 - what you personally saw
 - what you personally heard
@@ -140,7 +142,7 @@ Declarations are especially important when:
 - authenticating records you obtained before filing
 - clarifying disputed facts after the defense misstates the record
 
-In many pro se cases, the declaration is the only competent evidence the plaintiff ever submits. Treat it accordingly.
+In many pro se cases, the declaration is the only competent evidence you ever submit. Treat it accordingly.
 
 ## Common mistakes
 

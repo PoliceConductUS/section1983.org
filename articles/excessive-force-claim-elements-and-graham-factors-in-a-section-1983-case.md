@@ -52,7 +52,7 @@ The court needs scene details. It does not need adjectives.
 
 ### Force against someone already under control
 
-This is often the strongest setup for a plaintiff. If you were handcuffed, face-down, pinned, or otherwise under control, later force is much harder for the defense to justify.
+This is often one of your strongest setups. If you were handcuffed, face-down, pinned, or otherwise under control, later force is much harder for the defense to justify.
 
 ### Force during a minor arrest
 

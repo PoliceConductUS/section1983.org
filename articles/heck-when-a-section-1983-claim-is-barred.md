@@ -39,10 +39,10 @@ The defense will try to connect your civil claim to the conviction or sentence i
 
 They will argue things like:
 
-- `This claim says the arrest had no lawful basis, but the plaintiff pleaded guilty.`
+- `This claim says the arrest had no lawful basis, but you pleaded guilty.`
 - `This claim says the officer fabricated facts, but the conviction still stands.`
 - `This claim says the stop, search, or seizure was unlawful, and winning would undercut the criminal result.`
-- `This plaintiff is trying to attack the conviction through a civil case instead of getting it overturned first.`
+- `This is really an attack on the conviction through a civil case instead of getting it overturned first.`
 
 Your job is to test whether that is actually true.
 

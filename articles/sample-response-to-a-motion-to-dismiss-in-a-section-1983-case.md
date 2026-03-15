@@ -7,7 +7,9 @@ tags: ["sample", "motion-to-dismiss", "iqbal", "qualified-immunity", "monell"]
 draft: false
 ---
 
-Most [Section 1983](/terms-and-concepts/section-1983) cases do not reach discovery cleanly. The first real fight is often the [motion to dismiss](/terms-and-concepts/motion-to-dismiss). That is where defendants argue your complaint is too vague, your [Monell](/terms-and-concepts/monell-liability) allegations are conclusory, and the officers are entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) before any evidence is exchanged.
+If the defense files a [motion to dismiss](/terms-and-concepts/motion-to-dismiss), your job is to show the judge exactly which facts in your complaint make each claim plausible.
+
+This is often the first real fight in a [Section 1983](/terms-and-concepts/section-1983) case. The defense will say your complaint is too vague, your [Monell](/terms-and-concepts/monell-liability) allegations are conclusory, and the officers should get [qualified immunity](/terms-and-concepts/qualified-immunity) before any evidence is exchanged.
 
 This sample is a model for structure, not a document to copy word for word. Use it with [how to write your complaint](/articles/how-to-write-a-section-1983-complaint), [sample false arrest complaint](/articles/sample-section-1983-complaint-for-a-false-arrest-case), and [how to research clearly established law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case).
 
@@ -118,7 +120,7 @@ If your circuit has a close factual analogue, cite it. If not, explain why the c
 
 ## What to attach and what not to attach
 
-In many districts, a Rule 12(b)(6) motion is decided on the pleadings. Do not assume you can fix a bad complaint by attaching evidence to the response. Sometimes the court will ignore it. Sometimes attaching extra materials risks converting the motion into one for summary judgment.
+In many districts, the judge decides this kind of dismissal motion from the complaint itself. Do not assume you can fix a bad complaint by attaching evidence to the response. Sometimes the court will ignore it. Sometimes attaching extra materials risks converting the motion into one for summary judgment.
 
 The better approach is:
 

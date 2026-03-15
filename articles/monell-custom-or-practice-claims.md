@@ -38,7 +38,7 @@ Five unrelated complaints may do less work than three highly similar incidents i
 
 Weak custom pleading often looks like:
 
-- one incident involving the plaintiff only
+- one incident involving only you
 - a handful of vague accusations with no dates
 - incidents that are too different from each other
 - no facts showing notice to policymakers
@@ -85,7 +85,7 @@ Custom without notice is much weaker.
 
 ## Why custom claims matter so much
 
-Custom claims often do the work plaintiffs wish respondeat superior would do.
+Custom claims often do the work people wish ordinary employer liability would do.
 
 They let you argue that the city's real operating rule was not the formal manual, but the repeated tolerated practice.
 

@@ -15,8 +15,8 @@ That makes defendant ordering a strategic choice, not an administrative one. If 
 
 Consider the difference:
 
-- **Turner v. Driver** — you know immediately this case involves an officer named Driver
-- **Turner v. City of Arlington** — the officer disappears into the city's docket of hundreds of lawsuits
+- **[_Turner v. Driver_](/cases/turner-v-driver)** — you know immediately this case involves an officer named Driver
+- **Turner v. the City** — the officer disappears into the city's docket of hundreds of lawsuits
 
 In the first version, Officer Driver's name is permanently associated with a federal civil rights lawsuit. If Driver applies to another department, a background search surfaces the case. If another citizen sues Driver later, your case shows up as pattern evidence. If a journalist investigates the department, Driver's name is in the public record.
 
@@ -59,9 +59,9 @@ When several officers participated in the violation, choose the one whose name y
 
 Some pro se litigants put the municipality first because it feels like naming the bigger, more important defendant. This is a mistake.
 
-**Lotts v. City of Irving** tells you nothing about which officers were involved. The City of Irving has been sued many times. Your case is one line in a long docket.
+**Your Name v. the City** tells you nothing about which officers were involved. The city has been sued many times. Your case is one line in a long docket.
 
-**Lotts v. Winegarner** tells you exactly which officer is accused of violating constitutional rights. That name is now permanently linked to a § 1983 case. Every future search for "Officer Winegarner" surfaces the lawsuit.
+**Your Name v. Winegarner** tells you exactly which officer is accused of violating constitutional rights. That name is now permanently linked to a § 1983 case. Every future search for "Officer Winegarner" surfaces the lawsuit.
 
 The municipality doesn't care about its name in a case caption — it has institutional resources and legal departments. The individual officer _should_ care. That's the point.
 
@@ -83,7 +83,7 @@ Your case name does more than label the file. It becomes a searchable, permanent
 
 Case names can change as a case moves through the system. Defendants get substituted — officers leave the department, official-capacity defendants change when a new chief is appointed.
 
-The most famous example: the case that became _Taylor v. Riojas_ at the Supreme Court started as _Taylor v. Stevens_ at the district court level. When the warden changed, the caption changed. By the time SCOTUS heard it, the name bore no connection to the original defendant.
+The most famous example: the case that became [_Taylor v. Riojas_](/cases/taylor-v-riojas) at the Supreme Court carried different captions in lower courts as defendants were substituted. By the time SCOTUS heard it, the name bore no connection to the original defendant.
 
 **The district court name is the one that sticks in PACER** — that's the most searchable database. Appellate captions may change, but the original filing name persists in the district court record. Get it right at filing.
 

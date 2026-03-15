@@ -41,7 +41,7 @@ The chart is easier to read if you treat it as a numbered map of court-created b
 2. `1967` — [_Pierson v. Ray_](/cases/pierson-v-ray): the Court gives judges immunity under Section 1983 and starts the doctrine that later becomes qualified immunity
 3. `1976` — [_Imbler v. Pachtman_](/cases/imbler-v-pachtman): the Court adds broad absolute immunity for prosecutors acting as advocates
 4. `1982` — [_Harlow v. Fitzgerald_](/cases/harlow-v-fitzgerald): the Court reshapes qualified immunity into a stronger court-created defense
-5. `1992` — [_Farrar v. Hobby_](/cases/farrar-v-hobby): the plaintiff won only nominal damages and was denied legal fees, creating a rule that can also wipe out fee recovery in later low-dollar cases
+5. `1992` — [_Farrar v. Hobby_](/cases/farrar-v-hobby): the person suing won only nominal damages and was denied legal fees, creating a rule that can also wipe out fee recovery in later low-dollar cases
 6. `1994` — [_Heck v. Humphrey_](/cases/heck-v-humphrey): the Court says some Section 1983 damages claims cannot go forward unless the conviction or sentence has already been reversed, vacated, expunged, or otherwise set aside
 7. `2004` — [_Devenpeck v. Alford_](/cases/devenpeck-v-alford): the Court says probable cause for any offense, even if the officer gave a different reason at the time, will usually defeat a false-arrest claim
 8. `2007` — [_Twombly_](/cases/bell-atlantic-corp-v-twombly): the Court makes it easier to dismiss thin complaints before you can get discovery
@@ -143,7 +143,7 @@ That affects more than lawyers. It affects whether anyone will invest time in lo
 
 [_Twombly_](/cases/bell-atlantic-corp-v-twombly) and [_Iqbal_](/cases/ashcroft-v-iqbal) made it easier for courts to dismiss complaints that do not contain enough factual detail.
 
-For a pro se plaintiff, that means your case can die before discovery if your complaint does not explain:
+If you are filing without a lawyer, that means your case can die before discovery if your complaint does not explain:
 
 - who did what
 - when they did it

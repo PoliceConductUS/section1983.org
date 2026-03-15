@@ -78,7 +78,7 @@ In plain English, an **investigator** helps build the facts of the case, and an 
 
 The line between "advocacy" and "investigation" is blurry, and courts usually give prosecutors the benefit of the doubt. But it's a real distinction worth exploring if the prosecutor was actively involved in the investigation rather than just making charging decisions.
 
-**The practical trap:** Most pro se plaintiffs who are angry at a prosecutor are angry about the decision to prosecute or how the case was handled in court — and those are precisely the acts that are absolutely immune. Save your energy for the officers who actually violated your rights.
+**The practical trap:** Most people filing without a lawyer who are angry at a prosecutor are angry about the decision to prosecute or how the case was handled in court — and those are precisely the acts that are absolutely immune. Save your energy for the officers who actually violated your rights.
 
 ### Legislators have absolute immunity for legislative acts
 

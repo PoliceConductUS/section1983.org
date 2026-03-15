@@ -30,7 +30,7 @@ This article is about **post-invocation questioning** and pressure after you say
 
 It is **not** just about whether police failed to read Miranda warnings.
 
-That distinction matters because, after [_Vega v. Tekoh_](https://www.law.cornell.edu/supremecourt/text/21-499), a Miranda violation by itself does not automatically create a Section 1983 damages claim. The more serious civil-rights problem is usually **coercion**, **continued interrogation after invocation**, or the use of threats or punishment to break your refusal to answer.
+That distinction matters because, after [_Vega v. Tekoh_](/cases/vega-v-tekoh), a Miranda violation by itself does not automatically create a Section 1983 damages claim. The more serious civil-rights problem is usually **coercion**, **continued interrogation after invocation**, or the use of threats or punishment to break your refusal to answer.
 
 ## What can still happen after you invoke
 
@@ -38,8 +38,8 @@ Invoking your right to remain silent does **not** mean the government can ask yo
 
 Some questions may still be allowed, including:
 
-- **Routine booking questions** reasonably related to identification and administration, such as name, address, date of birth, height, or weight. See [_Pennsylvania v. Muniz_](https://www.law.cornell.edu/supremecourt/text/496/582).
-- **Immediate public-safety questions** when officers face an urgent safety problem, such as the location of a weapon. See [_New York v. Quarles_](https://www.law.cornell.edu/supremecourt/text/467/649).
+- **Routine booking questions** reasonably related to identification and administration, such as name, address, date of birth, height, or weight. See [_Pennsylvania v. Muniz_](/cases/pennsylvania-v-muniz).
+- **Immediate public-safety questions** when officers face an urgent safety problem, such as the location of a weapon. See [_New York v. Quarles_](/cases/new-york-v-quarles).
 - **Limited clarifying questions** tied to procedure rather than investigation, such as whether you understand your rights or whether you want water, medical attention, or basic processing steps.
 
 What they generally should not do is keep pushing investigative questions about the incident after you have clearly invoked and then use pressure, threats, or punishment to make you talk.

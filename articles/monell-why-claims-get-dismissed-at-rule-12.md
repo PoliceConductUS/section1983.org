@@ -44,13 +44,13 @@ If your complaint cannot answer that, the Monell count is in danger.
 
 ## No causation allegations
 
-Sometimes plaintiffs show a policy problem but do not connect it to their own injury.
+Sometimes people show a policy problem but do not connect it to their own injury.
 
 The complaint should explain how the municipal act was the moving force behind the violation.
 
 ## Wrong policymaker or no policymaker
 
-Final-policymaker theories fail when plaintiffs:
+Final-policymaker theories fail when people:
 
 - identify the wrong official
 - identify no official at all
@@ -64,7 +64,7 @@ Custom claims often fail because the alleged pattern is:
 
 - too small
 - too vague
-- too different from the plaintiff's facts
+- too different from your facts
 
 The incidents need to look like a real municipal problem, not merely a few bad stories.
 

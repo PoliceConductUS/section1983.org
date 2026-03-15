@@ -13,7 +13,7 @@ That matters because judges are often looking for ways to narrow weak cases, con
 
 After reading this article, you should be able to:
 
-- identify the behaviors that make a pro se plaintiff look reasonable in federal court
+- identify the behaviors that make someone filing without a lawyer look reasonable in federal court
 - spot the mistakes that make judges and defense lawyers stop taking you seriously
 - decide when to oppose, narrow, or not fight an issue at all
 
@@ -42,7 +42,7 @@ They want to find out whether you will:
 
 If you do those things, the defense gets a second argument beyond the merits of your case: they can quietly present you as the problem.
 
-## What makes a pro se plaintiff look reasonable
+## What makes you look reasonable in federal court
 
 You usually look reasonable when you:
 
@@ -187,7 +187,7 @@ If the judge sees you as disciplined and selective, your case has a better chanc
 1. The defense asks for a short extension because one attorney is unavailable for a week. Nothing important changes for your case. Based on this article, is that usually something to fight, or something you should usually let go?
    <details>
      <summary>Show answer</summary>
-     Usually something you should let go. This is the kind of small scheduling dispute that often makes a pro se plaintiff look harder to work with than the issue is worth.
+     Usually something you should let go. This is the kind of small scheduling dispute that often makes someone filing without a lawyer look harder to work with than the issue is worth.
    </details>
 
 2. The defense files a motion that could dismiss two of your claims. Based on this article, what makes that different from a minor scheduling dispute?

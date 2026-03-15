@@ -17,7 +17,7 @@ A [Monell liability](/terms-and-concepts/monell-liability) claim is the part of 
 
 That distinction matters. If an officer violated your rights, you may have an individual-capacity claim against that officer. If the city or county helped cause the same violation through the way it operates, you may also have a Monell claim.
 
-## Why a plaintiff would want a Monell claim
+## Why you might want a Monell claim
 
 Many readers reach this article because they are asking a basic question:
 
@@ -30,7 +30,7 @@ A serious Monell claim can:
 - put the municipality's own policies and practices at issue
 - expose repeated misconduct instead of treating your case as one isolated event
 - increase financial exposure beyond the individual officer
-- create pressure for policy changes, training changes, supervision changes, or settlement terms that affect more than one plaintiff
+- create pressure for policy changes, training changes, supervision changes, or settlement terms that affect more than one person
 - build a public record showing the violation was not random, but systemic
 
 That is why cities fight these claims so hard.
@@ -173,7 +173,7 @@ These are the weakest Monell theories at the pleading stage.
 
 ### Ratification based only on a post-incident failure to discipline
 
-Many plaintiffs say the city ratified the conduct because it did not punish the officer after the fact.
+Many people say the city ratified the conduct because it did not punish the officer after the fact.
 
 That is usually weak by itself. Courts often say a failure to discipline one incident, standing alone, is not enough to establish municipal liability.
 

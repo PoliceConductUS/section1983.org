@@ -51,7 +51,7 @@ That is the risk the lawyer is trying to measure before agreeing to represent yo
 
 ### How Section 1983 lawyers get paid
 
-Under [42 U.S.C. § 1988](https://www.law.cornell.edu/uscode/text/42/1988), a prevailing plaintiff in a [§ 1983](/terms-and-concepts/section-1983) case can recover [attorney fees](/terms-and-concepts/attorneys-fees) from the defendant. In practice, this means most civil rights attorneys work on contingency: they invest their time up front and only get paid if you _win_.
+Under [42 U.S.C. § 1988](https://www.law.cornell.edu/uscode/text/42/1988), the person who wins a [§ 1983](/terms-and-concepts/section-1983) case can recover [attorney fees](/terms-and-concepts/attorneys-fees) from the defendant. In practice, this means most civil rights attorneys work on contingency: they invest their time up front and only get paid if you _win_.
 
 If you lose — and most § 1983 cases lose — the lawyer gets nothing. Not reduced fees. Not partial payment. Zero. For what might be two to four years of work.
 
@@ -73,7 +73,7 @@ If any one of those factors is low, the case may stop making economic sense for 
 
 If the math wasn't bad enough, there's [_Farrar v. Hobby_, 506 U.S. 103 (1992)](https://www.courtlistener.com/opinion/112798/farrar-v-hobby/).
 
-The plaintiff won at trial. The jury found the defendant liable and awarded $1 in [nominal damages](/terms-and-concepts/nominal-damages). One dollar. Then the plaintiff sought attorney fees under [§ 1988](/terms-and-concepts/section-1988) — the statute that's supposed to make civil rights enforcement economically viable.
+The person suing won at trial. The jury found the defendant liable and awarded $1 in [nominal damages](/terms-and-concepts/nominal-damages). One dollar. Then that person asked for attorney fees under [§ 1988](/terms-and-concepts/section-1988) — the statute that's supposed to make civil rights enforcement economically viable.
 
 The Supreme Court held that winning $1 doesn't entitle you to meaningful attorney fees. The attorney who spent years on the case got nothing.
 

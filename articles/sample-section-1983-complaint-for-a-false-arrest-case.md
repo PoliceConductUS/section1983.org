@@ -7,9 +7,9 @@ tags: ["sample", "complaint", "false-arrest", "drafting", "monell"]
 draft: false
 ---
 
-If you are drafting your own [Section 1983](/terms-and-concepts/section-1983) complaint, the hardest part is usually structure.
+If you are drafting your own [Section 1983](/terms-and-concepts/section-1983) complaint, one of the first jobs is turning your facts into a structure the judge can follow.
 
-Most people know what happened to them. They do not know how to turn those facts into a complaint that survives [Iqbal](/cases/ashcroft-v-iqbal), names the right defendants, and leaves room for a real [Monell claim](/terms-and-concepts/monell-liability).
+Most people know what happened to them. The harder part is turning those facts into a complaint that survives [Iqbal](/cases/ashcroft-v-iqbal), names the right defendants, and leaves room for a real [Monell claim](/terms-and-concepts/monell-liability).
 
 This sample shows one way to organize a false arrest complaint. Read it together with [how to write your complaint](/articles/how-to-write-a-section-1983-complaint), [how to name your defendants](/articles/how-to-name-defendants-in-a-section-1983-lawsuit), and [false arrest claim elements and defenses](/articles/false-arrest-claim-elements-and-defenses-in-a-section-1983-case).
 
@@ -155,7 +155,7 @@ E. such other relief as the Court deems just and proper.
 
 ### Put the officer first in the caption
 
-If the first defendant is the officer, the case name becomes searchable by that officer's name. That matters for accountability and for future plaintiffs searching the record. More on that in [how to name your defendants](/articles/how-to-name-defendants-in-a-section-1983-lawsuit).
+If the first defendant is the officer, the case name becomes searchable by that officer's name. That matters for accountability and for future readers searching the record. More on that in [how to name your defendants](/articles/how-to-name-defendants-in-a-section-1983-lawsuit).
 
 ### Keep the facts chronological
 
@@ -191,9 +191,9 @@ If you do not have those materials yet, start with [FOIA and Records Requests](/
 
 ### Writing conclusions instead of events
 
-Bad: "Defendants violated my Fourth Amendment rights."
+Bad: "The defendants violated my Fourth Amendment rights."
 
-Better: "Officer Martinez arrested Plaintiff for disorderly conduct after Plaintiff stood on a public sidewalk recording police activity and did not obstruct, threaten, or interfere with any officer."
+Better: "Officer Martinez arrested me for disorderly conduct after I stood on a public sidewalk recording police activity and did not obstruct, threaten, or interfere with any officer."
 
 ### Naming the city but not pleading Monell facts
 
@@ -205,7 +205,7 @@ Draft with the obvious defense arguments in mind:
 
 - "there was probable cause for some other offense" under [Devenpeck](/terms-and-concepts/false-arrest)
 - "the right was not clearly established" under [qualified immunity](/terms-and-concepts/qualified-immunity)
-- "[Heck](/terms-and-concepts/heck-doctrine) bars the claim because the plaintiff was convicted"
+- "[Heck](/terms-and-concepts/heck-doctrine) bars the claim because you were convicted"
 
 That is why you should also read [how to stress-test your case before filing](/articles/how-to-stress-test-your-case-before-filing).
 

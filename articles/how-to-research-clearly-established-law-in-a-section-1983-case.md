@@ -7,7 +7,9 @@ tags: ["qualified-immunity", "research", "clearly-established-law", "case-law"]
 draft: false
 ---
 
-If [qualified immunity](/terms-and-concepts/qualified-immunity) is the wall, clearly established law is the ladder. The problem is that most pro se plaintiffs are told to "find a case on point" without anyone explaining what that actually means, where to look, or how close the facts need to be.
+If the defense raises [qualified immunity](/terms-and-concepts/qualified-immunity), one of the first questions the judge is going to ask is whether earlier cases clearly told the officer this conduct was unlawful.
+
+Most pro se readers are told to "find a case on point" without anyone explaining what that means, where to look, or how close the facts need to be.
 
 This guide is about the research workflow. Use it with [Terms and Concepts: Qualified Immunity](/terms-and-concepts/qualified-immunity), [You Will Probably Lose. You Might Sue Anyway. Here's Why That Still Matters.](/articles/you-will-probably-lose-you-might-sue-anyway-heres-why-that-still-matters), and the [sample response to a motion to dismiss](/articles/sample-response-to-a-motion-to-dismiss-in-a-section-1983-case).
 
@@ -41,7 +43,7 @@ Start with your own circuit because that is what most courts care about first. L
 
 - cases with similar force level
 - similar threat level
-- similar plaintiff conduct
+- similar conduct by the person arrested or searched
 - similar timing
 
 If you cannot find a close case in your circuit, then look to Supreme Court cases and a clear consensus from other circuits.
@@ -50,10 +52,10 @@ If you cannot find a close case in your circuit, then look to Supreme Court case
 
 Lawyers often skim headnotes and holdings. That is not enough in a qualified-immunity fight. You need to know the factual details:
 
-- was the plaintiff handcuffed
-- was the plaintiff resisting
-- was the plaintiff armed
-- did the plaintiff flee
+- was the person handcuffed
+- was the person resisting
+- was the person armed
+- did the person flee
 - was the officer responding to a violent felony or a minor offense
 
 ### 3. Build a comparison table
@@ -92,7 +94,7 @@ If your circuit has decisions granting qualified immunity on facts similar to yo
 
 ## When obvious clarity may help
 
-Sometimes the conduct is so extreme that a plaintiff does not need a nearly identical prior case. The Supreme Court has recognized this in rare situations. But do not assume your facts qualify. Many courts are reluctant to treat a case as obvious enough to fit the obvious-clarity path.
+Sometimes the conduct is so extreme that you do not need a nearly identical prior case. The Supreme Court has recognized this in rare situations. But do not assume your facts qualify. Many courts are reluctant to treat a case as obvious enough to fit the obvious-clarity path.
 
 One useful example is [_Taylor v. Riojas_](/cases/taylor-v-riojas). The prisoner there was kept in shockingly filthy cells, including one covered in feces. Lower courts still gave the officers qualified immunity. The Supreme Court finally said no reasonable officer could think those conditions were constitutional, even without a closely matched prior case. That shows two things at once:
 

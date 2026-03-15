@@ -74,7 +74,7 @@ This is one of the most immediately useful applications. Every pro se litigant h
 
 This isn't a rare glitch. It's a fundamental limitation of how these tools work. They generate text that _looks right_ based on patterns, but they have no reliable mechanism for verifying that a case actually exists.
 
-**Attorneys have been fined for this.** In _Mata v. Avianca_, a New York federal court fined attorneys $5,000 for filing a brief containing six AI-fabricated case citations. The attorneys used ChatGPT to write the brief and never verified the citations. The court called it "an unprecedented circumstance" — but it won't be the last time.
+**Attorneys have been fined for this.** In [_Mata v. Avianca, Inc._](/cases/mata-v-avianca-inc), a New York federal court fined attorneys $5,000 for filing a brief containing six AI-fabricated case citations. The attorneys used ChatGPT to write the brief and never verified the citations. The court called it "an unprecedented circumstance" — but it won't be the last time.
 
 **Make this a fixed habit: do not file a document containing a case citation you have not personally verified.** For every case an AI tool suggests:
 

@@ -16,7 +16,7 @@ draft: true
 
 What happens after the arrest can be a separate constitutional problem.
 
-Many plaintiffs focus only on the street encounter. But the jail phase can generate its own claims: denial of medical care, punitive conditions, coercive intake, delayed processing, denial of access to communication, and other abuses against a pretrial detainee.
+Many people focus only on the street encounter. But the jail phase can generate its own claims: denial of medical care, punitive conditions, coercive intake, delayed processing, denial of access to communication, and other abuses against a pretrial detainee.
 
 This guide is about the jail-side due-process claim generally. It is separate from the arrest and separate from questioning after you invoke the Fifth Amendment.
 

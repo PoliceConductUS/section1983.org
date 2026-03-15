@@ -10,7 +10,7 @@ draft: false
 
 Final-policymaker claims can be very strong because one decision may be enough to bind the city.
 
-But plaintiffs misuse this theory constantly.
+But people misuse this theory constantly.
 
 The mistake is simple: they confuse authority with rank.
 
