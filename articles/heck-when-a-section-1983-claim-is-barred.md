@@ -51,7 +51,7 @@ Your job is to test whether that is actually true.
 Use this rule:
 
 - if winning your damages claim would require the court to say your conviction or sentence was invalid, Heck blocks the claim
-- if winning your damages claim would not require that conclusion, the claim may still go forward
+- if winning your damages claim would not require that conclusion, the claim can still go forward
 
 The real question is:
 

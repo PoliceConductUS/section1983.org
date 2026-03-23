@@ -21,7 +21,7 @@ After reading this article, you should be able to:
 - spot the facts that make a case more or less attractive to a lawyer
 - review your own case and see what is most likely to scare lawyers away
 
-Before you assume your facts are the problem, read this together with [Heck: When a Section 1983 Claim Is Barred](/articles/heck-when-a-section-1983-claim-is-barred), [You Will Probably Lose. You Might Sue Anyway. Here's Why That Still Matters.](/articles/you-will-probably-lose-you-might-sue-anyway-heres-why-that-still-matters), and [The Legal Process](/process). Those pages explain the risks and costs the lawyer is weighing when they say no.
+Before you assume your facts are the problem, read this together with [Wolves v. Sheep: Why Section 1983 Cannot Be Your Only Strategy](/articles/wolves-v-sheep-why-section-1983-cannot-be-your-only-strategy), [Heck: When a Section 1983 Claim Is Barred](/articles/heck-when-a-section-1983-claim-is-barred), [You Will Probably Lose. You Might Sue Anyway. Here's Why That Still Matters.](/articles/you-will-probably-lose-you-might-sue-anyway-heres-why-that-still-matters), and [The Legal Process](/process). Those pages explain the risks and costs the lawyer is weighing when they say no.
 
 ## What the lawyer is actually evaluating
 

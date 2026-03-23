@@ -25,7 +25,7 @@ One of the first questions the judge is going to ask is:
 
 - `Is this person trying to litigate a real case in a disciplined way, or are they going to create unnecessary problems?`
 
-That does not mean you have to act like a lawyer. It means you need to show that you can follow directions, focus on the important issues, and behave like someone the court can manage.
+You do not have to act like a lawyer. You do have to show that you can follow directions, focus on the important issues, and behave like someone the court can manage.
 
 ## What the defense is going to look for
 
@@ -40,7 +40,7 @@ They want to find out whether you will:
 - file motions that do not matter
 - accuse everyone of corruption instead of proving facts
 
-If you do those things, the defense gets a second argument beyond the merits of your case: they can quietly present you as the problem.
+If you do those things, the defense gets a second argument: they can quietly present you as the problem.
 
 ## What makes you look reasonable in federal court
 
@@ -53,7 +53,7 @@ You usually look reasonable when you:
 - oppose only the things that actually matter
 - write like you want the judge to understand you, not admire you
 
-Reasonable does not mean passive. It means selective and controlled.
+Reasonable means selective and controlled, not passive.
 
 ## What makes you look like the problem
 

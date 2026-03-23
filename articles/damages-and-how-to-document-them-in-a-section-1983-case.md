@@ -7,7 +7,7 @@ tags: ["damages", "getting-started", "filing", "evidence"]
 draft: false
 ---
 
-One of the first practical questions in your case is not just whether your rights were violated. It is whether you can prove what that violation cost you.
+One of the first practical questions in your case is what the violation cost you and what you can prove.
 
 That question matters early. It affects whether a lawyer will take the case, whether the city feels pressure to settle, and whether the fight is worth the time and stress.
 
@@ -21,11 +21,7 @@ Read this after [why no lawyer will take your § 1983 case](/articles/why-no-law
 
 ## Start with the real question
 
-Do not ask only:
-
-- `What should the city pay me?`
-
-Also ask:
+Start with this question:
 
 - `What can I actually prove with records, witnesses, and specific facts?`
 
@@ -84,7 +80,7 @@ Usually weaker unless you support them:
 - property loss with no photos or receipts
 - broad claims that everything in your life got worse without dates or specifics
 
-That does not mean emotional harm is fake. It means emotional harm needs proof too.
+Emotional harm is real. It also needs proof.
 
 ## What to collect before you file
 
@@ -119,7 +115,7 @@ What makes this stronger is speed and continuity.
 
 If you were hurt on Saturday and saw a doctor on Sunday, that is easier to tie to the incident than waiting four months and then trying to explain the gap.
 
-If you did not get treatment right away, do not fake it. Explain why. Maybe you could not afford care, were in jail, were afraid, or thought the pain would go away. But know the defense will attack the gap.
+If treatment started later, explain the gap honestly. Maybe you could not afford care, were in jail, were afraid, or thought the pain would go away. Expect the defense to attack that gap.
 
 ## Lost wages and work harm
 
@@ -137,7 +133,7 @@ Weak proof looks like:
 
 - `I probably lost work`
 - `my business slowed down`
-- `I could not really function for a while`
+- `I had trouble functioning for a while`
 
 Those things may be true. But if you want them counted, tie them to dates and numbers.
 
@@ -260,7 +256,7 @@ The defense will use all of that.
 
 They will say:
 
-- you were not really hurt
+- you were barely hurt
 - you were already dealing with this problem
 - the missed work came from something else
 - the emotional distress is vague and unsupported

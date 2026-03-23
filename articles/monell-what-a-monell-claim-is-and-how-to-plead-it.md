@@ -13,7 +13,7 @@ But sometimes the bigger problem goes beyond the officer. Sometimes the bigger p
 
 That is what a Monell claim is for.
 
-A [Monell liability](/terms-and-concepts/monell-liability) claim is the part of a Section 1983 case that tries to hold the city or county itself responsible. Not because it employed the officer. Not because it is generally in charge. But because the municipality itself allegedly caused the violation through policy, custom, training failure, supervision failure, or a decision by a final policymaker.
+A [Monell liability](/terms-and-concepts/monell-liability) claim is the part of a Section 1983 case that tries to hold the city or county itself responsible. The point is not that the city employed the officer or was generally in charge. The point is that the municipality itself allegedly caused the violation through policy, custom, training failure, supervision failure, or a decision by a final policymaker.
 
 That distinction matters. If an officer violated your rights, you may have an individual-capacity claim against that officer. If the city or county helped cause the same violation through the way it operates, you may also have a Monell claim.
 
@@ -35,7 +35,7 @@ A serious Monell claim can:
 
 That is why cities fight these claims so hard.
 
-They are defending more than one officer's conduct. They are defending the institution itself: its money, its policies, its training, its leadership, and its public legitimacy.
+They are defending more than one officer's actions. They are defending the institution itself: its money, its policies, its training, its leadership, and its public legitimacy.
 
 ## Why Monell is harder than suing the officer
 
@@ -173,7 +173,7 @@ These are the weakest Monell theories at the pleading stage.
 
 ### Ratification based only on a post-incident failure to discipline
 
-Many people say the city ratified the conduct because it did not punish the officer after the fact.
+Many people argue that the city ratified what happened because it did not punish the officer after the fact.
 
 That is usually weak by itself. Courts often say a failure to discipline one incident, standing alone, is not enough to establish municipal liability.
 
@@ -282,13 +282,13 @@ For example:
 - paragraphs 50-52: policymaker notice through prior suits and complaints
 - paragraph 53: these municipal acts were the moving force behind Plaintiff's arrest
 
-That reads like a theory. It does not read like a placeholder.
+That reads like a real theory, not a placeholder.
 
 ## What causation should sound like
 
 Do not stop at policy or notice. Tie the city to the injury.
 
-Say how the municipal act caused the officer's conduct:
+Say how the municipal act caused what the officer did:
 
 - officers were trained to use disorderly-conduct arrests in protected-recording situations
 - supervisors tolerated repeated similar arrests

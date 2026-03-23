@@ -7,17 +7,17 @@ tags: ["fifth-amendment", "booking", "miranda", "public-safety", "questioning"]
 draft: true
 ---
 
-Invoking your right to remain silent does not mean government actors can ask you absolutely nothing.
+Some limited questions can still come after you invoke your right to remain silent.
 
 That is another place people get misled by TV and casual legal advice.
 
-Some questions may still be asked even after invocation. The key issue for your case is whether the later questioning was truly administrative or safety-driven, or whether it was really an effort to get incriminating information anyway.
+Some later questions are still allowed. The real question is whether officers were handling booking or safety, or whether they were still trying to get incriminating information.
 
-Read this with [Miranda: When Police Actually Have to Warn You](/articles/miranda-when-police-actually-have-to-warn-you) and [Fifth Amendment: Questioning After You Invoke](/articles/fifth-amendment-questioning-after-you-invoke).
+Read this with [Miranda: When Police Actually Have to Warn You](/articles/miranda-when-police-actually-have-to-warn-you), [Fifth Amendment: Questioning After You Invoke](/articles/fifth-amendment-questioning-after-you-invoke), and [Fifth Amendment: Can Police or Jail Staff Punish You for Staying Silent?](/articles/fifth-amendment-can-police-or-jail-staff-punish-you-for-staying-silent).
 
 ## Routine booking questions
 
-Police or jail staff can usually ask routine identification and processing questions such as:
+Police or jail staff can still ask routine identification and processing questions such as:
 
 - your name
 - date of birth
@@ -27,15 +27,15 @@ Police or jail staff can usually ask routine identification and processing quest
 
 These are often called routine booking questions.
 
-The theory is that they are administrative, not investigative.
+These questions stay on safer ground when they are really about identification and booking, not about proving the offense.
 
 If you are reviewing a past encounter, ask a more precise question than `were booking questions asked?`
 
-The question is whether the government is likely to argue that the later questions fell inside this exception.
+Ask the practical question: were they really just booking you, or were they still trying to build the case?
 
-## But the label is not everything
+## When the label stops helping
 
-If a so-called booking question is really designed to get incriminating information, the fact that someone calls it a booking question does not automatically make it safe.
+If a so-called booking question is really designed to get incriminating information, the label alone will not save it.
 
 That is why you should pay attention to what the question is actually doing.
 
@@ -46,9 +46,9 @@ Ask yourself:
 
 ## Public-safety questions
 
-There is also a narrow public-safety exception.
+Police can also ask narrow public-safety questions.
 
-If officers face an immediate safety problem, they may ask limited questions aimed at dealing with that emergency.
+If officers face an immediate safety problem, they can ask limited questions aimed at dealing with that emergency.
 
 Classic examples are questions about:
 
@@ -56,11 +56,11 @@ Classic examples are questions about:
 - whether someone else is in immediate danger
 - whether there is an immediate hazard nearby
 
-This exception is supposed to stay narrow and tied to immediate danger. It does not give officers general permission to keep interrogating you.
+Keep the practical limit in mind: this exception is for immediate danger. It does not let officers keep interrogating you.
 
 ## What should raise concern
 
-These situations deserve scrutiny:
+These situations should make you stop and look harder:
 
 - repeated questions about the incident after invocation
 - threats if you do not answer
@@ -68,4 +68,6 @@ These situations deserve scrutiny:
 - questions dressed up as booking when they are really about the offense
 - continued questioning after it is obvious there is no active safety emergency
 
-That is the point where a court may stop seeing the exchange as administrative and start seeing it as coercive or investigative.
+That is when the questioning starts looking like pressure or evidence gathering, not real booking or safety work.
+
+Even if officers may ask a limited booking or safety question, they still cannot punish you for refusing to answer. For that problem, read [Fifth Amendment: Can Police or Jail Staff Punish You for Staying Silent?](/articles/fifth-amendment-can-police-or-jail-staff-punish-you-for-staying-silent).

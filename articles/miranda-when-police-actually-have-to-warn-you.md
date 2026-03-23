@@ -91,11 +91,11 @@ If the answer is no, then the absence of warnings may not matter much.
 
 ## What this means for your civil case
 
-A Miranda problem does not automatically become a Section 1983 claim.
+A Miranda problem by itself usually will not support a Section 1983 damages claim.
 
 That is especially important after [_Vega v. Tekoh_](/cases/vega-v-tekoh). A warning violation by itself is not enough for a damages claim under Section 1983.
 
-That means your stronger civil-rights theory is often not "they forgot to Mirandize me." It is usually one of these:
+That means you usually should not build your civil case around "they forgot to Mirandize me." Your stronger theory is usually one of these:
 
 - they kept interrogating you after you invoked
 - they used threats or punishment to force answers
@@ -116,11 +116,7 @@ If you are evaluating a past encounter, the important questions are:
 
 ## What this article should change in your thinking
 
-Do not ask only:
-
-- `Did they Mirandize me?`
-
-Also ask:
+Start with a better set of questions:
 
 - `Was I in custody?`
 - `Were they interrogating me?`

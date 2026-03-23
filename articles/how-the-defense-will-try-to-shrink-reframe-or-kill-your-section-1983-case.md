@@ -167,7 +167,7 @@ They will notice if you:
 - refuse reasonable scheduling requests
 - make accusations you cannot support
 
-That does not replace their legal arguments. It strengthens them.
+That strengthens their legal arguments.
 
 Once you look disorganized or unreasonable, the defense has an easier time asking the court to trust their version of smaller disputes.
 

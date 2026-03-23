@@ -96,7 +96,7 @@ Witnesses who testify in judicial proceedings — including police officers test
 
 Yes, even perjury is shielded by absolute immunity in the context of § 1983. The remedy for lying under oath is a criminal perjury prosecution, not a civil rights lawsuit.
 
-**When you may be able to sue:** This immunity covers **testimony** itself. If an officer fabricated evidence _before_ testifying, wrote a false report, planted evidence, or lied in a warrant affidavit, those investigative acts may fall outside testimonial immunity. The officer may still raise [qualified immunity](/terms-and-concepts/qualified-immunity), but not absolute immunity for the testimony alone.
+**When you may be able to sue:** This immunity covers **testimony** itself. If an officer fabricated evidence _before_ testifying, wrote a false report, planted evidence, or lied in a warrant affidavit, you may still be able to sue over those investigative acts. The officer can still raise [qualified immunity](/terms-and-concepts/qualified-immunity), but not testimonial immunity for the testimony alone.
 
 ### Grand jurors cannot be sued for indicting you
 
@@ -110,7 +110,7 @@ Court clerks and similar officials usually get **quasi-judicial immunity**. In p
 
 Now that you know who's off-limits, focus your energy on the defendants the law may actually let you sue:
 
-- **Police officers** (individual capacity) — They get [qualified immunity](/terms-and-concepts/qualified-immunity), not absolute immunity. Qualified immunity can still block the claim, but it is not automatic the way absolute immunity is. See [how to name your defendants](/articles/how-to-name-defendants-in-a-section-1983-lawsuit).
+- **Police officers** (individual capacity) — They get [qualified immunity](/terms-and-concepts/qualified-immunity). The officer will likely win unless you can point to closely similar case law. See [how to name your defendants](/articles/how-to-name-defendants-in-a-section-1983-lawsuit).
 - **The municipality** — Cities and counties have no immunity at all under [_Monell_](/terms-and-concepts/monell-liability). If you can show a policy or custom caused the violation, the city pays. See [Monell: What a Monell Claim Is and How to Plead It](/articles/monell-what-a-monell-claim-is-and-how-to-plead-it) before assuming the city belongs in the complaint.
 - **Supervisors** — Chiefs, sergeants, and commanders can be sued if you can show their [personal involvement](/terms-and-concepts/supervisory-liability) or [deliberate indifference](/terms-and-concepts/deliberate-indifference).
 - **Prosecutors acting as investigators** — If they stepped outside their advocacy role.

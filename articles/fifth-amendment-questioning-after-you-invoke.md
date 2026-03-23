@@ -14,48 +14,50 @@ tags:
 draft: true
 ---
 
-If you invoke your Fifth Amendment right to remain silent, and officers, transport staff, booking staff, or jail personnel keep pressing for answers or use pressure, threats, or punitive consequences to force compliance, you may have a serious constitutional issue.
+If you invoke your Fifth Amendment right to remain silent and government actors keep pressing for answers or make silence cost you, that can create a serious constitutional issue.
 
-That issue may support its own count, or it may be part of a broader coercion or due-process claim, depending on what happened and how the questioning was used.
+Those facts may support their own count, or they may fit inside a broader coercion or due-process claim, depending on what happened and how the questioning was used.
 
-The core pattern is simple: you say you do not want to answer questions, but government actors keep trying to get answers anyway.
+The core pattern is simple: you say you will not answer questions, and government actors keep trying to get answers anyway.
 
-That should usually be analyzed separately from bedding, phone access, medical care, or general conditions of confinement.
+Analyze that separately from bedding, phone access, medical care, or general conditions of confinement.
 
 Read this with [Jail: Due Process After Arrest](/articles/jail-due-process-after-arrest) and [deliberate indifference](/terms-and-concepts/deliberate-indifference).
 
-## What this article is and is not
+If your main question is whether officers or jail staff can punish you for still refusing to answer, read [Fifth Amendment: Can Police or Jail Staff Punish You for Staying Silent?](/articles/fifth-amendment-can-police-or-jail-staff-punish-you-for-staying-silent).
+
+## The point of this article
 
 This article is about **post-invocation questioning** and pressure after you say you want to remain silent.
 
-It is **not** just about whether police failed to read Miranda warnings.
+Miranda warnings are only one part of the problem.
 
-That distinction matters because, after [_Vega v. Tekoh_](/cases/vega-v-tekoh), a Miranda violation by itself does not automatically create a Section 1983 damages claim. The more serious civil-rights problem is usually **coercion**, **continued interrogation after invocation**, or the use of threats or punishment to break your refusal to answer.
+After [_Vega v. Tekoh_](/cases/vega-v-tekoh), a Miranda violation by itself usually will not get you Section 1983 damages. The stronger theory is usually **coercion**, **continued interrogation after invocation**, or threats or punishment used to break your refusal to answer.
 
 ## What can still happen after you invoke
 
-Invoking your right to remain silent does **not** mean the government can ask you nothing at all.
+Some limited questions can still come after you invoke.
 
-Some questions may still be allowed, including:
+Examples include:
 
 - **Routine booking questions** reasonably related to identification and administration, such as name, address, date of birth, height, or weight. See [_Pennsylvania v. Muniz_](/cases/pennsylvania-v-muniz).
 - **Immediate public-safety questions** when officers face an urgent safety problem, such as the location of a weapon. See [_New York v. Quarles_](/cases/new-york-v-quarles).
 - **Limited clarifying questions** tied to procedure rather than investigation, such as whether you understand your rights or whether you want water, medical attention, or basic processing steps.
 
-What they generally should not do is keep pushing investigative questions about the incident after you have clearly invoked and then use pressure, threats, or punishment to make you talk.
+What matters most is what happens next: officers should stop pushing for incident details, and they cannot use pressure, threats, or punishment to make you talk.
 
 ## What to watch for
 
 Routine booking questions have limits.
 
-If a so-called booking question is really being used to get incriminating information, the label does not save it. The question is whether it is truly administrative or whether officers should know it is reasonably likely to produce incriminating answers.
+If a so-called booking question is really being used to get incriminating information, the label does not help much. The practical question is whether staff were booking you or trying to get evidence.
 
-The same is true of public-safety questioning. The exception is narrow. It is for immediate danger, not for ordinary evidence-gathering.
+Public-safety questioning has the same limit. It is for immediate danger, not ordinary evidence gathering.
 
 ## Why the separation matters
 
-If you treat post-invocation questioning as only a bad jail condition, you may lose the constitutional point.
+Treating post-invocation questioning as only a bad jail condition can make you miss the constitutional point.
 
-The core issue is that government actors allegedly used official power to pressure you into giving information after you tried to invoke a constitutional right. Harsh conditions matter here only because they may show that pressure.
+The core issue is that government actors used official power to pressure you into giving information after you invoked. Harsh conditions matter here because they can show that pressure.
 
 That deserves its own factual section and often its own count, even when it also overlaps with broader due-process or coercion theories.

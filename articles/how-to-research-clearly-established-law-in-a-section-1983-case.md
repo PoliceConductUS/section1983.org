@@ -124,7 +124,7 @@ Clearly established law research is not about finding a quote you like. It is ab
 2. If you find a case that feels emotionally satisfying but the facts are materially different, how should you treat it?
    <details>
      <summary>Show answer</summary>
-     Treat it cautiously. It may still help with background or general framing, but it is not the kind of case you should build your qualified-immunity argument around.
+     Treat it cautiously. It may still help with background or general framing, but you should build your qualified-immunity argument around a case with much closer facts.
    </details>
 
 3. What is the next case you should look for in your own research: one from your circuit with similar facts, one from any court saying the Constitution matters, or one with the strongest rhetoric?

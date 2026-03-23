@@ -23,7 +23,7 @@ Read this with [Retaliation: Retaliatory Arrest After Speech or Recording](/arti
 
 ## The basic problem
 
-Even if an officer hated your speech, the officer may still argue:
+Even if an officer hated your speech, the defense will still argue:
 
 - there was probable cause
 - at minimum there was arguable probable cause
@@ -35,6 +35,6 @@ That is why retaliatory-arrest cases often collapse into a probable-cause fight.
 
 If there was real probable cause for the arrest, the retaliation claim becomes much harder.
 
-If there was not real probable cause but a court thinks there was arguable probable cause, the officer may still win on qualified immunity.
+If there was not real probable cause but a court thinks the call was close enough, the officer will likely win on qualified immunity.
 
 That is why you must attack the offense elements carefully and not rely only on motive.

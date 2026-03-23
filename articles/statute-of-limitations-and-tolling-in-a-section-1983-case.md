@@ -53,7 +53,7 @@ That means you need to answer two different questions:
 
 People often answer the first question and forget the second one. That is how they lose.
 
-## The clock does not always start the way people think
+## The clock may start earlier or later than you expect
 
 The filing clock usually starts when you knew or should have known about the injury and what caused it.
 
@@ -115,9 +115,9 @@ For your case, do not assume. Check the actual state rule.
 
 Sometimes the hardest deadline question is not the injury date. It is whether you reasonably knew enough to sue.
 
-If officers, jail staff, or the city concealed critical facts, you may think tolling should follow automatically.
+If officers, jail staff, or the city concealed critical facts, you may expect tolling to follow automatically.
 
-Usually it does not.
+Courts usually require much more than that.
 
 The judge is going to ask:
 
@@ -125,13 +125,13 @@ The judge is going to ask:
 - `When did you learn it?`
 - `Why could you not have learned it earlier with reasonable diligence?`
 
-If your answer is only that you did not know all the details yet, that usually is not enough.
+If your answer is only that you still lacked some details, that usually is not enough.
 
 ## A criminal case can create deadline traps
 
-If you had criminal charges from the same incident, do not assume the civil deadline waits politely for the criminal case to end.
+If you had criminal charges from the same incident, do not assume the civil deadline waits for the criminal case to end.
 
-Sometimes it does not.
+Some claims keep running while the criminal case is still pending.
 
 This is one of the biggest traps in § 1983 litigation:
 
@@ -181,7 +181,7 @@ The deadline fight often turns on paper, not on your recollection.
 
 If you think you may be close to the deadline, move faster.
 
-That does not mean file a reckless complaint. It means stop treating research as open-ended.
+Move quickly, but do not file a reckless complaint. Stop treating research as open-ended.
 
 Your next steps should usually be:
 
@@ -190,7 +190,7 @@ Your next steps should usually be:
 - test whether any tolling argument is real or only hopeful
 - draft fast enough to file before the safest deadline expires
 
-If you are already outside the ordinary deadline, you may still need to file and argue tolling. But you should do that knowing it is a hard fight, not an automatic extension.
+If you are already outside the ordinary deadline, you may still need to file and argue tolling. Go in expecting a hard fight, not an automatic extension.
 
 ## The bottom line
 
@@ -199,7 +199,7 @@ The statute of limitations question is really two questions:
 - `How long is the deadline?`
 - `When did the clock start for this claim?`
 
-Tolling may help in a narrow set of cases, but it is not something you should build your whole strategy around.
+Tolling helps in only a narrow set of cases. Do not build your whole strategy around it.
 
 If there is any real deadline risk, calculate the earliest reasonable filing date and work backward from there.
 

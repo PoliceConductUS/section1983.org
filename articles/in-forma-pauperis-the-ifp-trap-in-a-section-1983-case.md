@@ -82,7 +82,7 @@ That means `IFP` is often much riskier than readers expect.
 
 ## What the defense gets without appearing
 
-The defense does not have to do anything for this part to help them.
+The defense gets help from this part of the process without doing anything.
 
 If your complaint is weak, the court may do the early narrowing or dismissal work for them.
 
@@ -108,7 +108,7 @@ They will say:
 - the city claim was unsupported
 - the facts were too thin to go forward
 
-So `IFP` does not replace the need for a strong complaint. It makes that need more urgent.
+So `IFP` makes a strong complaint even more important.
 
 ## When `IFP` may still be the right move
 

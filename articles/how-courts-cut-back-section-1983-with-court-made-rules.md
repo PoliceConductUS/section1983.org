@@ -99,7 +99,7 @@ Courts created the rule that officials are only liable if the right was clearly 
 
 Then courts made it stronger by requiring more fact-specific precedent, making early dismissal easier, and letting judges skip the question whether the Constitution was violated at all.
 
-The result is that an officer can win even where a judge thinks the conduct may have been unconstitutional, if the court says earlier case law did not put the issue beyond debate.
+The result is that an officer can win even when a judge thinks what happened may have violated the Constitution, if the court says earlier case law did not put the issue beyond debate.
 
 That is not a small procedural detail. It changes what liability means.
 
@@ -165,13 +165,13 @@ the court effectively says:
 
 That is why the fight is not only about doctrine. It is also about method.
 
-## The Court does not apply that method consistently
+## The Court switches methods
 
 This is another reason the textualist objection is strong.
 
 If the rule were really that Congress always legislates against the backdrop of common law and old protections survive unless Congress clearly abolishes them, you would expect the Court to apply that rule consistently.
 
-The Court does not follow that method consistently.
+The Court switches to a different rule in other cases.
 
 In some cases, the Court has refused to extend common-law-style protections where the statute did not include them:
 
@@ -230,7 +230,7 @@ For your case, that might be:
 - Monell's policy-or-custom rule
 - aggressive pleading rules before discovery
 
-Knowing that these are court-made barriers does not make them disappear. But it helps you understand why the path is so narrow.
+Knowing that these are court-made barriers will not make them disappear. But it helps you understand why the path is so narrow.
 
 ## What this means politically
 

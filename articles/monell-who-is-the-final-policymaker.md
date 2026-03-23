@@ -16,13 +16,15 @@ The mistake is simple: they confuse authority with rank.
 
 ## Rank is not the test
 
-The police chief is not automatically the final policymaker.
+Do not assume rank answers this question.
 
-The sheriff is not automatically the final policymaker for every subject.
+The police chief may be the final policymaker for one subject and not another.
 
-The city manager is not automatically the final policymaker for police discipline.
+The sheriff may have final authority in one area and not every area.
 
-The real question is narrower:
+The city manager may control some city decisions but not police discipline.
+
+Ask the narrower question:
 
 Who had final legal authority over the specific subject that caused the violation?
 
@@ -72,7 +74,7 @@ A person may be the final policymaker for one area and not another.
 
 ### Treating post-incident review as policymaking
 
-A supervisor reviewing an incident afterward is not automatically the final policymaker whose decision binds the city.
+A supervisor reviewing an incident afterward usually is not enough to bind the city.
 
 ## What better pleading looks like
 

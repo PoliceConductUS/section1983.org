@@ -70,7 +70,7 @@ Without notice, the theory often looks speculative.
 
 Plaintiffs often hope that one terrible incident is enough to prove the need for training.
 
-Usually it is not.
+Usually you need more than one incident.
 
 Courts are skeptical of single-incident failure-to-train claims. Unless the risk was extremely obvious, one incident normally does not show deliberate indifference.
 

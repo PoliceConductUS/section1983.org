@@ -22,7 +22,7 @@ Read this after [Who You Cannot Sue Under § 1983](/articles/who-you-cannot-sue-
 ## Start with the timeline
 
 <figure class="my-8">
-  <div class="overflow-x-auto rounded-lg border border-slate-300 bg-white">
+  <div class="chart-scroll-frame rounded-lg border border-slate-300 bg-white">
     <img
       src="/diagrams/section-1983-harder-to-win.svg"
       alt="Chart showing barriers to win on the vertical axis and year on the horizontal axis, with case points marking how Section 1983 became harder to win over time."
@@ -31,24 +31,24 @@ Read this after [Who You Cannot Sue Under § 1983](/articles/who-you-cannot-sue-
     />
   </div>
   <figcaption class="mt-3 text-sm text-slate-600">
-    Year is on the x-axis. Barriers to win are on the y-axis. The line rises as courts add more hurdles.
+    Year is on the x-axis. Barriers to win are on the y-axis. The line rises as courts add more hurdles. Scroll sideways to see the full chart.
   </figcaption>
 </figure>
 
-The chart is easier to read if you treat it as a numbered map of court-created barriers:
+Use the chart numbers to match each point to the case below:
 
-1. `1961` — [_Monroe v. Pape_](/cases/monroe-v-pape): the Court makes Section 1983 a real modern remedy
-2. `1967` — [_Pierson v. Ray_](/cases/pierson-v-ray): the Court gives judges immunity under Section 1983 and starts the doctrine that later becomes qualified immunity
-3. `1976` — [_Imbler v. Pachtman_](/cases/imbler-v-pachtman): the Court adds broad absolute immunity for prosecutors acting as advocates
-4. `1982` — [_Harlow v. Fitzgerald_](/cases/harlow-v-fitzgerald): the Court reshapes qualified immunity into a stronger court-created defense
-5. `1992` — [_Farrar v. Hobby_](/cases/farrar-v-hobby): the victim recovered only $1, and the Supreme Court cut a $280,000 fee award to zero, making some low-dollar wins economically hollow
-6. `1994` — [_Heck v. Humphrey_](/cases/heck-v-humphrey): the Court says some Section 1983 damages claims cannot go forward unless the conviction or sentence has already been reversed, vacated, expunged, or otherwise set aside
-7. `2004` — [_Devenpeck v. Alford_](/cases/devenpeck-v-alford): the Court says probable cause for any offense, even if the officer gave a different reason at the time, will usually defeat a false-arrest claim
-8. `2007` — [_Twombly_](/cases/bell-atlantic-corp-v-twombly): the Court makes it easier to dismiss thin complaints before you can get discovery
-9. `2009` — [_Iqbal_](/cases/ashcroft-v-iqbal): the Court makes early dismissal easier in civil-rights cases
-10. `2009` — [_Pearson v. Callahan_](/cases/pearson-v-callahan): the Court lets judges grant qualified immunity without first deciding whether the conduct was unconstitutional
-11. `2019` — [_Nieves v. Bartlett_](/cases/nieves-v-bartlett): the Court says probable cause will usually defeat a retaliatory-arrest claim too
-12. `2022` — [_Vega v. Tekoh_](/cases/vega-v-tekoh): the Court narrows Miranda-based damages claims again
+- `1.` `1961` — [_Monroe v. Pape_](/cases/monroe-v-pape): the Court makes Section 1983 a real modern remedy
+- `2.` `1967` — [_Pierson v. Ray_](/cases/pierson-v-ray): the Court gives judges immunity under Section 1983 and starts the doctrine that later becomes qualified immunity
+- `3.` `1976` — [_Imbler v. Pachtman_](/cases/imbler-v-pachtman): the Court adds broad absolute immunity for prosecutors acting as advocates
+- `4.` `1982` — [_Harlow v. Fitzgerald_](/cases/harlow-v-fitzgerald): the Court reshapes qualified immunity into a stronger court-created defense
+- `5.` `1992` — [_Farrar v. Hobby_](/cases/farrar-v-hobby): the victim recovered only $1, and the Supreme Court cut a $280,000 fee award to zero, making some low-dollar wins economically hollow
+- `6.` `1994` — [_Heck v. Humphrey_](/cases/heck-v-humphrey): the Court says some Section 1983 damages claims cannot go forward unless the conviction or sentence has already been reversed, vacated, expunged, or otherwise set aside
+- `7.` `2004` — [_Devenpeck v. Alford_](/cases/devenpeck-v-alford): the Court says probable cause for any offense, even if the officer gave a different reason at the time, will usually defeat a false-arrest claim
+- `8.` `2007` — [_Twombly_](/cases/bell-atlantic-corp-v-twombly): the Court makes it easier to dismiss thin complaints before you can get discovery
+- `9.` `2009` — [_Iqbal_](/cases/ashcroft-v-iqbal): the Court makes early dismissal easier in civil-rights cases
+- `10.` `2009` — [_Pearson v. Callahan_](/cases/pearson-v-callahan): the Court lets judges grant qualified immunity without first deciding whether what happened was unconstitutional
+- `11.` `2019` — [_Nieves v. Bartlett_](/cases/nieves-v-bartlett): the Court says probable cause will usually defeat a retaliatory-arrest claim too
+- `12.` `2022` — [_Vega v. Tekoh_](/cases/vega-v-tekoh): the Court narrows Miranda-based damages claims again
 
 ## The first question to ask
 
@@ -86,13 +86,13 @@ This is one reason [Who You Cannot Sue Under § 1983](/articles/who-you-cannot-s
 
 [_Heck v. Humphrey_](/cases/heck-v-humphrey) added another barrier. Some § 1983 claims cannot move forward if winning them would imply that an existing conviction or sentence is invalid.
 
-So in some cases, the court does not ask only:
-
-- `Were your rights violated?`
-
-It also asks:
+So in some cases, the first question is:
 
 - `Would this claim undermine a criminal judgment that still stands?`
+
+The court may block the claim without deciding:
+
+- `Were your rights violated?`
 
 That can block claims before you ever get to the evidence.
 
@@ -104,9 +104,9 @@ Over time, cases like [_Harlow v. Fitzgerald_](/cases/harlow-v-fitzgerald), [_An
 
 For your case, the practical effect is this:
 
-- the defense will try to describe your facts narrowly
-- the judge will ask whether a prior case already made this conduct clearly unconstitutional
-- if the court says no, the officer may win even if the conduct looks plainly wrong
+- the defense will describe the facts in the narrowest way that helps the officer
+- the judge will compare that narrow version of the facts to earlier cases
+- if the judge does not find an earlier case saying that closely similar facts were unconstitutional, the officer will likely win
 
 That is why [You Will Probably Lose. You Might Sue Anyway. Here's Why That Still Matters.](/articles/you-will-probably-lose-you-might-sue-anyway-heres-why-that-still-matters) spends so much time on qualified immunity.
 

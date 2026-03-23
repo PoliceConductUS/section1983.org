@@ -76,7 +76,7 @@ That is why your factual record has to be concrete. If the case depends on your 
 
 ## Why qualified immunity still matters
 
-[Qualified immunity](/terms-and-concepts/qualified-immunity) is still a major obstacle. Even when a court thinks the force looks excessive, it may still ask whether prior case law clearly warned the officer in similar circumstances.
+[Qualified immunity](/terms-and-concepts/qualified-immunity) is still a major obstacle. Even when a court thinks the force looks excessive, the officer can still win unless earlier case law clearly warned officers in similar circumstances.
 
 That is why research matters. If your facts involve a prone suspect, a handcuffed suspect, repeated taser use, or force after surrender, look for circuit cases on those exact patterns. Start with [how to research clearly established law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case).
 

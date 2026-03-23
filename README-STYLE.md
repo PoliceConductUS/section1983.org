@@ -46,6 +46,15 @@ Use article metadata to help the reader decide whether to start reading.
 - Put reading time on the article page, not on article cards or index pages.
 - Do not add extra metadata just to look busy. If it does not help the reader decide or orient themselves, leave it out.
 
+Use the site sections clearly:
+
+- `Articles` are for background, strategy, doctrine, incentives, and big-picture framing
+- `Process` is for execution: what stage you are in, what happens next, what to do, and what mistakes can kill the case
+
+Execution pages may leave out broad background, but they must not leave out a rule, trap, or warning that is likely to create an expensive mistake later.
+
+If an execution page omits background, it should still include the minimum context the reader needs to avoid blowing the step.
+
 ## Reader Position
 
 Write to the reader as `you`.
@@ -178,6 +187,14 @@ Use these rewrite patterns:
   - weaker: "the court does not reach the facts"
   - stronger: "the court may dismiss the claim without deciding whether what happened to you was wrong"
 
+- direct practical effect instead of legalizing
+  - weaker: "the officer's stated reason does not control the analysis"
+  - stronger: "the defense can point to a different offense later if the facts supported it"
+
+- direct consequence instead of lawyerly cushioning
+  - weaker: "qualified immunity may affect the viability of the claim"
+  - stronger: "the officer will likely win unless you have a closely similar case"
+
 - practical skill instead of abstract doctrine label
   - weaker: "The issue is whether you invoked clearly enough."
   - stronger: "One of the first questions the judge is going to ask is whether you clearly told them you were invoking your right to remain silent."
@@ -190,6 +207,38 @@ When you revise, ask:
 - Does the sentence tell the reader what the judge or defense will actually do with the fact?
 - Is the article saying what it means directly, or hiding behind phrases like `people say` or `critics say`?
 - Am I calling one of the statute's own elements a `barrier` when the real point is about extra court-made limits?
+
+## Direct Practical Effect
+
+Lead with direct practical effect.
+
+When a sentence can say what the judge, defense, or rule will actually do, say that first.
+
+Prefer:
+
+- "The defense can switch to a different offense later."
+- "The officer will likely win unless you have a closely similar case."
+- "The court may dismiss the claim before reaching the facts."
+
+Avoid:
+
+- "The officer's stated reason does not control the analysis."
+- "The doctrine may affect the viability of the claim."
+- "The court does not necessarily reach the merits."
+
+Do not soften clear practical consequences with lawyerly hedges unless the hedge is legally necessary.
+
+Prefer:
+
+- "The defense will argue..."
+- "The court may block the claim..."
+- "The officer will likely win..."
+
+Avoid:
+
+- "This may have implications for..."
+- "This can affect the analysis..."
+- "This does not control..."
 
 ## Defense Reframing
 

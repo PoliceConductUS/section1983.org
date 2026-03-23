@@ -9,7 +9,7 @@ draft: false
 
 False arrest is one of the most common [Section 1983](/terms-and-concepts/section-1983) claims. It is also one of the easiest to misunderstand.
 
-Many people think the key question is whether the officer gave the "real" reason for the arrest. Usually it is not. The real question is whether the officer had [probable cause](/terms-and-concepts/probable-cause) for any arrestable offense based on the facts known at the time.
+The key question is whether the officer had [probable cause](/terms-and-concepts/probable-cause) for any arrestable offense based on the facts known at the time. The defense can point to a different offense later, even if the officer gave another reason at the scene.
 
 If you are preparing or testing a false arrest case, read this with [Terms and Concepts: False Arrest](/terms-and-concepts/false-arrest), the [sample false arrest complaint](/articles/sample-section-1983-complaint-for-a-false-arrest-case), and [how to stress-test your case before filing](/articles/how-to-stress-test-your-case-before-filing).
 
@@ -31,9 +31,9 @@ That standard is lower than most people expect.
 
 ## The most common defense
 
-Under [Devenpeck v. Alford](/terms-and-concepts/false-arrest), the officer's stated offense does not control. If there was probable cause for some other offense, the arrest may still be valid.
+Under [Devenpeck v. Alford](/terms-and-concepts/false-arrest), the defense can switch to some other offense if the facts supported it.
 
-That is why a good complaint should not only say "the disorderly conduct charge was fake." It should also plead facts showing there was no fallback offense.
+That is why a good complaint should do two things: say why the stated charge was unsupported and plead facts showing there was no fallback offense.
 
 ## Common false arrest scenarios
 
@@ -88,7 +88,7 @@ That is why you should ask two separate questions:
 1. Did the criminal case end in your favor?
 2. If I win this civil claim, would that necessarily imply that the criminal conviction was invalid?
 
-Sometimes the answer is clearly yes. Sometimes it is not. A false-arrest claim may be Heck-barred where an excessive-force claim from the same incident is not.
+Sometimes the answer is clearly yes. In other cases, a false-arrest claim may be Heck-barred even though an excessive-force claim from the same incident can still go forward.
 
 Do not treat Heck as a technical footnote. It can decide whether the case exists at all.
 
@@ -101,7 +101,7 @@ Officers often rely on witness reports, victim statements, or dispatcher informa
 These cases often turn on:
 
 - what exact offense the officer claims justified arrest
-- what conduct you were actually engaged in
+- what you were actually doing
 - whether there is video
 - whether witnesses confirm or contradict the officer
 - whether you were charged, and if so, what happened to the charge
@@ -113,7 +113,7 @@ That is why public records matter. Arrest reports, CAD logs, body-camera footage
 
 Most bad pleadings fail in predictable ways:
 
-- they describe the arrest as unfair without describing the conduct
+- they describe the arrest as unfair without saying what you were doing
 - they do not negate obvious alternative offenses
 - they ignore the possibility of [Heck](/terms-and-concepts/heck-doctrine)
 - they do not address arguable probable cause under qualified immunity

@@ -7,9 +7,9 @@ tags: ["qualified-immunity", "scotus", "policy", "deep-dive"]
 draft: false
 ---
 
-[Section 1983](/terms-and-concepts/section-1983) says that any person who, under color of law, deprives someone of their constitutional rights "shall be liable." The statute does not contain a qualified-immunity exception.
+[Qualified immunity](/terms-and-concepts/qualified-immunity) is a court-created defense. [Section 1983](/terms-and-concepts/section-1983) says that a person who violates constitutional rights under color of law "shall be liable."
 
-[Qualified immunity](/terms-and-concepts/qualified-immunity) does not appear in that statute. It does not appear in the Constitution. Congress did not vote on it, and no president signed it into law.
+The statute never mentions qualified immunity. The Constitution never mentions it. Congress never enacted it, and no president signed it into law.
 
 The Supreme Court created it.
 
@@ -83,7 +83,7 @@ The most effective way the Court protects qualified immunity is the simplest: it
 
 In June 2020 — weeks after George Floyd's murder, with nationwide protests demanding police accountability — the Court denied certiorari in every pending qualified immunity case. Over a dozen petitions, presenting various fact patterns and legal arguments for reconsidering the doctrine, were all declined without comment.
 
-The Court does not have to defend qualified immunity if it never agrees to hear the arguments against it.
+The Court can protect qualified immunity simply by refusing to hear the arguments against it.
 
 ## Why Congress hasn't fixed it
 

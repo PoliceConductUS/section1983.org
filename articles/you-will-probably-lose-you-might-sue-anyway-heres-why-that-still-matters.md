@@ -18,7 +18,7 @@ After reading this article, you should be able to:
 - spot the first barrier most likely to hit your own case
 - decide what you need to strengthen before you file
 
-If you have not read [Why No Lawyer Will Take Your § 1983 Case](/articles/why-no-lawyer-will-take-your-section-1983-case), read that next. The two pieces fit together: one explains why lawyers say no, this one explains why the system is still stacked against you after you file. Then read [how to research clearly established law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case), because most pro se losses eventually run through that problem.
+If you have not read [Why No Lawyer Will Take Your § 1983 Case](/articles/why-no-lawyer-will-take-your-section-1983-case) and [Wolves v. Sheep: Why Section 1983 Cannot Be Your Only Strategy](/articles/wolves-v-sheep-why-section-1983-cannot-be-your-only-strategy), read those first. Those pieces explain why lawyers say no and why the system is stacked against you before you even start filing. Then read [how to research clearly established law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case), because most pro se losses eventually run through that problem.
 
 ## Why most pro se § 1983 lawsuits lose
 
