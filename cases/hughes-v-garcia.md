@@ -31,7 +31,7 @@ citedBy: []
 
 ## What This Case Is About
 
-This is one of the most extraordinary [§ 1983](/primer/section-1983) cases in recent Fifth Circuit history. Austin Thompson Hughes, a former police officer driving for Uber, called 911 to report a dangerously drunk driver on I-610 in Houston. After the drunk driver crashed, Hughes made a lawful citizen's arrest. When officers arrived, they let the drunk driver go and instead arrested Hughes for felony impersonation of a police officer — based on the drunk driver's rambling, self-contradictory, intoxicated statement. The Fifth Circuit affirmed the denial of [qualified immunity](/primer/qualified-immunity), calling this an egregious [Franks](/primer/franks-violation) violation.
+This is one of the most extraordinary [§ 1983](/terms-and-concepts/section-1983) cases in recent Fifth Circuit history. Austin Thompson Hughes, a former police officer driving for Uber, called 911 to report a dangerously drunk driver on I-610 in Houston. After the drunk driver crashed, Hughes made a lawful citizen's arrest. When officers arrived, they let the drunk driver go and instead arrested Hughes for felony impersonation of a police officer — based on the drunk driver's rambling, self-contradictory, intoxicated statement. The Fifth Circuit affirmed the denial of [qualified immunity](/terms-and-concepts/qualified-immunity), calling this an egregious [Franks](/terms-and-concepts/franks-violation) violation.
 
 ## The Facts
 
@@ -55,13 +55,13 @@ The court pointedly observed: "It is unclear which part of this case is more ama
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Hughes v. Garcia_ is a landmark case for [false arrest](/primer/false-arrest) and [malicious prosecution](/primer/malicious-prosecution) claims based on [Franks violations](/primer/franks-violation). Key principles:
+_Hughes v. Garcia_ is a landmark case for [false arrest](/terms-and-concepts/false-arrest) and [malicious prosecution](/terms-and-concepts/malicious-prosecution) claims based on [Franks violations](/terms-and-concepts/franks-violation). Key principles:
 
-1. **Officers cannot lie in warrant affidavits.** The [Franks](/primer/franks-violation) doctrine — a clearly established right since 1978 — holds that reckless or intentional misstatements and omissions in a warrant affidavit violate the Fourth Amendment.
+1. **Officers cannot lie in warrant affidavits.** The [Franks](/terms-and-concepts/franks-violation) doctrine — a clearly established right since 1978 — holds that reckless or intentional misstatements and omissions in a warrant affidavit violate the Fourth Amendment.
 2. **The independent intermediary doctrine has limits.** A magistrate's approval of a warrant does not protect officers who deceived the magistrate with false information.
 3. **All participating officers can be liable.** Not just the affiant — any officer who contributed false information or knew about the falsehoods and failed to correct them can face liability.
 4. **Corroborating evidence matters.** The massive gap between Hughes's well-corroborated account and the drunk driver's incoherent story made the officers' decision to credit the latter clearly reckless.
 
 ## Key Takeaway
 
-If police officers obtain your arrest warrant by including false statements or omitting critical exculpatory information — even if a magistrate signs the warrant — they are not protected by [qualified immunity](/primer/qualified-immunity). Under [_Franks v. Delaware_](/cases/franks-v-delaware), officers have a clearly established duty not to lie or recklessly mislead in warrant applications. If your arrest was based on a warrant affidavit containing demonstrable falsehoods or material omissions, _Hughes v. Garcia_ is powerful authority for your [false arrest](/primer/false-arrest) and [malicious prosecution](/primer/malicious-prosecution) claims.
+If police officers obtain your arrest warrant by including false statements or omitting critical exculpatory information — even if a magistrate signs the warrant — they are not protected by [qualified immunity](/terms-and-concepts/qualified-immunity). Under [_Franks v. Delaware_](/cases/franks-v-delaware), officers have a clearly established duty not to lie or recklessly mislead in warrant applications. If your arrest was based on a warrant affidavit containing demonstrable falsehoods or material omissions, _Hughes v. Garcia_ is powerful authority for your [false arrest](/terms-and-concepts/false-arrest) and [malicious prosecution](/terms-and-concepts/malicious-prosecution) claims.

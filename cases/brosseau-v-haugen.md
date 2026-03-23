@@ -28,7 +28,7 @@ citedBy:
 
 ## What This Case Is About
 
-Officer Rochelle Brosseau shot Kenneth Haugen in the back as he attempted to flee from police in his Jeep Cherokee. Haugen sued under [§ 1983](/primer/section-1983), alleging the shot constituted [excessive force](/primer/excessive-force). The Supreme Court, in a per curiam opinion, reversed the Ninth Circuit and held that Brosseau was entitled to [qualified immunity](/primer/qualified-immunity) because the case fell in the "hazy border between excessive and acceptable force" and existing law did not clearly establish that her conduct was unconstitutional.
+Officer Rochelle Brosseau shot Kenneth Haugen in the back as he attempted to flee from police in his Jeep Cherokee. Haugen sued under [§ 1983](/terms-and-concepts/section-1983), alleging the shot constituted [excessive force](/terms-and-concepts/excessive-force). The Supreme Court, in a per curiam opinion, reversed the Ninth Circuit and held that Brosseau was entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) because the case fell in the "hazy border between excessive and acceptable force" and existing law did not clearly establish that her conduct was unconstitutional.
 
 ## The Facts
 
@@ -40,7 +40,7 @@ Brosseau responded and found Tamburello and Atwood trying to restrain Haugen. Ha
 
 Other people were in the immediate vicinity—Tamburello and Atwood were nearby, and a prior report indicated Haugen might be headed to a prior victim's home. As the Jeep began to move forward, Brosseau shot Haugen once in the back through the rear window.
 
-Haugen was injured but survived. He sued Brosseau under § 1983, alleging the shot violated his [Fourth Amendment](/primer/fourth-amendment) right to be free from excessive force.
+Haugen was injured but survived. He sued Brosseau under § 1983, alleging the shot violated his [Fourth Amendment](/terms-and-concepts/fourth-amendment) right to be free from excessive force.
 
 ## What the Court Decided
 
@@ -58,14 +58,14 @@ Because the law was not clearly established, Brosseau was entitled to qualified 
 
 ## Why This Case Matters for Your § 1983 Case
 
-**[Qualified immunity](/primer/qualified-immunity) requires specificity.** The Court reiterated that the clearly-established-law inquiry must be conducted at a high level of specificity—not based on general principles like "don't use excessive force." You must find prior cases with sufficiently similar facts to put the officer on notice that the specific conduct was unconstitutional.
+**[Qualified immunity](/terms-and-concepts/qualified-immunity) requires specificity.** The Court reiterated that the clearly-established-law inquiry must be conducted at a high level of specificity—not based on general principles like "don't use excessive force." You must find prior cases with sufficiently similar facts to put the officer on notice that the specific conduct was unconstitutional.
 
 **The "hazy border" protects officers.** When the use of force falls in an area where reasonable officers could disagree about whether the conduct was lawful, qualified immunity applies. This "hazy border" concept has become one of the most significant barriers for plaintiffs in excessive-force cases.
 
 **Vehicle flight cases are inherently uncertain.** When a suspect attempts to flee in a vehicle, courts have recognized that the situation is inherently ambiguous—the vehicle poses a potential threat to bystanders, but shooting a fleeing driver also poses risks. This ambiguity often favors qualified immunity.
 
-**[Deadly force](/primer/deadly-force) against fleeing suspects.** _Garner_ prohibits deadly force against a fleeing suspect who poses no immediate threat. But when there are bystanders at risk or the suspect has a violent history, the calculus changes. _Brosseau_ shows that this middle ground often falls within the "hazy border" where qualified immunity applies.
+**[Deadly force](/terms-and-concepts/deadly-force) against fleeing suspects.** _Garner_ prohibits deadly force against a fleeing suspect who poses no immediate threat. But when there are bystanders at risk or the suspect has a violent history, the calculus changes. _Brosseau_ shows that this middle ground often falls within the "hazy border" where qualified immunity applies.
 
 ## Key Takeaway
 
-When an officer uses [deadly force](/primer/deadly-force) against a fleeing suspect in a situation where the case law does not clearly dictate the outcome, qualified immunity will protect the officer—even if the force ultimately violated the Fourth Amendment. The Supreme Court's "hazy border" concept means that in ambiguous, fact-specific situations, plaintiffs must identify closely analogous precedent to overcome immunity. General principles from _Graham_ and _Garner_ alone are not enough.
+When an officer uses [deadly force](/terms-and-concepts/deadly-force) against a fleeing suspect in a situation where the case law does not clearly dictate the outcome, qualified immunity will protect the officer—even if the force ultimately violated the Fourth Amendment. The Supreme Court's "hazy border" concept means that in ambiguous, fact-specific situations, plaintiffs must identify closely analogous precedent to overcome immunity. General principles from _Graham_ and _Garner_ alone are not enough.

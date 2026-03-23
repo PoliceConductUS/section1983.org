@@ -18,7 +18,7 @@ citedBy: []
 
 ## What This Case Is About
 
-United States v. Hearn is a federal criminal case involving the arrest of Gregory Hearn, Joel Hammond, and Cassandra Collins on methamphetamine charges. While not a [§ 1983](/primer/section-1983) civil rights case, Hearn is significant because it addresses [Fourth Amendment](/primer/fourth-amendment) standards for [probable cause](/primer/probable-cause), the use of confidential informants, and the circumstances under which evidence seized during or after an arrest will be upheld. These principles directly apply to civil rights cases challenging the legality of arrests and searches.
+United States v. Hearn is a federal criminal case involving the arrest of Gregory Hearn, Joel Hammond, and Cassandra Collins on methamphetamine charges. While not a [§ 1983](/terms-and-concepts/section-1983) civil rights case, Hearn is significant because it addresses [Fourth Amendment](/terms-and-concepts/fourth-amendment) standards for [probable cause](/terms-and-concepts/probable-cause), the use of confidential informants, and the circumstances under which evidence seized during or after an arrest will be upheld. These principles directly apply to civil rights cases challenging the legality of arrests and searches.
 
 ## The Facts
 

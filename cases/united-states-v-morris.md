@@ -20,7 +20,7 @@ citedBy: []
 
 ## What This Case Is About
 
-United States v. Morris is a federal criminal case from the Fifth Circuit addressing two important constitutional questions: whether evidence seized during an arrest was the product of an unlawful arrest (a [Fourth Amendment](/primer/fourth-amendment) challenge), and whether a firearms registration requirement violated the [Fifth Amendment](/primer/fifth-amendment) privilege against self-incrimination. While not a [§ 1983](/primer/section-1983) case, Morris addresses the legality of search incident to arrest—a doctrine that frequently arises in civil rights cases challenging the scope of police searches.
+United States v. Morris is a federal criminal case from the Fifth Circuit addressing two important constitutional questions: whether evidence seized during an arrest was the product of an unlawful arrest (a [Fourth Amendment](/terms-and-concepts/fourth-amendment) challenge), and whether a firearms registration requirement violated the [Fifth Amendment](/terms-and-concepts/fifth-amendment) privilege against self-incrimination. While not a [§ 1983](/terms-and-concepts/section-1983) case, Morris addresses the legality of search incident to arrest—a doctrine that frequently arises in civil rights cases challenging the scope of police searches.
 
 ## The Facts
 

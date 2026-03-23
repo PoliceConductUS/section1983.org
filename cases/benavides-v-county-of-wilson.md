@@ -38,9 +38,9 @@ The Thirteenth Court of Appeals followed the established _Anders_ procedure:
 
 While _Benavides_ is a state criminal procedure case, it has relevance for § 1983 practitioners:
 
-**Probation revocations and § 1983.** If you believe your probation was revoked based on unconstitutional conduct by law enforcement—such as an illegal search that uncovered the violation, or false testimony at a revocation hearing—the underlying criminal proceedings must first be challenged through direct appeal or habeas corpus before a § 1983 claim can proceed, under the [Heck doctrine](/primer/heck-doctrine).
+**Probation revocations and § 1983.** If you believe your probation was revoked based on unconstitutional conduct by law enforcement—such as an illegal search that uncovered the violation, or false testimony at a revocation hearing—the underlying criminal proceedings must first be challenged through direct appeal or habeas corpus before a § 1983 claim can proceed, under the [Heck doctrine](/terms-and-concepts/heck-doctrine).
 
-**The _Anders_ process as a safeguard.** When appellate counsel finds no meritorious issues, the appellate court's independent review serves as a safety net. Understanding this process is important because a conviction affirmed through _Anders_ review is a final conviction for [Heck](/primer/heck-doctrine) purposes.
+**The _Anders_ process as a safeguard.** When appellate counsel finds no meritorious issues, the appellate court's independent review serves as a safety net. Understanding this process is important because a conviction affirmed through _Anders_ review is a final conviction for [Heck](/terms-and-concepts/heck-doctrine) purposes.
 
 **Revocation hearings have lower burdens.** Community supervision revocations in Texas require only a preponderance of the evidence, not proof beyond a reasonable doubt. This lower standard can make it difficult to challenge revocations on sufficiency-of-the-evidence grounds.
 

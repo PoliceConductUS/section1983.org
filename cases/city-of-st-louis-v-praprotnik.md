@@ -20,7 +20,7 @@ James Praprotnik was an architect who worked for the City of St. Louis for fifte
 
 His supervisors were not happy. Praprotnik's evaluations plummeted. One supervisor explicitly mentioned displeasure with his 1980 appeal. When a new mayor arrived and budget cuts hit, Praprotnik was transferred from the Community Development Agency to the Heritage and Urban Design Commission — where he was given unchallenging clerical work far below his qualifications. A year and a half later, he was laid off.
 
-Praprotnik sued the City under [§ 1983](/primer/section-1983), alleging his transfer and layoff were retaliation for exercising his First Amendment right to appeal. The jury found the City liable but exonerated the individual defendants. The Eighth Circuit affirmed, applying a test that treated any official whose decisions were "final" (not subjected to de novo review) as a municipal policymaker.
+Praprotnik sued the City under [§ 1983](/terms-and-concepts/section-1983), alleging his transfer and layoff were retaliation for exercising his First Amendment right to appeal. The jury found the City liable but exonerated the individual defendants. The Eighth Circuit affirmed, applying a test that treated any official whose decisions were "final" (not subjected to de novo review) as a municipal policymaker.
 
 ## What the Court Decided
 
@@ -36,7 +36,7 @@ Here, the City Charter gave policymaking authority to the Mayor, Aldermen, and t
 
 ## What It Means in Practice
 
-_Praprotnik_ makes it harder for [§ 1983](/primer/section-1983) plaintiffs to establish [_Monell_](/primer/monell-liability) liability. You can't just show that a supervisor made an unconstitutional decision and that higher-ups didn't second-guess it. You must identify a specific official with **final policymaking authority** under state or local law and show that _that_ official adopted or ratified the unconstitutional policy.
+_Praprotnik_ makes it harder for [§ 1983](/terms-and-concepts/section-1983) plaintiffs to establish [_Monell_](/terms-and-concepts/monell-liability) liability. You can't just show that a supervisor made an unconstitutional decision and that higher-ups didn't second-guess it. You must identify a specific official with **final policymaking authority** under state or local law and show that _that_ official adopted or ratified the unconstitutional policy.
 
 The case drew an important line: if the city has a policy against the conduct (here, a merit-based employment system with an appeals process), isolated violations of that policy by subordinates do not create municipal liability — even if the subordinates get away with it.
 

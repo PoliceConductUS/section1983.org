@@ -27,7 +27,7 @@ citedBy: []
 
 ## What This Case Is About
 
-During a large spring-break gathering at a Galveston beach, Sergeant Michael Putnal shot and killed Wendell Baker, Jr., who was sitting in the passenger seat of a parked truck. Putnal claimed he perceived a threat; Baker's family maintained Baker was unarmed and made no threatening movement. The Fifth Circuit found genuine issues of material fact on the [excessive force](/primer/excessive-force) claim and reversed summary judgment on that issue while affirming the remainder of the district court's judgment.
+During a large spring-break gathering at a Galveston beach, Sergeant Michael Putnal shot and killed Wendell Baker, Jr., who was sitting in the passenger seat of a parked truck. Putnal claimed he perceived a threat; Baker's family maintained Baker was unarmed and made no threatening movement. The Fifth Circuit found genuine issues of material fact on the [excessive force](/terms-and-concepts/excessive-force) claim and reversed summary judgment on that issue while affirming the remainder of the district court's judgment.
 
 ## The Facts
 
@@ -37,7 +37,7 @@ Minutes later, officers heard gunfire that sent the crowd running. Two people gr
 
 After the shooting, police recovered a Browning automatic .380 caliber pistol under the passenger seat of the truck. However, it was disputed whether Baker had reached for the weapon, displayed it, or was even aware of its presence.
 
-Baker's parents and the next friend of his minor son filed suit under [§ 1983](/primer/section-1983), alleging that Putnal used [excessive force](/primer/excessive-force) in violation of the Fourth Amendment, that Putnal's superiors failed to provide adequate training and supervision, and that the City's [failure to train](/primer/failure-to-train) proximately caused the constitutional violations.
+Baker's parents and the next friend of his minor son filed suit under [§ 1983](/terms-and-concepts/section-1983), alleging that Putnal used [excessive force](/terms-and-concepts/excessive-force) in violation of the Fourth Amendment, that Putnal's superiors failed to provide adequate training and supervision, and that the City's [failure to train](/terms-and-concepts/failure-to-train) proximately caused the constitutional violations.
 
 ## What the Court Decided
 
@@ -47,13 +47,13 @@ The Fifth Circuit treated the district court's order as a grant of summary judgm
 
 - Whether Baker made any threatening movement or gesture toward Putnal
 - Whether Putnal could have reasonably perceived Baker as the person with the shotgun or as a shooter
-- Whether the use of [deadly force](/primer/deadly-force) was objectively reasonable given the totality of the circumstances
+- Whether the use of [deadly force](/terms-and-concepts/deadly-force) was objectively reasonable given the totality of the circumstances
 
 The court emphasized that on summary judgment, all facts must be viewed in the light most favorable to the nonmoving party (Baker's family). Under that view, an unarmed man was sitting in a parked truck and merely turned his head before being shot—a scenario that could support a finding of excessive force.
 
-**On the failure-to-train and supervisory liability claims**, the court affirmed dismissal. The family did not present sufficient evidence of a pattern of similar violations or [deliberate indifference](/primer/deliberate-indifference) in training to establish [municipal liability](/primer/municipal-liability).
+**On the failure-to-train and supervisory liability claims**, the court affirmed dismissal. The family did not present sufficient evidence of a pattern of similar violations or [deliberate indifference](/terms-and-concepts/deliberate-indifference) in training to establish [municipal liability](/terms-and-concepts/municipal-liability).
 
-**On qualified immunity**, the court held that [qualified immunity](/primer/qualified-immunity) did not shield Putnal at the summary judgment stage because the factual disputes went to the core of the reasonableness inquiry. If Baker made no threatening movement and was unarmed, then the use of deadly force would violate [clearly established](/primer/clearly-established-law) Fourth Amendment law under _Garner_ and _Graham_.
+**On qualified immunity**, the court held that [qualified immunity](/terms-and-concepts/qualified-immunity) did not shield Putnal at the summary judgment stage because the factual disputes went to the core of the reasonableness inquiry. If Baker made no threatening movement and was unarmed, then the use of deadly force would violate [clearly established](/terms-and-concepts/clearly-established-law) Fourth Amendment law under _Garner_ and _Graham_.
 
 ## Why This Case Matters for Your § 1983 Case
 
@@ -63,7 +63,7 @@ The court emphasized that on summary judgment, all facts must be viewed in the l
 
 **The "view from the officer's perspective" has limits.** While courts evaluate force from the perspective of a reasonable officer on scene, that perspective must be grounded in the actual facts, not the officer's post-hoc characterization. When the plaintiff's evidence contradicts the officer's account, the plaintiff's version controls at summary judgment.
 
-**Training and supervision claims require more.** A single incident of deadly force, standing alone, is generally insufficient to establish [failure to train](/primer/failure-to-train) or [supervisory liability](/primer/supervisory-liability). Plaintiffs need evidence of a pattern or of deliberate indifference in training.
+**Training and supervision claims require more.** A single incident of deadly force, standing alone, is generally insufficient to establish [failure to train](/terms-and-concepts/failure-to-train) or [supervisory liability](/terms-and-concepts/supervisory-liability). Plaintiffs need evidence of a pattern or of deliberate indifference in training.
 
 ## Key Takeaway
 

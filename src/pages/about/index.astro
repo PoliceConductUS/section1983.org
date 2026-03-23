@@ -1,10 +1,33 @@
 ---
 import Base from "../../layouts/Base.astro";
-import DisqusComments from "../../components/DisqusComments.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+
+const canonicalUrl = "https://www.section1983.org/about/";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "About section1983.org",
+  description:
+    "Why section1983.org exists, who runs it, and how the site helps people understand Section 1983 litigation.",
+  url: canonicalUrl,
+  mainEntity: {
+    "@type": "Organization",
+    name: "Institute for Police Conduct, Inc.",
+    url: "https://policeconduct.org",
+    email: "hello@section1983.org",
+  },
+};
 ---
 
-<Base title="About">
+<Base
+  title="About section1983.org and the Institute for Police Conduct"
+  description="Learn what section1983.org is, who runs it, and how the Institute for Police Conduct uses plain-language legal education to explain Section 1983 litigation."
+  canonicalUrl={canonicalUrl}
+  structuredData={structuredData}
+>
   <div class="prose">
+    <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "About" }]} />
+
     <h1 class="text-3xl font-bold text-navy mb-6">About section1983.org</h1>
 
     <h2>Our Mission</h2>
@@ -42,8 +65,8 @@ import DisqusComments from "../../components/DisqusComments.astro";
         about what it's actually like to sue the government
       </li>
       <li>
-        <strong><a href="/primer">Pro Se Primer</a></strong> — the key legal concepts
-        you need to know, defined without jargon
+        <strong><a href="/terms-and-concepts">Terms and Concepts</a></strong> — the
+        key legal concepts you need to know, defined without jargon
       </li>
       <li>
         <strong><a href="/process">The Legal Process</a></strong> — step-by-step guide
@@ -101,9 +124,4 @@ import DisqusComments from "../../components/DisqusComments.astro";
       >.
     </p>
   </div>
-
-  <DisqusComments
-    pageUrl="https://www.section1983.org/about/"
-    disqusIdentifier="about"
-  />
 </Base>

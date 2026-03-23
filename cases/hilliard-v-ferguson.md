@@ -21,7 +21,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Charles Hilliard, a convicted felon, applied for a teaching position with the Orleans Parish School Board and was denied. He sued the school superintendent and the board under [§ 1983](/primer/section-1983) and [§ 1985(3)](/primer/section-1983-conspiracy), alleging that the board's policy of excluding convicted felons from employment violated his [Fourth](/primer/fourth-amendment) and [Fourteenth Amendment](/primer/fourteenth-amendment) rights and that the board conspired to deprive convicted felons of equal protection. The Fifth Circuit affirmed [summary judgment](/primer/summary-judgment) for the defendants.
+Charles Hilliard, a convicted felon, applied for a teaching position with the Orleans Parish School Board and was denied. He sued the school superintendent and the board under [§ 1983](/terms-and-concepts/section-1983) and [§ 1985(3)](/terms-and-concepts/section-1983-conspiracy), alleging that the board's policy of excluding convicted felons from employment violated his [Fourth](/terms-and-concepts/fourth-amendment) and [Fourteenth Amendment](/terms-and-concepts/fourteenth-amendment) rights and that the board conspired to deprive convicted felons of equal protection. The Fifth Circuit affirmed [summary judgment](/terms-and-concepts/summary-judgment) for the defendants.
 
 ## The Facts
 
@@ -37,16 +37,16 @@ The Fifth Circuit affirmed summary judgment on both claims.
 
 On the § 1983 equal protection claim, the court applied rational basis review because convicted felons are not a protected class and public employment is not a fundamental right. The board's individualized review policy — examining the circumstances of each conviction, the position sought, and rehabilitation evidence — easily satisfied the rational basis test. It was rationally related to the legitimate interest of protecting schoolchildren.
 
-On the [§ 1985(3) conspiracy](/primer/section-1983-conspiracy) claim, the court held that the board and its employees constituted a single legal entity incapable of conspiring with itself. Under the longstanding intracorporate conspiracy doctrine, a corporation — or a school board — cannot conspire with its own agents or employees. Since Ferguson (the superintendent) was an employee of the board, there could be no conspiracy between them.
+On the [§ 1985(3) conspiracy](/terms-and-concepts/section-1983-conspiracy) claim, the court held that the board and its employees constituted a single legal entity incapable of conspiring with itself. Under the longstanding intracorporate conspiracy doctrine, a corporation — or a school board — cannot conspire with its own agents or employees. Since Ferguson (the superintendent) was an employee of the board, there could be no conspiracy between them.
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Hilliard_ is relevant in several ways. First, it demonstrates that convicted felons are not a suspect class entitled to heightened scrutiny under the [Fourteenth Amendment](/primer/fourteenth-amendment). Government policies that treat felons differently need only satisfy the low rational basis standard.
+_Hilliard_ is relevant in several ways. First, it demonstrates that convicted felons are not a suspect class entitled to heightened scrutiny under the [Fourteenth Amendment](/terms-and-concepts/fourteenth-amendment). Government policies that treat felons differently need only satisfy the low rational basis standard.
 
-Second, the intracorporate conspiracy doctrine is an important defense to [§ 1985(3)](/primer/section-1983-conspiracy) claims. If you allege a conspiracy between a government entity and its own employees, the claim will likely be dismissed under _Hilliard_ — a single entity cannot conspire with itself. To establish a § 1985(3) conspiracy, you need two or more distinct legal entities.
+Second, the intracorporate conspiracy doctrine is an important defense to [§ 1985(3)](/terms-and-concepts/section-1983-conspiracy) claims. If you allege a conspiracy between a government entity and its own employees, the claim will likely be dismissed under _Hilliard_ — a single entity cannot conspire with itself. To establish a § 1985(3) conspiracy, you need two or more distinct legal entities.
 
 Third, the case shows the importance of the actual policy versus the written policy. The brochure said felons were automatically excluded, but the actual policy was individualized review. The plaintiff's own deposition testimony admitting he knew the real policy undermined his claim.
 
 ## Key Takeaway
 
-Government employers may consider criminal history in hiring decisions as long as they use an individualized assessment process. A policy of automatic disqualification might face a stronger constitutional challenge, but a case-by-case review that considers the crime, the position, and rehabilitation easily survives rational basis review. And if you're alleging a [conspiracy](/primer/section-1983-conspiracy) under § 1985(3), remember that a government entity and its own employees are a single entity — they cannot conspire with each other.
+Government employers may consider criminal history in hiring decisions as long as they use an individualized assessment process. A policy of automatic disqualification might face a stronger constitutional challenge, but a case-by-case review that considers the crime, the position, and rehabilitation easily survives rational basis review. And if you're alleging a [conspiracy](/terms-and-concepts/section-1983-conspiracy) under § 1985(3), remember that a government entity and its own employees are a single entity — they cannot conspire with each other.

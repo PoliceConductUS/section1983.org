@@ -28,7 +28,7 @@ The detainees alleged horrific conditions. They were held in tiny cells for 23 h
 
 After their release, the six men filed a class action seeking damages from two groups of federal officials. The first group — the "Executive Officials" — included former Attorney General John Ashcroft, former FBI Director Robert Mueller, and former INS Commissioner James Ziglar. The plaintiffs alleged these officials designed the detention policy that caused their suffering. The second group — the "Wardens" — included the facility's warden and assistant warden, who allegedly knew about and permitted the guard abuse.
 
-Because these were federal officials (not state or local), the detainees couldn't sue under [§ 1983](/primer/section-1983). Instead, they relied on _Bivens v. Six Unknown Named Agents_ (1971), which had implied a constitutional damages remedy against federal officers. They also brought a conspiracy claim under 42 U.S.C. § 1985(3).
+Because these were federal officials (not state or local), the detainees couldn't sue under [§ 1983](/terms-and-concepts/section-1983). Instead, they relied on _Bivens v. Six Unknown Named Agents_ (1971), which had implied a constitutional damages remedy against federal officers. They also brought a conspiracy claim under 42 U.S.C. § 1985(3).
 
 ## What the Court Decided
 
@@ -38,7 +38,7 @@ The Court identified several special factors. These claims challenged the formul
 
 The Court essentially announced a presumption against extending _Bivens_: "When a party seeks to assert an implied cause of action under the Constitution, separation-of-powers principles should be central to the analysis." 582 U.S. at 134. If there are "sound reasons to think Congress might doubt the efficacy or necessity of a damages remedy," courts "must refrain from creating that kind of remedy." _Id._
 
-The Court also held that the Executive Officials were entitled to [qualified immunity](/primer/qualified-immunity) on the § 1985(3) conspiracy claim, because the right at issue — freedom from national-security-related detention based on race or national origin — was not "clearly established" at the time. Justice Thomas wrote a notable concurrence arguing that the Court should reconsider its qualified immunity jurisprudence altogether.
+The Court also held that the Executive Officials were entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) on the § 1985(3) conspiracy claim, because the right at issue — freedom from national-security-related detention based on race or national origin — was not "clearly established" at the time. Justice Thomas wrote a notable concurrence arguing that the Court should reconsider its qualified immunity jurisprudence altogether.
 
 ## What It Means in Practice
 

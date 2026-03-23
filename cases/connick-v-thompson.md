@@ -42,7 +42,7 @@ _Connick_ makes it very hard to hold prosecutors' offices (and by extension, pol
 1. **A pattern** of prior similar violations that put the entity on notice, OR
 2. The rare "single-incident" exception — which the Court defined very narrowly for _Brady_.
 
-The decision has broader implications for all failure-to-train claims under [_Monell_](/primer/monell-liability). It reinforces that "deliberate indifference" is a high bar and that single incidents are generally insufficient absent a documented pattern.
+The decision has broader implications for all failure-to-train claims under [_Monell_](/terms-and-concepts/monell-liability). It reinforces that "deliberate indifference" is a high bar and that single incidents are generally insufficient absent a documented pattern.
 
 For civil rights plaintiffs, this means you need to invest heavily in discovering prior incidents. Public records requests, prior lawsuits, citizen complaints, and internal affairs records become critical to establishing the pattern.
 

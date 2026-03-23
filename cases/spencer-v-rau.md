@@ -33,7 +33,7 @@ citedBy: []
 
 ## What This Case Is About
 
-A retired military nurse stopped at a highway accident scene at 2:30 a.m. to render aid. When two off-duty San Antonio police officers also responded, an argument ensued about safety at the scene. After the nurse refused repeated orders to leave, shoved an officer, and broke free from the officer's grip, he was arrested for interfering with public duties. The court granted [summary judgment](/primer/summary-judgment) for the officers on all federal and state law claims.
+A retired military nurse stopped at a highway accident scene at 2:30 a.m. to render aid. When two off-duty San Antonio police officers also responded, an argument ensued about safety at the scene. After the nurse refused repeated orders to leave, shoved an officer, and broke free from the officer's grip, he was arrested for interfering with public duties. The court granted [summary judgment](/terms-and-concepts/summary-judgment) for the officers on all federal and state law claims.
 
 ## The Facts
 
@@ -45,7 +45,7 @@ Spencer asked for the officers' names and badge numbers, then continued arguing 
 
 The court granted summary judgment on all claims:
 
-**False arrest**: [Probable cause](/primer/probable-cause) existed. Spencer violated Texas Penal Code § 38.15 (interfering with public duties) by refusing officers' orders to leave a traffic lane while they were securing an accident scene, and by physically resisting. The court noted an uncharged offense need not be related to the stated arrest charge under [Devenpeck v. Alford](/cases/devenpeck-v-alford).
+**False arrest**: [Probable cause](/terms-and-concepts/probable-cause) existed. Spencer violated Texas Penal Code § 38.15 (interfering with public duties) by refusing officers' orders to leave a traffic lane while they were securing an accident scene, and by physically resisting. The court noted an uncharged offense need not be related to the stated arrest charge under [Devenpeck v. Alford](/cases/devenpeck-v-alford).
 
 **Excessive force**: Under [Graham v. Connor](/cases/graham-v-connor), the force was proportionate. Spencer admitted to shoving the officer and breaking free. The officers used only enough force to handcuff him and stopped immediately upon success. His soft tissue injuries were insufficient to support an excessive force finding.
 

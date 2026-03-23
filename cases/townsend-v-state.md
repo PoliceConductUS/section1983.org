@@ -23,7 +23,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Townsend v. State is a Texas state criminal appeal involving a DWI conviction. While not a [§ 1983](/primer/section-1983) case itself, Townsend is frequently cited in civil rights litigation for its discussion of the legal standards governing traffic stops—specifically, what constitutes [reasonable suspicion](/primer/reasonable-suspicion) to initiate a stop and when a driver's consent to testing is considered voluntary. These principles directly apply to Fourth Amendment challenges in § 1983 excessive force and false arrest cases.
+Townsend v. State is a Texas state criminal appeal involving a DWI conviction. While not a [§ 1983](/terms-and-concepts/section-1983) case itself, Townsend is frequently cited in civil rights litigation for its discussion of the legal standards governing traffic stops—specifically, what constitutes [reasonable suspicion](/terms-and-concepts/reasonable-suspicion) to initiate a stop and when a driver's consent to testing is considered voluntary. These principles directly apply to Fourth Amendment challenges in § 1983 excessive force and false arrest cases.
 
 ## The Facts
 
@@ -43,7 +43,7 @@ The court also rejected the defendant's argument that the State was required to 
 
 ## Why This Case Matters for Your § 1983 Case
 
-**Weaving provides reasonable suspicion for a traffic stop.** An officer who observes a vehicle weaving between lanes has an objectively reasonable basis for initiating a traffic stop. This standard is frequently applied in [Fourth Amendment](/primer/fourth-amendment) challenges to the legality of traffic stops that lead to arrests and use of force.
+**Weaving provides reasonable suspicion for a traffic stop.** An officer who observes a vehicle weaving between lanes has an objectively reasonable basis for initiating a traffic stop. This standard is frequently applied in [Fourth Amendment](/terms-and-concepts/fourth-amendment) challenges to the legality of traffic stops that lead to arrests and use of force.
 
 **Consent findings are highly deferential.** Trial courts have broad discretion in determining whether a person's consent was voluntary. When conflicting testimony exists about what officers said, the trial court's resolution of credibility disputes is given great deference on appeal.
 

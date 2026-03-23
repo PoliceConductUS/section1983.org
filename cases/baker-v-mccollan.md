@@ -24,7 +24,7 @@ citedBy:
 
 ## What This Case Is About
 
-Leonard McCollan's brother somehow obtained a duplicate of McCollan's driver's license—with the brother's photo on it. The brother was arrested on narcotics charges, booked under McCollan's name, and released on bond. When the brother failed to appear, an arrest warrant was issued in McCollan's name. McCollan was arrested under that warrant and, despite protesting that he was the wrong person, was held in jail for several days before the error was discovered. McCollan sued the sheriff under [§ 1983](/primer/section-1983), claiming his detention violated due process. The Supreme Court held that § 1983 requires a deprivation of a constitutional right, and being detained under a valid warrant—even mistakenly—does not necessarily violate due process.
+Leonard McCollan's brother somehow obtained a duplicate of McCollan's driver's license—with the brother's photo on it. The brother was arrested on narcotics charges, booked under McCollan's name, and released on bond. When the brother failed to appear, an arrest warrant was issued in McCollan's name. McCollan was arrested under that warrant and, despite protesting that he was the wrong person, was held in jail for several days before the error was discovered. McCollan sued the sheriff under [§ 1983](/terms-and-concepts/section-1983), claiming his detention violated due process. The Supreme Court held that § 1983 requires a deprivation of a constitutional right, and being detained under a valid warrant—even mistakenly—does not necessarily violate due process.
 
 ## The Facts
 
@@ -32,7 +32,7 @@ McCollan's brother procured a duplicate of McCollan's Texas driver's license, ex
 
 A bench warrant was issued for McCollan's arrest. Potter County Sheriff's deputies arrested the real McCollan pursuant to that warrant. McCollan protested that he was not the right person—that he was the victim of mistaken identity—but he was held in the Potter County jail for approximately three days before the error was discovered and he was released.
 
-McCollan brought suit against Sheriff Baker and his surety under 42 U.S.C. § 1983, claiming his detention deprived him of liberty without [due process](/primer/substantive-due-process) of law. The District Court directed a verdict in favor of the sheriff. The Fifth Circuit reversed, characterizing the claim as a "§ 1983 false imprisonment action" and holding that McCollan was entitled to have his claim presented to a jury even if the evidence supported only negligence.
+McCollan brought suit against Sheriff Baker and his surety under 42 U.S.C. § 1983, claiming his detention deprived him of liberty without [due process](/terms-and-concepts/substantive-due-process) of law. The District Court directed a verdict in favor of the sheriff. The Fifth Circuit reversed, characterizing the claim as a "§ 1983 false imprisonment action" and holding that McCollan was entitled to have his claim presented to a jury even if the evidence supported only negligence.
 
 ## What the Court Decided
 
@@ -40,7 +40,7 @@ The Supreme Court reversed, in an opinion by Justice Rehnquist joined by five ot
 
 The Court established a foundational principle: **§ 1983 requires a deprivation of a right "secured by the Constitution and laws."** The threshold question is not whether the plaintiff suffered an injury, but whether that injury amounted to a constitutional violation. Not every tort committed by a state official rises to the level of a constitutional deprivation.
 
-Applying this principle, the Court held that McCollan was arrested pursuant to a warrant that conformed to [Fourth Amendment](/primer/fourth-amendment) requirements—it was facially valid and issued by a court based on probable cause. His subsequent detention was therefore pursuant to legal process, not a random or arbitrary deprivation of liberty.
+Applying this principle, the Court held that McCollan was arrested pursuant to a warrant that conformed to [Fourth Amendment](/terms-and-concepts/fourth-amendment) requirements—it was facially valid and issued by a court based on probable cause. His subsequent detention was therefore pursuant to legal process, not a random or arbitrary deprivation of liberty.
 
 The Court further held that a sheriff executing a valid arrest warrant **is not constitutionally required to investigate independently every claim of innocence**, whether based on mistaken identity or on a substantive defense. The Constitution requires probable cause for arrest and a speedy trial—not error-free investigation of identity claims.
 

@@ -1,12 +1,17 @@
 ---
 import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
 ---
 
 <Base
-  title="Accessibility"
-  description="Accessibility statement and commitment for section1983.org."
+  title="Accessibility Statement for section1983.org"
+  description="Accessibility statement for section1983.org, including accessibility standards, known limitations, and how to report accessibility barriers."
 >
   <article class="prose prose-slate max-w-none">
+    <Breadcrumbs
+      crumbs={[{ label: "Home", href: "/" }, { label: "Accessibility" }]}
+    />
+
     <h1 class="text-3xl font-bold text-navy mb-8">Accessibility Statement</h1>
     <p class="text-sm text-slate-500 italic mb-8">
       Last updated: February 2026
@@ -63,7 +68,7 @@ import Base from "../layouts/Base.astro";
       <li>
         <strong>Plain language</strong> — Legal content is complex by nature, but
         we write in the plainest language possible and link legal terms to our <a
-          href="/primer">Pro Se Primer</a
+          href="/terms-and-concepts">Terms and Concepts</a
         > for definitions.
       </li>
     </ul>

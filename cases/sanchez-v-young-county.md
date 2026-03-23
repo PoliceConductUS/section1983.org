@@ -24,7 +24,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Diana Simpson died of a drug overdose while a pretrial detainee at the Young County Jail. Her family sued Young County under [§ 1983](/primer/section-1983), alleging the county's policies and customs regarding jail intake procedures constituted [deliberate indifference](/primer/deliberate-indifference) to detainees' serious medical needs. On the second appeal, the Fifth Circuit reversed summary judgment for the county on the conditions-of-confinement theory, finding genuine issues of material fact.
+Diana Simpson died of a drug overdose while a pretrial detainee at the Young County Jail. Her family sued Young County under [§ 1983](/terms-and-concepts/section-1983), alleging the county's policies and customs regarding jail intake procedures constituted [deliberate indifference](/terms-and-concepts/deliberate-indifference) to detainees' serious medical needs. On the second appeal, the Fifth Circuit reversed summary judgment for the county on the conditions-of-confinement theory, finding genuine issues of material fact.
 
 ## The Facts
 
@@ -36,13 +36,13 @@ Officers arrested Simpson for public intoxication and took her to Young County J
 
 The Fifth Circuit reversed summary judgment for the county on the conditions-of-confinement claim. The court found that the plaintiffs had raised genuine issues of material fact regarding whether the jail had a persistent pattern and practice of failing to complete mandatory intake screening forms. Multiple jailers testified that intake forms did not have to be completed at the time of booking and could be done later—contrary to mandatory state regulations.
 
-The court held that a reasonable jury could find that the jail's custom of deferring mandatory intake screenings constituted a [condition of confinement](/primer/pretrial-detention) that reflected [deliberate indifference](/primer/deliberate-indifference) to detainees' serious medical and mental health needs. The incomplete screening process was the moving force behind the failure to identify Simpson as a suicide risk and provide appropriate intervention.
+The court held that a reasonable jury could find that the jail's custom of deferring mandatory intake screenings constituted a [condition of confinement](/terms-and-concepts/pretrial-detention) that reflected [deliberate indifference](/terms-and-concepts/deliberate-indifference) to detainees' serious medical and mental health needs. The incomplete screening process was the moving force behind the failure to identify Simpson as a suicide risk and provide appropriate intervention.
 
 ## Why This Case Matters for Your § 1983 Case
 
-**Conditions-of-confinement claims focus on systemic failures.** Unlike episodic-acts claims (which focus on individual officer decisions), conditions-of-confinement claims target the policies and customs that create dangerous conditions in the jail. This distinction matters for [Monell liability](/primer/monell-liability).
+**Conditions-of-confinement claims focus on systemic failures.** Unlike episodic-acts claims (which focus on individual officer decisions), conditions-of-confinement claims target the policies and customs that create dangerous conditions in the jail. This distinction matters for [Monell liability](/terms-and-concepts/monell-liability).
 
-**Incomplete intake screenings can constitute deliberate indifference.** When a jail has mandatory screening procedures but routinely fails to complete them, that pattern can establish the [custom](/primer/custom) element required for [municipal liability](/primer/municipal-liability).
+**Incomplete intake screenings can constitute deliberate indifference.** When a jail has mandatory screening procedures but routinely fails to complete them, that pattern can establish the [custom](/terms-and-concepts/custom) element required for [municipal liability](/terms-and-concepts/municipal-liability).
 
 **"Sleeping it off" is not medical care.** Placing a detainee who shows signs of overdose or suicidal ideation in a cell without completing medical screening or providing appropriate monitoring can constitute deliberate indifference to serious medical needs.
 

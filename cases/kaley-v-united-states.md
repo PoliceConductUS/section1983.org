@@ -17,7 +17,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Kerri and Brian Kaley were indicted for reselling stolen medical devices and laundering the proceeds. The government obtained a pre-trial restraining order freezing their assets — including money they needed to pay their attorney. The Kaleys wanted to challenge the factual basis for the indictment at a hearing to vacate the asset freeze. The Supreme Court held they could not: a grand jury's [probable cause](/primer/probable-cause) finding is conclusive, and defendants cannot relitigate it in a hearing about frozen assets.
+Kerri and Brian Kaley were indicted for reselling stolen medical devices and laundering the proceeds. The government obtained a pre-trial restraining order freezing their assets — including money they needed to pay their attorney. The Kaleys wanted to challenge the factual basis for the indictment at a hearing to vacate the asset freeze. The Supreme Court held they could not: a grand jury's [probable cause](/terms-and-concepts/probable-cause) finding is conclusive, and defendants cannot relitigate it in a hearing about frozen assets.
 
 ## The Facts
 
@@ -35,12 +35,12 @@ Applying the _Mathews v. Eldridge_ balancing test, the Court found the governmen
 
 ## Why This Case Matters for Your § 1983 Case
 
-Although _Kaley_ is a criminal forfeiture case, it has implications for [§ 1983](/primer/section-1983) litigation:
+Although _Kaley_ is a criminal forfeiture case, it has implications for [§ 1983](/terms-and-concepts/section-1983) litigation:
 
-- **[Probable cause](/primer/probable-cause) and grand jury indictments**: If your [§ 1983](/primer/section-1983) case involves a [malicious prosecution](/primer/malicious-prosecution) or [false arrest](/primer/false-arrest) claim, and the defendant was indicted, _Kaley_ reinforces that a grand jury indictment creates a strong presumption of probable cause. This can be difficult (though not impossible) to overcome.
+- **[Probable cause](/terms-and-concepts/probable-cause) and grand jury indictments**: If your [§ 1983](/terms-and-concepts/section-1983) case involves a [malicious prosecution](/terms-and-concepts/malicious-prosecution) or [false arrest](/terms-and-concepts/false-arrest) claim, and the defendant was indicted, _Kaley_ reinforces that a grand jury indictment creates a strong presumption of probable cause. This can be difficult (though not impossible) to overcome.
 - **Due process in asset restraints**: If the government freezes your assets before trial, _Kaley_ limits your ability to challenge the underlying charges at a hearing on the freeze. You can challenge the traceability of specific assets to the alleged crime, but not the probable cause for the charges themselves.
 - **Right to counsel**: The dissent (Chief Justice Roberts) argued forcefully that freezing a defendant's assets — including funds needed to hire counsel — implicates the Sixth Amendment right to counsel of choice. This concern may be relevant if government action in your case effectively deprived you of legal representation.
 
 ## Key Takeaway
 
-A grand jury indictment conclusively establishes [probable cause](/primer/probable-cause) for purposes of pre-trial asset restraints — defendants cannot relitigate the factual basis for the charges at a hearing to unfreeze assets, even when those assets are needed to pay for legal counsel.
+A grand jury indictment conclusively establishes [probable cause](/terms-and-concepts/probable-cause) for purposes of pre-trial asset restraints — defendants cannot relitigate the factual basis for the charges at a hearing to unfreeze assets, even when those assets are needed to pay for legal counsel.

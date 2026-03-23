@@ -41,7 +41,7 @@ The Court balanced two competing interests: the government's interest in "effect
 
 ## What It Means in Practice
 
-_Terry_ is one of the most consequential cases in criminal law and civil rights. It created the legal framework for the millions of "stop and frisk" encounters that occur between police and civilians every year. For [§ 1983](/primer/section-1983) plaintiffs, _Terry_ cuts both ways.
+_Terry_ is one of the most consequential cases in criminal law and civil rights. It created the legal framework for the millions of "stop and frisk" encounters that occur between police and civilians every year. For [§ 1983](/terms-and-concepts/section-1983) plaintiffs, _Terry_ cuts both ways.
 
 On one hand, _Terry_ sets limits on police power. An officer cannot stop you without reasonable suspicion. A pat-down must be limited to a search for weapons. Exceeding these limits is a Fourth Amendment violation actionable under § 1983. On the other hand, _Terry_ gave police a powerful tool that's been widely criticized for its racially disparate application — as documented in litigation over New York's stop-and-frisk program and in DOJ investigations of numerous police departments.
 

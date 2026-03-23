@@ -20,7 +20,7 @@ citedBy: []
 
 ## What This Case Is About
 
-City of Newport v. Fact Concerts, Inc. is a Supreme Court decision establishing that municipalities cannot be required to pay punitive damages in [§ 1983](/primer/section-1983) lawsuits. While cities and counties can be held liable for compensatory damages when their policies cause constitutional violations, they are immune from punitive damages designed to punish and deter.
+City of Newport v. Fact Concerts, Inc. is a Supreme Court decision establishing that municipalities cannot be required to pay punitive damages in [§ 1983](/terms-and-concepts/section-1983) lawsuits. While cities and counties can be held liable for compensatory damages when their policies cause constitutional violations, they are immune from punitive damages designed to punish and deter.
 
 ## The Facts
 
@@ -38,7 +38,7 @@ Justice Blackmun, writing for a 6-3 majority, held that municipalities are immun
 
 The Court's analysis rested on two pillars:
 
-**Historical analysis:** In 1871, when Congress enacted what is now § 1983, it was generally understood that municipalities could be sued for a wide range of tortious activity. However, this understanding did not extend to punitive damages. Common-law courts "consistently and expressly declined to award punitive damages against municipalities." Nothing in the legislative history of the Civil Rights Act of 1871 suggested Congress intended to change this rule.
+**Historical analysis:** In 1871, when Congress enacted the Civil Rights Act of 1871, also called the Ku Klux Klan Act, now codified in part as § 1983, it was generally understood that municipalities could be sued for a wide range of tortious activity. However, this understanding did not extend to punitive damages. Common-law courts "consistently and expressly declined to award punitive damages against municipalities." Nothing in the legislative history of the Civil Rights Act of 1871 suggested Congress intended to change this rule.
 
 **Public policy analysis:** The Court found that neither the retributive nor the deterrence objectives of punitive damages justified imposing them on municipalities:
 

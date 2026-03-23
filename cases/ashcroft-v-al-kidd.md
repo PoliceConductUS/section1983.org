@@ -31,7 +31,7 @@ Al-Kidd, a native-born U.S. citizen, was arrested in March 2003 pursuant to a ma
 
 Al-Kidd was held for 16 days, initially in high-security conditions. After release, he was subjected to supervised release conditions for 14 months. Prosecutors never called him as a witness.
 
-Al-Kidd filed suit under _Bivens v. Six Unknown Federal Narcotics Agents_, challenging the constitutionality of Ashcroft's alleged policy. The Ninth Circuit held that the [Fourth Amendment](/primer/fourth-amendment) prohibits pretextual arrests absent probable cause of criminal wrongdoing and that Ashcroft was not entitled to qualified or absolute immunity.
+Al-Kidd filed suit under _Bivens v. Six Unknown Federal Narcotics Agents_, challenging the constitutionality of Ashcroft's alleged policy. The Ninth Circuit held that the [Fourth Amendment](/terms-and-concepts/fourth-amendment) prohibits pretextual arrests absent probable cause of criminal wrongdoing and that Ashcroft was not entitled to qualified or absolute immunity.
 
 ## What the Court Decided
 
@@ -41,7 +41,7 @@ The Supreme Court reversed in a decision by Justice Scalia, joined by Chief Just
 
 The Court found the Ninth Circuit had misread _Indianapolis v. Edmond_, which invalidated suspicionless drug checkpoints. The _Edmond_ inquiry into "programmatic purpose" was triggered not by the absence of probable cause but by the checkpoints' failure to be based on individualized suspicion. Here, a neutral Magistrate Judge issued a warrant based on individualized reasons to believe al-Kidd was a material witness. That warrant provided more Fourth Amendment protection than existed in cases like _Whren v. United States_ and [_Terry v. Ohio_](/cases/terry-v-ohio), where the Court refused to probe subjective intent.
 
-**On [qualified immunity](/primer/qualified-immunity)**, the Court held that even if the Fourth Amendment analysis were a closer question, Ashcroft would still be entitled to immunity. At the time of al-Kidd's arrest, "[n]ot a single judicial opinion had held that pretext could render an objectively reasonable arrest pursuant to a material-witness warrant unconstitutional." The right al-Kidd asserted was not [clearly established](/primer/clearly-established-law).
+**On [qualified immunity](/terms-and-concepts/qualified-immunity)**, the Court held that even if the Fourth Amendment analysis were a closer question, Ashcroft would still be entitled to immunity. At the time of al-Kidd's arrest, "[n]ot a single judicial opinion had held that pretext could render an objectively reasonable arrest pursuant to a material-witness warrant unconstitutional." The right al-Kidd asserted was not [clearly established](/terms-and-concepts/clearly-established-law).
 
 ## Why This Case Matters for Your § 1983 Case
 
@@ -51,7 +51,7 @@ The Court found the Ninth Circuit had misread _Indianapolis v. Edmond_, which in
 
 **Material-witness warrants are powerful tools.** This case confirms that material-witness warrants, when supported by individualized findings from a neutral magistrate, are treated like other valid warrants under the Fourth Amendment. Challenging them on pretext grounds is extremely difficult.
 
-**The _Bivens_/§ 1983 parallel.** While al-Kidd's claim arose under _Bivens_ (against a federal official), the qualified immunity analysis is identical to [§ 1983](/primer/section-1983) cases against state and local officials. The same clearly-established-law standard applies.
+**The _Bivens_/§ 1983 parallel.** While al-Kidd's claim arose under _Bivens_ (against a federal official), the qualified immunity analysis is identical to [§ 1983](/terms-and-concepts/section-1983) cases against state and local officials. The same clearly-established-law standard applies.
 
 ## Key Takeaway
 

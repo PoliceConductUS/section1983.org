@@ -21,7 +21,7 @@ citedBy:
 
 ## What This Case Is About
 
-Whren v. United States is a unanimous Supreme Court decision that definitively settled the question of whether officers can use minor traffic violations as a pretext for investigating other crimes. The Court held that as long as officers have [probable cause](/primer/probable-cause) to believe a traffic violation has occurred, the stop is constitutional under the [Fourth Amendment](/primer/fourth-amendment)—regardless of the officers' actual motivations. This decision is one of the most significant cases in modern Fourth Amendment law and affects virtually every [§ 1983](/primer/section-1983) case arising from a traffic stop.
+Whren v. United States is a unanimous Supreme Court decision that definitively settled the question of whether officers can use minor traffic violations as a pretext for investigating other crimes. The Court held that as long as officers have [probable cause](/terms-and-concepts/probable-cause) to believe a traffic violation has occurred, the stop is constitutional under the [Fourth Amendment](/terms-and-concepts/fourth-amendment)—regardless of the officers' actual motivations. This decision is one of the most significant cases in modern Fourth Amendment law and affects virtually every [§ 1983](/terms-and-concepts/section-1983) case arising from a traffic stop.
 
 ## The Facts
 

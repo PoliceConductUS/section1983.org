@@ -3,6 +3,7 @@ import { getCollection, render } from "astro:content";
 import Case from "../../layouts/Case.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import PrevNext from "../../components/PrevNext.astro";
+import { getContentUpdatedDate } from "../../lib/content-metadata";
 
 export async function getStaticPaths() {
   const cases = await getCollection("cases");
@@ -21,6 +22,11 @@ export async function getStaticPaths() {
 const { entry, prev, next } = Astro.props;
 const { Content } = await render(entry);
 const canonicalUrl = `https://www.section1983.org/cases/${entry.id}/`;
+const updatedDate = getContentUpdatedDate(
+  "cases",
+  entry.id,
+  entry.data.updatedDate,
+);
 
 const crumbs = [
   { label: "Home", href: "/" },
@@ -36,7 +42,7 @@ const nextLink = next
   : null;
 ---
 
-<Case {...entry.data} canonicalUrl={canonicalUrl}>
+<Case {...entry.data} canonicalUrl={canonicalUrl} updatedDate={updatedDate}>
   <Breadcrumbs crumbs={crumbs} slot="breadcrumbs" />
   <Content />
   <PrevNext prev={prevLink} next={nextLink} slot="pagination" />

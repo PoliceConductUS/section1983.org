@@ -18,7 +18,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Walters v. McMahen is a RICO conspiracy case, not a [§ 1983](/primer/section-1983) civil rights case. However, it is significant in § 1983 litigation because it applies the **intracorporate conspiracy doctrine**—the principle that employees of the same entity cannot conspire with each other when acting within the scope of their employment. This doctrine is frequently invoked in § 1983 cases to defeat conspiracy claims against multiple officers or employees of the same police department or municipality.
+Walters v. McMahen is a RICO conspiracy case, not a [§ 1983](/terms-and-concepts/section-1983) civil rights case. However, it is significant in § 1983 litigation because it applies the **intracorporate conspiracy doctrine**—the principle that employees of the same entity cannot conspire with each other when acting within the scope of their employment. This doctrine is frequently invoked in § 1983 cases to defeat conspiracy claims against multiple officers or employees of the same police department or municipality.
 
 ## The Facts
 

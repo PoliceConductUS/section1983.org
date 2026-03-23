@@ -22,7 +22,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Leonardo Lago-Planas, a [pro se](/primer/pro-se) plaintiff, sued two Dallas police officers under [§ 1983](/primer/section-1983) after he was arrested for public intoxication and resisting arrest. He alleged [false arrest](/primer/false-arrest), [excessive force](/primer/excessive-force), denial of medical care, and an unlawful vehicle search. The court granted [summary judgment](/primer/summary-judgment) for the officers on all claims.
+Leonardo Lago-Planas, a [pro se](/terms-and-concepts/pro-se) plaintiff, sued two Dallas police officers under [§ 1983](/terms-and-concepts/section-1983) after he was arrested for public intoxication and resisting arrest. He alleged [false arrest](/terms-and-concepts/false-arrest), [excessive force](/terms-and-concepts/excessive-force), denial of medical care, and an unlawful vehicle search. The court granted [summary judgment](/terms-and-concepts/summary-judgment) for the officers on all claims.
 
 ## The Facts
 
@@ -32,23 +32,23 @@ The officers arrested him for public intoxication. Lago-Planas alleged that the 
 
 ## What the Court Decided
 
-The magistrate judge recommended granting [summary judgment](/primer/summary-judgment) for both officers on all claims.
+The magistrate judge recommended granting [summary judgment](/terms-and-concepts/summary-judgment) for both officers on all claims.
 
-On the [false arrest](/primer/false-arrest) claim, the court found that the officers had [probable cause](/primer/probable-cause) to arrest Lago-Planas for public intoxication based on his behavior, profanity, signs of impairment, and the corroborating witness testimony. Because probable cause existed, the arrest was lawful regardless of the plaintiff's subjective belief.
+On the [false arrest](/terms-and-concepts/false-arrest) claim, the court found that the officers had [probable cause](/terms-and-concepts/probable-cause) to arrest Lago-Planas for public intoxication based on his behavior, profanity, signs of impairment, and the corroborating witness testimony. Because probable cause existed, the arrest was lawful regardless of the plaintiff's subjective belief.
 
-On the [excessive force](/primer/excessive-force) claim, the court found that the officers used reasonable force to effectuate the arrest of a resisting suspect. The officers' affidavits described Lago-Planas as combative and resistant, and the plaintiff failed to present sufficient contrary evidence to create a genuine issue of material fact.
+On the [excessive force](/terms-and-concepts/excessive-force) claim, the court found that the officers used reasonable force to effectuate the arrest of a resisting suspect. The officers' affidavits described Lago-Planas as combative and resistant, and the plaintiff failed to present sufficient contrary evidence to create a genuine issue of material fact.
 
 On the vehicle search, the court found the inventory search was lawful because it was conducted pursuant to standard departmental procedures when the car was towed.
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Lago-Planas_ illustrates common challenges faced by [pro se](/primer/pro-se) plaintiffs:
+_Lago-Planas_ illustrates common challenges faced by [pro se](/terms-and-concepts/pro-se) plaintiffs:
 
-- **[Probable cause](/primer/probable-cause) defeats false arrest**: If officers can articulate objective facts supporting probable cause, a false arrest claim will fail regardless of whether you were actually guilty. The existence of probable cause — not the ultimate disposition of charges — controls.
-- **Resisting arrest and force**: When a plaintiff resists arrest, courts give officers substantial latitude in the force they use. If you cannot present evidence contradicting the officers' account of your resistance, the excessive force claim fails at [summary judgment](/primer/summary-judgment).
+- **[Probable cause](/terms-and-concepts/probable-cause) defeats false arrest**: If officers can articulate objective facts supporting probable cause, a false arrest claim will fail regardless of whether you were actually guilty. The existence of probable cause — not the ultimate disposition of charges — controls.
+- **Resisting arrest and force**: When a plaintiff resists arrest, courts give officers substantial latitude in the force they use. If you cannot present evidence contradicting the officers' account of your resistance, the excessive force claim fails at [summary judgment](/terms-and-concepts/summary-judgment).
 - **Inventory searches**: When your vehicle is towed incident to a lawful arrest, officers may conduct an inventory search under departmental policy without a warrant.
-- **[Pro se](/primer/pro-se) litigants**: While courts construe pro se pleadings liberally, you must still present evidence — not just allegations — to survive summary judgment. Conclusory statements in your own affidavit, without corroboration, are often insufficient.
+- **[Pro se](/terms-and-concepts/pro-se) litigants**: While courts construe pro se pleadings liberally, you must still present evidence — not just allegations — to survive summary judgment. Conclusory statements in your own affidavit, without corroboration, are often insufficient.
 
 ## Key Takeaway
 
-A [pro se](/primer/pro-se) plaintiff suing police officers for [false arrest](/primer/false-arrest) and [excessive force](/primer/excessive-force) must present specific evidence overcoming the officers' showing of [probable cause](/primer/probable-cause) and reasonable force — conclusory allegations alone will not survive [summary judgment](/primer/summary-judgment), especially when corroborating witnesses support the officers' account.
+A [pro se](/terms-and-concepts/pro-se) plaintiff suing police officers for [false arrest](/terms-and-concepts/false-arrest) and [excessive force](/terms-and-concepts/excessive-force) must present specific evidence overcoming the officers' showing of [probable cause](/terms-and-concepts/probable-cause) and reasonable force — conclusory allegations alone will not survive [summary judgment](/terms-and-concepts/summary-judgment), especially when corroborating witnesses support the officers' account.

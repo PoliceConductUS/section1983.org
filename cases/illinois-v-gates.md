@@ -22,7 +22,7 @@ citedBy:
 
 ## What This Case Is About
 
-The police in Bloomingdale, Illinois, received an anonymous letter claiming that a husband and wife were selling drugs, describing in detail how they would transport drugs from Florida. The police corroborated parts of the tip, obtained a [search warrant](/primer/warrant-requirement), and found marijuana in the couple's car and home. The question was whether an anonymous tip that didn't independently satisfy both "prongs" of the old _Aguilar-Spinelli_ test could still support [probable cause](/primer/probable-cause).
+The police in Bloomingdale, Illinois, received an anonymous letter claiming that a husband and wife were selling drugs, describing in detail how they would transport drugs from Florida. The police corroborated parts of the tip, obtained a [search warrant](/terms-and-concepts/warrant-requirement), and found marijuana in the couple's car and home. The question was whether an anonymous tip that didn't independently satisfy both "prongs" of the old _Aguilar-Spinelli_ test could still support [probable cause](/terms-and-concepts/probable-cause).
 
 ## The Facts
 
@@ -32,7 +32,7 @@ The Illinois courts suppressed the evidence, holding that the anonymous letter a
 
 ## What the Court Decided
 
-The Supreme Court, in a 6-3 opinion by Justice Rehnquist, abandoned the rigid _Aguilar-Spinelli_ two-pronged test and replaced it with a "totality of the circumstances" approach. The Court held that the elements of the old test — the informant's "veracity," "reliability," and "basis of knowledge" — should be understood as closely intertwined issues that illuminate the practical question of whether [probable cause](/primer/probable-cause) exists.
+The Supreme Court, in a 6-3 opinion by Justice Rehnquist, abandoned the rigid _Aguilar-Spinelli_ two-pronged test and replaced it with a "totality of the circumstances" approach. The Court held that the elements of the old test — the informant's "veracity," "reliability," and "basis of knowledge" — should be understood as closely intertwined issues that illuminate the practical question of whether [probable cause](/terms-and-concepts/probable-cause) exists.
 
 The task of the issuing magistrate is to make a "practical, common-sense decision whether, given all the circumstances set forth in the affidavit before him, there is a fair probability that contraband or evidence of a crime will be found in a particular place." A deficiency in one factor may be compensated by a strong showing in another, or by independent police corroboration. Here, the extensive police corroboration of the anonymous tip's predictions established probable cause under this more flexible standard.
 
@@ -40,15 +40,15 @@ The Court also emphasized that reviewing courts should give "great deference" to
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Gates_ is foundational for any [§ 1983](/primer/section-1983) case involving [Fourth Amendment](/primer/fourth-amendment) search or seizure issues. It governs:
+_Gates_ is foundational for any [§ 1983](/terms-and-concepts/section-1983) case involving [Fourth Amendment](/terms-and-concepts/fourth-amendment) search or seizure issues. It governs:
 
-- **[False arrest](/primer/false-arrest) claims**: If officers argue they had [probable cause](/primer/probable-cause) based on an informant's tip, courts apply the _Gates_ totality-of-the-circumstances test.
-- **[Warrant challenges](/primer/warrant-requirement)**: If you're challenging the validity of a search warrant based on an informant tip, _Gates_ is the standard the court applies.
-- **[Qualified immunity](/primer/qualified-immunity)**: Even if probable cause was ultimately lacking, officers may claim they reasonably relied on a magistrate's warrant. But if the affidavit was so lacking that no reasonable officer could have believed probable cause existed, [qualified immunity](/primer/qualified-immunity) fails.
-- **[Franks violations](/primer/franks-violation)**: If officers included false statements or omitted critical information in the warrant affidavit, you can challenge the warrant under _Franks v. Delaware_, but the underlying probable cause standard is still _Gates_.
+- **[False arrest](/terms-and-concepts/false-arrest) claims**: If officers argue they had [probable cause](/terms-and-concepts/probable-cause) based on an informant's tip, courts apply the _Gates_ totality-of-the-circumstances test.
+- **[Warrant challenges](/terms-and-concepts/warrant-requirement)**: If you're challenging the validity of a search warrant based on an informant tip, _Gates_ is the standard the court applies.
+- **[Qualified immunity](/terms-and-concepts/qualified-immunity)**: Even if probable cause was ultimately lacking, officers may claim they reasonably relied on a magistrate's warrant. But if the affidavit was so lacking that no reasonable officer could have believed probable cause existed, [qualified immunity](/terms-and-concepts/qualified-immunity) fails.
+- **[Franks violations](/terms-and-concepts/franks-violation)**: If officers included false statements or omitted critical information in the warrant affidavit, you can challenge the warrant under _Franks v. Delaware_, but the underlying probable cause standard is still _Gates_.
 
 **Key quote**: "The task of the issuing magistrate is simply to make a practical, common-sense decision whether, given all the circumstances set forth in the affidavit before him, including the 'veracity' and 'basis of knowledge' of persons supplying hearsay information, there is a fair probability that contraband or evidence of a crime will be found in a particular place."
 
 ## Key Takeaway
 
-[Probable cause](/primer/probable-cause) for a search warrant based on an informant's tip is evaluated under a flexible "totality of the circumstances" test — not rigid, independent requirements for the informant's veracity and basis of knowledge — and a magistrate's probable cause finding receives great deference on review.
+[Probable cause](/terms-and-concepts/probable-cause) for a search warrant based on an informant's tip is evaluated under a flexible "totality of the circumstances" test — not rigid, independent requirements for the informant's veracity and basis of knowledge — and a magistrate's probable cause finding receives great deference on review.

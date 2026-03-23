@@ -4,6 +4,9 @@ on:
   pull_request:
     types: [closed]
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 permissions:
   id-token: write
   contents: read
@@ -13,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: preview
     steps:
-      - uses: aws-actions/configure-aws-credentials@v4
+      - uses: aws-actions/configure-aws-credentials@v5
         with:
           role-to-assume: ${{ vars.AWS_ROLE_ARN }}
           aws-region: us-east-1

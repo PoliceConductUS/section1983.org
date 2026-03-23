@@ -3,7 +3,7 @@ import type { APIContext } from "astro";
 
 export async function GET(_context: APIContext) {
   const articles = await getCollection("articles", ({ data }) => !data.draft);
-  const primer = await getCollection("primer");
+  const termsAndConcepts = await getCollection("termsAndConcepts");
   const process = await getCollection("process");
   const cases = await getCollection("cases");
 
@@ -15,11 +15,11 @@ export async function GET(_context: APIContext) {
       url: `/articles/${a.id}/`,
       tags: a.data.tags ?? [],
     })),
-    ...primer.map((p) => ({
-      type: "primer",
+    ...termsAndConcepts.map((p) => ({
+      type: "termsAndConcepts",
       title: p.data.term,
       description: p.data.description ?? "",
-      url: `/primer/${p.id}/`,
+      url: `/terms-and-concepts/${p.id}/`,
       tags: [p.data.category],
     })),
     ...process.map((p) => ({

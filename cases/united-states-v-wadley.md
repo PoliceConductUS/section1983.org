@@ -22,7 +22,7 @@ citedBy: []
 
 ## What This Case Is About
 
-United States v. Wadley is a federal criminal case addressing whether police had [probable cause](/primer/probable-cause) for a warrantless arrest during a large-scale undercover operation at a public housing complex in South Dallas. While not a [§ 1983](/primer/section-1983) case, Wadley is significant in civil rights litigation because it examines the circumstances under which officers can make warrantless arrests during police operations targeting high-crime areas—a scenario that frequently gives rise to § 1983 false arrest and [excessive force](/primer/excessive-force) claims.
+United States v. Wadley is a federal criminal case addressing whether police had [probable cause](/terms-and-concepts/probable-cause) for a warrantless arrest during a large-scale undercover operation at a public housing complex in South Dallas. While not a [§ 1983](/terms-and-concepts/section-1983) case, Wadley is significant in civil rights litigation because it examines the circumstances under which officers can make warrantless arrests during police operations targeting high-crime areas—a scenario that frequently gives rise to § 1983 false arrest and [excessive force](/terms-and-concepts/excessive-force) claims.
 
 ## The Facts
 

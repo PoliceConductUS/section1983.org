@@ -32,7 +32,7 @@ The Court emphasized: "No heightened pleading rule requires plaintiffs seeking d
 
 ## What It Means in Practice
 
-_Johnson v. City of Shelby_ is a critical safety net, especially for [pro se](/primer/pro-se-litigation) plaintiffs and anyone without a lawyer. It confirms:
+_Johnson v. City of Shelby_ is a critical safety net, especially for [pro se](/terms-and-concepts/pro-se-litigation) plaintiffs and anyone without a lawyer. It confirms:
 
 - **You don't need to cite specific statutes**: If your complaint describes facts showing a constitutional violation by someone acting under color of state law, that's enough for a § 1983 claim
 - **Substance over form**: Courts must read the complaint for what it alleges, not for whether it checks technical boxes

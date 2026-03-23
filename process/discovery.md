@@ -29,7 +29,7 @@ Within 14 days of the scheduling conference (unless the court orders otherwise),
 
 You don't have to ask for these — they're mandatory. If defendants don't disclose something they should have, that's a discovery violation.
 
-### [Interrogatories](/primer/interrogatories) (Rule 33)
+### [Interrogatories](/terms-and-concepts/interrogatories) (Rule 33)
 
 Written questions the other side must answer under oath. Limited to **25 per party** (including subparts) unless the court allows more.
 
@@ -44,7 +44,7 @@ Written questions the other side must answer under oath. Limited to **25 per par
 - Objections — defendants will object to scope, relevance, and burden. Some objections are legitimate; many are obstruction.
 - Vague answers — "Defendant refers Plaintiff to the body camera footage" is not an answer. Press for specifics.
 
-### [Requests for production](/primer/requests-for-production) (Rule 34)
+### [Requests for production](/terms-and-concepts/requests-for-production) (Rule 34)
 
 Demand that the other side produce documents and electronically stored information (ESI). This is your primary tool for getting:
 
@@ -54,13 +54,13 @@ Demand that the other side produce documents and electronically stored informati
 - **Police reports** — incident reports, supplemental reports, use-of-force reports
 - **Training records** — what the officer was trained on and when
 - **Internal affairs files** — prior complaints against the officer
-- **Department policies** — use of force, arrest procedures, [body camera](/primer/body-camera-footage) policies
+- **Department policies** — use of force, arrest procedures, [body camera](/terms-and-concepts/body-camera-footage) policies
 - **Communications** — emails, texts, radio transmissions related to the incident
 - **Personnel files** — discipline, commendations, performance reviews
 
 **The fight**: defendants will resist producing much of this. Expect objections for relevance, privacy, privilege, and "undue burden." Be prepared to file motions to compel.
 
-### [Requests for admission](/primer/requests-for-admission) (Rule 36)
+### [Requests for admission](/terms-and-concepts/requests-for-admission) (Rule 36)
 
 Force the other side to admit or deny specific facts. Unanswered requests are **deemed admitted** after 30 days — one of the most powerful and underused discovery tools.
 
@@ -72,7 +72,7 @@ Force the other side to admit or deny specific facts. Unanswered requests are **
 
 If they admit, the fact is established. If they deny something that's obviously true, you use the denial to destroy their credibility at trial.
 
-### [Depositions](/primer/deposition) (Rule 30)
+### [Depositions](/terms-and-concepts/deposition) (Rule 30)
 
 Live testimony under oath, recorded by a court reporter. You ask questions; the witness answers. Their testimony is locked in — if they change their story at trial, you impeach them with the deposition transcript.
 
@@ -81,12 +81,12 @@ Live testimony under oath, recorded by a court reporter. You ask questions; the 
 - The arresting officer(s)
 - Supervisors on scene
 - Internal affairs investigators
-- The person(s) who made policy decisions (for [Monell](/primer/monell-liability) claims)
+- The person(s) who made policy decisions (for [Monell](/terms-and-concepts/monell-liability) claims)
 - Witnesses to the incident
 
 **Cost**: $500-$2,000+ per deposition (court reporter fees, transcript costs). This is a significant expense for pro se litigants.
 
-**Pro tip**: If you're [IFP](/primer/in-forma-pauperis), some courts will allow telephonic or video depositions to reduce costs. Ask.
+**Pro tip**: If you're [IFP](/terms-and-concepts/in-forma-pauperis), some courts will allow telephonic or video depositions to reduce costs. Ask.
 
 ### Subpoenas (Rule 45)
 
@@ -113,13 +113,13 @@ Government defendants have lawyers whose full-time job is litigation. You have y
 ### What you can do
 
 - **Meet and confer first** — before filing any discovery motion, you must attempt to resolve the dispute directly with opposing counsel (Rule 37(a)(1)). Document these attempts in writing (email).
-- **File [motions to compel](/primer/motion-to-compel)** — if they won't produce, ask the court to order it (Rule 37)
+- **File [motions to compel](/terms-and-concepts/motion-to-compel)** — if they won't produce, ask the court to order it (Rule 37)
 - **Ask the court to penalize them** — if their obstruction is egregious, ask for court-imposed penalties including fees, adverse inference instructions (the jury is told to assume the hidden evidence was bad for the defendant), or evidence preclusion
 - **Be specific** — vague requests get vague objections. Ask for specific documents by name, date range, and custodian.
 
 ## Spoliation
 
-If defendants destroy, alter, or fail to preserve evidence they knew was relevant, that's [spoliation](/primer/spoliation). Body camera footage that was "automatically deleted." Emails that were "purged per retention policy." Radio transmissions that "weren't recorded."
+If defendants destroy, alter, or fail to preserve evidence they knew was relevant, that's [spoliation](/terms-and-concepts/spoliation). Body camera footage that was "automatically deleted." Emails that were "purged per retention policy." Radio transmissions that "weren't recorded."
 
 Courts can penalize spoliation in several ways:
 

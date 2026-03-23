@@ -32,7 +32,7 @@ During the festival, Sergeant Luis Nieves was talking with a group of attendees 
 
 Minutes later, Trooper Bryce Weight was questioning a minor when Bartlett approached aggressively, stood between Weight and the teenager, and yelled with slurred speech that Weight shouldn't be talking to the kid. When Bartlett stepped toward Weight, the officer pushed him back. Nieves saw the confrontation and initiated an arrest. When Bartlett was slow to comply — he says because of a back injury — the officers forced him to the ground. After Bartlett was handcuffed, he claims Nieves said: "Bet you wish you would have talked to me now."
 
-Bartlett sued under [§ 1983](/primer/section-1983), alleging the officers arrested him in retaliation for his First Amendment–protected speech — specifically, his refusal to speak with Nieves and his intervention in Weight's conversation. The District Court granted summary judgment for the officers because probable cause existed for the arrest. The Ninth Circuit reversed, holding that probable cause doesn't defeat a retaliatory arrest claim.
+Bartlett sued under [§ 1983](/terms-and-concepts/section-1983), alleging the officers arrested him in retaliation for his First Amendment–protected speech — specifically, his refusal to speak with Nieves and his intervention in Weight's conversation. The District Court granted summary judgment for the officers because probable cause existed for the arrest. The Ninth Circuit reversed, holding that probable cause doesn't defeat a retaliatory arrest claim.
 
 ## What the Court Decided
 

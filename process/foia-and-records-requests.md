@@ -22,7 +22,7 @@ You were there. You know what happened to you. But a federal judge reviewing a [
 
 Public records requests are your pre-filing discovery. They're cheaper, faster, and less adversarial than formal [discovery](/process/discovery) — and critically, they're available _before_ you file suit. Many agencies become significantly less cooperative once litigation begins.
 
-**For a deep dive on strategy — how to request without tipping your hand, how agencies fight you, and when you may need to sue for access — read [How to Get Public Records Police Don't Want You to Have](/articles/how-to-get-public-records-police-dont-want-you-to-have).**
+**For a deep dive on strategy — how to request without tipping your hand, how agencies fight you, and when you may need to sue for access — read [How to Get Police Records Before Filing a § 1983 Case](/articles/how-to-get-police-records-before-filing-a-section-1983-case).**
 
 ## What to request
 
@@ -71,7 +71,7 @@ Computer-Aided Dispatch (CAD) records show the timeline the department created i
 - Complaint procedures
 - Early warning systems for officers with repeated complaints
 
-**Why it matters**: Policy violations don't automatically establish constitutional violations — but they're relevant evidence. An officer who violates their own department's use-of-force policy is harder to defend as "objectively reasonable" under [_Graham v. Connor_](/cases/graham-v-connor). Department policies also feed [Monell](/primer/monell-liability) claims: a policy that authorizes unconstitutional conduct, or the absence of a policy where one is obviously needed, can establish [municipal liability](/primer/municipal-liability).
+**Why it matters**: Policy violations don't automatically establish constitutional violations — but they're relevant evidence. An officer who violates their own department's use-of-force policy is harder to defend as "objectively reasonable" under [_Graham v. Connor_](/cases/graham-v-connor). Department policies also feed [Monell](/terms-and-concepts/monell-liability) claims: a policy that authorizes unconstitutional conduct, or the absence of a policy where one is obviously needed, can establish [municipal liability](/terms-and-concepts/municipal-liability).
 
 ### Internal affairs and complaint history
 
@@ -79,11 +79,11 @@ Computer-Aided Dispatch (CAD) records show the timeline the department created i
 
 **Expect resistance here.** Many agencies will claim personnel records are exempt. The scope of this exemption varies dramatically by state. Some states (like New York, until the 2020 repeal of § 50-a) shielded nearly everything. Others are more open. Research your state's specific exemptions before requesting.
 
-**Even partial disclosure helps**: If you learn that Officer Smith had 12 prior excessive force complaints with zero sustained findings, that pattern is relevant to a [failure to supervise](/primer/failure-to-supervise) or [_Canton_](/cases/city-of-canton-v-harris) failure-to-train claim — even if the details of each complaint are withheld.
+**Even partial disclosure helps**: If you learn that Officer Smith had 12 prior excessive force complaints with zero sustained findings, that pattern is relevant to a [failure to supervise](/terms-and-concepts/failure-to-supervise) or [_Canton_](/cases/city-of-canton-v-harris) failure-to-train claim — even if the details of each complaint are withheld.
 
 ### Statistical data
 
-This is what separates mediocre complaints from strong ones. Statistical patterns transform individual incidents into evidence of systemic problems — and systemic problems support [Monell](/primer/monell-liability) claims.
+This is what separates mediocre complaints from strong ones. Statistical patterns transform individual incidents into evidence of systemic problems — and systemic problems support [Monell](/terms-and-concepts/monell-liability) claims.
 
 **Request**:
 
@@ -97,7 +97,7 @@ This is what separates mediocre complaints from strong ones. Statistical pattern
 
 - **Compare your officer(s) to the department average.** If Officer Smith accounts for 3% of the department but 15% of use-of-force incidents, that's a pattern.
 - **Compare across officers.** Are the officers involved in your incident statistical outliers? Or is the entire department aggressive?
-- **Look for demographic patterns.** If the charge used against you is disproportionately applied to a particular demographic, that's relevant — especially to [First Amendment retaliation](/primer/first-amendment-retaliation) claims where selective enforcement is at issue.
+- **Look for demographic patterns.** If the charge used against you is disproportionately applied to a particular demographic, that's relevant — especially to [First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation) claims where selective enforcement is at issue.
 - **Calculate rates, not just totals.** An officer with 10 complaints who made 5,000 arrests has a different profile than an officer with 10 complaints who made 200 arrests.
 
 ### Other records to consider
@@ -162,7 +162,7 @@ Expect some requests to be denied, delayed, or partially fulfilled. This is norm
 - **"No responsive records"**: This is sometimes true and sometimes a lie. If you know records exist (because they were referenced in a report or you saw the camera), appeal and explain why you believe records exist.
 - **Radio silence**: Send a follow-up referencing the statutory deadline. If still no response, file an administrative complaint or appeal.
 
-**Keep everything.** Every request, every response, every denial, every appeal. These records may become exhibits if you later argue the agency engaged in [spoliation](/primer/spoliation) or destroyed evidence.
+**Keep everything.** Every request, every response, every denial, every appeal. These records may become exhibits if you later argue the agency engaged in [spoliation](/terms-and-concepts/spoliation) or destroyed evidence.
 
 ## What comes next
 
@@ -208,7 +208,7 @@ Adapt this for your state's specific open records law. The [Reporters Committee 
 
 **Notes:**
 
-- Request by date, location, and time — not by your name. See [How to Get Public Records Police Don't Want You to Have](/articles/how-to-get-public-records-police-dont-want-you-to-have) for why this matters.
+- Request by date, location, and time — not by your name. See [How to Get Police Records Before Filing a § 1983 Case](/articles/how-to-get-police-records-before-filing-a-section-1983-case) for why this matters.
 - Keep requests focused. Multiple smaller requests get faster responses than one massive request.
 - Cite the specific statute. It signals that you know the law and intend to enforce your rights.
 

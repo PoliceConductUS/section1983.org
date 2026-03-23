@@ -50,7 +50,7 @@ The dissent also revealed procedural drama: at one point, the vote for en banc r
 
 **Persistence through multiple appeals.** Brown's case went through trial, a Fifth Circuit appeal, Supreme Court review, remand, and an en banc petition. Complex § 1983 cases against municipalities often require this level of persistence.
 
-**Alternative theories may be stronger.** Rather than basing [municipal liability](/primer/municipal-liability) solely on a single hiring decision, consider pursuing additional theories: [failure to train](/primer/failure-to-train), [failure to supervise](/primer/failure-to-supervise), or a pattern and practice of similar violations. These theories may be easier to prove than the single-decision approach.
+**Alternative theories may be stronger.** Rather than basing [municipal liability](/terms-and-concepts/municipal-liability) solely on a single hiring decision, consider pursuing additional theories: [failure to train](/terms-and-concepts/failure-to-train), [failure to supervise](/terms-and-concepts/failure-to-supervise), or a pattern and practice of similar violations. These theories may be easier to prove than the single-decision approach.
 
 ## Key Takeaway
 

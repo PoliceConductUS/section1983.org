@@ -1,9 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
 
 const articles = await getCollection("articles", ({ data }) => !data.draft);
-const primer = await getCollection("primer");
+const termsAndConceptsEntries = await getCollection("termsAndConcepts");
 const process = await getCollection("process");
 
 const sortedArticles = articles.sort((a, b) => {
@@ -11,16 +12,28 @@ const sortedArticles = articles.sort((a, b) => {
   const db = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
   return db - da;
 });
-const sortedPrimer = primer.sort((a, b) =>
+const sortedTermsAndConcepts = termsAndConceptsEntries.sort((a, b) =>
   a.data.term.localeCompare(b.data.term),
 );
 const sortedProcess = process.sort((a, b) => a.data.order - b.data.order);
+const canonicalUrl = "https://www.section1983.org/sitemap/";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "section1983.org Site Map",
+  description: "Complete directory of the public pages on section1983.org.",
+  url: canonicalUrl,
+};
 ---
 
 <Base
   title="Site Map"
   description="Complete directory of all pages on section1983.org."
+  canonicalUrl={canonicalUrl}
+  structuredData={structuredData}
 >
+  <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Site Map" }]} />
+
   <h1 class="text-3xl font-bold text-navy mb-8">Site Map</h1>
 
   <div class="grid gap-8">
@@ -98,14 +111,14 @@ const sortedProcess = process.sort((a, b) => a.data.order - b.data.order);
 
     <section>
       <h2 class="text-xl font-bold text-navy mb-3 border-b-2 border-gold pb-2">
-        Pro Se Primer ({sortedPrimer.length})
+        Terms and Concepts ({sortedTermsAndConcepts.length})
       </h2>
       <ul class="space-y-1 text-sm columns-2">
         {
-          sortedPrimer.map((p) => (
+          sortedTermsAndConcepts.map((p) => (
             <li>
               <a
-                href={`/primer/${p.id}/`}
+                href={`/terms-and-concepts/${p.id}/`}
                 class="text-navy hover:text-gold transition-colors"
               >
                 {p.data.term}

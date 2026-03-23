@@ -10,9 +10,9 @@ tags: ["interlocutory-appeal", "qualified-immunity", "delay", "critical"]
 
 ## What this is
 
-An interlocutory appeal is an appeal filed in the middle of a case — before final judgment. Normally, you can't appeal until the case is over (the "final judgment rule," 28 U.S.C. § 1291). But [qualified immunity](/primer/qualified-immunity) denials are one of the narrow exceptions.
+An interlocutory appeal is an appeal filed in the middle of a case — before final judgment. Normally, you can't appeal until the case is over (the "final judgment rule," 28 U.S.C. § 1291). But [qualified immunity](/terms-and-concepts/qualified-immunity) denials are one of the narrow exceptions.
 
-When a district court denies a defendant's qualified immunity defense, the defendant can immediately appeal to the circuit court of appeals under the [collateral order doctrine](/primer/collateral-order-doctrine) (_Mitchell v. Forsyth_, 1985). The theory: qualified immunity isn't just a defense to liability — it's a right not to stand trial at all. If you have to wait until after trial to appeal, the right is destroyed.
+When a district court denies a defendant's qualified immunity defense, the defendant can immediately appeal to the circuit court of appeals under the [collateral order doctrine](/terms-and-concepts/collateral-order-doctrine) (_Mitchell v. Forsyth_, 1985). The theory: qualified immunity isn't just a defense to liability — it's a right not to stand trial at all. If you have to wait until after trial to appeal, the right is destroyed.
 
 In practice, this means defendants get two bites at the QI apple — one at Rule 12, one at summary judgment — and each bite freezes your case for 6-18 months.
 
@@ -50,7 +50,7 @@ Defendants often time their QI motions to maximize disruption. A QI interlocutor
 
 ### Resource drain
 
-Each interlocutory appeal requires a full appellate brief — different format, different rules, different court. Federal appellate briefing is the most demanding legal writing there is. For a [pro se](/primer/pro-se) litigant, writing one circuit court brief is a massive undertaking. Writing two is designed to break you.
+Each interlocutory appeal requires a full appellate brief — different format, different rules, different court. Federal appellate briefing is the most demanding legal writing there is. For a [pro se](/terms-and-concepts/pro-se) litigant, writing one circuit court brief is a massive undertaking. Writing two is designed to break you.
 
 ## What the circuit court decides
 
@@ -77,7 +77,7 @@ File a motion in the circuit court requesting an expedited briefing schedule. Ar
 
 ### 3. Check whether the stay is automatic
 
-In most circuits, an interlocutory QI appeal automatically stays the district court proceedings. But not all circuits treat this the same way, and the stay may be limited to the claims and defendants covered by the appeal. If you have claims that aren't affected (e.g., [Monell](/primer/monell-liability) claims against the city — QI doesn't apply to municipalities), you may be able to continue discovery and proceedings on those claims.
+In most circuits, an interlocutory QI appeal automatically stays the district court proceedings. But not all circuits treat this the same way, and the stay may be limited to the claims and defendants covered by the appeal. If you have claims that aren't affected (e.g., [Monell](/terms-and-concepts/monell-liability) claims against the city — QI doesn't apply to municipalities), you may be able to continue discovery and proceedings on those claims.
 
 ### 4. Continue preparation
 
@@ -85,7 +85,7 @@ Even if the case is stayed, you can continue preparing. Organize your evidence, 
 
 ### 5. Document the delay for fees
 
-If you ultimately prevail, the delay caused by interlocutory appeals is relevant to your fee petition under § 1988. Courts can consider the defendant's litigation conduct — including serial QI appeals — when determining reasonable [attorney's fees](/primer/attorneys-fees) (or, for pro se litigants, litigation costs where recoverable).
+If you ultimately prevail, the delay caused by interlocutory appeals is relevant to your fee petition under § 1988. Courts can consider the defendant's litigation conduct — including serial QI appeals — when determining reasonable [attorney's fees](/terms-and-concepts/attorneys-fees) (or, for pro se litigants, litigation costs where recoverable).
 
 ### 6. Argue frivolousness
 

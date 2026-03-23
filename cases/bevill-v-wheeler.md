@@ -29,7 +29,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_Bevill v. Wheeler_ is the continuation of Terry Bevill's [§ 1983](/primer/section-1983) case against Wood County officials who allegedly conspired to have him fired from the Quitman Police Department for signing an affidavit critical of their professional relationships. After the Fifth Circuit's initial ruling in [_Bevill v. Fletcher_](/cases/bevill-v-fletcher) allowed the case to proceed past the motion-to-dismiss stage, the defendants raised [qualified immunity](/primer/qualified-immunity) again on further proceedings. This second appeal addressed additional dimensions of the conspiracy and retaliation claims.
+_Bevill v. Wheeler_ is the continuation of Terry Bevill's [§ 1983](/terms-and-concepts/section-1983) case against Wood County officials who allegedly conspired to have him fired from the Quitman Police Department for signing an affidavit critical of their professional relationships. After the Fifth Circuit's initial ruling in [_Bevill v. Fletcher_](/cases/bevill-v-fletcher) allowed the case to proceed past the motion-to-dismiss stage, the defendants raised [qualified immunity](/terms-and-concepts/qualified-immunity) again on further proceedings. This second appeal addressed additional dimensions of the conspiracy and retaliation claims.
 
 ## The Facts
 

@@ -44,13 +44,13 @@ The Fifth Circuit addressed two constitutional questions — the First Amendment
 
 **First Amendment — Right to Record**: The court held that the First Amendment _does_ protect the right to record the police, joining every other circuit that had ruled on the question. The court grounded this right in basic First Amendment principles: the Amendment "goes beyond protection of the press and the self-expression of individuals to prohibit government from limiting the stock of information from which members of the public may draw." Filming police "contributes to the public's ability to hold the police accountable, ensure that police officers are not abusing their power, and make informed decisions about police policy."
 
-However — and this is the critical qualification — the court held that this right was **not clearly established** at the time of Turner's filming in September 2015. Because no Fifth Circuit or Supreme Court precedent had recognized it, the officers received [qualified immunity](/primer/qualified-immunity) on the First Amendment claim. But the court declared the right clearly established **going forward**.
+However — and this is the critical qualification — the court held that this right was **not clearly established** at the time of Turner's filming in September 2015. Because no Fifth Circuit or Supreme Court precedent had recognized it, the officers received [qualified immunity](/terms-and-concepts/qualified-immunity) on the First Amendment claim. But the court declared the right clearly established **going forward**.
 
 **Fourth Amendment — Unlawful Arrest**: The court found that Turner's detention escalated into a _de facto_ arrest when officers handcuffed him and placed him in the patrol car without any investigative purpose. Officers lacked probable cause — the only reason given was Turner's refusal to identify himself, which cannot alone justify an arrest. The officers were **not** entitled to qualified immunity on the Fourth Amendment claim.
 
 ## What It Means in Practice
 
-_Turner v. Driver_ is the foundational Fifth Circuit case for the right to record police. After February 2017, any officer in Texas, Louisiana, or Mississippi who interferes with someone lawfully recording police activity in a public place is violating clearly established law and cannot claim [qualified immunity](/primer/qualified-immunity).
+_Turner v. Driver_ is the foundational Fifth Circuit case for the right to record police. After February 2017, any officer in Texas, Louisiana, or Mississippi who interferes with someone lawfully recording police activity in a public place is violating clearly established law and cannot claim [qualified immunity](/terms-and-concepts/qualified-immunity).
 
 The case also reinforces that police cannot arrest someone solely for refusing to provide identification when the person has not been lawfully arrested. This is a powerful Fourth Amendment holding for anyone detained while exercising First Amendment rights.
 

@@ -21,11 +21,11 @@ citedBy: []
 
 ## What This Case Is About
 
-This case involved a [§ 1983](/primer/section-1983) claim against officers from the Town of Woodworth arising from a traffic stop. The Fifth Circuit addressed whether the officers were entitled to [qualified immunity](/primer/qualified-immunity) for their use of force, applying the [Graham v. Connor](/cases/graham-v-connor) reasonableness framework and examining whether the constitutional right at issue was [clearly established](/primer/clearly-established-law).
+This case involved a [§ 1983](/terms-and-concepts/section-1983) claim against officers from the Town of Woodworth arising from a traffic stop. The Fifth Circuit addressed whether the officers were entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) for their use of force, applying the [Graham v. Connor](/cases/graham-v-connor) reasonableness framework and examining whether the constitutional right at issue was [clearly established](/terms-and-concepts/clearly-established-law).
 
 ## The Facts
 
-Officers from the Town of Woodworth conducted a traffic stop that escalated into a use-of-force incident. The plaintiff alleged that the officers used [excessive force](/primer/excessive-force) during the encounter in violation of the [Fourth Amendment](/primer/fourth-amendment). The officers moved for summary judgment based on qualified immunity.
+Officers from the Town of Woodworth conducted a traffic stop that escalated into a use-of-force incident. The plaintiff alleged that the officers used [excessive force](/terms-and-concepts/excessive-force) during the encounter in violation of the [Fourth Amendment](/terms-and-concepts/fourth-amendment). The officers moved for summary judgment based on qualified immunity.
 
 ## What the Court Decided
 

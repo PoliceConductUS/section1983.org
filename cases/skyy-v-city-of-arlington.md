@@ -27,7 +27,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Michelle Skyy and Sean Valdez, proceeding [pro se](/primer/pro-se-litigation), sued the City of Arlington under [§ 1983](/primer/section-1983) after officers entered their home without a warrant or consent, searched their vehicle, arrested Skyy, and held her in jail without adequate food or medical care. The Fifth Circuit affirmed dismissal because the plaintiffs' claims were based on [respondeat superior](/primer/respondeat-superior)—that city employees violated city policies—rather than on a municipal policy or custom that caused the constitutional violations.
+Michelle Skyy and Sean Valdez, proceeding [pro se](/terms-and-concepts/pro-se-litigation), sued the City of Arlington under [§ 1983](/terms-and-concepts/section-1983) after officers entered their home without a warrant or consent, searched their vehicle, arrested Skyy, and held her in jail without adequate food or medical care. The Fifth Circuit affirmed dismissal because the plaintiffs' claims were based on [respondeat superior](/terms-and-concepts/respondeat-superior)—that city employees violated city policies—rather than on a municipal policy or custom that caused the constitutional violations.
 
 ## The Facts
 
@@ -39,15 +39,15 @@ Skyy was arrested and taken to jail. Despite informing the check-in officer of h
 
 ## What the Court Decided
 
-The Fifth Circuit affirmed dismissal of all claims. On the [Monell](/primer/monell-liability) claim, the court held that the plaintiffs fundamentally misconstrued the showing necessary to impose [municipal liability](/primer/municipal-liability). Their argument—that the City should be liable because its officers are directed to follow certain procedures and failed to do so—is a textbook respondeat superior theory, which § 1983 prohibits.
+The Fifth Circuit affirmed dismissal of all claims. On the [Monell](/terms-and-concepts/monell-liability) claim, the court held that the plaintiffs fundamentally misconstrued the showing necessary to impose [municipal liability](/terms-and-concepts/municipal-liability). Their argument—that the City should be liable because its officers are directed to follow certain procedures and failed to do so—is a textbook respondeat superior theory, which § 1983 prohibits.
 
-To hold a city liable, a plaintiff must show an official policy or widespread [custom](/primer/custom) that was the [moving force](/primer/moving-force-causation) behind the constitutional violation. Pointing to a single incident involving specific officers, without identifying similar incidents demonstrating a persistent practice, fails to allege a custom. The City's personnel manual requiring employees to obey the law does not itself create municipal liability when individual officers violate it.
+To hold a city liable, a plaintiff must show an official policy or widespread [custom](/terms-and-concepts/custom) that was the [moving force](/terms-and-concepts/moving-force-causation) behind the constitutional violation. Pointing to a single incident involving specific officers, without identifying similar incidents demonstrating a persistent practice, fails to allege a custom. The City's personnel manual requiring employees to obey the law does not itself create municipal liability when individual officers violate it.
 
 The court also affirmed dismissal of punitive damages against the City under [City of Newport v. Fact Concerts, Inc.](/cases/city-of-newport-v-fact-concerts-inc), which bars punitive damages against municipalities in § 1983 actions.
 
 ## Why This Case Matters for Your § 1983 Case
 
-**You cannot sue a city just because its employees broke the law.** [Monell](/primer/monell-liability) requires more than showing that city employees violated your rights. You must identify a specific municipal policy or widespread custom that caused the violation.
+**You cannot sue a city just because its employees broke the law.** [Monell](/terms-and-concepts/monell-liability) requires more than showing that city employees violated your rights. You must identify a specific municipal policy or widespread custom that caused the violation.
 
 **Personnel manual violations are not enough.** Showing that officers violated the city's own rules does not establish municipal liability. In fact, pointing to a policy that forbids the very conduct you complain of actually undermines your Monell claim—it shows the city's policy was constitutional, and the officers simply didn't follow it.
 

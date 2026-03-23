@@ -275,11 +275,11 @@ Focus on:
 - **Locking in facts** — get the witness committed to a version of events
 - **Establishing what they didn't do** — "Did you attempt to de-escalate?" "Did you issue a verbal warning before using force?"
 - **Contradiction mining** — questions whose answers you already know from BWC footage or reports, designed to test whether the witness will be truthful
-- **[Qualified immunity](/primer/qualified-immunity) undermining** — "Were you trained on citizens' right to record police?" "Can you identify any crime you believed Plaintiff was committing at the time of arrest?"
+- **[Qualified immunity](/terms-and-concepts/qualified-immunity) undermining** — "Were you trained on citizens' right to record police?" "Can you identify any crime you believed Plaintiff was committing at the time of arrest?"
 
 ### settlement parameters — Know your number before they offer one
 
-Before any [settlement](/primer/settlement) discussion, write down:
+Before any [settlement](/terms-and-concepts/settlement) discussion, write down:
 
 - Your minimum acceptable amount
 - What non-monetary terms matter to you (policy changes, admissions, apology)

@@ -21,7 +21,7 @@ citedBy: []
 
 ## What This Case Is About
 
-United States v. Tinkle is a federal criminal case from the Fifth Circuit involving serious charges—conspiracy to obstruct communication of information to federal investigators and to injure a federal informant—that raise important [Fourth Amendment](/primer/fourth-amendment) issues about when evidence and statements obtained during and after arrests must be suppressed. While not a [§ 1983](/primer/section-1983) case, Tinkle is relevant to civil rights litigation because it examines the constitutional limits on law enforcement's authority to seize evidence and obtain statements during the arrest process.
+United States v. Tinkle is a federal criminal case from the Fifth Circuit involving serious charges—conspiracy to obstruct communication of information to federal investigators and to injure a federal informant—that raise important [Fourth Amendment](/terms-and-concepts/fourth-amendment) issues about when evidence and statements obtained during and after arrests must be suppressed. While not a [§ 1983](/terms-and-concepts/section-1983) case, Tinkle is relevant to civil rights litigation because it examines the constitutional limits on law enforcement's authority to seize evidence and obtain statements during the arrest process.
 
 ## The Facts
 

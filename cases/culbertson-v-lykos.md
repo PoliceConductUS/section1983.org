@@ -48,7 +48,7 @@ The Fifth Circuit reached several conclusions:
 
 **Lykos (official capacity):** Dismissed. The district attorney was not a final policymaker with respect to county contracting decisions — that authority belonged to the Commissioners Court.
 
-**Palmer (individual capacity):** Dismissed on [qualified immunity](/primer/qualified-immunity). The court found it was unsettled whether a non-final-decision-maker who merely recommends adverse action can be individually liable for First Amendment retaliation. Some Fifth Circuit precedent suggested only final decision-makers can be liable, creating sufficient legal uncertainty to warrant qualified immunity.
+**Palmer (individual capacity):** Dismissed on [qualified immunity](/terms-and-concepts/qualified-immunity). The court found it was unsettled whether a non-final-decision-maker who merely recommends adverse action can be individually liable for First Amendment retaliation. Some Fifth Circuit precedent suggested only final decision-makers can be liable, creating sufficient legal uncertainty to warrant qualified immunity.
 
 **Tortious interference:** The court reversed dismissal of the state-law tortious interference with contract claims against Palmer, finding the complaint adequately alleged intent and causation.
 

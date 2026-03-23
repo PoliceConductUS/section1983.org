@@ -26,7 +26,7 @@ citedBy:
 
 ## What This Case Is About
 
-_Spiller v. City of Texas City Police Department_ addresses the [probable cause](/primer/probable-cause) standard for arrests involving speech. The Fifth Circuit reversed the district court's dismissal, finding that the plaintiff adequately alleged a [Fourth Amendment](/primer/fourth-amendment) violation because her arrest for disorderly conduct lacked probable cause.
+_Spiller v. City of Texas City Police Department_ addresses the [probable cause](/terms-and-concepts/probable-cause) standard for arrests involving speech. The Fifth Circuit reversed the district court's dismissal, finding that the plaintiff adequately alleged a [Fourth Amendment](/terms-and-concepts/fourth-amendment) violation because her arrest for disorderly conduct lacked probable cause.
 
 ## The Facts
 
@@ -36,11 +36,11 @@ Spiller was arrested, her car was searched, and she was confined in a jail cell 
 
 ## What the Court Decided
 
-The Fifth Circuit reversed in part, finding that Spiller's complaint adequately alleged a violation of her [Fourth Amendment](/primer/fourth-amendment) rights because the events did not provide Spurgeon with [probable cause](/primer/probable-cause) to believe her remark was likely to incite an immediate breach of the peace.
+The Fifth Circuit reversed in part, finding that Spiller's complaint adequately alleged a violation of her [Fourth Amendment](/terms-and-concepts/fourth-amendment) rights because the events did not provide Spurgeon with [probable cause](/terms-and-concepts/probable-cause) to believe her remark was likely to incite an immediate breach of the peace.
 
 The court noted that Spiller's expression of frustration from inside her automobile was not part of a confrontational face-to-face exchange. Her reference to Spurgeon's "damn truck" was not threatening, and Spurgeon — a police officer who might "reasonably be expected to exercise a higher degree of restraint than an average citizen" — initially responded by simply moving his truck as requested, belying any claim that her speech threatened a breach of the peace.
 
-The court also found that Spiller's pleadings did not provide Spurgeon with a [qualified immunity](/primer/qualified-immunity) defense.
+The court also found that Spiller's pleadings did not provide Spurgeon with a [qualified immunity](/terms-and-concepts/qualified-immunity) defense.
 
 ## Why This Case Matters for Your § 1983 Case
 
@@ -52,4 +52,4 @@ The court also found that Spiller's pleadings did not provide Spurgeon with a [q
 
 ## Key Takeaway
 
-An arrest for disorderly conduct based solely on a citizen's expression of frustration with mild profanity — without any threatening or confrontational behavior — lacks [probable cause](/primer/probable-cause) and violates the [Fourth Amendment](/primer/fourth-amendment). Officers cannot arrest people for speech that is merely impolite or critical.
+An arrest for disorderly conduct based solely on a citizen's expression of frustration with mild profanity — without any threatening or confrontational behavior — lacks [probable cause](/terms-and-concepts/probable-cause) and violates the [Fourth Amendment](/terms-and-concepts/fourth-amendment). Officers cannot arrest people for speech that is merely impolite or critical.

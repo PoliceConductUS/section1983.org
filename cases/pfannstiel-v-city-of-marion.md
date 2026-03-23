@@ -27,7 +27,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_Pfannstiel v. City of Marion_ involves a civil rights action arising from a confrontation between law enforcement officers and citizens in Marion, Texas. The Fifth Circuit reversed the district court's denial of [qualified immunity](/primer/qualified-immunity), holding that the district court had erroneously applied a subjective standard to the immunity analysis rather than the objective standard required by _Harlow v. Fitzgerald_.
+_Pfannstiel v. City of Marion_ involves a civil rights action arising from a confrontation between law enforcement officers and citizens in Marion, Texas. The Fifth Circuit reversed the district court's denial of [qualified immunity](/terms-and-concepts/qualified-immunity), holding that the district court had erroneously applied a subjective standard to the immunity analysis rather than the objective standard required by _Harlow v. Fitzgerald_.
 
 ## The Facts
 
@@ -55,4 +55,4 @@ The court explained that under _Harlow v. Fitzgerald_, the Supreme Court elimina
 
 ## Key Takeaway
 
-Alleging that officers acted with malice or intent to injure does not defeat [qualified immunity](/primer/qualified-immunity) if the officers' conduct was objectively reasonable under [clearly established law](/primer/clearly-established-law). The Fifth Circuit applies a purely objective standard — what matters is whether a reasonable officer could have believed the conduct was lawful, not whether the officer actually harbored ill intent.
+Alleging that officers acted with malice or intent to injure does not defeat [qualified immunity](/terms-and-concepts/qualified-immunity) if the officers' conduct was objectively reasonable under [clearly established law](/terms-and-concepts/clearly-established-law). The Fifth Circuit applies a purely objective standard — what matters is whether a reasonable officer could have believed the conduct was lawful, not whether the officer actually harbored ill intent.

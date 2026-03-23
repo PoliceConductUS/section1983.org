@@ -25,7 +25,7 @@ citedBy:
 
 ## What This Case Is About
 
-Dr. Allen Zarnow was a physician and licensed firearms dealer whose office was searched after Clinic employees found firearms, ammunition, and blasting caps (none were active explosives). Police obtained a search warrant for his home, and during the search, officers seized items far beyond what the warrant authorized—including currency, bonds, silver, books, and medications—under an expansive and incorrect interpretation of the "plain view" doctrine. Zarnow sued the City of Wichita Falls under [§ 1983](/primer/section-1983), alleging [municipal liability](/primer/monell-liability) for the officers' unconstitutional seizure practices. The Fifth Circuit affirmed summary judgment for the City, finding that while the police chief was a policymaker, Zarnow failed to establish a custom or policy.
+Dr. Allen Zarnow was a physician and licensed firearms dealer whose office was searched after Clinic employees found firearms, ammunition, and blasting caps (none were active explosives). Police obtained a search warrant for his home, and during the search, officers seized items far beyond what the warrant authorized—including currency, bonds, silver, books, and medications—under an expansive and incorrect interpretation of the "plain view" doctrine. Zarnow sued the City of Wichita Falls under [§ 1983](/terms-and-concepts/section-1983), alleging [municipal liability](/terms-and-concepts/monell-liability) for the officers' unconstitutional seizure practices. The Fifth Circuit affirmed summary judgment for the City, finding that while the police chief was a policymaker, Zarnow failed to establish a custom or policy.
 
 ## The Facts
 

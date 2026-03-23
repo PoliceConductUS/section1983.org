@@ -25,7 +25,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Marcus Traylor was at a Dallas bar when a bouncer grabbed him from behind and brought him to the ground. Off-duty Dallas Police Officer Gideon Yorka, who was working private security in full uniform, then entered the bar, picked Traylor up, and escorted him outside. What happened next is hotly disputed: Traylor says Yorka shoved him into the street and punched him without provocation; Yorka says Traylor became aggressive and combative. Traylor sued under [§ 1983](/primer/section-1983) for [excessive force](/primer/excessive-force), unlawful arrest, and fabrication of evidence. The Fifth Circuit addressed [qualified immunity](/primer/qualified-immunity) on all three claims.
+Marcus Traylor was at a Dallas bar when a bouncer grabbed him from behind and brought him to the ground. Off-duty Dallas Police Officer Gideon Yorka, who was working private security in full uniform, then entered the bar, picked Traylor up, and escorted him outside. What happened next is hotly disputed: Traylor says Yorka shoved him into the street and punched him without provocation; Yorka says Traylor became aggressive and combative. Traylor sued under [§ 1983](/terms-and-concepts/section-1983) for [excessive force](/terms-and-concepts/excessive-force), unlawful arrest, and fabrication of evidence. The Fifth Circuit addressed [qualified immunity](/terms-and-concepts/qualified-immunity) on all three claims.
 
 ## The Facts
 
@@ -51,7 +51,7 @@ On the **fabrication-of-evidence claim**, the court reversed the district court'
 
 **Off-duty officers in uniform are still state actors.** When police officers work private security in their official uniforms and exercise police powers—making arrests, using force—they act under color of state law and can be sued under § 1983.
 
-**Arguable probable cause defeats unlawful arrest claims.** Even if an officer's stated reason for arrest is disputed, if the totality of circumstances gives the officer "arguable probable cause"—that is, a reasonable officer could have believed probable cause existed—[qualified immunity](/primer/qualified-immunity) applies.
+**Arguable probable cause defeats unlawful arrest claims.** Even if an officer's stated reason for arrest is disputed, if the totality of circumstances gives the officer "arguable probable cause"—that is, a reasonable officer could have believed probable cause existed—[qualified immunity](/terms-and-concepts/qualified-immunity) applies.
 
 **Fabrication-of-evidence claims face high hurdles.** To succeed, you must show not only that the officer fabricated evidence but that the fabrication was the proximate cause of your continued detention—the independent intermediary doctrine (such as a grand jury indictment) can break the chain of causation.
 

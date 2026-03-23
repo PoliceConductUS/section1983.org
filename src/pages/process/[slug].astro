@@ -3,6 +3,7 @@ import { getCollection, render } from "astro:content";
 import Process from "../../layouts/Process.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import PrevNext from "../../components/PrevNext.astro";
+import { getContentUpdatedDate } from "../../lib/content-metadata";
 
 export async function getStaticPaths() {
   const pages = await getCollection("process");
@@ -20,6 +21,44 @@ export async function getStaticPaths() {
 const { page, prev, next } = Astro.props;
 const { Content } = await render(page);
 const canonicalUrl = `https://www.section1983.org/process/${page.id}/`;
+const updatedDate = getContentUpdatedDate(
+  "process",
+  page.id,
+  page.data.updatedDate,
+);
+const articles = await getCollection("articles", ({ data }) => !data.draft);
+const pageText = [page.data.title, page.data.description, page.body || ""]
+  .join("\n")
+  .toLowerCase();
+const relatedArticles = articles
+  .map((article) => {
+    const articleText = [
+      article.data.title,
+      article.data.description,
+      article.body || "",
+    ]
+      .join("\n")
+      .toLowerCase();
+    let score = 0;
+    if (articleText.includes(`/process/${page.id}`)) score += 10;
+    if (articleText.includes(page.data.title.toLowerCase())) score += 3;
+    if (page.data.tags?.some((tag) => article.data.tags?.includes(tag)))
+      score += 2;
+    if (pageText.includes(article.id.replace(/-/g, " "))) score += 1;
+    return { article, score };
+  })
+  .filter(({ score }) => score > 0)
+  .sort(
+    (a, b) =>
+      b.score - a.score ||
+      a.article.data.title.localeCompare(b.article.data.title),
+  )
+  .slice(0, 4)
+  .map(({ article }) => ({
+    href: `/articles/${article.id}`,
+    label: article.data.title,
+    description: article.data.description,
+  }));
 ---
 
 <Process
@@ -30,6 +69,8 @@ const canonicalUrl = `https://www.section1983.org/process/${page.id}/`;
   respondent={page.data.respondent}
   slug={page.id}
   canonicalUrl={canonicalUrl}
+  updatedDate={updatedDate}
+  relatedArticles={relatedArticles}
 >
   <Breadcrumbs
     slot="breadcrumbs"

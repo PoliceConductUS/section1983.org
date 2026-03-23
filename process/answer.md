@@ -10,7 +10,7 @@ tags: ["answer", "affirmative-defenses", "procedure"]
 
 ## What happens at this stage
 
-If the court denies the [motion to dismiss](/primer/motion-to-dismiss) (or if defendants choose not to file one), defendants must file an answer to your complaint. The answer responds to every allegation — paragraph by paragraph — with one of three responses:
+If the court denies the [motion to dismiss](/terms-and-concepts/motion-to-dismiss) (or if defendants choose not to file one), defendants must file an answer to your complaint. The answer responds to every allegation — paragraph by paragraph — with one of three responses:
 
 - **Admit** — the allegation is true
 - **Deny** — the allegation is false
@@ -40,13 +40,13 @@ The answer typically includes a section of affirmative defenses — legal argume
 
 ### Common affirmative defenses in § 1983 cases
 
-- **[Qualified immunity](/primer/qualified-immunity)** — yes, again. Even if they raised it at Rule 12 and lost, they'll preserve it for [summary judgment](/primer/summary-judgment).
-- **[Statute of limitations](/primer/statute-of-limitations)** — your claim was filed too late
-- **[Failure to exhaust](/primer/exhaustion-of-remedies)** — you didn't complete required administrative remedies (more common in prisoner cases under the [PLRA](/primer/plra))
-- **[Heck v. Humphrey](/cases/heck-v-humphrey) bar** — your [§ 1983](/primer/section-1983) claim would invalidate an existing criminal conviction (see [Heck doctrine](/primer/heck-doctrine))
+- **[Qualified immunity](/terms-and-concepts/qualified-immunity)** — yes, again. Even if they raised it at Rule 12 and lost, they'll preserve it for [summary judgment](/terms-and-concepts/summary-judgment).
+- **[Statute of limitations](/terms-and-concepts/statute-of-limitations)** — your claim was filed too late
+- **[Failure to exhaust](/terms-and-concepts/exhaustion-of-remedies)** — you didn't complete required administrative remedies (more common in prisoner cases under the [PLRA](/terms-and-concepts/plra))
+- **[Heck v. Humphrey](/cases/heck-v-humphrey) bar** — your [§ 1983](/terms-and-concepts/section-1983) claim would invalidate an existing criminal conviction (see [Heck doctrine](/terms-and-concepts/heck-doctrine))
 - **Comparative fault / failure to mitigate** — you contributed to your own injury
 - **Good faith** — the officer acted reasonably (overlaps with QI)
-- **[Eleventh Amendment](/primer/eleventh-amendment) immunity** — if state entities are involved
+- **[Eleventh Amendment](/terms-and-concepts/eleventh-amendment) immunity** — if state entities are involved
 
 ### Boilerplate defenses
 
@@ -69,7 +69,7 @@ If counterclaims are filed, you must respond within 21 days, just as defendants 
 
 ## The scheduling order
 
-Shortly after the answer is filed, the court typically issues a [scheduling order](/primer/scheduling-order) (Rule 16) or holds an initial scheduling conference. This sets deadlines for:
+Shortly after the answer is filed, the court typically issues a [scheduling order](/terms-and-concepts/scheduling-order) (Rule 16) or holds an initial scheduling conference. This sets deadlines for:
 
 - Discovery cutoff
 - Dispositive motions (summary judgment)

@@ -19,7 +19,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_New York Times Co. v. Sullivan_ is a landmark First Amendment case that established the "actual malice" standard for defamation claims by public officials. While primarily a libel case, it is foundational to [§ 1983](/primer/section-1983) litigation because it protects citizens' right to criticize government officials and reinforces the constitutional principles underlying [First Amendment retaliation](/primer/first-amendment-retaliation) claims.
+_New York Times Co. v. Sullivan_ is a landmark First Amendment case that established the "actual malice" standard for defamation claims by public officials. While primarily a libel case, it is foundational to [§ 1983](/terms-and-concepts/section-1983) litigation because it protects citizens' right to criticize government officials and reinforces the constitutional principles underlying [First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation) claims.
 
 ## The Facts
 
@@ -41,7 +41,7 @@ Justice Goldberg, joined by Justice Douglas, concurred but went further, arguing
 
 ## Why This Case Matters for Your § 1983 Case
 
-- **Foundation for First Amendment retaliation claims**: _Sullivan_ establishes that criticism of government officials is constitutionally protected. When police arrest or retaliate against you for criticizing them, this case is the bedrock principle supporting your [First Amendment retaliation](/primer/first-amendment-retaliation) claim.
+- **Foundation for First Amendment retaliation claims**: _Sullivan_ establishes that criticism of government officials is constitutionally protected. When police arrest or retaliate against you for criticizing them, this case is the bedrock principle supporting your [First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation) claim.
 - **Officers cannot use defamation suits to silence critics**: If officers or officials sue you for criticizing their conduct, _Sullivan_ requires them to prove actual malice — a very high bar that protects your right to speak out about police misconduct.
 - **Factual errors don't forfeit protection**: Minor inaccuracies in your criticism of police conduct do not remove First Amendment protection. The speech must be knowingly false or made with reckless disregard for truth to lose its constitutional shield.
 - **"Breathing space" for civil rights speech**: The Court recognized that constitutional freedoms need "breathing space to survive" — the same principle that should protect your right to record police, file complaints, and publicly advocate for accountability.
@@ -49,4 +49,4 @@ Justice Goldberg, joined by Justice Douglas, concurred but went further, arguing
 
 ## Key Takeaway
 
-The First Amendment protects robust criticism of government officials, including police officers, even when that criticism contains minor factual errors. A public official can recover defamation damages only by proving "actual malice" — that the speaker knew the statement was false or acted with reckless disregard for its truth. This principle undergirds every [First Amendment retaliation](/primer/first-amendment-retaliation) claim in [§ 1983](/primer/section-1983) litigation.
+The First Amendment protects robust criticism of government officials, including police officers, even when that criticism contains minor factual errors. A public official can recover defamation damages only by proving "actual malice" — that the speaker knew the statement was false or acted with reckless disregard for its truth. This principle undergirds every [First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation) claim in [§ 1983](/terms-and-concepts/section-1983) litigation.

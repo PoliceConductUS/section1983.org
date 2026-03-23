@@ -24,7 +24,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Richard Keenan and Ray Przybylski reported a Bexar County constable's possible wrongdoing to the district attorney and a television station. After the station aired a critical report, the constable retaliated: Keenan and Przybylski were subjected to a "felony" traffic stop with guns drawn, and Keenan was unsuccessfully prosecuted for "deadly conduct." They sued under [§ 1983](/primer/section-1983) for [First Amendment retaliation](/primer/first-amendment-retaliation). The Fifth Circuit reversed summary judgment for the defendants on the retaliation claim.
+Richard Keenan and Ray Przybylski reported a Bexar County constable's possible wrongdoing to the district attorney and a television station. After the station aired a critical report, the constable retaliated: Keenan and Przybylski were subjected to a "felony" traffic stop with guns drawn, and Keenan was unsuccessfully prosecuted for "deadly conduct." They sued under [§ 1983](/terms-and-concepts/section-1983) for [First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation). The Fifth Circuit reversed summary judgment for the defendants on the retaliation claim.
 
 ## The Facts
 
@@ -34,22 +34,22 @@ Shortly afterward, while driving, Keenan and Przybylski were subjected to a "fel
 
 ## What the Court Decided
 
-The Fifth Circuit held that the plaintiffs stated a viable [First Amendment retaliation](/primer/first-amendment-retaliation) claim. To prove such a claim, a plaintiff must show (1) they engaged in constitutionally protected activity, (2) the defendant took an adverse action against them, and (3) the adverse action was motivated by the protected activity. Here, reporting government corruption to authorities and the media is clearly protected speech, the felony traffic stop and prosecution were adverse actions, and the temporal proximity between the TV report and the retaliation supported an inference of retaliatory motive.
+The Fifth Circuit held that the plaintiffs stated a viable [First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation) claim. To prove such a claim, a plaintiff must show (1) they engaged in constitutionally protected activity, (2) the defendant took an adverse action against them, and (3) the adverse action was motivated by the protected activity. Here, reporting government corruption to authorities and the media is clearly protected speech, the felony traffic stop and prosecution were adverse actions, and the temporal proximity between the TV report and the retaliation supported an inference of retaliatory motive.
 
-The court held that fact questions precluded [qualified immunity](/primer/qualified-immunity) for Tejeda and Martinez. It was clearly established that government officials cannot retaliate against citizens for exercising First Amendment rights, and a reasonable officer would have known that orchestrating a retaliatory traffic stop and prosecution violated the Constitution.
+The court held that fact questions precluded [qualified immunity](/terms-and-concepts/qualified-immunity) for Tejeda and Martinez. It was clearly established that government officials cannot retaliate against citizens for exercising First Amendment rights, and a reasonable officer would have known that orchestrating a retaliatory traffic stop and prosecution violated the Constitution.
 
-However, the court affirmed summary judgment for Bexar County, finding no evidence that the county had a [policy or custom](/primer/monell-liability) of retaliating against citizens who reported constable misconduct.
+However, the court affirmed summary judgment for Bexar County, finding no evidence that the county had a [policy or custom](/terms-and-concepts/monell-liability) of retaliating against citizens who reported constable misconduct.
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Keenan v. Tejeda_ is a strong precedent for [First Amendment retaliation](/primer/first-amendment-retaliation) claims:
+_Keenan v. Tejeda_ is a strong precedent for [First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation) claims:
 
 - **Protected activity**: Reporting police misconduct to prosecutors, internal affairs, or the media is constitutionally protected speech. You cannot be punished for it.
 - **Adverse action**: A "felony" traffic stop, arrest, or prosecution can all constitute adverse actions sufficient to support a retaliation claim.
 - **Temporal proximity**: Close timing between your protected speech and the retaliatory act supports an inference of retaliatory motive.
-- **[Qualified immunity](/primer/qualified-immunity)**: The right to be free from government retaliation for protected speech is clearly established. Officers cannot claim they didn't know retaliation was unconstitutional.
-- **County liability**: Even when individual officers retaliate, the municipality is not liable unless you can show a [policy or custom](/primer/monell-liability) of tolerating or encouraging such retaliation.
+- **[Qualified immunity](/terms-and-concepts/qualified-immunity)**: The right to be free from government retaliation for protected speech is clearly established. Officers cannot claim they didn't know retaliation was unconstitutional.
+- **County liability**: Even when individual officers retaliate, the municipality is not liable unless you can show a [policy or custom](/terms-and-concepts/monell-liability) of tolerating or encouraging such retaliation.
 
 ## Key Takeaway
 
-Citizens who report police misconduct to authorities or the media are exercising clearly established First Amendment rights — and officers who retaliate with traffic stops, arrests, or prosecutions cannot hide behind [qualified immunity](/primer/qualified-immunity), though [municipal liability](/primer/municipal-liability) still requires proof of a policy or custom.
+Citizens who report police misconduct to authorities or the media are exercising clearly established First Amendment rights — and officers who retaliate with traffic stops, arrests, or prosecutions cannot hide behind [qualified immunity](/terms-and-concepts/qualified-immunity), though [municipal liability](/terms-and-concepts/municipal-liability) still requires proof of a policy or custom.

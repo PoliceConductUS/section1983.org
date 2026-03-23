@@ -21,7 +21,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_State v. Martinez_ addressed whether officers had [probable cause](/primer/probable-cause) to arrest Roger Anthony Martinez for public intoxication without a warrant. The Texas Court of Criminal Appeals reversed the court of appeals, finding that probable cause existed and remanding the case for further proceedings.
+_State v. Martinez_ addressed whether officers had [probable cause](/terms-and-concepts/probable-cause) to arrest Roger Anthony Martinez for public intoxication without a warrant. The Texas Court of Criminal Appeals reversed the court of appeals, finding that probable cause existed and remanding the case for further proceedings.
 
 ## The Facts
 
@@ -41,4 +41,4 @@ The Texas Court of Criminal Appeals reversed the court of appeals, finding that 
 
 ## Key Takeaway
 
-Officers may arrest without a warrant for offenses committed in their presence, including public intoxication. The State bears the burden of proving that the warrantless arrest was supported by [probable cause](/primer/probable-cause) based on the officers' observations at the time.
+Officers may arrest without a warrant for offenses committed in their presence, including public intoxication. The State bears the burden of proving that the warrantless arrest was supported by [probable cause](/terms-and-concepts/probable-cause) based on the officers' observations at the time.

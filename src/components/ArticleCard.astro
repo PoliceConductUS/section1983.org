@@ -1,0 +1,40 @@
+---
+interface Props {
+  article: {
+    id: string;
+    data: {
+      title: string;
+      description?: string;
+      tags?: string[];
+    };
+  };
+  headingLevel?: "h2" | "h3";
+}
+
+const { article, headingLevel = "h2" } = Astro.props;
+const Heading = headingLevel;
+---
+
+<a href={`/articles/${article.id.replace(/\.md$/, "")}`} class="block group">
+  <article
+    class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+  >
+    <Heading
+      class="text-xl font-semibold text-navy group-hover:text-gold transition-colors mb-2"
+    >
+      {article.data.title}
+    </Heading>
+    <p class="text-slate text-sm mb-3">{article.data.description}</p>
+    {
+      article.data.tags && article.data.tags.length > 0 && (
+        <div class="flex flex-wrap gap-2">
+          {article.data.tags.map((tag) => (
+            <span class="bg-navy/5 text-navy/70 text-xs px-2 py-0.5 rounded">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )
+    }
+  </article>
+</a>

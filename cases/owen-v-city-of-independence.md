@@ -24,7 +24,7 @@ George Owen was the Chief of Police in Independence, Missouri. In 1972, the City
 
 Without informing Owen of the charges against him, the City Council passed a resolution releasing him from his duties. Owen requested a public hearing to clear his name but was told the matter was closed. The City Manager told the press that Owen had been released due to "icharged" activities. Owen's name was publicly associated with misconduct, but he was never given a hearing or an opportunity to respond to the allegations.
 
-Owen sued the City under [§ 1983](/primer/section-1983), alleging a violation of his Fourteenth Amendment due process rights — specifically, deprivation of a liberty interest (his reputation and ability to pursue future employment) without notice or hearing. The City argued that even if it had violated his rights, it should be protected by qualified immunity because its officials acted in good faith.
+Owen sued the City under [§ 1983](/terms-and-concepts/section-1983), alleging a violation of his Fourteenth Amendment due process rights — specifically, deprivation of a liberty interest (his reputation and ability to pursue future employment) without notice or hearing. The City argued that even if it had violated his rights, it should be protected by qualified immunity because its officials acted in good faith.
 
 ## What the Court Decided
 
@@ -42,9 +42,9 @@ The decision meant that the City of Independence could not defend by arguing tha
 
 ## What It Means in Practice
 
-_Owen_ is one of the most plaintiff-friendly decisions in all of § 1983 law. It means that once you establish [_Monell_ liability](/primer/monell-liability) — that a municipal policy or custom caused the constitutional violation — the municipality **cannot escape liability through qualified immunity**. This is an enormous advantage over suing individual officers, who can invoke QI.
+_Owen_ is one of the most plaintiff-friendly decisions in all of § 1983 law. It means that once you establish [_Monell_ liability](/terms-and-concepts/monell-liability) — that a municipal policy or custom caused the constitutional violation — the municipality **cannot escape liability through qualified immunity**. This is an enormous advantage over suing individual officers, who can invoke QI.
 
-Combined with [_Monell_](/primer/monell-liability), the framework works like this:
+Combined with [_Monell_](/terms-and-concepts/monell-liability), the framework works like this:
 
 - If you can prove the violation was caused by an official policy, widespread custom, or final policymaker's decision, the municipality is liable
 - The municipality cannot raise good faith, reasonableness, or "we didn't know it was unconstitutional" as defenses

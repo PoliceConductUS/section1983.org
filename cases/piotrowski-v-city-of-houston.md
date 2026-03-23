@@ -27,7 +27,7 @@ citedBy: []
 
 ## What Happened
 
-Barbra Piotrowski was shot and rendered a paraplegic by a hit man procured by her ex-boyfriend, Richard Minns. The evidence connected members of the Houston police and fire departments to Minns and his hired investigator Dudley Bell in acts that harassed and threatened Piotrowski before the shooting. Piotrowski sued the City of Houston under [§ 1983](/primer/section-1983), alleging _Monell_ liability under multiple theories, and a jury awarded her a judgment of over $20 million. The City appealed.
+Barbra Piotrowski was shot and rendered a paraplegic by a hit man procured by her ex-boyfriend, Richard Minns. The evidence connected members of the Houston police and fire departments to Minns and his hired investigator Dudley Bell in acts that harassed and threatened Piotrowski before the shooting. Piotrowski sued the City of Houston under [§ 1983](/terms-and-concepts/section-1983), alleging _Monell_ liability under multiple theories, and a jury awarded her a judgment of over $20 million. The City appealed.
 
 ## What the Court Decided
 
@@ -43,7 +43,7 @@ Applying this framework, the Fifth Circuit reversed and rendered judgment in fav
 
 ## What It Means in Practice
 
-_Piotrowski_ is the case every Fifth Circuit § 1983 plaintiff must know when bringing a [_Monell_](/primer/monell-liability) claim. The three-part test is cited in virtually every municipal liability case in Texas, Louisiana, and Mississippi. Understanding it is essential:
+_Piotrowski_ is the case every Fifth Circuit § 1983 plaintiff must know when bringing a [_Monell_](/terms-and-concepts/monell-liability) claim. The three-part test is cited in virtually every municipal liability case in Texas, Louisiana, and Mississippi. Understanding it is essential:
 
 1. **"Persistent and widespread"** is a demanding standard. A handful of incidents usually isn't enough. You need to show a pattern of similar violations that is so common that supervisors must have known about it.
 

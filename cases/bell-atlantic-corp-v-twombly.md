@@ -38,11 +38,11 @@ Applying this standard, the Court found that the Baby Bells' parallel behavior w
 
 ## What It Means in Practice
 
-_Twombly_ changed the rules for every federal civil case, but its impact on [§ 1983](/primer/section-1983) litigation has been particularly significant. Before _Twombly_, a plaintiff could file a relatively bare-bones complaint and count on [discovery](/primer/discovery) to fill in the details. After _Twombly_, the complaint itself must tell a plausible story.
+_Twombly_ changed the rules for every federal civil case, but its impact on [§ 1983](/terms-and-concepts/section-1983) litigation has been particularly significant. Before _Twombly_, a plaintiff could file a relatively bare-bones complaint and count on [discovery](/terms-and-concepts/discovery) to fill in the details. After _Twombly_, the complaint itself must tell a plausible story.
 
 For civil rights plaintiffs, this creates a structural disadvantage. The facts you need — body camera footage, use-of-force reports, internal affairs files, dispatch records, training records — are almost always in the government's exclusive possession. You can't get them without discovery, but you can't get to discovery without pleading enough facts to make your claims plausible. It's a Catch-22 that _Twombly_'s successor, [_Ashcroft v. Iqbal_](/cases/ashcroft-v-iqbal), would make even more acute.
 
-_Twombly_ also gave defendants a powerful new weapon: the [motion to dismiss](/primer/motion-to-dismiss). Before _Twombly_, these motions were harder to win. After _Twombly_, courts gained broad discretion to evaluate whether a complaint's factual allegations "plausibly" support liability — or whether they're equally consistent with innocent explanations.
+_Twombly_ also gave defendants a powerful new weapon: the [motion to dismiss](/terms-and-concepts/motion-to-dismiss). Before _Twombly_, these motions were harder to win. After _Twombly_, courts gained broad discretion to evaluate whether a complaint's factual allegations "plausibly" support liability — or whether they're equally consistent with innocent explanations.
 
 ## How You Can Use It
 
@@ -59,7 +59,7 @@ Despite being defense-friendly, _Twombly_ gives you a clear roadmap for survivin
 _Twombly_ is the foundation on which virtually every motion to dismiss a § 1983 complaint is built. Defendants will:
 
 - **Argue your complaint is conclusory.** Phrases like "used excessive force," "acted with deliberate indifference," or "maintained an unconstitutional policy" are legal conclusions, not factual allegations. If your complaint relies on such phrases without underlying facts, _Twombly_ supports dismissal.
-- **Offer an "obvious alternative explanation."** Just as the Baby Bells' parallel conduct was equally consistent with independent action, a defendant will argue that your facts are equally consistent with lawful behavior. An officer who used force will say the force was reasonable. An officer who arrested you will say there was [probable cause](/primer/probable-cause).
+- **Offer an "obvious alternative explanation."** Just as the Baby Bells' parallel conduct was equally consistent with independent action, a defendant will argue that your facts are equally consistent with lawful behavior. An officer who used force will say the force was reasonable. An officer who arrested you will say there was [probable cause](/terms-and-concepts/probable-cause).
 - **Invoke discovery costs.** _Twombly_ was explicitly motivated by concern about the burden of discovery. Defendants will argue that letting your case proceed would impose unjustified costs, especially in cases against municipalities or large police departments.
 
 **How to counter**: Plead specific, concrete facts about what happened to you. Allege what you personally witnessed and experienced. Where critical evidence is in the defendant's exclusive control (body camera footage, internal records), say so in your complaint — some courts recognize that the plausibility standard should be applied with greater flexibility when relevant facts are asymmetrically held.

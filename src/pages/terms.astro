@@ -1,12 +1,17 @@
 ---
 import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
 ---
 
 <Base
-  title="Terms & Conditions"
-  description="Terms of use, disclaimers, and disclosures for section1983.org."
+  title="Terms and Conditions for section1983.org"
+  description="Terms of use, disclaimers, AI disclosure, and legal conditions governing use of section1983.org."
 >
   <article class="prose prose-slate max-w-none">
+    <Breadcrumbs
+      crumbs={[{ label: "Home", href: "/" }, { label: "Terms & Conditions" }]}
+    />
+
     <h1 class="text-3xl font-bold text-navy mb-8">Terms &amp; Conditions</h1>
     <p class="text-sm text-slate-500 italic mb-8">
       Last updated: February 2026

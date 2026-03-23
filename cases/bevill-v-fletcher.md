@@ -32,7 +32,7 @@ citedBy:
 
 ## What This Case Is About
 
-Terry Bevill, a captain with the Quitman Police Department in Wood County, Texas, signed an affidavit supporting a venue transfer in a criminal case. The affidavit stated that the defendant could not receive a fair trial in Wood County because of the close personal relationships among the local judge, district attorney, and sheriff. After learning about the affidavit, these three officials allegedly pressured the city to fire Bevill. He sued under [§ 1983](/primer/section-1983), claiming the officials conspired to violate his [First Amendment](/primer/first-amendment-retaliation) rights. The Fifth Circuit affirmed that the claim survived a motion to dismiss.
+Terry Bevill, a captain with the Quitman Police Department in Wood County, Texas, signed an affidavit supporting a venue transfer in a criminal case. The affidavit stated that the defendant could not receive a fair trial in Wood County because of the close personal relationships among the local judge, district attorney, and sheriff. After learning about the affidavit, these three officials allegedly pressured the city to fire Bevill. He sued under [§ 1983](/terms-and-concepts/section-1983), claiming the officials conspired to violate his [First Amendment](/terms-and-concepts/first-amendment-retaliation) rights. The Fifth Circuit affirmed that the claim survived a motion to dismiss.
 
 ## The Facts
 
@@ -42,7 +42,7 @@ Two months later, Bevill—then captain of the Quitman Police Department—signe
 
 After learning about the affidavit, Fletcher, Castloo, and Wheeler approached Quitman Mayor David Dobbs to discuss Bevill's continued employment. During that meeting, the three officials **threatened to withhold resources from Quitman and support for QPD** if Bevill was not fired. Mayor Dobbs then pressured QPD Police Chief Kelly Cole to fire Bevill. Chief Cole ultimately terminated Bevill.
 
-Bevill filed suit under § 1983, alleging that Fletcher, Castloo, and Wheeler [conspired](/primer/section-1983-conspiracy) to retaliate against him for exercising his First Amendment right to speak on a matter of public concern.
+Bevill filed suit under § 1983, alleging that Fletcher, Castloo, and Wheeler [conspired](/terms-and-concepts/section-1983-conspiracy) to retaliate against him for exercising his First Amendment right to speak on a matter of public concern.
 
 ## What the Court Decided
 
@@ -50,9 +50,9 @@ The Fifth Circuit affirmed the district court's denial of the defendants' motion
 
 **On the First Amendment claim**, the court applied the _Pickering-Connick_ framework for public-employee speech. The threshold question was whether Bevill spoke on a matter of "public concern." The court found he clearly did—the fairness of the local criminal justice system and the relationships among its key actors are quintessential matters of public interest.
 
-**On the conspiracy claim**, the court found that Bevill plausibly alleged an agreement among the three defendants. The complaint alleged specific facts: the defendants met together with the mayor, collectively threatened to withhold resources, and the firing followed directly. This was enough to satisfy [_Ashcroft v. Iqbal_](/cases/ashcroft-v-iqbal) and [_Bell Atlantic Corp. v. Twombly_](/cases/bell-atlantic-corp-v-twombly)'s [plausibility pleading](/primer/plausibility-pleading) standard.
+**On the conspiracy claim**, the court found that Bevill plausibly alleged an agreement among the three defendants. The complaint alleged specific facts: the defendants met together with the mayor, collectively threatened to withhold resources, and the firing followed directly. This was enough to satisfy [_Ashcroft v. Iqbal_](/cases/ashcroft-v-iqbal) and [_Bell Atlantic Corp. v. Twombly_](/cases/bell-atlantic-corp-v-twombly)'s [plausibility pleading](/terms-and-concepts/plausibility-pleading) standard.
 
-**On [qualified immunity](/primer/qualified-immunity)**, the court held that the defendants were not entitled to immunity at the motion-to-dismiss stage. The right to be free from retaliation for speech on matters of public concern was clearly established, and the complaint alleged facts showing the defendants knew they were retaliating against Bevill for his speech.
+**On [qualified immunity](/terms-and-concepts/qualified-immunity)**, the court held that the defendants were not entitled to immunity at the motion-to-dismiss stage. The right to be free from retaliation for speech on matters of public concern was clearly established, and the complaint alleged facts showing the defendants knew they were retaliating against Bevill for his speech.
 
 The court also addressed [_Nieves v. Bartlett_](/cases/nieves-v-bartlett), noting that the probable-cause bar to retaliatory arrest claims does not apply to retaliatory employment termination—a different category of retaliation.
 
@@ -60,7 +60,7 @@ The court also addressed [_Nieves v. Bartlett_](/cases/nieves-v-bartlett), notin
 
 **Public employees can speak on matters of public concern.** When a government employee speaks as a citizen on issues of public interest—like the integrity of the local justice system—that speech is protected by the First Amendment. Retaliation for such speech is actionable under § 1983.
 
-**Conspiracy claims can reach across agencies.** Bevill's case involved three officials from different branches of county government (judicial, prosecutorial, and law enforcement) allegedly conspiring together. A [§ 1983 conspiracy](/primer/section-1983-conspiracy) claim requires showing an agreement to violate constitutional rights—and circumstantial evidence like a joint meeting, threats, and subsequent action can establish that agreement.
+**Conspiracy claims can reach across agencies.** Bevill's case involved three officials from different branches of county government (judicial, prosecutorial, and law enforcement) allegedly conspiring together. A [§ 1983 conspiracy](/terms-and-concepts/section-1983-conspiracy) claim requires showing an agreement to violate constitutional rights—and circumstantial evidence like a joint meeting, threats, and subsequent action can establish that agreement.
 
 **Resource threats are a form of pressure.** The defendants did not directly fire Bevill—they pressured the city to do it by threatening to withhold resources. Courts recognize that this kind of indirect retaliation is still actionable.
 

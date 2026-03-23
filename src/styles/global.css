@@ -118,3 +118,24 @@
     white-space: nowrap;
   }
 }
+
+.chart-scroll-frame {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-gutter: stable;
+  -webkit-overflow-scrolling: touch;
+}
+
+.chart-scroll-frame::-webkit-scrollbar {
+  height: 0.75rem;
+}
+
+.chart-scroll-frame::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
+.chart-scroll-frame::-webkit-scrollbar-thumb {
+  background: #64748b;
+  border-radius: 9999px;
+  border: 2px solid #e2e8f0;
+}

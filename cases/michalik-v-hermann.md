@@ -29,7 +29,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_Michalik v. Hermann_ defines the limits of liability for officers involved in obtaining a search warrant. The Fifth Circuit held that only the officer who prepared or presented the warrant application can be liable under _Malley v. Briggs_ — officers who merely provided information during the investigation are shielded by [qualified immunity](/primer/qualified-immunity).
+_Michalik v. Hermann_ defines the limits of liability for officers involved in obtaining a search warrant. The Fifth Circuit held that only the officer who prepared or presented the warrant application can be liable under _Malley v. Briggs_ — officers who merely provided information during the investigation are shielded by [qualified immunity](/terms-and-concepts/qualified-immunity).
 
 ## The Facts
 
@@ -45,16 +45,16 @@ The Fifth Circuit addressed three sets of claims:
 
 **Search execution**: The court reversed the denial of qualified immunity to Toye. Since Toye was not liable for procuring the warrant, he had no more knowledge of the probable cause deficiency than any other executing officer, all of whom had already been granted qualified immunity for reasonably relying on a facially valid warrant.
 
-**Forcible entry (knock and announce)**: The court dismissed this portion of the appeal for lack of jurisdiction because material issues of fact existed about whether the officers knocked, how long they waited, and who entered first — factual disputes that prevented [interlocutory appeal](/primer/interlocutory-appeal).
+**Forcible entry (knock and announce)**: The court dismissed this portion of the appeal for lack of jurisdiction because material issues of fact existed about whether the officers knocked, how long they waited, and who entered first — factual disputes that prevented [interlocutory appeal](/terms-and-concepts/interlocutory-appeal).
 
 ## Why This Case Matters for Your § 1983 Case
 
 - **Target the right defendant on warrant claims**: If you're challenging a search warrant, your strongest claim is against the officer who _prepared_ or _presented_ the affidavit — not every officer who contributed information to the investigation.
-- **Executing officers can rely on facially valid warrants**: Officers who simply execute a warrant they did not help prepare are generally protected by [qualified immunity](/primer/qualified-immunity) unless they had reason to know the warrant was defective.
+- **Executing officers can rely on facially valid warrants**: Officers who simply execute a warrant they did not help prepare are generally protected by [qualified immunity](/terms-and-concepts/qualified-immunity) unless they had reason to know the warrant was defective.
 - **Knock-and-announce violations are fact-intensive**: If officers breached your door without adequate announcement or waiting time, factual disputes about what happened will typically survive summary judgment and go to trial.
 - **The _Malley_ framework is narrow**: Liability for warrant deficiencies extends to the affiant and the preparer of the application, but not to every officer in the investigative chain. This limits your pool of defendants.
-- **Stale information can invalidate a warrant**: The underlying problem — relying on years-old information to claim someone stashed drugs at a residence — illustrates how [probable cause](/primer/probable-cause) can go stale, potentially making the warrant invalid from inception.
+- **Stale information can invalidate a warrant**: The underlying problem — relying on years-old information to claim someone stashed drugs at a residence — illustrates how [probable cause](/terms-and-concepts/probable-cause) can go stale, potentially making the warrant invalid from inception.
 
 ## Key Takeaway
 
-When challenging an unlawful search, focus your [§ 1983](/primer/section-1983) claims on the officer who actually prepared or signed the warrant affidavit — other officers who merely contributed information to the investigation are protected by qualified immunity, and executing officers can reasonably rely on a facially valid warrant they had no role in obtaining.
+When challenging an unlawful search, focus your [§ 1983](/terms-and-concepts/section-1983) claims on the officer who actually prepared or signed the warrant affidavit — other officers who merely contributed information to the investigation are protected by qualified immunity, and executing officers can reasonably rely on a facially valid warrant they had no role in obtaining.

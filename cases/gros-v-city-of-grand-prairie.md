@@ -25,7 +25,7 @@ citedBy: []
 
 ## What This Case Is About
 
-This case tests the limits of [deliberate indifference](/primer/deliberate-indifference) in police hiring. Two women — Danette Gros and Edith Sikes — alleged that a Grand Prairie police officer sexually assaulted and used excessive force against them during separate encounters. They sued Police Chief Harry Crum, arguing he was deliberately indifferent to their constitutional rights when he hired the officer despite red flags in the officer's background. The Fifth Circuit reversed the denial of [qualified immunity](/primer/qualified-immunity) for the chief, finding insufficient evidence of deliberate indifference.
+This case tests the limits of [deliberate indifference](/terms-and-concepts/deliberate-indifference) in police hiring. Two women — Danette Gros and Edith Sikes — alleged that a Grand Prairie police officer sexually assaulted and used excessive force against them during separate encounters. They sued Police Chief Harry Crum, arguing he was deliberately indifferent to their constitutional rights when he hired the officer despite red flags in the officer's background. The Fifth Circuit reversed the denial of [qualified immunity](/terms-and-concepts/qualified-immunity) for the chief, finding insufficient evidence of deliberate indifference.
 
 ## The Facts
 
@@ -37,7 +37,7 @@ In a separate incident, Rogers allegedly sexually assaulted Sikes during a traff
 
 ## What the Court Decided
 
-The Fifth Circuit reversed the denial of summary judgment and held that Chief Crum was entitled to [qualified immunity](/primer/qualified-immunity). Under _Board of County Commissioners v. Brown_, deliberate indifference in hiring requires a "strong connection" between the applicant's background and the specific type of constitutional violation that later occurred. Mere negligence in reviewing an applicant's file — even a file containing red flags — is not enough.
+The Fifth Circuit reversed the denial of summary judgment and held that Chief Crum was entitled to [qualified immunity](/terms-and-concepts/qualified-immunity). Under _Board of County Commissioners v. Brown_, deliberate indifference in hiring requires a "strong connection" between the applicant's background and the specific type of constitutional violation that later occurred. Mere negligence in reviewing an applicant's file — even a file containing red flags — is not enough.
 
 The court found that Rogers's pre-employment file, while containing scattered negative comments about aggressiveness, also contained numerous positive evaluations and recommendations. Every officer who noted problems also ultimately recommended Rogers as a good hire. Rogers had never sexually assaulted anyone, never committed a serious crime, and the most damaging complaint (improper weapon draw) was not sustained.
 
@@ -45,7 +45,7 @@ Comparing this case to _Aguillard v. McGowen_ (where a deputy with a far worse r
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Gros_ is critical for understanding the extremely high bar for hiring liability under § 1983. Even when a hired officer's background contains significant warning signs, courts will not find [deliberate indifference](/primer/deliberate-indifference) unless the red flags point specifically to the type of misconduct that actually occurred. General aggressiveness in a prior job does not create a "strong causal connection" to later sexual assault.
+_Gros_ is critical for understanding the extremely high bar for hiring liability under § 1983. Even when a hired officer's background contains significant warning signs, courts will not find [deliberate indifference](/terms-and-concepts/deliberate-indifference) unless the red flags point specifically to the type of misconduct that actually occurred. General aggressiveness in a prior job does not create a "strong causal connection" to later sexual assault.
 
 This case also demonstrates the problem of mixed evidence — when negative comments in a personnel file are accompanied by positive evaluations and recommendations, courts view the overall picture as inadequate to establish deliberate indifference, even though a more careful review might have prevented the hire.
 

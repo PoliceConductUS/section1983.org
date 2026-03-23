@@ -19,7 +19,7 @@ citedBy:
 
 ## What This Case Is About
 
-_Bennett v. City of Slidell_ is a landmark Fifth Circuit decision that defined the contours of [municipal liability](/primer/municipal-liability) under [§ 1983](/primer/section-1983). The en banc court established a clear framework for when a city can be held liable for the constitutional violations of its employees, creating a two-part definition of "official policy" that has been cited in hundreds of subsequent Fifth Circuit decisions.
+_Bennett v. City of Slidell_ is a landmark Fifth Circuit decision that defined the contours of [municipal liability](/terms-and-concepts/municipal-liability) under [§ 1983](/terms-and-concepts/section-1983). The en banc court established a clear framework for when a city can be held liable for the constitutional violations of its employees, creating a two-part definition of "official policy" that has been cited in hundreds of subsequent Fifth Circuit decisions.
 
 ## The Facts
 
@@ -43,11 +43,11 @@ The court affirmed, however, that an officer who obtains policymaking authority 
 
 ## Why This Case Matters for Your § 1983 Case
 
-**This is the blueprint for municipal liability in the Fifth Circuit.** _Bennett_ provides the framework that courts apply in every [Monell](/primer/monell-liability) case. If you are suing a city under § 1983, you must fit your claim into one of the two categories defined here.
+**This is the blueprint for municipal liability in the Fifth Circuit.** _Bennett_ provides the framework that courts apply in every [Monell](/terms-and-concepts/monell-liability) case. If you are suing a city under § 1983, you must fit your claim into one of the two categories defined here.
 
-**Official policy (Category 1).** If you can identify a written policy, ordinance, regulation, or formal decision by the city's governing body or a delegated [final policymaker](/primer/final-policymaker) that caused the constitutional violation, you have the strongest path to municipal liability.
+**Official policy (Category 1).** If you can identify a written policy, ordinance, regulation, or formal decision by the city's governing body or a delegated [final policymaker](/terms-and-concepts/final-policymaker) that caused the constitutional violation, you have the strongest path to municipal liability.
 
-**Custom or practice (Category 2).** If there is no written policy, you can still hold the city liable by proving a **persistent, widespread practice** that is so common it constitutes a [custom](/primer/custom). This requires showing:
+**Custom or practice (Category 2).** If there is no written policy, you can still hold the city liable by proving a **persistent, widespread practice** that is so common it constitutes a [custom](/terms-and-concepts/custom). This requires showing:
 
 - A pattern of similar violations (not just one or two incidents)
 - That the pattern was so common that it fairly represented how the city operated

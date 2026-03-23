@@ -23,7 +23,7 @@ citedBy:
 
 ## What This Case Is About
 
-Omar Esparza, suffering from depression and anxiety, locked himself inside his family's home and refused to let his parents enter. His parents called 911 seeking medical help for their son. Instead, police responded, and after a failed negotiation, officers forced entry into the home and fatally shot Esparza. His parents sued the City of Houston under [§ 1983](/primer/section-1983), alleging [municipal liability](/primer/monell-liability) for the officers' use of [deadly force](/primer/excessive-force). The Fifth Circuit affirmed summary judgment for the City, establishing the frequently cited three-element test for [Monell](/cases/monell-v-dep-t-of-soc-servs) liability.
+Omar Esparza, suffering from depression and anxiety, locked himself inside his family's home and refused to let his parents enter. His parents called 911 seeking medical help for their son. Instead, police responded, and after a failed negotiation, officers forced entry into the home and fatally shot Esparza. His parents sued the City of Houston under [§ 1983](/terms-and-concepts/section-1983), alleging [municipal liability](/terms-and-concepts/monell-liability) for the officers' use of [deadly force](/terms-and-concepts/excessive-force). The Fifth Circuit affirmed summary judgment for the City, establishing the frequently cited three-element test for [Monell](/cases/monell-v-dep-t-of-soc-servs) liability.
 
 ## The Facts
 

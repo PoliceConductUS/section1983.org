@@ -25,7 +25,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Debbie Benningfield, Pamela Grant, and Peggy Frankhouser—all current or former employees of the Houston Police Department's Identification Division—sued individual HPD defendants under [§ 1983](/primer/section-1983) and state law after alleging they were subjected to retaliation for filing grievances about discrimination, mismanagement, and a hostile working environment. The Fifth Circuit affirmed in part and reversed in part the denial of summary judgment based on [qualified immunity](/primer/qualified-immunity).
+Debbie Benningfield, Pamela Grant, and Peggy Frankhouser—all current or former employees of the Houston Police Department's Identification Division—sued individual HPD defendants under [§ 1983](/terms-and-concepts/section-1983) and state law after alleging they were subjected to retaliation for filing grievances about discrimination, mismanagement, and a hostile working environment. The Fifth Circuit affirmed in part and reversed in part the denial of summary judgment based on [qualified immunity](/terms-and-concepts/qualified-immunity).
 
 ## The Facts
 

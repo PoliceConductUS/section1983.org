@@ -34,7 +34,7 @@ Officer M.S. Connor of the Charlotte, North Carolina police saw Graham rush in a
 
 What followed was a nightmare. Graham, in the grip of his insulin reaction, got out of the car, ran around it twice, and passed out on the curb. When backup officers arrived, one rolled Graham over and handcuffed his hands tightly behind his back, ignoring Berry's pleas to get him sugar. Another officer said: "I've seen a lot of people with sugar diabetes that never acted like this. Ain't nothing wrong with the M.F. but drunk. Lock the S.B. up." Officers threw Graham headfirst into the police car, shoved his face into the hood, and refused to let a friend give him orange juice. By the time Connor confirmed nothing had happened at the store and released Graham, he had a broken foot, cuts on his wrists, a bruised forehead, an injured shoulder, and a ringing in his ear that never went away.
 
-Graham sued the officers under [§ 1983](/primer/section-1983). The lower courts applied the _Johnson v. Glick_ test, which asked whether force was applied "maliciously and sadistically for the very purpose of causing harm." Under that subjective standard, Graham lost.
+Graham sued the officers under [§ 1983](/terms-and-concepts/section-1983). The lower courts applied the _Johnson v. Glick_ test, which asked whether force was applied "maliciously and sadistically for the very purpose of causing harm." Under that subjective standard, Graham lost.
 
 ## What the Court Decided
 

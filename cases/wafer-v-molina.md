@@ -25,7 +25,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Leroy Wafer, proceeding pro se and in forma pauperis, sued two Dallas police officers, the Dallas Police Department, the Dallas County Jail, and the jail commander under [§ 1983](/primer/section-1983), alleging he was falsely arrested for family violence, then held in jail for months after the grand jury no-billed the charge. The court recommended dismissal of all claims as frivolous, illustrating several common pitfalls that pro se § 1983 plaintiffs face, including suing the wrong entities and failing to plead sufficient facts.
+Leroy Wafer, proceeding pro se and in forma pauperis, sued two Dallas police officers, the Dallas Police Department, the Dallas County Jail, and the jail commander under [§ 1983](/terms-and-concepts/section-1983), alleging he was falsely arrested for family violence, then held in jail for months after the grand jury no-billed the charge. The court recommended dismissal of all claims as frivolous, illustrating several common pitfalls that pro se § 1983 plaintiffs face, including suing the wrong entities and failing to plead sufficient facts.
 
 ## The Facts
 

@@ -32,7 +32,7 @@ citedBy:
 
 ## What This Case Is About
 
-_Mendenhall v. Riser_ addresses whether police officers are entitled to [qualified immunity](/primer/qualified-immunity) when they arrest someone for murder based on [arguable probable cause](/primer/probable-cause), even when the charges are later dropped after another person confesses. The Fifth Circuit held that the officers acted reasonably and reversed the district court's denial of qualified immunity.
+_Mendenhall v. Riser_ addresses whether police officers are entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) when they arrest someone for murder based on [arguable probable cause](/terms-and-concepts/probable-cause), even when the charges are later dropped after another person confesses. The Fifth Circuit held that the officers acted reasonably and reversed the district court's denial of qualified immunity.
 
 ## The Facts
 
@@ -42,28 +42,28 @@ Near the corner of Lee Street, Myles was killed by a single gunshot to the back 
 
 Two anonymous witnesses identified Mendenhall as the shooter. Another witness, Pamela Neal, executed a written statement placing Mendenhall at the scene with a weapon. Investigators also learned Mendenhall possessed a nine-millimeter weapon matching the shell casings found at the scene. When brought to the station house for questioning, Mendenhall refused to cooperate and left.
 
-Deputy Cropper prepared an affidavit and obtained an arrest warrant. Mendenhall was arrested, spent one night in jail, and was released on bond. At a preliminary examination ten days later — aided by the confession of Ted Nellams — the judge found no probable cause and the charges were dismissed. Mendenhall then sued under [42 U.S.C. § 1983](/primer/section-1983) for [false arrest](/primer/false-arrest).
+Deputy Cropper prepared an affidavit and obtained an arrest warrant. Mendenhall was arrested, spent one night in jail, and was released on bond. At a preliminary examination ten days later — aided by the confession of Ted Nellams — the judge found no probable cause and the charges were dismissed. Mendenhall then sued under [42 U.S.C. § 1983](/terms-and-concepts/section-1983) for [false arrest](/terms-and-concepts/false-arrest).
 
 ## What the Court Decided
 
-The Fifth Circuit reversed the district court's denial of [summary judgment](/primer/summary-judgment) and granted the officers qualified immunity. The court applied the totality-of-the-circumstances test from _Illinois v. Gates_ and found that a reasonable officer could have believed probable cause existed to arrest Mendenhall for murder.
+The Fifth Circuit reversed the district court's denial of [summary judgment](/terms-and-concepts/summary-judgment) and granted the officers qualified immunity. The court applied the totality-of-the-circumstances test from _Illinois v. Gates_ and found that a reasonable officer could have believed probable cause existed to arrest Mendenhall for murder.
 
 The key evidence supporting arguable probable cause included: two eyewitness identifications, a written statement placing Mendenhall at the scene with a weapon, his unexplained knowledge of the head wound, his tampering with evidence, possession of a matching-caliber weapon, his departure from the scene before investigators arrived, and his refusal to cooperate at the station house.
 
-The court held that the subsequent preliminary hearing where Mendenhall was exonerated was irrelevant to the probable cause analysis — what matters is whether the facts at the time of arrest supported a reasonable belief that probable cause existed. The court also rejected Mendenhall's argument that the timing of his arrest (one week before his election for police chief) showed improper motive, holding that subjective intent is irrelevant in a [qualified immunity](/primer/qualified-immunity) analysis based on arguable probable cause.
+The court held that the subsequent preliminary hearing where Mendenhall was exonerated was irrelevant to the probable cause analysis — what matters is whether the facts at the time of arrest supported a reasonable belief that probable cause existed. The court also rejected Mendenhall's argument that the timing of his arrest (one week before his election for police chief) showed improper motive, holding that subjective intent is irrelevant in a [qualified immunity](/terms-and-concepts/qualified-immunity) analysis based on arguable probable cause.
 
 A vigorous dissent argued that material fact issues remained regarding the quality of the investigation and whether the arrest warrant affidavit contained material misstatements or omissions under _Franks v. Delaware_.
 
 ## Why This Case Matters for Your § 1983 Case
 
-This case illustrates how high the bar is for [false arrest](/primer/false-arrest) claims when officers can show arguable probable cause:
+This case illustrates how high the bar is for [false arrest](/terms-and-concepts/false-arrest) claims when officers can show arguable probable cause:
 
-- **Arguable probable cause shields officers**: Even if actual probable cause is debatable, officers who reasonably — even mistakenly — believe they have probable cause are protected by [qualified immunity](/primer/qualified-immunity).
+- **Arguable probable cause shields officers**: Even if actual probable cause is debatable, officers who reasonably — even mistakenly — believe they have probable cause are protected by [qualified immunity](/terms-and-concepts/qualified-immunity).
 - **Subsequent exoneration is irrelevant**: The Fourth Amendment is "not violated by an arrest based on probable cause, even though the wrong person is arrested." Your acquittal or dismissal of charges does not prove the arrest was unlawful.
 - **Subjective motive doesn't matter**: Even if officers had personal animosity or political motivation, qualified immunity turns on objective reasonableness, not the officer's actual intent.
 - **The totality of circumstances controls**: Courts look at the full picture available to officers at the time of arrest — not individual pieces of evidence in isolation.
-- **A [Franks](/primer/franks-violation) challenge may be your best path**: The dissent's analysis shows that challenging the accuracy of the warrant affidavit — arguing the officers made knowing misstatements or omissions — can keep your case alive when a straight probable cause argument cannot.
+- **A [Franks](/terms-and-concepts/franks-violation) challenge may be your best path**: The dissent's analysis shows that challenging the accuracy of the warrant affidavit — arguing the officers made knowing misstatements or omissions — can keep your case alive when a straight probable cause argument cannot.
 
 ## Key Takeaway
 
-When officers obtain an arrest warrant based on multiple pieces of circumstantial evidence — eyewitness identifications, physical evidence, and suspicious behavior — they will likely receive [qualified immunity](/primer/qualified-immunity) even if the suspect is ultimately exonerated. To defeat qualified immunity in a false arrest case, you must show that no reasonable officer could have believed probable cause existed under the totality of the circumstances, or that the officers knowingly or recklessly included false information in their warrant application.
+When officers obtain an arrest warrant based on multiple pieces of circumstantial evidence — eyewitness identifications, physical evidence, and suspicious behavior — they will likely receive [qualified immunity](/terms-and-concepts/qualified-immunity) even if the suspect is ultimately exonerated. To defeat qualified immunity in a false arrest case, you must show that no reasonable officer could have believed probable cause existed under the totality of the circumstances, or that the officers knowingly or recklessly included false information in their warrant application.

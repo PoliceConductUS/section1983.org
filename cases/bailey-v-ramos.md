@@ -32,7 +32,7 @@ citedBy: []
 
 ## What This Case Is About
 
-David Bailey and his friends went to downtown San Antonio specifically "to film the police" and provoke a confrontation. When their hostile behavior near an active crime scene led to Bailey's arrest for interfering with the duties of a public servant, he brought [§ 1983](/primer/section-1983) claims against Officer Oscar Ramos, including unlawful arrest, unlawful seizure, [First Amendment retaliation](/primer/first-amendment-retaliation), and [excessive force](/primer/excessive-force). The Fifth Circuit reversed the denial of [qualified immunity](/primer/qualified-immunity) and ordered summary judgment for Ramos.
+David Bailey and his friends went to downtown San Antonio specifically "to film the police" and provoke a confrontation. When their hostile behavior near an active crime scene led to Bailey's arrest for interfering with the duties of a public servant, he brought [§ 1983](/terms-and-concepts/section-1983) claims against Officer Oscar Ramos, including unlawful arrest, unlawful seizure, [First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation), and [excessive force](/terms-and-concepts/excessive-force). The Fifth Circuit reversed the denial of [qualified immunity](/terms-and-concepts/qualified-immunity) and ordered summary judgment for Ramos.
 
 ## The Facts
 
@@ -48,7 +48,7 @@ Body camera footage showed Bailey continuing to film and remaining in the restri
 
 The Fifth Circuit reversed the district court's denial of summary judgment and ordered the case dismissed in Ramos's favor on all claims.
 
-**Unlawful arrest and seizure.** The court found Ramos had at least arguable [probable cause](/primer/probable-cause) to arrest Bailey for interfering with a public servant's duties. Bailey was at an active crime scene, had been told to move back, and unlike his companion Miller, did not comply. A reasonable officer could have concluded Bailey was interfering with the investigation.
+**Unlawful arrest and seizure.** The court found Ramos had at least arguable [probable cause](/terms-and-concepts/probable-cause) to arrest Bailey for interfering with a public servant's duties. Bailey was at an active crime scene, had been told to move back, and unlike his companion Miller, did not comply. A reasonable officer could have concluded Bailey was interfering with the investigation.
 
 **First Amendment retaliation.** Applying _[Nieves v. Bartlett](/cases/nieves-v-bartlett)_, the court held that the existence of probable cause generally defeats a retaliatory arrest claim. While _Nieves_ recognizes a narrow exception for cases where officers typically exercise discretion not to arrest, Bailey's conduct—confrontational behavior at a crime scene while refusing to move back—was not the type where officers would typically decline to act. The retaliation claim failed.
 
@@ -56,7 +56,7 @@ The Fifth Circuit reversed the district court's denial of summary judgment and o
 
 ## Why This Case Matters for Your § 1983 Case
 
-**The [right to record police](/primer/right-to-record-police) has limits.** While the First Amendment protects the right to film police in public, that right does not include the right to interfere with active police operations. Remaining in a restricted area near a crime scene after being told to move back can constitute interference.
+**The [right to record police](/terms-and-concepts/right-to-record-police) has limits.** While the First Amendment protects the right to film police in public, that right does not include the right to interfere with active police operations. Remaining in a restricted area near a crime scene after being told to move back can constitute interference.
 
 **Hostile intent can undermine your claims.** Bailey's group went out specifically to provoke police, and this was documented on their own recordings. Courts may view claims more skeptically when the plaintiff deliberately sought the confrontation.
 

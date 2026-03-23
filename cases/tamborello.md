@@ -16,7 +16,7 @@ citedBy: []
 
 ## What This Case Is About
 
-This Texas state case addressed the [probable cause](/primer/probable-cause) standard for warrantless arrests, reaffirming that courts evaluate the totality of circumstances known to the arresting officer at the time of the arrest. The case illustrates how Texas courts apply [Fourth Amendment](/primer/fourth-amendment) principles in criminal proceedings—the same principles that govern [§ 1983](/primer/section-1983) false arrest claims in civil cases.
+This Texas state case addressed the [probable cause](/terms-and-concepts/probable-cause) standard for warrantless arrests, reaffirming that courts evaluate the totality of circumstances known to the arresting officer at the time of the arrest. The case illustrates how Texas courts apply [Fourth Amendment](/terms-and-concepts/fourth-amendment) principles in criminal proceedings—the same principles that govern [§ 1983](/terms-and-concepts/section-1983) false arrest claims in civil cases.
 
 ## The Facts
 
@@ -30,7 +30,7 @@ The court reaffirmed that probable cause is a practical, common-sense standard. 
 
 ## Why This Case Matters for Your § 1983 Case
 
-**Same standard in criminal and civil cases.** The probable cause standard applied in Texas criminal proceedings is the same standard that governs [false arrest](/primer/false-arrest) claims under § 1983. If a Texas court finds probable cause existed, that same finding would defeat a § 1983 claim based on the same arrest.
+**Same standard in criminal and civil cases.** The probable cause standard applied in Texas criminal proceedings is the same standard that governs [false arrest](/terms-and-concepts/false-arrest) claims under § 1983. If a Texas court finds probable cause existed, that same finding would defeat a § 1983 claim based on the same arrest.
 
 **Totality of the circumstances is the test.** Courts do not evaluate individual facts in isolation. Every piece of information known to the officer is considered together to determine whether the overall picture supports a reasonable belief that a crime was committed.
 

@@ -24,7 +24,7 @@ citedBy:
 
 ## What This Case Is About
 
-United States v. Lopez-Moreno is a landmark Fifth Circuit decision defining when a traffic stop is legally justified under the [Fourth Amendment](/primer/fourth-amendment). While it is a federal criminal case involving transportation of undocumented aliens, Lopez-Moreno is one of the most frequently cited cases in § 1983 litigation because it establishes the foundational test for the legality of traffic stops: "For a traffic stop to be justified at its inception, an officer must have an objectively reasonable suspicion that some sort of illegal activity, such as a traffic violation, occurred, or is about to occur, before stopping the vehicle."
+United States v. Lopez-Moreno is a landmark Fifth Circuit decision defining when a traffic stop is legally justified under the [Fourth Amendment](/terms-and-concepts/fourth-amendment). While it is a federal criminal case involving transportation of undocumented aliens, Lopez-Moreno is one of the most frequently cited cases in § 1983 litigation because it establishes the foundational test for the legality of traffic stops: "For a traffic stop to be justified at its inception, an officer must have an objectively reasonable suspicion that some sort of illegal activity, such as a traffic violation, occurred, or is about to occur, before stopping the vehicle."
 
 ## The Facts
 

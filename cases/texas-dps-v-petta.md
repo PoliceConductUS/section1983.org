@@ -41,15 +41,15 @@ The Texas Supreme Court held:
 
 **Sovereign immunity against DPS**: Petta's claims arose from intentional conduct (beating the window, pointing guns, shooting at tires), which falls squarely within the Texas Tort Claims Act's exclusion of claims arising from assault, battery, and false imprisonment. Her negligent training claim also failed because instructional manuals and training information are not "tangible personal property" under the Act.
 
-**§ 1983 claims**: Neither the Department nor Rivera in his [official capacity](/primer/official-capacity) is a "person" subject to § 1983. Citing [Will v. Michigan Department of State Police](/cases/will-v-michigan-department-of-state-police), the court held that a § 1983 suit against a state official in his official capacity is a suit against the state, which is not a "person" under the statute.
+**§ 1983 claims**: Neither the Department nor Rivera in his [official capacity](/terms-and-concepts/official-capacity) is a "person" subject to § 1983. Citing [Will v. Michigan Department of State Police](/cases/will-v-michigan-department-of-state-police), the court held that a § 1983 suit against a state official in his official capacity is a suit against the state, which is not a "person" under the statute.
 
 ## Why This Case Matters for Your § 1983 Case
 
 **Criminal convictions can estop civil claims.** If you are convicted of a crime arising from the same incident—particularly if your defense required proving the officers' conduct was unreasonable—collateral estoppel may bar your civil claims based on the same factual issue.
 
-**Official capacity suits against state officials are suits against the state.** Under [Will v. Michigan](/cases/will-v-michigan-department-of-state-police), you cannot sue a state employee in their official capacity under § 1983 because the state is not a "person" under the statute. You must sue officers in their [individual capacity](/primer/individual-capacity) instead.
+**Official capacity suits against state officials are suits against the state.** Under [Will v. Michigan](/cases/will-v-michigan-department-of-state-police), you cannot sue a state employee in their official capacity under § 1983 because the state is not a "person" under the statute. You must sue officers in their [individual capacity](/terms-and-concepts/individual-capacity) instead.
 
-**Intentional torts are excluded from the Tort Claims Act.** Texas [sovereign immunity](/primer/sovereign-immunity) is not waived for claims arising from assault, battery, or false imprisonment—even if framed as negligent training or supervision.
+**Intentional torts are excluded from the Tort Claims Act.** Texas [sovereign immunity](/terms-and-concepts/sovereign-immunity) is not waived for claims arising from assault, battery, or false imprisonment—even if framed as negligent training or supervision.
 
 ## Key Takeaway
 

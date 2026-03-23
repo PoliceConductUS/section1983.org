@@ -31,7 +31,7 @@ Things got heated at the next city council meeting. Residents rose to defend Rap
 
 Trevino brought the incident to the city police, and within a month, a private attorney leading the investigation concluded that Gonzalez had likely violated a Texas anti-tampering statute that makes it a crime to intentionally remove a governmental record. A magistrate granted an arrest warrant. Gonzalez turned herself in and spent a night in jail. The district attorney ultimately dismissed the charges, but Gonzalez said the experience drove her from political life.
 
-Gonzalez sued under [§ 1983](/primer/section-1983), alleging her arrest was retaliation for organizing the petition — a violation of her First Amendment rights. She conceded probable cause existed for the arrest but argued she fell within the narrow exception recognized in _Nieves v. Bartlett_ (2019).
+Gonzalez sued under [§ 1983](/terms-and-concepts/section-1983), alleging her arrest was retaliation for organizing the petition — a violation of her First Amendment rights. She conceded probable cause existed for the arrest but argued she fell within the narrow exception recognized in _Nieves v. Bartlett_ (2019).
 
 ## What the Court Decided
 

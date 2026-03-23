@@ -25,13 +25,13 @@ citedBy: []
 
 ## What This Case Is About
 
-Escalante v. Hammel is an excessive force case involving the repeated use of a Taser on a restrained individual. The case addresses whether officers are entitled to [qualified immunity](/primer/qualified-immunity) when they deploy electronic control weapons against a person who is not actively resisting.
+Escalante v. Hammel is an excessive force case involving the repeated use of a Taser on a restrained individual. The case addresses whether officers are entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) when they deploy electronic control weapons against a person who is not actively resisting.
 
 ## The Facts
 
 The plaintiff, Escalante, was involved in an encounter with law enforcement officers that escalated to the use of force. According to the complaint, after officers had restrained Escalante, they deployed a Taser on him multiple times despite the fact that he was not actively resisting and did not pose an immediate threat to the officers or others.
 
-Escalante filed suit under [§ 1983](/primer/section-1983), alleging that the officers' repeated use of the Taser constituted excessive force in violation of the Fourth Amendment. The officers moved for dismissal, asserting qualified immunity.
+Escalante filed suit under [§ 1983](/terms-and-concepts/section-1983), alleging that the officers' repeated use of the Taser constituted excessive force in violation of the Fourth Amendment. The officers moved for dismissal, asserting qualified immunity.
 
 ## What the Court Decided
 

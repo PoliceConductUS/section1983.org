@@ -18,7 +18,7 @@ citedBy: []
 
 ## What This Case Is About
 
-A woman was arrested under a New Orleans ordinance that made it illegal to "curse or revile or to use obscene or opprobrious language toward or with reference to" a police officer. The Supreme Court struck down the ordinance as overbroad under the [First Amendment](/primer/first-amendment-retaliation), noting that it gave police virtually unrestrained power to arrest citizens for speech.
+A woman was arrested under a New Orleans ordinance that made it illegal to "curse or revile or to use obscene or opprobrious language toward or with reference to" a police officer. The Supreme Court struck down the ordinance as overbroad under the [First Amendment](/terms-and-concepts/first-amendment-retaliation), noting that it gave police virtually unrestrained power to arrest citizens for speech.
 
 ## The Facts
 
@@ -26,7 +26,7 @@ The case arose from an arrest under New Orleans Ordinance 828 M.C.S. § 49-7, wh
 
 ## What the Court Decided
 
-The Supreme Court reversed the conviction in a per curiam opinion, holding that the ordinance as construed by the Louisiana Supreme Court was facially overbroad and therefore invalid under the First and [Fourteenth Amendments](/primer/fourteenth-amendment).
+The Supreme Court reversed the conviction in a per curiam opinion, holding that the ordinance as construed by the Louisiana Supreme Court was facially overbroad and therefore invalid under the First and [Fourteenth Amendments](/terms-and-concepts/fourteenth-amendment).
 
 Justice Powell's concurrence — widely cited in subsequent cases — made three key points:
 
@@ -40,13 +40,13 @@ Justice Blackmun's dissent acknowledged that such ordinances "tend to be invoked
 
 ## Why This Case Matters for Your § 1983 Case
 
-_Lewis v. City of New Orleans_ is essential for [§ 1983](/primer/section-1983) claims involving arrests for speech directed at police:
+_Lewis v. City of New Orleans_ is essential for [§ 1983](/terms-and-concepts/section-1983) claims involving arrests for speech directed at police:
 
 - **Verbal criticism of police is protected**: You generally cannot be arrested for cursing at or verbally criticizing a police officer. Ordinances that criminalize such speech are unconstitutionally overbroad.
-- **[False arrest](/primer/false-arrest) claims**: If you were arrested for "disorderly conduct," "breach of peace," or similar charges based primarily on words you directed at an officer, _Lewis_ supports your claim that the arrest was unconstitutional.
-- **[First Amendment retaliation](/primer/first-amendment-retaliation)**: Officers who arrest people for verbal criticism are engaging in [First Amendment retaliation](/primer/first-amendment-retaliation). Justice Powell's observation that such laws give officers "virtually unrestrained power to arrest" is powerful evidence that arrests based on speech are pretextual.
-- **Higher standard for officers**: Justice Powell's observation that trained officers should exercise "a higher degree of restraint" than ordinary citizens is frequently cited in [excessive force](/primer/excessive-force) and [false arrest](/primer/false-arrest) cases to argue that officers should not react aggressively to verbal provocation.
+- **[False arrest](/terms-and-concepts/false-arrest) claims**: If you were arrested for "disorderly conduct," "breach of peace," or similar charges based primarily on words you directed at an officer, _Lewis_ supports your claim that the arrest was unconstitutional.
+- **[First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation)**: Officers who arrest people for verbal criticism are engaging in [First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation). Justice Powell's observation that such laws give officers "virtually unrestrained power to arrest" is powerful evidence that arrests based on speech are pretextual.
+- **Higher standard for officers**: Justice Powell's observation that trained officers should exercise "a higher degree of restraint" than ordinary citizens is frequently cited in [excessive force](/terms-and-concepts/excessive-force) and [false arrest](/terms-and-concepts/false-arrest) cases to argue that officers should not react aggressively to verbal provocation.
 
 ## Key Takeaway
 
-Laws criminalizing rude, profane, or critical language directed at police officers are unconstitutionally overbroad — officers are expected to exercise a higher degree of restraint than ordinary citizens, and arrests based primarily on verbal criticism of police are vulnerable to [§ 1983](/primer/section-1983) [false arrest](/primer/false-arrest) and [First Amendment retaliation](/primer/first-amendment-retaliation) claims.
+Laws criminalizing rude, profane, or critical language directed at police officers are unconstitutionally overbroad — officers are expected to exercise a higher degree of restraint than ordinary citizens, and arrests based primarily on verbal criticism of police are vulnerable to [§ 1983](/terms-and-concepts/section-1983) [false arrest](/terms-and-concepts/false-arrest) and [First Amendment retaliation](/terms-and-concepts/first-amendment-retaliation) claims.

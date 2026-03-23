@@ -32,7 +32,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Richard Winfrey Jr. ("Junior") was arrested for capital murder after a botched investigation that relied on discredited "scent lineup" evidence, an unreliable jailhouse informant, and warrant affidavits that omitted critical exculpatory evidence. After spending over 16 months in prison, Junior was acquitted by a jury in just thirteen minutes. He brought a [§ 1983](/primer/section-1983) action against Deputy Sheriff Lenard Johnson, alleging that Johnson violated his [Fourth Amendment](/primer/fourth-amendment) rights by signing arrest warrant affidavits that contained material misstatements and omissions. The Fifth Circuit vacated summary judgment for Johnson and remanded for trial.
+Richard Winfrey Jr. ("Junior") was arrested for capital murder after a botched investigation that relied on discredited "scent lineup" evidence, an unreliable jailhouse informant, and warrant affidavits that omitted critical exculpatory evidence. After spending over 16 months in prison, Junior was acquitted by a jury in just thirteen minutes. He brought a [§ 1983](/terms-and-concepts/section-1983) action against Deputy Sheriff Lenard Johnson, alleging that Johnson violated his [Fourth Amendment](/terms-and-concepts/fourth-amendment) rights by signing arrest warrant affidavits that contained material misstatements and omissions. The Fifth Circuit vacated summary judgment for Johnson and remanded for trial.
 
 ## The Facts
 
@@ -48,7 +48,7 @@ Junior was arrested, charged with capital murder, and spent two years in jail be
 
 ## What the Court Decided
 
-The Fifth Circuit vacated summary judgment and remanded for trial, holding that Johnson was not entitled to [qualified immunity](/primer/qualified-immunity).
+The Fifth Circuit vacated summary judgment and remanded for trial, holding that Johnson was not entitled to [qualified immunity](/terms-and-concepts/qualified-immunity).
 
 Applying the [Franks v. Delaware](/cases/franks-v-delaware) framework, the court found that Junior presented sufficient evidence that Johnson's affidavit contained material misstatements and omissions made with reckless disregard for the truth. The court then conducted the critical "corrected affidavit" analysis—considering what the affidavit would have said if the false statements were removed and the omitted facts included.
 

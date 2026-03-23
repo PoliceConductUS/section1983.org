@@ -18,7 +18,7 @@ citedBy: []
 
 ## What This Case Is About
 
-_Nelson Radio & Supply Co. v. Motorola, Inc._ established the intracorporate conspiracy doctrine — the principle that a corporation cannot conspire with its own officers, employees, and agents. While this is an antitrust case, the doctrine was later extended to [§ 1983 conspiracy](/primer/section-1983-conspiracy) claims, making it directly relevant to civil rights litigation against government entities and their employees.
+_Nelson Radio & Supply Co. v. Motorola, Inc._ established the intracorporate conspiracy doctrine — the principle that a corporation cannot conspire with its own officers, employees, and agents. While this is an antitrust case, the doctrine was later extended to [§ 1983 conspiracy](/terms-and-concepts/section-1983-conspiracy) claims, making it directly relevant to civil rights litigation against government entities and their employees.
 
 ## The Facts
 
@@ -40,7 +40,7 @@ Judge Rives dissented, arguing that the majority's formalistic approach allowed 
 
 ## Why This Case Matters for Your § 1983 Case
 
-This antitrust case matters for civil rights plaintiffs because courts have applied the intracorporate conspiracy doctrine to [§ 1983 conspiracy](/primer/section-1983-conspiracy) claims:
+This antitrust case matters for civil rights plaintiffs because courts have applied the intracorporate conspiracy doctrine to [§ 1983 conspiracy](/terms-and-concepts/section-1983-conspiracy) claims:
 
 - **Government employees acting within their roles cannot "conspire" with each other**: Under this doctrine, officers of a single government entity acting within the scope of their employment are considered a single entity incapable of conspiracy. This can defeat your § 1983 conspiracy claim if all defendants are employees of the same agency.
 - **Know the exceptions**: Many circuits recognize exceptions when officers act outside the scope of their employment or are motivated by personal interests independent of the entity. If you can show officers were pursuing personal vendettas rather than official duties, the doctrine may not apply.
@@ -49,4 +49,4 @@ This antitrust case matters for civil rights plaintiffs because courts have appl
 
 ## Key Takeaway
 
-The intracorporate conspiracy doctrine — originating in this antitrust case — holds that a corporation (or government entity) cannot conspire with its own employees acting in their official capacities. For [§ 1983](/primer/section-1983) plaintiffs, this means conspiracy claims are strongest when they involve participants from different government agencies or officers acting outside the scope of their employment.
+The intracorporate conspiracy doctrine — originating in this antitrust case — holds that a corporation (or government entity) cannot conspire with its own employees acting in their official capacities. For [§ 1983](/terms-and-concepts/section-1983) plaintiffs, this means conspiracy claims are strongest when they involve participants from different government agencies or officers acting outside the scope of their employment.

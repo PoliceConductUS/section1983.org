@@ -6,6 +6,7 @@ interface Props {
   citation: string;
   court: string;
   dateDecided: Date;
+  updatedDate?: Date;
   docketNumber: string;
   canonicalUrl: string;
   courtlistener?: string;
@@ -21,6 +22,7 @@ const {
   citation,
   court,
   dateDecided,
+  updatedDate,
   docketNumber,
   canonicalUrl,
   courtlistener,
@@ -47,6 +49,7 @@ const structuredData = {
   mainEntityOfPage: canonicalUrl,
   datePublished: dateDecided.toISOString(),
   dateCreated: dateDecided.toISOString(),
+  ...(updatedDate && { dateModified: updatedDate.toISOString() }),
   court,
   legislationType: "Case law",
   legislationIdentifier: citation,

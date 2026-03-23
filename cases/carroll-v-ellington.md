@@ -31,7 +31,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Carroll v. Ellington addresses excessive force claims arising from a fatal encounter between Harris County sheriff's deputies and a man with paranoid schizophrenia in his own home. The Fifth Circuit held that while the deputies were entitled to [qualified immunity](/primer/qualified-immunity) on most claims, they were not immune from claims that they used excessive force after the suspect was subdued and had stopped resisting.
+Carroll v. Ellington addresses excessive force claims arising from a fatal encounter between Harris County sheriff's deputies and a man with paranoid schizophrenia in his own home. The Fifth Circuit held that while the deputies were entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) on most claims, they were not immune from claims that they used excessive force after the suspect was subdued and had stopped resisting.
 
 ## The Facts
 

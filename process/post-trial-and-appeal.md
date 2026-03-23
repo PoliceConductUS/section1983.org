@@ -62,7 +62,7 @@ Rule 60(b) is not a second appeal. Courts use it sparingly. But if you discover 
 
 ## Attorney's fees (§ 1988)
 
-If you prevailed — won on at least one claim — you may be entitled to recover [attorney's fees](/primer/attorneys-fees) under [42 U.S.C. § 1988](/primer/section-1988).
+If you prevailed — won on at least one claim — you may be entitled to recover [attorney's fees](/terms-and-concepts/attorneys-fees) under [42 U.S.C. § 1988](/terms-and-concepts/section-1988).
 
 ### For represented plaintiffs
 
@@ -74,7 +74,7 @@ The law here is less favorable. Under _Kay v. Ehrler_ (1991), pro se plaintiffs 
 
 However, you may be able to recover:
 
-- **Litigation costs** — filing fees, [deposition](/primer/deposition) costs, copying, postage, travel
+- **Litigation costs** — filing fees, [deposition](/terms-and-concepts/deposition) costs, copying, postage, travel
 - **Expert witness fees** — if you retained experts
 - **Other expenses** — as allowed by 28 U.S.C. § 1920
 
@@ -109,7 +109,7 @@ The notice of appeal is a simple document — typically one page — filed in th
 
 The circuit court doesn't retry your case. It reviews the district court's decisions under different standards depending on the issue:
 
-- **De novo** (fresh review, no deference): questions of law — [qualified immunity](/primer/qualified-immunity) determinations, jury instruction errors, statutory interpretation
+- **De novo** (fresh review, no deference): questions of law — [qualified immunity](/terms-and-concepts/qualified-immunity) determinations, jury instruction errors, statutory interpretation
 - **Clear error**: factual findings by the judge (in bench trials)
 - **Abuse of discretion**: procedural rulings — discovery decisions, evidentiary rulings, penalties for misconduct
 
@@ -139,7 +139,7 @@ If you lose at the circuit court, you can petition for:
 
 If you lose at the circuit court, you can petition the Supreme Court for review. The cert petition must be filed within **90 days** of the circuit court's judgment (or denial of rehearing).
 
-The Supreme Court grants cert in fewer than 1% of petitions. Pro se cert petitions succeed at roughly 0.03%. But if your case raises a circuit split or a significant constitutional question, it's worth filing. It costs $300 (or free if [IFP](/primer/in-forma-pauperis)).
+The Supreme Court grants cert in fewer than 1% of petitions. Pro se cert petitions succeed at roughly 0.03%. But if your case raises a circuit split or a significant constitutional question, it's worth filing. It costs $300 (or free if [IFP](/terms-and-concepts/in-forma-pauperis)).
 
 ## What to expect
 
@@ -147,7 +147,7 @@ Post-trial and appeal can take 1-3 years. The emotional toll is significant — 
 
 If you won: defendants may appeal. Protect your verdict by filing a strong response brief.
 
-If you lost: evaluate honestly whether you have appellate issues. Not every loss should be appealed. But if the district court made legal errors — wrong jury instructions, improper [summary judgment](/primer/summary-judgment), [qualified immunity](/primer/qualified-immunity) applied incorrectly — an appeal is worth pursuing.
+If you lost: evaluate honestly whether you have appellate issues. Not every loss should be appealed. But if the district court made legal errors — wrong jury instructions, improper [summary judgment](/terms-and-concepts/summary-judgment), [qualified immunity](/terms-and-concepts/qualified-immunity) applied incorrectly — an appeal is worth pursuing.
 
 ## Timeline
 

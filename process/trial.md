@@ -10,7 +10,7 @@ tags: ["trial", "jury", "evidence", "testimony"]
 
 ## What happens at this stage
 
-If you're reading this, you survived the [motion to dismiss](/process/rule-12-motions), [discovery](/process/discovery), [summary judgment](/process/summary-judgment), and possibly two [interlocutory appeals](/process/interlocutory-appeal). You are now in a place where fewer than 2% of [§ 1983](/primer/section-1983) cases ever arrive: trial.
+If you're reading this, you survived the [motion to dismiss](/process/rule-12-motions), [discovery](/process/discovery), [summary judgment](/process/summary-judgment), and possibly two [interlocutory appeals](/process/interlocutory-appeal). You are now in a place where fewer than 2% of [§ 1983](/terms-and-concepts/section-1983) cases ever arrive: trial.
 
 Trial is where a jury (or judge, in a bench trial) hears the evidence and decides whether your constitutional rights were violated and what you're owed.
 
@@ -48,7 +48,7 @@ You present your evidence first because you bear the burden of proof. This inclu
 - **Your testimony** — you will likely testify. Prepare for cross-examination.
 - **Witness testimony** — anyone with relevant knowledge (bystanders, medical professionals, other officers)
 - **Documentary evidence** — body camera footage, medical records, police reports, photos
-- **[Expert testimony](/primer/expert-witness)** — if you have experts (force experts, medical experts, policy experts)
+- **[Expert testimony](/terms-and-concepts/expert-witness)** — if you have experts (force experts, medical experts, policy experts)
 
 For each witness:
 
@@ -112,7 +112,7 @@ In most federal civil cases, the verdict must be unanimous (or as the court dire
 
 For liability: **preponderance of the evidence** — more likely than not (51%). This is much lower than the criminal standard (beyond a reasonable doubt).
 
-For [punitive damages](/primer/punitive-damages): varies by circuit. Some require **clear and convincing evidence** that the defendant's conduct was willful, malicious, or showed reckless disregard for your rights.
+For [punitive damages](/terms-and-concepts/punitive-damages): varies by circuit. Some require **clear and convincing evidence** that the defendant's conduct was willful, malicious, or showed reckless disregard for your rights.
 
 ## What it feels like
 

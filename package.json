@@ -4,10 +4,11 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "diagrams": "mmdc -i diagrams/process-flowchart.mmd -o public/diagrams/process-flowchart.svg -t neutral -b transparent",
+    "diagrams": "printf 'Generating Mermaid chart: process-flowchart.svg\\n' && mmdc -i diagrams/process-flowchart.mmd -o public/diagrams/process-flowchart.svg -t neutral -b transparent",
     "build": "npm run diagrams && GIT_COMMIT_SHA=${GIT_COMMIT_SHA:-$(git rev-parse --short=12 HEAD)} GIT_COMMIT_DIRTY=${GIT_COMMIT_DIRTY:-$(if git diff --quiet HEAD -- && [ -z \"$(git ls-files --others --exclude-standard)\" ]; then echo 0; else echo 1; fi)} astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "readability": "node scripts/readability-audit.mjs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
@@ -22,11 +23,15 @@
     "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^11.12.0",
     "@typescript-eslint/parser": "^8.57.0",
     "eslint": "^10.0.3",
     "eslint-plugin-astro": "^1.6.0",
-    "mmdc": "^0.0.1",
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1"
+  },
+  "overrides": {
+    "puppeteer": "^24.15.0",
+    "puppeteer-core": "^24.15.0"
   }
 }

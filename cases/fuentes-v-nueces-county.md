@@ -16,7 +16,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Sammuel Toomey committed suicide while in pretrial detention at the Nueces County Jail. His wife and children sued Nueces County under [42 U.S.C. § 1983](/primer/section-1983), alleging that the county's customs and policies regarding suicide watch and inmate monitoring were constitutionally inadequate. The Fifth Circuit affirmed [summary judgment](/primer/summary-judgment) for the county, holding that the plaintiffs failed to establish [municipal liability](/primer/municipal-liability) under [_Monell_](/cases/monell-v-dep-t-of-soc-servs).
+Sammuel Toomey committed suicide while in pretrial detention at the Nueces County Jail. His wife and children sued Nueces County under [42 U.S.C. § 1983](/terms-and-concepts/section-1983), alleging that the county's customs and policies regarding suicide watch and inmate monitoring were constitutionally inadequate. The Fifth Circuit affirmed [summary judgment](/terms-and-concepts/summary-judgment) for the county, holding that the plaintiffs failed to establish [municipal liability](/terms-and-concepts/municipal-liability) under [_Monell_](/cases/monell-v-dep-t-of-soc-servs).
 
 ## The Facts
 
@@ -28,18 +28,18 @@ When Garza returned at 11:30 p.m. to release Toomey for his daily hour outside h
 
 ## What the Court Decided
 
-The Fifth Circuit affirmed summary judgment for Nueces County. The court applied the three-element test for [municipal liability](/primer/municipal-liability): (1) an official policy or custom, (2) a policymaker who can be charged with actual or constructive knowledge, and (3) a constitutional violation whose [moving force](/primer/moving-force-causation) was the policy or custom.
+The Fifth Circuit affirmed summary judgment for Nueces County. The court applied the three-element test for [municipal liability](/terms-and-concepts/municipal-liability): (1) an official policy or custom, (2) a policymaker who can be charged with actual or constructive knowledge, and (3) a constitutional violation whose [moving force](/terms-and-concepts/moving-force-causation) was the policy or custom.
 
-The court found that the plaintiffs failed to satisfy these elements. The county had a suicide watch policy in place, and it was generally followed — Toomey was checked at regular intervals. While Officer Garza admittedly violated jail policy by not fully verifying Toomey's identity and condition during the roll call, an individual officer's deviation from policy is not the same as a policy or custom of [deliberate indifference](/primer/deliberate-indifference).
+The court found that the plaintiffs failed to satisfy these elements. The county had a suicide watch policy in place, and it was generally followed — Toomey was checked at regular intervals. While Officer Garza admittedly violated jail policy by not fully verifying Toomey's identity and condition during the roll call, an individual officer's deviation from policy is not the same as a policy or custom of [deliberate indifference](/terms-and-concepts/deliberate-indifference).
 
 The court also noted that the county's own internal investigation found no systemic policy failures. A single incident — even one with tragic consequences — does not establish the pattern of violations needed to prove an unconstitutional custom under [_City of Canton v. Harris_](/cases/city-of-canton-v-harris).
 
 ## Why This Case Matters for Your § 1983 Case
 
-This case illustrates the high bar for holding a county liable for a jail suicide under § 1983. Even when an individual jailer clearly makes a mistake (here, failing to properly check on a suicidal inmate), that alone doesn't establish [Monell liability](/primer/monell-liability). You must show that the county's policy itself was deficient, or that there was a pattern of similar violations amounting to a [custom](/primer/custom) of deliberate indifference.
+This case illustrates the high bar for holding a county liable for a jail suicide under § 1983. Even when an individual jailer clearly makes a mistake (here, failing to properly check on a suicidal inmate), that alone doesn't establish [Monell liability](/terms-and-concepts/monell-liability). You must show that the county's policy itself was deficient, or that there was a pattern of similar violations amounting to a [custom](/terms-and-concepts/custom) of deliberate indifference.
 
 The case also demonstrates the importance of distinguishing between an officer's failure to follow an adequate policy (which is not Monell liability) and a policy that is itself constitutionally inadequate (which can be). If the county had a reasonable suicide watch policy and individual officers simply failed to follow it, the county is not liable — the remedy lies against the individual officers.
 
 ## Key Takeaway
 
-A single jail suicide, even where individual officers clearly failed to follow procedures, does not establish [municipal liability](/primer/municipal-liability) under § 1983. To hold a county liable for a detainee's death, you must prove that the county's official policy or an entrenched custom of inadequate monitoring was the [moving force](/primer/moving-force-causation) behind the constitutional violation — not merely that an individual officer made a tragic mistake.
+A single jail suicide, even where individual officers clearly failed to follow procedures, does not establish [municipal liability](/terms-and-concepts/municipal-liability) under § 1983. To hold a county liable for a detainee's death, you must prove that the county's official policy or an entrenched custom of inadequate monitoring was the [moving force](/terms-and-concepts/moving-force-causation) behind the constitutional violation — not merely that an individual officer made a tragic mistake.

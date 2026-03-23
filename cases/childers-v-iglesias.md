@@ -46,7 +46,7 @@ The Fifth Circuit affirmed the dismissal under Rule 12(b)(6).
 
 The court found that Childers's own allegations established that the deputies had probable cause for the arrest. By Childers's own account, he refused to comply with an officer's instruction to move his truck while the officers were responding to his own call for assistance. Under Texas law, interfering with an officer's duties can constitute a criminal offense. The fact that Childers thought the officers could have driven around his truck does not negate probable cause — it is enough that an officer could reasonably conclude that Childers was interfering.
 
-The court applied the [_Twombly_](/cases/bell-atlantic-corp-v-twombly)/[_Iqbal_](/cases/ashcroft-v-iqbal) pleading standard and found that the facts as alleged did not state a claim for a constitutional violation. Because no constitutional violation was established, the [qualified immunity](/primer/qualified-immunity) defense was easily satisfied.
+The court applied the [_Twombly_](/cases/bell-atlantic-corp-v-twombly)/[_Iqbal_](/cases/ashcroft-v-iqbal) pleading standard and found that the facts as alleged did not state a claim for a constitutional violation. Because no constitutional violation was established, the [qualified immunity](/terms-and-concepts/qualified-immunity) defense was easily satisfied.
 
 The court also noted that the subsequent dismissal of the criminal charge by the district attorney does not retroactively negate probable cause. Probable cause is assessed based on what the officer knew at the time of the arrest.
 

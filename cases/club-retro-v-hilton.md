@@ -39,7 +39,7 @@ On the **First Amendment retaliation claims**, the court applied the standard fr
 
 On the **selective enforcement claims**, the court noted that to prevail, a plaintiff must show both that similarly situated entities were treated differently and that the differential treatment was motivated by an impermissible purpose. The club failed to identify sufficiently similar comparators who were not subjected to the same enforcement.
 
-The individual officials were entitled to [qualified immunity](/primer/qualified-immunity) because the club could not demonstrate a violation of clearly established constitutional rights.
+The individual officials were entitled to [qualified immunity](/terms-and-concepts/qualified-immunity) because the club could not demonstrate a violation of clearly established constitutional rights.
 
 ## Why This Case Matters for Your § 1983 Case
 
