@@ -1,10 +1,10 @@
 ---
 title: "Fifth Amendment: What Counts as a Clear Invocation"
 description: "How to evaluate whether your past invocation of the right to remain silent was clear enough, and which facts help or hurt that issue later."
-pubDate: 2026-03-18
+pubDate: 2026-09-05
 author: "Institute for Police Conduct, Inc."
 tags: ["fifth-amendment", "invocation", "miranda", "questioning", "training"]
-draft: true
+draft: false
 ---
 
 If you tried to stay silent and questioning continued, one of the first questions the judge is going to ask is whether you clearly told them you were invoking your right to remain silent.

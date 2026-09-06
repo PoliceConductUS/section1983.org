@@ -1,10 +1,10 @@
 ---
 title: "Silence: When It Can Still Be Used Against You"
 description: "Why remaining silent is not always legally neutral, and when pre-arrest, post-arrest, and post-Miranda silence may still be used against you."
-pubDate: 2026-03-19
+pubDate: 2026-09-05
 author: "Institute for Police Conduct, Inc."
 tags: ["fifth-amendment", "silence", "miranda", "criminal-case", "defenses"]
-draft: true
+draft: false
 ---
 
 Many people think silence protects them automatically.

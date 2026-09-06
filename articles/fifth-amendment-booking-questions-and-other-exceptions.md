@@ -1,10 +1,10 @@
 ---
 title: "Fifth Amendment: Booking Questions and Other Exceptions"
 description: "What police and jail staff may still ask after invocation, including routine booking questions and narrow public-safety questions."
-pubDate: 2026-03-20
+pubDate: 2026-09-05
 author: "Institute for Police Conduct, Inc."
 tags: ["fifth-amendment", "booking", "miranda", "public-safety", "questioning"]
-draft: true
+draft: false
 ---
 
 Some limited questions can still come after you invoke your right to remain silent.

@@ -1,10 +1,10 @@
 ---
 title: "Fifth Amendment: Can Police or Jail Staff Punish You for Staying Silent?"
 description: "What happens if you keep refusing to answer after invocation, what officers and jail staff can do, and what starts looking like punishment or retaliation."
-pubDate: 2026-03-20
+pubDate: 2026-09-05
 author: "Institute for Police Conduct, Inc."
 tags: ["fifth-amendment", "retaliation", "coercion", "jail", "questioning"]
-draft: true
+draft: false
 ---
 
 Yes. You can keep refusing to answer questions after you invoke your right to remain silent.

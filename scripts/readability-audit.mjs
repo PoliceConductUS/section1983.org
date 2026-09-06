@@ -11,26 +11,99 @@ function stripFrontmatter(source) {
   return source.slice(end + 4);
 }
 
-function stripMarkdown(source) {
+// Headings, list items, table rows, and colon-terminated lead-ins are
+// separate units of reading. Without a terminator the sentence splitter
+// would glue them onto the next paragraph and inflate sentence length.
+function terminateBlocks(source) {
   return source
+    .split("\n")
+    .map((line) => {
+      const trimmed = line.trim();
+      if (!trimmed) return "";
+      if (/[.!?]$/.test(trimmed)) return trimmed;
+      if (/[:;,]$/.test(trimmed)) return `${trimmed.slice(0, -1)}.`;
+      return `${trimmed}.`;
+    })
+    .join("\n");
+}
+
+function stripMarkdown(source) {
+  const withoutBlocks = source
     .replace(/```[\s\S]*?```/g, " ")
     .replace(/`[^`]*`/g, " ")
     .replace(/!\[[^\]]*]\([^)]*\)/g, " ")
     .replace(/\[([^\]]+)]\([^)]*\)/g, "$1")
     .replace(/<[^>]+>/g, " ")
     .replace(/^\s{0,3}#{1,6}\s+/gm, "")
+    .replace(/^\s*>\s?/gm, "")
     .replace(/^\s*[-*+]\s+/gm, "")
     .replace(/^\s*\d+\.\s+/gm, "")
+    .replace(/^\s*\|?[-:| ]+\|?\s*$/gm, "")
     .replace(/\|/g, " ")
-    .replace(/\*|_/g, "")
-    .replace(/\s+/g, " ")
-    .trim();
+    .replace(/\*|_/g, "");
+
+  return terminateBlocks(withoutBlocks).replace(/\s+/g, " ").trim();
+}
+
+// Periods inside citations and common abbreviations do not end sentences.
+const ABBREVIATIONS = [
+  "v",
+  "U.S",
+  "Cir",
+  "Inc",
+  "Co",
+  "Corp",
+  "No",
+  "Dep't",
+  "Dept",
+  "Div",
+  "Ct",
+  "App",
+  "Supp",
+  "Fed",
+  "R",
+  "Civ",
+  "P",
+  "Id",
+  "id",
+  "e.g",
+  "i.e",
+  "cf",
+  "Mr",
+  "Ms",
+  "Dr",
+  "Jr",
+  "Sr",
+  "St",
+  "Tex",
+  "Cal",
+  "Ill",
+  "Ind",
+  "Pa",
+  "Mich",
+  "Ohio",
+];
+
+function protectAbbreviations(text) {
+  let protectedText = text;
+  for (const abbreviation of ABBREVIATIONS) {
+    const escaped = abbreviation.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    protectedText = protectedText.replace(
+      new RegExp(`\\b${escaped}\\.(?=\\s)`, "g"),
+      `${abbreviation.replace(/\./g, "\u2024")}\u2024`,
+    );
+  }
+  // Ordinal and reporter abbreviations like "5th Cir." and "F.3d" as well as
+  // section symbols followed by numbers.
+  return protectedText
+    .replace(/\b(\d+)(st|nd|rd|th)\.(?=\s)/g, "$1$2\u2024")
+    .replace(/\b([A-Z])\.(?=[A-Z]\.)/g, "$1\u2024");
 }
 
 function splitSentences(text) {
-  return text
+  return protectAbbreviations(text)
     .split(/(?<=[.!?])\s+/)
-    .map((sentence) => sentence.trim())
+    .map((sentence) => sentence.replace(/\u2024/g, ".").trim())
     .filter(Boolean);
 }
 

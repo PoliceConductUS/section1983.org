@@ -1,7 +1,7 @@
 ---
 title: "Retaliation: Retaliatory Arrest After Speech or Recording"
 description: "A practical guide to First Amendment retaliatory-arrest claims based on criticism of police, recording police, and other protected speech."
-pubDate: 2026-03-12
+pubDate: 2026-09-05
 author: "Institute for Police Conduct, Inc."
 tags:
   [
@@ -10,7 +10,7 @@ tags:
     "recording-police",
     "speech",
   ]
-draft: true
+draft: false
 ---
 
 If the officer arrested you right after you criticized police, questioned them, or recorded them, you may be thinking: this was retaliation.

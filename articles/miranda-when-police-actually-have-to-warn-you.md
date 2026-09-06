@@ -1,7 +1,7 @@
 ---
 title: "Miranda: When Police Actually Have to Warn You"
 description: "When police do and do not have to give Miranda warnings, why arrest alone is not enough, and how custody plus interrogation changes the rule."
-pubDate: 2026-03-17
+pubDate: 2026-09-05
 author: "Institute for Police Conduct, Inc."
 tags:
   [
@@ -11,7 +11,7 @@ tags:
     "criminal-case",
     "training",
   ]
-draft: true
+draft: false
 ---
 
 Many people think police must read you your rights as soon as they arrest you.
