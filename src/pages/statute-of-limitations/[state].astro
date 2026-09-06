@@ -1,0 +1,300 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { STATE_LIMITATIONS, SOL_LAST_REVIEWED } from "../../lib/sol-data";
+import { CIRCUITS, STATE_CIRCUIT } from "../../lib/case-hubs";
+import { buildHubIndex } from "../../lib/case-hub-index";
+
+export async function getStaticPaths() {
+  const cases = await getCollection("cases");
+  const index = buildHubIndex(
+    cases.map((c) => ({
+      id: c.id,
+      tags: c.data.tags ?? [],
+      court: c.data.court,
+    })),
+  );
+  return STATE_LIMITATIONS.map((s) => ({
+    params: { state: s.slug },
+    props: {
+      s,
+      hasCaseHub: index.states.has(s.slug),
+      caseCount: index.states.get(s.slug)?.length ?? 0,
+      hasCircuitHub: index.circuits.has(
+        s.slug === "district-of-columbia" ? "dc" : STATE_CIRCUIT[s.slug],
+      ),
+    },
+  }));
+}
+
+const { s, hasCaseHub, caseCount, hasCircuitHub } = Astro.props;
+const circuitSlug =
+  s.slug === "district-of-columbia" ? "dc" : STATE_CIRCUIT[s.slug];
+const circuit = circuitSlug ? CIRCUITS[circuitSlug] : undefined;
+const canonicalUrl = `https://www.section1983.org/statute-of-limitations/${s.slug}/`;
+const period = `${s.years} ${s.years === 1 ? "year" : "years"}`;
+const inState =
+  s.slug === "district-of-columbia"
+    ? "in the District of Columbia"
+    : `in ${s.name}`;
+
+const title = `${s.name} Section 1983 Statute of Limitations`;
+const description = `Section 1983 filing deadline ${inState}: the borrowed ${s.years}-year personal-injury period, when the clock starts, and how tolling works.`;
+
+const others = STATE_LIMITATIONS.filter((o) => o.slug !== s.slug);
+const sameCircuit = others.filter(
+  (o) =>
+    (o.slug === "district-of-columbia" ? "dc" : STATE_CIRCUIT[o.slug]) ===
+    circuitSlug,
+);
+
+const crumbs = [
+  { label: "Home", href: "/" },
+  { label: "Statute of Limitations by State", href: "/statute-of-limitations" },
+  { label: s.name },
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description,
+  url: canonicalUrl,
+  mainEntityOfPage: canonicalUrl,
+  dateModified: SOL_LAST_REVIEWED,
+  isAccessibleForFree: true,
+  author: {
+    "@type": "Organization",
+    name: "Institute for Police Conduct, Inc.",
+    url: "https://policeconduct.org",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Institute for Police Conduct, Inc.",
+    url: "https://policeconduct.org",
+  },
+  isPartOf: {
+    "@type": "CollectionPage",
+    name: "Section 1983 Statute of Limitations by State",
+    url: "https://www.section1983.org/statute-of-limitations/",
+  },
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  canonicalUrl={canonicalUrl}
+  ogType="article"
+  structuredData={structuredData}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <h1 class="text-3xl font-bold text-navy mb-4">{title}</h1>
+
+  <div class="bg-navy-light/5 border border-slate-200 rounded-lg p-6 mb-6">
+    <p class="text-sm font-semibold text-navy uppercase tracking-wide mb-1">
+      Borrowed limitations period
+    </p>
+    <p class="text-4xl font-bold text-navy mb-2">{period}</p>
+    <p class="text-sm text-slate-700 font-mono">{s.statute}</p>
+    {
+      s.source && (
+        <p class="text-sm text-slate-600 mt-2">
+          <a
+            href={s.source}
+            target="_blank"
+            rel="noopener"
+            class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+          >
+            Read the statute text ↗
+          </a>
+        </p>
+      )
+    }
+    {
+      circuit && (
+        <p class="text-sm text-slate-600 mt-3">
+          Federal courts {inState} sit in the{" "}
+          {hasCircuitHub ? (
+            <a
+              href={`/cases/circuit/${circuit.slug}/`}
+              class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+            >
+              {circuit.label}
+            </a>
+          ) : (
+            <span>{circuit.label}</span>
+          )}
+          .
+        </p>
+      )
+    }
+  </div>
+
+  <div class="bg-cream border-l-4 border-gold rounded p-4 mb-8">
+    <p class="font-semibold text-navy text-sm mb-1">
+      {
+        s.confidence === "verify"
+          ? "Recent change. Verify before you rely on this"
+          : "Not verified. Confirm the statute"
+      }
+    </p>
+    {s.note && <p class="text-sm text-slate-700 mb-2">{s.note}</p>}
+    <p class="text-sm text-slate-700">
+      This page was compiled on {SOL_LAST_REVIEWED} from the statute text linked above.
+      Read that text yourself and confirm the period in force on your incident date.
+      Nothing here is a substitute for the statute. If a shorter period could apply,
+      file by the shorter date.
+    </p>
+  </div>
+
+  <div class="prose prose-slate max-w-none">
+    <h2>What the {period} covers</h2>
+    <p>
+      Section 1983 borrows the state's general personal-injury limitations
+      period. <em>Wilson v. Garcia</em>, 471 U.S. 261 (1985); <em
+        >Owens v. Okure</em
+      >, 488 U.S. 235 (1989). For a violation that happened {inState}, that
+      period is {period} under {s.statute}. It applies to every Section 1983
+      claim from the incident, whether the theory is excessive force, false
+      arrest, unlawful search, retaliation, or a Monell claim against the city.
+    </p>
+    <p>
+      If {s.name} has a shorter deadline for a specific tort such as assault or false
+      imprisonment, that shorter deadline does not control. Section 1983 uses the
+      general period.
+    </p>
+
+    <h2>When the clock starts</h2>
+    <p>
+      Accrual is a question of federal law. The period starts when you have a
+      complete and present cause of action, which for most police encounters
+      means the day it happened. Three exceptions matter:
+    </p>
+    <ul>
+      <li>
+        <strong>False arrest.</strong> Accrues when you are first held under legal
+        process, usually your first court appearance, not when charges are dismissed.
+        <a href="/cases/wallace-v-kato"><em>Wallace v. Kato</em></a>. {
+          inState[0].toUpperCase() + inState.slice(1)
+        }, that means the false-arrest count must be filed within {period} of that
+        first appearance, even if the criminal case is still pending. Ask the court
+        to stay the civil case if it is.
+      </li>
+      <li>
+        <strong>Fabricated evidence and malicious prosecution.</strong> Accrue when
+        the criminal case ends without a conviction.
+        <a href="/cases/mcdonough-v-smith"><em>McDonough v. Smith</em></a>;
+        <a href="/cases/thompson-v-clark"><em>Thompson v. Clark</em></a>.
+      </li>
+      <li>
+        <strong>Claims that would undermine a conviction.</strong> Do not accrue while
+        the conviction stands.
+        <a href="/cases/heck-v-humphrey"><em>Heck v. Humphrey</em></a>.
+      </li>
+    </ul>
+
+    <h2>A worked example</h2>
+    <p>
+      Suppose the arrest and the force happened on March 3, and you first
+      appeared before a judge on March 4. The excessive-force count accrues
+      March 3. The false-arrest count accrues March 4. Both must be filed within {
+        period
+      } of those dates. If the charges are dismissed the following year, a malicious-prosecution
+      count accrues on the dismissal date and has its own {period} from there.
+    </p>
+
+    <h2>Tolling</h2>
+    <p>
+      Rules that pause the period also come from {s.name} law, unless they conflict
+      with federal policy. The doctrines most often raised in Section 1983 cases are
+      tolling for minority, tolling for legal incapacity, and equitable tolling where
+      the defendant concealed facts that prevented you from knowing you had a claim.
+      Some states toll during imprisonment; many do not. If your case depends on tolling,
+      research the
+      {s.name} rule and the {circuit ? circuit.label : "governing circuit"}'s
+      treatment of it before you file. Tolling is fact-specific and is denied
+      more often than it is granted.
+    </p>
+    <p>
+      Filing the complaint stops the clock. A pending records request, a
+      complaint to internal affairs, or a notice-of-claim letter does not. Read
+      <a
+        href="/articles/statute-of-limitations-and-tolling-in-a-section-1983-case"
+        >Statute of Limitations and Tolling in a Section 1983 Case</a
+      > for the full discussion and
+      <a href="/terms-and-concepts/tolling">tolling</a> for the doctrine.
+    </p>
+
+    <h2>What to do now</h2>
+    <ol>
+      <li>
+        Write down the incident date and the date of your first court
+        appearance.
+      </li>
+      <li>
+        Add {period} to each. If a note above says the period recently changed, use
+        the shorter result.
+      </li>
+      <li>
+        Compare those dates to today. If either is within six months, read
+        <a href="/articles/what-do-i-file-and-when-section-1983-deadline-map"
+          >the deadline map</a
+        > and start the complaint. Read
+        <a href="/articles/how-to-write-a-section-1983-complaint"
+          >How to Write a Section 1983 Complaint</a
+        >.
+      </li>
+      <li>
+        If the criminal case is still pending, file the civil case on time and
+        move to stay it.
+      </li>
+    </ol>
+
+    {
+      hasCaseHub && (
+        <>
+          <h2>{s.name} cases in the library</h2>
+          <p>
+            The library has {caseCount} Section 1983 decisions from or binding
+            in {s.name}. See
+            <a href={`/cases/state/${s.slug}/`}>{s.name} Section 1983 cases</a>.
+          </p>
+        </>
+      )
+    }
+  </div>
+
+  {
+    sameCircuit.length > 0 && circuit && (
+      <nav
+        class="mt-12 border-t border-slate-200 pt-8"
+        aria-label="Other states in the circuit"
+      >
+        <h2 class="text-sm font-bold uppercase tracking-wide text-navy mb-3">
+          Other states in the {circuit.label}
+        </h2>
+        <div class="flex flex-wrap gap-2">
+          {sameCircuit.map((o) => (
+            <a
+              href={`/statute-of-limitations/${o.slug}/`}
+              class="text-sm bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors focus-ring"
+            >
+              {o.name} <span class="text-slate-500">({o.years} yr)</span>
+            </a>
+          ))}
+        </div>
+      </nav>
+    )
+  }
+
+  <p class="mt-8 text-sm text-slate-600">
+    <a
+      href="/statute-of-limitations/"
+      class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+      >Back to the full table</a
+    >.
+  </p>
+</Base>

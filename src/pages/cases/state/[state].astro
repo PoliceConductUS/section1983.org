@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import CaseHub from "../../../layouts/CaseHub.astro";
 import { CIRCUITS, STATE_CIRCUIT, STATE_LABELS } from "../../../lib/case-hubs";
 import { buildHubIndex } from "../../../lib/case-hub-index";
+import { limitationsFor } from "../../../lib/sol-data";
 
 export async function getStaticPaths() {
   const cases = await getCollection("cases");
@@ -35,13 +36,14 @@ export async function getStaticPaths() {
 
 const { state, cases, allStates, circuit } = Astro.props;
 const label = STATE_LABELS[state];
+const sol = limitationsFor(state);
 const circuitMeta = CIRCUITS[STATE_CIRCUIT[state]];
 const canonicalUrl = `https://www.section1983.org/cases/state/${state}/`;
 
 const title = `${label} Section 1983 Cases`;
 const description = `Section 1983 police misconduct cases from ${label}: excessive force, false arrest, qualified immunity, and Monell decisions from the ${circuitMeta?.label ?? "federal courts"} and the courts in ${label}, explained in plain language.`;
 const intro = `These are the cases in the library that arose in ${label} or bind courts there. Federal district courts in ${label} sit in the ${circuitMeta?.label ?? "federal circuit"}, so published ${circuitMeta?.label ?? "circuit"} decisions and Supreme Court decisions control. State-court decisions are included where they decide a probable-cause or offense-element question that a Section 1983 court will look to.`;
-const note = `A case is tagged to a state when it arose there or when it is binding precedent for federal courts there. Circuit decisions are tagged to every state in the circuit.`;
+const note = `A case is tagged to a state when it arose there or when it is binding precedent for federal courts there. Circuit decisions are tagged to every state in the circuit.${sol ? ` The Section 1983 limitations period in ${label} is ${sol.years} ${sol.years === 1 ? "year" : "years"}; see the ${label} statute of limitations page.` : ""}`;
 
 const articles = await getCollection("articles", ({ data }) => !data.draft);
 const pick = (slugs: string[]) =>
@@ -53,11 +55,22 @@ const pick = (slugs: string[]) =>
       label: a!.data.title,
       description: a!.data.description,
     }));
-const relatedArticles = pick([
-  "statute-of-limitations-and-tolling-in-a-section-1983-case",
-  "how-to-research-clearly-established-law-in-a-section-1983-case",
-  "local-rules-and-standing-orders-in-a-section-1983-case",
-]);
+const relatedArticles = [
+  ...(sol
+    ? [
+        {
+          href: `/statute-of-limitations/${state}/`,
+          label: `${label} statute of limitations: ${sol.years} ${sol.years === 1 ? "year" : "years"}`,
+          description: `The borrowed personal-injury period under ${sol.statute}, when the clock starts, and what to verify.`,
+        },
+      ]
+    : []),
+  ...pick([
+    "statute-of-limitations-and-tolling-in-a-section-1983-case",
+    "how-to-research-clearly-established-law-in-a-section-1983-case",
+    "local-rules-and-standing-orders-in-a-section-1983-case",
+  ]),
+];
 
 const crumbs = [
   { label: "Home", href: "/" },

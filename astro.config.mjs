@@ -47,6 +47,7 @@ const staticPageSources = {
   "/process/": "src/pages/process/index.astro",
   "/search/": "src/pages/search.astro",
   "/sitemap/": "src/pages/sitemap.astro",
+  "/statute-of-limitations/": "src/lib/sol-data.ts",
   "/terms/": "src/pages/terms.astro",
   "/terms-and-concepts/": "src/pages/terms-and-concepts/index.astro",
 };

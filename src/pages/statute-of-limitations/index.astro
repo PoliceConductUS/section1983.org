@@ -1,0 +1,253 @@
+---
+import Base from "../../layouts/Base.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { STATE_LIMITATIONS, SOL_LAST_REVIEWED } from "../../lib/sol-data";
+
+const canonicalUrl = "https://www.section1983.org/statute-of-limitations/";
+const title = "Section 1983 Statute of Limitations by State";
+const description =
+  "How long you have to file a Section 1983 lawsuit in every state: the borrowed personal-injury period, the statute that sets it, when the clock starts under Wallace v. Kato, and the states where the period recently changed.";
+
+const byYears = new Map<number, typeof STATE_LIMITATIONS>();
+for (const s of STATE_LIMITATIONS) {
+  byYears.set(s.years, [...(byYears.get(s.years) ?? []), s]);
+}
+const yearGroups = [...byYears.entries()].sort((a, b) => a[0] - b[0]);
+
+const crumbs = [
+  { label: "Home", href: "/" },
+  { label: "Statute of Limitations by State" },
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: title,
+  description,
+  url: canonicalUrl,
+  dateModified: SOL_LAST_REVIEWED,
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: STATE_LIMITATIONS.length,
+    itemListElement: STATE_LIMITATIONS.map((s, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: `${s.name}: ${s.years} ${s.years === 1 ? "year" : "years"}`,
+      url: `https://www.section1983.org/statute-of-limitations/${s.slug}/`,
+    })),
+  },
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  canonicalUrl={canonicalUrl}
+  structuredData={structuredData}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <h1 class="text-3xl font-bold text-navy mb-2">
+    Section 1983 Statute of Limitations by State
+  </h1>
+  <p class="text-lg text-slate-700 mb-6 max-w-3xl">
+    Section 1983 has no deadline of its own. Federal courts borrow the general
+    personal-injury limitations period of the state where the violation
+    happened. That period is one year in some states and six in others. This
+    table gives the period and the statute for every state, with notes where the
+    law recently changed.
+  </p>
+
+  <div class="bg-cream border-l-4 border-gold rounded p-4 mb-8 max-w-3xl">
+    <p class="font-semibold text-navy text-sm mb-1">Before you rely on this</p>
+    <p class="text-sm text-slate-700">
+      This table was compiled on {SOL_LAST_REVIEWED} from the statute text linked
+      in each row. Nothing here is a substitute for reading the statute. Legislatures
+      change these periods, and the period that applies is the one in force for your
+      incident date. Confirm the statute on your state legislature's website before
+      you calculate a deadline. When in doubt, file by the shorter possible date.
+      Rows marked <span class="font-semibold">recent change</span>
+      have a known amendment or a live dispute described on the state's page.
+    </p>
+  </div>
+
+  <h2 class="text-xl font-bold text-navy mb-3">The table</h2>
+  <div class="overflow-x-auto mb-10">
+    <table class="min-w-full text-sm border border-slate-200 bg-white">
+      <thead class="bg-slate-100 text-navy">
+        <tr>
+          <th class="text-left px-3 py-2 font-semibold">State</th>
+          <th class="text-left px-3 py-2 font-semibold">Period</th>
+          <th class="text-left px-3 py-2 font-semibold">Borrowed statute</th>
+          <th class="text-left px-3 py-2 font-semibold">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          STATE_LIMITATIONS.map((s) => (
+            <tr class="border-t border-slate-200">
+              <td class="px-3 py-2">
+                <a
+                  href={`/statute-of-limitations/${s.slug}/`}
+                  class="focus-ring surface-link font-semibold text-navy underline decoration-gold decoration-2"
+                >
+                  {s.name}
+                </a>
+              </td>
+              <td class="px-3 py-2 whitespace-nowrap">
+                {s.years} {s.years === 1 ? "year" : "years"}
+              </td>
+              <td class="px-3 py-2 font-mono text-xs">
+                {s.source ? (
+                  <a
+                    href={s.source}
+                    target="_blank"
+                    rel="noopener"
+                    class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+                  >
+                    {s.statute}
+                  </a>
+                ) : (
+                  s.statute
+                )}
+              </td>
+              <td class="px-3 py-2">
+                {s.confidence === "verify" && (
+                  <span class="text-xs font-semibold uppercase tracking-wide text-gold-strong">
+                    recent change
+                  </span>
+                )}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-xl font-bold text-navy mb-3">Grouped by period</h2>
+  <div class="grid gap-4 md:grid-cols-2 mb-10">
+    {
+      yearGroups.map(([years, states]) => (
+        <div class="border border-slate-200 rounded-lg bg-white p-4">
+          <p class="font-semibold text-navy mb-2">
+            {years} {years === 1 ? "year" : "years"}
+          </p>
+          <p class="text-sm text-slate-700">
+            {states.map((s, i) => (
+              <>
+                {i > 0 && ", "}
+                <a
+                  href={`/statute-of-limitations/${s.slug}/`}
+                  class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+                >
+                  {s.name}
+                </a>
+              </>
+            ))}
+          </p>
+        </div>
+      ))
+    }
+  </div>
+
+  <div class="prose prose-slate max-w-3xl">
+    <h2>Why the period comes from state law</h2>
+    <p>
+      Section 1983 does not say how long a plaintiff has to sue. In
+      <em>Wilson v. Garcia</em>, 471 U.S. 261 (1985), the Supreme Court held
+      that every Section 1983 claim borrows the forum state's limitations period
+      for personal-injury actions. In <em>Owens v. Okure</em>, 488 U.S. 235
+      (1989), it added that when a state has more than one personal-injury
+      period, courts use the general or residual one, not a shorter period for a
+      specific intentional tort like assault or false imprisonment.
+    </p>
+    <p>
+      That is why the table lists one period per state even where the state has
+      a shorter deadline for assault or battery. A police beating is pleaded as
+      a Fourth Amendment claim, and it gets the general period.
+    </p>
+
+    <h2>The clock starts under federal law, not state law</h2>
+    <p>
+      The state supplies the length of the period. Federal law decides when it
+      starts. A claim accrues when the plaintiff has a complete and present
+      cause of action, which is usually when the plaintiff knows or has reason
+      to know of the injury.
+    </p>
+    <ul>
+      <li>
+        <strong>Excessive force</strong> accrues on the day of the force.
+      </li>
+      <li>
+        <strong>False arrest</strong> accrues when you are first held under legal
+        process, usually your first court appearance, not when the charges are dropped.
+        <a href="/cases/wallace-v-kato">
+          <em>Wallace v. Kato</em>
+        </a>.
+      </li>
+      <li>
+        <strong>Fabricated evidence</strong> (due process) accrues when the criminal
+        case ends in your favor.
+        <a href="/cases/mcdonough-v-smith">
+          <em>McDonough v. Smith</em>
+        </a>.
+      </li>
+      <li>
+        <strong>Malicious prosecution</strong> (Fourth Amendment) also requires favorable
+        termination, and any ending without a conviction counts.
+        <a href="/cases/thompson-v-clark">
+          <em>Thompson v. Clark</em>
+        </a>.
+      </li>
+      <li>
+        <strong>Claims that would undermine a standing conviction</strong> do not
+        accrue until the conviction is set aside.
+        <a href="/cases/heck-v-humphrey">
+          <em>Heck v. Humphrey</em>
+        </a>.
+      </li>
+    </ul>
+    <p>
+      One incident can produce counts with different accrual dates. Calculate
+      each one. Read
+      <a
+        href="/articles/statute-of-limitations-and-tolling-in-a-section-1983-case"
+        >Statute of Limitations and Tolling in a Section 1983 Case</a
+      > for the full walkthrough.
+    </p>
+
+    <h2>Tolling comes from state law, with limits</h2>
+    <p>
+      Rules that pause the clock also come from the forum state, as long as they
+      are not inconsistent with federal law. Most states toll for minority and
+      for legal incapacity. Some toll during imprisonment, and some do not. Some
+      recognize equitable tolling when the defendant concealed facts. A few
+      circuits toll the period while a prisoner exhausts the grievance process
+      the PLRA requires. Each state's page notes the doctrines most likely to
+      matter, but tolling is fact-specific and rarely rescues a late filing.
+      Plan to file inside the period.
+    </p>
+
+    <h2>How to use the table</h2>
+    <ol>
+      <li>Find the state where the incident happened. That is the forum.</li>
+      <li>
+        Write down the accrual date for each count you plan to bring, using the
+        rules above.
+      </li>
+      <li>
+        Add the period. If the state's row says recent change, open the state
+        page and read the note. Then confirm the statute yourself either way.
+      </li>
+      <li>
+        If the result is within a few months, read
+        <a
+          href="/articles/statute-of-limitations-and-tolling-in-a-section-1983-case#what-to-do-if-you-think-the-deadline-may-be-close"
+          >what to do when the deadline is close</a
+        >. Filing the complaint stops the clock; a pending records request does
+        not.
+      </li>
+    </ol>
+  </div>
+</Base>

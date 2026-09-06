@@ -44,7 +44,7 @@ Your job is to test those arguments before they do.
 
 [Section 1983](/terms-and-concepts/section-1983) does not have its own filing deadline.
 
-Federal courts usually borrow the state's personal-injury deadline from the state where the events happened. In many states that deadline is two years, but not everywhere.
+Federal courts usually borrow the state's personal-injury deadline from the state where the events happened. In many states that deadline is two years, but not everywhere. It is one year in Kentucky and Tennessee and six in Maine and North Dakota. Look up your state on the [statute of limitations by state](/statute-of-limitations/) table, which lists the period and the statute for every state and flags the ones that recently changed.
 
 That means you need to answer two different questions:
 

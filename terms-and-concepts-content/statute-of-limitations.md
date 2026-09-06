@@ -18,13 +18,14 @@ Here's the complication: § 1983 doesn't have its own statute of limitations. Un
 
 This means the deadline varies by state:
 
-- **1 year**: Kentucky, Louisiana, Tennessee
-- **2 years**: Texas, California, Pennsylvania, most states
-- **3 years**: New York, New Jersey, Connecticut
-- **4 years**: Nebraska, Wyoming
-- **6 years**: Maine, North Dakota
+- **1 year**: Kentucky, Tennessee, Puerto Rico, and Louisiana for incidents before July 1, 2024
+- **2 years**: Texas, California, Pennsylvania, New Jersey, and most other states
+- **3 years**: New York, Connecticut, Massachusetts, Michigan, Mississippi, Washington
+- **4 years**: Nebraska, Utah, Wyoming, and Florida (with a live dispute after a 2023 change)
+- **5 years**: Missouri
+- **6 years**: Maine, Minnesota, North Dakota
 
-Check your state. Get it wrong and your case is over before it starts.
+The full list, with the statute for each state and notes on recent changes, is on the [statute of limitations by state](/statute-of-limitations/) table. Check your state. Get it wrong and your case is over before it starts.
 
 ## When the Clock Starts
 
