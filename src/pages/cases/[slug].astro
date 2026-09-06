@@ -4,6 +4,16 @@ import Case from "../../layouts/Case.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import PrevNext from "../../components/PrevNext.astro";
 import { getContentUpdatedDate } from "../../lib/content-metadata";
+import {
+  containsPhrase,
+  countSharedTags,
+  selectRelatedEntries,
+} from "../../lib/related";
+import {
+  CASE_TAG_TO_ARTICLE_TAGS,
+  CASE_TAG_TO_TERMS,
+} from "../../lib/case-hubs";
+import { buildHubIndex, hubLinksForCase } from "../../lib/case-hub-index";
 
 export async function getStaticPaths() {
   const cases = await getCollection("cases");
@@ -40,9 +50,101 @@ const prevLink = prev
 const nextLink = next
   ? { label: next.data.title, href: `/cases/${next.id}` }
   : null;
+
+// ---- Related content -------------------------------------------------------
+
+const caseTags = entry.data.tags ?? [];
+const caseText = [entry.data.title, entry.data.holding, entry.body || ""]
+  .join("\n")
+  .toLowerCase();
+
+const allCases = await getCollection("cases");
+const hubIndex = buildHubIndex(
+  allCases.map((c) => ({
+    id: c.id,
+    tags: c.data.tags ?? [],
+    court: c.data.court,
+  })),
+);
+const hubLinks = hubLinksForCase(
+  { id: entry.id, tags: caseTags, court: entry.data.court },
+  hubIndex,
+);
+
+// Terms: explicit links in the case body, tag mapping, and term names that appear in the text.
+const mappedTermSlugs = new Set(
+  caseTags.flatMap((tag) => CASE_TAG_TO_TERMS[tag] ?? []),
+);
+const termEntries = await getCollection("termsAndConcepts");
+const relatedTermsAndConcepts = selectRelatedEntries(
+  termEntries
+    .map((term) => {
+      let score = 0;
+      if (caseText.includes(`/terms-and-concepts/${term.id}`)) score += 8;
+      if (mappedTermSlugs.has(term.id)) score += 5;
+      if (containsPhrase(caseText, term.data.term)) score += 3;
+      score += countSharedTags(caseTags, term.data.tags ?? []) * 2;
+      return { entry: term, score };
+    })
+    .filter(({ score }) => score >= 5)
+    .sort(
+      (a, b) =>
+        b.score - a.score || a.entry.data.term.localeCompare(b.entry.data.term),
+    ),
+  { base: 4, max: 6, strongScore: 7 },
+).map(({ entry: term }) => ({
+  href: `/terms-and-concepts/${term.id}`,
+  label: term.data.term,
+  description: term.data.description,
+}));
+
+// Articles: articles that cite this case, articles that mention it, and shared topics.
+const articleTagsForCase = new Set(
+  caseTags.flatMap((tag) => [tag, ...(CASE_TAG_TO_ARTICLE_TAGS[tag] ?? [])]),
+);
+const articleEntries = await getCollection(
+  "articles",
+  ({ data }) => !data.draft,
+);
+const relatedArticles = selectRelatedEntries(
+  articleEntries
+    .map((article) => {
+      const articleText = [
+        article.data.title,
+        article.data.description,
+        article.body || "",
+      ]
+        .join("\n")
+        .toLowerCase();
+      let score = 0;
+      if (articleText.includes(`/cases/${entry.id}`)) score += 10;
+      if (containsPhrase(articleText, entry.data.title)) score += 4;
+      score +=
+        countSharedTags([...articleTagsForCase], article.data.tags ?? []) * 2;
+      return { entry: article, score };
+    })
+    .filter(({ score }) => score >= 4)
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        a.entry.data.title.localeCompare(b.entry.data.title),
+    ),
+  { base: 4, max: 6, strongScore: 6 },
+).map(({ entry: article }) => ({
+  href: `/articles/${article.id}`,
+  label: article.data.title,
+  description: article.data.description,
+}));
 ---
 
-<Case {...entry.data} canonicalUrl={canonicalUrl} updatedDate={updatedDate}>
+<Case
+  {...entry.data}
+  canonicalUrl={canonicalUrl}
+  updatedDate={updatedDate}
+  hubLinks={hubLinks}
+  relatedTermsAndConcepts={relatedTermsAndConcepts}
+  relatedArticles={relatedArticles}
+>
   <Breadcrumbs crumbs={crumbs} slot="breadcrumbs" />
   <Content />
   <PrevNext prev={prevLink} next={nextLink} slot="pagination" />

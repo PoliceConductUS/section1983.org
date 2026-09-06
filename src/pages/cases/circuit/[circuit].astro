@@ -1,0 +1,107 @@
+---
+import { getCollection } from "astro:content";
+import CaseHub from "../../../layouts/CaseHub.astro";
+import { CIRCUITS } from "../../../lib/case-hubs";
+import { buildHubIndex } from "../../../lib/case-hub-index";
+
+export async function getStaticPaths() {
+  const cases = await getCollection("cases");
+  const index = buildHubIndex(
+    cases.map((c) => ({
+      id: c.id,
+      tags: c.data.tags ?? [],
+      court: c.data.court,
+    })),
+  );
+  const byId = new Map(cases.map((c) => [c.id, c]));
+  const allCircuits = [...index.circuits.entries()].map(([slug, ids]) => ({
+    slug,
+    label: CIRCUITS[slug].label,
+    count: ids.length,
+  }));
+
+  return [...index.circuits.entries()].map(([circuit, ids]) => ({
+    params: { circuit },
+    props: { circuit, cases: ids.map((id) => byId.get(id)!), allCircuits },
+  }));
+}
+
+const { circuit, cases, allCircuits } = Astro.props;
+const meta = CIRCUITS[circuit];
+const canonicalUrl = `https://www.section1983.org/cases/circuit/${circuit}/`;
+const isSupreme = circuit === "supreme-court";
+
+const title = isSupreme
+  ? "U.S. Supreme Court Section 1983 Cases"
+  : `${meta.label} Section 1983 Cases`;
+const description = isSupreme
+  ? "Every Supreme Court Section 1983 decision in the library: qualified immunity, Monell, excessive force, probable cause, pleading standards, and accrual, explained in plain language."
+  : `Section 1983 decisions from the ${meta.label}: qualified immunity, excessive force, false arrest, retaliatory arrest, and Monell rulings that bind federal courts in the circuit, explained in plain language.`;
+const intro = meta.description;
+const note = isSupreme
+  ? undefined
+  : `Only published circuit opinions and Supreme Court decisions can clearly establish law for qualified immunity in the ${meta.label}. District-court decisions from the circuit are included here for how they apply that law, not as its source.`;
+
+const articles = await getCollection("articles", ({ data }) => !data.draft);
+const pick = (slugs: string[]) =>
+  slugs
+    .map((s) => articles.find((a) => a.id === s))
+    .filter(Boolean)
+    .map((a) => ({
+      href: `/articles/${a!.id}`,
+      label: a!.data.title,
+      description: a!.data.description,
+    }));
+const relatedArticles = pick(
+  isSupreme
+    ? [
+        "how-courts-cut-back-section-1983-with-court-made-rules",
+        "why-hasnt-qualified-immunity-been-overturned",
+        "section-1983-is-getting-harder-to-win",
+      ]
+    : [
+        "how-to-research-clearly-established-law-in-a-section-1983-case",
+        "how-to-plead-clearly-established-law-in-a-section-1983-complaint",
+        "how-to-research-your-federal-judge",
+      ],
+);
+
+const crumbs = [
+  { label: "Home", href: "/" },
+  { label: "Case Law Library", href: "/cases" },
+  { label: meta.label },
+];
+
+const siblings = {
+  heading: "Other courts",
+  links: allCircuits
+    .filter((c) => c.slug !== circuit)
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label))
+    .map((c) => ({
+      href: `/cases/circuit/${c.slug}/`,
+      label: c.label,
+      count: c.count,
+    })),
+};
+---
+
+<CaseHub
+  title={title}
+  pageTitle={title}
+  description={description}
+  intro={intro}
+  note={note}
+  canonicalUrl={canonicalUrl}
+  crumbs={crumbs}
+  cases={cases.map((c) => ({
+    id: c.id,
+    title: c.data.title,
+    citation: c.data.citation,
+    court: c.data.court,
+    dateDecided: c.data.dateDecided,
+    holding: c.data.holding,
+    tags: c.data.tags ?? [],
+  }))}
+  relatedArticles={relatedArticles}
+  siblings={siblings}
+/>

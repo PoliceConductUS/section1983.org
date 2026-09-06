@@ -1,6 +1,8 @@
 ---
 import Base from "./Base.astro";
 import { caseTitle } from "../lib/seo";
+import type { RelatedLink } from "../lib/related";
+import type { HubLink } from "../lib/case-hub-index";
 
 interface Props {
   title: string;
@@ -16,6 +18,9 @@ interface Props {
   tags?: string[];
   cites?: string[];
   citedBy?: string[];
+  hubLinks?: HubLink[];
+  relatedTermsAndConcepts?: RelatedLink[];
+  relatedArticles?: RelatedLink[];
 }
 
 const {
@@ -32,7 +37,19 @@ const {
   tags,
   cites,
   citedBy,
+  hubLinks = [],
+  relatedTermsAndConcepts = [],
+  relatedArticles = [],
 } = Astro.props;
+
+const hubHrefByTag = new Map<string, string>();
+for (const link of hubLinks) {
+  if (link.kind === "state") {
+    hubHrefByTag.set(link.href.split("/")[3], link.href);
+  }
+}
+const topicLinks = hubLinks.filter((l) => l.kind === "topic");
+const circuitLink = hubLinks.find((l) => l.kind === "circuit");
 
 const formattedDate = dateDecided.toLocaleDateString("en-US", {
   year: "numeric",
@@ -168,13 +185,34 @@ const structuredData = {
         <div class="flex flex-wrap gap-2 mb-8">
           {tags.map((tag) => (
             <a
-              href={`/cases?tag=${tag}`}
-              class="text-xs bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors"
+              href={hubHrefByTag.get(tag) ?? `/cases/?tags=${tag}`}
+              class="text-xs bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors focus-ring"
             >
               {tag.replace(/-/g, " ")}
             </a>
           ))}
         </div>
+      )
+    }
+
+    {
+      (circuitLink || topicLinks.length > 0) && (
+        <p class="text-sm text-slate-600 mb-8 not-prose">
+          <span class="font-semibold text-navy">Browse related cases:</span>{" "}
+          {[...(circuitLink ? [circuitLink] : []), ...topicLinks].map(
+            (l, i) => (
+              <>
+                {i > 0 && " · "}
+                <a
+                  href={l.href}
+                  class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+                >
+                  {l.label} ({l.count})
+                </a>
+              </>
+            ),
+          )}
+        </p>
       )
     }
 
@@ -219,6 +257,52 @@ const structuredData = {
             ))}
           </div>
         </div>
+      )
+    }
+
+    {
+      (relatedTermsAndConcepts.length > 0 || relatedArticles.length > 0) && (
+        <aside class="mt-12 border-t border-slate-200 pt-8 not-prose">
+          <h2 class="text-xl font-bold text-navy mb-4">Keep Reading</h2>
+          <div class="grid gap-6 md:grid-cols-2">
+            {relatedArticles.length > 0 && (
+              <section>
+                <h3 class="text-sm font-bold uppercase tracking-wide text-navy mb-3">
+                  How to Use This Case
+                </h3>
+                <div class="space-y-3">
+                  {relatedArticles.map((entry) => (
+                    <a
+                      href={entry.href}
+                      class="interactive-card focus-ring block rounded border border-slate-200 bg-white p-4"
+                    >
+                      <p class="font-semibold text-navy">{entry.label}</p>
+                      <p class="mt-1 text-sm text-slate">{entry.description}</p>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )}
+            {relatedTermsAndConcepts.length > 0 && (
+              <section>
+                <h3 class="text-sm font-bold uppercase tracking-wide text-navy mb-3">
+                  Terms and Concepts
+                </h3>
+                <div class="space-y-3">
+                  {relatedTermsAndConcepts.map((entry) => (
+                    <a
+                      href={entry.href}
+                      class="interactive-card focus-ring block rounded border border-slate-200 bg-white p-4"
+                    >
+                      <p class="font-semibold text-navy">{entry.label}</p>
+                      <p class="mt-1 text-sm text-slate">{entry.description}</p>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )}
+          </div>
+        </aside>
       )
     }
 

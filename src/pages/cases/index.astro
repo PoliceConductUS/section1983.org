@@ -2,8 +2,38 @@
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { CIRCUITS, STATE_LABELS, TOPICS } from "../../lib/case-hubs";
+import { buildHubIndex } from "../../lib/case-hub-index";
 
 const cases = await getCollection("cases");
+const hubIndex = buildHubIndex(
+  cases.map((c) => ({
+    id: c.id,
+    tags: c.data.tags ?? [],
+    court: c.data.court,
+  })),
+);
+const stateHubs = [...hubIndex.states.entries()]
+  .map(([slug, ids]) => ({
+    href: `/cases/state/${slug}/`,
+    label: STATE_LABELS[slug],
+    count: ids.length,
+  }))
+  .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+const circuitHubs = [...hubIndex.circuits.entries()]
+  .map(([slug, ids]) => ({
+    href: `/cases/circuit/${slug}/`,
+    label: CIRCUITS[slug].label,
+    count: ids.length,
+  }))
+  .sort((a, b) => b.count - a.count);
+const topicHubs = TOPICS.filter((t) => hubIndex.topics.has(t.slug))
+  .map((t) => ({
+    href: `/cases/topic/${t.slug}/`,
+    label: t.label,
+    count: hubIndex.topics.get(t.slug)!.length,
+  }))
+  .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 const sorted = cases.sort((a, b) => a.data.title.localeCompare(b.data.title));
 
 // Collect all tags with counts
@@ -273,6 +303,79 @@ const structuredData = {
       >process guide</a
     >.
   </p>
+
+  <!-- Browse by hub -->
+  <section class="mb-10 not-prose" aria-labelledby="browse-heading">
+    <h2 id="browse-heading" class="text-xl font-bold text-navy mb-3">
+      Browse by court, state, or topic
+    </h2>
+    <p class="text-sm text-slate-600 mb-4">
+      Each page below collects the cases on one subject with a short guide to
+      how they fit together.
+    </p>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wide text-navy mb-2">
+          Courts
+        </h3>
+        <ul class="space-y-1 text-sm">
+          {
+            circuitHubs.map((h) => (
+              <li>
+                <a
+                  href={h.href}
+                  class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+                >
+                  {h.label}
+                </a>
+                <span class="text-slate-500"> ({h.count})</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wide text-navy mb-2">
+          States
+        </h3>
+        <ul class="space-y-1 text-sm columns-2">
+          {
+            stateHubs.map((h) => (
+              <li>
+                <a
+                  href={h.href}
+                  class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+                >
+                  {h.label}
+                </a>
+                <span class="text-slate-500"> ({h.count})</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wide text-navy mb-2">
+          Topics
+        </h3>
+        <ul class="space-y-1 text-sm">
+          {
+            topicHubs.map((h) => (
+              <li>
+                <a
+                  href={h.href}
+                  class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+                >
+                  {h.label}
+                </a>
+                <span class="text-slate-500"> ({h.count})</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <!-- Tag filter -->
   <div class="mb-8" id="case-filters">

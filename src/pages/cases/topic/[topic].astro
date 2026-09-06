@@ -1,0 +1,83 @@
+---
+import { getCollection } from "astro:content";
+import CaseHub from "../../../layouts/CaseHub.astro";
+import { TOPICS } from "../../../lib/case-hubs";
+import { buildHubIndex } from "../../../lib/case-hub-index";
+
+export async function getStaticPaths() {
+  const cases = await getCollection("cases");
+  const index = buildHubIndex(
+    cases.map((c) => ({
+      id: c.id,
+      tags: c.data.tags ?? [],
+      court: c.data.court,
+    })),
+  );
+  const byId = new Map(cases.map((c) => [c.id, c]));
+  const allTopics = TOPICS.filter((t) => index.topics.has(t.slug)).map((t) => ({
+    slug: t.slug,
+    label: t.label,
+    count: index.topics.get(t.slug)!.length,
+  }));
+
+  return TOPICS.filter((t) => index.topics.has(t.slug)).map((topic) => ({
+    params: { topic: topic.slug },
+    props: {
+      topic,
+      cases: index.topics.get(topic.slug)!.map((id) => byId.get(id)!),
+      allTopics,
+    },
+  }));
+}
+
+const { topic, cases, allTopics } = Astro.props;
+const canonicalUrl = `https://www.section1983.org/cases/topic/${topic.slug}/`;
+
+const articles = await getCollection("articles", ({ data }) => !data.draft);
+const relatedArticles = topic.articles
+  .map((s) => articles.find((a) => a.id === s))
+  .filter(Boolean)
+  .map((a) => ({
+    href: `/articles/${a!.id}`,
+    label: a!.data.title,
+    description: a!.data.description,
+  }));
+
+const crumbs = [
+  { label: "Home", href: "/" },
+  { label: "Case Law Library", href: "/cases" },
+  { label: topic.label },
+];
+
+const siblings = {
+  heading: "Other topics",
+  links: allTopics
+    .filter((t) => t.slug !== topic.slug)
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label))
+    .map((t) => ({
+      href: `/cases/topic/${t.slug}/`,
+      label: t.label,
+      count: t.count,
+    })),
+};
+---
+
+<CaseHub
+  title={topic.title}
+  pageTitle={`${topic.title}: Section 1983 Case Law`}
+  description={topic.description}
+  intro={topic.intro}
+  canonicalUrl={canonicalUrl}
+  crumbs={crumbs}
+  cases={cases.map((c) => ({
+    id: c.id,
+    title: c.data.title,
+    citation: c.data.citation,
+    court: c.data.court,
+    dateDecided: c.data.dateDecided,
+    holding: c.data.holding,
+    tags: c.data.tags ?? [],
+  }))}
+  relatedArticles={relatedArticles}
+  siblings={siblings}
+/>
