@@ -86,7 +86,7 @@ It has to answer: "What did the city do, know, tolerate, direct, or fail to corr
 
 ## Use this Monell series
 
-If Monell is a major part of your case, read these in order:
+For everything in one place, read [Monell Claims: The Complete Guide to Suing a City](/articles/monell-claims-the-complete-guide-to-suing-a-city). If Monell is a major part of your case, then read these in order:
 
 1. [Monell: Finding Evidence Before Discovery](/articles/monell-finding-evidence-before-discovery)
 2. [Monell: Pleading Multiple Theories](/articles/monell-pleading-multiple-theories)

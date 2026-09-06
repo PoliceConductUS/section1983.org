@@ -158,7 +158,7 @@ An official-capacity claim against an officer is a claim against the city the of
 
 If you are suing the city or county, you need [municipal liability under _Monell_](/terms-and-concepts/monell-liability). The city is not liable just because its employee violated your rights. You need facts showing that a **policy**, **custom**, or **practice** caused the violation, or that the city was [deliberately indifferent](/terms-and-concepts/deliberate-indifference) to an obvious training or supervision problem.
 
-If you do not have those facts yet, the safer move is often to recognize that the city claim needs more work, not to fill the complaint with generic Monell labels.
+If you do not have those facts yet, the safer move is often to recognize that the city claim needs more work, not to fill the complaint with generic Monell labels. Read the [complete Monell guide](/articles/monell-claims-the-complete-guide-to-suing-a-city) before you write the count.
 
 Common Monell theories:
 

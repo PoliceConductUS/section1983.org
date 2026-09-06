@@ -13,6 +13,8 @@ This is often the first real fight in a [Section 1983](/terms-and-concepts/secti
 
 This sample is a model for structure, not a document to copy word for word. Use it with [how to write your complaint](/articles/how-to-write-a-section-1983-complaint), [sample false arrest complaint](/articles/sample-section-1983-complaint-for-a-false-arrest-case), and [how to research clearly established law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case).
 
+**Download this sample:** [PDF](/downloads/sample-response-to-motion-to-dismiss.pdf) · [Word](/downloads/sample-response-to-motion-to-dismiss.docx) · [plain text](/downloads/sample-response-to-motion-to-dismiss.txt). Every sample on the site is on the [sample documents page](/downloads/).
+
 ## The basic job of a dismissal response
 
 Your response has three jobs:

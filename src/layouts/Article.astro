@@ -58,16 +58,17 @@ const structuredData = {
   "@type": "Article",
   headline: title,
   description: description,
-  author: author
-    ? {
-        "@type": "Person",
-        name: author,
-      }
-    : {
-        "@type": "Organization",
-        name: "Institute for Police Conduct, Inc.",
-        url: "https://policeconduct.org",
-      },
+  author:
+    author && !/institute|inc\.|llc|foundation|project/i.test(author)
+      ? {
+          "@type": "Person",
+          name: author,
+        }
+      : {
+          "@type": "Organization",
+          name: author || "Institute for Police Conduct, Inc.",
+          url: "https://policeconduct.org",
+        },
   image: imageUrl,
   isAccessibleForFree: true,
   keywords: tags?.join(", "),

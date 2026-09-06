@@ -99,9 +99,11 @@ const structuredData = {
   datePublished: dateDecided.toISOString(),
   dateCreated: dateDecided.toISOString(),
   ...(updatedDate && { dateModified: updatedDate.toISOString() }),
-  court,
-  legislationType: "Case law",
-  legislationIdentifier: citation,
+  identifier: citation,
+  sourceOrganization: {
+    "@type": "Organization",
+    name: court,
+  },
   keywords: tags?.join(", "),
 };
 ---

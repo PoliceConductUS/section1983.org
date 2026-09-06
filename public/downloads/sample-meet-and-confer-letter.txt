@@ -1,23 +1,8 @@
----
-title: "Sample Meet-and-Confer Letter for Discovery Disputes"
-description: "A sample letter to defense counsel identifying deficient discovery responses request by request, the rule that requires the cure, and a response date, with a separate conference record for the certificate of conference."
-pubDate: 2026-09-05
-author: "Institute for Police Conduct, Inc."
-tags: ["sample", "discovery", "meet-and-confer", "motion-to-compel", "drafting"]
-draft: false
----
+Sample Meet-and-Confer Letter, with Conference Record
+=====================================================
 
-Rule 37(a)(1) requires you to confer in good faith before you move to compel, and to certify that you did. This letter is how you do it in writing.
+section1983.org sample document. Educational template, not legal advice, not verified for your court. Replace every bracketed item. Check your district's local rules and your judge's standing orders before filing. Downloaded from https://www.section1983.org/downloads/
 
-Write it only after you have finished the [request-by-request audit](/articles/how-to-audit-discovery-responses-in-a-section-1983-case). The letter is the audit's deficient rows, one numbered item each, in neutral language. It does not re-argue the case, accuse anyone of anything, or threaten.
-
-Replace every bracketed item. Check your district's [local rules](/terms-and-concepts/local-rules) and the judge's [standing orders](/terms-and-concepts/standing-order). Some require a phone or video conference in addition to a letter, and some require a call to chambers before any discovery motion.
-
-**Download this sample:** [PDF](/downloads/sample-meet-and-confer-letter.pdf) · [Word](/downloads/sample-meet-and-confer-letter.docx) · [plain text](/downloads/sample-meet-and-confer-letter.txt). Every sample on the site is on the [sample documents page](/downloads/).
-
-## Sample letter
-
-```text
 [Your Name]
 [Street address]
 [City, State ZIP]
@@ -125,13 +110,7 @@ Sincerely,
 ______________________________
 [Your Name]
 Plaintiff, pro se
-```
 
-## The conference record
-
-Keep this as a separate document. It becomes your certificate of conference. Record only facts.
-
-```text
 CONFERENCE RECORD
 [Your Name] v. [Defendants], No. [__________]
 
@@ -152,22 +131,3 @@ Date / time      Method      Participants            Subject / result
                                                      as of [date].
 
 Unresolved as of [date]: Items 2, 3, 4; Item 1 as to Officer [__]'s camera.
-```
-
-Silence is a fact you record. It is not consent, agreement, or waiver, and the record should not describe it as any of those.
-
-## How to adapt it
-
-**If the local rules require a phone conference.** Send the letter first so the call has an agenda, then hold the call, then send a short follow-up email confirming what was agreed and what remains open.
-
-**If counsel proposes a narrower production.** Decide item by item whether to accept. If you accept a narrowed version, say so in writing so the record shows what you agreed to and what you did not.
-
-**If counsel does not respond at all.** Record the attempts and dates. After a reasonable interval, usually the proposed cure date plus a few days, file the motion to compel with the letter and the conference record attached.
-
-## What not to put in the letter
-
-- Argument about the merits of your claims.
-- Characterizations of counsel's conduct ("stonewalling," "bad faith," "gamesmanship").
-- Threats of sanctions or fees. Reserve rights in one sentence and stop.
-- Demands to cure "immediately." Give a date.
-- Anything you would not want the judge to read, because the judge will read it.

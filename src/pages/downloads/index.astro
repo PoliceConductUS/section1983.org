@@ -1,0 +1,220 @@
+---
+import Base from "../../layouts/Base.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+
+const canonicalUrl = "https://www.section1983.org/downloads/";
+const title = "Sample Section 1983 Documents to Download";
+const description =
+  "Free sample Section 1983 documents in PDF, Word, and plain text: a false-arrest complaint, a declaration, a response to a motion to dismiss, motions for extension and leave to amend, and a discovery meet-and-confer letter.";
+
+const samples = [
+  {
+    slug: "sample-section-1983-complaint-false-arrest",
+    title: "Sample Section 1983 Complaint (False Arrest)",
+    blurb:
+      "A complete complaint against two officers and a city for a false arrest after recording police, with jurisdiction, parties, numbered facts, separate counts, a Monell count, and a prayer for relief.",
+    article: "/articles/sample-section-1983-complaint-for-a-false-arrest-case",
+    guide: "/articles/how-to-write-a-section-1983-complaint",
+    guideLabel: "How to Write a Section 1983 Complaint",
+  },
+  {
+    slug: "sample-declaration",
+    title: "Sample Declaration Under 28 U.S.C. § 1746",
+    blurb:
+      "A first-person declaration for summary judgment: one fact per numbered paragraph, exhibit references, body-camera timestamps, and the correct unsworn-declaration language.",
+    article: "/articles/sample-declaration-for-a-section-1983-case",
+    guide: "/articles/how-to-write-a-declaration-in-a-section-1983-case",
+    guideLabel: "How to Write a Declaration",
+  },
+  {
+    slug: "sample-response-to-motion-to-dismiss",
+    title: "Sample Response to a Motion to Dismiss",
+    blurb:
+      "A response that answers each ground in the motion's order, cites the complaint by paragraph, addresses qualified immunity, and asks for leave to amend in the alternative.",
+    article:
+      "/articles/sample-response-to-a-motion-to-dismiss-in-a-section-1983-case",
+    guide: "/process/rule-12-motions",
+    guideLabel: "Rule 12 Motions",
+  },
+  {
+    slug: "sample-motion-for-extension-of-time",
+    title: "Sample Motion for Extension of Time",
+    blurb:
+      "A one-page unopposed motion under Rule 6(b)(1)(A) with a certificate of conference, certificate of service, and proposed order.",
+    article: "/articles/sample-motion-for-extension-of-time",
+    guide: "/articles/how-to-ask-for-more-time-in-a-section-1983-case",
+    guideLabel: "How to Ask for More Time",
+  },
+  {
+    slug: "sample-motion-for-leave-to-amend",
+    title: "Sample Motion for Leave to Amend",
+    blurb:
+      "A Rule 15(a)(2) motion that addresses each Foman factor, identifies what the amendment changes, and attaches the proposed pleading and a proposed order.",
+    article: "/articles/sample-motion-for-leave-to-amend",
+    guide: "/articles/how-to-amend-a-section-1983-complaint",
+    guideLabel: "How and When to Amend",
+  },
+  {
+    slug: "sample-meet-and-confer-letter",
+    title: "Sample Meet-and-Confer Letter",
+    blurb:
+      "A Rule 37(a)(1) letter identifying deficient discovery responses request by request, the rule that requires each cure, and a response date, with a separate conference record.",
+    article: "/articles/sample-meet-and-confer-letter-discovery",
+    guide: "/articles/how-to-audit-discovery-responses-in-a-section-1983-case",
+    guideLabel: "How to Audit Discovery Responses",
+  },
+];
+
+const crumbs = [{ label: "Home", href: "/" }, { label: "Sample Documents" }];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: title,
+  description,
+  url: canonicalUrl,
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: samples.length,
+    itemListElement: samples.map((s, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: s.title,
+      url: `https://www.section1983.org${s.article}`,
+    })),
+  },
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  canonicalUrl={canonicalUrl}
+  structuredData={structuredData}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <h1 class="text-3xl font-bold text-navy mb-2">Sample Documents</h1>
+  <p class="text-lg text-slate-700 mb-4 max-w-3xl">
+    Every sample on this site, in three formats: PDF to read, Word to edit, and
+    plain text to paste into any program. Each one is built from the same text
+    that appears in its article, where the line-by-line explanation lives.
+  </p>
+
+  <div class="bg-cream border-l-4 border-gold rounded p-4 mb-8 max-w-3xl">
+    <p class="font-semibold text-navy text-sm mb-1">
+      These are teaching templates, not filings
+    </p>
+    <p class="text-sm text-slate-700">
+      The facts are invented. The captions, deadlines, and citations are
+      placeholders for you to replace. Nothing here has been checked against
+      your court's rules. Before you file anything built from a sample, read the
+      article that goes with it, then read
+      <a
+        href="/articles/local-rules-and-standing-orders-in-a-section-1983-case"
+        class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+        >your district's local rules and your judge's standing orders</a
+      >, and run the
+      <a
+        href="/articles/how-to-review-your-own-section-1983-filing-before-you-file"
+        class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+        >self-review checklist</a
+      >.
+    </p>
+  </div>
+
+  <div class="space-y-6">
+    {
+      samples.map((s) => (
+        <article class="border border-slate-200 rounded-lg bg-white p-5">
+          <h2 class="text-xl font-bold text-navy mb-1">{s.title}</h2>
+          <p class="text-sm text-slate-700 mb-3">{s.blurb}</p>
+          <p class="text-sm mb-3">
+            <span class="font-semibold text-navy">Download:</span>{" "}
+            <a
+              href={`/downloads/${s.slug}.pdf`}
+              class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+            >
+              PDF
+            </a>
+            {" · "}
+            <a
+              href={`/downloads/${s.slug}.docx`}
+              class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+            >
+              Word (.docx)
+            </a>
+            {" · "}
+            <a
+              href={`/downloads/${s.slug}.txt`}
+              class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+            >
+              Plain text
+            </a>
+          </p>
+          <p class="text-sm text-slate-600">
+            Read it with explanations:{" "}
+            <a
+              href={s.article}
+              class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+            >
+              the sample article
+            </a>
+            {" · "}
+            Guide:{" "}
+            <a
+              href={s.guide}
+              class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+            >
+              {s.guideLabel}
+            </a>
+          </p>
+        </article>
+      ))
+    }
+  </div>
+
+  <div class="prose prose-slate max-w-3xl mt-10">
+    <h2>How to use a sample</h2>
+    <ol>
+      <li>
+        Read the article first. The sample is the last section of a longer
+        explanation of why each part is there.
+      </li>
+      <li>
+        Open the Word or text version and replace every bracketed item with your
+        facts. Delete any paragraph that does not apply. Do not leave a
+        placeholder in a filed document.
+      </li>
+      <li>
+        Check every citation. The cases and rules in the samples are real, but
+        whether they are the right authority for your court and your facts is
+        something you must confirm.
+      </li>
+      <li>
+        Match the format to your district. Caption style, line spacing, page
+        limits, and required certificates vary. Your local rules control.
+      </li>
+      <li>
+        Run the <a
+          href="/articles/how-to-write-a-court-filing-that-judges-trust"
+          >self-edit pass</a
+        > and the <a
+          href="/articles/how-to-review-your-own-section-1983-filing-before-you-file"
+          >red-team checklist</a
+        > before you sign.
+      </li>
+    </ol>
+
+    <h2>Official court forms</h2>
+    <p>
+      The federal courts publish a fill-in form for a civil-rights complaint by
+      a person who is not a prisoner, called Pro Se 15, and a general civil
+      complaint form, Pro Se 1. They are on uscourts.gov under Forms. Many
+      districts accept them and some pro se guides recommend starting there. The
+      samples on this page are for plaintiffs who want to plead more than the
+      form allows, particularly the officer-by-officer facts and the
+      clearly-established-law analysis the Fifth Circuit expects.
+    </p>
+  </div>
+</Base>

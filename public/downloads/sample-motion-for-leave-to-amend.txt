@@ -1,23 +1,8 @@
----
-title: "Sample Motion for Leave to Amend a Section 1983 Complaint"
-description: "A sample Rule 15(a)(2) motion for leave to file an amended complaint in federal court, with the Foman factors addressed, exhibits listed, and a proposed order."
-pubDate: 2026-09-05
-author: "Institute for Police Conduct, Inc."
-tags: ["sample", "amended-complaint", "rule-15", "motions", "drafting"]
-draft: false
----
+Sample Motion for Leave to Amend, with Proposed Order
+=====================================================
 
-This is a sample motion for leave to file an amended complaint in a [Section 1983](/terms-and-concepts/section-1983) case, filed after the 21-day window for amending as a matter of course has closed.
+section1983.org sample document. Educational template, not legal advice, not verified for your court. Replace every bracketed item. Check your district's local rules and your judge's standing orders before filing. Downloaded from https://www.section1983.org/downloads/
 
-Read [How and When to Amend](/articles/how-to-amend-a-section-1983-complaint) first. If you are still inside the 21-day window under Rule 15(a)(1), you do not need this motion. File the amended complaint.
-
-Replace every bracketed item. Attach the complete proposed amended complaint as Exhibit A. Check your district's [local rules](/terms-and-concepts/local-rules) for whether a redline is required and whether a proposed order must be submitted.
-
-**Download this sample:** [PDF](/downloads/sample-motion-for-leave-to-amend.pdf) · [Word](/downloads/sample-motion-for-leave-to-amend.docx) · [plain text](/downloads/sample-motion-for-leave-to-amend.txt). Every sample on the site is on the [sample documents page](/downloads/).
-
-## Sample motion
-
-```text
 UNITED STATES DISTRICT COURT
 FOR THE [DISTRICT]
 [DIVISION]
@@ -121,11 +106,7 @@ counsel of record by [method].
 
                                        ______________________________
                                        [Your Name]
-```
 
-## Sample proposed order
-
-```text
 ORDER
 
 Before the Court is Plaintiff's Motion for Leave to File First Amended
@@ -138,19 +119,3 @@ SO ORDERED.
 
 Dated: ________________               ______________________________
                                        UNITED STATES DISTRICT JUDGE
-```
-
-## How to adapt it
-
-**If you are adding an officer after the limitations period.** Add a section on relation back under Rule 15(c). State the facts showing the officer had notice of the suit within the Rule 4(m) period and knew or should have known the suit was meant for them, citing [_Krupski v. Costa Crociere_](/cases/krupski-v-costa-crociere). If the officer was a Doe placeholder, also address Rule 15(c)(1)(A) and any state tolling rule. See [relation back](/terms-and-concepts/relation-back).
-
-**If the court or the R&R identified a defect.** Quote the defect the court identified and point to the exact paragraphs in Exhibit A that cure it. This is the single most persuasive paragraph you can write in a motion for leave.
-
-**If a motion to dismiss is pending.** Add a sentence asking the court to deny the pending motion as moot, or to allow the defendants to file a new motion directed at the amended pleading.
-
-## What not to do
-
-- Do not file the motion without Exhibit A. A motion for leave with no proposed pleading is routinely denied.
-- Do not describe the amendment as fixing "several issues." Name each change and where it appears.
-- Do not argue the merits of every claim in the motion. Show that the pleading is not futile with the strongest one or two examples and point the court to the pleading itself.
-- Do not concede that the original complaint was deficient. Say the amendment "adds" or "clarifies," and let the pleading speak.

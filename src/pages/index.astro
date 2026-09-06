@@ -17,6 +17,8 @@ const termsAndConcepts = await getCollection("termsAndConcepts");
 const process = await getCollection("process");
 const staticPages = [
   "/",
+  "/downloads/",
+  "/statute-of-limitations/",
   "/about/",
   "/about/section-1983/",
   "/accessibility/",
@@ -79,21 +81,24 @@ const structuredData = [
       Your free guide to holding<br />
       <span class="text-gold-strong">police accountable in federal court.</span>
     </h1>
-    <p class="text-lg text-slate max-w-2xl leading-relaxed mb-4">
+    <p class="text-lg text-slate-strong max-w-2xl leading-relaxed mb-4">
       When police violate your constitutional rights, federal law gives you the
-      right to sue. This site explains how — in plain language, with real cases,
-      for people representing themselves.
+      right to sue. This site explains how to sue the police under 42 U.S.C. §
+      1983 for excessive force, false arrest, retaliation, and what happened in
+      jail, how qualified immunity works against you, and what a federal civil
+      rights lawsuit looks like from the first records request to trial. Plain
+      language, real cases, for people representing themselves.
     </p>
-    <p class="text-base text-slate max-w-2xl leading-relaxed mb-8">
+    <p class="text-base text-slate-strong max-w-2xl leading-relaxed mb-8">
       We are <strong class="text-navy">completely independent</strong> of police and
       government. No sponsors. No agenda. Just the law, explained honestly.
     </p>
     <div class="flex gap-4 flex-wrap">
       <a
-        href="/articles"
-        class="bg-navy text-white px-6 py-3 rounded font-semibold hover:bg-navy-light transition-colors"
+        href="/articles/how-to-sue-the-police-section-1983-guide"
+        class="bg-navy text-white px-6 py-3 rounded font-semibold hover:bg-navy-light transition-colors focus-ring"
       >
-        Read Articles
+        Start Here: How to Sue the Police
       </a>
       <a
         href="/terms-and-concepts"
@@ -114,6 +119,75 @@ const structuredData = [
         rel="noopener"
       >
         Report an Incident ↗
+      </a>
+    </div>
+  </section>
+
+  <section class="mb-16">
+    <h2 class="text-2xl font-bold text-navy mb-3 border-b-2 border-gold pb-2">
+      Find What You Need
+    </h2>
+    <div class="grid gap-4 md:grid-cols-2">
+      <a
+        href="/articles/how-to-sue-the-police-section-1983-guide"
+        class="interactive-card focus-ring block rounded-lg border border-slate-200 bg-white p-5"
+      >
+        <h3 class="font-bold text-navy">How to sue the police</h3>
+        <p class="text-sm text-slate-strong mt-1">
+          The whole case in one guide: what Section 1983 covers, who you can
+          sue, qualified immunity, deadlines, and every stage from complaint to
+          trial.
+        </p>
+      </a>
+      <a
+        href="/statute-of-limitations/"
+        class="interactive-card focus-ring block rounded-lg border border-slate-200 bg-white p-5"
+      >
+        <h3 class="font-bold text-navy">How long you have to file</h3>
+        <p class="text-sm text-slate-strong mt-1">
+          The Section 1983 statute of limitations for every state, with the
+          statute, and when the clock actually starts.
+        </p>
+      </a>
+      <a
+        href="/articles/what-do-i-file-and-when-section-1983-deadline-map"
+        class="interactive-card focus-ring block rounded-lg border border-slate-200 bg-white p-5"
+      >
+        <h3 class="font-bold text-navy">What to file, and by when</h3>
+        <p class="text-sm text-slate-strong mt-1">
+          One table mapping each docket event to the document you file and its
+          federal deadline.
+        </p>
+      </a>
+      <a
+        href="/downloads/"
+        class="interactive-card focus-ring block rounded-lg border border-slate-200 bg-white p-5"
+      >
+        <h3 class="font-bold text-navy">Sample documents</h3>
+        <p class="text-sm text-slate-strong mt-1">
+          A complaint, a declaration, a response to a motion to dismiss, and
+          more, in PDF, Word, and plain text.
+        </p>
+      </a>
+      <a
+        href="/articles/monell-claims-the-complete-guide-to-suing-a-city"
+        class="interactive-card focus-ring block rounded-lg border border-slate-200 bg-white p-5"
+      >
+        <h3 class="font-bold text-navy">Suing the city</h3>
+        <p class="text-sm text-slate-strong mt-1">
+          The complete Monell guide: the six paths to municipal liability and
+          how to plead each one.
+        </p>
+      </a>
+      <a
+        href="/cases/"
+        class="interactive-card focus-ring block rounded-lg border border-slate-200 bg-white p-5"
+      >
+        <h3 class="font-bold text-navy">Cases by state, court, and topic</h3>
+        <p class="text-sm text-slate-strong mt-1">
+          Excessive force, false arrest, qualified immunity denied, Monell, and
+          more, from the Supreme Court and the Fifth Circuit.
+        </p>
       </a>
     </div>
   </section>

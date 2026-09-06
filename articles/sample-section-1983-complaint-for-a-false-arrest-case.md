@@ -13,6 +13,8 @@ Most people know what happened to them. The harder part is turning those facts i
 
 This sample shows one way to organize a false arrest complaint. Read it together with [how to write your complaint](/articles/how-to-write-a-section-1983-complaint), [how to name your defendants](/articles/how-to-name-defendants-in-a-section-1983-lawsuit), and [false arrest claim elements and defenses](/articles/false-arrest-claim-elements-and-defenses-in-a-section-1983-case).
 
+**Download this sample:** [PDF](/downloads/sample-section-1983-complaint-false-arrest.pdf) · [Word](/downloads/sample-section-1983-complaint-false-arrest.docx) · [plain text](/downloads/sample-section-1983-complaint-false-arrest.txt). Every sample on the site is on the [sample documents page](/downloads/).
+
 ## What this sample is and is not
 
 Do not file this word for word. Use it as a model.

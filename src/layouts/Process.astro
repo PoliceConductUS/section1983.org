@@ -30,11 +30,28 @@ const pageTitle = contextualTitle(title, "— Section 1983 Process Guide");
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "HowToStep",
-  name: title,
-  text: description,
-  position: order,
+  "@type": "Article",
+  headline: title,
+  description,
   url: canonicalUrl,
+  mainEntityOfPage: canonicalUrl,
+  isAccessibleForFree: true,
+  position: order,
+  isPartOf: {
+    "@type": "HowTo",
+    name: "How a Section 1983 Case Moves Through Federal Court",
+    url: "https://www.section1983.org/process/",
+  },
+  author: {
+    "@type": "Organization",
+    name: "Institute for Police Conduct, Inc.",
+    url: "https://policeconduct.org",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Institute for Police Conduct, Inc.",
+    url: "https://policeconduct.org",
+  },
   ...(updatedDate && { dateModified: updatedDate.toISOString() }),
 };
 ---

@@ -13,6 +13,8 @@ Use it to turn your version of events into admissible evidence for motions, espe
 
 Read this alongside [how to write a declaration](/articles/how-to-write-a-declaration-in-a-section-1983-case), [sample Section 1983 complaint for a false arrest case](/articles/sample-section-1983-complaint-for-a-false-arrest-case), and [how to research clearly established law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case).
 
+**Download this sample:** [PDF](/downloads/sample-declaration.pdf) · [Word](/downloads/sample-declaration.docx) · [plain text](/downloads/sample-declaration.txt). Every sample on the site is on the [sample documents page](/downloads/).
+
 ## What a declaration does
 
 A declaration gives the court your facts in a form it can use as evidence.

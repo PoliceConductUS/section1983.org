@@ -1,23 +1,8 @@
----
-title: "Sample Motion for Extension of Time"
-description: "A sample federal-court motion for extension of time to respond to a motion to dismiss, with a certificate of conference, certificate of service, and proposed order."
-pubDate: 2026-09-05
-author: "Institute for Police Conduct, Inc."
-tags: ["sample", "motions", "deadlines", "extension-of-time", "drafting"]
-draft: false
----
+Sample Motion for Extension of Time, with Proposed Order
+========================================================
 
-This is a sample motion for extension of time in a [Section 1983](/terms-and-concepts/section-1983) case. It asks for more time to respond to a motion to dismiss. The same shape works for any deadline that Rule 6(b) allows the court to move.
+section1983.org sample document. Educational template, not legal advice, not verified for your court. Replace every bracketed item. Check your district's local rules and your judge's standing orders before filing. Downloaded from https://www.section1983.org/downloads/
 
-Read [How to Ask for More Time](/articles/how-to-ask-for-more-time-in-a-section-1983-case) first. It explains the difference between asking before and after the deadline, and the deadlines that cannot be extended at all.
-
-Replace every bracketed item. Check your district's [local rules](/terms-and-concepts/local-rules) for the response deadline, the conference requirement, and whether a proposed order is required.
-
-**Download this sample:** [PDF](/downloads/sample-motion-for-extension-of-time.pdf) · [Word](/downloads/sample-motion-for-extension-of-time.docx) · [plain text](/downloads/sample-motion-for-extension-of-time.txt). Every sample on the site is on the [sample documents page](/downloads/).
-
-## Sample motion
-
-```text
 UNITED STATES DISTRICT COURT
 FOR THE [DISTRICT]
 [DIVISION]
@@ -93,11 +78,7 @@ by [the Court's electronic filing system / email to counsel's address of record
 
                                        ______________________________
                                        [Your Name]
-```
 
-## Sample proposed order
-
-```text
 UNITED STATES DISTRICT COURT
 FOR THE [DISTRICT]
 [DIVISION]
@@ -123,21 +104,3 @@ SO ORDERED.
 
 Dated: ________________               ______________________________
                                        UNITED STATES [DISTRICT / MAGISTRATE] JUDGE
-```
-
-## How to adapt it
-
-**If the deadline has already passed.** Change the title to "Motion for Extension of Time" and add a paragraph addressing excusable neglect: how long the delay was, why it happened and whether it was in your control, why the other side is not harmed, and that you acted in good faith. File the late document at the same time.
-
-**If counsel opposes.** Change "Unopposed" to "Opposed" in the title, state counsel's position in paragraph 5, and add one sentence on why the extension should be granted anyway. Do not argue with counsel's reasons at length.
-
-**If counsel did not respond.** State the date and method of your attempt and that no response was received by the time of filing. Do not call the motion unopposed.
-
-**For a different deadline.** Replace the motion to dismiss with the deadline at issue, cite the order or rule that set it, and keep the rest.
-
-## What not to add
-
-- Argument about the merits of the underlying motion. Save it for the response.
-- Complaints about opposing counsel or the defendants.
-- A request for more time than you need.
-- Adjectives. "Plaintiff urgently needs a substantial extension" is weaker than "Plaintiff asks for 21 additional days."
