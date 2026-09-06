@@ -3,6 +3,7 @@ import "../styles/global.css";
 import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 import SuggestChange from "../components/SuggestChange.astro";
 import DonateBanner from "../components/DonateBanner.astro";
+import { fullTitle, truncateDescription } from "../lib/seo";
 
 interface Props {
   title: string;
@@ -18,7 +19,7 @@ interface Props {
 
 const {
   title,
-  description = "Your free guide to holding police accountable in federal court. Independent of police and government. Real cases, plain language, for people representing themselves.",
+  description = "Free, plain-language guide to suing the police under Section 1983 in federal court. Real cases and step-by-step help for people representing themselves.",
   canonicalUrl,
   ogImage = "/og-image.png",
   ogImageAlt = "section1983.org",
@@ -29,6 +30,8 @@ const {
 } = Astro.props;
 
 const siteBase = process.env.SITE_URL || "https://www.section1983.org";
+const pageTitle = fullTitle(title);
+const metaDescription = truncateDescription(description);
 const canonicalHref =
   canonicalUrl || new URL(Astro.url?.pathname || "/", siteBase).toString();
 const ogImageHref = new URL(ogImage, siteBase).toString();
@@ -65,15 +68,15 @@ const commitDisplay =
     <GoogleAnalytics />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
+    <meta name="description" content={metaDescription} />
     <meta name="robots" content={robots} />
     <meta name="author" content="Institute for Police Conduct, Inc." />
     <meta name="build-commit" content={fullCommitSha} />
     <meta name="build-commit-dirty" content={isDirtyBuild ? "true" : "false"} />
 
     <meta property="og:type" content={ogType} />
-    <meta property="og:title" content={`${title} | section1983.org`} />
-    <meta property="og:description" content={description} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={metaDescription} />
     <meta property="og:url" content={canonicalHref} />
     <meta property="og:site_name" content="section1983.org" />
     <meta property="og:image" content={ogImageHref} />
@@ -82,8 +85,8 @@ const commitDisplay =
     <meta property="og:image:alt" content={ogImageAlt} />
 
     <meta name="twitter:card" content={twitterCard} />
-    <meta name="twitter:title" content={`${title} | section1983.org`} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={metaDescription} />
     <meta name="twitter:image" content={ogImageHref} />
     <meta name="twitter:image:alt" content={ogImageAlt} />
 
@@ -107,7 +110,7 @@ const commitDisplay =
       ))
     }
 
-    <title>{title} | section1983.org</title>
+    <title>{pageTitle}</title>
   </head>
   <body class="bg-cream min-h-screen flex flex-col">
     <a
@@ -155,7 +158,8 @@ const commitDisplay =
         <!-- Mobile hamburger -->
         <button
           id="mobile-menu-toggle"
-          class="md:hidden p-2 -mr-2 text-white hover:text-gold transition-colors"
+          type="button"
+          class="md:hidden touch-target focus-ring-gold p-2 -mr-2 text-white hover:text-gold transition-colors"
           aria-expanded="false"
           aria-controls="mobile-menu"
           aria-label="Open menu"
@@ -192,42 +196,51 @@ const commitDisplay =
       </nav>
 
       <!-- Mobile menu panel -->
-      <div
+      <nav
         id="mobile-menu"
         class="md:hidden hidden border-t border-slate-700"
-        role="navigation"
         aria-label="Mobile navigation"
       >
         <div class="max-w-4xl mx-auto px-6 py-4 flex flex-col gap-3 text-sm">
-          <a href="/process" class="hover:text-gold transition-colors py-1"
+          <a
+            href="/process"
+            class="touch-target-inline focus-ring-gold hover:text-gold transition-colors py-1"
             >📋 The Process</a
           >
-          <a href="/articles" class="hover:text-gold transition-colors py-1"
+          <a
+            href="/articles"
+            class="touch-target-inline focus-ring-gold hover:text-gold transition-colors py-1"
             >✏️ Articles</a
           >
-          <a href="/cases" class="hover:text-gold transition-colors py-1"
+          <a
+            href="/cases"
+            class="touch-target-inline focus-ring-gold hover:text-gold transition-colors py-1"
             >⚖️ Cases</a
           >
-          <a href="/search" class="hover:text-gold transition-colors py-1"
+          <a
+            href="/search"
+            class="touch-target-inline focus-ring-gold hover:text-gold transition-colors py-1"
             >🔍 Search</a
           >
           <a
             href="/terms-and-concepts"
-            class="hover:text-gold transition-colors py-1"
+            class="touch-target-inline focus-ring-gold hover:text-gold transition-colors py-1"
             >📖 Terms and Concepts</a
           >
-          <a href="/get-involved" class="hover:text-gold transition-colors py-1"
+          <a
+            href="/get-involved"
+            class="touch-target-inline focus-ring-gold hover:text-gold transition-colors py-1"
             >🤝 Get Involved</a
           >
           <hr class="border-slate-700" />
           <a
             href="https://policeconduct.org/donate/"
-            class="bg-gold text-navy text-center font-bold py-2 rounded hover:bg-yellow-400 transition-colors mt-1"
+            class="touch-target-inline focus-ring-gold bg-gold text-navy text-center justify-center font-bold py-2 rounded hover:bg-yellow-400 transition-colors mt-1"
             target="_blank"
             rel="noopener">Donate ↗</a
           >
         </div>
-      </div>
+      </nav>
     </header>
 
     <script is:inline>
@@ -235,13 +248,31 @@ const commitDisplay =
       const menu = document.getElementById("mobile-menu");
       const iconOpen = document.getElementById("menu-icon-open");
       const iconClose = document.getElementById("menu-icon-close");
-      toggle.addEventListener("click", () => {
-        const open = menu.classList.toggle("hidden");
-        toggle.setAttribute("aria-expanded", !open);
-        toggle.setAttribute("aria-label", open ? "Open menu" : "Close menu");
-        iconOpen.classList.toggle("hidden");
-        iconClose.classList.toggle("hidden");
-      });
+      const mobileLinks = menu?.querySelectorAll("a") || [];
+      const setMenuState = (isOpen) => {
+        menu.classList.toggle("hidden", !isOpen);
+        toggle.setAttribute("aria-expanded", String(isOpen));
+        toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+        iconOpen.classList.toggle("hidden", isOpen);
+        iconClose.classList.toggle("hidden", !isOpen);
+      };
+
+      if (toggle && menu && iconOpen && iconClose) {
+        toggle.addEventListener("click", () => {
+          const isOpen = toggle.getAttribute("aria-expanded") !== "true";
+          setMenuState(isOpen);
+        });
+
+        toggle.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            setMenuState(false);
+          }
+        });
+
+        mobileLinks.forEach((link) => {
+          link.addEventListener("click", () => setMenuState(false));
+        });
+      }
     </script>
 
     <DonateBanner />

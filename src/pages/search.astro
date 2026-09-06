@@ -30,23 +30,27 @@ const structuredData = {
 
   <div class="mb-8">
     <label for="search-input" class="sr-only">Search the site</label>
+    <p id="search-help" class="text-sm text-slate mb-3">
+      Search cases, articles, terms and concepts, and process guides.
+    </p>
     <input
       id="search-input"
       type="search"
       placeholder="Search cases, articles, terms and concepts, process steps... (try 'tased' or 'beaten')"
       autocomplete="off"
-      class="w-full px-4 py-3 border-2 border-slate-300 rounded-lg text-navy focus:border-gold focus:outline-none text-lg"
+      aria-describedby="search-help"
+      class="w-full min-h-12 px-4 py-3 border-2 border-slate-300 rounded-lg text-navy focus:border-gold-strong focus-ring text-lg"
     />
   </div>
 
   <div
     id="search-results"
     class="space-y-4"
-    role="region"
+    role="status"
     aria-live="polite"
     aria-label="Search results"
   >
-    <p class="text-slate-500">Type to search across all content.</p>
+    <p class="text-slate">Type to search across all content.</p>
   </div>
 
   <script is:inline>
@@ -61,15 +65,25 @@ const structuredData = {
       case: "Case",
     };
     const typeColors = {
-      article: "bg-gold/20 text-navy",
-      termsAndConcepts: "bg-navy/10 text-navy",
-      process: "bg-green-100 text-green-800",
-      case: "bg-red-50 text-red-800",
+      article:
+        "bg-[color:color-mix(in_srgb,var(--color-gold)_12%,white)] text-navy",
+      termsAndConcepts:
+        "bg-[color:color-mix(in_srgb,var(--color-navy)_10%,white)] text-navy",
+      process:
+        "bg-[color:color-mix(in_srgb,var(--color-gold)_8%,white)] text-[color:var(--color-slate-strong)]",
+      case: "bg-[color:color-mix(in_srgb,var(--color-cream)_70%,white)] text-navy",
     };
+
+    function setMessage(message, className = "text-slate") {
+      results.innerHTML = `<p class="${className}">${message}</p>`;
+    }
 
     async function loadIndex() {
       if (index) return index;
       const res = await fetch("/search.json");
+      if (!res.ok) {
+        throw new Error("Search index failed to load.");
+      }
       index = await res.json();
       return index;
     }
@@ -94,24 +108,22 @@ const structuredData = {
 
     function render(items, query) {
       if (!query.trim()) {
-        results.innerHTML =
-          '<p class="text-slate-500">Type to search across all content.</p>';
+        setMessage("Type to search across all content.");
         return;
       }
       if (!items.length) {
-        results.innerHTML =
-          '<p class="text-slate-500">No results found. Try different terms.</p>';
+        setMessage("No results found. Try different terms.");
         return;
       }
       results.innerHTML = items
         .map(
           (item) => `
-        <a href="${item.url}" class="block p-4 bg-white rounded border border-slate-200 hover:border-gold hover:shadow-sm transition-all">
+        <a href="${item.url}" class="interactive-card focus-ring block p-4 bg-white rounded border border-slate-200">
           <div class="flex items-center gap-2 mb-1">
             <span class="text-xs font-bold px-2 py-0.5 rounded ${typeColors[item.type] || ""}">${typeLabels[item.type] || item.type}</span>
             <span class="font-semibold text-navy">${item.title}</span>
           </div>
-          <p class="text-sm text-slate-500">${item.description}</p>
+          <p class="text-sm text-slate">${item.description}</p>
         </a>
       `,
         )
@@ -122,20 +134,36 @@ const structuredData = {
     input.addEventListener("input", () => {
       clearTimeout(debounce);
       debounce = setTimeout(async () => {
-        await loadIndex();
-        render(search(input.value), input.value);
+        results.setAttribute("aria-busy", "true");
+        try {
+          await loadIndex();
+          render(search(input.value), input.value);
+        } catch {
+          setMessage(
+            "Search is unavailable right now. Refresh the page and try again.",
+          );
+        } finally {
+          results.setAttribute("aria-busy", "false");
+        }
       }, 150);
     });
-
-    // Auto-focus search input
-    input.focus();
 
     // Support ?q= query param
     const params = new URLSearchParams(window.location.search);
     const q = params.get("q");
     if (q) {
       input.value = q;
-      loadIndex().then(() => render(search(q), q));
+      results.setAttribute("aria-busy", "true");
+      loadIndex()
+        .then(() => render(search(q), q))
+        .catch(() => {
+          setMessage(
+            "Search is unavailable right now. Refresh the page and try again.",
+          );
+        })
+        .finally(() => {
+          results.setAttribute("aria-busy", "false");
+        });
     }
   </script>
 </Base>

@@ -4,9 +4,179 @@
   --color-navy: #1a1f36;
   --color-navy-light: #242b45;
   --color-gold: #c9a84c;
+  --color-gold-strong: #85630f;
   --color-gold-light: #dbc476;
   --color-cream: #f5f1e8;
-  --color-slate: #64748b;
+  --color-slate: #5f6f82;
+  --color-slate-strong: #556272;
+}
+
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.focus-ring {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus-ring:focus-visible {
+  outline-color: var(--color-navy);
+}
+
+.focus-ring-gold {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus-ring-gold:focus-visible {
+  outline-color: var(--color-gold);
+}
+
+.touch-target {
+  min-height: 44px;
+}
+
+.touch-target-inline {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.surface-link:hover,
+.surface-link:focus-visible {
+  color: var(--color-gold-strong);
+}
+
+.interactive-card {
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.interactive-card:hover,
+.interactive-card:focus-visible {
+  border-color: color-mix(in srgb, var(--color-gold) 70%, white);
+  box-shadow: 0 10px 25px rgba(26, 31, 54, 0.08);
+}
+
+.tag-chip {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.tag-chip--all {
+  background: var(--color-navy);
+  color: white;
+}
+
+.tag-chip--state {
+  background: color-mix(in srgb, var(--color-cream) 70%, white);
+  color: var(--color-navy);
+  border: 1px solid color-mix(in srgb, var(--color-slate) 20%, white);
+}
+
+.tag-chip--behavior {
+  background: color-mix(in srgb, var(--color-gold) 12%, white);
+  color: var(--color-navy);
+  border: 1px solid color-mix(in srgb, var(--color-gold) 35%, white);
+}
+
+.tag-chip--outcome {
+  background: color-mix(in srgb, var(--color-navy) 10%, white);
+  color: var(--color-navy);
+  border: 1px solid color-mix(in srgb, var(--color-navy) 18%, white);
+}
+
+.tag-chip--type {
+  background: color-mix(in srgb, var(--color-gold) 8%, white);
+  color: var(--color-slate-strong);
+  border: 1px solid color-mix(in srgb, var(--color-gold) 20%, white);
+}
+
+.tag-chip--legal {
+  background: white;
+  color: var(--color-navy);
+  border: 1px solid color-mix(in srgb, var(--color-slate) 20%, white);
+}
+
+.tag-chip--active {
+  background: var(--color-navy);
+  color: white;
+  border-color: var(--color-navy);
+}
+
+.tag-chip--active:hover,
+.tag-chip--active:focus-visible {
+  background: var(--color-navy-light);
+  color: white;
+}
+
+.tag-chip-pill {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  background: var(--color-navy);
+  color: white;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.tag-chip-pill:hover,
+.tag-chip-pill:focus-visible {
+  background: var(--color-navy-light);
+}
+
+.share-action {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border: 1px solid color-mix(in srgb, var(--color-slate) 18%, white);
+  border-radius: 9999px;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+  background: white;
+  color: var(--color-navy);
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.share-action:hover,
+.share-action:focus-visible {
+  background: color-mix(in srgb, var(--color-gold) 10%, white);
+  border-color: color-mix(in srgb, var(--color-gold) 40%, white);
+  color: var(--color-navy);
+  box-shadow: 0 10px 24px rgba(26, 31, 54, 0.08);
+}
+
+.text-gold-strong {
+  color: var(--color-gold-strong);
 }
 
 /* Prose styling for article content */
@@ -47,7 +217,7 @@
 }
 
 .prose a:hover {
-  color: var(--color-gold);
+  color: var(--color-gold-strong);
 }
 
 .prose ul,
@@ -68,7 +238,7 @@
   border-left: 4px solid var(--color-gold);
   padding-left: 1rem;
   margin: 1.5rem 0;
-  color: var(--color-slate);
+  color: var(--color-slate-strong);
   font-style: italic;
 }
 

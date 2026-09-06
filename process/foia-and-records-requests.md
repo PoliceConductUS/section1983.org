@@ -134,9 +134,11 @@ Every state has its own public records law. The name varies — "Freedom of Info
 
 ### Practical tips
 
+If you want a practical companion on drafting, submitting, and tracking requests, MuckRock's [FOIA 101: Tips and Tricks to Make You a Transparency Master](https://www.muckrock.com/project/foia-101-tips-and-tricks-to-make-you-a-transparency-master-234/) is worth reading alongside this guide.
+
 1. **Be specific but broad.** "All body-worn camera footage from officers present at [location] on [date] between [time] and [time]" is better than "all records related to my arrest." Specific requests get faster responses. But don't be so narrow that you miss relevant records.
 
-2. **Request by incident, not by your name.** Some agencies will claim they can't search by your name. Request by date, location, CAD number, or report number instead.
+2. **Request by incident details.** Use the date, location, CAD number, or report number. Some agencies will claim they cannot search by your name.
 
 3. **Submit in writing.** Email is fine in most jurisdictions. Keep a copy of everything you send.
 
@@ -208,7 +210,7 @@ Adapt this for your state's specific open records law. The [Reporters Committee 
 
 **Notes:**
 
-- Request by date, location, and time — not by your name. See [How to Get Police Records Before Filing a § 1983 Case](/articles/how-to-get-police-records-before-filing-a-section-1983-case) for why this matters.
+- Request by date, location, and time. That gives the records custodian something concrete to search and avoids turning your name into the focus of the request. See [How to Get Police Records Before Filing a § 1983 Case](/articles/how-to-get-police-records-before-filing-a-section-1983-case) for why this matters.
 - Keep requests focused. Multiple smaller requests get faster responses than one massive request.
 - Cite the specific statute. It signals that you know the law and intend to enforce your rights.
 

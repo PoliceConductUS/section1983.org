@@ -1,5 +1,6 @@
 ---
 import Base from "./Base.astro";
+import { caseTitle } from "../lib/seo";
 
 interface Props {
   title: string;
@@ -39,12 +40,43 @@ const formattedDate = dateDecided.toLocaleDateString("en-US", {
   day: "numeric",
 });
 
+function shortenMetaDescription(text, maxLength = 155) {
+  const normalized = text.replace(/\s+/g, " ").trim();
+  if (normalized.length <= maxLength) return normalized;
+
+  const sentenceBreak = normalized.lastIndexOf(". ", maxLength);
+  if (sentenceBreak >= 90) {
+    return normalized.slice(0, sentenceBreak + 1);
+  }
+
+  const clauseBreaks = [
+    normalized.lastIndexOf("; ", maxLength),
+    normalized.lastIndexOf(", ", maxLength),
+    normalized.lastIndexOf(" — ", maxLength),
+  ].filter((index) => index >= 90);
+
+  const bestClauseBreak = Math.max(-1, ...clauseBreaks);
+  if (bestClauseBreak >= 90) {
+    return `${normalized.slice(0, bestClauseBreak).trim()}.`;
+  }
+
+  const wordBreak = normalized.lastIndexOf(" ", maxLength - 1);
+  if (wordBreak >= 90) {
+    return `${normalized.slice(0, wordBreak).trim()}...`;
+  }
+
+  return `${normalized.slice(0, maxLength - 3).trim()}...`;
+}
+
+const metaDescription = shortenMetaDescription(holding);
+const pageTitle = caseTitle(title, citation, court, tags);
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LegalCase",
   name: title,
   headline: title,
-  description: holding,
+  description: metaDescription,
   url: canonicalUrl,
   mainEntityOfPage: canonicalUrl,
   datePublished: dateDecided.toISOString(),
@@ -58,8 +90,8 @@ const structuredData = {
 ---
 
 <Base
-  title={`${title} — Case Law Library`}
-  description={holding}
+  title={pageTitle}
+  description={metaDescription}
   canonicalUrl={canonicalUrl}
   ogType="article"
   ogImageAlt={title}
@@ -91,7 +123,7 @@ const structuredData = {
                 href={courtlistener}
                 target="_blank"
                 rel="noopener"
-                class="text-navy underline decoration-gold decoration-2 underline-offset-2 hover:text-gold"
+                class="focus-ring surface-link text-navy underline decoration-gold decoration-2 underline-offset-2"
               >
                 View on CourtListener ↗
               </a>
@@ -112,7 +144,7 @@ const structuredData = {
                     href={o.profile}
                     target="_blank"
                     rel="noopener"
-                    class="text-navy underline decoration-gold decoration-2 underline-offset-2 hover:text-gold"
+                    class="focus-ring surface-link text-navy underline decoration-gold decoration-2 underline-offset-2"
                   >
                     {o.name} ↗
                   </a>

@@ -4,6 +4,7 @@ import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 
 const articles = await getCollection("articles", ({ data }) => !data.draft);
+const cases = await getCollection("cases");
 const termsAndConceptsEntries = await getCollection("termsAndConcepts");
 const process = await getCollection("process");
 
@@ -12,6 +13,9 @@ const sortedArticles = articles.sort((a, b) => {
   const db = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
   return db - da;
 });
+const sortedCases = cases.sort((a, b) =>
+  a.data.title.localeCompare(b.data.title),
+);
 const sortedTermsAndConcepts = termsAndConceptsEntries.sort((a, b) =>
   a.data.term.localeCompare(b.data.term),
 );
@@ -43,47 +47,57 @@ const structuredData = {
       </h2>
       <ul class="space-y-1 text-sm">
         <li>
-          <a href="/" class="text-navy hover:text-gold transition-colors"
-            >Home</a
+          <a
+            href="/"
+            class="focus-ring surface-link text-navy transition-colors">Home</a
           >
         </li>
         <li>
-          <a href="/about" class="text-navy hover:text-gold transition-colors"
-            >About</a
+          <a
+            href="/about"
+            class="focus-ring surface-link text-navy transition-colors">About</a
           >
         </li>
         <li>
           <a
             href="/about/section-1983"
-            class="text-navy hover:text-gold transition-colors">About § 1983</a
+            class="focus-ring surface-link text-navy transition-colors"
+            >About § 1983</a
           >
         </li>
         <li>
           <a
             href="/get-involved"
-            class="text-navy hover:text-gold transition-colors">Get Involved</a
+            class="focus-ring surface-link text-navy transition-colors"
+            >Get Involved</a
           >
         </li>
         <li>
-          <a href="/search" class="text-navy hover:text-gold transition-colors"
+          <a
+            href="/search"
+            class="focus-ring surface-link text-navy transition-colors"
             >Search</a
           >
         </li>
         <li>
           <a
             href="/legal-notice"
-            class="text-navy hover:text-gold transition-colors">Legal Notice</a
+            class="focus-ring surface-link text-navy transition-colors"
+            >Legal Notice</a
           >
         </li>
         <li>
-          <a href="/terms" class="text-navy hover:text-gold transition-colors"
+          <a
+            href="/terms"
+            class="focus-ring surface-link text-navy transition-colors"
             >Terms & Conditions</a
           >
         </li>
         <li>
           <a
             href="/accessibility"
-            class="text-navy hover:text-gold transition-colors">Accessibility</a
+            class="focus-ring surface-link text-navy transition-colors"
+            >Accessibility</a
           >
         </li>
       </ul>
@@ -99,9 +113,29 @@ const structuredData = {
             <li>
               <a
                 href={`/articles/${a.id}/`}
-                class="text-navy hover:text-gold transition-colors"
+                class="focus-ring surface-link text-navy transition-colors"
               >
                 {a.data.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-bold text-navy mb-3 border-b-2 border-gold pb-2">
+        Case Law Library ({sortedCases.length})
+      </h2>
+      <ul class="space-y-1 text-sm columns-2">
+        {
+          sortedCases.map((c) => (
+            <li>
+              <a
+                href={`/cases/${c.id}/`}
+                class="focus-ring surface-link text-navy transition-colors"
+              >
+                {c.data.title}
               </a>
             </li>
           ))
@@ -119,7 +153,7 @@ const structuredData = {
             <li>
               <a
                 href={`/terms-and-concepts/${p.id}/`}
-                class="text-navy hover:text-gold transition-colors"
+                class="focus-ring surface-link text-navy transition-colors"
               >
                 {p.data.term}
               </a>
@@ -139,7 +173,7 @@ const structuredData = {
             <li>
               <a
                 href={`/process/${p.id}/`}
-                class="text-navy hover:text-gold transition-colors"
+                class="focus-ring surface-link text-navy transition-colors"
               >
                 Step {p.data.order}: {p.data.title}
               </a>

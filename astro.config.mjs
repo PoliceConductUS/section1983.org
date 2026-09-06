@@ -4,6 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import fs from "node:fs";
 import path from "node:path";
+import { execFileSync } from "node:child_process";
 import { loadEnv } from "vite";
 
 import sentry from "@sentry/astro";
@@ -47,14 +48,42 @@ const staticPageSources = {
   "/search/": "src/pages/search.astro",
   "/sitemap/": "src/pages/sitemap.astro",
   "/terms/": "src/pages/terms.astro",
+  "/terms-and-concepts/": "src/pages/terms-and-concepts/index.astro",
 };
 
+const gitDateCache = new Map();
+
+// Last commit date for a file. CI checkouts give every file the same mtime,
+// so git history is the only trustworthy source for sitemap <lastmod>.
 function getFileLastModified(filePath) {
+  if (gitDateCache.has(filePath)) return gitDateCache.get(filePath);
+  let result;
   try {
-    return fs.statSync(path.join(process.cwd(), filePath)).mtime;
+    const output = execFileSync(
+      "git",
+      ["log", "-1", "--format=%cI", "--", filePath],
+      {
+        cwd: process.cwd(),
+        encoding: "utf8",
+        stdio: ["ignore", "pipe", "ignore"],
+      },
+    ).trim();
+    if (output) {
+      const parsed = new Date(output);
+      if (!Number.isNaN(parsed.getTime())) result = parsed;
+    }
   } catch {
-    return undefined;
+    result = undefined;
   }
+  if (!result && !process.env.CI) {
+    try {
+      result = fs.statSync(path.join(process.cwd(), filePath)).mtime;
+    } catch {
+      result = undefined;
+    }
+  }
+  gitDateCache.set(filePath, result);
+  return result;
 }
 
 function getSitemapLastModified(url) {
@@ -65,10 +94,14 @@ function getSitemapLastModified(url) {
   }
 
   const contentMatch = pathname.match(
-    /^\/(articles|cases|primer|process)\/([^/]+)\/$/,
+    /^\/(articles|cases|primer|process|terms-and-concepts)\/([^/]+)\/$/,
   );
   if (contentMatch) {
     const [, section, slug] = contentMatch;
+    if (section === "terms-and-concepts") {
+      return getFileLastModified(`terms-and-concepts-content/${slug}.md`);
+    }
+
     return getFileLastModified(`${section}/${slug}.md`);
   }
 

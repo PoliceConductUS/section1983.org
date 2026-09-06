@@ -211,6 +211,23 @@ for (const c of sorted) {
   grouped.get(letter)!.push(c);
 }
 
+const tagButtonAllClass =
+  "tag-btn tag-chip tag-chip--all focus-ring cursor-pointer";
+const tagButtonAllInactiveClass =
+  "tag-btn tag-chip tag-chip--legal focus-ring cursor-pointer";
+const tagButtonStateClass =
+  "tag-btn tag-chip tag-chip--state focus-ring cursor-pointer";
+const tagButtonBehaviorClass =
+  "tag-btn tag-chip tag-chip--behavior focus-ring cursor-pointer";
+const tagButtonOutcomeClass =
+  "tag-btn tag-chip tag-chip--outcome focus-ring cursor-pointer";
+const tagButtonTypeClass =
+  "tag-btn tag-chip tag-chip--type focus-ring cursor-pointer";
+const tagButtonLegalClass =
+  "tag-btn tag-chip tag-chip--legal focus-ring cursor-pointer";
+const tagButtonActiveClass =
+  "tag-btn tag-chip tag-chip--active focus-ring cursor-pointer";
+
 const crumbs = [{ label: "Home", href: "/" }, { label: "Case Law Library" }];
 const canonicalUrl = "https://www.section1983.org/cases/";
 const structuredData = {
@@ -248,11 +265,11 @@ const structuredData = {
   <p class="text-sm text-slate-600 mb-8">
     If a case turns on an unfamiliar doctrine, check the <a
       href="/terms-and-concepts"
-      class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+      class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
       >Terms and Concepts</a
     >. If you need to place a ruling in the life of a lawsuit, use the <a
       href="/process"
-      class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+      class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
       >process guide</a
     >.
   </p>
@@ -270,11 +287,11 @@ const structuredData = {
         <li>
           <strong>State</strong> — where the case is <a
             href="/terms-and-concepts/binding-precedent"
-            class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+            class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
             >binding precedent</a
           >. <a
             href="/terms-and-concepts/federal-circuit-courts"
-            class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+            class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
             >Federal circuit court</a
           > decisions apply to every state in that circuit, not just the state where
           the case was filed. U.S. Supreme Court decisions apply everywhere.
@@ -307,15 +324,19 @@ const structuredData = {
       <p class="text-sm text-slate-700 mt-2">
         Want to see how hard it is to win pro se? Try filtering by <a
           href="/cases?tags=plaintiff-won%2Cpro-se"
-          class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+          class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
           >plaintiff won + pro se</a
         >. The silence speaks for itself.
       </p>
     </div>
     <div class="flex flex-wrap items-center gap-2 mb-4">
       <button
-        class="tag-btn text-xs bg-navy text-white px-3 py-1 rounded cursor-pointer"
+        type="button"
+        class={tagButtonAllClass}
         data-tag="all"
+        data-default-class={tagButtonAllInactiveClass}
+        data-active-class={tagButtonAllClass}
+        aria-pressed="true"
       >
         All ({sorted.length})
       </button>
@@ -330,8 +351,12 @@ const structuredData = {
           {
             stateTags.map((tag) => (
               <button
-                class="tag-btn text-xs bg-purple-50 hover:bg-purple-200 text-purple-800 px-2.5 py-1 rounded cursor-pointer transition-colors"
+                type="button"
+                class={tagButtonStateClass}
                 data-tag={tag}
+                data-default-class={tagButtonStateClass}
+                data-active-class={tagButtonActiveClass}
+                aria-pressed="false"
               >
                 {stateLabels[tag] || tag.replace(/-/g, " ")} (
                 {tagCounts.get(tag)})
@@ -349,8 +374,12 @@ const structuredData = {
           {
             behaviorTags.map((tag) => (
               <button
-                class="tag-btn text-xs bg-red-50 hover:bg-red-200 text-red-800 px-2.5 py-1 rounded cursor-pointer transition-colors"
+                type="button"
+                class={tagButtonBehaviorClass}
                 data-tag={tag}
+                data-default-class={tagButtonBehaviorClass}
+                data-active-class={tagButtonActiveClass}
+                aria-pressed="false"
               >
                 {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
               </button>
@@ -367,8 +396,12 @@ const structuredData = {
           {
             outcomeTags.map((tag) => (
               <button
-                class="tag-btn text-xs bg-blue-50 hover:bg-blue-200 text-blue-800 px-2.5 py-1 rounded cursor-pointer transition-colors"
+                type="button"
+                class={tagButtonOutcomeClass}
                 data-tag={tag}
+                data-default-class={tagButtonOutcomeClass}
+                data-active-class={tagButtonActiveClass}
+                aria-pressed="false"
               >
                 {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
               </button>
@@ -385,8 +418,12 @@ const structuredData = {
           {
             typeTags.map((tag) => (
               <button
-                class="tag-btn text-xs bg-green-50 hover:bg-green-200 text-green-800 px-2.5 py-1 rounded cursor-pointer transition-colors"
+                type="button"
+                class={tagButtonTypeClass}
                 data-tag={tag}
+                data-default-class={tagButtonTypeClass}
+                data-active-class={tagButtonActiveClass}
+                aria-pressed="false"
               >
                 {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
               </button>
@@ -403,8 +440,12 @@ const structuredData = {
           {
             legalTags.map((tag) => (
               <button
-                class="tag-btn text-xs bg-slate-100 hover:bg-gold hover:text-navy px-2.5 py-1 rounded cursor-pointer transition-colors"
+                type="button"
+                class={tagButtonLegalClass}
                 data-tag={tag}
+                data-default-class={tagButtonLegalClass}
+                data-active-class={tagButtonActiveClass}
+                aria-pressed="false"
               >
                 {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
               </button>
@@ -415,12 +456,7 @@ const structuredData = {
     </div>
   </div>
 
-  <div
-    id="active-filters"
-    class="mb-4"
-    aria-live="polite"
-    style="display:none;"
-  >
+  <div id="active-filters" class="mb-4" role="status" aria-live="polite" hidden>
     <div
       class="bg-white border border-slate-200 rounded-lg p-3 flex flex-wrap items-center gap-2"
     >
@@ -428,11 +464,13 @@ const structuredData = {
       <div id="active-tags-list" class="flex flex-wrap gap-2"></div>
       <button
         id="clear-filters"
-        class="text-xs text-slate-500 hover:text-red-600 underline ml-2 cursor-pointer"
+        type="button"
+        class="touch-target-inline focus-ring text-sm text-navy surface-link underline ml-2 cursor-pointer"
         >clear all</button
       >
-      <span id="active-count" class="text-sm font-medium text-gold ml-auto"
-      ></span>
+      <span
+        id="active-count"
+        class="text-sm font-medium text-gold-strong ml-auto"></span>
     </div>
   </div>
 
@@ -447,8 +485,11 @@ const structuredData = {
           <div class="space-y-4">
             {entries.map((c) => (
               <div class="case-card" data-tags={c.data.tags?.join(",") || ""}>
-                <a href={`/cases/${c.id}`} class="block group">
-                  <p class="font-semibold text-navy group-hover:text-gold transition-colors italic">
+                <a
+                  href={`/cases/${c.id}`}
+                  class="focus-ring block group rounded p-1 -m-1"
+                >
+                  <p class="font-semibold text-navy group-hover:text-gold-strong transition-colors italic">
                     {c.data.title}
                   </p>
                   <p class="text-sm text-slate-500 font-mono">
@@ -503,14 +544,14 @@ const structuredData = {
         // Update active filters bar
         if (filtersEl && tagsListEl) {
           if (activeTags.size === 0) {
-            filtersEl.style.display = "none";
+            filtersEl.hidden = true;
             tagsListEl.innerHTML = "";
           } else {
-            filtersEl.style.display = "";
+            filtersEl.hidden = false;
             tagsListEl.innerHTML = [...activeTags]
               .map(
                 (tag) =>
-                  `<button class="active-tag-pill text-xs bg-navy text-white px-2 py-0.5 rounded-full cursor-pointer hover:bg-red-600 transition-colors" data-remove-tag="${tag}" title="Click to remove">${tag.replace(/-/g, " ")} ✕</button>`,
+                  `<button type="button" class="tag-chip-pill focus-ring active-tag-pill cursor-pointer" data-remove-tag="${tag}" aria-label="Remove filter ${tag.replace(/-/g, " ")}" title="Remove filter">${tag.replace(/-/g, " ")} ✕</button>`,
               )
               .join("");
             // Add remove handlers to pills
@@ -529,20 +570,17 @@ const structuredData = {
         buttons.forEach((b) => {
           const tag = b.getAttribute("data-tag");
           if (tag === "all") {
-            if (activeTags.size === 0) {
-              b.classList.remove("bg-slate-100");
-              b.classList.add("bg-navy", "text-white");
-            } else {
-              b.classList.remove("bg-navy", "text-white");
-              b.classList.add("bg-slate-100");
-            }
-          } else if (activeTags.has(tag!)) {
-            b.className =
-              "tag-btn text-xs bg-navy text-white px-2.5 py-1 rounded cursor-pointer transition-colors";
+            const isActive = activeTags.size === 0;
+            b.className = isActive
+              ? b.dataset.activeClass || ""
+              : b.dataset.defaultClass || "";
+            b.setAttribute("aria-pressed", isActive ? "true" : "false");
+          } else if (activeTags.has(tag)) {
+            b.className = b.dataset.activeClass || "";
+            b.setAttribute("aria-pressed", "true");
           } else {
-            b.className =
-              (b as HTMLElement).dataset.origClass ||
-              "tag-btn text-xs bg-slate-100 hover:bg-gold hover:text-navy px-2.5 py-1 rounded cursor-pointer transition-colors";
+            b.className = (b as HTMLElement).dataset.defaultClass || "";
+            b.setAttribute("aria-pressed", "false");
           }
         });
 
@@ -578,9 +616,10 @@ const structuredData = {
         }
       }
 
-      // Save original classes for restoring after toggle
       buttons.forEach((b) => {
-        (b as HTMLElement).dataset.origClass = b.className;
+        if (!(b as HTMLElement).dataset.defaultClass) {
+          (b as HTMLElement).dataset.defaultClass = b.className;
+        }
       });
 
       buttons.forEach((btn) => {

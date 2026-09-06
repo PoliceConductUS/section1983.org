@@ -144,6 +144,8 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "terraform_state" 
   bucket = aws_s3_bucket.terraform_state.id
 
   rule {
+    blocked_encryption_types = ["SSE-C"]
+
     apply_server_side_encryption_by_default {
       sse_algorithm = "AES256"
     }
@@ -213,6 +215,8 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "preview" {
   bucket = aws_s3_bucket.preview.id
 
   rule {
+    blocked_encryption_types = ["SSE-C"]
+
     apply_server_side_encryption_by_default {
       sse_algorithm = "AES256"
     }
@@ -499,6 +503,8 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "site" {
   bucket = aws_s3_bucket.site.id
 
   rule {
+    blocked_encryption_types = ["SSE-C"]
+
     apply_server_side_encryption_by_default {
       sse_algorithm = "AES256"
     }
@@ -560,17 +566,61 @@ resource "aws_acm_certificate_validation" "site" {
 resource "aws_cloudfront_function" "index_rewrite" {
   name    = local.index_rewrite_function_name
   runtime = "cloudfront-js-2.0"
-  comment = "Rewrite extensionless URIs to index.html."
+  comment = "Canonical host/slash redirects; rewrite extensionless URIs to index.html."
   publish = true
   code    = <<-EOF
+var CANONICAL_HOST = '${local.include_www ? local.www_domain : var.domain_name}';
+
+function redirect(location) {
+  return {
+    statusCode: 301,
+    statusDescription: 'Moved Permanently',
+    headers: {
+      'location': { value: location },
+      'cache-control': { value: 'public, max-age=86400' }
+    }
+  };
+}
+
+function queryString(request) {
+  var keys = Object.keys(request.querystring || {});
+  if (keys.length === 0) return '';
+  var parts = [];
+  for (var i = 0; i < keys.length; i++) {
+    var key = keys[i];
+    var entry = request.querystring[key];
+    var values = entry.multiValue ? entry.multiValue : [entry];
+    for (var j = 0; j < values.length; j++) {
+      parts.push(encodeURIComponent(key) + '=' + encodeURIComponent(values[j].value));
+    }
+  }
+  return '?' + parts.join('&');
+}
+
 function handler(event) {
   var request = event.request;
   var uri = request.uri;
+  var hostHeader = request.headers.host;
+  var host = hostHeader ? hostHeader.value : CANONICAL_HOST;
+  var canonicalUri = uri;
+
+  // Collapse /index.html to the directory URL.
+  if (canonicalUri.endsWith('/index.html')) {
+    canonicalUri = canonicalUri.slice(0, -'index.html'.length);
+  }
+
+  // Extensionless paths get a trailing slash so each page has one URL.
+  var lastSegment = canonicalUri.substring(canonicalUri.lastIndexOf('/') + 1);
+  if (canonicalUri !== '/' && !canonicalUri.endsWith('/') && !lastSegment.includes('.')) {
+    canonicalUri += '/';
+  }
+
+  if (host !== CANONICAL_HOST || canonicalUri !== uri) {
+    return redirect('https://' + CANONICAL_HOST + canonicalUri + queryString(request));
+  }
 
   if (uri.endsWith('/')) {
     request.uri += 'index.html';
-  } else if (!uri.includes('.')) {
-    request.uri += '/index.html';
   }
 
   return request;
@@ -589,9 +639,9 @@ resource "aws_cloudfront_distribution" "site" {
   web_acl_id          = var.waf_web_acl_arn
 
   origin {
-    domain_name                 = aws_s3_bucket.site.bucket_regional_domain_name
-    origin_id                   = local.origin_id
-    origin_access_control_id    = aws_cloudfront_origin_access_control.site.id
+    domain_name              = aws_s3_bucket.site.bucket_regional_domain_name
+    origin_id                = local.origin_id
+    origin_access_control_id = aws_cloudfront_origin_access_control.site.id
 
     s3_origin_config {
       origin_access_identity = ""
@@ -684,9 +734,9 @@ resource "aws_cloudfront_distribution" "preview" {
   web_acl_id          = var.waf_web_acl_arn
 
   origin {
-    domain_name                 = aws_s3_bucket.preview.bucket_regional_domain_name
-    origin_id                   = local.preview_origin_id
-    origin_access_control_id    = aws_cloudfront_origin_access_control.site.id
+    domain_name              = aws_s3_bucket.preview.bucket_regional_domain_name
+    origin_id                = local.preview_origin_id
+    origin_access_control_id = aws_cloudfront_origin_access_control.site.id
 
     s3_origin_config {
       origin_access_identity = ""

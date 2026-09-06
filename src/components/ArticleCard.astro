@@ -15,12 +15,13 @@ const { article, headingLevel = "h2" } = Astro.props;
 const Heading = headingLevel;
 ---
 
-<a href={`/articles/${article.id.replace(/\.md$/, "")}`} class="block group">
-  <article
-    class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
-  >
+<a
+  href={`/articles/${article.id.replace(/\.md$/, "")}`}
+  class="interactive-card focus-ring block group rounded-lg"
+>
+  <article class="p-6 bg-white rounded-lg shadow-sm">
     <Heading
-      class="text-xl font-semibold text-navy group-hover:text-gold transition-colors mb-2"
+      class="text-xl font-semibold text-navy group-hover:text-gold-strong transition-colors mb-2"
     >
       {article.data.title}
     </Heading>

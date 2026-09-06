@@ -82,7 +82,7 @@ const structuredData = {
   <p class="text-sm text-slate-600 mb-10">
     New here? Start with the <a
       href="/process"
-      class="text-navy underline decoration-gold decoration-2 hover:text-gold"
+      class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
       >legal process guide</a
     >, then come back here when a motion, doctrine, or damages rule needs
     translation.
@@ -100,7 +100,7 @@ const structuredData = {
             {grouped[cat].map((entry) => (
               <a
                 href={`/terms-and-concepts/${entry.id}`}
-                class="block p-4 bg-white rounded border border-slate-200 hover:border-gold hover:shadow-sm transition-all"
+                class="interactive-card focus-ring block p-4 bg-white rounded border border-slate-200"
               >
                 <span class="font-semibold text-navy">{entry.data.term}</span>
                 <span class="text-slate-500 ml-2 text-sm">
