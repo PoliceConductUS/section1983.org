@@ -64,7 +64,17 @@ If there's body camera or other video evidence, defendants will invoke _Scott v.
 
 ## Your opposition
 
-This is the most important brief you'll write. Structure:
+This is the most important brief you'll write, and the most district-specific. Before you write a word, run the [local-rules worksheet](/articles/local-rules-and-standing-orders-in-a-section-1983-case). The required format of the fact statement varies by district, and failing it can deem the movant's facts admitted.
+
+The opposition has three parts. Spend your effort in this order.
+
+1. **The response to the movant's statement of facts**, in the district's exact format. Paragraph by paragraph: admit, or dispute with a precise record citation. An unsupported "disputed" is an admission.
+2. **Your statement of additional material facts**, if the district provides for one, carrying your version with record citations.
+3. **The brief**: introduction, standard, argument mapping the disputed facts onto each element the motion attacks, conclusion.
+
+The fact statement wins or loses the motion. The brief explains it.
+
+Structure of each part:
 
 ### Statement of disputed facts
 
@@ -75,6 +85,16 @@ Local rules typically require a separate "Statement of Facts" or "Response to De
 - **Add** additional material facts the defendant omitted
 
 **Check your local rules.** Many districts require a specific format (numbered paragraphs, citations). Failure to comply can result in the court deeming the defendant's facts admitted.
+
+### Your evidence
+
+Pleadings are not evidence at this stage. Every disputed fact needs an affidavit, a declaration under 28 U.S.C. § 1746, deposition testimony, or an exhibit. Your own declaration of what you saw and did is competent evidence. Write it in the first person, facts only, one fact per paragraph, and cite it by paragraph. Read [How to Write a Declaration](/articles/how-to-write-a-declaration-in-a-section-1983-case) and use the [sample declaration](/articles/sample-declaration-for-a-section-1983-case).
+
+Cite the record precisely: exhibit, page, and paragraph or line. Rule 56(c)(1)(A). "See the video" is not a citation. "Ex. A (Martinez BWC) at 03:12–03:19" is.
+
+### If you do not have the evidence yet
+
+If discovery has not happened, or the defendants have not produced what you need to oppose the motion, do not oppose on an empty record. File a [Rule 56(d) declaration](/terms-and-concepts/rule-56d-declaration) with your response. State the specific facts you need, why you cannot present them now, what discovery would obtain them, and how they would create a genuine dispute. Ask the court to defer ruling or deny the motion pending that discovery.
 
 ### Legal argument
 
@@ -90,7 +110,9 @@ For each claim:
 - **Relying on your complaint** — the complaint is not evidence at summary judgment
 - **Not following local rules** — format requirements for statements of fact are strictly enforced
 - **Missing the deadline** — an unopposed summary judgment motion is almost always granted
-- **Disputing everything** — pick your battles. Admit obvious facts and focus on the disputes that matter.
+- **Disputing everything** — pick your battles. Admit obvious facts and focus on the disputes that matter. A page of manufactured disputes buries the three genuine ones.
+- **Opposing on an empty record** — if you lack evidence because discovery was blocked or incomplete, file a Rule 56(d) declaration instead of an argument.
+- **Putting analysis in the declaration** — your declaration says what you saw and did. Calculations, comparisons of records, inferences, and legal conclusions belong in the brief.
 
 ## Partial summary judgment
 

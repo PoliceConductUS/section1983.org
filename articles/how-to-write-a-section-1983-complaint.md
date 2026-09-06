@@ -19,6 +19,8 @@ In a § 1983 case, this is often the most important document you will write. The
 
 The standard is called [plausibility pleading](/terms-and-concepts/plausibility-pleading). Your facts must give the judge a real reason to let each claim go forward. A bare possibility is not enough. Legal conclusions do not do that work. Facts do.
 
+Two things are also true. Rule 8 asks for a short and plain statement, not proof, and a pro se complaint is read generously. [_Erickson v. Pardus_](/cases/erickson-v-pardus). And when qualified immunity is raised, the Fifth Circuit demands specific facts for each officer. [_Kelson v. Clark_](/cases/kelson-v-clark). Write the complaint that satisfies the second rule, and cite the first one in your response brief.
+
 If you have not read [How the Defense Will Try to Shrink, Reframe, or Kill Your § 1983 Case](/articles/how-the-defense-will-try-to-shrink-reframe-or-kill-your-section-1983-case), read that too. It will help you see why the complaint needs to be this concrete.
 
 ## What the judge and the defense are going to do with your complaint
@@ -97,6 +99,23 @@ This is the heart of the complaint. Tell the story in specific, factual, chronol
 
 Each factual paragraph should describe something that happened: what someone said, what someone did, or what you observed.
 
+### The four kinds of sentences a complaint may contain
+
+Before you keep a sentence, decide which of these four it is:
+
+1. **Your personal knowledge.** Something you saw, heard, said, did, or felt. "Officer Smith grabbed my right arm."
+2. **An attributed record fact.** What an identified report, recording, or document says or shows. "The arrest report states that Plaintiff 'pulled away.'" A report's claim is not the truth of the claim. Attribute it.
+3. **A labeled inference.** A reasonable conclusion drawn from facts you have already stated. State the facts first, then the inference, and say it is one. "Officer Smith made the statement after the arrest, and no report contains it. Those facts support the inference that the statement was not a basis for the arrest."
+4. **A legal standard, application, or result.** Allowed only in the counts, where you state the elements and apply the facts to them. A legal conclusion is not a fact and cannot replace one.
+
+For each factual sentence, ask: Could I testify to this from personal knowledge? If not, does an identified source say it? If it is an inference, have I stated the facts it rests on and labeled it? If it is a legal conclusion, is it in a count and supported by the facts above it? If every answer is no, delete the sentence.
+
+Do not state a defendant's knowledge, intent, motive, or agreement as a fact unless you heard the officer say it or a record establishes it. Plead the words, the sequence, and the conduct, then state the inference.
+
+### "On information and belief" is not a shortcut
+
+You may plead a fact you cannot yet confirm if it is within the defendants' control, but only if you state what you already know, what records you expect to establish it, who controls those records, and why the inference is reasonable. "On information and belief, the City failed to train its officers" adds nothing. See [information and belief](/terms-and-concepts/information-and-belief) and [Rule 11](/terms-and-concepts/rule-11), which makes your signature a certification that every factual allegation has support or is specifically identified as one that will likely have support after discovery.
+
 ### Put each claim in its own count
 
 Give each claim its own numbered section. A typical complaint might include:
@@ -114,6 +133,16 @@ For each count, identify:
 
 That separation does more than make the complaint look neat. It makes it harder for the defense to say your complaint is a blur of accusations with no clear legal structure.
 
+### Number every paragraph and incorporate only what each count needs
+
+Rule 10(b) requires numbered paragraphs, each limited to a single set of circumstances. One event per paragraph. Numbered paragraphs let you, the defense, and the court cite facts precisely, and they let each count point to the exact paragraphs that support it.
+
+Do not begin each count with "Plaintiff incorporates all preceding paragraphs." That forces the court to hunt through the whole complaint for the facts that matter to this count. Instead, name the paragraphs: "Plaintiff incorporates paragraphs 12 through 24 and 31 through 35." When a count uses facts from after the arrest, say what limited job they do and that they were not known to the officer at the time of the arrest.
+
+### Address qualified immunity inside each count
+
+In the Fifth Circuit, a complaint that will face qualified immunity has to identify the clearly established law and connect it to what each officer did. A brief cannot do this for you later. Read [How to Plead Clearly Established Law Inside a Section 1983 Complaint](/articles/how-to-plead-clearly-established-law-in-a-section-1983-complaint) before you finish the counts.
+
 ### Be clear about capacity
 
 This trips up many pro se litigants.
@@ -122,6 +151,8 @@ This trips up many pro se litigants.
 - **[Official capacity](/terms-and-concepts/official-capacity)**: you are really suing the government entity. You usually need a [Monell](/terms-and-concepts/monell-liability) theory.
 
 Most people sue officers in individual capacity and bring a separate Monell claim against the city if the facts support it.
+
+An official-capacity claim against an officer is a claim against the city the officer works for. See [_Kentucky v. Graham_](/cases/kentucky-v-graham). If you already have a Monell count against the city for the same act, an official-capacity count against the officer for that act duplicates it, and courts routinely dismiss the duplicate. Pick one, or say what separate job each does.
 
 ### Only plead a city claim if you have facts
 
@@ -144,10 +175,22 @@ Each theory needs facts. "The City failed to train its officers" is a conclusion
 Tell the court what you want:
 
 - Compensatory damages (for injuries, medical bills, lost wages, emotional distress)
-- Punitive damages (available against individual defendants for egregious conduct)
+- Punitive damages (available against individual-capacity defendants only; a city cannot be made to pay punitive damages under Section 1983, see [_City of Newport v. Fact Concerts_](/cases/city-of-newport-v-fact-concerts-inc))
 - Declaratory relief (a court declaration that your rights were violated)
 - Injunctive relief (an order requiring the department to change a policy or practice)
 - Attorney's fees and costs (under 42 U.S.C. § 1988 — available even to pro se litigants for costs, though fee awards for pro se work are limited)
+
+### Know the accrual date for every count
+
+Different claims from the same arrest start their limitations clocks on different days. A false-arrest claim accrues when you are first held under legal process, usually your first court appearance, not when the charges are dropped. [_Wallace v. Kato_](/cases/wallace-v-kato). A fabricated-evidence due-process claim accrues when the criminal case ends in your favor. [_McDonough v. Smith_](/cases/mcdonough-v-smith). A Fourth Amendment malicious-prosecution claim also requires favorable termination, and any ending without a conviction counts. [_Thompson v. Clark_](/cases/thompson-v-clark). An excessive-force claim accrues on the day of the force.
+
+Before you finish the counts, write down the status of every criminal charge that came out of the incident (no charge, pending, dismissed, acquitted, convicted, plea) and the date. Then, for each count, name the accrual event. If a conviction stands and winning the count would necessarily imply it was invalid, [Heck](/terms-and-concepts/heck-doctrine) bars the count until the conviction is set aside. Do the analysis in your notes, and keep any admission of weakness out of the filed complaint.
+
+### Sign it and redact it
+
+Your signature is a certification under [Rule 11](/terms-and-concepts/rule-11) that the facts have support and the legal arguments are not frivolous. It applies to you as a pro se party.
+
+Before filing, search the complaint and every exhibit for Social Security numbers, dates of birth, minors' names, and financial account numbers. [Rule 5.2](/terms-and-concepts/rule-5-2-redaction) allows only the last four digits of the numbers, the year of birth, and a minor's initials. Arrest reports and medical records almost always need redaction.
 
 ## Mistakes that get complaints dismissed
 
@@ -172,7 +215,11 @@ Each constitutional claim has specific elements. If you leave out the key facts 
 
 ### Ignoring qualified immunity exposure
 
-While [qualified immunity](/terms-and-concepts/qualified-immunity) is technically an affirmative defense, a good complaint still anticipates it. If your circuit has clearly established law on similar facts, use it.
+While [qualified immunity](/terms-and-concepts/qualified-immunity) is technically an affirmative defense, in the Fifth Circuit the complaint has to answer it. Identify the right at the level of the conduct, cite a binding case decided before the incident, and compare the facts, for each officer. See [How to Plead Clearly Established Law Inside a Section 1983 Complaint](/articles/how-to-plead-clearly-established-law-in-a-section-1983-complaint).
+
+### Attaching the video or the report
+
+Anything you attach becomes part of the complaint, including the parts that hurt you. Audit the whole recording or document first. See [Should You Attach the Video to Your Complaint?](/articles/video-evidence-and-your-section-1983-complaint).
 
 ## Checklist before you file
 
@@ -187,6 +234,9 @@ Before [filing](/process/filing), check each item below:
 - [ ] Connected each defendant to specific conduct (no group pleading)
 - [ ] Addressed [qualified immunity](/terms-and-concepts/qualified-immunity) exposure — are there similar cases from your circuit?
 - [ ] Included damages — what harm did you suffer?
+- [ ] Named the accrual event for the count and confirmed the count is timely
+- [ ] Every factual sentence is personal knowledge, an attributed record fact, or a labeled inference
+- [ ] Incorporated only the paragraphs this count needs, by number
 
 **For [Monell](/terms-and-concepts/monell-liability) claims (against the municipality):**
 
@@ -201,6 +251,10 @@ Before [filing](/process/filing), check each item below:
 - [ ] Included a [jury demand](/terms-and-concepts/section-1983) if you want a jury trial
 - [ ] Civil cover sheet completed
 - [ ] Filing fee paid or [IFP](/terms-and-concepts/in-forma-pauperis) application attached
+- [ ] Signed, with the [Rule 11](/terms-and-concepts/rule-11) certification in mind
+- [ ] Social Security numbers, birth dates, minors' names, and account numbers redacted under [Rule 5.2](/terms-and-concepts/rule-5-2-redaction), in the complaint and every exhibit
+- [ ] No official-capacity count that duplicates the Monell count for the same act
+- [ ] Punitive damages requested only from individual-capacity defendants
 
 ## Check Your Understanding
 

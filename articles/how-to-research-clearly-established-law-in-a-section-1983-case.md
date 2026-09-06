@@ -69,6 +69,20 @@ Make a simple chart:
 
 This helps you see whether the case is actually useful or just emotionally satisfying.
 
+## Verify each case before you rely on it
+
+A search result, a headnote, or an AI summary is a lead, not a citation. Before a case goes into your comparison table, confirm from the opinion itself:
+
+1. **Identity.** The case exists, and the name, reporter, volume, page, court, and year are right.
+2. **Status.** It has not been reversed, vacated, overruled, or limited. Check later history.
+3. **Date.** It was decided before your incident. A case decided afterward cannot have given the officer fair warning.
+4. **Court.** For clearly established law in this circuit, only the Supreme Court and the Fifth Circuit's published opinions count. Unpublished decisions and district court opinions do not, though they may show how a rule has been applied.
+5. **Voice.** The sentence you rely on is the majority speaking as a holding, not dicta, not a party's argument, not the lower court's ruling being reviewed, not a dissent.
+6. **Pinpoint.** The page you cite says what you claim.
+7. **Posture.** A statement about what the evidence showed at summary judgment is not a rule about what must be pleaded.
+
+Mark anything not yet verified with a flag such as `[VERIFY]` in your draft, and resolve every flag before filing. If you use AI tools to find cases, read [How to Use AI in Your Section 1983 Case](/articles/how-to-use-ai-in-your-section-1983-case) for the verification habits that keep you out of trouble.
+
 ## Where to look
 
 - [CourtListener](https://www.courtlistener.com/) for free opinions and dockets
@@ -110,6 +124,12 @@ Your brief should do more than drop citations. Explain the fit:
 - why the similarities matter more than the differences
 
 That is how you turn research into a qualified-immunity argument the judge can actually use.
+
+In the Fifth Circuit, the analysis belongs in the complaint as well as the brief. For how to write it there, officer by officer, read [How to Plead Clearly Established Law Inside a Section 1983 Complaint](/articles/how-to-plead-clearly-established-law-in-a-section-1983-complaint).
+
+### An empty search proves nothing
+
+Not finding a case does not mean there is no case. Record what you searched, where, and when. Then keep looking through the cases cited inside the opinions you already found. If you still find nothing close, say so honestly and consider whether the obvious-clarity path applies. Do not tell the court the law is silent because your search was.
 
 Clearly established law research is not about finding a quote you like. It is about finding a case whose facts a judge cannot easily distinguish away.
 

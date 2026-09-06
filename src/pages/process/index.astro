@@ -36,36 +36,42 @@ const processStages = [
   },
   {
     order: 5,
+    name: "Report and Recommendation",
+    url: "https://www.section1983.org/process/report-and-recommendation/",
+    text: "The magistrate judge proposes a ruling; you have 14 days to object.",
+  },
+  {
+    order: 6,
     name: "Answer and Affirmative Defenses",
     url: "https://www.section1983.org/process/answer/",
     text: "Defendants admit, deny, and preserve defenses.",
   },
   {
-    order: 6,
+    order: 7,
     name: "Discovery",
     url: "https://www.section1983.org/process/discovery/",
     text: "Both sides exchange evidence, documents, and testimony.",
   },
   {
-    order: 7,
+    order: 8,
     name: "Summary Judgment",
     url: "https://www.section1983.org/process/summary-judgment/",
     text: "Defendants try to end the case without trial.",
   },
   {
-    order: 8,
+    order: 9,
     name: "Interlocutory Appeal",
     url: "https://www.section1983.org/process/interlocutory-appeal/",
     text: "Qualified-immunity denials can trigger a mid-case appeal and stay the case.",
   },
   {
-    order: 9,
+    order: 10,
     name: "Pretrial",
     url: "https://www.section1983.org/process/pretrial/",
     text: "Prepare exhibits, witnesses, motions in limine, and jury instructions.",
   },
   {
-    order: 10,
+    order: 11,
     name: "Trial",
     url: "https://www.section1983.org/process/trial/",
     text: "Present the evidence to the judge or jury.",
@@ -182,10 +188,11 @@ const structuredData = {
         </div>
       </article>
 
-      <a href="/process/filing/" class="interactive-card focus-ring block group rounded-lg">
-        <article
-          class="p-5 bg-white rounded-lg shadow-sm"
-        >
+      <a
+        href="/process/filing/"
+        class="interactive-card focus-ring block group rounded-lg"
+      >
+        <article class="p-5 bg-white rounded-lg shadow-sm">
           <h3
             class="text-lg font-semibold text-navy group-hover:text-gold-strong transition-colors"
           >
@@ -202,10 +209,11 @@ const structuredData = {
         </article>
       </a>
 
-      <a href="/process/service/" class="interactive-card focus-ring block group rounded-lg">
-        <article
-          class="p-5 bg-white rounded-lg shadow-sm"
-        >
+      <a
+        href="/process/service/"
+        class="interactive-card focus-ring block group rounded-lg"
+      >
+        <article class="p-5 bg-white rounded-lg shadow-sm">
           <h3
             class="text-lg font-semibold text-navy group-hover:text-gold-strong transition-colors"
           >
@@ -221,10 +229,11 @@ const structuredData = {
         </article>
       </a>
 
-      <a href="/process/rule-12-motions/" class="interactive-card focus-ring block group rounded-lg">
-        <article
-          class="p-5 bg-white rounded-lg shadow-sm"
-        >
+      <a
+        href="/process/rule-12-motions/"
+        class="interactive-card focus-ring block group rounded-lg"
+      >
+        <article class="p-5 bg-white rounded-lg shadow-sm">
           <h3
             class="text-lg font-semibold text-navy group-hover:text-gold-strong transition-colors"
           >
@@ -240,15 +249,36 @@ const structuredData = {
           </p>
         </article>
       </a>
-
-      <a href="/process/answer/" class="interactive-card focus-ring block group rounded-lg">
-        <article
-          class="p-5 bg-white rounded-lg shadow-sm"
-        >
+      <a
+        href="/process/report-and-recommendation/"
+        class="interactive-card focus-ring block group rounded-lg"
+      >
+        <article class="p-5 bg-white rounded-lg shadow-sm">
           <h3
             class="text-lg font-semibold text-navy group-hover:text-gold-strong transition-colors"
           >
-            5. Answer & Affirmative Defenses
+            5. Report & Recommendation
+          </h3>
+          <p class="text-slate text-sm mt-1">
+            In most pro se cases a magistrate judge writes the first ruling on
+            the motion to dismiss. You have 14 days to file specific objections.
+            Miss the deadline or object vaguely and the ruling sticks.
+          </p>
+          <p class="text-xs text-slate mt-2">
+            <strong>Magistrate judge issues the R&R.</strong> Either party objects.
+          </p>
+        </article>
+      </a>
+
+      <a
+        href="/process/answer/"
+        class="interactive-card focus-ring block group rounded-lg"
+      >
+        <article class="p-5 bg-white rounded-lg shadow-sm">
+          <h3
+            class="text-lg font-semibold text-navy group-hover:text-gold-strong transition-colors"
+          >
+            6. Answer & Affirmative Defenses
           </h3>
           <p class="text-slate text-sm mt-1">
             If your complaint survives Rule 12, defendants must respond to each
@@ -262,14 +292,15 @@ const structuredData = {
         </article>
       </a>
 
-      <a href="/process/discovery/" class="interactive-card focus-ring block group rounded-lg">
-        <article
-          class="p-5 bg-white rounded-lg shadow-sm"
-        >
+      <a
+        href="/process/discovery/"
+        class="interactive-card focus-ring block group rounded-lg"
+      >
+        <article class="p-5 bg-white rounded-lg shadow-sm">
           <h3
             class="text-lg font-semibold text-navy group-hover:text-gold-strong transition-colors"
           >
-            6. Discovery
+            7. Discovery
           </h3>
           <p class="text-slate text-sm mt-1">
             Both sides exchange evidence — documents, written questions,
@@ -283,14 +314,15 @@ const structuredData = {
         </article>
       </a>
 
-      <a href="/process/summary-judgment/" class="interactive-card focus-ring block group rounded-lg">
-        <article
-          class="p-5 bg-white rounded-lg shadow-sm"
-        >
+      <a
+        href="/process/summary-judgment/"
+        class="interactive-card focus-ring block group rounded-lg"
+      >
+        <article class="p-5 bg-white rounded-lg shadow-sm">
           <h3
             class="text-lg font-semibold text-navy group-hover:text-gold-strong transition-colors"
           >
-            7. Summary Judgment
+            8. Summary Judgment
           </h3>
           <p class="text-slate text-sm mt-1">
             Defendants ask the court to end your case without a trial. They'll
@@ -303,7 +335,10 @@ const structuredData = {
         </article>
       </a>
 
-      <a href="/process/interlocutory-appeal/" class="interactive-card focus-ring block group rounded-lg">
+      <a
+        href="/process/interlocutory-appeal/"
+        class="interactive-card focus-ring block group rounded-lg"
+      >
         <article
           class="p-5 bg-white rounded-lg shadow-sm border-l-4 border-red-400"
         >
@@ -324,14 +359,15 @@ const structuredData = {
         </article>
       </a>
 
-      <a href="/process/pretrial/" class="interactive-card focus-ring block group rounded-lg">
-        <article
-          class="p-5 bg-white rounded-lg shadow-sm"
-        >
+      <a
+        href="/process/pretrial/"
+        class="interactive-card focus-ring block group rounded-lg"
+      >
+        <article class="p-5 bg-white rounded-lg shadow-sm">
           <h3
             class="text-lg font-semibold text-navy group-hover:text-gold-strong transition-colors"
           >
-            8. Pretrial
+            9. Pretrial
           </h3>
           <p class="text-slate text-sm mt-1">
             The court prepares for trial — conferences, motions in limine,
@@ -344,14 +380,15 @@ const structuredData = {
         </article>
       </a>
 
-      <a href="/process/trial/" class="interactive-card focus-ring block group rounded-lg">
-        <article
-          class="p-5 bg-white rounded-lg shadow-sm"
-        >
+      <a
+        href="/process/trial/"
+        class="interactive-card focus-ring block group rounded-lg"
+      >
+        <article class="p-5 bg-white rounded-lg shadow-sm">
           <h3
             class="text-lg font-semibold text-navy group-hover:text-gold-strong transition-colors"
           >
-            9. Trial
+            10. Trial
           </h3>
           <p class="text-slate text-sm mt-1">
             You present your evidence to a judge or jury. You go first (burden
@@ -364,10 +401,11 @@ const structuredData = {
         </article>
       </a>
 
-      <a href="/process/post-trial-and-appeal/" class="interactive-card focus-ring block group rounded-lg">
-        <article
-          class="p-5 bg-white rounded-lg shadow-sm"
-        >
+      <a
+        href="/process/post-trial-and-appeal/"
+        class="interactive-card focus-ring block group rounded-lg"
+      >
+        <article class="p-5 bg-white rounded-lg shadow-sm">
           <h3
             class="text-lg font-semibold text-navy group-hover:text-gold-strong transition-colors"
           >

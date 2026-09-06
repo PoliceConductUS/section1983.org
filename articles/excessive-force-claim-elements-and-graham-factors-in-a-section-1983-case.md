@@ -10,7 +10,7 @@ draft: false
 
 An [excessive force](/terms-and-concepts/excessive-force) case usually comes down to one question: was the force reasonable at the moment it was used?
 
-Courts answer that question under [Graham v. Connor](/terms-and-concepts/excessive-force). In practice, that means small facts matter. A few seconds matter. Your body position matters. Video angle matters. Whether the court thinks you were a threat matters.
+Courts answer that question under [_Graham v. Connor_](/cases/graham-v-connor). In practice, that means small facts matter. A few seconds matter. Your body position matters. Video angle matters. Whether the court thinks you were a threat matters.
 
 This guide is the practical version of the doctrine. Read it with [Terms and Concepts: Excessive Force](/terms-and-concepts/excessive-force), the [sample declaration for a Section 1983 case](/articles/sample-declaration-for-a-section-1983-case), and [how to research clearly established law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case).
 
@@ -34,6 +34,17 @@ Courts usually come back to three questions:
 
 These are not math rules. Judges use them to decide whether the officer's story sounds reasonable.
 
+## The events before the force count too
+
+For years, some courts, including the Fifth Circuit, judged force only by the "moment of threat," the few seconds right before the officer acted. In [_Barnes v. Felix_](/cases/barnes-v-felix), decided in 2025, the Supreme Court rejected that rule. The reasonableness inquiry looks at the totality of the circumstances, and it has no time limit. What the officer did in the minutes before the force, and how those choices created or reduced the danger, is part of the analysis.
+
+For your complaint, that means:
+
+- plead the encounter from the beginning, not from the moment of force
+- describe each officer's actions that raised or lowered the risk, and how much time passed between each event and the force
+- state what warning was given, if any, and how long before the force
+- do not confine the count's application to the instant the force was used
+
 ## Facts that matter most
 
 These details usually matter more than broad labels like "brutal" or "unnecessary":
@@ -47,6 +58,8 @@ These details usually matter more than broad labels like "brutal" or "unnecessar
 - whether medical records document the injury
 
 The court needs scene details. It does not need adjectives.
+
+When you describe video, describe what it shows continuously and clearly. Mark the seconds when the camera is blocked or the audio drops. A recording that does not show your hands does not show you were not resisting, and it does not show you were. Say what it shows and what it does not. See [Should You Attach the Video to Your Complaint?](/articles/video-evidence-and-your-section-1983-complaint).
 
 ## Common excessive force patterns
 
@@ -78,7 +91,7 @@ That is why your factual record has to be concrete. If the case depends on your 
 
 [Qualified immunity](/terms-and-concepts/qualified-immunity) is still a major obstacle. Even when a court thinks the force looks excessive, the officer can still win unless earlier case law clearly warned officers in similar circumstances.
 
-That is why research matters. If your facts involve a prone suspect, a handcuffed suspect, repeated taser use, or force after surrender, look for circuit cases on those exact patterns. Start with [how to research clearly established law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case).
+That is why research matters. If your facts involve a prone suspect, a handcuffed suspect, repeated taser use, or force after surrender, look for circuit cases on those exact patterns. Start with [how to research clearly established law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case). Then put the analysis in the complaint itself, officer by officer. See [How to Plead Clearly Established Law Inside a Section 1983 Complaint](/articles/how-to-plead-clearly-established-law-in-a-section-1983-complaint).
 
 ## How these cases usually fail
 

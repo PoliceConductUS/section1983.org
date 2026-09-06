@@ -31,9 +31,19 @@ That standard is lower than most people expect.
 
 ## The most common defense
 
-Under [Devenpeck v. Alford](/terms-and-concepts/false-arrest), the defense can switch to some other offense if the facts supported it.
+Under [_Devenpeck v. Alford_](/cases/devenpeck-v-alford), the defense can switch to some other offense if the facts supported it. And under [_Atwater v. City of Lago Vista_](/cases/atwater-v-city-of-lago-vista), even a fine-only misdemeanor supports a full custodial arrest.
 
-That is why a good complaint should do two things: say why the stated charge was unsupported and plead facts showing there was no fallback offense.
+That is why a good complaint should do two things: say why the stated charge was unsupported and plead facts showing there was no fallback offense that the facts actually raised.
+
+Address an alternative offense when the defense, a court ruling, or the obvious facts put it in play. Do not inventory every offense you can imagine. A complaint that negates twelve hypothetical charges reads like a brief and invites the court to find one you missed.
+
+## Fix the moment of seizure
+
+Probable cause is measured at the moment you were seized, using only the facts the officer knew then. So the complaint has to say when that moment was.
+
+A seizure by show of authority is complete when you submit to it: you stop when told to stop, you put your hands up on command. A seizure by physical force is complete when the officer touches you. Whichever came first is the seizure point. Later handcuffing, later touching, and later "resistance" happen inside an existing seizure. They do not move its start.
+
+Plead the earliest supported moment by exact time or the narrowest interval the record supports. Then plead what each officer knew at that moment. Anything the officer learned afterward, including what you did after being grabbed and what the report says, cannot justify the decision already made.
 
 ## Common false arrest scenarios
 
@@ -109,15 +119,49 @@ These cases often turn on:
 
 That is why public records matter. Arrest reports, CAD logs, body-camera footage, and policy manuals often tell you whether the case is real or whether it only feels real. Start with [FOIA and Records Requests](/process/foia-and-records-requests) if you have not done that work yet.
 
-## How false arrest complaints usually fail
+## What surviving false-arrest complaints have in common
+
+A review of false-arrest complaints that survived dismissal or were allowed into discovery found the same features again and again. The strongest complaints supplied:
+
+- the exact seizure point
+- the suspected offense and its required elements, stated from the statute
+- the facts known to each officer at that moment
+- what you did, and the material things you did not do (no threat, no flight, no touching, no refusal of a command)
+- a clean separation between the arrest decision and any later resistance or force
+- what each officer personally did, instead of "the officers"
+- a direct statement connecting the missing element to the facts, so the court does not have to assemble the theory
+- a short pleading, not a memo
+
+For a Fifth Circuit example, see [_Buehler v. Dear_](/cases/buehler-v-dear), where concrete facts about distance, compliance, and filming negated the elements of the stated offenses at the pleading stage, and [_Mesa v. Prejean_](/cases/mesa-v-prejean), where fact disputes about probable cause for trespass and disturbing the peace defeated qualified immunity at summary judgment.
+
+## Eleven ways false-arrest complaints fail
 
 Most bad pleadings fail in predictable ways:
 
-- they describe the arrest as unfair without saying what you were doing
-- they do not negate obvious alternative offenses
-- they ignore the possibility of [Heck](/terms-and-concepts/heck-doctrine)
-- they do not address arguable probable cause under qualified immunity
-- they do not identify which officer actually made the arrest
+- a bare "there was no probable cause" with no offense elements and no facts
+- silence on an alternative offense the facts obviously raise
+- a later event, such as the report or your reaction to being grabbed, used to justify the earlier arrest
+- "the officers" did everything, so no one officer did anything
+- a warrant challenged without saying who supplied the false fact to the affiant and how
+- a post-arrest act pleaded as the cause of the arrest
+- an attached video or report that contradicts the complaint's own characterization
+- conspiracy inferred from the fact that officers were present together
+- a Monell label, a statistic, or a list of theories with no attribution, notice, injury, or causal mechanism
+- "on information and belief" used in place of facts you could have pleaded
+- a plan to use discovery to find an essential allegation the complaint does not yet have
+
+Two more habits that are not on the list but sink cases anyway:
+
+- ignoring the possibility of [Heck](/terms-and-concepts/heck-doctrine)
+- assuming the clock started when the charges were dropped. A false-arrest claim accrues at your first court appearance under [_Wallace v. Kato_](/cases/wallace-v-kato), not at dismissal.
+
+## What dismissal of the charges does not prove
+
+A dismissal, a nolle prosequi, or a suppression ruling in the criminal case does not establish that probable cause was missing. Prosecutors drop charges for many reasons. Plead the absence of probable cause from the facts at the scene, not from the outcome in criminal court. The outcome matters for a different claim, malicious prosecution, where any termination without a conviction satisfies the favorable-termination element under [_Thompson v. Clark_](/cases/thompson-v-clark).
+
+## When the report is false
+
+If the arrest report or the probable-cause affidavit contains statements the video or your own knowledge contradicts, plead each one in four steps: the statement, the contradiction and its source, the corrected account, and why the correction matters to the offense element or the probable-cause decision. Read [How to Plead a False Police Report or Warrant Affidavit](/articles/how-to-plead-a-false-police-report-or-warrant-affidavit).
 
 If you are writing one now, compare your draft against the [sample false arrest complaint](/articles/sample-section-1983-complaint-for-a-false-arrest-case).
 

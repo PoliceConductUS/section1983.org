@@ -16,6 +16,23 @@ This is where § 1983 cases are won or lost. The facts that will decide your cas
 
 It's also the most resource-intensive phase of litigation and the stage where the government's resource advantage hits hardest.
 
+## Plan before you serve anything
+
+Discovery requests that are not tied to a claim and an element produce paper you cannot use. Before you write a single request, build a target map.
+
+| Claim | Defendant | Element | What I still need to prove it | Who probably has it | What form it is probably in |
+| ----- | --------- | ------- | ----------------------------- | ------------------- | --------------------------- |
+
+One row per claim, defendant, and element. Then write each request to close a specific row, and note the row number next to the request in your working copy. A request that does not close any row is a request you can cut when you hit the numerical limits.
+
+Three rules that keep requests tight:
+
+- **Count first.** Interrogatories are capped at 25 per party, including subparts, unless the court allows more. Some scheduling orders cap requests for production and admission too. Know the limits before you draft, and prioritize rows that matter most.
+- **Ask whether a source exists before you ask what it says.** "Produce the use-of-force report for the incident" assumes one exists. If none does, the answer is "none," and you have learned nothing. Ask first: "Identify every report, form, or log created in connection with the incident, by title, author, and date." Then request production.
+- **One fact per request for admission.** "Admit that Officer Martinez did not give a verbal warning before deploying the taser" can be admitted or denied. A compound request gets a compound answer that admits nothing.
+
+The "who has it" and "what form" columns are expectations, not facts. Do not tell the court that a record exists until a response or production confirms it.
+
 ## Discovery tools
 
 ### Initial disclosures (Rule 26(a))
@@ -112,7 +129,10 @@ Government defendants have lawyers whose full-time job is litigation. You have y
 
 ### What you can do
 
-- **Meet and confer first** — before filing any discovery motion, you must attempt to resolve the dispute directly with opposing counsel (Rule 37(a)(1)). Document these attempts in writing (email).
+- **Audit the responses request by request** — before you argue about anything, record for each request what was answered, what was objected to, what was produced, and what was withheld. Read [How to Audit Discovery Responses](/articles/how-to-audit-discovery-responses-in-a-section-1983-case).
+- **Meet and confer first** — before filing any discovery motion, you must attempt to resolve the dispute directly with opposing counsel (Rule 37(a)(1)). Do it in writing and keep the record. See the [sample meet-and-confer letter](/articles/sample-meet-and-confer-letter-discovery) and the term page on [meet and confer](/terms-and-concepts/meet-and-confer).
+- **Demand a real privilege log** — a privilege claim without a log that identifies each withheld document is not a valid withholding. Read [Privilege Logs in a Section 1983 Case](/articles/privilege-logs-in-a-section-1983-case).
+- **Build deposition outlines from element gaps** — not from curiosity. Read [How to Build a Deposition Outline](/articles/how-to-build-a-deposition-outline-in-a-section-1983-case).
 - **File [motions to compel](/terms-and-concepts/motion-to-compel)** — if they won't produce, ask the court to order it (Rule 37)
 - **Ask the court to penalize them** — if their obstruction is egregious, ask for court-imposed penalties including fees, adverse inference instructions (the jury is told to assume the hidden evidence was bad for the defendant), or evidence preclusion
 - **Be specific** — vague requests get vague objections. Ask for specific documents by name, date range, and custodian.

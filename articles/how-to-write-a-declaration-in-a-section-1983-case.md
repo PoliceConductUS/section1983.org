@@ -33,6 +33,30 @@ An **affidavit** is sworn before a notary public, who stamps and signs it. A **d
 
 Most pro se litigants should use declarations rather than affidavits. They're easier to prepare and equally effective.
 
+## The six kinds of statements, and which two belong in a declaration
+
+Before a sentence goes into your declaration, classify it:
+
+1. **Firsthand fact.** You personally saw, heard, said, did, or felt it. Belongs in the declaration.
+2. **Attributed record fact.** What an identified document or recording says or shows, stated as such: "Exhibit B, the dispatch log, shows a call time of 11:31 p.m." Belongs in the declaration, attributed to the record. Reading a report does not make its contents your personal knowledge. You can say what the report states. You cannot say that what it states happened.
+3. **Derived analysis.** A calculation, a count, a comparison across records. Belongs in the brief, with the records attached.
+4. **Inference.** A conclusion drawn from other facts: "the officer must have known." Belongs in the brief.
+5. **Legal conclusion.** "The force was excessive." Belongs in the brief.
+6. **Discovery expectation.** What a recording or record you have not seen would show. Belongs nowhere in a declaration. If a source is missing or unproduced, that is a gap, and the tool for it is a [Rule 56(d) declaration](/terms-and-concepts/rule-56d-declaration) explaining what you need and why you do not have it.
+
+A declaration paragraph survives only if it is type one or type two, and only if you can say, for that specific paragraph, how you know it and why you are competent to say it. A generic "I have personal knowledge of the facts stated herein" at the top does not cover a paragraph you could not actually testify to.
+
+## Laying the foundation for exhibits
+
+Every exhibit you attach needs a sentence in the declaration that lets the court accept it as what you say it is. For each exhibit, be ready to state:
+
+- what it is and how you recognize it
+- how you came to have it: you created it, you received it from a named source on a date, you downloaded it from a named records portal, or it was produced to you in discovery
+- how it has been kept since
+- if you claim it is complete or accurate, what supports that
+
+"Exhibit A is a true and correct copy of the body-camera video produced by Defendants on June 3, 2025, labeled BWC_Martinez_030325. I downloaded it from the production link Defendants' counsel provided and have not altered it." Do not describe an exhibit as "authenticated" or "admissible." Those are the court's conclusions. Give the facts that support them.
+
 ## Common mistakes that weaken declarations
 
 ### Legal conclusions instead of facts
@@ -101,7 +125,7 @@ If you know the officer claims you were resisting, address it directly: "At no p
 > 4. **[Each paragraph should contain a single, verifiable factual statement. Do not include legal conclusions, opinions about the officer's motives, or characterizations like "the officer was aggressive." Describe what happened: what was said, what was done, what you observed.]**
 > 5. **[Continue until you've covered all relevant facts.]**
 >
-> I declare under penalty of perjury under the laws of the United States that the foregoing is true and correct.
+> I declare under penalty of perjury that the foregoing is true and correct.
 >
 > Executed on **[date]** at **[city, state]**.
 >
@@ -115,6 +139,7 @@ If you know the officer claims you were resisting, address it directly: "At no p
 - Reference evidence. "As shown in Exhibit A, the body camera footage at timestamp 03:12" is stronger than "I believe the officer hit me."
 - No legal conclusions. "The officer used excessive force" is for your brief. Your declaration says what happened; your brief argues what it means.
 - Sign and date it. An unsigned declaration has no legal effect.
+- Use the right statutory form. Section 1746 has two. For a declaration signed inside the United States: "I declare under penalty of perjury that the foregoing is true and correct. Executed on (date)." For one signed outside the United States: "I declare under penalty of perjury under the laws of the United States of America that the foregoing is true and correct. Executed on (date)." Pick the one that matches where you actually sign. Do not mix them.
 
 ---
 

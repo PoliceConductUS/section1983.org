@@ -85,6 +85,20 @@ This isn't a rare glitch. It's a fundamental limitation of how these tools work.
 
 If you can't find the case, it probably doesn't exist. Delete it from your filing.
 
+### Verify like an auditor, not like a reader
+
+Finding the case is step one. A real citation, a working link, and a confident summary do not establish that the case supports your point. Treat every AI result, search snippet, and citator symbol as a lead, then audit the lead against the opinion itself.
+
+- **Break your sentence into atomic propositions.** "Officers may not tase a handcuffed, nonresisting arrestee, and this was clearly established by 2019" is two propositions. Each needs its own support at its own pinpoint. One case may support both only if it actually holds both.
+- **Read the voice.** An opinion contains the majority's holding, its dicta, the parties' arguments as summarized, the lower court's ruling under review, the facts, and sometimes a concurrence or dissent. AI summaries blur these. Confirm that the sentence you rely on is the court speaking, in the majority, as a holding. Quoting a dissent or a party's argument as the court's rule is a sanctionable error.
+- **Check the posture.** A statement made at summary judgment about what the evidence showed is not a pleading rule. A statement about whether a right was clearly established in 2012 says nothing about 2024.
+- **Check the jurisdiction and the date.** Binding before persuasive. For clearly established law, only Supreme Court and Fifth Circuit published decisions decided before your incident count.
+- **Transcribe quotations, never reconstruct them.** If you cannot see the source text, paraphrase without quotation marks and cite.
+- **One proposition, one best citation.** A string of six cases spends the reader's attention and hides the one that matters.
+- **An empty search proves nothing.** If you cannot find a case saying the officer could do this, that does not mean no such case exists. Say what you searched and what you found, not that the law is silent.
+
+Until a proposition has passed that audit, mark it in your draft with a flag such as `[VERIFY]`. Before filing, every flag must be resolved or the sentence deleted. Read [How to Research Clearly Established Law](/articles/how-to-research-clearly-established-law-in-a-section-1983-case) for the research method and [How to Plead Clearly Established Law Inside a Section 1983 Complaint](/articles/how-to-plead-clearly-established-law-in-a-section-1983-complaint) for what to do with the cases you verify.
+
 **Coming soon:** Once we have sufficient funding, we're building a free citation audit tool right here on section1983.org. Upload your draft filing and it will automatically verify every case citation, flag anything that can't be found, and generate a table of authorities — powered by tools like Free Law Project's <a href="https://free.law/projects/eyecite" target="_blank" rel="noopener">eyecite ↗</a>. Until then, verify manually — every single citation, every single time.
 
 **Free tools you should install now:**

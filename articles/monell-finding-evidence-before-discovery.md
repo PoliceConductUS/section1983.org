@@ -133,6 +133,12 @@ Still request it. Policy documents can help in several ways:
 
 That can support policy, training, notice, and final-policymaker theories at once.
 
+Three cautions when you read policy documents:
+
+- **Adoption is not the same as existence.** A model policy from a national association, an accreditation standard, a training slide deck, or a form is not department policy unless the department adopted it. Look for the adoption evidence: a signature, an effective date, a general order number, a reference in the department manual. Without it, plead the document as a comparison point or a training material, not as the policy.
+- **Version matters.** Policies are revised. The version in force on the date of your incident is the one that counts. Get the effective date and the revision history, and never apply a later version to an earlier event. If you cannot pin the version, say so rather than guessing.
+- **Classify the source.** An ordinance, a state statute, a collective-bargaining agreement, an accreditation standard, and a department general order are different kinds of documents with different legal effects. Say which one you are quoting.
+
 ## Build a simple Monell evidence file
 
 Do not collect records randomly. Organize them.
@@ -185,6 +191,14 @@ The incidents need to be similar enough to matter.
 ### Forgetting to identify the source
 
 If you cannot say where the fact came from, it is harder to use it cleanly in the complaint.
+
+### Treating an empty search as proof
+
+A records request that comes back empty, an archive that is offline, or a search that finds no prior complaints does not prove there were none. Record the request, the response, and the gap. Then plead what you know and, where the missing records are in the city's control, use a properly framed [information-and-belief](/terms-and-concepts/information-and-belief) allegation that says what you expect the records to show.
+
+### Pleading a model policy as the department's policy
+
+See the cautions above. A national model policy the department never adopted proves what good practice looks like. It does not prove what the department told its officers.
 
 ## What to do with what you find
 
