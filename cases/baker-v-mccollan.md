@@ -1,7 +1,7 @@
 ---
 title: "Baker v. McCollan"
 citation: "443 U.S. 137 (1979)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 1979-06-26
 docketNumber: "78-752"
 courtlistener: "https://www.courtlistener.com/opinion/110137/baker-v-mccollan/"

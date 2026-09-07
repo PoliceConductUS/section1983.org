@@ -1,7 +1,7 @@
 ---
 title: "Cole v. Carson"
 citation: "935 F.3d 444 (5th Cir. 2019)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2019-08-20
 docketNumber: "14-10228"
 courtlistener: "https://www.courtlistener.com/opinion/4689093/cole-v-carson/"

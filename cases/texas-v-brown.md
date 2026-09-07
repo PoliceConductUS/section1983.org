@@ -1,7 +1,7 @@
 ---
 title: "Texas v. Brown"
 citation: "460 U.S. 730 (1983)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 1983-04-19
 docketNumber: "81-419"
 holding: "The plain view doctrine permits seizure of evidence without a warrant when an officer is lawfully in a position to view the object, its incriminating character is immediately apparent, and the officer has lawful access to the object; 'immediately apparent' requires only probable cause, not certainty, that the item is contraband or evidence of a crime."

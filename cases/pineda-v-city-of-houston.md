@@ -1,7 +1,7 @@
 ---
 title: "Pineda v. City of Houston"
 citation: "291 F.3d 325 (5th Cir. 2002)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2002-05-09
 docketNumber: "01-20189"
 holding: "A municipality was not liable under Monell for an unconstitutional warrantless entry and fatal shooting by officers on a gang task force, where the plaintiffs failed to show a city policy or custom was the moving force behind the officers' decision to enter the home without a warrant."

@@ -1,7 +1,7 @@
 ---
 title: "McKinley v. City of Eloy"
 citation: "705 F.2d 1110 (9th Cir. 1983)"
-court: "Ninth Circuit"
+court: "United States Court of Appeals for the Ninth Circuit"
 dateDecided: 1983-05-09
 docketNumber: "81-5850"
 courtlistener: "https://www.courtlistener.com/opinion/8927003/mckinley-v-city-of-eloy/"

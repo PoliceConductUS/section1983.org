@@ -1,7 +1,7 @@
 ---
 title: "Northington v. Jackson"
 citation: "973 F.2d 1518 (10th Cir. 1992)"
-court: "Tenth Circuit"
+court: "United States Court of Appeals for the Tenth Circuit"
 dateDecided: 1992-08-17
 docketNumber: "92-1068"
 courtlistener: "https://www.courtlistener.com/opinion/9009812/northington-v-jackson/"

@@ -1,7 +1,7 @@
 ---
 title: "Livingston v. Texas"
 citation: "No. 22-11210 (5th Cir. 2024)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2024-01-16
 docketNumber: "22-11210"
 holding: "Officers were entitled to qualified immunity in a fatal shooting where body camera footage 'blatantly contradicted' the plaintiff's allegations that the decedent was complying with commands, showing instead that he exited his car with a gun pointed at the officers."

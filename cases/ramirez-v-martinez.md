@@ -1,7 +1,7 @@
 ---
 title: "Ramirez v. Martinez"
 citation: "716 F.3d 369 (5th Cir. 2013)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2013-05-15
 docketNumber: "11-41109"
 holding: "A deputy was not entitled to qualified immunity on excessive force claims where he tased a business owner twice — including once while the owner was handcuffed and lying face-down — during an encounter at the owner's own business; but the deputy had arguable probable cause for the arrest."

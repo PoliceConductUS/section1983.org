@@ -1,7 +1,7 @@
 ---
 title: "Szabla v. City of Brooklyn Park"
 citation: "486 F.3d 385 (8th Cir. 2007)"
-court: "Eighth Circuit"
+court: "United States Court of Appeals for the Eighth Circuit"
 dateDecided: 2007-05-18
 docketNumber: "04-2538"
 courtlistener: "https://www.courtlistener.com/opinion/797743/henry-szabla-v-city-of-brooklyn-park/"

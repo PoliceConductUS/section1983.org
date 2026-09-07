@@ -1,7 +1,7 @@
 ---
 title: "Peterson v. City of Fort Worth"
 citation: "588 F.3d 838 (5th Cir. 2009)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2009-11-17
 docketNumber: "08-10258"
 holding: "Even where officers may have used excessive force during an arrest, the plaintiff cannot recover against the municipality under Monell without proving that a city policy, practice, or custom was the moving force behind the constitutional violation."

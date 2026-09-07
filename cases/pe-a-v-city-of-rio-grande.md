@@ -1,7 +1,7 @@
 ---
 title: "Peña v. City of Rio Grande City"
 citation: "879 F.3d 613 (5th Cir. 2018)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2018-01-12
 docketNumber: "16-41522"
 holding: "The district court erred in disregarding a plaintiff's proposed amended complaint; when the amended complaint stated plausible excessive force claims against officers who tased a woman during a family dispute, the case should proceed to qualified immunity analysis."

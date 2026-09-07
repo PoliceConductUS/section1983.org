@@ -1,7 +1,7 @@
 ---
 title: "Amnesty America v. Town of West Hartford"
 citation: "361 F.3d 113 (2d Cir. 2004)"
-court: "Second Circuit"
+court: "United States Court of Appeals for the Second Circuit"
 dateDecided: 2004-03-15
 docketNumber: "03-7332"
 courtlistener: "https://www.courtlistener.com/opinion/8438132/amnesty-america-v-town-of-west-hartford/"

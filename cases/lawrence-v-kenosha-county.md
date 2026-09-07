@@ -1,7 +1,7 @@
 ---
 title: "Lawrence v. Kenosha County"
 citation: "391 F.3d 837 (7th Cir. 2004)"
-court: "Seventh Circuit"
+court: "United States Court of Appeals for the Seventh Circuit"
 dateDecided: 2004-12-02
 docketNumber: "04-1472"
 courtlistener: "https://www.courtlistener.com/opinion/788582/darrick-lawrence-v-kenosha-county-and-louis-vena/"

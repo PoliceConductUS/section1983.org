@@ -1,7 +1,7 @@
 ---
 title: "Poole v. City of Shreveport"
 citation: "691 F.3d 624 (5th Cir. 2012)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2012-08-16
 docketNumber: "11-30158"
 holding: "Officers were entitled to qualified immunity on excessive force claims arising from an arrest following a traffic stop, where a videotape showed the plaintiff's account of events was contradicted by the objective record."

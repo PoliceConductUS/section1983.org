@@ -1,7 +1,7 @@
 ---
 title: "City of Houston v. Hill"
 citation: "482 U.S. 451 (1987)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 1987-06-15
 docketNumber: "86-243"
 holding: "A municipal ordinance making it unlawful to interrupt a police officer in the performance of duty is substantially overbroad under the First Amendment because it criminalizes a significant amount of constitutionally protected speech and accords police unconstitutional enforcement discretion."

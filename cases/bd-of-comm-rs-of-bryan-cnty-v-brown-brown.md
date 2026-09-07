@@ -1,7 +1,7 @@
 ---
 title: "Board of the County Commissioners of Bryan County v. Brown"
 citation: "520 U.S. 397 (1997)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 1997-04-28
 docketNumber: "95-1100"
 courtlistener: "https://www.courtlistener.com/opinion/118134/board-of-comm-rs-of-bryan-county-v-brown/"

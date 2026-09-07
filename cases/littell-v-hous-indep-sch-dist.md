@@ -1,7 +1,7 @@
 ---
 title: "Littell v. Houston Independent School District"
 citation: "894 F.3d 616 (5th Cir. 2018)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2018-06-27
 docketNumber: "16-20717"
 holding: "A school district's complete failure to provide Fourth Amendment training to employees who conduct student searches plausibly states a failure-to-train claim under § 1983, even without a pattern of prior violations."

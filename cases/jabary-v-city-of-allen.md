@@ -1,7 +1,7 @@
 ---
 title: "Jabary v. City of Allen"
 citation: "No. 12-41054 (5th Cir. 2013)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2013-11-25
 docketNumber: "12-41054"
 holding: "A business owner stated a procedural due process claim where city officials revoked his Certificate of Occupancy without adequate pre-deprivation process, but failed to state substantive due process, equal protection, or conspiracy claims."

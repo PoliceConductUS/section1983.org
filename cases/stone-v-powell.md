@@ -1,7 +1,7 @@
 ---
 title: "Stone v. Powell"
 citation: "428 U.S. 465 (1976)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 1976-07-06
 docketNumber: "74-1055"
 holding: "Where a state has provided an opportunity for full and fair litigation of a Fourth Amendment claim, a state prisoner may not obtain federal habeas corpus relief on the ground that evidence obtained in an unconstitutional search or seizure was introduced at trial."

@@ -1,7 +1,7 @@
 ---
 title: "Rose v. Herrera"
 citation: "No. EP-17-CV-00289 (W.D. Tex.)"
-court: "Western District of Texas"
+court: "United States District Court for the Western District of Texas"
 dateDecided: 2018-03-15
 docketNumber: "EP-17-CV-00289"
 holding: "Officers were not entitled to qualified immunity at the motion to dismiss stage where the plaintiff alleged officers used excessive force during an arrest, and the factual allegations, taken as true, stated a plausible Fourth Amendment violation."

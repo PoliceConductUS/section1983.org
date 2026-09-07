@@ -1,7 +1,7 @@
 ---
 title: "Pfannstiel v. City of Marion"
 citation: "918 F.2d 1178 (5th Cir. 1990)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 1990-12-12
 docketNumber: "89-5619"
 holding: "Officers were not entitled to qualified immunity where genuine issues of material fact existed regarding whether they used excessive force and conducted unlawful searches during a confrontation with citizens in Marion, Texas."

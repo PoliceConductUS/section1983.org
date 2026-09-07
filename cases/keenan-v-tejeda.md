@@ -1,7 +1,7 @@
 ---
 title: "Keenan v. Tejeda"
 citation: "290 F.3d 252 (5th Cir. 2002)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2002-04-23
 docketNumber: "01-50360"
 holding: "Citizens who reported a constable's wrongdoing and were then subjected to a retaliatory felony traffic stop and prosecution stated a First Amendment retaliation claim under § 1983, and fact questions precluded qualified immunity."

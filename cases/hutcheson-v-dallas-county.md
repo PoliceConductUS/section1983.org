@@ -1,7 +1,7 @@
 ---
 title: "Hutcheson v. Dallas County"
 citation: "No. 20-10383 (5th Cir. 2021)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2021-04-12
 docketNumber: "20-10383"
 holding: "Officers who restrained a man under the influence of drugs were entitled to qualified immunity where their conduct did not violate clearly established law, and a single incident was insufficient to establish failure-to-train liability."

@@ -1,7 +1,7 @@
 ---
 title: "Piotrowski v. City of Houston"
 citation: "237 F.3d 567 (5th Cir. 2001)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2001-01-08
 docketNumber: "99-20367"
 courtlistener: "https://www.courtlistener.com/opinion/770032/piotrowski-v-city-of-houston/"

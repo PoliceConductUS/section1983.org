@@ -1,7 +1,7 @@
 ---
 title: "City of Houston v. Nicolai"
 citation: "No. 01-20-00327-CV (Tex. App.—Houston [1st Dist.] 2023)"
-court: "Court of Appeals for the First District of Texas"
+court: "Texas Court of Appeals, First District, Houston"
 dateDecided: 2023-04-06
 docketNumber: "01-20-00327-CV"
 holding: "The City of Houston did not establish as a matter of law that its police officer was entitled to official immunity for negligently operating a patrol car, meaning the Texas Tort Claims Act's waiver of governmental immunity applied and the suit could proceed."

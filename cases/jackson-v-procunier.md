@@ -1,7 +1,7 @@
 ---
 title: "Jackson v. Procunier"
 citation: "789 F.2d 307 (5th Cir. 1986)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 1986-05-09
 docketNumber: "84-2239"
 holding: "A prisoner stated a First Amendment and due process claim where prison officials deliberately interfered with his legal mail, causing him to miss a court deadline, thus depriving him of his right to access the courts."

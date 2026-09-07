@@ -1,7 +1,7 @@
 ---
 title: "MacCloskey v. City of Dallas"
 citation: "No. 3:19-CV-02063 (N.D. Tex.)"
-court: "Northern District of Texas"
+court: "United States District Court for the Northern District of Texas"
 dateDecided: 2020-09-30
 docketNumber: "3:19-CV-02063"
 holding: "A plaintiff's § 1983 claims against the City of Dallas were dismissed where she failed to identify a specific municipal policy or custom that was the moving force behind the alleged constitutional violations."

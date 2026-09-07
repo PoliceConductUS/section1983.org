@@ -1,7 +1,7 @@
 ---
 title: "Kaiser Aluminum & Chemical Sales, Inc. v. Avondale Shipyards, Inc."
 citation: "677 F.2d 1045 (5th Cir. 1982)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 1982-06-07
 docketNumber: "81-3162"
 holding: "An antitrust counterclaim was properly dismissed as time-barred, and an antitrust defense was properly struck, where the party asserting both failed to file within the applicable limitations period and the defense was not cognizable under Rule 12(f)."

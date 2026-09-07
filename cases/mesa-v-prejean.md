@@ -1,7 +1,7 @@
 ---
 title: "Mesa v. Prejean"
 citation: "543 F.3d 264 (5th Cir. 2008)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2008-09-23
 docketNumber: "07-30953"
 holding: "Where factual disputes exist about whether an officer had probable cause to arrest someone for criminal trespass or disturbing the peace, summary judgment based on qualified immunity is inappropriate; protected speech cannot be the true basis for an arrest."

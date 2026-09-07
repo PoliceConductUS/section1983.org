@@ -1,7 +1,7 @@
 ---
 title: "Grossman v. City of Portland"
 citation: "33 F.3d 1200 (9th Cir. 1994)"
-court: "Ninth Circuit"
+court: "United States Court of Appeals for the Ninth Circuit"
 dateDecided: 1994-09-06
 docketNumber: "92-35492"
 courtlistener: "https://www.courtlistener.com/opinion/677134/charles-m-grossman-md-v-city-of-portland-a-public-body-and-todd/"
