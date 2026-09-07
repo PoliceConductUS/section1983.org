@@ -1,31 +1,34 @@
 flowchart TD
     PREP["1. Preparing Your Case<br/>FOIA + War Room"] --> A["2. Filing<br/>Complaint + IFP + Summons"]
     A --> B["3. Service<br/>Deliver lawsuit to defendants"]
-    B --> C{"4. Rule 12 Motions<br/>Defendant attacks complaint"}
-    C -->|Denied| D["5. Answer<br/>Defendant responds"]
-    C -->|"Granted w/ Leave"| A2["Amend Complaint"]
-    C -->|"Granted w/o Leave"| APP["Appeal"]
+    B --> C["4. Rule 12 Motions<br/>Defendant attacks complaint"]
+    C --> RR{"5. Report & Recommendation<br/>Magistrate judge proposes ruling<br/>14 days to object"}
+    RR -->|Denied| D["6. Answer<br/>Defendant responds"]
+    RR -->|"Granted w/ Leave"| A2["Amend Complaint"]
+    RR -->|"Granted w/o Leave"| R59["Rule 59(e) motion<br/>or Appeal"]
     A2 --> C
-    C -.->|"QI Denied"| IA["Interlocutory Appeal"]
+    RR -.->|"QI Denied"| IA["Interlocutory Appeal"]
     IA -->|Reversed| DONE[Case Dismissed]
     IA -->|Affirmed| D
-    D --> E["6. Discovery<br/>Evidence exchange"]
-    E --> F{"7. Summary Judgment<br/>Decide without trial?"}
-    F -->|Denied| G["8. Pretrial<br/>Prepare for trial"]
-    F -->|Granted| APP
+    D --> E["7. Discovery<br/>Evidence exchange"]
+    E --> F{"8. Summary Judgment<br/>Decide without trial?"}
+    F -->|Denied| G["9. Pretrial<br/>Prepare for trial"]
+    F -->|Granted| APP["Appeal"]
     F -.->|"QI Denied"| IA2["Interlocutory Appeal"]
     IA2 -->|Reversed| DONE
     IA2 -->|Affirmed| G
-    G --> H["9. Trial<br/>Present evidence"]
+    G --> H["10. Trial<br/>Present evidence"]
     H --> I{Verdict}
-    I -->|"Plaintiff Wins"| J["10. Post-Trial<br/>Fee petition + motions"]
-    I -->|"Defendant Wins"| K["10. Post-Trial<br/>Rule 59/60 motions"]
-    J --> APP2["11. Appeal"]
+    I -->|"Plaintiff Wins"| J["11. Post-Trial<br/>Fee petition + motions"]
+    I -->|"Defendant Wins"| K["11. Post-Trial<br/>Rule 59/60 motions"]
+    J --> APP2["12. Appeal"]
     K --> APP2
+    R59 --> APP2
     click PREP "/process/preparing-your-case" _self
     click A "/process/filing" _self
     click B "/process/service" _self
     click C "/process/rule-12-motions" _self
+    click RR "/process/report-and-recommendation" _self
     click D "/process/answer" _self
     click E "/process/discovery" _self
     click F "/process/summary-judgment" _self
@@ -35,9 +38,12 @@ flowchart TD
     click H "/process/trial" _self
     click J "/process/post-trial-and-appeal" _self
     click K "/process/post-trial-and-appeal" _self
+    click APP "/process/post-trial-and-appeal" _self
     click APP2 "/process/post-trial-and-appeal" _self
-    click A2 "/primer/amended-complaint" _self
+    click A2 "/articles/how-to-amend-a-section-1983-complaint" _self
+    click R59 "/articles/rule-59e-motion-after-dismissal-in-a-section-1983-case" _self
     style PREP fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style RR fill:#fff8e1,stroke:#b58105,color:#000
     style IA fill:#fee2e2,stroke:#dc2626,color:#000
     style IA2 fill:#fee2e2,stroke:#dc2626,color:#000
     style DONE fill:#f5f5f5,stroke:#999,color:#666
