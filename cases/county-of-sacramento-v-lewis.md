@@ -1,7 +1,7 @@
 ---
 title: "County of Sacramento v. Lewis"
 citation: "523 U.S. 833 (1998)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 1998-05-26
 docketNumber: "96-1337"
 holding: "A police officer does not violate substantive due process by causing death through deliberate or reckless indifference to life in a high-speed automobile chase aimed at apprehending a suspected offender; only a purpose to cause harm unrelated to legitimate law enforcement objectives violates the Fourteenth Amendment in such circumstances."

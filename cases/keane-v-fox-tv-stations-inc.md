@@ -1,7 +1,7 @@
 ---
 title: "Keane v. Fox Television Stations, Inc."
 citation: "297 F. Supp. 2d 921 (S.D. Tex. 2004)"
-court: "Southern District of Texas"
+court: "United States District Court for the Southern District of Texas"
 dateDecided: 2004-01-08
 docketNumber: "CIV.A.H-03-1642"
 holding: "A complaint must contain either direct allegations on every material point necessary to sustain a recovery or allegations from which an inference may fairly be drawn that evidence on these material points will be introduced at trial."

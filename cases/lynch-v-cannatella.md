@@ -1,7 +1,7 @@
 ---
 title: "Lynch v. Cannatella"
 citation: "810 F.2d 1363 (5th Cir. 1987)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 1987-02-27
 docketNumber: "86-3232"
 holding: "Even excludable aliens physically present in the United States are entitled to due process protection from gross physical abuse by state or federal officials — and harbor police who subjected Jamaican stowaways to beatings, hosing, forced labor, and drugging could not claim qualified immunity."

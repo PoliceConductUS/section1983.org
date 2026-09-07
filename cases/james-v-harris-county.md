@@ -1,7 +1,7 @@
 ---
 title: "James v. Harris County"
 citation: "No. 07-20725 (5th Cir. 2009)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2009-08-04
 docketNumber: "07-20725"
 holding: "A county was not liable under Monell for a deputy's shooting even where the sheriff allegedly failed to investigate officer-involved shootings, because the evidence was insufficient to show that the failure to investigate was the moving force behind the deputy's use of force."

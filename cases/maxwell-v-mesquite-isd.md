@@ -1,7 +1,7 @@
 ---
 title: "Maxwell v. Mesquite ISD"
 citation: "No. 3:20-CV-3581-S (N.D. Tex.)"
-court: "Northern District of Texas"
+court: "United States District Court for the Northern District of Texas"
 dateDecided: 2021-09-19
 docketNumber: "3:20-CV-3581-S"
 holding: "A school district employee's § 1983 First Amendment retaliation claim was dismissed where the plaintiff failed to adequately allege an official policy or custom that caused the violation, and failed to plead the content of his social media posts to establish they addressed a matter of public concern."

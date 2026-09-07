@@ -1,7 +1,7 @@
 ---
 title: "Prim v. Stein"
 citation: "No. 20-20387 (5th Cir. 2021)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2021-07-27
 docketNumber: "20-20387"
 holding: "A deputy had probable cause to arrest a concertgoer for public intoxication where the deputy observed swaying, slurred speech, bloodshot eyes, and the person admitted to drinking; but genuine fact issues remained on the wife's arrest where her symptoms could be attributable to multiple sclerosis."

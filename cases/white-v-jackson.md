@@ -1,7 +1,7 @@
 ---
 title: "White v. Jackson"
 citation: "865 F.3d 1064 (8th Cir. 2017)"
-court: "Eighth Circuit"
+court: "United States Court of Appeals for the Eighth Circuit"
 dateDecided: 2017-08-01
 docketNumber: "16-3897"
 courtlistener: "https://www.courtlistener.com/opinion/4414209/tracey-white-v-thomas-jackson/"

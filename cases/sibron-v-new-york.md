@@ -1,7 +1,7 @@
 ---
 title: "Sibron v. New York"
 citation: "392 U.S. 40 (1968)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 1968-06-10
 docketNumber: "63"
 holding: "An officer who observed a suspect talking with known narcotics addicts over an eight-hour period did not have probable cause to search the suspect, and a frisk that reached into the suspect's pocket without an articulable basis to believe the suspect was armed exceeded the permissible scope of a Terry stop."

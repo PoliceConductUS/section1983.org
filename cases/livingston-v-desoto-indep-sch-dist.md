@@ -1,7 +1,7 @@
 ---
 title: "Livingston v. DeSoto Independent School District"
 citation: "No. 3:20-CV-00764 (N.D. Tex.)"
-court: "Northern District of Texas"
+court: "United States District Court for the Northern District of Texas"
 dateDecided: 2021-03-15
 docketNumber: "3:20-CV-00764"
 holding: "A school district employee's § 1983 claims for retaliation and due process violations were dismissed where she failed to show that her speech addressed a matter of public concern and failed to allege deprivation of a protected property interest without adequate process."

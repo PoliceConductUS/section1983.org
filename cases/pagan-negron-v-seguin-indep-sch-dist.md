@@ -1,7 +1,7 @@
 ---
 title: "Pagan-Negron v. Seguin Independent School District"
 citation: "No. SA-12-CV-055-XR (W.D. Tex. 2013)"
-court: "Western District of Texas"
+court: "United States District Court for the Western District of Texas"
 dateDecided: 2013-09-24
 docketNumber: "SA-12-CV-055-XR"
 holding: "A school district was entitled to summary judgment on claims under the Individuals with Disabilities Education Act (IDEA) where the parent participated in the ARD process and the district provided appropriate educational services."

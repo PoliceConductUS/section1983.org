@@ -1,7 +1,7 @@
 ---
 title: "Martin K. Eby Construction Co. v. Dallas Area Rapid Transit"
 citation: "369 F.3d 464 (5th Cir. 2004)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2004-04-29
 docketNumber: "03-10728"
 holding: "A contractor must exhaust administrative remedies established by a regional transportation authority's procurement regulations and incorporated into the parties' contract before filing a breach-of-contract action in court."

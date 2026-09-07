@@ -1,7 +1,7 @@
 ---
 title: "Lago-Planas v. Crocker"
 citation: "No. 3:09-CV-2075-G-BK (N.D. Tex.)"
-court: "Northern District of Texas"
+court: "United States District Court for the Northern District of Texas"
 dateDecided: 2011-03-15
 docketNumber: "3:09-CV-2075-G-BK"
 holding: "Officers were entitled to summary judgment on false arrest, excessive force, and denial of medical care claims where the evidence showed probable cause existed, force was reasonable, and the plaintiff's injuries did not require immediate medical treatment."

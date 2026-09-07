@@ -1,7 +1,7 @@
 ---
 title: "Roberts v. City of Forest Acres"
 citation: "902 F. Supp. 662 (D.S.C. 1995)"
-court: "District of South Carolina"
+court: "United States District Court for the District of South Carolina"
 dateDecided: 1995-08-21
 docketNumber: "3:94-1815-17"
 courtlistener: "https://www.courtlistener.com/opinion/2597277/roberts-v-city-of-forest-acres/"

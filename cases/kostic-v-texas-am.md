@@ -1,7 +1,7 @@
 ---
 title: "Kostic v. Texas A&M University at Commerce"
 citation: "No. 3:19-CV-2865 (N.D. Tex.)"
-court: "Northern District of Texas"
+court: "United States District Court for the Northern District of Texas"
 dateDecided: 2020-06-15
 docketNumber: "3:19-CV-2865"
 holding: "A university employee's due process and First Amendment claims were dismissed where she failed to allege facts sufficient to overcome the university's Eleventh Amendment immunity and failed to identify a final policymaker for Monell liability purposes."

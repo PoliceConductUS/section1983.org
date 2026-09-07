@@ -1,7 +1,7 @@
 ---
 title: "Michalik v. Hermann"
 citation: "422 F.3d 252 (5th Cir. 2005)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2005-08-17
 docketNumber: "03-30780"
 holding: "Officers who neither prepared nor presented a search warrant application cannot be held liable under Malley v. Briggs for the warrant's lack of probable cause; only the affiant or the person who actually prepared the application may be liable."

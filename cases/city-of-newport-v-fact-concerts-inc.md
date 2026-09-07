@@ -1,7 +1,7 @@
 ---
 title: "City of Newport v. Fact Concerts, Inc."
 citation: "453 U.S. 247 (1981)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 1981-06-26
 docketNumber: "80-396"
 holding: "A municipality is immune from punitive damages under 42 U.S.C. § 1983, as neither the retributive nor deterrence objectives of punitive damages would be significantly advanced by holding municipalities liable for such damages."

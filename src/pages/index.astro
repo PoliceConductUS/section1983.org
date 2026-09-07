@@ -2,6 +2,8 @@
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
 import ArticleCard from "../components/ArticleCard.astro";
+import { buildHubIndex } from "../lib/case-hub-index";
+import { STATE_LIMITATIONS } from "../lib/sol-data";
 
 const allArticles = await getCollection("articles");
 const articles = allArticles
@@ -35,7 +37,17 @@ const staticPages = [
 
 const contentPages =
   articles.length + cases.length + termsAndConcepts.length + process.length;
-const totalPages = contentPages + staticPages.length;
+const hubIndex = buildHubIndex(
+  cases.map((c) => ({
+    id: c.id,
+    tags: c.data.tags ?? [],
+    court: c.data.court,
+  })),
+);
+const hubPages =
+  hubIndex.states.size + hubIndex.circuits.size + hubIndex.topics.size;
+const generatedPages = hubPages + STATE_LIMITATIONS.length;
+const totalPages = contentPages + staticPages.length + generatedPages;
 
 // Estimate reading time from content body lengths (~5 chars/word, ~250 wpm)
 const allContent = [...articles, ...cases, ...termsAndConcepts, ...process];

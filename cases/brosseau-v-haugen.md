@@ -1,7 +1,7 @@
 ---
 title: "Brosseau v. Haugen"
 citation: "543 U.S. 194 (2004)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 2004-12-13
 docketNumber: "03-1261"
 courtlistener: "https://www.courtlistener.com/opinion/137745/brosseau-v-haugen/"

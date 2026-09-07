@@ -1,7 +1,7 @@
 ---
 title: "Morgan v. Swanson"
 citation: "659 F.3d 359 (5th Cir. 2011)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2011-10-27
 docketNumber: "09-10978"
 courtlistener: "https://www.courtlistener.com/opinion/218174/morgan-v-swanson/"

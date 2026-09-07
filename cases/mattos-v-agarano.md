@@ -1,7 +1,7 @@
 ---
 title: "Mattos v. Agarano"
 citation: "661 F.3d 433 (9th Cir. 2011)"
-court: "Ninth Circuit"
+court: "United States Court of Appeals for the Ninth Circuit"
 dateDecided: 2011-10-12
 docketNumber: "08-15567"
 courtlistener: "https://www.courtlistener.com/opinion/615433/mattos-v-agarano/"

@@ -1,7 +1,7 @@
 ---
 title: "Devenpeck v. Alford"
 citation: "543 U.S. 146 (2004)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 2004-12-13
 docketNumber: "03-710"
 holding: "A warrantless arrest is reasonable under the Fourth Amendment if there is probable cause to believe that any crime has been or is being committed, regardless of whether that offense is 'closely related' to the offense the officer states at the time of arrest."

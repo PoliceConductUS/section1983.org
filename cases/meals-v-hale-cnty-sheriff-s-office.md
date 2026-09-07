@@ -1,7 +1,7 @@
 ---
 title: "Meals v. Hale County Sheriff's Office"
 citation: "No. 2:20-CV-00145 (N.D. Tex.)"
-court: "Northern District of Texas"
+court: "United States District Court for the Northern District of Texas"
 dateDecided: 2021-06-01
 docketNumber: "2:20-CV-00145"
 holding: "A pretrial detainee's § 1983 claims against a county sheriff's office were dismissed where the plaintiff sued a non-suable entity and failed to allege specific facts supporting Monell liability against the county."

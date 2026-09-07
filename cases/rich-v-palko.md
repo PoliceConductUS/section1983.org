@@ -1,7 +1,7 @@
 ---
 title: "Rich v. Palko"
 citation: "920 F.3d 288 (5th Cir. 2019)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2019-04-03
 docketNumber: "18-40415"
 holding: "Officers were entitled to qualified immunity when they used force to transport an incapacitated person with severe mental disabilities to a psychiatric facility, where the person's caretaker had called 911 requesting police assistance with the transport."

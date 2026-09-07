@@ -1,7 +1,7 @@
 ---
 title: "Palo ex rel. Estate of Palo v. Dallas County"
 citation: "No. 3:05-CV-0527-D (N.D. Tex. 2006)"
-court: "Northern District of Texas"
+court: "United States District Court for the Northern District of Texas"
 dateDecided: 2006-12-15
 docketNumber: "3:05-CV-0527-D"
 holding: "A pretrial detainee's estate could proceed to trial on a Fourteenth Amendment conditions-of-confinement claim where the county jail failed to provide adequate medical care to a detainee with serious medical conditions, resulting in his death."

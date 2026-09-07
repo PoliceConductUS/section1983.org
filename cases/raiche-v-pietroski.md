@@ -1,7 +1,7 @@
 ---
 title: "Raiche v. Pietroski"
 citation: "623 F.3d 30 (1st Cir. 2010)"
-court: "First Circuit"
+court: "United States Court of Appeals for the First Circuit"
 dateDecided: 2010-10-25
 docketNumber: "10-1023"
 courtlistener: "https://www.courtlistener.com/opinion/177847/raiche-v-pietroski/"

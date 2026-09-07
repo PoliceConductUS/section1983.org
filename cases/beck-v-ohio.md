@@ -1,7 +1,7 @@
 ---
 title: "Beck v. Ohio"
 citation: "379 U.S. 89 (1964)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 1964-11-23
 docketNumber: "No. 13"
 courtlistener: "https://www.courtlistener.com/opinion/106853/beck-v-ohio/"

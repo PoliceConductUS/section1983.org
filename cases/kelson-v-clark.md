@@ -1,7 +1,7 @@
 ---
 title: "Kelson v. Clark"
 citation: "No. 20-10764 (5th Cir. 2021)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2021-06-17
 docketNumber: "20-10764"
 holding: "Paramedics who refused to treat a visibly injured, homeless, mentally ill man — instead harassing and laughing at him — were not entitled to qualified immunity on a failure-to-provide-medical-care claim after the man died from untreated head trauma in custody."

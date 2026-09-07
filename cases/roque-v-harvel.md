@@ -1,7 +1,7 @@
 ---
 title: "Roque v. Harvel"
 citation: "993 F.3d 325 (5th Cir. 2021)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2021-04-01
 docketNumber: "20-50277"
 holding: "An officer was not entitled to qualified immunity where he shot and killed a suicidal man during a mental health crisis, because a jury could find the officer's continued firing after the initial shot was objectively unreasonable."

@@ -1,7 +1,7 @@
 ---
 title: "Raley v. Fraser"
 citation: "747 F.2d 287 (5th Cir. 1984)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 1984-11-26
 docketNumber: "84-1274"
 holding: "Where an officer used four choke holds and caused bruises and scrapes during an arrest for public intoxication, the force constituted assault and battery under state law but did not rise to the level of a Section 1983 excessive force violation under then-existing precedent requiring severe injuries."

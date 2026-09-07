@@ -1,7 +1,7 @@
 ---
 title: "Hughes v. Lott"
 citation: "350 F.3d 1157 (11th Cir. 2003)"
-court: "Eleventh Circuit"
+court: "United States Court of Appeals for the Eleventh Circuit"
 dateDecided: 2003-11-14
 docketNumber: "02-11508"
 courtlistener: "https://www.courtlistener.com/opinion/76386/ned-hughes-v-charles-lott/"

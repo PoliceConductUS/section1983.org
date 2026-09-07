@@ -1,7 +1,7 @@
 ---
 title: "Ordonez v. Gonzalez"
 citation: "No. 20-40624 (5th Cir. 2021)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2021-08-25
 docketNumber: "20-40624"
 holding: "Officers were not entitled to qualified immunity where they used deadly force against a suspect who was moving away from them and did not pose an immediate threat at the moment of the shooting."

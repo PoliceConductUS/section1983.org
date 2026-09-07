@@ -1,7 +1,7 @@
 ---
 title: "Lone Star Fund V (U.S.), L.P. v. Barclays Bank PLC"
 citation: "594 F.3d 383 (5th Cir. 2010)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2010-01-11
 docketNumber: "08-11038"
 holding: "When contractual documents contain both representations about the quality of assets and remedial 'repurchase or substitute' clauses, the entire agreement must be read together — isolated representations cannot be treated as misrepresentations when the contract provides a sole remedy for their breach."

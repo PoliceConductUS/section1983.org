@@ -1,7 +1,7 @@
 ---
 title: "Ratliff v. Aransas County"
 citation: "948 F.3d 281 (5th Cir. 2020)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2020-01-15
 docketNumber: "19-40121"
 holding: "Deputies were entitled to qualified immunity where they shot a man five times after he refused to drop a loaded pistol during a domestic violence call, despite his later acquittal on criminal charges."

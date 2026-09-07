@@ -1,7 +1,7 @@
 ---
 title: "Pyles v. Raisor"
 citation: "60 F.3d 1211 (6th Cir. 1995)"
-court: "Sixth Circuit"
+court: "United States Court of Appeals for the Sixth Circuit"
 dateDecided: 1995-08-01
 docketNumber: "94-5047"
 courtlistener: "https://www.courtlistener.com/opinion/700474/teresa-a-pyles-v-robert-s-raisor-ray-l-sabbatine/"

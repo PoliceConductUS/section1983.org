@@ -1,7 +1,7 @@
 ---
 title: "Barney v. Pulsipher"
 citation: "143 F.3d 1299 (10th Cir. 1998)"
-court: "Tenth Circuit"
+court: "United States Court of Appeals for the Tenth Circuit"
 dateDecided: 1998-05-01
 docketNumber: "96-4192"
 courtlistener: "https://www.courtlistener.com/opinion/156293/barney-v-pulsipher/"

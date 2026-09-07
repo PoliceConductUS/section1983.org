@@ -1,7 +1,7 @@
 ---
 title: "Baird v. Renbarger"
 citation: "576 F.3d 340 (7th Cir. 2009)"
-court: "Seventh Circuit"
+court: "United States Court of Appeals for the Seventh Circuit"
 dateDecided: 2009-08-03
 docketNumber: "08-2436"
 courtlistener: "https://www.courtlistener.com/opinion/1188789/baird-v-renbarger/"

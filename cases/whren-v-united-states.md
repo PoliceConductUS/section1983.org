@@ -1,7 +1,7 @@
 ---
 title: "Whren v. United States"
 citation: "517 U.S. 806 (1996)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 1996-06-10
 docketNumber: "95-5841"
 holding: "The temporary detention of a motorist upon probable cause to believe he has violated traffic laws does not violate the Fourth Amendment's prohibition against unreasonable seizures, even if a reasonable officer would not have stopped the motorist absent some additional law enforcement objective. Subjective intentions play no role in ordinary probable-cause Fourth Amendment analysis."

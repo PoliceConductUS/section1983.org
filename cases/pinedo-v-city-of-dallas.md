@@ -1,7 +1,7 @@
 ---
 title: "Pinedo v. City of Dallas"
 citation: "No. 3:14-CV-0958-D (N.D. Tex. 2015)"
-court: "Northern District of Texas"
+court: "United States District Court for the Northern District of Texas"
 dateDecided: 2015-01-15
 docketNumber: "3:14-CV-0958-D"
 holding: "The City of Dallas was dismissed from a Section 1983 deadly force case because the plaintiff failed to plead facts establishing that a municipal policy or custom was the moving force behind officers' use of deadly force against a mentally impaired, unarmed person."

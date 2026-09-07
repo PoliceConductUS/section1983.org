@@ -1,7 +1,7 @@
 ---
 title: "Ashcroft v. al-Kidd"
 citation: "563 U.S. 731 (2011)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 2011-05-31
 docketNumber: "10-98"
 courtlistener: "https://www.courtlistener.com/opinion/218815/ashcroft-v-al-kidd/"

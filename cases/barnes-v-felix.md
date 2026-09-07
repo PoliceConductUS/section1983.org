@@ -1,7 +1,7 @@
 ---
 title: "Barnes v. Felix"
 citation: "605 U.S. ___ (2025)"
-court: "Supreme Court of the United States"
+court: "U.S. Supreme Court"
 dateDecided: 2025-05-15
 docketNumber: "23-1239"
 holding: "The Fifth Circuit's 'moment-of-threat' rule, which limited the excessive force inquiry to only the instant of the shooting, conflicts with the totality-of-the-circumstances analysis required by the Fourth Amendment; courts must consider the full sequence of events leading to the use of force."

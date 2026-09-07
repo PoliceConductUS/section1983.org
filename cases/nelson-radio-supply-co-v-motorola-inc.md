@@ -1,7 +1,7 @@
 ---
 title: "Nelson Radio & Supply Co. v. Motorola, Inc."
 citation: "200 F.2d 911 (5th Cir. 1952)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 1952-12-17
 docketNumber: "14012"
 holding: "A corporation cannot conspire with its own officers and agents under Section 1 of the Sherman Act; discussions among those managing a single corporation about its business policies do not constitute a conspiracy in restraint of trade."

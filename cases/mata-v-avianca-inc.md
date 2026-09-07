@@ -1,7 +1,7 @@
 ---
 title: "Mata v. Avianca, Inc."
 citation: "678 F. Supp. 3d 443 (S.D.N.Y. 2023)"
-court: "U.S. District Court for the Southern District of New York"
+court: "United States District Court for the Southern District of New York"
 dateDecided: 2023-06-22
 docketNumber: "22-cv-1461"
 holding: "The court sanctioned lawyers who filed AI-generated fake case citations and false quotations without verifying that the cited authorities were real."

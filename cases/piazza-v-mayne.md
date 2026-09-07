@@ -1,7 +1,7 @@
 ---
 title: "Piazza v. Mayne"
 citation: "217 F.3d 239 (5th Cir. 2000)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2000-06-26
 docketNumber: "99-30019"
 holding: "A wildlife enforcement agent was entitled to qualified immunity on a malicious prosecution claim where he had arguable probable cause to initiate the prosecution, even though the charges were ultimately dismissed."

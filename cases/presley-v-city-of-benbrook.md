@@ -1,7 +1,7 @@
 ---
 title: "Presley v. City of Benbrook"
 citation: "4 F.3d 405 (5th Cir. 1993)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 1993-10-14
 docketNumber: "92-1202"
 holding: "A jury's finding that officers' conduct was objectively unreasonable did not preclude a simultaneous finding that the officers were entitled to qualified immunity; the jury may decide disputed factual issues relating to immunity when properly instructed."

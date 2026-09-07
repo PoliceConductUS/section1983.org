@@ -1,7 +1,7 @@
 ---
 title: "Meade v. Grubbs"
 citation: "841 F.2d 1512 (10th Cir. 1988)"
-court: "Tenth Circuit"
+court: "United States Court of Appeals for the Tenth Circuit"
 dateDecided: 1988-03-11
 docketNumber: "84-2631"
 courtlistener: "https://www.courtlistener.com/opinion/503094/kenneth-ray-meade-v-grubbs-badge-no-128-individually-and-as-a-deputy/"

@@ -1,7 +1,7 @@
 ---
 title: "Mendenhall v. Riser"
 citation: "213 F.3d 226 (5th Cir. 2000)"
-court: "Fifth Circuit"
+court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2000-05-30
 docketNumber: "99-30158"
 holding: "Officers who had arguable probable cause to arrest a suspect for murder were entitled to qualified immunity, even though the suspect was later exonerated at a preliminary hearing when another person confessed."
