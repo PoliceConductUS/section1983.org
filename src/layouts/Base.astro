@@ -120,7 +120,6 @@ const commitDisplay =
       >Skip to main content</a
     >
 
-    {import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim() && <AnalyticsConsent />}
 
     <header class="bg-navy text-white">
       <nav
@@ -538,6 +537,7 @@ const commitDisplay =
           </p>
         </div>
       </div>
+      {import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim() && <AnalyticsConsent />}
     </footer>
   </body>
 </html>
