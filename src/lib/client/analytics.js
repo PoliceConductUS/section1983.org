@@ -1,4 +1,4 @@
-import { readAnalyticsChoice, consentState } from "./analytics-consent.js";
+import { readAnalyticsChoice, readAdvertisingChoice, advertisingSettings, consentState } from "./analytics-consent.js";
 
 const MEASUREMENT_ID = import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim();
 const ATTRIBUTION_PARAMETERS = new Set([
@@ -81,7 +81,8 @@ export const initializeAnalytics = () => {
   window.gtag = function gtag() {
     if (isProduction()) window.dataLayer.push(arguments);
   };
-  window.gtag("consent", "default", consentState(readAnalyticsChoice()));
+  window.gtag("consent", "default", consentState(readAnalyticsChoice(), readAdvertisingChoice()));
+  window.gtag("set", advertisingSettings(readAdvertisingChoice()));
   const context = pageContext();
   window.gtag("js", new Date());
   window.gtag("set", context);
@@ -89,8 +90,6 @@ export const initializeAnalytics = () => {
     ...context,
     page_title: document.title,
     send_page_view: false,
-    allow_ad_personalization_signals: false,
-    allow_google_signals: false,
   });
   trackAnalytics("page_view");
   const script = document.createElement("script");

@@ -13,8 +13,8 @@
     <p id="analytics-consent-description">
       We use Google Analytics to learn how this site is used. You can allow
       analytics cookies or decline them. If you decline, Google still receives
-      limited measurements without analytics cookies. Advertising features stay
-      off with either choice. Change your choice here at any time.
+      limited measurements without analytics cookies. Choose separately whether
+      to allow advertising cookies and data use. Change your choices here at any time.
     </p>
     <div class="analytics-categories">
       <label
@@ -25,17 +25,17 @@
         ><input type="checkbox" data-analytics-enabled /> Analytics cookies</label
       >
       <p>Allow Google Analytics to use cookies to measure visits.</p>
-      <label><input type="checkbox" disabled /> Advertising — always off</label>
-      <p>Advertising consent stays declined with every choice.</p>
+      <label><input type="checkbox" data-advertising-enabled /> Advertising</label>
+      <p>Allow Google to use cookies and visit data for ad measurement and personalized ads.</p>
     </div>
     <p data-consent-status role="status"></p>
     <div class="analytics-choices">
       <button type="button" data-analytics-choice="granted"
-        >Allow analytics cookies</button
+        >Allow all</button
       >
       <button type="button" data-analytics-save>Save preferences</button>
       <button type="button" data-analytics-choice="denied"
-        >Decline analytics cookies</button
+        >Decline all</button
       >
     </div>
   </dialog>
