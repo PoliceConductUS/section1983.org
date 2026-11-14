@@ -536,11 +536,26 @@ const commitDisplay =
                   {" · "}
                   <button
                     type="button"
-                    class="hover:text-gold transition-colors cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                    class="inline-flex items-center gap-2 rounded border border-slate-400 px-3 py-2 my-2 min-h-11 align-middle text-sm text-slate-200 hover:text-gold hover:border-gold transition-colors cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                     data-privacy-settings
                     hidden
                   >
-                    Privacy settings
+                    Cookie settings
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.75"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M21 12a9 9 0 1 1-9-9 4 4 0 0 0 4 4 4 4 0 0 0 5 5Z" />
+                      <path d="M8 8h.01M7 14h.01M12 12h.01M12 17h.01M16 15h.01" />
+                    </svg>
                   </button>
                 </>
               )
