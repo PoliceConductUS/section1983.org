@@ -642,10 +642,6 @@ resource "aws_cloudfront_distribution" "site" {
     domain_name              = aws_s3_bucket.site.bucket_regional_domain_name
     origin_id                = local.origin_id
     origin_access_control_id = aws_cloudfront_origin_access_control.site.id
-
-    s3_origin_config {
-      origin_access_identity = ""
-    }
   }
 
   default_cache_behavior {
@@ -688,10 +684,6 @@ resource "aws_cloudfront_distribution" "site" {
     acm_certificate_arn      = aws_acm_certificate_validation.site.certificate_arn
     ssl_support_method       = "sni-only"
     minimum_protocol_version = "TLSv1.2_2021"
-  }
-
-  lifecycle {
-    ignore_changes = [origin]
   }
 }
 
@@ -737,10 +729,6 @@ resource "aws_cloudfront_distribution" "preview" {
     domain_name              = aws_s3_bucket.preview.bucket_regional_domain_name
     origin_id                = local.preview_origin_id
     origin_access_control_id = aws_cloudfront_origin_access_control.site.id
-
-    s3_origin_config {
-      origin_access_identity = ""
-    }
   }
 
   default_cache_behavior {
@@ -783,10 +771,6 @@ resource "aws_cloudfront_distribution" "preview" {
     acm_certificate_arn      = aws_acm_certificate_validation.site.certificate_arn
     ssl_support_method       = "sni-only"
     minimum_protocol_version = "TLSv1.2_2021"
-  }
-
-  lifecycle {
-    ignore_changes = [origin]
   }
 }
 
