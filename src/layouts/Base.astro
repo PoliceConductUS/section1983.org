@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import AnalyticsConsent from "../components/AnalyticsConsent.astro";
 import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 import SuggestChange from "../components/SuggestChange.astro";
 import DonateBanner from "../components/DonateBanner.astro";
@@ -118,6 +119,8 @@ const commitDisplay =
       class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-gold focus:text-navy focus:px-4 focus:py-2 focus:rounded focus:z-50 focus:font-bold"
       >Skip to main content</a
     >
+
+    {import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim() && <AnalyticsConsent />}
 
     <header class="bg-navy text-white">
       <nav
