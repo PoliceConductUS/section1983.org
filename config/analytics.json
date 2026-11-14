@@ -1,0 +1,44 @@
+{
+  "propertyId": "525032464",
+  "webStreamId": "13625196526",
+  "customDimensions": [],
+  "keyEvents": [
+    {
+      "eventName": "close_convert_lead",
+      "countingMethod": "ONCE_PER_EVENT"
+    },
+    {
+      "eventName": "purchase",
+      "countingMethod": "ONCE_PER_EVENT"
+    },
+    {
+      "eventName": "qualify_lead",
+      "countingMethod": "ONCE_PER_EVENT"
+    }
+  ],
+  "unmarkedKeyEvents": [],
+  "eventCreateRules": [],
+  "dataRetentionSettings": {
+    "eventDataRetention": "TWO_MONTHS",
+    "userDataRetention": "FOURTEEN_MONTHS",
+    "resetUserDataOnNewActivity": true
+  },
+  "enhancedMeasurementSettings": {
+    "streamEnabled": true,
+    "pageChangesEnabled": true,
+    "scrollsEnabled": true,
+    "outboundClicksEnabled": true,
+    "siteSearchEnabled": true,
+    "videoEngagementEnabled": true,
+    "fileDownloadsEnabled": true,
+    "formInteractionsEnabled": true
+  },
+  "dataRedactionSettings": {
+    "emailRedactionEnabled": true,
+    "queryParameterRedactionEnabled": false,
+    "queryParameterKeys": []
+  },
+  "googleSignalsSettings": {
+    "state": "GOOGLE_SIGNALS_DISABLED"
+  }
+}

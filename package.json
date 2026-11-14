@@ -12,7 +12,11 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "analytics:pull": "node scripts/analytics-config.mjs pull",
+    "analytics:push": "node scripts/analytics-config.mjs push",
+    "analytics:compare": "node scripts/analytics-config.mjs compare",
+    "test:analytics-config": "node --test scripts/analytics-config.test.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.17",

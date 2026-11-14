@@ -63,3 +63,7 @@ Deploys are handled by GitHub Actions:
 - `.github/workflows/preview-cleanup.yml` (preview cleanup on PR close)
 
 After bootstrap, deploy workflows only sync content to S3 and invalidate CloudFront.
+
+## Analytics configuration sync
+
+Use `npm run analytics:pull`, `npm run analytics:compare`, and `npm run analytics:push` to sync this site’s versioned GA settings. See [configuration and authentication](docs/analytics-config.md).
