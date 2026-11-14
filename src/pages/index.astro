@@ -60,6 +60,20 @@ const readingHours = Math.round(totalWords / 250 / 60);
 
 const uniqueCourts = new Set(cases.map((c) => c.data.court)).size;
 const canonicalUrl = "https://www.section1983.org/";
+const introductionVideoId = "VCTOkLyn6Pg";
+const introductionVideo = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "Section1983.org: Free Guides for Civil Rights Lawsuits",
+  description:
+    "A tour of Section1983.org's free guides, case summaries, court-process explanations, and sample documents, including the site's educational purpose and limits.",
+  thumbnailUrl:
+    "https://www.section1983.org/images/section1983-video-thumbnail.jpg",
+  uploadDate: "2026-11-13T23:37:31-08:00",
+  duration: "PT5M37S",
+  embedUrl: `https://www.youtube-nocookie.com/embed/${introductionVideoId}`,
+  url: `https://www.youtube.com/watch?v=${introductionVideoId}`,
+};
 const structuredData = [
   {
     "@context": "https://schema.org",
@@ -75,19 +89,7 @@ const structuredData = [
     name: "Institute for Police Conduct, Inc.",
     url: "https://policeconduct.org",
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "VideoObject",
-    name: "Section1983.org: Free Guides for Civil Rights Lawsuits",
-    description:
-      "A tour of Section1983.org's free guides, case summaries, court-process explanations, and sample documents, including the site's educational purpose and limits.",
-    thumbnailUrl:
-      "https://www.section1983.org/images/section1983-video-thumbnail.jpg",
-    uploadDate: "2026-11-13T23:37:31-08:00",
-    duration: "PT5M37S",
-    embedUrl: "https://www.youtube-nocookie.com/embed/VCTOkLyn6Pg",
-    url: "https://www.youtube.com/watch?v=VCTOkLyn6Pg",
-  },
+  introductionVideo,
 ];
 ---
 
@@ -97,13 +99,12 @@ const structuredData = [
   structuredData={structuredData}
 >
   <section class="mb-16">
-    <p
-      class="text-sm font-semibold text-gold-strong uppercase tracking-wide mb-3"
-    >
+    <p class="text-sm font-semibold text-gold-strong uppercase tracking-wide mb-3">
       A project of the Institute for Police Conduct, Inc.
     </p>
     <h1 class="text-4xl md:text-5xl font-bold text-navy leading-tight mb-6">
-      Your free guide to holding<br />
+      Your free guide to holding
+      <br />
       <span class="text-gold-strong">police accountable in federal court.</span>
     </h1>
     <p class="text-lg text-slate-strong max-w-2xl leading-relaxed mb-4">
@@ -115,8 +116,8 @@ const structuredData = [
       language, real cases, for people representing themselves.
     </p>
     <p class="text-base text-slate-strong max-w-2xl leading-relaxed mb-8">
-      We are <strong class="text-navy">completely independent</strong> of police and
-      government. No sponsors. No agenda. Just the law, explained honestly.
+      We are <strong class="text-navy">completely independent</strong> of police
+      and government. No sponsors. No agenda. Just the law, explained honestly.
     </p>
     <div class="flex gap-4 flex-wrap">
       <a
@@ -162,8 +163,8 @@ const structuredData = [
     <div class="aspect-video overflow-hidden rounded-lg border border-slate-200">
       <iframe
         class="h-full w-full"
-        src="https://www.youtube-nocookie.com/embed/VCTOkLyn6Pg"
-        title="Section1983.org: Free Guides for Civil Rights Lawsuits"
+        src={introductionVideo.embedUrl}
+        title={introductionVideo.name}
         width="1280"
         height="720"
         loading="lazy"
@@ -173,10 +174,7 @@ const structuredData = [
       ></iframe>
     </div>
     <p class="text-sm text-slate-strong mt-3">
-      <a
-        class="text-navy underline focus-ring"
-        href="https://youtu.be/VCTOkLyn6Pg"
-      >
+      <a class="text-navy underline focus-ring" href={introductionVideo.url}>
         Watch on YouTube
       </a>
     </p>
@@ -276,9 +274,7 @@ const structuredData = [
         <p class="text-sm text-slate mt-1">Process Guides</p>
       </div>
       <div class="text-center p-6 bg-white rounded-lg shadow-sm">
-        <p class="text-3xl font-bold text-navy">
-          {articles.length}
-        </p>
+        <p class="text-3xl font-bold text-navy">{articles.length}</p>
         <p class="text-sm text-slate mt-1">Articles</p>
       </div>
     </div>
@@ -296,19 +292,19 @@ const structuredData = [
       Read the articles in order from oldest to newest.
     </p>
     <div class="space-y-6">
-      {
-        articles
-          .slice(0, 5)
-          .map((article) => <ArticleCard article={article} headingLevel="h3" />)
-      }
+      {articles.slice(0, 5).map((article) => (
+        <ArticleCard article={article} headingLevel="h3" />
+      ))}
     </div>
     <p class="text-sm text-slate mt-6">
-      Want more articles? Browse all <a
+      Want more articles? Browse all{" "}
+      <a
         href="/articles"
         class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
       >
         Section 1983 articles
-      </a>.
+      </a>
+      .
     </p>
   </section>
 </Base>

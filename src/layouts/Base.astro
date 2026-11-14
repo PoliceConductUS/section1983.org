@@ -101,15 +101,13 @@ const commitDisplay =
       href="/rss.xml"
     />
 
-    {
-      structuredDataEntries.map((entry) => (
-        <script
-          type="application/ld+json"
-          set:html={serializeStructuredData(entry)}
-          is:inline
-        />
-      ))
-    }
+    {structuredDataEntries.map((entry) => (
+      <script
+        type="application/ld+json"
+        set:html={serializeStructuredData(entry)}
+        is:inline
+      />
+    ))}
 
     <title>{pageTitle}</title>
   </head>
@@ -117,8 +115,9 @@ const commitDisplay =
     <a
       href="#main-content"
       class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-gold focus:text-navy focus:px-4 focus:py-2 focus:rounded focus:z-50 focus:font-bold"
-      >Skip to main content</a
     >
+      Skip to main content
+    </a>
 
     <header class="bg-navy text-white">
       <nav
@@ -132,24 +131,27 @@ const commitDisplay =
 
         <!-- Desktop nav -->
         <div class="hidden md:flex items-center gap-6 text-sm">
-          <a href="/process" class="hover:text-gold transition-colors"
-            >📋 The Process</a
-          >
-          <a href="/articles" class="hover:text-gold transition-colors"
-            >✏️ Articles</a
-          >
-          <a href="/cases" class="hover:text-gold transition-colors">⚖️ Cases</a
-          >
-          <a href="/search" class="hover:text-gold transition-colors"
-            >🔍 Search</a
-          >
+          <a href="/process" class="hover:text-gold transition-colors">
+            📋 The Process
+          </a>
+          <a href="/articles" class="hover:text-gold transition-colors">
+            ✏️ Articles
+          </a>
+          <a href="/cases" class="hover:text-gold transition-colors">
+            ⚖️ Cases
+          </a>
+          <a href="/search" class="hover:text-gold transition-colors">
+            🔍 Search
+          </a>
           <a
             href="/terms-and-concepts"
-            class="hover:text-gold transition-colors">📖 Terms and Concepts</a
+            class="hover:text-gold transition-colors"
           >
-          <a href="/get-involved" class="hover:text-gold transition-colors"
-            >🤝 Get Involved</a
-          >
+            📖 Terms and Concepts
+          </a>
+          <a href="/get-involved" class="hover:text-gold transition-colors">
+            🤝 Get Involved
+          </a>
         </div>
 
         <!-- Mobile hamburger -->
@@ -173,7 +175,8 @@ const commitDisplay =
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
           </svg>
           <svg
             id="menu-icon-close"
@@ -187,7 +190,8 @@ const commitDisplay =
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"></path>
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
           </svg>
         </button>
       </nav>
@@ -202,40 +206,48 @@ const commitDisplay =
           <a
             href="/process"
             class="touch-target-inline focus-ring-gold hover:text-gold transition-colors py-1"
-            >📋 The Process</a
           >
+            📋 The Process
+          </a>
           <a
             href="/articles"
             class="touch-target-inline focus-ring-gold hover:text-gold transition-colors py-1"
-            >✏️ Articles</a
           >
+            ✏️ Articles
+          </a>
           <a
             href="/cases"
             class="touch-target-inline focus-ring-gold hover:text-gold transition-colors py-1"
-            >⚖️ Cases</a
           >
+            ⚖️ Cases
+          </a>
           <a
             href="/search"
             class="touch-target-inline focus-ring-gold hover:text-gold transition-colors py-1"
-            >🔍 Search</a
           >
+            🔍 Search
+          </a>
           <a
             href="/terms-and-concepts"
             class="touch-target-inline focus-ring-gold hover:text-gold transition-colors py-1"
-            >📖 Terms and Concepts</a
           >
+            📖 Terms and Concepts
+          </a>
           <a
             href="/get-involved"
             class="touch-target-inline focus-ring-gold hover:text-gold transition-colors py-1"
-            >🤝 Get Involved</a
           >
+            🤝 Get Involved
+          </a>
           <hr class="border-slate-700" />
           <a
             href="https://policeconduct.org/donate/"
             class="touch-target-inline focus-ring-gold bg-gold text-navy text-center justify-center font-bold py-2 rounded hover:bg-yellow-400 transition-colors mt-1"
             target="_blank"
-            rel="noopener">Donate ↗</a
+            rel="noopener"
           >
+            Donate ↗
+          </a>
         </div>
       </nav>
     </header>
@@ -290,8 +302,10 @@ const commitDisplay =
             href="https://policeconduct.org/donate/"
             class="inline-block bg-gold text-navy px-6 py-2 rounded font-bold hover:bg-yellow-400 transition-colors"
             target="_blank"
-            rel="noopener">Support This Project ↗</a
+            rel="noopener"
           >
+            Support This Project ↗
+          </a>
         </div>
 
         <!-- Four-column grid -->
@@ -304,12 +318,15 @@ const commitDisplay =
               Independent of police and government.
             </p>
             <p class="text-xs">
-              A project of the <a
+              A project of the{" "}
+              <a
                 href="https://policeconduct.org/about"
                 class="hover:text-gold transition-colors"
                 target="_blank"
-                rel="noopener">Institute for Police Conduct, Inc.</a
+                rel="noopener"
               >
+                Institute for Police Conduct, Inc.
+              </a>
             </p>
           </div>
 
@@ -318,95 +335,79 @@ const commitDisplay =
             <h3 class="text-white font-semibold mb-3">Site</h3>
             <ul class="space-y-1">
               <li>
-                <a href="/process" class="hover:text-gold transition-colors"
-                  >The Process</a
-                >
+                <a href="/process" class="hover:text-gold transition-colors">
+                  The Process
+                </a>
               </li>
               <li>
                 <a
                   href="/terms-and-concepts"
                   class="hover:text-gold transition-colors"
-                  >Terms and Concepts</a
                 >
+                  Terms and Concepts
+                </a>
               </li>
               <li>
-                <a href="/articles" class="hover:text-gold transition-colors"
-                  >Articles</a
-                >
+                <a href="/articles" class="hover:text-gold transition-colors">
+                  Articles
+                </a>
               </li>
               <li>
-                <a href="/cases" class="hover:text-gold transition-colors"
-                  >Case Law Library</a
-                >
+                <a href="/cases" class="hover:text-gold transition-colors">
+                  Case Law Library
+                </a>
               </li>
               <li>
                 <a
                   href="/statute-of-limitations/"
                   class="hover:text-gold transition-colors"
-                  >Statute of Limitations by State</a
                 >
+                  Statute of Limitations by State
+                </a>
               </li>
               <li>
-                <a href="/downloads/" class="hover:text-gold transition-colors"
-                  >Sample Documents</a
-                >
+                <a href="/downloads/" class="hover:text-gold transition-colors">
+                  Sample Documents
+                </a>
               </li>
               <li>
                 <a
                   href="/get-involved"
-                  class="hover:text-gold transition-colors">Get Involved</a
+                  class="hover:text-gold transition-colors"
                 >
+                  Get Involved
+                </a>
               </li>
               <li>
-                <a href="/about" class="hover:text-gold transition-colors"
-                  >About</a
-                >
+                <a href="/about" class="hover:text-gold transition-colors">
+                  About
+                </a>
               </li>
               <li>
                 <a
                   href="https://policeconduct.org/report/new"
                   class="hover:text-gold transition-colors"
                   target="_blank"
-                  rel="noopener">Report an Incident ↗</a
+                  rel="noopener"
                 >
+                  Report an Incident ↗
+                </a>
               </li>
               <li>
                 <a
                   href="https://policeconduct.org/about/contact/"
                   class="hover:text-gold transition-colors"
                   target="_blank"
-                  rel="noopener">Contact ↗</a
+                  rel="noopener"
                 >
+                  Contact ↗
+                </a>
               </li>
-              {
-                import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim() && (
-                  <li>
-                    <button
-                      type="button"
-                      class="inline-flex items-center gap-2 rounded border border-slate-400 px-3 py-2 my-2 min-h-11 align-middle text-sm text-slate-200 hover:text-gold hover:border-gold transition-colors cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-                      data-privacy-settings
-                      hidden
-                    >
-                      Cookie settings
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.75"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true"
-                        focusable="false"
-                      >
-                        <path d="M21 12a9 9 0 1 1-9-9 4 4 0 0 0 4 4 4 4 0 0 0 5 5Z" />
-                        <path d="M8 8h.01M7 14h.01M12 12h.01M12 17h.01M16 15h.01" />
-                      </svg>
-                    </button>
-                  </li>
-                )
-              }
+              {import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim() && (
+                <li>
+                  <AnalyticsConsent />
+                </li>
+              )}
             </ul>
           </div>
 
@@ -419,16 +420,20 @@ const commitDisplay =
                   href="https://policeconduct.org"
                   class="hover:text-gold transition-colors"
                   target="_blank"
-                  rel="noopener">policeconduct.org ↗</a
+                  rel="noopener"
                 >
+                  policeconduct.org ↗
+                </a>
               </li>
               <li>
                 <a
                   href="https://reddit.com/r/Section1983_pro_se"
                   class="hover:text-gold transition-colors"
                   target="_blank"
-                  rel="noopener">r/Section1983_pro_se ↗</a
+                  rel="noopener"
                 >
+                  r/Section1983_pro_se ↗
+                </a>
               </li>
             </ul>
           </div>
@@ -442,130 +447,156 @@ const commitDisplay =
                   href="https://free.law"
                   class="hover:text-gold transition-colors"
                   target="_blank"
-                  rel="noopener">Free Law Project ↗</a
+                  rel="noopener"
                 >
+                  Free Law Project ↗
+                </a>
               </li>
               <li>
                 <a
                   href="https://www.courtlistener.com"
                   class="hover:text-gold transition-colors"
                   target="_blank"
-                  rel="noopener">CourtListener ↗</a
+                  rel="noopener"
                 >
+                  CourtListener ↗
+                </a>
               </li>
               <li>
                 <a
                   href="https://www.aclu.org"
                   class="hover:text-gold transition-colors"
                   target="_blank"
-                  rel="noopener">ACLU ↗</a
+                  rel="noopener"
                 >
+                  ACLU ↗
+                </a>
               </li>
               <li>
                 <a
                   href="https://ij.org"
                   class="hover:text-gold transition-colors"
                   target="_blank"
-                  rel="noopener">Institute for Justice ↗</a
+                  rel="noopener"
                 >
+                  Institute for Justice ↗
+                </a>
               </li>
               <li>
                 <a
                   href="https://joincampaignzero.org"
                   class="hover:text-gold transition-colors"
                   target="_blank"
-                  rel="noopener">Campaign Zero ↗</a
+                  rel="noopener"
                 >
+                  Campaign Zero ↗
+                </a>
               </li>
               <li>
                 <a
                   href="https://www.nlg-npap.org"
                   class="hover:text-gold transition-colors"
                   target="_blank"
-                  rel="noopener">Nat'l Police Accountability Project ↗</a
+                  rel="noopener"
                 >
+                  Nat'l Police Accountability Project ↗
+                </a>
               </li>
               <li>
                 <a
                   href="https://innocenceproject.org"
                   class="hover:text-gold transition-colors"
                   target="_blank"
-                  rel="noopener">Innocence Project ↗</a
+                  rel="noopener"
                 >
+                  Innocence Project ↗
+                </a>
               </li>
               <li>
                 <a
                   href="https://www.naacpldf.org"
                   class="hover:text-gold transition-colors"
                   target="_blank"
-                  rel="noopener">NAACP Legal Defense Fund ↗</a
+                  rel="noopener"
                 >
+                  NAACP Legal Defense Fund ↗
+                </a>
               </li>
               <li>
                 <a
                   href="https://www.cato.org/qualified-immunity"
                   class="hover:text-gold transition-colors"
                   target="_blank"
-                  rel="noopener">Cato Institute (QI) ↗</a
+                  rel="noopener"
                 >
+                  Cato Institute (QI) ↗
+                </a>
               </li>
             </ul>
           </div>
         </div>
 
         <!-- Disclaimers -->
-        <div
-          class="border-t border-slate-700 pt-6 mb-6 space-y-2 text-xs text-slate-400"
-        >
+        <div class="border-t border-slate-700 pt-6 mb-6 space-y-2 text-xs text-slate-400">
           <p>
-            <strong class="text-slate-400">⚖️ Not Legal Advice.</strong> Nothing on
-            this site constitutes legal advice. This is an educational resource. For
-            advice about your specific situation, consult a licensed attorney in your
-            jurisdiction.
+            <strong class="text-slate-400">⚖️ Not Legal Advice.</strong> Nothing
+            on this site constitutes legal advice. This is an educational
+            resource. For advice about your specific situation, consult a
+            licensed attorney in your jurisdiction.
           </p>
           <p>
-            <strong class="text-slate-400">🤖 AI Disclosure.</strong> Some content
-            on this site was researched and drafted with the assistance of AI tools.
-            Citations, statutes, deadlines, and statements of law on this site have
-            not been independently verified. Do not rely on them without checking
-            the primary source. Errors are likely — <a
+            <strong class="text-slate-400">🤖 AI Disclosure.</strong> Some
+            content on this site was researched and drafted with the assistance
+            of AI tools. Citations, statutes, deadlines, and statements of law
+            on this site have not been independently verified. Do not rely on
+            them without checking the primary source. Errors are likely —{" "}
+            <a
               href="https://policeconduct.org/about/contact/"
               class="hover:text-gold transition-colors"
               target="_blank"
-              rel="noopener">report them</a
-            >.
+              rel="noopener"
+            >
+              report them
+            </a>
+            .
           </p>
           <p>
-            <strong class="text-slate-400">⚠️ Use at Your Own Risk.</strong> Laws
-            change. Courts disagree. What applies in one circuit may not apply in
-            yours. Verify everything independently before relying on it in any legal
-            proceeding.
+            <strong class="text-slate-400">⚠️ Use at Your Own Risk.</strong>{" "}
+            Laws change. Courts disagree. What applies in one circuit may not
+            apply in yours. Verify everything independently before relying on it
+            in any legal proceeding.
           </p>
         </div>
 
         <!-- Bottom bar -->
         <div class="text-center text-xs text-slate-400">
           <p>
-            © 2026 Institute for Police Conduct, Inc. All rights reserved. · <a
-              href="/legal-notice"
-              class="hover:text-gold transition-colors">Legal Notice</a
-            > · <a href="/terms" class="hover:text-gold transition-colors"
-              >Terms &amp; Conditions</a
-            > · <a
-              href="/accessibility"
-              class="hover:text-gold transition-colors">Accessibility</a
-            > · <a href="/sitemap" class="hover:text-gold transition-colors"
-              >Site Map</a
-            > · <a href="/rss.xml" class="hover:text-gold transition-colors"
-              >RSS</a
-            >
+            © 2026 Institute for Police Conduct, Inc. All rights reserved. ·{" "}
+            <a href="/legal-notice" class="hover:text-gold transition-colors">
+              Legal Notice
+            </a>{" "}
+            ·{" "}
+            <a href="/terms" class="hover:text-gold transition-colors">
+              Terms &amp; Conditions
+            </a>{" "}
+            ·{" "}
+            <a href="/accessibility" class="hover:text-gold transition-colors">
+              Accessibility
+            </a>{" "}
+            ·{" "}
+            <a href="/sitemap" class="hover:text-gold transition-colors">
+              Site Map
+            </a>{" "}
+            ·{" "}
+            <a href="/rss.xml" class="hover:text-gold transition-colors">
+              RSS
+            </a>
           </p>
           <p class="mt-2">
             Build commit: <code>{commitDisplay}</code>
           </p>
         </div>
       </div>
-      {import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim() && <AnalyticsConsent />}
     </footer>
   </body>
 </html>

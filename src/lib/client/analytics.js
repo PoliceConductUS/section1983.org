@@ -1,4 +1,9 @@
-import { readAnalyticsChoice, readAdvertisingChoice, advertisingSettings, consentState } from "./analytics-consent.js";
+import { consentPreferences } from "./consent-preferences.js";
+import {
+  advertisingSettings,
+  consentState,
+  clearGoogleConsentCookies,
+} from "./google-consent.js";
 
 const MEASUREMENT_ID = import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim();
 const ATTRIBUTION_PARAMETERS = new Set([
@@ -76,13 +81,16 @@ export const trackAnalytics = (eventName, params = {}) => {
 
 export const initializeAnalytics = () => {
   window.__IPC_ANALYTICS__ = { track: trackAnalytics };
-  if (!MEASUREMENT_ID || !isProduction()) return;
+  if (!MEASUREMENT_ID) return;
+  const choices = consentPreferences.read();
+  clearGoogleConsentCookies(choices, window.location.hostname, document);
+  if (!isProduction()) return;
   window.dataLayer = window.dataLayer || [];
   window.gtag = function gtag() {
     if (isProduction()) window.dataLayer.push(arguments);
   };
-  window.gtag("consent", "default", consentState(readAnalyticsChoice(), readAdvertisingChoice()));
-  window.gtag("set", advertisingSettings(readAdvertisingChoice()));
+  window.gtag("consent", "default", consentState(choices));
+  window.gtag("set", advertisingSettings(choices));
   const context = pageContext();
   window.gtag("js", new Date());
   window.gtag("set", context);
