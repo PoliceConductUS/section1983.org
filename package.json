@@ -33,5 +33,8 @@
   "overrides": {
     "puppeteer": "^24.15.0",
     "puppeteer-core": "^24.15.0"
+  },
+  "engines": {
+    "node": "26.13.1"
   }
 }
