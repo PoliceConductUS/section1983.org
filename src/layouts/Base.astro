@@ -120,7 +120,6 @@ const commitDisplay =
       >Skip to main content</a
     >
 
-
     <header class="bg-navy text-white">
       <nav
         class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between"
@@ -531,6 +530,21 @@ const commitDisplay =
             > · <a href="/rss.xml" class="hover:text-gold transition-colors"
               >RSS</a
             >
+            {
+              import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim() && (
+                <>
+                  {" · "}
+                  <button
+                    type="button"
+                    class="hover:text-gold transition-colors cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                    data-privacy-settings
+                    hidden
+                  >
+                    Privacy settings
+                  </button>
+                </>
+              )
+            }
           </p>
           <p class="mt-2">
             Build commit: <code>{commitDisplay}</code>
