@@ -37,5 +37,14 @@
   },
   "engines": {
     "node": "26.13.1"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true,
+    "puppeteer@25.17.0": true
+  },
+  "overrides": {
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "11.0.8"
+    }
   }
 }
