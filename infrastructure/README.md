@@ -23,20 +23,12 @@ aws sts get-caller-identity
 6. Run bootstrap:
 
 ```bash
-export GITHUB_TOKEN=<github-token-with-repo-admin-access>
-terraform -chdir=infrastructure/bootstrap init
-terraform -chdir=infrastructure/bootstrap apply
+bash infrastructure/bootstrap/scripts/apply.sh
 ```
 
-Or load from local `.env` (gitignored):
-
-```bash
-set -a
-source .env
-set +a
-terraform -chdir=infrastructure/bootstrap init
-terraform -chdir=infrastructure/bootstrap apply
-```
+The wrapper needs AWS credentials for the account that holds the state; it reads
+`AWS_PROFILE` from the git-ignored `.env` when the shell has not set one. Do not
+run `terraform apply` directly.
 
 7. If bootstrap created a new hosted zone, update nameservers at your registrar to the Route 53 values:
 
@@ -60,12 +52,12 @@ terraform -chdir=infrastructure/bootstrap output route53_name_servers
 9. Bootstrap also creates GitHub environments and environment variables for workflows:
    `production` (`AWS_ROLE_ARN`, `S3_BUCKET`, `CLOUDFRONT_DIST_ID`) and
    `preview` (`AWS_ROLE_ARN`, `S3_BUCKET`, `CLOUDFRONT_DIST_ID`).
-   If GA IDs are set in bootstrap tfvars, it also writes `PUBLIC_GA_MEASUREMENT_ID` per environment.
-   If Sentry DSNs are set in bootstrap tfvars, it also writes `PUBLIC_SENTRY_DSN` and `PUBLIC_SENTRY_ENVIRONMENT` per environment.
+   If GA IDs are set in `section1983.auto.tfvars`, it also writes `PUBLIC_GA_MEASUREMENT_ID` per environment.
+   If Sentry DSNs are set in `section1983.auto.tfvars`, it also writes `PUBLIC_SENTRY_DSN` and `PUBLIC_SENTRY_ENVIRONMENT` per environment.
    If `sentry_org`/`sentry_project` are set, workflows can upload source maps to Sentry.
    If `sentry_auth_token` is set in bootstrap inputs, bootstrap also writes `SENTRY_AUTH_TOKEN` as a GitHub environment secret for both environments.
 
-If `bucket_name` is omitted in `infrastructure/bootstrap/terraform.tfvars`, bootstrap uses `<project_name>-site-<account_id>`.
+If `bucket_name` is omitted in `infrastructure/bootstrap/section1983.auto.tfvars`, bootstrap uses `<project_name>-site-<account_id>`.
 
 10. Optional hardening: remove `AdministratorAccess` from `section1983-setup-admin`, then disable or delete its access key.
 

@@ -28,6 +28,7 @@ pnpm-debug.log*
 *.tfstate
 *.tfstate.*
 *.tfvars
+!infrastructure/bootstrap/*.auto.tfvars
 *.tfvars.json
 crash.log
 crash.*.log

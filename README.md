@@ -35,19 +35,12 @@ Single Terraform entrypoint:
 Use:
 
 ```bash
-export GITHUB_TOKEN=<github-token-with-repo-admin-access>
-terraform -chdir=infrastructure/bootstrap init
-terraform -chdir=infrastructure/bootstrap apply
+bash infrastructure/bootstrap/scripts/apply.sh
 ```
 
-Or load local `.env` first:
-
-```bash
-set -a
-source .env
-set +a
-terraform -chdir=infrastructure/bootstrap apply
-```
+The wrapper needs AWS credentials for the account that holds the state; it reads
+`AWS_PROFILE` from the git-ignored `.env` when the shell has not set one. Do not
+run `terraform apply` directly.
 
 Full setup docs:
 

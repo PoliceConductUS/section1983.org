@@ -17,42 +17,24 @@ It creates:
 ## Usage
 
 ```bash
-cd infrastructure/bootstrap
-cp terraform.tfvars.example terraform.tfvars
-export GITHUB_TOKEN=<github-token-with-repo-admin-access>
-terraform init
-bash scripts/apply.sh
-```
-
-## Using .env
-
-You can keep local values in `.env` (gitignored), then load before Terraform:
-
-```bash
-set -a
-source .env
-set +a
 bash infrastructure/bootstrap/scripts/apply.sh
 ```
 
-Example `.env` keys:
+Do not run `terraform apply` directly.
 
-- `GITHUB_TOKEN`
-- `TF_VAR_public_ga_measurement_id_production`
-- `TF_VAR_public_ga_measurement_id_preview`
-- `TF_VAR_public_sentry_dsn_production`
-- `TF_VAR_public_sentry_dsn_preview`
-- `TF_VAR_sentry_org`
-- `TF_VAR_sentry_project`
-- `TF_VAR_sentry_auth_token`
-- `TF_STATE_BUCKET`
-- `AWS_ROLE_ARN`
-- `S3_BUCKET`
-- `CLOUDFRONT_DIST_ID`
+## Where values come from
 
-`scripts/apply.sh` runs Terraform apply and then syncs `.env`.
-The sync step comments any existing matching `KEY=...` line in `.env` and appends the latest value from Terraform outputs.
-It also writes all outputs as `TF_OUT_<OUTPUT_NAME>` keys (uppercase, non-alphanumeric chars replaced with `_`).
+- **State** is in the S3 bucket `section1983-tfstate-942370948729` (`backend.tf`), so every checkout and worktree reads the same state.
+- **Inputs** are tracked in `section1983.auto.tfvars`, which Terraform loads on every plan and apply. Secrets never go in that file.
+- **Secrets** live only in AWS Systems Manager Parameter Store, as SecureString parameters named `/policeconduct/secrets/<NAME>`. This stack uses `SENTRY_AUTH_TOKEN` and `GITHUB_TOKEN`, which it shares with policeconduct.org. The stored value replaces any local copy.
+- **Deployed resource names** are Terraform outputs: `terraform -chdir=infrastructure/bootstrap output`. Nothing copies them into a file.
+- **Machine settings** go in the git-ignored `.env`: `AWS_PROFILE`, and the public `PUBLIC_SENTRY_DSN` and `PUBLIC_SENTRY_ENVIRONMENT` for local builds.
+
+Before it changes anything, `scripts/apply.sh`:
+
+- refuses a checkout that cannot read the existing state, and an AWS account that does not match it;
+- writes one plan, and refuses it when it destroys or replaces a resource whose address is not listed, one per line, in `TERRAFORM_APPROVED_DESTROYS`;
+- asks for `yes`, then applies exactly that plan. When live infrastructure already matches, it applies nothing.
 
 ## Which AWS Account Is Used?
 
@@ -87,13 +69,13 @@ CloudFront bootstrap is idempotent for names:
 
 ## DNS Records Included
 
-Bootstrap applies DNS records from `extra_dns_records` in `terraform.tfvars`.
+Bootstrap applies DNS records from `extra_dns_records` in `section1983.auto.tfvars`.
 
 Current default includes Google Workspace MX:
 
 - `@ MX 1 smtp.google.com.`
 
-Add your domain-specific TXT verification/DKIM records in local `terraform.tfvars` under `extra_dns_records` so they are applied with the zone.
+Add your domain-specific TXT verification/DKIM records in `section1983.auto.tfvars` under `extra_dns_records` so they are applied with the zone.
 
 ## GitHub Environments + Vars
 
@@ -107,7 +89,7 @@ And sets these environment variables automatically:
 - `production`: `AWS_ROLE_ARN`, `S3_BUCKET`, `CLOUDFRONT_DIST_ID`
 - `preview`: `AWS_ROLE_ARN`, `S3_BUCKET`, `CLOUDFRONT_DIST_ID`
 
-Optional GA inputs in `terraform.tfvars`:
+Optional GA inputs in `section1983.auto.tfvars`:
 
 - `public_ga_measurement_id_production`
 - `public_ga_measurement_id_preview`
@@ -115,7 +97,7 @@ Optional GA inputs in `terraform.tfvars`:
 If set, Terraform also creates `PUBLIC_GA_MEASUREMENT_ID` in the matching GitHub environment.
 If unset/null, no GA variable is written and the GA component renders nothing.
 
-Optional Sentry inputs in `terraform.tfvars`:
+Optional Sentry inputs in `section1983.auto.tfvars`:
 
 - `public_sentry_dsn_production`
 - `public_sentry_dsn_preview`
