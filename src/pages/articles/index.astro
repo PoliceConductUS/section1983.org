@@ -43,32 +43,39 @@ const structuredData = {
 
   <h1 class="text-3xl font-bold text-navy mb-8">Articles</h1>
   <p class="text-sm text-slate-600 mb-8">
-    Need background before diving in? Use the <a
+    Need background before diving in? Use the{" "}
+    <a
       href="/terms-and-concepts"
       class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-      >Terms and Concepts</a
-    > for legal terms and the <a
+    >
+      Terms and Concepts
+    </a>{" "}
+    for legal terms and the{" "}
+    <a
       href="/process"
       class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-      >process guide</a
-    > for the sequence of a federal case.
+    >
+      process guide
+    </a>{" "}
+    for the sequence of a federal case.
   </p>
   <p class="text-sm text-slate-600 mb-8">
     Read the articles in order from oldest to newest.
   </p>
   <p class="text-sm text-slate-600 mb-8">
     Articles explain the background, strategy, and bigger picture. If you need
-    step-by-step action, use the <a
+    step-by-step action, use the{" "}
+    <a
       href="/process"
       class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-      >process guide</a
-    >.
+    >
+      process guide
+    </a>
+    .
   </p>
   <div class="space-y-6">
-    {
-      published.map((article) => (
-        <ArticleCard article={article} headingLevel="h2" />
-      ))
-    }
+    {published.map((article) => (
+      <ArticleCard article={article} headingLevel="h2" />
+    ))}
   </div>
 </Base>

@@ -58,16 +58,17 @@ const structuredData = {
     law recently changed.
   </p>
 
-  <div class="bg-cream border-l-4 border-gold rounded p-4 mb-8 max-w-3xl">
+  <div class="bg-cream border-s-4 border-gold rounded p-4 mb-8 max-w-3xl">
     <p class="font-semibold text-navy text-sm mb-1">Before you rely on this</p>
     <p class="text-sm text-slate-700">
-      This table was compiled on {SOL_LAST_REVIEWED} from the statute text linked
-      in each row. Nothing here is a substitute for reading the statute. Legislatures
-      change these periods, and the period that applies is the one in force for your
-      incident date. Confirm the statute on your state legislature's website before
-      you calculate a deadline. When in doubt, file by the shorter possible date.
-      Rows marked <span class="font-semibold">recent change</span>
-      have a known amendment or a live dispute described on the state's page.
+      This table was compiled on {SOL_LAST_REVIEWED} from the statute text
+      linked in each row. Nothing here is a substitute for reading the statute.
+      Legislatures change these periods, and the period that applies is the one
+      in force for your incident date. Confirm the statute on your state
+      legislature's website before you calculate a deadline. When in doubt, file
+      by the shorter possible date. Rows marked{" "}
+      <span class="font-semibold">recent change</span> have a known amendment or
+      a live dispute described on the state's page.
     </p>
   </div>
 
@@ -76,85 +77,81 @@ const structuredData = {
     <table class="min-w-full text-sm border border-slate-200 bg-white">
       <thead class="bg-slate-100 text-navy">
         <tr>
-          <th class="text-left px-3 py-2 font-semibold">State</th>
-          <th class="text-left px-3 py-2 font-semibold">Period</th>
-          <th class="text-left px-3 py-2 font-semibold">Borrowed statute</th>
-          <th class="text-left px-3 py-2 font-semibold">Notes</th>
+          <th class="text-start px-3 py-2 font-semibold">State</th>
+          <th class="text-start px-3 py-2 font-semibold">Period</th>
+          <th class="text-start px-3 py-2 font-semibold">Borrowed statute</th>
+          <th class="text-start px-3 py-2 font-semibold">Notes</th>
         </tr>
       </thead>
       <tbody>
-        {
-          STATE_LIMITATIONS.map((s) => (
-            <tr class="border-t border-slate-200">
-              <td class="px-3 py-2">
+        {STATE_LIMITATIONS.map((s) => (
+          <tr class="border-t border-slate-200">
+            <td class="px-3 py-2">
+              <a
+                href={`/statute-of-limitations/${s.slug}/`}
+                class="focus-ring surface-link font-semibold text-navy underline decoration-gold decoration-2"
+              >
+                {s.name}
+              </a>
+            </td>
+            <td class="px-3 py-2 whitespace-nowrap">
+              {s.years} {s.years === 1 ? "year" : "years"}
+            </td>
+            <td class="px-3 py-2 font-mono text-xs">
+              {s.source ? (
                 <a
-                  href={`/statute-of-limitations/${s.slug}/`}
-                  class="focus-ring surface-link font-semibold text-navy underline decoration-gold decoration-2"
+                  href={s.source}
+                  target="_blank"
+                  rel="noopener"
+                  class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
                 >
-                  {s.name}
+                  {s.statute}
                 </a>
-              </td>
-              <td class="px-3 py-2 whitespace-nowrap">
-                {s.years} {s.years === 1 ? "year" : "years"}
-              </td>
-              <td class="px-3 py-2 font-mono text-xs">
-                {s.source ? (
-                  <a
-                    href={s.source}
-                    target="_blank"
-                    rel="noopener"
-                    class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-                  >
-                    {s.statute}
-                  </a>
-                ) : (
-                  s.statute
-                )}
-              </td>
-              <td class="px-3 py-2">
-                {s.confidence === "verify" && (
-                  <span class="text-xs font-semibold uppercase tracking-wide text-gold-strong">
-                    recent change
-                  </span>
-                )}
-              </td>
-            </tr>
-          ))
-        }
+              ) : (
+                s.statute
+              )}
+            </td>
+            <td class="px-3 py-2">
+              {s.confidence === "verify" && (
+                <span class="text-xs font-semibold uppercase tracking-wide text-gold-strong">
+                  recent change
+                </span>
+              )}
+            </td>
+          </tr>
+        ))}
       </tbody>
     </table>
   </div>
 
   <h2 class="text-xl font-bold text-navy mb-3">Grouped by period</h2>
   <div class="grid gap-4 md:grid-cols-2 mb-10">
-    {
-      yearGroups.map(([years, states]) => (
-        <div class="border border-slate-200 rounded-lg bg-white p-4">
-          <p class="font-semibold text-navy mb-2">
-            {years} {years === 1 ? "year" : "years"}
-          </p>
-          <p class="text-sm text-slate-700">
-            {states.map((s, i) => (
-              <>
-                {i > 0 && ", "}
-                <a
-                  href={`/statute-of-limitations/${s.slug}/`}
-                  class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-                >
-                  {s.name}
-                </a>
-              </>
-            ))}
-          </p>
-        </div>
-      ))
-    }
+    {yearGroups.map(([years, states]) => (
+      <div class="border border-slate-200 rounded-lg bg-white p-4">
+        <p class="font-semibold text-navy mb-2">
+          {years} {years === 1 ? "year" : "years"}
+        </p>
+        <p class="text-sm text-slate-700">
+          {states.map((s, i) => (
+            <>
+              {i > 0 && ", "}
+              <a
+                href={`/statute-of-limitations/${s.slug}/`}
+                class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+              >
+                {s.name}
+              </a>
+            </>
+          ))}
+        </p>
+      </div>
+    ))}
   </div>
 
   <div class="prose prose-slate max-w-3xl">
     <h2>Why the period comes from state law</h2>
     <p>
-      Section 1983 does not say how long a plaintiff has to sue. In
+      Section 1983 does not say how long a plaintiff has to sue. In{" "}
       <em>Wilson v. Garcia</em>, 471 U.S. 261 (1985), the Supreme Court held
       that every Section 1983 claim borrows the forum state's limitations period
       for personal-injury actions. In <em>Owens v. Okure</em>, 488 U.S. 235
@@ -180,41 +177,46 @@ const structuredData = {
         <strong>Excessive force</strong> accrues on the day of the force.
       </li>
       <li>
-        <strong>False arrest</strong> accrues when you are first held under legal
-        process, usually your first court appearance, not when the charges are dropped.
+        <strong>False arrest</strong> accrues when you are first held under
+        legal process, usually your first court appearance, not when the charges
+        are dropped.{" "}
         <a href="/cases/wallace-v-kato">
           <em>Wallace v. Kato</em>
-        </a>.
+        </a>
+        .
       </li>
       <li>
-        <strong>Fabricated evidence</strong> (due process) accrues when the criminal
-        case ends in your favor.
+        <strong>Fabricated evidence</strong> (due process) accrues when the
+        criminal case ends in your favor.{" "}
         <a href="/cases/mcdonough-v-smith">
           <em>McDonough v. Smith</em>
-        </a>.
+        </a>
+        .
       </li>
       <li>
-        <strong>Malicious prosecution</strong> (Fourth Amendment) also requires favorable
-        termination, and any ending without a conviction counts.
+        <strong>Malicious prosecution</strong> (Fourth Amendment) also requires
+        favorable termination, and any ending without a conviction counts.{" "}
         <a href="/cases/thompson-v-clark">
           <em>Thompson v. Clark</em>
-        </a>.
+        </a>
+        .
       </li>
       <li>
-        <strong>Claims that would undermine a standing conviction</strong> do not
-        accrue until the conviction is set aside.
+        <strong>Claims that would undermine a standing conviction</strong> do
+        not accrue until the conviction is set aside.{" "}
         <a href="/cases/heck-v-humphrey">
           <em>Heck v. Humphrey</em>
-        </a>.
+        </a>
+        .
       </li>
     </ul>
     <p>
       One incident can produce counts with different accrual dates. Calculate
-      each one. Read
-      <a
-        href="/articles/statute-of-limitations-and-tolling-in-a-section-1983-case"
-        >Statute of Limitations and Tolling in a Section 1983 Case</a
-      > for the full walkthrough.
+      each one. Read{" "}
+      <a href="/articles/statute-of-limitations-and-tolling-in-a-section-1983-case">
+        Statute of Limitations and Tolling in a Section 1983 Case
+      </a>{" "}
+      for the full walkthrough.
     </p>
 
     <h2>Tolling comes from state law, with limits</h2>
@@ -241,11 +243,11 @@ const structuredData = {
         page and read the note. Then confirm the statute yourself either way.
       </li>
       <li>
-        If the result is within a few months, read
-        <a
-          href="/articles/statute-of-limitations-and-tolling-in-a-section-1983-case#what-to-do-if-you-think-the-deadline-may-be-close"
-          >what to do when the deadline is close</a
-        >. Filing the complaint stops the clock; a pending records request does
+        If the result is within a few months, read{" "}
+        <a href="/articles/statute-of-limitations-and-tolling-in-a-section-1983-case#what-to-do-if-you-think-the-deadline-may-be-close">
+          what to do when the deadline is close
+        </a>
+        . Filing the complaint stops the clock; a pending records request does
         not.
       </li>
     </ol>

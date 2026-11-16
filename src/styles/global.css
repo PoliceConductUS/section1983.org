@@ -223,7 +223,7 @@ input {
 .prose ul,
 .prose ol {
   margin-bottom: 1.25rem;
-  padding-left: 1.5rem;
+  padding-inline-start: 1.5rem;
 }
 
 .prose li {
@@ -235,8 +235,8 @@ input {
 }
 
 .prose blockquote {
-  border-left: 4px solid var(--color-gold);
-  padding-left: 1rem;
+  border-inline-start: 4px solid var(--color-gold);
+  padding-inline-start: 1rem;
   margin: 1.5rem 0;
   color: var(--color-slate-strong);
   font-style: italic;
@@ -267,7 +267,7 @@ input {
   background: var(--color-navy);
   color: white;
   padding: 0.75rem;
-  text-align: left;
+  text-align: start;
   font-weight: 600;
 }
 
@@ -286,6 +286,14 @@ input {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+  }
+
+  /* Sentence-length cells wrap at a readable width instead of forcing one
+     very wide line. Markdown cells get the class from the Markdown plugin in
+     astro.config.mjs; hand-written tables add it in the template. */
+  .prose td.cell-wrap {
+    white-space: normal;
+    min-width: min(16rem, 60vw);
   }
 }
 

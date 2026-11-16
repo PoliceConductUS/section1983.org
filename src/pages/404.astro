@@ -17,14 +17,16 @@ import Base from "../layouts/Base.astro";
       the main sections below.
     </p>
     <form action="/search/" method="get" class="mb-10" role="search">
-      <label for="not-found-search" class="sr-only">Search the site</label>
+      <label for="not-found-search" class="sr-only">
+        Search the site
+      </label>
       <div class="flex gap-2 max-w-md mx-auto">
         <input
           id="not-found-search"
           type="search"
           name="q"
           placeholder="Search section1983.org"
-          class="flex-1 border border-slate-300 rounded px-4 py-2 focus-ring"
+          class="flex-1 min-w-0 border border-slate-300 rounded px-4 py-2 focus-ring"
         />
         <button
           type="submit"
@@ -35,16 +37,16 @@ import Base from "../layouts/Base.astro";
       </div>
     </form>
     <nav aria-label="Main sections">
-      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-start">
         <li>
           <a
             href="/process/"
             class="block border border-slate-200 rounded-lg p-4 hover:border-gold focus-ring"
           >
             <span class="font-bold text-navy">The Process</span>
-            <span class="block text-sm text-slate-600"
-              >Step-by-step guide to a Section 1983 case in federal court.</span
-            >
+            <span class="block text-sm text-slate-600">
+              Step-by-step guide to a Section 1983 case in federal court.
+            </span>
           </a>
         </li>
         <li>
@@ -53,9 +55,9 @@ import Base from "../layouts/Base.astro";
             class="block border border-slate-200 rounded-lg p-4 hover:border-gold focus-ring"
           >
             <span class="font-bold text-navy">Articles</span>
-            <span class="block text-sm text-slate-600"
-              >Plain-language articles on claims, pleading, and defenses.</span
-            >
+            <span class="block text-sm text-slate-600">
+              Plain-language articles on claims, pleading, and defenses.
+            </span>
           </a>
         </li>
         <li>
@@ -64,9 +66,9 @@ import Base from "../layouts/Base.astro";
             class="block border border-slate-200 rounded-lg p-4 hover:border-gold focus-ring"
           >
             <span class="font-bold text-navy">Case Law Library</span>
-            <span class="block text-sm text-slate-600"
-              >Section 1983 decisions explained in plain language.</span
-            >
+            <span class="block text-sm text-slate-600">
+              Section 1983 decisions explained in plain language.
+            </span>
           </a>
         </li>
         <li>
@@ -75,9 +77,9 @@ import Base from "../layouts/Base.astro";
             class="block border border-slate-200 rounded-lg p-4 hover:border-gold focus-ring"
           >
             <span class="font-bold text-navy">Terms and Concepts</span>
-            <span class="block text-sm text-slate-600"
-              >Definitions of the doctrines and procedural rules you will meet.</span
-            >
+            <span class="block text-sm text-slate-600">
+              Definitions of the doctrines and procedural rules you will meet.
+            </span>
           </a>
         </li>
       </ul>

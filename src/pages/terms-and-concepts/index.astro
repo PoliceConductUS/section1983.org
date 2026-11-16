@@ -80,44 +80,43 @@ const structuredData = {
     it means, why it matters, and how courts actually use it.
   </p>
   <p class="text-sm text-slate-600 mb-10">
-    New here? Start with the <a
+    New here? Start with the{" "}
+    <a
       href="/process"
       class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-      >legal process guide</a
-    >, then come back here when a motion, doctrine, or damages rule needs
+    >
+      legal process guide
+    </a>
+    , then come back here when a motion, doctrine, or damages rule needs
     translation.
   </p>
 
-  {
-    categoryOrder
-      .filter((cat) => grouped[cat])
-      .map((cat) => (
-        <section class="mb-10">
-          <h2 class="text-xl font-bold text-navy mb-4 border-b border-slate-200 pb-2">
-            {categoryLabels[cat]}
-          </h2>
-          <div class="grid gap-3">
-            {grouped[cat].map((entry) => (
-              <a
-                href={`/terms-and-concepts/${entry.id}`}
-                class="interactive-card focus-ring block p-4 bg-white rounded border border-slate-200"
-              >
-                <span class="font-semibold text-navy">{entry.data.term}</span>
-                <span class="text-slate-500 ml-2 text-sm">
-                  {entry.data.description}
-                </span>
-              </a>
-            ))}
-          </div>
-        </section>
-      ))
-  }
+  {categoryOrder
+    .filter((cat) => grouped[cat])
+    .map((cat) => (
+      <section class="mb-10">
+        <h2 class="text-xl font-bold text-navy mb-4 border-b border-slate-200 pb-2">
+          {categoryLabels[cat]}
+        </h2>
+        <div class="grid gap-3">
+          {grouped[cat].map((entry) => (
+            <a
+              href={`/terms-and-concepts/${entry.id}`}
+              class="interactive-card focus-ring block p-4 bg-white rounded border border-slate-200"
+            >
+              <span class="font-semibold text-navy">{entry.data.term}</span>
+              <span class="text-slate-500 ms-2 text-sm">
+                {entry.data.description}
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
 
-  {
-    entries.length === 0 && (
-      <p class="text-slate-500 italic">
-        Terms and concepts entries are being written. Check back soon.
-      </p>
-    )
-  }
+  {entries.length === 0 && (
+    <p class="text-slate-500 italic">
+      Terms and concepts entries are being written. Check back soon.
+    </p>
+  )}
 </Base>

@@ -20,6 +20,7 @@
     "test:consent": "node --test scripts/consent-preferences.test.mjs scripts/google-consent.test.mjs"
   },
   "dependencies": {
+    "@astrojs/markdown-satteri": "^0.4.10",
     "@astrojs/rss": "^4.0.17",
     "@astrojs/sitemap": "^3.7.1",
     "@sentry/astro": "^11.12.0",

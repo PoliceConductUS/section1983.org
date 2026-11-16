@@ -83,17 +83,21 @@ const relatedArticles = articles
   <Content />
   <PrevNext
     slot="pagination"
-    prev={prev
-      ? {
-          href: `/process/${prev.id}`,
-          label: `Step ${prev.data.order}: ${prev.data.title}`,
-        }
-      : null}
-    next={next
-      ? {
-          href: `/process/${next.id}`,
-          label: `Step ${next.data.order}: ${next.data.title}`,
-        }
-      : null}
+    prev={
+      prev
+        ? {
+            href: `/process/${prev.id}`,
+            label: `Step ${prev.data.order}: ${prev.data.title}`,
+          }
+        : null
+    }
+    next={
+      next
+        ? {
+            href: `/process/${next.id}`,
+            label: `Step ${next.data.order}: ${next.data.title}`,
+          }
+        : null
+    }
   />
 </Process>

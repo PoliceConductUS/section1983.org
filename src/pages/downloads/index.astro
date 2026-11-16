@@ -101,7 +101,7 @@ const structuredData = {
     that appears in its article, where the line-by-line explanation lives.
   </p>
 
-  <div class="bg-cream border-l-4 border-gold rounded p-4 mb-8 max-w-3xl">
+  <div class="bg-cream border-s-4 border-gold rounded p-4 mb-8 max-w-3xl">
     <p class="font-semibold text-navy text-sm mb-1">
       These are teaching templates, not filings
     </p>
@@ -109,69 +109,71 @@ const structuredData = {
       The facts are invented. The captions, deadlines, and citations are
       placeholders for you to replace. Nothing here has been checked against
       your court's rules. Before you file anything built from a sample, read the
-      article that goes with it, then read
+      article that goes with it, then read{" "}
       <a
         href="/articles/local-rules-and-standing-orders-in-a-section-1983-case"
         class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-        >your district's local rules and your judge's standing orders</a
-      >, and run the
+      >
+        your district's local rules and your judge's standing orders
+      </a>
+      , and run the{" "}
       <a
         href="/articles/how-to-review-your-own-section-1983-filing-before-you-file"
         class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-        >self-review checklist</a
-      >.
+      >
+        self-review checklist
+      </a>
+      .
     </p>
   </div>
 
   <div class="space-y-6">
-    {
-      samples.map((s) => (
-        <article class="border border-slate-200 rounded-lg bg-white p-5">
-          <h2 class="text-xl font-bold text-navy mb-1">{s.title}</h2>
-          <p class="text-sm text-slate-700 mb-3">{s.blurb}</p>
-          <p class="text-sm mb-3">
-            <span class="font-semibold text-navy">Download:</span>{" "}
-            <a
-              href={`/downloads/${s.slug}.pdf`}
-              class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-            >
-              PDF
-            </a>
-            {" · "}
-            <a
-              href={`/downloads/${s.slug}.docx`}
-              class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-            >
-              Word (.docx)
-            </a>
-            {" · "}
-            <a
-              href={`/downloads/${s.slug}.txt`}
-              class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-            >
-              Plain text
-            </a>
-          </p>
-          <p class="text-sm text-slate-600">
-            Read it with explanations:{" "}
-            <a
-              href={s.article}
-              class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-            >
-              the sample article
-            </a>
-            {" · "}
-            Guide:{" "}
-            <a
-              href={s.guide}
-              class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-            >
-              {s.guideLabel}
-            </a>
-          </p>
-        </article>
-      ))
-    }
+    {samples.map((s) => (
+      <article class="border border-slate-200 rounded-lg bg-white p-5">
+        <h2 class="text-xl font-bold text-navy mb-1">{s.title}</h2>
+        <p class="text-sm text-slate-700 mb-3">{s.blurb}</p>
+        <p class="text-sm mb-3">
+          <span class="font-semibold text-navy">Download:</span>{" "}
+          <a
+            href={`/downloads/${s.slug}.pdf`}
+            class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+          >
+            PDF
+          </a>
+          {" · "}
+          <a
+            href={`/downloads/${s.slug}.docx`}
+            class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+          >
+            Word (.docx)
+          </a>
+          {" · "}
+          <a
+            href={`/downloads/${s.slug}.txt`}
+            class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+          >
+            Plain text
+          </a>
+        </p>
+        <p class="text-sm text-slate-600">
+          Read it with explanations:{" "}
+          <a
+            href={s.article}
+            class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+          >
+            the sample article
+          </a>
+          {" · "}
+          Guide:{" "}
+          <a
+            href={s.guide}
+            class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+          >
+            {s.guideLabel}
+          </a>
+        </p>
+      </article>
+    ))}
   </div>
 
   <div class="prose prose-slate max-w-3xl mt-10">
@@ -196,13 +198,15 @@ const structuredData = {
         limits, and required certificates vary. Your local rules control.
       </li>
       <li>
-        Run the <a
-          href="/articles/how-to-write-a-court-filing-that-judges-trust"
-          >self-edit pass</a
-        > and the <a
-          href="/articles/how-to-review-your-own-section-1983-filing-before-you-file"
-          >red-team checklist</a
-        > before you sign.
+        Run the{" "}
+        <a href="/articles/how-to-write-a-court-filing-that-judges-trust">
+          self-edit pass
+        </a>{" "}
+        and the{" "}
+        <a href="/articles/how-to-review-your-own-section-1983-filing-before-you-file">
+          red-team checklist
+        </a>{" "}
+        before you sign.
       </li>
     </ol>
 

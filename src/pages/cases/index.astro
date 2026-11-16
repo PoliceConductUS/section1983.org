@@ -255,6 +255,9 @@ const tagButtonTypeClass =
   "tag-btn tag-chip tag-chip--type focus-ring cursor-pointer";
 const tagButtonLegalClass =
   "tag-btn tag-chip tag-chip--legal focus-ring cursor-pointer";
+const filterGroupSummaryClass =
+  "focus-ring cursor-pointer rounded-lg px-4 py-3 text-sm font-bold text-navy";
+const filterGroupCountClass = "font-normal text-slate-600";
 const tagButtonActiveClass =
   "tag-btn tag-chip tag-chip--active focus-ring cursor-pointer";
 
@@ -293,15 +296,21 @@ const structuredData = {
     court decided, and how to use each case in your own litigation.
   </p>
   <p class="text-sm text-slate-600 mb-8">
-    If a case turns on an unfamiliar doctrine, check the <a
+    If a case turns on an unfamiliar doctrine, check the{" "}
+    <a
       href="/terms-and-concepts"
       class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-      >Terms and Concepts</a
-    >. If you need to place a ruling in the life of a lawsuit, use the <a
+    >
+      Terms and Concepts
+    </a>
+    . If you need to place a ruling in the life of a lawsuit, use the{" "}
+    <a
       href="/process"
       class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-      >process guide</a
-    >.
+    >
+      process guide
+    </a>
+    .
   </p>
 
   <!-- Browse by hub -->
@@ -319,19 +328,17 @@ const structuredData = {
           Courts
         </h3>
         <ul class="space-y-1 text-sm">
-          {
-            circuitHubs.map((h) => (
-              <li>
-                <a
-                  href={h.href}
-                  class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-                >
-                  {h.label}
-                </a>
-                <span class="text-slate-500"> ({h.count})</span>
-              </li>
-            ))
-          }
+          {circuitHubs.map((h) => (
+            <li>
+              <a
+                href={h.href}
+                class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+              >
+                {h.label}
+              </a>
+              <span class="text-slate-500"> ({h.count})</span>
+            </li>
+          ))}
         </ul>
       </div>
       <div>
@@ -339,19 +346,17 @@ const structuredData = {
           States
         </h3>
         <ul class="space-y-1 text-sm columns-2">
-          {
-            stateHubs.map((h) => (
-              <li>
-                <a
-                  href={h.href}
-                  class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-                >
-                  {h.label}
-                </a>
-                <span class="text-slate-500"> ({h.count})</span>
-              </li>
-            ))
-          }
+          {stateHubs.map((h) => (
+            <li>
+              <a
+                href={h.href}
+                class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+              >
+                {h.label}
+              </a>
+              <span class="text-slate-500"> ({h.count})</span>
+            </li>
+          ))}
         </ul>
       </div>
       <div>
@@ -359,19 +364,17 @@ const structuredData = {
           Topics
         </h3>
         <ul class="space-y-1 text-sm">
-          {
-            topicHubs.map((h) => (
-              <li>
-                <a
-                  href={h.href}
-                  class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-                >
-                  {h.label}
-                </a>
-                <span class="text-slate-500"> ({h.count})</span>
-              </li>
-            ))
-          }
+          {topicHubs.map((h) => (
+            <li>
+              <a
+                href={h.href}
+                class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+              >
+                {h.label}
+              </a>
+              <span class="text-slate-500"> ({h.count})</span>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
@@ -379,59 +382,70 @@ const structuredData = {
 
   <!-- Tag filter -->
   <div class="mb-8" id="case-filters">
-    <div class="bg-cream border border-gold/30 rounded-lg p-4 mb-4">
-      <p class="text-sm font-semibold text-navy mb-2">
+    <details class="bg-cream border border-gold/30 rounded-lg mb-4">
+      <summary class="focus-ring cursor-pointer rounded-lg px-4 py-3 text-sm font-semibold text-navy">
         How to use these filters
-      </p>
-      <p class="text-sm text-slate-700 mb-2">
-        Cases are tagged five ways to help you find what's relevant:
-      </p>
-      <ul class="text-sm text-slate-700 space-y-1 list-disc list-inside">
-        <li>
-          <strong>State</strong> — where the case is <a
-            href="/terms-and-concepts/binding-precedent"
+      </summary>
+      <div class="px-4 pb-4">
+        <p class="text-sm text-slate-700 mb-2">
+          Cases are tagged five ways to help you find what's relevant:
+        </p>
+        <ul class="text-sm text-slate-700 space-y-1 list-disc list-inside">
+          <li>
+            <strong>State</strong> — where the case is{" "}
+            <a
+              href="/terms-and-concepts/binding-precedent"
+              class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+            >
+              binding precedent
+            </a>
+            .{" "}
+            <a
+              href="/terms-and-concepts/federal-circuit-courts"
+              class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
+            >
+              Federal circuit court
+            </a>{" "}
+            decisions apply to every state in that circuit, not just the state
+            where the case was filed. U.S. Supreme Court decisions apply
+            everywhere.
+          </li>
+          <li>
+            <strong>What the police did</strong> — the specific behavior
+            (tackled, tased, arrested for filming, lied in report, etc.)
+          </li>
+          <li>
+            <strong>What happened in court</strong> — whether the officer got
+            immunity or was held accountable (qualified immunity defeated,
+            plaintiff won, case dismissed, etc.)
+          </li>
+          <li>
+            <strong>What kind of case</strong> — broader categories like suing
+            the city, landmark decisions, or how courts evaluate complaints
+          </li>
+          <li>
+            <strong>Legal basis</strong> — the constitutional amendment or legal
+            doctrine at issue (Fourth Amendment, due process, etc.)
+          </li>
+        </ul>
+        <p class="text-sm text-slate-700 mt-2">
+          Open a group below, then click tags to filter — you can select{" "}
+          <strong>more than one</strong> to narrow results. For example, click
+          "Texas" and "qi-defeated" to find Texas cases where qualified immunity
+          was defeated. Click a tag again to remove it. Click "All" to reset.
+        </p>
+        <p class="text-sm text-slate-700 mt-2">
+          Want to see how hard it is to win pro se? Try filtering by{" "}
+          <a
+            href="/cases?tags=plaintiff-won%2Cpro-se"
             class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-            >binding precedent</a
-          >. <a
-            href="/terms-and-concepts/federal-circuit-courts"
-            class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-            >Federal circuit court</a
-          > decisions apply to every state in that circuit, not just the state where
-          the case was filed. U.S. Supreme Court decisions apply everywhere.
-        </li>
-        <li>
-          <strong>What the police did</strong> — the specific behavior (tackled, tased,
-          arrested for filming, lied in report, etc.)
-        </li>
-        <li>
-          <strong>What happened in court</strong> — whether the officer got immunity
-          or was held accountable (qualified immunity defeated, plaintiff won, case
-          dismissed, etc.)
-        </li>
-        <li>
-          <strong>What kind of case</strong> — broader categories like suing the city,
-          landmark decisions, or how courts evaluate complaints
-        </li>
-        <li>
-          <strong>Legal basis</strong> — the constitutional amendment or legal doctrine
-          at issue (Fourth Amendment, due process, etc.)
-        </li>
-      </ul>
-      <p class="text-sm text-slate-700 mt-2">
-        Click tags below to filter — you can select <strong
-          >more than one</strong
-        > to narrow results. For example, click "Texas" and "qi-defeated" to find
-        Texas cases where qualified immunity was defeated. Click a tag again to remove
-        it. Click "All" to reset.
-      </p>
-      <p class="text-sm text-slate-700 mt-2">
-        Want to see how hard it is to win pro se? Try filtering by <a
-          href="/cases?tags=plaintiff-won%2Cpro-se"
-          class="focus-ring surface-link text-navy underline decoration-gold decoration-2"
-          >plaintiff won + pro se</a
-        >. The silence speaks for itself.
-      </p>
-    </div>
+          >
+            plaintiff won + pro se
+          </a>
+          . The silence speaks for itself.
+        </p>
+      </div>
+    </details>
     <div class="flex flex-wrap items-center gap-2 mb-4">
       <button
         type="button"
@@ -445,167 +459,162 @@ const structuredData = {
       </button>
     </div>
 
-    <div class="space-y-3">
-      <div>
-        <p class="text-xs font-bold text-navy uppercase tracking-wide mb-1">
-          📍 State
-        </p>
-        <div class="flex flex-wrap gap-1.5">
-          {
-            stateTags.map((tag) => (
-              <button
-                type="button"
-                class={tagButtonStateClass}
-                data-tag={tag}
-                data-default-class={tagButtonStateClass}
-                data-active-class={tagButtonActiveClass}
-                aria-pressed="false"
-              >
-                {stateLabels[tag] || tag.replace(/-/g, " ")} (
-                {tagCounts.get(tag)})
-              </button>
-            ))
-          }
+    <div class="space-y-2">
+      <details class="border border-slate-200 rounded-lg">
+        <summary class={filterGroupSummaryClass}>
+          📍 State{" "}
+          <span class={filterGroupCountClass}>· {stateTags.length} tags</span>
+        </summary>
+        <div class="flex flex-wrap gap-1.5 px-4 pb-4">
+          {stateTags.map((tag) => (
+            <button
+              type="button"
+              class={tagButtonStateClass}
+              data-tag={tag}
+              data-default-class={tagButtonStateClass}
+              data-active-class={tagButtonActiveClass}
+              aria-pressed="false"
+            >
+              {stateLabels[tag] || tag.replace(/-/g, " ")} ({tagCounts.get(tag)}
+              )
+            </button>
+          ))}
         </div>
-      </div>
+      </details>
 
-      <div>
-        <p class="text-xs font-bold text-navy uppercase tracking-wide mb-1">
-          🚨 What the police did
-        </p>
-        <div class="flex flex-wrap gap-1.5">
-          {
-            behaviorTags.map((tag) => (
-              <button
-                type="button"
-                class={tagButtonBehaviorClass}
-                data-tag={tag}
-                data-default-class={tagButtonBehaviorClass}
-                data-active-class={tagButtonActiveClass}
-                aria-pressed="false"
-              >
-                {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
-              </button>
-            ))
-          }
+      <details class="border border-slate-200 rounded-lg">
+        <summary class={filterGroupSummaryClass}>
+          🚨 What the police did{" "}
+          <span class={filterGroupCountClass}>
+            · {behaviorTags.length} tags
+          </span>
+        </summary>
+        <div class="flex flex-wrap gap-1.5 px-4 pb-4">
+          {behaviorTags.map((tag) => (
+            <button
+              type="button"
+              class={tagButtonBehaviorClass}
+              data-tag={tag}
+              data-default-class={tagButtonBehaviorClass}
+              data-active-class={tagButtonActiveClass}
+              aria-pressed="false"
+            >
+              {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
+            </button>
+          ))}
         </div>
-      </div>
+      </details>
 
-      <div>
-        <p class="text-xs font-bold text-navy uppercase tracking-wide mb-1">
-          ⚖️ What happened in court
-        </p>
-        <div class="flex flex-wrap gap-1.5">
-          {
-            outcomeTags.map((tag) => (
-              <button
-                type="button"
-                class={tagButtonOutcomeClass}
-                data-tag={tag}
-                data-default-class={tagButtonOutcomeClass}
-                data-active-class={tagButtonActiveClass}
-                aria-pressed="false"
-              >
-                {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
-              </button>
-            ))
-          }
+      <details class="border border-slate-200 rounded-lg">
+        <summary class={filterGroupSummaryClass}>
+          ⚖️ What happened in court{" "}
+          <span class={filterGroupCountClass}>· {outcomeTags.length} tags</span>
+        </summary>
+        <div class="flex flex-wrap gap-1.5 px-4 pb-4">
+          {outcomeTags.map((tag) => (
+            <button
+              type="button"
+              class={tagButtonOutcomeClass}
+              data-tag={tag}
+              data-default-class={tagButtonOutcomeClass}
+              data-active-class={tagButtonActiveClass}
+              aria-pressed="false"
+            >
+              {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
+            </button>
+          ))}
         </div>
-      </div>
+      </details>
 
-      <div>
-        <p class="text-xs font-bold text-navy uppercase tracking-wide mb-1">
-          📂 What kind of case
-        </p>
-        <div class="flex flex-wrap gap-1.5">
-          {
-            typeTags.map((tag) => (
-              <button
-                type="button"
-                class={tagButtonTypeClass}
-                data-tag={tag}
-                data-default-class={tagButtonTypeClass}
-                data-active-class={tagButtonActiveClass}
-                aria-pressed="false"
-              >
-                {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
-              </button>
-            ))
-          }
+      <details class="border border-slate-200 rounded-lg">
+        <summary class={filterGroupSummaryClass}>
+          📂 What kind of case{" "}
+          <span class={filterGroupCountClass}>· {typeTags.length} tags</span>
+        </summary>
+        <div class="flex flex-wrap gap-1.5 px-4 pb-4">
+          {typeTags.map((tag) => (
+            <button
+              type="button"
+              class={tagButtonTypeClass}
+              data-tag={tag}
+              data-default-class={tagButtonTypeClass}
+              data-active-class={tagButtonActiveClass}
+              aria-pressed="false"
+            >
+              {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
+            </button>
+          ))}
         </div>
-      </div>
+      </details>
 
-      <div>
-        <p class="text-xs font-bold text-navy uppercase tracking-wide mb-1">
-          📜 Legal basis
-        </p>
-        <div class="flex flex-wrap gap-1.5">
-          {
-            legalTags.map((tag) => (
-              <button
-                type="button"
-                class={tagButtonLegalClass}
-                data-tag={tag}
-                data-default-class={tagButtonLegalClass}
-                data-active-class={tagButtonActiveClass}
-                aria-pressed="false"
-              >
-                {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
-              </button>
-            ))
-          }
+      <details class="border border-slate-200 rounded-lg">
+        <summary class={filterGroupSummaryClass}>
+          📜 Legal basis{" "}
+          <span class={filterGroupCountClass}>· {legalTags.length} tags</span>
+        </summary>
+        <div class="flex flex-wrap gap-1.5 px-4 pb-4">
+          {legalTags.map((tag) => (
+            <button
+              type="button"
+              class={tagButtonLegalClass}
+              data-tag={tag}
+              data-default-class={tagButtonLegalClass}
+              data-active-class={tagButtonActiveClass}
+              aria-pressed="false"
+            >
+              {tag.replace(/-/g, " ")} ({tagCounts.get(tag)})
+            </button>
+          ))}
         </div>
-      </div>
+      </details>
     </div>
   </div>
 
   <div id="active-filters" class="mb-4" role="status" aria-live="polite" hidden>
-    <div
-      class="bg-white border border-slate-200 rounded-lg p-3 flex flex-wrap items-center gap-2"
-    >
+    <div class="bg-white border border-slate-200 rounded-lg p-3 flex flex-wrap items-center gap-2">
       <span class="text-sm font-semibold text-navy">Active filters:</span>
       <div id="active-tags-list" class="flex flex-wrap gap-2"></div>
       <button
         id="clear-filters"
         type="button"
-        class="touch-target-inline focus-ring text-sm text-navy surface-link underline ml-2 cursor-pointer"
-        >clear all</button
+        class="touch-target-inline focus-ring text-sm text-navy surface-link underline ms-2 cursor-pointer"
       >
+        clear all
+      </button>
       <span
         id="active-count"
-        class="text-sm font-medium text-gold-strong ml-auto"></span>
+        class="text-sm font-medium text-gold-strong ms-auto"
+      ></span>
     </div>
   </div>
 
   <!-- Case listing -->
   <div id="case-list">
-    {
-      [...grouped.entries()].map(([letter, entries]) => (
-        <div class="mb-8">
-          <h2 class="text-xl font-bold text-navy border-b-2 border-gold pb-1 mb-4">
-            {letter}
-          </h2>
-          <div class="space-y-4">
-            {entries.map((c) => (
-              <div class="case-card" data-tags={c.data.tags?.join(",") || ""}>
-                <a
-                  href={`/cases/${c.id}`}
-                  class="focus-ring block group rounded p-1 -m-1"
-                >
-                  <p class="font-semibold text-navy group-hover:text-gold-strong transition-colors italic">
-                    {c.data.title}
-                  </p>
-                  <p class="text-sm text-slate-500 font-mono">
-                    {c.data.citation} — {c.data.court}
-                  </p>
-                  <p class="text-sm text-slate-700 mt-1">{c.data.holding}</p>
-                </a>
-              </div>
-            ))}
-          </div>
+    {[...grouped.entries()].map(([letter, entries]) => (
+      <div class="mb-8">
+        <h2 class="text-xl font-bold text-navy border-b-2 border-gold pb-1 mb-4">
+          {letter}
+        </h2>
+        <div class="space-y-4">
+          {entries.map((c) => (
+            <div class="case-card" data-tags={c.data.tags?.join(",") || ""}>
+              <a
+                href={`/cases/${c.id}`}
+                class="focus-ring block group rounded p-1 -m-1"
+              >
+                <p class="font-semibold text-navy group-hover:text-gold-strong transition-colors italic">
+                  {c.data.title}
+                </p>
+                <p class="text-sm text-slate-500 font-mono">
+                  {c.data.citation} — {c.data.court}
+                </p>
+                <p class="text-sm text-slate-700 mt-1">{c.data.holding}</p>
+              </a>
+            </div>
+          ))}
         </div>
-      ))
-    }
+      </div>
+    ))}
   </div>
 
   <script>
@@ -631,6 +640,12 @@ const structuredData = {
           .split(",")
           .filter(Boolean)
           .forEach((t) => activeTags.add(t));
+        // Open the groups that hold a tag from the URL so the selection shows
+        buttons.forEach((b) => {
+          if (activeTags.has(b.getAttribute("data-tag") || "")) {
+            b.closest("details")?.setAttribute("open", "");
+          }
+        });
         updateDisplay();
       }
 

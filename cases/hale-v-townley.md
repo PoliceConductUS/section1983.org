@@ -45,4 +45,4 @@ The case establishes that § 1983's reach extends beyond government employees. I
 
 ## Key Takeaway
 
-Section 1983 is not limited to government employees. Private parties who conspire with state actors to violate constitutional rights can also be held liable. The key is showing joint action — an agreement or coordinated effort between the private party and the government official to deprive you of your rights. If a private person worked hand-in-hand with police to cause your unconstitutional arrest, seizure, or other deprivation, [*Hale v. Townley*] gives you a basis to include them in your § 1983 suit.
+Section 1983 is not limited to government employees. Private parties who conspire with state actors to violate constitutional rights can also be held liable. The key is showing joint action — an agreement or coordinated effort between the private party and the government official to deprive you of your rights. If a private person worked hand-in-hand with police to cause your unconstitutional arrest, seizure, or other deprivation, [_Hale v. Townley_] gives you a basis to include them in your § 1983 suit.
