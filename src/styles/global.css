@@ -298,10 +298,16 @@ input {
 }
 
 .chart-scroll-frame {
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
-  scrollbar-gutter: stable;
   -webkit-overflow-scrolling: touch;
+}
+
+/* Keep diagram labels legible on small screens: the chart holds this width
+   and the frame scrolls instead of shrinking the text. */
+.chart-scroll-frame > svg {
+  min-width: 44rem;
+  height: auto;
 }
 
 .chart-scroll-frame::-webkit-scrollbar {
