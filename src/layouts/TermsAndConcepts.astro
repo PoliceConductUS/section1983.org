@@ -59,9 +59,7 @@ const structuredData = {
   <slot name="breadcrumbs" />
   <article class="prose prose-slate max-w-none">
     <div class="mb-8">
-      <span
-        class="inline-block bg-navy text-gold text-xs font-bold px-3 py-1 rounded uppercase tracking-wide mb-3"
-      >
+      <span class="inline-block bg-navy text-gold text-xs font-bold px-3 py-1 rounded uppercase tracking-wide mb-3">
         {categoryLabels[category] || category}
       </span>
       <h1 class="text-3xl font-bold text-navy mb-2">{title}</h1>
@@ -70,44 +68,40 @@ const structuredData = {
 
     <slot />
 
-    {
-      related && related.length > 0 && (
-        <div class="mt-12 pt-8 border-t border-slate-200">
-          <h2 class="text-lg font-bold text-navy mb-3">Related Terms</h2>
-          <div class="flex flex-wrap gap-2">
-            {related.map((slug) => (
-              <a
-                href={`/terms-and-concepts/${slug}`}
-                class="touch-target-inline focus-ring text-sm bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors"
-              >
-                {slug.replace(/-/g, " ")}
-              </a>
-            ))}
-          </div>
+    {related && related.length > 0 && (
+      <div class="mt-12 pt-8 border-t border-slate-200">
+        <h2 class="text-lg font-bold text-navy mb-3">Related Terms</h2>
+        <div class="flex flex-wrap gap-2">
+          {related.map((slug) => (
+            <a
+              href={`/terms-and-concepts/${slug}`}
+              class="touch-target-inline focus-ring text-sm bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors"
+            >
+              {slug.replace(/-/g, " ")}
+            </a>
+          ))}
         </div>
-      )
-    }
+      </div>
+    )}
 
-    {
-      relatedArticles.length > 0 && (
-        <div class="mt-12 pt-8 border-t border-slate-200">
-          <h2 class="text-lg font-bold text-navy mb-3">
-            Articles Using This Term
-          </h2>
-          <div class="grid gap-4 md:grid-cols-2 not-prose">
-            {relatedArticles.map((article) => (
-              <a
-                href={article.href}
-                class="interactive-card focus-ring block rounded border border-slate-200 bg-white p-4"
-              >
-                <p class="font-semibold text-navy">{article.label}</p>
-                <p class="mt-1 text-sm text-slate">{article.description}</p>
-              </a>
-            ))}
-          </div>
+    {relatedArticles.length > 0 && (
+      <div class="mt-12 pt-8 border-t border-slate-200">
+        <h2 class="text-lg font-bold text-navy mb-3">
+          Articles Using This Term
+        </h2>
+        <div class="grid gap-4 md:grid-cols-2 not-prose">
+          {relatedArticles.map((article) => (
+            <a
+              href={article.href}
+              class="interactive-card focus-ring block rounded border border-slate-200 bg-white p-4"
+            >
+              <p class="font-semibold text-navy">{article.label}</p>
+              <p class="mt-1 text-sm text-slate">{article.description}</p>
+            </a>
+          ))}
         </div>
-      )
-    }
+      </div>
+    )}
 
     <slot name="pagination" />
   </article>

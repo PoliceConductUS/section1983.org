@@ -49,70 +49,82 @@ const structuredData = {
         <li>
           <a
             href="/"
-            class="focus-ring surface-link text-navy transition-colors">Home</a
+            class="focus-ring surface-link text-navy transition-colors"
           >
+            Home
+          </a>
         </li>
         <li>
           <a
             href="/about"
-            class="focus-ring surface-link text-navy transition-colors">About</a
+            class="focus-ring surface-link text-navy transition-colors"
           >
+            About
+          </a>
         </li>
         <li>
           <a
             href="/statute-of-limitations/"
             class="focus-ring surface-link text-navy transition-colors"
-            >Statute of Limitations by State</a
           >
+            Statute of Limitations by State
+          </a>
         </li>
         <li>
           <a
             href="/downloads/"
             class="focus-ring surface-link text-navy transition-colors"
-            >Sample Documents</a
           >
+            Sample Documents
+          </a>
         </li>
         <li>
           <a
             href="/about/section-1983"
             class="focus-ring surface-link text-navy transition-colors"
-            >About § 1983</a
           >
+            About § 1983
+          </a>
         </li>
         <li>
           <a
             href="/get-involved"
             class="focus-ring surface-link text-navy transition-colors"
-            >Get Involved</a
           >
+            Get Involved
+          </a>
         </li>
         <li>
           <a
             href="/search"
             class="focus-ring surface-link text-navy transition-colors"
-            >Search</a
           >
+            Search
+          </a>
         </li>
         <li>
           <a
             href="/legal-notice"
             class="focus-ring surface-link text-navy transition-colors"
-            >Legal Notice</a
           >
+            Legal Notice
+          </a>
         </li>
         <li>
           <a
             href="/terms"
             class="focus-ring surface-link text-navy transition-colors"
-            >Terms & Conditions</a
           >
+            Terms & Conditions
+          </a>
         </li>
         <li>
           <a
             href="/accessibility"
             class="focus-ring surface-link text-navy transition-colors"
-            >Accessibility</a
           >
+            Accessibility
+          </a>
         </li>
       </ul>
     </section>
@@ -122,18 +134,16 @@ const structuredData = {
         Articles ({sortedArticles.length})
       </h2>
       <ul class="space-y-1 text-sm">
-        {
-          sortedArticles.map((a) => (
-            <li>
-              <a
-                href={`/articles/${a.id}/`}
-                class="focus-ring surface-link text-navy transition-colors"
-              >
-                {a.data.title}
-              </a>
-            </li>
-          ))
-        }
+        {sortedArticles.map((a) => (
+          <li>
+            <a
+              href={`/articles/${a.id}/`}
+              class="focus-ring surface-link text-navy transition-colors"
+            >
+              {a.data.title}
+            </a>
+          </li>
+        ))}
       </ul>
     </section>
 
@@ -142,18 +152,16 @@ const structuredData = {
         Case Law Library ({sortedCases.length})
       </h2>
       <ul class="space-y-1 text-sm columns-2">
-        {
-          sortedCases.map((c) => (
-            <li>
-              <a
-                href={`/cases/${c.id}/`}
-                class="focus-ring surface-link text-navy transition-colors"
-              >
-                {c.data.title}
-              </a>
-            </li>
-          ))
-        }
+        {sortedCases.map((c) => (
+          <li>
+            <a
+              href={`/cases/${c.id}/`}
+              class="focus-ring surface-link text-navy transition-colors"
+            >
+              {c.data.title}
+            </a>
+          </li>
+        ))}
       </ul>
     </section>
 
@@ -162,18 +170,16 @@ const structuredData = {
         Terms and Concepts ({sortedTermsAndConcepts.length})
       </h2>
       <ul class="space-y-1 text-sm columns-2">
-        {
-          sortedTermsAndConcepts.map((p) => (
-            <li>
-              <a
-                href={`/terms-and-concepts/${p.id}/`}
-                class="focus-ring surface-link text-navy transition-colors"
-              >
-                {p.data.term}
-              </a>
-            </li>
-          ))
-        }
+        {sortedTermsAndConcepts.map((p) => (
+          <li>
+            <a
+              href={`/terms-and-concepts/${p.id}/`}
+              class="focus-ring surface-link text-navy transition-colors"
+            >
+              {p.data.term}
+            </a>
+          </li>
+        ))}
       </ul>
     </section>
 
@@ -182,18 +188,16 @@ const structuredData = {
         The Legal Process ({sortedProcess.length})
       </h2>
       <ul class="space-y-1 text-sm">
-        {
-          sortedProcess.map((p) => (
-            <li>
-              <a
-                href={`/process/${p.id}/`}
-                class="focus-ring surface-link text-navy transition-colors"
-              >
-                Step {p.data.order}: {p.data.title}
-              </a>
-            </li>
-          ))
-        }
+        {sortedProcess.map((p) => (
+          <li>
+            <a
+              href={`/process/${p.id}/`}
+              class="focus-ring surface-link text-navy transition-colors"
+            >
+              Step {p.data.order}: {p.data.title}
+            </a>
+          </li>
+        ))}
       </ul>
     </section>
   </div>

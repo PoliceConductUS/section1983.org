@@ -171,11 +171,11 @@ const relatedProcess = selectRelatedEntries(
   <Content />
   <PrevNext
     slot="pagination"
-    prev={prev
-      ? { href: `/articles/${prev.id}`, label: prev.data.title }
-      : null}
-    next={next
-      ? { href: `/articles/${next.id}`, label: next.data.title }
-      : null}
+    prev={
+      prev ? { href: `/articles/${prev.id}`, label: prev.data.title } : null
+    }
+    next={
+      next ? { href: `/articles/${next.id}`, label: next.data.title } : null
+    }
   />
 </Article>

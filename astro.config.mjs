@@ -2,6 +2,7 @@
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
+import { satteri } from "@astrojs/markdown-satteri";
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
@@ -110,6 +111,27 @@ function getSitemapLastModified(url) {
   return undefined;
 }
 
+// Marks sentence-length table cells in Markdown so the stylesheet can let
+// them wrap on small screens while short data cells stay on one line.
+const LONG_CELL_CHARS = 40;
+
+const markLongTableCells = {
+  name: "mark-long-table-cells",
+  element: {
+    filter: ["td"],
+    visit(node, ctx) {
+      if (ctx.textContent(node).length <= LONG_CELL_CHARS) return;
+      const existing = node.properties?.className;
+      const classes = Array.isArray(existing)
+        ? existing
+        : existing
+          ? [existing]
+          : [];
+      ctx.setProperty(node, "className", [...classes, "cell-wrap"]);
+    },
+  },
+};
+
 // https://astro.build/config
 export default defineConfig({
   site: process.env.SITE_URL || "https://www.section1983.org",
@@ -125,6 +147,9 @@ export default defineConfig({
     }),
     sentry(),
   ],
+  markdown: {
+    processor: satteri({ hastPlugins: [markLongTableCells] }),
+  },
   vite: {
     plugins: [tailwindcss()],
     define: {
