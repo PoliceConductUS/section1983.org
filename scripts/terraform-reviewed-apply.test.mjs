@@ -222,10 +222,10 @@ test("doctor reports each check and reads no plan", (t) => {
   assert.deepEqual(terraformSubcommands(calls), ["validate"]);
 });
 
-test("check and format need no AWS access", (t) => {
+test("lint and lint:fix need no AWS access", (t) => {
   const { run, calls } = infraRepo(t, { initialized: true });
-  assert.equal(run(["check"], { AWS_EXIT: "255" }).status, 0);
-  assert.equal(run(["format"], { AWS_EXIT: "255" }).status, 0);
+  assert.equal(run(["lint"], { AWS_EXIT: "255" }).status, 0);
+  assert.equal(run(["lint:fix"], { AWS_EXIT: "255" }).status, 0);
   assert.deepEqual(calls(), [
     "terraform fmt -check -diff -recursive",
     "terraform validate",
@@ -233,9 +233,9 @@ test("check and format need no AWS access", (t) => {
   ]);
 });
 
-test("check fetches providers without the state in a new checkout", (t) => {
+test("lint fetches providers without the state in a new checkout", (t) => {
   const { run, calls } = infraRepo(t);
-  assert.equal(run(["check"]).status, 0);
+  assert.equal(run(["lint"]).status, 0);
   assert.deepEqual(calls(), [
     "terraform fmt -check -diff -recursive",
     "terraform init -backend=false -input=false",

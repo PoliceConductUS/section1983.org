@@ -20,8 +20,9 @@ Usage: infra.sh TASK [arguments...]
               them and asks for 'yes' first
   outputs     Print deployed names and IDs, or the one output named
   doctor      Check that this machine and account can do infrastructure work
-  check       Check edited Terraform files for format and configuration errors
-  format      Rewrite the Terraform files in standard format
+  lint        Find format and configuration errors in the Terraform files.
+              Reads only the files: no AWS access, no live infrastructure
+  lint:fix    Rewrite the Terraform files in standard format
   setup-user  Create or update the least-privilege IAM user for this stack
 USAGE
 }
@@ -116,7 +117,7 @@ case "${task}" in
     echo "Parameter Store secrets: readable"
     echo "Ready for infrastructure work."
     ;;
-  check)
+  lint)
     require_tools terraform
     terraform -chdir="${STACK_DIR}" fmt -check -diff -recursive
     # Validation needs the providers. Fetch them without touching the state
@@ -126,7 +127,7 @@ case "${task}" in
     fi
     terraform -chdir="${STACK_DIR}" validate
     ;;
-  format)
+  lint:fix)
     require_tools terraform
     terraform -chdir="${STACK_DIR}" fmt -recursive "$@"
     ;;
