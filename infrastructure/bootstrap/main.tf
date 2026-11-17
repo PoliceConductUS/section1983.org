@@ -184,6 +184,10 @@ resource "aws_s3_bucket_policy" "terraform_state_tls_only" {
 resource "aws_s3_bucket" "preview" {
   bucket        = local.preview_bucket_name
   force_destroy = var.preview_bucket_force_destroy
+
+  tags = {
+    Environment = "preview"
+  }
 }
 
 resource "aws_s3_bucket_public_access_block" "preview" {
@@ -480,6 +484,10 @@ resource "aws_route53_zone" "site" {
 resource "aws_s3_bucket" "site" {
   bucket        = local.site_bucket_name
   force_destroy = var.site_bucket_force_destroy
+
+  tags = {
+    Environment = "production"
+  }
 }
 
 resource "aws_s3_bucket_public_access_block" "site" {
@@ -537,6 +545,10 @@ resource "aws_acm_certificate" "site" {
   lifecycle {
     create_before_destroy = true
   }
+
+  tags = {
+    Environment = "production"
+  }
 }
 
 resource "aws_route53_record" "acm_validation" {
@@ -580,6 +592,10 @@ function redirect(location) {
       'cache-control': { value: 'public, max-age=86400' }
     }
   };
+
+  tags = {
+    Environment = "production"
+  }
 }
 
 function queryString(request) {
@@ -686,6 +702,10 @@ resource "aws_cloudfront_distribution" "site" {
     ssl_support_method       = "sni-only"
     minimum_protocol_version = "TLSv1.2_2021"
   }
+
+  tags = {
+    Environment = "production"
+  }
 }
 
 resource "aws_cloudfront_function" "preview_router" {
@@ -712,6 +732,10 @@ function handler(event) {
 
   request.uri = '/' + match[1] + uri;
   return request;
+
+  tags = {
+    Environment = "preview"
+  }
 }
 EOF
 }
@@ -773,6 +797,10 @@ resource "aws_cloudfront_distribution" "preview" {
     acm_certificate_arn      = aws_acm_certificate_validation.site.certificate_arn
     ssl_support_method       = "sni-only"
     minimum_protocol_version = "TLSv1.2_2021"
+  }
+
+  tags = {
+    Environment = "preview"
   }
 }
 
@@ -979,10 +1007,10 @@ resource "github_actions_environment_variable" "environment_variables" {
 resource "github_actions_environment_secret" "sentry_auth_token" {
   for_each = local.has_sentry_auth_token ? local.github_environment_names : toset([])
 
-  repository      = var.github_repo
-  environment     = each.value
-  secret_name     = "SENTRY_AUTH_TOKEN"
-  plaintext_value = local.sentry_auth_token
+  repository  = var.github_repo
+  environment = each.value
+  secret_name = "SENTRY_AUTH_TOKEN"
+  value       = local.sentry_auth_token
 
   depends_on = [github_repository_environment.environments]
 }

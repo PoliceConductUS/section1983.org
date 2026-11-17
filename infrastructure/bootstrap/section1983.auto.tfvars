@@ -32,8 +32,12 @@ public_sentry_dsn_production = "https://8a529edfc17ef459bb23f11d73ca1d0c@o451091
 sentry_org                   = "institute-for-police-conduct-i"
 sentry_project               = "section1983"
 
+# Applied to every AWS resource in this stack. A resource that serves only one
+# environment sets its own Environment tag.
 tags = {
-  Project   = "section1983.org"
-  ManagedBy = "Terraform"
-  Stack     = "bootstrap"
+  Project     = "section1983.org"
+  Environment = "shared"
+  Stack       = "bootstrap"
+  Repository  = "PoliceConductUS/section1983.org"
+  ManagedBy   = "Terraform"
 }
