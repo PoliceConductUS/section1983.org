@@ -25,6 +25,15 @@ source "${REPO_ROOT}/scripts/parameter-store-secrets.sh"
 load_parameter_store_secrets SENTRY_AUTH_TOKEN GITHUB_TOKEN
 export TF_VAR_sentry_auth_token="${SENTRY_AUTH_TOKEN}"
 
+# With -refresh-only, show settings that were changed outside Terraform, ask
+# for 'yes', then record them in the state. Live infrastructure is not changed.
+for arg in "$@"; do
+  if [[ "${arg}" == "-refresh-only" || "${arg}" == "--refresh-only" ]]; then
+    terraform -chdir="${ROOT_DIR}" apply -refresh-only
+    exit 0
+  fi
+done
+
 # Plan once, refuse destroys nobody approved, then apply exactly that plan.
 # With -plan-only it stops after the plan and the destroy check.
 bash "${REPO_ROOT}/scripts/terraform-reviewed-apply.sh" "${ROOT_DIR}" "$@"

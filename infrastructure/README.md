@@ -6,28 +6,38 @@ This repo uses one Terraform entrypoint:
 
 ## Commands
 
-Run all infrastructure work through these npm scripts, from the repository root.
+Run all infrastructure work through these commands, from the repository root.
 
-| Command                      | What it does                                                                                                                                   | Changes anything?        |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| `npm run infra:account`      | Shows the AWS account and identity the other commands will use.                                                                                | No                       |
-| `npm run infra:init`         | Downloads the Terraform providers and connects this checkout to the state bucket. Run it once in a new checkout or worktree.                   | Local `.terraform/` only |
-| `npm run infra:plan`         | Shows what an apply would change, and fails if the plan destroys a resource nobody approved.                                                   | No                       |
-| `npm run infra:apply`        | Makes one plan, refuses unapproved destroys, asks for `yes`, then applies exactly that plan. Applies nothing when live infrastructure matches. | Yes, live infrastructure |
-| `npm run infra:output`       | Prints the stack's outputs. Name one to print only that: `npm run infra:output -- route53_name_servers`.                                       | No                       |
-| `npm run infra:format`       | Rewrites the Terraform files in standard format.                                                                                               | Terraform files          |
-| `npm run infra:format:check` | Fails, and shows the difference, when a Terraform file is not in standard format.                                                              | No                       |
-| `npm run infra:validate`     | Checks the Terraform configuration for errors without contacting AWS.                                                                          | No                       |
-| `npm run infra:create-user`  | Creates or updates the least-privilege IAM user that can run this stack. Needs admin credentials.                                              | Yes, one IAM user        |
-| `npm run test:infra`         | Runs the unit tests for the infrastructure scripts.                                                                                            | No                       |
+| Command                    | Use it when                                                                                                                                                                                                                                  | Changes anything?        |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| `npm run infra:apply`      | You edited the Terraform files or the tracked inputs and want live infrastructure to match. It shows every difference between live infrastructure and the code, refuses destroys nobody approved, asks for `yes`, then applies exactly that. | Yes, live infrastructure |
+| `npm run infra:diff`       | You only want to see how live infrastructure differs from the code, for example after someone changed a setting in the AWS console. It shows the same differences as `apply` and stops.                                                      | No                       |
+| `npm run infra:refresh`    | A setting was changed outside Terraform and the state should record what is live now. It shows those changes, asks for `yes`, then updates only the state.                                                                                   | Terraform state only     |
+| `npm run infra:outputs`    | You need a deployed name or ID, such as the bucket, the CloudFront distribution, or the nameservers. Name one to print only that: `npm run infra:outputs -- route53_name_servers`.                                                           | No                       |
+| `npm run infra:doctor`     | A command fails, or you are on a new machine. It checks the tools, your AWS sign-in, that the state is readable, that the account matches the state, and that the secrets are readable.                                                      | No                       |
+| `npm run infra:check`      | You edited Terraform files and want to catch format and configuration errors before applying. It needs no AWS access.                                                                                                                        | No                       |
+| `npm run infra:format`     | `infra:check` reports a format problem. It rewrites the Terraform files in standard format.                                                                                                                                                  | Terraform files          |
+| `npm run infra:setup-user` | You are setting up a new operator. It creates or updates the least-privilege IAM user that can run this stack. Needs admin credentials.                                                                                                      | Yes, one IAM user        |
+| `npm run test:infra`       | You changed an infrastructure script. It runs the unit tests for those scripts.                                                                                                                                                              | No                       |
+
+`apply`, `diff`, `refresh`, `outputs` and `doctor` prepare themselves. Each one
+checks that Terraform, the AWS CLI and `jq` are installed, checks your AWS
+sign-in, and connects a new checkout or worktree to the state bucket. There is no
+separate setup step.
+
+For a normal infrastructure change, edit the Terraform files and run
+`npm run infra:apply`. It is the only command the change needs.
 
 To pass an argument to a command, put it after `--`, for example
 `npm run infra:apply -- -auto-approve`.
 
-`plan` and `apply` do the same checks before they touch anything: they refuse a
-checkout that cannot read the existing state, refuse an AWS account that does not
-match it, and read the secrets from Parameter Store. `plan` then stops after
-showing the plan. `apply` asks for `yes` and applies exactly the plan it showed.
+`apply`, `diff` and `refresh` also refuse a checkout that cannot read the
+existing state, refuse an AWS account that does not match it, and read the
+secrets from Parameter Store. `diff` then stops after showing the differences.
+`apply` asks for `yes` and applies exactly the changes it showed.
+
+To approve a destroy or replacement, list each resource address, one per line,
+in `TERRAFORM_APPROVED_DESTROYS` for that one run.
 
 ## Zero-to-Deploy
 
@@ -42,13 +52,12 @@ Use these steps in order if you are starting from a brand-new AWS account.
 ```bash
 aws configure --profile section1983-setup-admin
 export AWS_PROFILE=section1983-setup-admin
-npm run infra:account
+npm run infra:doctor
 ```
 
 6. Run bootstrap:
 
 ```bash
-npm run infra:init
 npm run infra:apply
 ```
 
@@ -59,7 +68,7 @@ run `terraform apply` directly.
 7. If bootstrap created a new hosted zone, update nameservers at your registrar to the Route 53 values:
 
 ```bash
-npm run infra:output -- route53_name_servers
+npm run infra:outputs -- route53_name_servers
 dig +short NS <your-domain>
 ```
 
@@ -72,7 +81,7 @@ npm run infra:apply
 If apply is waiting at `aws_acm_certificate_validation.site`, fetch nameservers from the just-created zone and update your registrar:
 
 ```bash
-npm run infra:output -- route53_name_servers
+npm run infra:outputs -- route53_name_servers
 ```
 
 9. Bootstrap also creates GitHub environments and environment variables for workflows:
@@ -92,14 +101,14 @@ If `bucket_name` is omitted in `infrastructure/bootstrap/section1983.auto.tfvars
 Terraform runs in whichever AWS account your active credentials point to.
 
 ```bash
-npm run infra:account
+npm run infra:doctor
 ```
 
 To switch:
 
 ```bash
 export AWS_PROFILE=<profile-name>
-npm run infra:account
+npm run infra:doctor
 ```
 
 ## GitHub Actions
