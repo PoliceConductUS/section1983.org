@@ -181,7 +181,7 @@ const structuredData = {
         {tags.map((tag) => (
           <a
             href={hubHrefByTag.get(tag) ?? `/cases/?tags=${tag}`}
-            class="text-xs bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors focus-ring"
+            class="text-xs chip-link bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors focus-ring"
           >
             {tag.replace(/-/g, " ")}
           </a>
@@ -217,7 +217,7 @@ const structuredData = {
           {cites.map((slug) => (
             <a
               href={`/cases/${slug}`}
-              class="text-sm bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors italic"
+              class="text-sm chip-link bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors italic"
             >
               {slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
             </a>
@@ -233,7 +233,7 @@ const structuredData = {
           {citedBy.map((slug) => (
             <a
               href={`/cases/${slug}`}
-              class="text-sm bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors italic"
+              class="text-sm chip-link bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors italic"
             >
               {slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
             </a>

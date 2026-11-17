@@ -1,4 +1,5 @@
 import AxeBuilder from "@axe-core/playwright";
+import { failures } from "./axe-results";
 import { expect, pagesUnderTest, test } from "./pages";
 
 // WCAG 2.2 A and AA, plus axe's best-practice rules (landmarks, heading
@@ -12,23 +13,11 @@ const TAGS = [
   "best-practice",
 ];
 
-function summarize(
-  violations: Awaited<ReturnType<AxeBuilder["analyze"]>>["violations"],
-) {
-  return violations.map((v) => ({
-    rule: v.id,
-    impact: v.impact,
-    help: v.help,
-    nodes: v.nodes.slice(0, 5).map((n) => n.target.join(" ")),
-    count: v.nodes.length,
-  }));
-}
-
 for (const path of pagesUnderTest) {
   test(`axe: ${path}`, async ({ page }) => {
     await page.goto(path);
     const results = await new AxeBuilder({ page }).withTags(TAGS).analyze();
-    expect(summarize(results.violations)).toEqual([]);
+    expect(await failures(page, results)).toEqual([]);
   });
 }
 
@@ -37,5 +26,5 @@ test("axe: mobile menu open", async ({ page }) => {
   await page.goto("/");
   await page.getByRole("button", { name: "Open menu" }).click();
   const results = await new AxeBuilder({ page }).withTags(TAGS).analyze();
-  expect(summarize(results.violations)).toEqual([]);
+  expect(await failures(page, results)).toEqual([]);
 });

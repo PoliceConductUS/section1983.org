@@ -4,7 +4,7 @@
   --color-navy: #1a1f36;
   --color-navy-light: #242b45;
   --color-gold: #c9a84c;
-  --color-gold-strong: #85630f;
+  --color-gold-strong: #7d5d0e;
   --color-gold-light: #dbc476;
   --color-cream: #f5f1e8;
   --color-slate: #5f6f82;
@@ -194,6 +194,14 @@
 
   .prose a:hover {
     color: var(--color-gold-strong);
+  }
+
+  /* Pill links turn gold under the pointer, so their text and any count
+     inside them turn navy. The extra class outranks `.prose a:hover`. */
+  .chip-link:hover,
+  .prose a.chip-link:hover,
+  .chip-link:hover * {
+    color: var(--color-navy);
   }
 
   .prose tr:hover td {
