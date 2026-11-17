@@ -28,7 +28,7 @@ command and when to use it.
 
 - **State** is in the S3 bucket `section1983-tfstate-942370948729` (`backend.tf`), so every checkout and worktree reads the same state.
 - **Inputs** are tracked in `section1983.auto.tfvars`, which Terraform loads on every plan and apply. Secrets never go in that file.
-- **Secrets** live only in AWS Systems Manager Parameter Store, as SecureString parameters named `/policeconduct/secrets/<NAME>`. This stack uses `SENTRY_AUTH_TOKEN` and `GITHUB_TOKEN`, which it shares with policeconduct.org. The stored value replaces any local copy.
+- **Secrets** live only in AWS Systems Manager Parameter Store, as SecureString parameters named `/policeconduct/secrets/<NAME>`. This stack uses `SENTRY_AUTH_TOKEN` and `GITHUB_TOKEN`, which it shares with policeconduct.org. The stored value replaces any local copy. Store or replace one with `npm run infra:add:secret -- NAME`.
 - **Deployed resource names** are Terraform outputs: `npm run infra:outputs`. Nothing copies them into a file.
 - **Machine settings** go in the git-ignored `.env`: `AWS_PROFILE`, and the public `PUBLIC_SENTRY_DSN` and `PUBLIC_SENTRY_ENVIRONMENT` for local builds.
 

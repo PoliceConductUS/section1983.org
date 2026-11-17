@@ -27,6 +27,13 @@ jobs:
 
       - run: npm ci
 
+      # The Terraform format and configuration check needs the terraform
+      # binary. It reads only the files, so it needs no AWS credentials.
+      - uses: hashicorp/setup-terraform@v4
+        with:
+          terraform_version: "1.17.2"
+          terraform_wrapper: false
+
       # Formatting, lint, type check, and the unit tests. The type check loads
       # the Astro config, which requires the Sentry values; placeholders are
       # enough because nothing is built or sent.

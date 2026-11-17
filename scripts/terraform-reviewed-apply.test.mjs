@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import {
+  existsSync,
   mkdtempSync,
   mkdirSync,
   readFileSync,
@@ -13,7 +14,7 @@ import test from "node:test";
 
 const reviewedApply = resolve("scripts/terraform-reviewed-apply.sh");
 
-// Stand-in terraform, aws and jq that record each call in one log.
+// Stand-in terraform and aws that record each call in one log.
 // `terraform plan` exits with PLAN_EXIT (2 means the plan has changes),
 // `terraform validate` with VALIDATE_EXIT, and `aws` with AWS_EXIT.
 function stubTools(t) {
@@ -44,13 +45,22 @@ if [ "\${AWS_EXIT:-0}" != "0" ]; then
   echo 'ExpiredToken: sign in again' >&2
   exit "$AWS_EXIT"
 fi
+if [ "$1" = "ssm" ]; then
+  printf 'aws-args %s\\n' "$*" >> "${log}"
+  for arg in "$@"; do
+    case "$arg" in
+      file://*)
+        cat "\${arg#file://}" >> "${dir}/ssm-input"
+        printf '\\n' >> "${dir}/ssm-input"
+        ;;
+    esac
+  done
+  exit 0
+fi
 printf '%s\\n' 'arn:aws:iam::123456789012:user/example'
 `,
     { mode: 0o755 },
   );
-  writeFileSync(join(bin, "jq"), "#!/bin/sh\ncat >/dev/null\n", {
-    mode: 0o755,
-  });
   const env = {
     ...process.env,
     BASH_ENV: "/dev/null",
@@ -222,10 +232,10 @@ test("doctor reports each check and reads no plan", (t) => {
   assert.deepEqual(terraformSubcommands(calls), ["validate"]);
 });
 
-test("lint and lint:fix need no AWS access", (t) => {
+test("format:validate and format need no AWS access", (t) => {
   const { run, calls } = infraRepo(t, { initialized: true });
-  assert.equal(run(["lint"], { AWS_EXIT: "255" }).status, 0);
-  assert.equal(run(["lint:fix"], { AWS_EXIT: "255" }).status, 0);
+  assert.equal(run(["format:validate"], { AWS_EXIT: "255" }).status, 0);
+  assert.equal(run(["format"], { AWS_EXIT: "255" }).status, 0);
   assert.deepEqual(calls(), [
     "terraform fmt -check -diff -recursive",
     "terraform validate",
@@ -233,14 +243,91 @@ test("lint and lint:fix need no AWS access", (t) => {
   ]);
 });
 
-test("lint fetches providers without the state in a new checkout", (t) => {
+test("format:validate fetches providers without the state in a new checkout", (t) => {
   const { run, calls } = infraRepo(t);
-  assert.equal(run(["lint"]).status, 0);
+  assert.equal(run(["format:validate"]).status, 0);
   assert.deepEqual(calls(), [
     "terraform fmt -check -diff -recursive",
     "terraform init -backend=false -input=false",
     "terraform validate",
   ]);
+});
+
+test("add:secret stores each value without putting it on a command line", (t) => {
+  const { run, calls, dir } = infraRepo(t);
+  const result = spawnSync(
+    "bash",
+    [
+      join(dir, "scripts/infra.sh"),
+      "add:secret",
+      "FIRST_TOKEN",
+      "SECOND_TOKEN",
+    ],
+    {
+      env: {
+        ...process.env,
+        BASH_ENV: "/dev/null",
+        PATH: `${join(dir, "bin")}:${process.env.PATH}`,
+      },
+      input: "s3cret one\nsecond-value\n",
+      encoding: "utf8",
+    },
+  );
+  assert.equal(result.status, 0, result.stderr);
+  assert.ok(run);
+  const stored = readFileSync(join(dir, "ssm-input"), "utf8")
+    .split("\n")
+    .filter(Boolean)
+    .map((line) => JSON.parse(line));
+  assert.deepEqual(stored, [
+    {
+      Name: "/policeconduct/secrets/FIRST_TOKEN",
+      Value: "s3cret one",
+      Type: "SecureString",
+      Overwrite: true,
+    },
+    {
+      Name: "/policeconduct/secrets/SECOND_TOKEN",
+      Value: "second-value",
+      Type: "SecureString",
+      Overwrite: true,
+    },
+  ]);
+  assert.doesNotMatch(calls().join("\n"), /s3cret|second-value/);
+  // The temporary file that carried the value is gone.
+  const payload = calls()
+    .at(-1)
+    .match(/file:\/\/(\S+)/)[1];
+  assert.equal(existsSync(payload), false);
+  assert.doesNotMatch(result.stdout + result.stderr, /s3cret|second-value/);
+  assert.match(result.stdout, /Stored \/policeconduct\/secrets\/FIRST_TOKEN/);
+});
+
+test("add:secret refuses a value given as an argument and a missing value", (t) => {
+  const { run, calls, dir } = infraRepo(t);
+  for (const args of [[], ["SENTRY_AUTH_TOKEN=abc123"], ["TOKEN", "abc123"]]) {
+    const result = run(["add:secret", ...args]);
+    assert.equal(result.status, 2, args.join(" "));
+    assert.match(result.stderr, /only the names/);
+  }
+  assert.deepEqual(calls(), []);
+
+  const empty = spawnSync(
+    "bash",
+    [join(dir, "scripts/infra.sh"), "add:secret", "TOKEN"],
+    {
+      env: {
+        ...process.env,
+        BASH_ENV: "/dev/null",
+        PATH: `${join(dir, "bin")}:${process.env.PATH}`,
+      },
+      input: "",
+      encoding: "utf8",
+    },
+  );
+  assert.equal(empty.status, 1);
+  assert.match(empty.stderr, /no value given for TOKEN/);
+  assert.doesNotMatch(calls().join("\n"), /ssm/);
 });
 
 test("an unknown task is refused and the tasks are listed", (t) => {

@@ -20,9 +20,13 @@ Usage: infra.sh TASK [arguments...]
               them and asks for 'yes' first
   outputs     Print deployed names and IDs, or the one output named
   doctor      Check that this machine and account can do infrastructure work
-  lint        Find format and configuration errors in the Terraform files.
-              Reads only the files: no AWS access, no live infrastructure
-  lint:fix    Rewrite the Terraform files in standard format
+  add:secret NAME...
+              Store a secret in Parameter Store, or replace its value. Asks
+              for each value with hidden input
+  format      Rewrite the Terraform files in standard format
+  format:validate
+              Fail when a Terraform file is not in standard format or the
+              configuration has an error. Reads only the files: no AWS access
   setup-user  Create or update the least-privilege IAM user for this stack
 USAGE
 }
@@ -117,7 +121,7 @@ case "${task}" in
     echo "Parameter Store secrets: readable"
     echo "Ready for infrastructure work."
     ;;
-  lint)
+  format:validate)
     require_tools terraform
     terraform -chdir="${STACK_DIR}" fmt -check -diff -recursive
     # Validation needs the providers. Fetch them without touching the state
@@ -127,9 +131,54 @@ case "${task}" in
     fi
     terraform -chdir="${STACK_DIR}" validate
     ;;
-  lint:fix)
+  format)
     require_tools terraform
     terraform -chdir="${STACK_DIR}" fmt -recursive "$@"
+    ;;
+  add:secret)
+    require_tools aws jq
+    if [[ $# -eq 0 ]]; then
+      echo "Usage: npm run infra:add:secret -- NAME [NAME...]" >&2
+      echo "Give only the names. Each value is asked for with hidden input." >&2
+      exit 2
+    fi
+    for name in "$@"; do
+      if [[ ! "${name}" =~ ^[A-Z][A-Z0-9_]*$ ]]; then
+        echo "Error: '${name}' is not a secret name. Use capitals, digits and underscores, such as SENTRY_AUTH_TOKEN." >&2
+        echo "Give only the names. Each value is asked for with hidden input, so it stays out of the shell history." >&2
+        exit 2
+      fi
+    done
+    require_aws_access
+    # mktemp -d makes a directory only this user can read.
+    secret_dir="$(mktemp -d)"
+    trap 'rm -rf "${secret_dir}"' EXIT
+    for name in "$@"; do
+      # A terminal gets a hidden prompt. Piped input gives one value per line.
+      if [[ -t 0 ]]; then
+        read -r -s -p "Value for ${name} (input is hidden): " value
+        echo >&2
+      else
+        IFS= read -r value || true
+      fi
+      if [[ -z "${value}" ]]; then
+        echo "Error: no value given for ${name}. Nothing was stored for it." >&2
+        exit 1
+      fi
+      # The value reaches aws in a private temporary file, never on a command
+      # line, where other processes could read it.
+      printf '%s' "${value}" \
+        | jq -Rsc --arg name "/policeconduct/secrets/${name}" \
+          '{Name: $name, Value: ., Type: "SecureString", Overwrite: true}' \
+          >"${secret_dir}/payload.json"
+      aws ssm put-parameter \
+        --region "${PARAMETER_STORE_REGION:-us-east-1}" \
+        --cli-input-json "file://${secret_dir}/payload.json" >/dev/null
+      rm -f "${secret_dir}/payload.json"
+      unset value
+      echo "Stored /policeconduct/secrets/${name}"
+    done
+    echo "Run 'npm run infra:apply' to pass a changed secret on to GitHub."
     ;;
   setup-user)
     require_tools aws
