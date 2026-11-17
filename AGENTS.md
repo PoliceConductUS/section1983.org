@@ -44,3 +44,16 @@ The goal is not just to make the repo pass lint. The goal is to make sure new co
 - Do not hardcode manual `Relevant Cases` sections or similar manual replacements when the site already has a generated system for that content.
 - Any case mentioned and/or linked in an article must exist in the case library. If it does not exist, add it or change the article so it does not point to a missing case entry.
 - If a shorthand or shortened case title refers to an existing case page, link it.
+
+## Branches And Worktrees
+
+- Each task gets its own branch and its own worktree folder. Any number of worktrees may be open at once. Work only in the folder of your own task branch.
+- Repos live on disk at `~/dev/<owner>/<repo>/`, where `<owner>` is the GitHub user or organization that owns the repo. Inside it, `main/` holds the `main` (or `master`) branch, and every other branch lives in a folder beside `main/` whose name is exactly the branch name.
+- Do not use `/` in branch names, so the branch name and the folder name always match: `docs-branch-stacking`, not `docs/branch-stacking`. Branches that already have a `/` keep their names until they merge or are deleted.
+- Where `main` is still checked out at `~/dev/<owner>/<repo>/` itself, leave it and any `.worktrees/` folders in place. Create each new branch folder at `~/dev/<owner>/<repo>/<branch-name>/` and add it to `.git/info/exclude`.
+- In-progress branches form one stack, one branch per task. The first branch is a child of `main`. Create every later branch as a child of the branch that is the leaf at that moment, so later work builds on and can see the in-progress changes below it. Never start a branch from `main` while another branch is in progress. Record each parent in Git Town (`git-town-branch.<name>.parent`); `git town branch` shows the stack.
+- Several agents may work in the stack at once, each on its own task branch. Your branch was the leaf when you created it, but another agent may add a branch above it later. Keep working on your own branch; do not move your work to the new leaf.
+- When a task is abandoned, remove its branch from the stack and set the parent of its child branch to the abandoned branch's parent, so the parent and child link directly.
+- Sync only your own task branch, from its own folder: merge `main`, then each ancestor branch from the bottom of the stack up, into your branch, and push it. Never merge into, push, or change another agent's branch or folder.
+- Delete a local branch and its folder once its pull request is merged or closed, so the branches that remain are the work that is not merged. The user decides merge order and timing.
+- Never leave local changes on `main`: no commits and no uncommitted edits. `main` only fast-forwards from `origin/main`.
