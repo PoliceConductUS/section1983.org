@@ -5,7 +5,7 @@ This is the single Terraform entrypoint for infrastructure.
 It creates:
 
 - GitHub OIDC provider
-- IAM role for GitHub Actions
+- IAM roles for GitHub Actions: one publishes the site, one applies this stack
 - GitHub environments (`production`, `preview`) and environment variables used by workflows
 - S3 bucket for Terraform state
 - S3 bucket for PR preview content
@@ -90,7 +90,7 @@ Terraform manages these GitHub environments automatically:
 
 And sets these environment variables automatically:
 
-- `production`: `AWS_ROLE_ARN`, `S3_BUCKET`, `CLOUDFRONT_DIST_ID`
+- `production`: `AWS_ROLE_ARN`, `AWS_INFRA_ROLE_ARN`, `S3_BUCKET`, `CLOUDFRONT_DIST_ID`
 - `preview`: `AWS_ROLE_ARN`, `S3_BUCKET`, `CLOUDFRONT_DIST_ID`
 
 Optional GA inputs in `section1983.auto.tfvars`:
@@ -115,5 +115,6 @@ If `sentry_auth_token` is set, Terraform also writes `SENTRY_AUTH_TOKEN` as a Gi
 
 ## Notes
 
-- Normal deploys do not run Terraform. GitHub Actions only sync files to S3 and invalidate CloudFront.
-- Run Terraform again only when infra changes.
+- Every production deploy runs `npm run infra:apply -- -auto-approve` first, then syncs files to S3 and invalidates CloudFront. See `infrastructure/README.md`.
+- Preview deploys never run Terraform.
+- The `production` environment accepts only the `main` branch.

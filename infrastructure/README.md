@@ -40,6 +40,41 @@ secrets from Parameter Store. `diff` then stops after showing the differences.
 To approve a destroy or replacement, list each resource address, one per line,
 in `TERRAFORM_APPROVED_DESTROYS` for that one run.
 
+## Infrastructure in the production deploy
+
+Every push to `main` runs `npm run infra:apply -- -auto-approve` before it
+publishes the site. Production then always has the infrastructure that the code
+on `main` describes. The apply output is in the `infra` job log of the
+`Deploy to Production` workflow.
+
+| What the apply finds                               | What happens                                                          |
+| -------------------------------------------------- | --------------------------------------------------------------------- |
+| Live infrastructure matches the code               | Nothing is changed and the site is published.                         |
+| Settings differ, with nothing destroyed            | The changes are applied, then the site is published.                  |
+| The plan destroys or replaces a resource           | Nothing is changed, the job fails, and the site is **not** published. |
+| The apply fails, or the role or a secret is absent | The job fails and the site is **not** published.                      |
+
+An infrastructure change therefore needs no separate step: merge it and the
+deploy applies it. Run `npm run infra:apply` locally when you want the change
+live before the merge, or when the deploy refused it.
+
+A destroy or replacement is never applied by the deploy. Apply it locally with
+`TERRAFORM_APPROVED_DESTROYS` set, then run the failed deploy again.
+
+Reverting a commit on `main` reverts its setting changes on the next deploy. A
+revert that removes a resource is a destroy, so it also needs the local apply.
+
+The deploy uses two AWS roles. Both can only be assumed from a GitHub
+environment, and the `production` environment accepts only the `main` branch.
+
+| Role                               | Used by                                    | Can do                                                              |
+| ---------------------------------- | ------------------------------------------ | ------------------------------------------------------------------- |
+| `section1983-github-actions`       | Site publish in `production` and `preview` | Write files to the two site buckets and clear the CloudFront cache. |
+| `section1983-github-actions-infra` | The `infra` job in `production` only       | Change everything this stack manages, including both roles.         |
+
+If a bad apply locks the deploy out of its own role, run `npm run infra:apply`
+locally to repair it.
+
 ## Zero-to-Deploy
 
 Use these steps in order if you are starting from a brand-new AWS account.
@@ -114,14 +149,17 @@ npm run infra:doctor
 
 ## GitHub Actions
 
-Bootstrap is manual/local only and creates infra.
+1. Run `npm run infra:apply` locally once. It creates the roles and the GitHub
+   environment variables that the workflows need.
+2. After that, `deploy.yml` applies infrastructure and then publishes the site.
+   See [Infrastructure in the production deploy](#infrastructure-in-the-production-deploy).
+3. `preview.yml` and `preview-cleanup.yml` only publish and remove preview
+   content. They never change infrastructure.
 
-1. Run `infrastructure/bootstrap` locally once.
-2. Then GitHub deploy workflows (`deploy.yml`, `preview.yml`, `preview-cleanup.yml`) only publish content and assume infra already exists.
+Credentials used by the workflows:
 
-Credentials used by deploy workflows:
-
-1. OIDC role via `AWS_ROLE_ARN`
+1. `AWS_ROLE_ARN`: the role that publishes site files.
+2. `AWS_INFRA_ROLE_ARN`: the role that applies infrastructure, in `production` only.
 
 ## More Detail
 

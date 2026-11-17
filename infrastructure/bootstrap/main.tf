@@ -11,7 +11,13 @@ locals {
     local.site_bucket_name,
     local.preview_bucket_name,
   ]
-  github_repo_sub              = "repo:${var.github_org}/${var.github_repo}:*"
+  # GitHub signs a job that names an environment with this subject. A role that
+  # trusts only these subjects cannot be assumed by a job outside the environment.
+  github_environment_subjects = {
+    for name in ["production", "preview"] :
+    name => "repo:${var.github_org}/${var.github_repo}:environment:${name}"
+  }
+  infra_role_name              = "${var.role_name}-infra"
   www_domain                   = "www.${var.domain_name}"
   include_www                  = var.www_record_mode != "none"
   create_www_alias_records     = var.www_record_mode == "alias"
@@ -52,6 +58,7 @@ locals {
     production = merge(
       {
         AWS_ROLE_ARN       = aws_iam_role.github_actions.arn
+        AWS_INFRA_ROLE_ARN = aws_iam_role.github_actions_infra.arn
         S3_BUCKET          = aws_s3_bucket.site.id
         CLOUDFRONT_DIST_ID = aws_cloudfront_distribution.site.id
       },
@@ -253,10 +260,12 @@ data "aws_iam_policy_document" "github_actions_assume_role" {
       values   = ["sts.amazonaws.com"]
     }
 
+    # Only the site deploy and the pull request previews, which run in these
+    # two GitHub environments.
     condition {
-      test     = "StringLike"
+      test     = "StringEquals"
       variable = "token.actions.githubusercontent.com:sub"
-      values   = [local.github_repo_sub]
+      values   = values(local.github_environment_subjects)
     }
   }
 }
@@ -267,148 +276,132 @@ resource "aws_iam_role" "github_actions" {
   description        = "GitHub Actions OIDC role for ${var.github_org}/${var.github_repo}"
 }
 
+# The deploy role only publishes the built site: it writes files to the two
+# site buckets and clears the CloudFront cache. Infrastructure changes use the
+# separate role below.
 data "aws_iam_policy_document" "github_actions_permissions" {
   statement {
-    sid    = "S3CreateBucket"
-    effect = "Allow"
-
-    actions = [
-      "s3:CreateBucket",
-      "s3:ListAllMyBuckets",
-      "s3:GetAccountPublicAccessBlock",
-      "s3:PutAccountPublicAccessBlock",
-    ]
-    resources = ["*"]
-  }
-
-  statement {
-    sid    = "StateBucketAccess"
+    sid    = "ListSiteBuckets"
     effect = "Allow"
 
     actions = [
       "s3:GetBucketLocation",
       "s3:ListBucket",
-      "s3:GetBucketVersioning",
-      "s3:PutBucketVersioning",
-      "s3:GetBucketPublicAccessBlock",
-      "s3:PutBucketPublicAccessBlock",
-      "s3:GetBucketPolicy",
-      "s3:PutBucketPolicy",
-      "s3:DeleteBucketPolicy",
-      "s3:GetBucketTagging",
-      "s3:PutBucketTagging",
-      "s3:DeleteBucketTagging",
-      "s3:GetBucketOwnershipControls",
-      "s3:PutBucketOwnershipControls",
-      "s3:GetEncryptionConfiguration",
-      "s3:PutEncryptionConfiguration",
-      "s3:GetObject",
-      "s3:PutObject",
-      "s3:DeleteObject",
-      "s3:GetObjectVersion",
     ]
     resources = [
-      aws_s3_bucket.terraform_state.arn,
-      "${aws_s3_bucket.terraform_state.arn}/*",
+      for bucket_name in local.effective_site_bucket_names : "arn:aws:s3:::${bucket_name}"
     ]
   }
 
   statement {
-    sid    = "DeploymentBucketsAccess"
+    sid    = "PublishSiteFiles"
     effect = "Allow"
 
     actions = [
-      "s3:GetBucketLocation",
-      "s3:HeadBucket",
-      "s3:ListBucket",
-      "s3:GetBucketVersioning",
-      "s3:PutBucketVersioning",
-      "s3:GetBucketPublicAccessBlock",
-      "s3:PutBucketPublicAccessBlock",
-      "s3:GetBucketPolicy",
-      "s3:PutBucketPolicy",
-      "s3:DeleteBucketPolicy",
-      "s3:GetBucketOwnershipControls",
-      "s3:PutBucketOwnershipControls",
-      "s3:GetEncryptionConfiguration",
-      "s3:PutEncryptionConfiguration",
       "s3:GetObject",
       "s3:PutObject",
       "s3:DeleteObject",
-      "s3:GetObjectVersion",
-      "s3:PutObjectAcl",
     ]
+    resources = [
+      for bucket_name in local.effective_site_bucket_names : "arn:aws:s3:::${bucket_name}/*"
+    ]
+  }
+
+  statement {
+    sid    = "ClearCloudFrontCache"
+    effect = "Allow"
+
+    actions = [
+      "cloudfront:CreateInvalidation",
+      "cloudfront:GetInvalidation",
+    ]
+    resources = [
+      aws_cloudfront_distribution.site.arn,
+      aws_cloudfront_distribution.preview.arn,
+    ]
+  }
+}
+
+resource "aws_iam_role_policy" "github_actions_permissions" {
+  name   = "${var.project_name}-github-actions"
+  role   = aws_iam_role.github_actions.id
+  policy = data.aws_iam_policy_document.github_actions_permissions.json
+}
+
+# The infrastructure role runs `npm run infra:apply` in the production deploy
+# workflow. Only a job in the production GitHub environment can assume it, and
+# that environment accepts only the main branch.
+data "aws_iam_policy_document" "github_actions_infra_assume_role" {
+  statement {
+    sid    = "GitHubActionsProductionOnly"
+    effect = "Allow"
+
+    principals {
+      type        = "Federated"
+      identifiers = [local.oidc_provider_arn]
+    }
+
+    actions = ["sts:AssumeRoleWithWebIdentity"]
+
+    condition {
+      test     = "StringEquals"
+      variable = "token.actions.githubusercontent.com:aud"
+      values   = ["sts.amazonaws.com"]
+    }
+
+    condition {
+      test     = "StringEquals"
+      variable = "token.actions.githubusercontent.com:sub"
+      values   = [local.github_environment_subjects["production"]]
+    }
+  }
+}
+
+resource "aws_iam_role" "github_actions_infra" {
+  name               = local.infra_role_name
+  assume_role_policy = data.aws_iam_policy_document.github_actions_infra_assume_role.json
+  description        = "Applies the Terraform stack from the production deploy of ${var.github_org}/${var.github_repo}"
+}
+
+# Everything this stack manages, and nothing outside it. The role can change
+# its own policy, so the limit that matters is who can assume it, above.
+data "aws_iam_policy_document" "github_actions_infra_permissions" {
+  statement {
+    sid    = "StackBuckets"
+    effect = "Allow"
+
+    actions = ["s3:*"]
     resources = flatten([
-      for bucket_name in local.effective_site_bucket_names : [
-        "arn:aws:s3:::${bucket_name}",
-        "arn:aws:s3:::${bucket_name}/*",
-      ]
+      for bucket_arn in [
+        aws_s3_bucket.terraform_state.arn,
+        aws_s3_bucket.site.arn,
+        aws_s3_bucket.preview.arn,
+      ] : [bucket_arn, "${bucket_arn}/*"]
     ])
   }
 
   statement {
-    sid    = "CloudFrontAccess"
+    sid    = "ListBuckets"
+    effect = "Allow"
+
+    actions   = ["s3:ListAllMyBuckets"]
+    resources = ["*"]
+  }
+
+  statement {
+    sid    = "CloudFrontCertificatesAndDns"
     effect = "Allow"
 
     actions = [
-      "cloudfront:CreateDistribution",
-      "cloudfront:UpdateDistribution",
-      "cloudfront:GetDistribution",
-      "cloudfront:GetDistributionConfig",
-      "cloudfront:ListDistributions",
-      "cloudfront:CreateInvalidation",
-      "cloudfront:CreateOriginAccessControl",
-      "cloudfront:UpdateOriginAccessControl",
-      "cloudfront:GetOriginAccessControl",
-      "cloudfront:ListOriginAccessControls",
-      "cloudfront:CreateFunction",
-      "cloudfront:UpdateFunction",
-      "cloudfront:DescribeFunction",
-      "cloudfront:PublishFunction",
-      "cloudfront:DeleteFunction",
-      "cloudfront:ListFunctions",
-      "cloudfront:TagResource",
-      "cloudfront:UntagResource",
-      "cloudfront:ListTagsForResource",
+      "cloudfront:*",
+      "acm:*",
+      "route53:*",
     ]
     resources = ["*"]
   }
 
   statement {
-    sid    = "AcmAccess"
-    effect = "Allow"
-
-    actions = [
-      "acm:RequestCertificate",
-      "acm:DescribeCertificate",
-      "acm:ListCertificates",
-      "acm:AddTagsToCertificate",
-      "acm:RemoveTagsFromCertificate",
-      "acm:DeleteCertificate",
-    ]
-    resources = ["*"]
-  }
-
-  statement {
-    sid    = "Route53Access"
-    effect = "Allow"
-
-    actions = [
-      "route53:CreateHostedZone",
-      "route53:DeleteHostedZone",
-      "route53:GetHostedZone",
-      "route53:ListHostedZones",
-      "route53:ListHostedZonesByName",
-      "route53:ChangeResourceRecordSets",
-      "route53:ListResourceRecordSets",
-      "route53:GetChange",
-      "route53:ChangeTagsForResource",
-    ]
-    resources = ["*"]
-  }
-
-  statement {
-    sid    = "WafReadAccess"
+    sid    = "WafRead"
     effect = "Allow"
 
     actions = [
@@ -417,12 +410,57 @@ data "aws_iam_policy_document" "github_actions_permissions" {
     ]
     resources = ["*"]
   }
+
+  statement {
+    sid    = "StackRolesAndOidcProvider"
+    effect = "Allow"
+
+    actions = ["iam:*"]
+    resources = [
+      aws_iam_role.github_actions.arn,
+      aws_iam_role.github_actions_infra.arn,
+      local.oidc_provider_arn,
+    ]
+  }
+
+  statement {
+    sid    = "ListOidcProviders"
+    effect = "Allow"
+
+    actions   = ["iam:ListOpenIDConnectProviders"]
+    resources = ["*"]
+  }
+
+  statement {
+    sid    = "ReadStackSecrets"
+    effect = "Allow"
+
+    actions = ["ssm:GetParameter"]
+    resources = [
+      for name in ["SENTRY_AUTH_TOKEN", "GITHUB_TOKEN"] :
+      "arn:aws:ssm:*:${data.aws_caller_identity.current.account_id}:parameter/policeconduct/secrets/${name}"
+    ]
+  }
+
+  statement {
+    sid    = "DecryptStackSecrets"
+    effect = "Allow"
+
+    actions   = ["kms:Decrypt"]
+    resources = ["*"]
+
+    condition {
+      test     = "StringLike"
+      variable = "kms:ViaService"
+      values   = ["ssm.*.amazonaws.com"]
+    }
+  }
 }
 
-resource "aws_iam_role_policy" "github_actions_permissions" {
-  name   = "${var.project_name}-github-actions"
-  role   = aws_iam_role.github_actions.id
-  policy = data.aws_iam_policy_document.github_actions_permissions.json
+resource "aws_iam_role_policy" "github_actions_infra_permissions" {
+  name   = "${var.project_name}-github-actions-infra"
+  role   = aws_iam_role.github_actions_infra.id
+  policy = data.aws_iam_policy_document.github_actions_infra_permissions.json
 }
 
 data "aws_cloudfront_cache_policy" "managed_caching_optimized" {
@@ -592,10 +630,6 @@ function redirect(location) {
       'cache-control': { value: 'public, max-age=86400' }
     }
   };
-
-  tags = {
-    Environment = "production"
-  }
 }
 
 function queryString(request) {
@@ -732,10 +766,6 @@ function handler(event) {
 
   request.uri = '/' + match[1] + uri;
   return request;
-
-  tags = {
-    Environment = "preview"
-  }
 }
 EOF
 }
@@ -991,6 +1021,23 @@ resource "github_repository_environment" "environments" {
 
   repository  = var.github_repo
   environment = each.value
+
+  # Production deploys, and the infrastructure role with them, run only from
+  # the branch named below. Previews run from any pull request branch.
+  dynamic "deployment_branch_policy" {
+    for_each = each.value == "production" ? [1] : []
+
+    content {
+      protected_branches     = false
+      custom_branch_policies = true
+    }
+  }
+}
+
+resource "github_repository_environment_deployment_policy" "production_main" {
+  repository     = var.github_repo
+  environment    = github_repository_environment.environments["production"].environment
+  branch_pattern = "main"
 }
 
 resource "github_actions_environment_variable" "environment_variables" {

@@ -84,7 +84,7 @@ Deploys are handled by GitHub Actions:
 - `.github/workflows/preview.yml` (PR previews)
 - `.github/workflows/preview-cleanup.yml` (preview cleanup on PR close)
 
-After bootstrap, deploy workflows only sync content to S3 and invalidate CloudFront.
+The production deploy first makes live infrastructure match the code on `main`, with `npm run infra:apply -- -auto-approve`, and then syncs content to S3 and invalidates CloudFront. If the infrastructure step fails, the site is not published. Preview deploys only sync content.
 
 ## Analytics configuration sync
 

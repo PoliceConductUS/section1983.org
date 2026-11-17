@@ -127,6 +127,19 @@ test("yes applies the plan that was shown", (t) => {
   assert.equal(calls()[2], `terraform apply ${planFile}`);
 });
 
+test("-auto-approve applies the plan without asking, as CI does", (t) => {
+  const { dir, env, calls } = stubTools(t);
+  const result = spawnSync("bash", [reviewedApply, dir, "-auto-approve"], {
+    env,
+    input: "",
+    encoding: "utf8",
+  });
+  assert.equal(result.status, 0, result.stderr);
+  assert.doesNotMatch(result.stdout + result.stderr, /Only 'yes'/);
+  assert.deepEqual(terraformSubcommands(calls), ["plan", "show", "apply"]);
+  assert.doesNotMatch(calls()[0], /auto-approve/);
+});
+
 // A copy of infra.sh in a throwaway repository, with a stand-in apply wrapper
 // that reports the arguments it was handed.
 function infraRepo(t, { initialized = false } = {}) {

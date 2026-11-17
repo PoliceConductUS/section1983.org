@@ -25,6 +25,12 @@ source "${REPO_ROOT}/scripts/parameter-store-secrets.sh"
 load_parameter_store_secrets SENTRY_AUTH_TOKEN GITHUB_TOKEN
 export TF_VAR_sentry_auth_token="${SENTRY_AUTH_TOKEN}"
 
+# In GitHub Actions, have the runner hide these values if anything prints them.
+if [[ "${GITHUB_ACTIONS:-}" == "true" ]]; then
+  echo "::add-mask::${SENTRY_AUTH_TOKEN}"
+  echo "::add-mask::${GITHUB_TOKEN}"
+fi
+
 # With -refresh-only, show settings that were changed outside Terraform, ask
 # for 'yes', then record them in the state. Live infrastructure is not changed.
 for arg in "$@"; do
