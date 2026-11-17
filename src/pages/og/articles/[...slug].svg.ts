@@ -1,3 +1,4 @@
+import type { APIContext, InferGetStaticPropsType } from "astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
@@ -36,7 +37,9 @@ function wrapLines(value: string, maxLength: number) {
   return lines.slice(0, 4);
 }
 
-export async function GET({ props }) {
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+export async function GET({ props }: APIContext<Props>) {
   const { article } = props;
   const titleLines = wrapLines(article.data.title, 26);
   const description = escapeXml((article.data.description || "").slice(0, 110));

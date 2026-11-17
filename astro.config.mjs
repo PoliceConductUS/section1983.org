@@ -10,6 +10,10 @@ import { loadEnv } from "vite";
 
 import sentry from "@sentry/astro";
 
+/**
+ * @param {unknown} value
+ * @param {string} name
+ */
 function requireNonEmptyString(value, name) {
   if (typeof value !== "string") {
     throw new Error(`${name} must be set.`);
@@ -35,6 +39,7 @@ const sentryDsn = requireNonEmptyString(
   "PUBLIC_SENTRY_DSN",
 );
 
+/** @type {Record<string, string>} */
 const staticPageSources = {
   "/": "src/pages/index.astro",
   "/about/": "src/pages/about/index.astro",
@@ -58,6 +63,7 @@ const gitDateCache = new Map();
 
 // Last commit date for a file. CI checkouts give every file the same mtime,
 // so git history is the only trustworthy source for sitemap <lastmod>.
+/** @param {string} filePath */
 function getFileLastModified(filePath) {
   if (gitDateCache.has(filePath)) return gitDateCache.get(filePath);
   let result;
@@ -89,6 +95,7 @@ function getFileLastModified(filePath) {
   return result;
 }
 
+/** @param {string} url */
 function getSitemapLastModified(url) {
   const pathname = new URL(url).pathname;
 
@@ -115,6 +122,7 @@ function getSitemapLastModified(url) {
 // them wrap on small screens while short data cells stay on one line.
 const LONG_CELL_CHARS = 40;
 
+/** @type {import("satteri").HastPluginDefinition} */
 const markLongTableCells = {
   name: "mark-long-table-cells",
   element: {
@@ -134,6 +142,7 @@ const markLongTableCells = {
 
 // Markdown tables scroll sideways on small screens and at high zoom. A scroll
 // area must take keyboard focus so it can be scrolled with the arrow keys.
+/** @type {import("satteri").HastPluginDefinition} */
 const makeTablesFocusable = {
   name: "make-tables-focusable",
   element: {
@@ -146,6 +155,7 @@ const makeTablesFocusable = {
 
 // Markdown task lists render a bare checkbox. Name each one after its list
 // item so a screen reader announces what the box is for.
+/** @type {import("satteri").HastPluginDefinition} */
 const labelTaskListCheckboxes = {
   name: "label-task-list-checkboxes",
   element: {
@@ -155,8 +165,13 @@ const labelTaskListCheckboxes = {
       if (!Array.isArray(classes) || !classes.includes("task-list-item")) {
         return;
       }
+      /**
+       * @param {Readonly<import("satteri").HastNode>} parent
+       * @returns {Readonly<import("satteri").HastNode> | null}
+       */
       const findCheckbox = (parent) => {
-        for (const child of parent.children ?? []) {
+        const children = "children" in parent ? parent.children : [];
+        for (const child of children) {
           if (child.type !== "element") continue;
           if (child.tagName === "input") return child;
           const nested = child.tagName === "p" ? findCheckbox(child) : null;
