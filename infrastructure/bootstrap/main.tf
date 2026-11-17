@@ -18,6 +18,7 @@ locals {
     name => "repo:${var.github_org}/${var.github_repo}:environment:${name}"
   }
   infra_role_name              = "${var.role_name}-infra"
+  preview_role_name            = "${var.role_name}-preview"
   www_domain                   = "www.${var.domain_name}"
   include_www                  = var.www_record_mode != "none"
   create_www_alias_records     = var.www_record_mode == "alias"
@@ -78,7 +79,7 @@ locals {
     )
     preview = merge(
       {
-        AWS_ROLE_ARN       = aws_iam_role.github_actions.arn
+        AWS_ROLE_ARN       = aws_iam_role.github_actions_preview.arn
         S3_BUCKET          = aws_s3_bucket.preview.id
         CLOUDFRONT_DIST_ID = aws_cloudfront_distribution.preview.id
       },
@@ -242,7 +243,25 @@ resource "aws_iam_openid_connect_provider" "github" {
   thumbprint_list = var.github_oidc_thumbprints
 }
 
-data "aws_iam_policy_document" "github_actions_assume_role" {
+# Each GitHub environment publishes with its own role. A role can be assumed
+# only from its environment and can reach only that environment's bucket and
+# distribution, so a pull request preview can never write to the live site.
+locals {
+  publish_targets = {
+    production = {
+      bucket_arn       = aws_s3_bucket.site.arn
+      distribution_arn = aws_cloudfront_distribution.site.arn
+    }
+    preview = {
+      bucket_arn       = aws_s3_bucket.preview.arn
+      distribution_arn = aws_cloudfront_distribution.preview.arn
+    }
+  }
+}
+
+data "aws_iam_policy_document" "publish_assume_role" {
+  for_each = local.publish_targets
+
   statement {
     sid    = "GitHubActionsOidcAssumeRole"
     effect = "Allow"
@@ -260,37 +279,28 @@ data "aws_iam_policy_document" "github_actions_assume_role" {
       values   = ["sts.amazonaws.com"]
     }
 
-    # Only the site deploy and the pull request previews, which run in these
-    # two GitHub environments.
     condition {
       test     = "StringEquals"
       variable = "token.actions.githubusercontent.com:sub"
-      values   = values(local.github_environment_subjects)
+      values   = [local.github_environment_subjects[each.key]]
     }
   }
 }
 
-resource "aws_iam_role" "github_actions" {
-  name               = var.role_name
-  assume_role_policy = data.aws_iam_policy_document.github_actions_assume_role.json
-  description        = "GitHub Actions OIDC role for ${var.github_org}/${var.github_repo}"
-}
+# Publishing only writes the built site's files and clears the CloudFront
+# cache. Infrastructure changes use the separate role below.
+data "aws_iam_policy_document" "publish_permissions" {
+  for_each = local.publish_targets
 
-# The deploy role only publishes the built site: it writes files to the two
-# site buckets and clears the CloudFront cache. Infrastructure changes use the
-# separate role below.
-data "aws_iam_policy_document" "github_actions_permissions" {
   statement {
-    sid    = "ListSiteBuckets"
+    sid    = "ListSiteBucket"
     effect = "Allow"
 
     actions = [
       "s3:GetBucketLocation",
       "s3:ListBucket",
     ]
-    resources = [
-      for bucket_name in local.effective_site_bucket_names : "arn:aws:s3:::${bucket_name}"
-    ]
+    resources = [each.value.bucket_arn]
   }
 
   statement {
@@ -302,9 +312,7 @@ data "aws_iam_policy_document" "github_actions_permissions" {
       "s3:PutObject",
       "s3:DeleteObject",
     ]
-    resources = [
-      for bucket_name in local.effective_site_bucket_names : "arn:aws:s3:::${bucket_name}/*"
-    ]
+    resources = ["${each.value.bucket_arn}/*"]
   }
 
   statement {
@@ -315,17 +323,38 @@ data "aws_iam_policy_document" "github_actions_permissions" {
       "cloudfront:CreateInvalidation",
       "cloudfront:GetInvalidation",
     ]
-    resources = [
-      aws_cloudfront_distribution.site.arn,
-      aws_cloudfront_distribution.preview.arn,
-    ]
+    resources = [each.value.distribution_arn]
   }
+}
+
+# Publishes the live site. Only the production environment can assume it.
+resource "aws_iam_role" "github_actions" {
+  name               = var.role_name
+  assume_role_policy = data.aws_iam_policy_document.publish_assume_role["production"].json
+  description        = "Publishes the live site from the production environment of ${var.github_org}/${var.github_repo}"
 }
 
 resource "aws_iam_role_policy" "github_actions_permissions" {
   name   = "${var.project_name}-github-actions"
   role   = aws_iam_role.github_actions.id
-  policy = data.aws_iam_policy_document.github_actions_permissions.json
+  policy = data.aws_iam_policy_document.publish_permissions["production"].json
+}
+
+# Publishes pull request previews. Only the preview environment can assume it.
+resource "aws_iam_role" "github_actions_preview" {
+  name               = local.preview_role_name
+  assume_role_policy = data.aws_iam_policy_document.publish_assume_role["preview"].json
+  description        = "Publishes pull request previews from the preview environment of ${var.github_org}/${var.github_repo}"
+
+  # When the deploy applies this stack, the infrastructure role must be allowed
+  # to manage this role before it creates it.
+  depends_on = [aws_iam_role_policy.github_actions_infra_permissions]
+}
+
+resource "aws_iam_role_policy" "github_actions_preview_permissions" {
+  name   = "${var.project_name}-github-actions-preview"
+  role   = aws_iam_role.github_actions_preview.id
+  policy = data.aws_iam_policy_document.publish_permissions["preview"].json
 }
 
 # The infrastructure role runs `npm run infra:apply` in the production deploy
@@ -416,9 +445,10 @@ data "aws_iam_policy_document" "github_actions_infra_permissions" {
     effect = "Allow"
 
     actions = ["iam:*"]
+    # Every role of this stack shares the name prefix, so a role added later
+    # is covered before it exists.
     resources = [
-      aws_iam_role.github_actions.arn,
-      aws_iam_role.github_actions_infra.arn,
+      "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/${var.role_name}*",
       local.oidc_provider_arn,
     ]
   }

@@ -64,13 +64,15 @@ A destroy or replacement is never applied by the deploy. Apply it locally with
 Reverting a commit on `main` reverts its setting changes on the next deploy. A
 revert that removes a resource is a destroy, so it also needs the local apply.
 
-The deploy uses two AWS roles. Both can only be assumed from a GitHub
-environment, and the `production` environment accepts only the `main` branch.
+The workflows use three AWS roles. Each can be assumed from one GitHub
+environment only, and the `production` environment accepts only the `main`
+branch. A pull request can therefore publish its preview and nothing else.
 
-| Role                               | Used by                                    | Can do                                                              |
-| ---------------------------------- | ------------------------------------------ | ------------------------------------------------------------------- |
-| `section1983-github-actions`       | Site publish in `production` and `preview` | Write files to the two site buckets and clear the CloudFront cache. |
-| `section1983-github-actions-infra` | The `infra` job in `production` only       | Change everything this stack manages, including both roles.         |
+| Role                                 | Environment                      | Can do                                                                    |
+| ------------------------------------ | -------------------------------- | ------------------------------------------------------------------------- |
+| `section1983-github-actions`         | `production`                     | Write files to the live site bucket and clear the live CloudFront cache.  |
+| `section1983-github-actions-preview` | `preview`                        | Write files to the preview bucket and clear the preview CloudFront cache. |
+| `section1983-github-actions-infra`   | `production`, in the `infra` job | Change everything this stack manages, including all three roles.          |
 
 If a bad apply locks the deploy out of its own role, run `npm run infra:apply`
 locally to repair it.
@@ -158,7 +160,7 @@ npm run infra:doctor
 
 Credentials used by the workflows:
 
-1. `AWS_ROLE_ARN`: the role that publishes site files.
+1. `AWS_ROLE_ARN`: the role that publishes site files. Each environment has its own.
 2. `AWS_INFRA_ROLE_ARN`: the role that applies infrastructure, in `production` only.
 
 ## More Detail
