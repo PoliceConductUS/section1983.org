@@ -19,7 +19,7 @@ related:
 
 Section 1985(3) is narrower and harder to prove. It adds a conspiracy element and — critically — requires **class-based discriminatory animus**. That means you must show the conspirators were motivated by hatred of or prejudice against a protected class.
 
-|                              | § 1983                   | § 1985(3)                               |
+| Point of comparison          | § 1983                   | § 1985(3)                               |
 | ---------------------------- | ------------------------ | --------------------------------------- |
 | **Who can be sued**          | State actors only        | State actors _and_ private individuals  |
 | **Conspiracy required**      | No (but can allege one)  | Yes — two or more people                |

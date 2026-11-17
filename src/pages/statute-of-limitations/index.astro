@@ -72,8 +72,15 @@ const structuredData = {
     </p>
   </div>
 
-  <h2 class="text-xl font-bold text-navy mb-3">The table</h2>
-  <div class="overflow-x-auto mb-10">
+  <h2 id="sol-table-heading" class="text-xl font-bold text-navy mb-3">
+    The Table
+  </h2>
+  <div
+    class="overflow-x-auto mb-10 focus-ring"
+    role="region"
+    aria-labelledby="sol-table-heading"
+    tabindex="0"
+  >
     <table class="min-w-full text-sm border border-slate-200 bg-white">
       <thead class="bg-slate-100 text-navy">
         <tr>
@@ -124,7 +131,7 @@ const structuredData = {
     </table>
   </div>
 
-  <h2 class="text-xl font-bold text-navy mb-3">Grouped by period</h2>
+  <h2 class="text-xl font-bold text-navy mb-3">Grouped by Period</h2>
   <div class="grid gap-4 md:grid-cols-2 mb-10">
     {yearGroups.map(([years, states]) => (
       <div class="border border-slate-200 rounded-lg bg-white p-4">

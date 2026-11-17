@@ -242,7 +242,7 @@ const commitDisplay =
           <hr class="border-slate-700" />
           <a
             href="https://policeconduct.org/donate/"
-            class="touch-target-inline focus-ring-gold bg-gold text-navy text-center justify-center font-bold py-2 rounded hover:bg-yellow-400 transition-colors mt-1"
+            class="touch-target-inline focus-ring-gold bg-gold text-navy text-center justify-center font-bold py-2 rounded hover:bg-gold-light transition-colors mt-1"
             target="_blank"
             rel="noopener"
           >
@@ -278,6 +278,13 @@ const commitDisplay =
           }
         });
 
+        menu.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            setMenuState(false);
+            toggle.focus();
+          }
+        });
+
         mobileLinks.forEach((link) => {
           link.addEventListener("click", () => setMenuState(false));
         });
@@ -300,7 +307,7 @@ const commitDisplay =
           </p>
           <a
             href="https://policeconduct.org/donate/"
-            class="inline-block bg-gold text-navy px-6 py-2 rounded font-bold hover:bg-yellow-400 transition-colors"
+            class="inline-block bg-gold text-navy px-6 py-2 rounded font-bold hover:bg-gold-light transition-colors"
             target="_blank"
             rel="noopener"
           >
@@ -312,7 +319,7 @@ const commitDisplay =
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <!-- About -->
           <div>
-            <h3 class="text-white font-semibold mb-3">About</h3>
+            <h2 class="text-white font-semibold mb-3">About</h2>
             <p class="mb-2">
               Your free guide to holding police accountable in federal court.
               Independent of police and government.
@@ -321,7 +328,7 @@ const commitDisplay =
               A project of the{" "}
               <a
                 href="https://policeconduct.org/about"
-                class="hover:text-gold transition-colors"
+                class="underline hover:text-gold transition-colors"
                 target="_blank"
                 rel="noopener"
               >
@@ -332,7 +339,7 @@ const commitDisplay =
 
           <!-- Site Links -->
           <div>
-            <h3 class="text-white font-semibold mb-3">Site</h3>
+            <h2 class="text-white font-semibold mb-3">Site</h2>
             <ul class="space-y-1">
               <li>
                 <a href="/process" class="hover:text-gold transition-colors">
@@ -413,7 +420,7 @@ const commitDisplay =
 
           <!-- Our Projects -->
           <div>
-            <h3 class="text-white font-semibold mb-3">Our Projects</h3>
+            <h2 class="text-white font-semibold mb-3">Our Projects</h2>
             <ul class="space-y-1">
               <li>
                 <a
@@ -440,7 +447,7 @@ const commitDisplay =
 
           <!-- Allied Organizations -->
           <div>
-            <h3 class="text-white font-semibold mb-3">Allied Organizations</h3>
+            <h2 class="text-white font-semibold mb-3">Allied Organizations</h2>
             <ul class="space-y-1">
               <li>
                 <a
@@ -552,7 +559,7 @@ const commitDisplay =
             them without checking the primary source. Errors are likely —{" "}
             <a
               href="https://policeconduct.org/about/contact/"
-              class="hover:text-gold transition-colors"
+              class="underline hover:text-gold transition-colors"
               target="_blank"
               rel="noopener"
             >

@@ -100,11 +100,24 @@ test("apply wrapper stops before apply when account verification fails", (t) => 
     readFileSync("infrastructure/bootstrap/scripts/apply.sh"),
   );
   writeFileSync(join(dir, "scripts/require-terraform-account.sh"), "exit 37\n");
+  writeFileSync(
+    join(dir, "scripts/require-terraform-state.sh"),
+    readFileSync("scripts/require-terraform-state.sh"),
+  );
   const bin = join(dir, "bin");
   mkdirSync(bin);
-  writeFileSync(join(bin, "terraform"), "#!/bin/sh\necho APPLY_REACHED\n", {
-    mode: 0o755,
-  });
+  // The state check reads a managed instance; any later call would be the apply.
+  writeFileSync(
+    join(bin, "terraform"),
+    `#!/bin/sh
+if [ "$2 $3" = "state pull" ]; then
+  printf '%s' '{"version":4,"resources":[{"mode":"managed","instances":[{}]}]}'
+  exit 0
+fi
+echo APPLY_REACHED
+`,
+    { mode: 0o755 },
+  );
   const result = spawnSync("bash", [join(scripts, "apply.sh")], {
     encoding: "utf8",
     env: { PATH: `${bin}:${process.env.PATH}`, BASH_ENV: "/dev/null" },
@@ -176,3 +189,39 @@ for (const missing of ["aws", "terraform", "jq"]) {
     assert.match(result.stderr, new RegExp(`${missing} is required`));
   });
 }
+
+test("apply wrapper refuses a checkout that cannot read the existing state", (t) => {
+  const dir = mkdtempSync(join(resolve(tmpdir()), "tf-wrapper-"));
+  t.after(() => rmSync(dir, { recursive: true, force: true }));
+  const scripts = join(dir, "infrastructure/bootstrap/scripts");
+  mkdirSync(scripts, { recursive: true });
+  mkdirSync(join(dir, "scripts"));
+  writeFileSync(
+    join(scripts, "apply.sh"),
+    readFileSync("infrastructure/bootstrap/scripts/apply.sh"),
+  );
+  writeFileSync(
+    join(dir, "scripts/require-terraform-state.sh"),
+    readFileSync("scripts/require-terraform-state.sh"),
+  );
+  writeFileSync(join(dir, ".env"), "exit 99\n");
+  const bin = join(dir, "bin");
+  mkdirSync(bin);
+  const log = join(dir, "calls");
+  writeFileSync(
+    join(bin, "terraform"),
+    `#!/bin/sh
+printf '%s\\n' "$2 $3" >> "${log}"
+printf '%s' '{"version":4,"resources":[]}'
+`,
+    { mode: 0o755 },
+  );
+  const result = spawnSync("bash", [join(scripts, "apply.sh")], {
+    encoding: "utf8",
+    env: { PATH: `${bin}:${process.env.PATH}`, BASH_ENV: "/dev/null" },
+  });
+  assert.equal(result.status, 1, result.stderr);
+  assert.match(result.stderr, /refusing apply/);
+  assert.match(result.stderr, /has not been initialized/);
+  assert.equal(readFileSync(log, "utf8"), "state pull\n");
+});

@@ -4,17 +4,11 @@
   --color-navy: #1a1f36;
   --color-navy-light: #242b45;
   --color-gold: #c9a84c;
-  --color-gold-strong: #85630f;
+  --color-gold-strong: #7d5d0e;
   --color-gold-light: #dbc476;
   --color-cream: #f5f1e8;
   --color-slate: #5f6f82;
   --color-slate-strong: #556272;
-}
-
-button,
-a,
-input {
-  -webkit-tap-highlight-color: transparent;
 }
 
 .focus-ring {
@@ -45,7 +39,6 @@ input {
   align-items: center;
 }
 
-.surface-link:hover,
 .surface-link:focus-visible {
   color: var(--color-gold-strong);
 }
@@ -57,7 +50,6 @@ input {
     transform 180ms ease;
 }
 
-.interactive-card:hover,
 .interactive-card:focus-visible {
   border-color: color-mix(in srgb, var(--color-gold) 70%, white);
   box-shadow: 0 10px 25px rgba(26, 31, 54, 0.08);
@@ -120,7 +112,6 @@ input {
   border-color: var(--color-navy);
 }
 
-.tag-chip--active:hover,
 .tag-chip--active:focus-visible {
   background: var(--color-navy-light);
   color: white;
@@ -142,7 +133,6 @@ input {
     color 180ms ease;
 }
 
-.tag-chip-pill:hover,
 .tag-chip-pill:focus-visible {
   background: var(--color-navy-light);
 }
@@ -167,12 +157,56 @@ input {
     box-shadow 180ms ease;
 }
 
-.share-action:hover,
 .share-action:focus-visible {
   background: color-mix(in srgb, var(--color-gold) 10%, white);
   border-color: color-mix(in srgb, var(--color-gold) 40%, white);
   color: var(--color-navy);
   box-shadow: 0 10px 24px rgba(26, 31, 54, 0.08);
+}
+
+/* Hover styling only where the pointer can hover, so it does not latch
+   after a tap on touch screens. Keyboard focus keeps the same look above. */
+@media (hover: hover) {
+  .surface-link:hover {
+    color: var(--color-gold-strong);
+  }
+
+  .interactive-card:hover {
+    border-color: color-mix(in srgb, var(--color-gold) 70%, white);
+    box-shadow: 0 10px 25px rgba(26, 31, 54, 0.08);
+  }
+
+  .tag-chip--active:hover {
+    background: var(--color-navy-light);
+    color: white;
+  }
+
+  .tag-chip-pill:hover {
+    background: var(--color-navy-light);
+  }
+
+  .share-action:hover {
+    background: color-mix(in srgb, var(--color-gold) 10%, white);
+    border-color: color-mix(in srgb, var(--color-gold) 40%, white);
+    color: var(--color-navy);
+    box-shadow: 0 10px 24px rgba(26, 31, 54, 0.08);
+  }
+
+  .prose a:hover {
+    color: var(--color-gold-strong);
+  }
+
+  /* Pill links turn gold under the pointer, so their text and any count
+     inside them turn navy. The extra class outranks `.prose a:hover`. */
+  .chip-link:hover,
+  .prose a.chip-link:hover,
+  .chip-link:hover * {
+    color: var(--color-navy);
+  }
+
+  .prose tr:hover td {
+    background: var(--color-cream);
+  }
 }
 
 .text-gold-strong {
@@ -189,6 +223,7 @@ input {
 .prose h2 {
   font-size: 1.5rem;
   font-weight: 700;
+  line-height: 1.25;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   color: var(--color-navy);
@@ -199,6 +234,7 @@ input {
 .prose h3 {
   font-size: 1.25rem;
   font-weight: 600;
+  line-height: 1.25;
   margin-top: 2rem;
   margin-bottom: 0.75rem;
   color: var(--color-navy);
@@ -214,10 +250,6 @@ input {
   text-decoration-color: var(--color-gold);
   text-underline-offset: 2px;
   text-decoration-thickness: 2px;
-}
-
-.prose a:hover {
-  color: var(--color-gold-strong);
 }
 
 .prose ul,
@@ -252,7 +284,7 @@ input {
 
 .prose hr {
   border: none;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid var(--color-slate-200);
   margin: 2.5rem 0;
 }
 
@@ -273,19 +305,27 @@ input {
 
 .prose td {
   padding: 0.75rem;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.prose tr:hover td {
-  background: var(--color-cream);
+  border-bottom: 1px solid var(--color-slate-200);
 }
 
 /* Responsive table */
 @media (max-width: 768px) {
+  /* The table scrolls sideways. The edge shadows show that more columns
+     exist: the cream covers scroll with the content and hide a shadow once
+     that edge is reached. */
   .prose table {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+    background:
+      linear-gradient(to right, var(--color-cream) 40%, transparent) left
+        center / 3rem 100% no-repeat local,
+      linear-gradient(to left, var(--color-cream) 40%, transparent) right
+        center / 3rem 100% no-repeat local,
+      linear-gradient(to right, rgb(26 31 54 / 0.28), transparent) left center /
+        1rem 100% no-repeat scroll,
+      linear-gradient(to left, rgb(26 31 54 / 0.28), transparent) right center /
+        1rem 100% no-repeat scroll;
   }
 
   /* Sentence-length cells wrap at a readable width instead of forcing one
@@ -315,11 +355,11 @@ input {
 }
 
 .chart-scroll-frame::-webkit-scrollbar-track {
-  background: #e2e8f0;
+  background: var(--color-slate-200);
 }
 
 .chart-scroll-frame::-webkit-scrollbar-thumb {
-  background: #64748b;
+  background: var(--color-slate);
   border-radius: 9999px;
-  border: 2px solid #e2e8f0;
+  border: 2px solid var(--color-slate-200);
 }

@@ -1,6 +1,11 @@
 output "aws_role_arn" {
-  description = "IAM role ARN to set as GitHub Actions variable AWS_ROLE_ARN."
+  description = "IAM role ARN that publishes the site. Set as GitHub Actions variable AWS_ROLE_ARN."
   value       = aws_iam_role.github_actions.arn
+}
+
+output "aws_infra_role_arn" {
+  description = "IAM role ARN the production deploy assumes to apply this stack. Set as GitHub Actions variable AWS_INFRA_ROLE_ARN."
+  value       = aws_iam_role.github_actions_infra.arn
 }
 
 output "aws_role_name" {
