@@ -45,7 +45,9 @@ test.describe("200% text size", () => {
         .getByRole("heading", { level: 1 })
         .evaluate((el) => parseFloat(getComputedStyle(el).fontSize));
 
-      await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
+      await page.addStyleTag({
+        content: "html { font-size: 200% !important; }",
+      });
 
       const after = await page
         .getByRole("heading", { level: 1 })
@@ -60,13 +62,17 @@ test.describe("200% text size", () => {
           const style = getComputedStyle(el);
           if (el.offsetParent === null || !el.innerText?.trim()) continue;
           if (el.closest(".sr-only")) continue;
-          const hidesX = style.overflowX === "hidden" || style.overflowX === "clip";
-          const hidesY = style.overflowY === "hidden" || style.overflowY === "clip";
+          const hidesX =
+            style.overflowX === "hidden" || style.overflowX === "clip";
+          const hidesY =
+            style.overflowY === "hidden" || style.overflowY === "clip";
           if (
             (hidesX && el.scrollWidth > el.clientWidth + 1) ||
             (hidesY && el.scrollHeight > el.clientHeight + 1)
           ) {
-            out.push(`${el.tagName.toLowerCase()}.${el.className}`.slice(0, 80));
+            out.push(
+              `${el.tagName.toLowerCase()}.${el.className}`.slice(0, 80),
+            );
           }
         }
         return out;

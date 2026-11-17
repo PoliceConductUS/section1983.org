@@ -1,8 +1,8 @@
 import { defineConfig, devices } from "@playwright/test";
 
-// Accessibility suite. It runs against the production build served by
-// `astro preview`, so run `npm run build` first (the npm scripts do).
-const PORT = 4329;
+// Accessibility suite. It runs against the production build in dist/, so run
+// `npm run build` first (the npm scripts do).
+const PORT = Number(process.env.A11Y_PORT || 41983);
 const baseURL = `http://127.0.0.1:${PORT}`;
 
 export default defineConfig({
@@ -13,10 +13,10 @@ export default defineConfig({
   reporter: process.env.CI ? [["github"], ["list"]] : "list",
   use: { baseURL },
   webServer: {
-    command: `npx astro preview --host 127.0.0.1 --port ${PORT}`,
+    command: "node tests/a11y/serve-dist.mjs",
     url: baseURL,
     reuseExistingServer: !process.env.CI,
-    timeout: 60_000,
+    timeout: 30_000,
   },
   projects: [
     {

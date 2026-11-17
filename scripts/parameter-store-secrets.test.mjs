@@ -13,7 +13,12 @@ import test from "node:test";
 
 const library = resolve("scripts/parameter-store-secrets.sh");
 
-function run(t, names, overrides = {}) {
+function run(
+  t,
+  names,
+  overrides = {},
+  loader = "load_parameter_store_secrets",
+) {
   const dir = mkdtempSync(join(resolve(tmpdir()), "parameter-store-"));
   t.after(() => rmSync(dir, { recursive: true, force: true }));
   const bin = join(dir, "bin");
@@ -27,7 +32,7 @@ while [[ $# -gt 0 ]]; do
   if [[ "$1" == "--name" ]]; then name="$2"; fi
   shift
 done
-if [[ "$name" == "$FAIL_NAME" ]]; then echo "ParameterNotFound" >&2; exit 254; fi
+if [[ "$name" == "$FAIL_NAME" ]]; then echo "\${FAIL_MESSAGE:-ParameterNotFound}" >&2; exit 254; fi
 if [[ "$name" == "$EMPTY_NAME" ]]; then exit 0; fi
 printf 'stored:%s' "$name"
 `,
@@ -40,7 +45,7 @@ printf 'stored:%s' "$name"
     "bash",
     [
       "-c",
-      `set -euo pipefail; source "${library}"; load_parameter_store_secrets ${list}; for n in ${list}; do printf '%s=%s\\n' "$n" "\${!n}"; done`,
+      `set -euo pipefail; source "${library}"; ${loader} ${list}; for n in ${list}; do printf '%s=%s\\n' "$n" "\${!n}"; done`,
     ],
     {
       encoding: "utf8",
@@ -103,4 +108,89 @@ test("an empty parameter stops the caller", (t) => {
   });
   assert.equal(result.status, 1);
   assert.match(result.stderr, /is empty/);
+});
+
+const loadConfig = "load_parameter_store_config";
+const configPath = (scope) =>
+  `/policeconduct/config/${scope}/GOOGLE_CLOUD_PROJECT`;
+
+test("shared settings come from default and replace a local value", (t) => {
+  const { result, calls } = run(
+    t,
+    ["GOOGLE_CLOUD_PROJECT"],
+    { GOOGLE_CLOUD_PROJECT: "stale-local-project" },
+    loadConfig,
+  );
+  assert.equal(result.status, 0, result.stderr);
+  assert.equal(
+    result.stdout,
+    `GOOGLE_CLOUD_PROJECT=stored:${configPath("default")}\n`,
+  );
+  assert.match(calls, /^ssm get-parameter /);
+  assert.doesNotMatch(calls, /--with-decryption/);
+});
+
+test("a value stored for the environment wins over default", (t) => {
+  const { result } = run(
+    t,
+    ["GOOGLE_CLOUD_PROJECT"],
+    { PARAMETER_STORE_ENVIRONMENT: "preview" },
+    loadConfig,
+  );
+  assert.equal(result.status, 0, result.stderr);
+  assert.equal(
+    result.stdout,
+    `GOOGLE_CLOUD_PROJECT=stored:${configPath("preview")}\n`,
+  );
+});
+
+test("an environment with no override falls back to default", (t) => {
+  const { result } = run(
+    t,
+    ["GOOGLE_CLOUD_PROJECT"],
+    {
+      PARAMETER_STORE_ENVIRONMENT: "preview",
+      FAIL_NAME: configPath("preview"),
+    },
+    loadConfig,
+  );
+  assert.equal(result.status, 0, result.stderr);
+  assert.equal(
+    result.stdout,
+    `GOOGLE_CLOUD_PROJECT=stored:${configPath("default")}\n`,
+  );
+});
+
+test("a failure other than a missing override does not fall back", (t) => {
+  const { result } = run(
+    t,
+    ["GOOGLE_CLOUD_PROJECT"],
+    {
+      PARAMETER_STORE_ENVIRONMENT: "preview",
+      FAIL_NAME: configPath("preview"),
+      FAIL_MESSAGE: "AccessDeniedException",
+    },
+    loadConfig,
+  );
+  assert.equal(result.status, 1);
+  assert.match(
+    result.stderr,
+    /could not read \/policeconduct\/config\/preview\//,
+  );
+  assert.equal(result.stdout, "");
+});
+
+test("a shared setting missing from default stops the caller and is named", (t) => {
+  const { result } = run(
+    t,
+    ["GOOGLE_CLOUD_PROJECT"],
+    { FAIL_NAME: configPath("default") },
+    loadConfig,
+  );
+  assert.equal(result.status, 1);
+  assert.match(
+    result.stderr,
+    /could not read \/policeconduct\/config\/default\//,
+  );
+  assert.equal(result.stdout, "");
 });

@@ -26,9 +26,8 @@ for (const path of templatePages) {
           .map(
             (nav) =>
               nav.getAttribute("aria-label") ||
-              document.getElementById(
-                nav.getAttribute("aria-labelledby") || "",
-              )?.textContent ||
+              document.getElementById(nav.getAttribute("aria-labelledby") || "")
+                ?.textContent ||
               "",
           ),
       );
@@ -111,5 +110,7 @@ test("search field is labelled and results are announced", async ({ page }) => {
     ).trim();
   });
   expect(name.length).toBeGreaterThan(0);
-  await expect(page.locator("[aria-live], [role=status]").first()).toBeAttached();
+  await expect(
+    page.locator("[aria-live], [role=status]").first(),
+  ).toBeAttached();
 });

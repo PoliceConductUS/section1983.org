@@ -66,6 +66,12 @@ for (const path of KEY_PAGES) {
       await page.keyboard.press("Tab");
       const clip = await focusClip(page);
       if (!clip) break;
+      // An embedded frame draws its own focus inside third-party content.
+      if (
+        await page.evaluate(() => document.activeElement?.tagName === "IFRAME")
+      ) {
+        continue;
+      }
 
       const label = await page.evaluate(() => {
         const el = document.activeElement as HTMLElement;

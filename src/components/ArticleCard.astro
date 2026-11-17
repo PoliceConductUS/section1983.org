@@ -19,7 +19,7 @@ const Heading = headingLevel;
   href={`/articles/${article.id.replace(/\.md$/, "")}`}
   class="interactive-card focus-ring block group rounded-lg"
 >
-  <article class="p-6 bg-white rounded-lg shadow-sm">
+  <div class="p-6 bg-white rounded-lg shadow-sm">
     <Heading class="text-xl font-semibold text-navy group-hover:text-gold-strong transition-colors mb-2">
       {article.data.title}
     </Heading>
@@ -33,5 +33,5 @@ const Heading = headingLevel;
         ))}
       </div>
     )}
-  </article>
+  </div>
 </a>

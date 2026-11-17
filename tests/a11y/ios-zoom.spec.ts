@@ -63,7 +63,12 @@ for (const path of templatePages) {
 test.describe("landscape", () => {
   test.use({ viewport: { width: 664, height: 390 } });
 
-  for (const path of ["/", "/cases/", "/statute-of-limitations/", "/process/"]) {
+  for (const path of [
+    "/",
+    "/cases/",
+    "/statute-of-limitations/",
+    "/process/",
+  ]) {
     test(`no sideways scrolling: ${path}`, async ({ page }) => {
       await page.goto(path);
       expect(await horizontalOverflow(page)).toBe(0);

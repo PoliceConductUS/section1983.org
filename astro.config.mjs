@@ -144,6 +144,33 @@ const makeTablesFocusable = {
   },
 };
 
+// Markdown task lists render a bare checkbox. Name each one after its list
+// item so a screen reader announces what the box is for.
+const labelTaskListCheckboxes = {
+  name: "label-task-list-checkboxes",
+  element: {
+    filter: ["li"],
+    visit(node, ctx) {
+      const classes = node.properties?.className;
+      if (!Array.isArray(classes) || !classes.includes("task-list-item")) {
+        return;
+      }
+      const findCheckbox = (parent) => {
+        for (const child of parent.children ?? []) {
+          if (child.type !== "element") continue;
+          if (child.tagName === "input") return child;
+          const nested = child.tagName === "p" ? findCheckbox(child) : null;
+          if (nested) return nested;
+        }
+        return null;
+      };
+      const checkbox = findCheckbox(node);
+      const label = ctx.textContent(node).replace(/\s+/g, " ").trim();
+      if (checkbox && label) ctx.setProperty(checkbox, "ariaLabel", label);
+    },
+  },
+};
+
 // https://astro.build/config
 export default defineConfig({
   site: process.env.SITE_URL || "https://www.section1983.org",
@@ -161,7 +188,11 @@ export default defineConfig({
   ],
   markdown: {
     processor: satteri({
-      hastPlugins: [markLongTableCells, makeTablesFocusable],
+      hastPlugins: [
+        markLongTableCells,
+        makeTablesFocusable,
+        labelTaskListCheckboxes,
+      ],
     }),
   },
   vite: {
