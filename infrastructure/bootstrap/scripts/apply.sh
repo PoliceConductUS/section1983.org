@@ -26,6 +26,12 @@ load_parameter_store_secrets SENTRY_AUTH_TOKEN GITHUB_TOKEN
 export TF_VAR_sentry_auth_token="${SENTRY_AUTH_TOKEN}"
 
 # Plan once, refuse destroys nobody approved, then apply exactly that plan.
+# With -plan-only it stops after the plan and the destroy check.
 bash "${REPO_ROOT}/scripts/terraform-reviewed-apply.sh" "${ROOT_DIR}" "$@"
 
+for arg in "$@"; do
+  if [[ "${arg}" == "-plan-only" || "${arg}" == "--plan-only" ]]; then
+    exit 0
+  fi
+done
 echo "Bootstrap apply complete."

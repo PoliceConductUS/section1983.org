@@ -17,38 +17,42 @@ It creates:
 ## Usage
 
 ```bash
-bash infrastructure/bootstrap/scripts/apply.sh
+npm run infra:plan   # show what would change
+npm run infra:apply  # apply it
 ```
 
-Do not run `terraform apply` directly.
+Do not run `terraform apply` directly. `infrastructure/README.md` lists every
+`npm run infra:*` command and what it does.
 
 ## Where values come from
 
 - **State** is in the S3 bucket `section1983-tfstate-942370948729` (`backend.tf`), so every checkout and worktree reads the same state.
 - **Inputs** are tracked in `section1983.auto.tfvars`, which Terraform loads on every plan and apply. Secrets never go in that file.
 - **Secrets** live only in AWS Systems Manager Parameter Store, as SecureString parameters named `/policeconduct/secrets/<NAME>`. This stack uses `SENTRY_AUTH_TOKEN` and `GITHUB_TOKEN`, which it shares with policeconduct.org. The stored value replaces any local copy.
-- **Deployed resource names** are Terraform outputs: `terraform -chdir=infrastructure/bootstrap output`. Nothing copies them into a file.
+- **Deployed resource names** are Terraform outputs: `npm run infra:output`. Nothing copies them into a file.
 - **Machine settings** go in the git-ignored `.env`: `AWS_PROFILE`, and the public `PUBLIC_SENTRY_DSN` and `PUBLIC_SENTRY_ENVIRONMENT` for local builds.
 
-Before it changes anything, `scripts/apply.sh`:
+Before it changes anything, `npm run infra:apply`:
 
 - refuses a checkout that cannot read the existing state, and an AWS account that does not match it;
 - writes one plan, and refuses it when it destroys or replaces a resource whose address is not listed, one per line, in `TERRAFORM_APPROVED_DESTROYS`;
 - asks for `yes`, then applies exactly that plan. When live infrastructure already matches, it applies nothing.
+
+`npm run infra:plan` does the same checks and shows the same plan, then stops.
 
 ## Which AWS Account Is Used?
 
 Terraform uses the active AWS credentials in your shell.
 
 ```bash
-aws sts get-caller-identity
+npm run infra:account
 ```
 
 Use a specific profile:
 
 ```bash
 export AWS_PROFILE=<profile-name>
-aws sts get-caller-identity
+npm run infra:account
 ```
 
 ## First Domain Delegation
@@ -56,11 +60,11 @@ aws sts get-caller-identity
 After first apply, update your registrar nameservers:
 
 ```bash
-terraform -chdir=infrastructure/bootstrap output route53_name_servers
+npm run infra:output -- route53_name_servers
 dig +short NS <your-domain>
 ```
 
-Then re-run `terraform apply` until ACM status is issued.
+Then re-run `npm run infra:apply` until ACM status is issued.
 
 CloudFront bootstrap is idempotent for names:
 

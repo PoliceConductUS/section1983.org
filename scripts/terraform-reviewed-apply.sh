@@ -2,16 +2,21 @@
 set -euo pipefail
 
 # Plan once, refuse destroys nobody approved, then apply exactly that plan.
-# Usage: terraform-reviewed-apply.sh STACK_DIR [terraform plan arguments...]
-STACK_DIR="${1:?Usage: terraform-reviewed-apply.sh STACK_DIR [terraform plan arguments...]}"
+# Usage: terraform-reviewed-apply.sh STACK_DIR [-plan-only] [-auto-approve] [terraform plan arguments...]
+#   -plan-only     show the plan and run the destroy check, then stop without applying
+#   -auto-approve  apply without asking for 'yes'
+STACK_DIR="${1:?Usage: terraform-reviewed-apply.sh STACK_DIR [-plan-only] [-auto-approve] [terraform plan arguments...]}"
 shift
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 plan_args=()
 auto_approve=0
+plan_only=0
 for arg in "$@"; do
   if [[ "${arg}" == "-auto-approve" || "${arg}" == "--auto-approve" ]]; then
     auto_approve=1
+  elif [[ "${arg}" == "-plan-only" || "${arg}" == "--plan-only" ]]; then
+    plan_only=1
   else
     plan_args+=("${arg}")
   fi
@@ -39,6 +44,11 @@ esac
 
 terraform -chdir="${STACK_DIR}" show -json "${PLAN_DIR}/tfplan" \
   | bash "${SCRIPT_DIR}/require-approved-terraform-destroys.sh"
+
+if [[ ${plan_only} -eq 1 ]]; then
+  echo "Plan only. Nothing was changed."
+  exit 0
+fi
 
 if [[ ${auto_approve} -eq 0 ]]; then
   read -r -p "Apply exactly this plan? Only 'yes' will be accepted: " answer || answer=""
