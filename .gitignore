@@ -28,6 +28,7 @@ pnpm-debug.log*
 *.tfstate
 *.tfstate.*
 *.tfvars
+!infrastructure/bootstrap/*.auto.tfvars
 *.tfvars.json
 crash.log
 crash.*.log
@@ -36,3 +37,8 @@ override.tf.json
 *_override.tf
 *_override.tf.json
 **/terraform.tfstate
+# git worktrees
+.worktrees/
+# playwright
+test-results/
+playwright-report/

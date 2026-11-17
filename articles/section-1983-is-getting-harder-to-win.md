@@ -22,7 +22,12 @@ Read this after [Who You Cannot Sue Under § 1983](/articles/who-you-cannot-sue-
 ## Start with the timeline
 
 <figure class="my-8">
-  <div class="chart-scroll-frame rounded-lg border border-slate-300 bg-white">
+  <div
+    class="chart-scroll-frame rounded-lg border border-slate-300 bg-white"
+    role="region"
+    aria-label="Chart of barriers to winning a Section 1983 case, by year. Scrolls sideways."
+    tabindex="0"
+  >
     <img
       src="/diagrams/section-1983-harder-to-win.svg"
       alt="Chart showing barriers to win on the vertical axis and year on the horizontal axis, with case points marking how Section 1983 became harder to win over time."

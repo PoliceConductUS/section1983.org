@@ -11,14 +11,45 @@ permissions:
   id-token: write
   contents: read
 
-concurrency:
-  group: deploy-production
-  cancel-in-progress: true
-
 jobs:
-  deploy:
+  # Makes live infrastructure match the code on main before the site is
+  # published. It runs the command a developer runs locally. When the apply
+  # fails, or the plan destroys a resource nobody approved, this job fails and
+  # the deploy below is skipped.
+  infra:
     runs-on: ubuntu-latest
     environment: production
+    # An apply is never cancelled part-way: a newer push waits for this one.
+    concurrency:
+      group: infra-production
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "26.13.1"
+
+      - uses: hashicorp/setup-terraform@v4
+        with:
+          terraform_version: "1.17.2"
+          terraform_wrapper: false
+
+      - uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ vars.AWS_INFRA_ROLE_ARN }}
+          aws-region: us-east-1
+
+      - name: Apply infrastructure
+        run: npm run infra:apply -- -auto-approve
+
+  deploy:
+    needs: infra
+    runs-on: ubuntu-latest
+    environment: production
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: true
     steps:
       - uses: actions/checkout@v7
         with:

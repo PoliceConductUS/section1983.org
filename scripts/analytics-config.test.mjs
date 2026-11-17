@@ -628,3 +628,23 @@ test("CLI pull saves only complete validated reads and preserves local file on f
     await rm(directory, { recursive: true, force: true });
   }
 });
+
+test("the quota project is sent on every request only when one is set", async () => {
+  for (const [quotaProject, expected] of [
+    ["ipc-policeconduct", "ipc-policeconduct"],
+    [undefined, undefined],
+  ]) {
+    const seen = new Set();
+    const mock = provider();
+    await reconcileAnalytics({
+      config: configuration(),
+      token,
+      quotaProject,
+      fetchImpl: (url, options) => {
+        seen.add(options.headers["x-goog-user-project"]);
+        return mock.fetchImpl(url, options);
+      },
+    });
+    assert.deepEqual([...seen], [expected]);
+  }
+});

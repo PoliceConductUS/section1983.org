@@ -75,7 +75,6 @@ Recommended next steps:
 2) Verify identity:
    aws sts get-caller-identity
 
-3) Run bootstrap Terraform:
-   terraform -chdir=infrastructure/bootstrap init
-   terraform -chdir=infrastructure/bootstrap apply
+3) Apply the stack:
+   npm run infra:apply
 EOF
