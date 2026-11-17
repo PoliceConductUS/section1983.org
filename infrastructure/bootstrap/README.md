@@ -5,7 +5,7 @@ This is the single Terraform entrypoint for infrastructure.
 It creates:
 
 - GitHub OIDC provider
-- IAM roles for GitHub Actions: one publishes the site, one applies this stack
+- IAM roles for GitHub Actions: one publishes the live site, one publishes previews, one applies this stack
 - GitHub environments (`production`, `preview`) and environment variables used by workflows
 - S3 bucket for Terraform state
 - S3 bucket for PR preview content

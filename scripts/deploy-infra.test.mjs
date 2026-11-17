@@ -68,8 +68,10 @@ test("no AWS role trusts every branch and workflow of the repository", () => {
       /variable = "token\.actions\.githubusercontent\.com:sub"\n\s+values\s+= (.+)\n/g,
     ),
   ].map((match) => match[1]);
+  // The publish roles each trust their own environment; the infra role
+  // trusts production.
   assert.deepEqual(subjects, [
-    "values(local.github_environment_subjects)",
+    "[local.github_environment_subjects[each.key]]",
     '[local.github_environment_subjects["production"]]',
   ]);
   assert.match(
@@ -83,5 +85,26 @@ test("the production environment accepts only the main branch", () => {
   assert.match(
     mainTf,
     /resource "github_repository_environment_deployment_policy" "production_main" \{[^}]*branch_pattern = "main"/,
+  );
+});
+
+test("a pull request preview cannot publish to the live site", () => {
+  // The preview environment gets its own role...
+  assert.match(
+    mainTf,
+    /preview = merge\(\s*\{\s*AWS_ROLE_ARN\s+= aws_iam_role\.github_actions_preview\.arn/,
+  );
+  // ...which holds only the preview bucket and distribution.
+  assert.match(
+    mainTf,
+    /preview = \{\s*bucket_arn\s+= aws_s3_bucket\.preview\.arn\s*distribution_arn\s+= aws_cloudfront_distribution\.preview\.arn\s*\}/,
+  );
+  assert.match(
+    mainTf,
+    /resource "aws_iam_role_policy" "github_actions_preview_permissions" \{(?:(?!\n\}\n)[\s\S])*publish_permissions\["preview"\]/,
+  );
+  assert.match(
+    mainTf,
+    /resource "aws_iam_role" "github_actions_preview" \{(?:(?!\n\}\n)[\s\S])*publish_assume_role\["preview"\]/,
   );
 });
