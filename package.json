@@ -38,6 +38,7 @@
     "@typescript-eslint/parser": "^8.57.1",
     "eslint": "^10.1.0",
     "eslint-plugin-astro": "^3.2.1",
+    "playwright-core": "^1.65.1",
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^1.1.2"
   },
@@ -51,6 +52,9 @@
   "overrides": {
     "@typescript-eslint/typescript-estree": {
       "minimatch": "11.0.8"
+    },
+    "@zenuml/core": {
+      "playwright-core": "$playwright-core"
     }
   }
 }
