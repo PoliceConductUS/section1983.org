@@ -32,7 +32,7 @@ Note: `npm run build` expects Mermaid CLI (`mmdc`) for diagram generation.
 npm run validate
 ```
 
-Runs the format check, lint, the type check (`npm run typecheck`), and the unit tests. The `Validate` workflow runs it on every pull request.
+Runs the format check, lint, the type check, and the unit tests. The type check (`npm run typecheck`) covers the `.astro` files with `astro check` and the remaining TypeScript and JavaScript with `tsc`. The `Validate` workflow runs it on every pull request.
 
 ## Infrastructure
 

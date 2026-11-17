@@ -621,7 +621,7 @@ const structuredData = {
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const buttons = document.querySelectorAll(".tag-btn");
+      const buttons = document.querySelectorAll<HTMLElement>(".tag-btn");
       const cards = document.querySelectorAll(".case-card");
       const activeTags = new Set<string>();
       const countEl = document.getElementById("active-count");
@@ -696,11 +696,11 @@ const structuredData = {
               ? b.dataset.activeClass || ""
               : b.dataset.defaultClass || "";
             b.setAttribute("aria-pressed", isActive ? "true" : "false");
-          } else if (activeTags.has(tag)) {
+          } else if (tag && activeTags.has(tag)) {
             b.className = b.dataset.activeClass || "";
             b.setAttribute("aria-pressed", "true");
           } else {
-            b.className = (b as HTMLElement).dataset.defaultClass || "";
+            b.className = b.dataset.defaultClass || "";
             b.setAttribute("aria-pressed", "false");
           }
         });
