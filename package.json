@@ -13,6 +13,8 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "typecheck": "astro sync && tsc --noEmit",
+    "validate": "npm run format:check && npm run lint && npm run typecheck && npm run test:infra && npm run test:analytics-config && npm run test:consent",
     "analytics:pull": "bash scripts/analytics.sh pull",
     "analytics:push": "bash scripts/analytics.sh push",
     "analytics:compare": "bash scripts/analytics.sh compare",
@@ -40,7 +42,8 @@
     "eslint-plugin-astro": "^3.2.1",
     "playwright-core": "^1.65.1",
     "prettier": "^3.8.1",
-    "prettier-plugin-astro": "^1.1.2"
+    "prettier-plugin-astro": "^1.1.2",
+    "typescript": "^6.0.3"
   },
   "engines": {
     "node": "26.13.1"

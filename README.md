@@ -26,6 +26,14 @@ npm run build
 
 Note: `npm run build` expects Mermaid CLI (`mmdc`) for diagram generation.
 
+## Validate
+
+```sh
+npm run validate
+```
+
+Runs the format check, lint, the type check (`npm run typecheck`), and the unit tests. The `Validate` workflow runs it on every pull request.
+
 ## Infrastructure
 
 Single Terraform entrypoint:
