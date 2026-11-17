@@ -14,14 +14,14 @@ First-time setup: `npx playwright install chromium webkit`.
 
 The `Accessibility` workflow runs the full version on every pull request.
 
-| File                    | Covers                                                                                                                                     |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `axe.spec.ts`           | axe rules for WCAG 2.2 A and AA, including text contrast, plus landmark and heading rules. Contrast that axe cannot measure fails the test |
-| `contrast.spec.ts`      | Text contrast while links and controls are under the pointer or have keyboard focus, and the process flowchart labels                      |
-| `screen-reader.spec.ts` | The accessibility tree a screen reader reads: landmarks, headings, names, skip link, menu state, search announcements                      |
-| `forced-colors.spec.ts` | Windows High Contrast: visible keyboard focus, visible icon buttons, visible control edges                                                 |
-| `zoom.spec.ts`          | 200% and 400% browser zoom without sideways scrolling, and 200% text size without clipped text                                             |
-| `ios-zoom.spec.ts`      | Mobile Safari engine at iPhone size: pinch zoom allowed, form fields at 16px or larger, no sideways scrolling                              |
+| File                    | Covers                                                                                                                                                                          |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `axe.spec.ts`           | axe rules for WCAG 2.2 A and AA, including text contrast, plus landmark and heading rules, at desktop width and at phone width. Contrast that axe cannot measure fails the test |
+| `contrast.spec.ts`      | Text contrast while links and controls are under the pointer or have keyboard focus, the process flowchart labels, and table text over the phone scroll shadow                  |
+| `screen-reader.spec.ts` | The accessibility tree a screen reader reads: landmarks, headings, names, skip link, menu state, search announcements                                                           |
+| `forced-colors.spec.ts` | Windows High Contrast: visible keyboard focus, visible icon buttons, visible control edges                                                                                      |
+| `zoom.spec.ts`          | 200% and 400% browser zoom without sideways scrolling, and 200% text size without clipped text                                                                                  |
+| `ios-zoom.spec.ts`      | Mobile Safari engine at iPhone size: pinch zoom allowed, form fields at 16px or larger, no sideways scrolling                                                                   |
 
 Add a page to `templatePages` in `tests/a11y/pages.ts` when a new template is
 added to `src/pages`.

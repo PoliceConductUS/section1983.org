@@ -39,20 +39,35 @@ async function clippedByScrollBox(page: Page, node: AxeNode) {
   }, String(node.target[0]));
 }
 
+// True for text in an article table. On a phone these tables scroll sideways
+// and draw a shadow at each edge with background gradients, which axe cannot
+// measure. contrast.spec.ts compares the text with the darkest shadow colour.
+async function inScrollShadowTable(page: Page, node: AxeNode) {
+  if (node.target.length !== 1) return false;
+  return page.evaluate(
+    (selector) => !!document.querySelector(selector)?.closest(".prose table"),
+    String(node.target[0]),
+  );
+}
+
 // A contrast result that axe left unmeasured and that still needs a person
-// to decide it. Three kinds are settled here instead:
+// to decide it. Four kinds are settled here instead:
 // - Process flowchart labels. They sit in SVG foreignObject elements over
 //   SVG shapes, which axe cannot read. contrast.spec.ts measures each label
 //   against its shape directly.
 // - Content made only of symbols, such as an arrow or a box-drawing line.
 //   axe found the colours but cannot tell whether the symbol is text.
 // - Text clipped by its own scrolling box.
+// - Text over the scroll shadow of an article table.
 async function needsDecision(page: Page, node: AxeNode) {
   if (/foreignobject/i.test(node.target.join(" "))) return false;
   const key = reasonKey(node);
   if (key === "nonBmp") return false;
   if (key === "elmPartiallyObscured") {
     return !(await clippedByScrollBox(page, node));
+  }
+  if (key === "bgGradient") {
+    return !(await inScrollShadowTable(page, node));
   }
   return true;
 }

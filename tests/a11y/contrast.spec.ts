@@ -111,6 +111,86 @@ test("process flowchart labels contrast with their shapes", async ({
   expect(labels.filter((label) => label.ratio < 4.5)).toEqual([]);
 });
 
+// On a phone, wide article tables scroll sideways and draw a shadow at each
+// edge with background gradients. axe cannot measure text over a gradient, so
+// this compares each text colour in the table with every colour the gradient
+// can put behind it, including the darkest part of the shadow.
+test("table scroll shadows keep text readable", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/about/section-1983/");
+  const cells = await page.evaluate(() => {
+    const canvas = document.createElement("canvas");
+    canvas.width = canvas.height = 1;
+    const ctx = canvas.getContext("2d", { willReadFrequently: true })!;
+    // Lets the browser turn any CSS colour into red, green, blue and alpha.
+    const rgba = (color: string) => {
+      ctx.clearRect(0, 0, 1, 1);
+      ctx.fillStyle = color;
+      ctx.fillRect(0, 0, 1, 1);
+      const [r, g, b, a] = ctx.getImageData(0, 0, 1, 1).data;
+      return { rgb: [r, g, b], alpha: a / 255 };
+    };
+    const luminance = (rgb: number[]) => {
+      const [r, g, b] = rgb.map((v) => {
+        const c = v / 255;
+        return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+      });
+      return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    };
+    const contrast = (a: number[], b: number[]) => {
+      const [light, dark] = [luminance(a), luminance(b)].sort((x, y) => y - x);
+      return (light + 0.05) / (dark + 0.05);
+    };
+    // The nearest fully opaque background colour from `from` up to `stop`.
+    const opaqueBackground = (from: Element, stop: Element | null) => {
+      for (
+        let el: Element | null = from;
+        el && el !== stop;
+        el = el.parentElement
+      ) {
+        const color = rgba(getComputedStyle(el).backgroundColor);
+        if (color.alpha === 1) return color.rgb;
+      }
+      return null;
+    };
+
+    return [...document.querySelectorAll(".prose table")].flatMap((table) => {
+      const behind = opaqueBackground(table, null) ?? [255, 255, 255];
+      const stops =
+        getComputedStyle(table).backgroundImage.match(/[a-z]+\([^()]*\)/g) ??
+        [];
+      const shadows = stops.map((stop) => {
+        const color = rgba(stop);
+        return color.rgb.map(
+          (v, i) => v * color.alpha + behind[i] * (1 - color.alpha),
+        );
+      });
+      return [...table.querySelectorAll("th, td, th *, td *")]
+        .filter((el) =>
+          [...el.childNodes].some(
+            (n) => n.nodeType === Node.TEXT_NODE && n.textContent?.trim(),
+          ),
+        )
+        .map((el) => {
+          // A cell with its own solid background hides the shadow.
+          const own = opaqueBackground(el, table);
+          const backgrounds = own ? [own] : [behind, ...shadows];
+          const color = rgba(getComputedStyle(el).color).rgb;
+          return {
+            text: (el.textContent ?? "").trim().slice(0, 40),
+            shadowColors: shadows.length,
+            ratio: Math.min(...backgrounds.map((bg) => contrast(color, bg))),
+          };
+        });
+    });
+  });
+
+  expect(cells.length).toBeGreaterThan(0);
+  // Confirms the shadow gradients were present to be measured.
+  expect(cells.every((cell) => cell.shadowColors > 0)).toBe(true);
+  expect(cells.filter((cell) => cell.ratio < 4.5)).toEqual([]);
+});
+
 for (const state of STATES) {
   for (const path of templatePages) {
     test(`contrast with ${state.name}: ${path}`, async ({ page }) => {
