@@ -316,7 +316,7 @@ const structuredData = {
   <!-- Browse by hub -->
   <section class="mb-10 not-prose" aria-labelledby="browse-heading">
     <h2 id="browse-heading" class="text-xl font-bold text-navy mb-3">
-      Browse by court, state, or topic
+      Browse by Court, State, or Topic
     </h2>
     <p class="text-sm text-slate-600 mb-4">
       Each page below collects the cases on one subject with a short guide to
@@ -336,7 +336,7 @@ const structuredData = {
               >
                 {h.label}
               </a>
-              <span class="text-slate-500"> ({h.count})</span>
+              <span class="text-slate-600"> ({h.count})</span>
             </li>
           ))}
         </ul>
@@ -354,7 +354,7 @@ const structuredData = {
               >
                 {h.label}
               </a>
-              <span class="text-slate-500"> ({h.count})</span>
+              <span class="text-slate-600"> ({h.count})</span>
             </li>
           ))}
         </ul>
@@ -372,7 +372,7 @@ const structuredData = {
               >
                 {h.label}
               </a>
-              <span class="text-slate-500"> ({h.count})</span>
+              <span class="text-slate-600"> ({h.count})</span>
             </li>
           ))}
         </ul>
@@ -570,7 +570,9 @@ const structuredData = {
     </div>
   </div>
 
-  <div id="active-filters" class="mb-4" role="status" aria-live="polite" hidden>
+  <p id="filter-status" class="sr-only" role="status"></p>
+
+  <div id="active-filters" class="mb-4" hidden>
     <div class="bg-white border border-slate-200 rounded-lg p-3 flex flex-wrap items-center gap-2">
       <span class="text-sm font-semibold text-navy">Active filters:</span>
       <div id="active-tags-list" class="flex flex-wrap gap-2"></div>
@@ -605,7 +607,7 @@ const structuredData = {
                 <p class="font-semibold text-navy group-hover:text-gold-strong transition-colors italic">
                   {c.data.title}
                 </p>
-                <p class="text-sm text-slate-500 font-mono">
+                <p class="text-sm text-slate-600 font-mono">
                   {c.data.citation} — {c.data.court}
                 </p>
                 <p class="text-sm text-slate-700 mt-1">{c.data.holding}</p>
@@ -623,6 +625,7 @@ const structuredData = {
       const cards = document.querySelectorAll(".case-card");
       const activeTags = new Set<string>();
       const countEl = document.getElementById("active-count");
+      const statusEl = document.getElementById("filter-status");
       const filtersEl = document.getElementById("active-filters");
       const tagsListEl = document.getElementById("active-tags-list");
       const clearBtn = document.getElementById("clear-filters");
@@ -724,14 +727,14 @@ const structuredData = {
           (group as HTMLElement).style.display = visible.length ? "" : "none";
         });
 
-        // Update count
-        if (countEl) {
-          if (activeTags.size === 0) {
-            countEl.textContent = "";
-          } else {
-            countEl.textContent = `Showing ${visibleCount} case${visibleCount !== 1 ? "s" : ""}`;
-          }
-        }
+        // Update count. The visible count sits in the filter bar; the
+        // always-rendered status line announces the same text.
+        const countText =
+          activeTags.size === 0
+            ? ""
+            : `Showing ${visibleCount} case${visibleCount !== 1 ? "s" : ""}`;
+        if (countEl) countEl.textContent = countText;
+        if (statusEl) statusEl.textContent = countText;
       }
 
       buttons.forEach((b) => {

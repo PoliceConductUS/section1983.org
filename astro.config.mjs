@@ -132,6 +132,18 @@ const markLongTableCells = {
   },
 };
 
+// Markdown tables scroll sideways on small screens and at high zoom. A scroll
+// area must take keyboard focus so it can be scrolled with the arrow keys.
+const makeTablesFocusable = {
+  name: "make-tables-focusable",
+  element: {
+    filter: ["table"],
+    visit(node, ctx) {
+      ctx.setProperty(node, "tabIndex", 0);
+    },
+  },
+};
+
 // https://astro.build/config
 export default defineConfig({
   site: process.env.SITE_URL || "https://www.section1983.org",
@@ -148,7 +160,9 @@ export default defineConfig({
     sentry(),
   ],
   markdown: {
-    processor: satteri({ hastPlugins: [markLongTableCells] }),
+    processor: satteri({
+      hastPlugins: [markLongTableCells, makeTablesFocusable],
+    }),
   },
   vite: {
     plugins: [tailwindcss()],

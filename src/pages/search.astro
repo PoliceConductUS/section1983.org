@@ -33,31 +33,30 @@ const structuredData = {
       Search the site
     </label>
     <p id="search-help" class="text-sm text-slate mb-3">
-      Search cases, articles, terms and concepts, and process guides.
+      Search cases, articles, terms and concepts, and process guides. Try
+      “tased” or “beaten”.
     </p>
     <input
       id="search-input"
       type="search"
-      placeholder="Search cases, articles, terms and concepts, process steps... (try 'tased' or 'beaten')"
+      placeholder="tased"
       autocomplete="off"
       aria-describedby="search-help"
-      class="w-full min-h-12 px-4 py-3 border-2 border-slate-300 rounded-lg text-navy focus:border-gold-strong focus-ring text-lg"
+      class="w-full min-h-12 px-4 py-3 border-2 border-slate-500 rounded-lg text-navy focus:border-gold-strong focus-ring text-lg"
     />
   </div>
 
-  <div
-    id="search-results"
-    class="space-y-4"
-    role="status"
-    aria-live="polite"
-    aria-label="Search results"
-  >
-    <p class="text-slate">Type to search across all content.</p>
-  </div>
+  <p id="search-status" class="text-slate mb-4 min-h-6" role="status">
+    Type to search across all content.
+  </p>
+
+  <div id="search-results" class="space-y-4"></div>
 
   <script is:inline>
     const input = document.getElementById("search-input");
     const results = document.getElementById("search-results");
+    const status = document.getElementById("search-status");
+    const maxResults = 20;
     let index = null;
 
     const typeLabels = {
@@ -76,8 +75,11 @@ const structuredData = {
       case: "bg-[color:color-mix(in_srgb,var(--color-cream)_70%,white)] text-navy",
     };
 
-    function setMessage(message, className = "text-slate") {
-      results.innerHTML = `<p class="${className}">${message}</p>`;
+    // The status line carries every message and the result count. It is the
+    // only live region, so screen readers hear one short line per search.
+    function setMessage(message) {
+      status.textContent = message;
+      results.innerHTML = "";
     }
 
     async function loadIndex() {
@@ -94,29 +96,34 @@ const structuredData = {
       if (!index) return [];
       const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
       if (!terms.length) return [];
-      return index
-        .filter((item) => {
-          const haystack = (
-            item.title +
-            " " +
-            item.description +
-            " " +
-            (item.tags || []).join(" ")
-          ).toLowerCase();
-          return terms.every((t) => haystack.includes(t));
-        })
-        .slice(0, 20);
+      return index.filter((item) => {
+        const haystack = (
+          item.title +
+          " " +
+          item.description +
+          " " +
+          (item.tags || []).join(" ")
+        ).toLowerCase();
+        return terms.every((t) => haystack.includes(t));
+      });
     }
 
-    function render(items, query) {
+    function render(matches, query) {
       if (!query.trim()) {
         setMessage("Type to search across all content.");
         return;
       }
-      if (!items.length) {
-        setMessage("No results found. Try different terms.");
+      if (!matches.length) {
+        setMessage(`No results for “${query.trim()}”. Try different terms.`);
         return;
       }
+      const items = matches.slice(0, maxResults);
+      status.textContent =
+        matches.length > maxResults
+          ? `Showing ${maxResults} of ${matches.length} results. Add a word to narrow the list.`
+          : matches.length === 1
+            ? "1 result"
+            : `${matches.length} results`;
       results.innerHTML = items
         .map(
           (item) => `
