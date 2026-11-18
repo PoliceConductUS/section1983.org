@@ -7,7 +7,7 @@ docketNumber: "3:19-CV-02063"
 holding: "A plaintiff's § 1983 claims against the City of Dallas were dismissed where she failed to identify a specific municipal policy or custom that was the moving force behind the alleged constitutional violations."
 tags: []
 cites:
-  - "monell-v-department-of-social-services"
+  - "monell-v-dep-t-of-soc-servs"
   - "ashcroft-v-iqbal"
 citedBy: []
 ---
@@ -18,7 +18,7 @@ A plaintiff sued the City of Dallas and individual officers under [§ 1983](/ter
 
 ## The Facts
 
-The plaintiff alleged that Dallas police officers violated her constitutional rights during an encounter. She sued both the individual officers and the City of Dallas, seeking to hold the city liable under [_Monell v. Department of Social Services_](/cases/monell-v-department-of-social-services). Her complaint alleged generally that the city failed to adequately train and supervise its officers and that this failure constituted a policy or custom of tolerating constitutional violations.
+The plaintiff alleged that Dallas police officers violated her constitutional rights during an encounter. She sued both the individual officers and the City of Dallas, seeking to hold the city liable under [_Monell v. Department of Social Services_](/cases/monell-v-dep-t-of-soc-servs). Her complaint alleged generally that the city failed to adequately train and supervise its officers and that this failure constituted a policy or custom of tolerating constitutional violations.
 
 ## What the Court Decided
 
@@ -41,4 +41,4 @@ _MacCloskey_ is a cautionary tale about pleading [Monell liability](/terms-and-c
 
 ## Key Takeaway
 
-To hold a city liable under [_Monell_](/cases/monell-v-department-of-social-services), your complaint must go beyond conclusory allegations of "failure to train" or "failure to supervise" — you must identify the specific policy or training deficiency, demonstrate [deliberate indifference](/terms-and-concepts/deliberate-indifference), and show how that deficiency was the [moving force](/terms-and-concepts/moving-force-causation) behind the constitutional violation you suffered.
+To hold a city liable under [_Monell_](/cases/monell-v-dep-t-of-soc-servs), your complaint must go beyond conclusory allegations of "failure to train" or "failure to supervise" — you must identify the specific policy or training deficiency, demonstrate [deliberate indifference](/terms-and-concepts/deliberate-indifference), and show how that deficiency was the [moving force](/terms-and-concepts/moving-force-causation) behind the constitutional violation you suffered.

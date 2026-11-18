@@ -633,6 +633,7 @@ const structuredData = {
       clearBtn?.addEventListener("click", () => {
         activeTags.clear();
         updateDisplay();
+        document.querySelector<HTMLElement>('[data-tag="all"]')?.focus();
       });
 
       // Load tags from URL on page load
@@ -669,21 +670,29 @@ const structuredData = {
             tagsListEl.innerHTML = "";
           } else {
             filtersEl.hidden = false;
-            tagsListEl.innerHTML = [...activeTags]
-              .map(
-                (tag) =>
-                  `<button type="button" class="tag-chip-pill focus-ring active-tag-pill cursor-pointer" data-remove-tag="${tag}" aria-label="Remove filter ${tag.replace(/-/g, " ")}" title="Remove filter">${tag.replace(/-/g, " ")} ✕</button>`,
-              )
-              .join("");
-            // Add remove handlers to pills
-            tagsListEl.querySelectorAll(".active-tag-pill").forEach((pill) => {
+            tagsListEl.replaceChildren();
+            activeTags.forEach((tag) => {
+              const label = tag.replace(/-/g, " ");
+              const pill = document.createElement("button");
+              pill.type = "button";
+              pill.className =
+                "tag-chip-pill focus-ring active-tag-pill cursor-pointer";
+              pill.dataset.removeTag = tag;
+              pill.setAttribute("aria-label", `Remove filter ${label}`);
+              pill.title = "Remove filter";
+              pill.textContent = `${label} ✕`;
               pill.addEventListener("click", () => {
-                const t = pill.getAttribute("data-remove-tag");
-                if (t) {
-                  activeTags.delete(t);
-                  updateDisplay();
-                }
+                const position = [...activeTags].indexOf(tag);
+                activeTags.delete(tag);
+                updateDisplay();
+                const remaining =
+                  tagsListEl.querySelectorAll<HTMLButtonElement>("button");
+                const nextFocus =
+                  remaining[Math.min(position, remaining.length - 1)] ??
+                  document.querySelector<HTMLElement>('[data-tag="all"]');
+                nextFocus?.focus();
               });
+              tagsListEl.append(pill);
             });
           }
         }

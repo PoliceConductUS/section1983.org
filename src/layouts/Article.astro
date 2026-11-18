@@ -39,6 +39,7 @@ const {
 
 const formattedDate = pubDate
   ? new Intl.DateTimeFormat("en-US", {
+      timeZone: "UTC",
       year: "numeric",
       month: "long",
       day: "numeric",

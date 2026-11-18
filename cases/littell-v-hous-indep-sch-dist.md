@@ -4,55 +4,46 @@ citation: "894 F.3d 616 (5th Cir. 2018)"
 court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2018-06-27
 docketNumber: "16-20717"
-holding: "A school district's complete failure to provide Fourth Amendment training to employees who conduct student searches plausibly states a failure-to-train claim under § 1983, even without a pattern of prior violations."
+holding: "The complaint plausibly alleged failure-to-train liability because the district allegedly provided no Fourth Amendment training despite an obvious need arising from recurring student searches."
 tags:
   - "louisiana"
   - "mississippi"
   - "texas"
   - "fourth-amendment"
-  - "police-shooting"
-  - "qi-defeated"
   - "school-case"
   - "searched-illegally"
   - "suing-the-city"
   - "survived-mtd"
 cites:
   - "city-of-canton-v-harris"
-  - "monell-v-department-of-social-services"
+  - "monell-v-dep-t-of-soc-servs"
   - "ashcroft-v-iqbal"
   - "leatherman-v-tarrant-cnty"
 citedBy: []
 ---
 
-## What This Case Is About
+## What Happened
 
-An assistant principal at a Houston middle school ordered a mass strip search of twenty-two sixth-grade girls after $50 went missing from choir class. Everyone agreed the search violated the students' constitutional rights. The question was whether the school district could be held liable under [§ 1983](/terms-and-concepts/section-1983) for its alleged failure to provide any [Fourth Amendment](/terms-and-concepts/fourth-amendment) training to employees who conduct student searches. The Fifth Circuit reversed dismissal and held the complaint plausibly stated a [failure-to-train](/terms-and-concepts/failure-to-train) claim.
+Parents alleged that an assistant principal ordered the strip search of twenty-two sixth-grade girls after $50 disappeared from a choir class. They sued Houston Independent School District, claiming it authorized student searches while providing no Fourth Amendment training to employees who conducted them.
 
-## The Facts
-
-During a sixth-grade choir class at Lanier Middle School in Houston, $50 went missing. Assistant Principal Verlinda Higgins was called to investigate. When no money turned up, a school police officer suggested "girls like to hide things in their bras and panties." Higgins took all twenty-two girls to the school nurse, who strip-searched them one by one — checking waistbands, loosening bras, and requiring the girls to lift their shirts from shoulder to waist. No parents were notified despite the girls' requests. No money was found.
-
-The Houston Independent School District's written search policies correctly stated abstract legal standards but provided no training whatsoever on how to apply those standards. The principal's disciplinary memo to Higgins criticized her only for searching for something other than "contraband" — never mentioning the constitutional defects of a mass, suspicionless strip search — and even anticipated she might conduct strip searches "in the future."
+The complaint described written search policies and a disciplinary response that, according to the parents, revealed a failure to teach the constitutional limits on searches. The Fifth Circuit reviewed dismissal of the district claim, accepting the properly pleaded allegations for that purpose. [Read the opinion, pages 1–5](https://www.ca5.uscourts.gov/opinions/pub/16/16-20717-CV0.pdf).
 
 ## What the Court Decided
 
-The Fifth Circuit reversed, holding that the complaint plausibly alleged [municipal liability](/terms-and-concepts/municipal-liability) under [_City of Canton v. Harris_](/cases/city-of-canton-v-harris)'s failure-to-train framework.
+The complaint plausibly alleged the narrow single-incident route to [failure-to-train](/terms-and-concepts/failure-to-train) liability. That route permits an inference of [deliberate indifference](/terms-and-concepts/deliberate-indifference) in exceptional circumstances even without a pattern of prior violations.
 
-The court explained that there are two ways to prove [deliberate indifference](/terms-and-concepts/deliberate-indifference) in a failure-to-train case: (1) a **pattern** of prior violations making the need for training obvious, or (2) a **single incident** where the risk of a constitutional violation was a "highly predictable consequence" of the failure to train. The second method applies only in narrow circumstances — typically where the municipality provides "no training whatsoever" regarding a clear constitutional duty that employees are certain to face.
+The court emphasized the alleged complete absence of training on a clear constitutional duty in a recurring situation. School employees could not be expected to arrive with the necessary legal knowledge. If proved, these circumstances could permit a factfinder to infer that the district consciously disregarded an obvious need for training. See opinion pages 11–15.
 
-Here, the court found this was exactly such a case. Like the Canton hypothetical — where a city arms officers with firearms but provides no training on the constitutional limits of deadly force — the school district authorized employees to search students but allegedly provided zero Fourth Amendment training. The constitutional duty not to conduct unreasonable searches was clearly established, student searches were a recurring situation, and school employees could not be expected to arrive pre-equipped with legal knowledge.
+The complaint also plausibly connected the training failure to the search. The court explained how even modest Fourth Amendment training could have alerted the assistant principal to the problem. It reversed dismissal and remanded. See pages 15–16.
 
-The court also held the complaint plausibly alleged causation: even "a modicum of Fourth Amendment training" would have alerted Higgins that a mass, suspicionless strip search of preteens was unconstitutional.
+## What the Judge and Defense Will Examine
 
-## Why This Case Matters for Your § 1983 Case
+The defense may point to written policies as evidence that the district addressed the risk. Your response should identify what training was allegedly missing and why employees needed it to apply the policy in a recurring situation.
 
-_Littell_ is one of the most important Fifth Circuit decisions on single-incident [failure-to-train](/terms-and-concepts/failure-to-train) liability:
+[Littell](/cases/littell-v-hous-indep-sch-dist) applies the narrow framework discussed in [City of Canton v. Harris](/cases/city-of-canton-v-harris). The result depends on the particular allegations showing an obvious training need and a highly predictable risk of violations.
 
-- **Complete failure to train**: If the municipality provides no training at all on a clear constitutional duty in a recurring situation, you may not need to prove a pattern of prior violations.
-- **The Canton hypothetical, applied**: The court explicitly mapped this case onto _Canton_'s famous hypothetical about arming officers without training on deadly force. The same logic applies whenever a government employer authorizes an activity that implicates constitutional rights but provides no training on constitutional limits.
-- **Written policies are not enough**: Having written policies that correctly state the law does not insulate a municipality from liability. If no one is trained on what those policies mean or how to apply them, the policies are meaningless.
-- **Pleading stage**: This analysis occurred at the [motion to dismiss](/terms-and-concepts/motion-to-dismiss) stage. The court did not require proof — only plausible allegations. The actual existence of a complete training failure must be proven at [summary judgment](/terms-and-concepts/summary-judgment) or trial.
+## How to Use the Decision
 
-## Key Takeaway
+Separate a complete absence of relevant training from a claim that existing training could be better. Identify the recurring task, the constitutional limit employees needed to understand, and how the missing training caused the injury.
 
-A municipality that authorizes its employees to conduct searches but provides absolutely no [Fourth Amendment](/terms-and-concepts/fourth-amendment) training may be held liable under [§ 1983](/terms-and-concepts/section-1983) based on a single incident — because when a government employer provides no training on a clear constitutional duty that employees will certainly face, constitutional violations are "highly predictable."
+This was a pleading decision. At later stages, you need evidence supporting those allegations. The written policies remained relevant evidence even though they failed to defeat the pleaded training claim.

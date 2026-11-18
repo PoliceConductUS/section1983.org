@@ -74,6 +74,7 @@ const structuredData = {
 
 const formatDate = (d: Date) =>
   d.toLocaleDateString("en-US", {
+    timeZone: "UTC",
     year: "numeric",
     month: "short",
     day: "numeric",

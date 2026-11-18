@@ -14,7 +14,7 @@
     "format": "prettier --write .",
     "format:validate": "prettier --check .",
     "typecheck": "astro check && tsc --noEmit",
-    "validate": "npm run format:validate && npm run lint && npm run typecheck && npm run infra:format:validate && npm run test:infra && npm run test:analytics-config && npm run test:consent",
+    "validate": "npm run format:validate && npm run lint && npm run validate:openspec && npm run typecheck && npm run infra:format:validate && npm run test:infra && npm run test:analytics-config && npm run test:consent",
     "analytics:pull": "bash scripts/analytics.sh pull",
     "analytics:push": "bash scripts/analytics.sh push",
     "analytics:compare": "bash scripts/analytics.sh compare",
@@ -31,7 +31,10 @@
     "test:consent": "node --test scripts/consent-preferences.test.mjs scripts/google-consent.test.mjs",
     "test:infra": "node --test scripts/terraform-account.test.mjs scripts/require-approved-terraform-destroys.test.mjs scripts/parameter-store-secrets.test.mjs scripts/terraform-tracked-inputs.test.mjs scripts/terraform-reviewed-apply.test.mjs scripts/deploy-infra.test.mjs",
     "test:a11y": "npm run build && playwright test",
-    "test:a11y:full": "npm run build && A11Y_FULL=1 playwright test"
+    "test:a11y:full": "npm run build && A11Y_FULL=1 playwright test",
+    "openspec": "openspec",
+    "openspec:status": "openspec status",
+    "validate:openspec": "openspec schema validate superpowers-bridge && openspec validate --all"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.10",
@@ -45,6 +48,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
     "@axe-core/playwright": "^4.14.0",
+    "@fission-ai/openspec": "2.1.0",
     "@mermaid-js/mermaid-cli": "^12.2.0",
     "@playwright/test": "^1.65.1",
     "@typescript-eslint/parser": "^8.57.1",

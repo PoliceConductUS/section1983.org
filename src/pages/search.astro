@@ -58,6 +58,7 @@ const structuredData = {
     const status = document.getElementById("search-status");
     const maxResults = 20;
     let index = null;
+    let indexRequest = null;
 
     const typeLabels = {
       article: "Article",
@@ -82,14 +83,24 @@ const structuredData = {
       results.innerHTML = "";
     }
 
-    async function loadIndex() {
+    function loadIndex() {
       if (index) return index;
-      const res = await fetch("/search.json");
-      if (!res.ok) {
-        throw new Error("Search index failed to load.");
+      if (!indexRequest) {
+        indexRequest = fetch("/search.json")
+          .then((res) => {
+            if (!res.ok) throw new Error("Search index failed to load.");
+            return res.json();
+          })
+          .then((data) => {
+            index = data;
+            return index;
+          })
+          .catch((error) => {
+            indexRequest = null;
+            throw error;
+          });
       }
-      index = await res.json();
-      return index;
+      return indexRequest;
     }
 
     function search(query) {
@@ -102,7 +113,9 @@ const structuredData = {
           " " +
           item.description +
           " " +
-          (item.tags || []).join(" ")
+          (item.tags || []).join(" ") +
+          " " +
+          (item.keywords || []).join(" ")
         ).toLowerCase();
         return terms.every((t) => haystack.includes(t));
       });
@@ -139,22 +152,28 @@ const structuredData = {
         .join("");
     }
 
+    async function updateResults() {
+      results.setAttribute("aria-busy", "true");
+      try {
+        await loadIndex();
+        render(search(input.value), input.value);
+      } catch {
+        setMessage(
+          "Search is unavailable right now. Refresh the page and try again.",
+        );
+      } finally {
+        results.setAttribute("aria-busy", "false");
+      }
+    }
+
     let debounce;
     input.addEventListener("input", () => {
+      const url = new URL(window.location.href);
+      if (input.value.trim()) url.searchParams.set("q", input.value);
+      else url.searchParams.delete("q");
+      history.replaceState(null, "", url);
       clearTimeout(debounce);
-      debounce = setTimeout(async () => {
-        results.setAttribute("aria-busy", "true");
-        try {
-          await loadIndex();
-          render(search(input.value), input.value);
-        } catch {
-          setMessage(
-            "Search is unavailable right now. Refresh the page and try again.",
-          );
-        } finally {
-          results.setAttribute("aria-busy", "false");
-        }
-      }, 150);
+      debounce = setTimeout(updateResults, 150);
     });
 
     // Support ?q= query param
@@ -162,17 +181,7 @@ const structuredData = {
     const q = params.get("q");
     if (q) {
       input.value = q;
-      results.setAttribute("aria-busy", "true");
-      loadIndex()
-        .then(() => render(search(q), q))
-        .catch(() => {
-          setMessage(
-            "Search is unavailable right now. Refresh the page and try again.",
-          );
-        })
-        .finally(() => {
-          results.setAttribute("aria-busy", "false");
-        });
+      updateResults();
     }
   </script>
 </Base>

@@ -1,45 +1,38 @@
 ---
 title: "Meals v. Hale County Sheriff's Office"
-citation: "No. 2:20-CV-00145 (N.D. Tex.)"
-court: "United States District Court for the Northern District of Texas"
-dateDecided: 2021-06-01
-docketNumber: "2:20-CV-00145"
-holding: "A pretrial detainee's § 1983 claims against a county sheriff's office were dismissed where the plaintiff sued a non-suable entity and failed to allege specific facts supporting Monell liability against the county."
-tags: []
-cites:
-  - "monell-v-department-of-social-services"
+citation: "No. 12-10881 (5th Cir. Mar. 15, 2013)"
+court: "United States Court of Appeals for the Fifth Circuit"
+dateDecided: 2013-03-15
+docketNumber: "12-10881"
+holding: "The Fifth Circuit dismissed a prisoner's appeal as frivolous because he failed to challenge the grounds for denying his Rule 60(b)(2) motion."
+tags:
+  - "texas"
+  - "case-dismissed"
+  - "pro-se"
+cites: []
 citedBy: []
 ---
 
-## What This Case Is About
+## What Happened
 
-A pretrial detainee sued the Hale County Sheriff's Office under [§ 1983](/terms-and-concepts/section-1983), alleging constitutional violations related to the conditions of his confinement. The court dismissed the claims because a sheriff's office is not a legal entity that can be sued under § 1983, and the plaintiff failed to allege sufficient facts to establish [Monell liability](/terms-and-concepts/monell-liability) against the county.
+Ricky Meals sought relief from a judgment in his civil-rights case under Federal Rule of Civil Procedure 60(b)(2), which concerns newly discovered evidence. The district court denied that motion. Meals then sought permission to appeal without prepaying fees, called **in forma pauperis** status.
 
-## The Facts
-
-The plaintiff was held as a [pretrial detainee](/terms-and-concepts/pretrial-detention) in the Hale County jail. He alleged that conditions in the jail violated his constitutional rights — potentially including claims of [deliberate indifference](/terms-and-concepts/deliberate-indifference) to his medical needs or unsafe conditions of confinement. He named the Hale County Sheriff's Office as the defendant.
+His underlying argument concerned an alleged denial of a telephone call after arrest, a Texas regulation, and due process. The appeal concerned the reasons the district court denied relief from judgment. [Read the official opinion, pages 1–2](https://www.ca5.uscourts.gov/opinions/unpub/12/12-10881.0.wpd.pdf).
 
 ## What the Court Decided
 
-The court dismissed the case on multiple grounds.
+Meals's brief failed to challenge the district court's reasons: he had presented no newly discovered evidence, and a Rule 60 motion was an improper substitute for an appeal. Repeating his underlying telephone-call argument left those reasons unanswered.
 
-First, the court held that the Hale County Sheriff's Office is not a legal entity capable of being sued under [§ 1983](/terms-and-concepts/section-1983). In Texas, a sheriff's office or police department is generally not a "person" within the meaning of § 1983 — it is merely a department of the county government. The proper defendant for [municipal liability](/terms-and-concepts/municipal-liability) is the county itself (here, Hale County), not the sheriff's office.
+The Fifth Circuit denied permission to proceed without prepayment and dismissed the appeal as frivolous. It also addressed the consequences under the prison-litigation strike rules. See opinion pages 2–3.
 
-Second, even if the court construed the complaint as naming the county, the plaintiff failed to allege facts sufficient to establish [Monell liability](/terms-and-concepts/monell-liability). The complaint did not identify a specific policy, custom, or [failure to train](/terms-and-concepts/failure-to-train) that caused the alleged constitutional violations. Conclusory allegations that conditions were unconstitutional, without tying those conditions to a specific municipal policy decision, are insufficient.
+This unpublished decision arose from Northern District of Texas case No. 5:10-CV-45. It resolves the Rule 60 appeal and briefing failure.
 
-## Why This Case Matters for Your § 1983 Case
+## What the Judge and Defense Will Examine
 
-_Meals v. Hale County Sheriff's Office_ addresses a common and easily avoidable mistake:
+When you appeal a ruling, identify the particular order and each reason the judge gave. Then explain why that reasoning was wrong, using the record and the legal standard for that order.
 
-- **Name the right defendant**: In Texas (and most states), a sheriff's office or police department is not a separate legal entity that can be sued. Sue the **county** (or city) that operates the department. Getting this wrong can result in dismissal.
-- **[Monell](/terms-and-concepts/monell-liability) requirements still apply**: Even when you name the correct municipal entity, you must identify a specific policy, custom, or training failure. The county is not automatically liable because a jail or sheriff's office violated your rights.
-- **[Pretrial detainee](/terms-and-concepts/pretrial-detention) claims**: Pretrial detainees are protected by the [Fourteenth Amendment's](/terms-and-concepts/fourteenth-amendment) due process clause, not the Eighth Amendment. The standard is [deliberate indifference](/terms-and-concepts/deliberate-indifference) to serious medical needs or unconstitutional conditions of confinement.
-- **Practical tips**:
-  - Always name the county or city as the defendant for [municipal liability](/terms-and-concepts/municipal-liability) — not the police department or sheriff's office
-  - Identify the specific policy or custom you're challenging
-  - If alleging [failure to train](/terms-and-concepts/failure-to-train), specify what training was missing and how it caused the violation
-  - If [pro se](/terms-and-concepts/pro-se), research your state's law on which government entities are suable
+The opposing side can argue that you abandoned a challenge by failing to brief it. Even a detailed account of the underlying incident can leave the appealed ruling's actual basis unanswered.
 
-## Key Takeaway
+## How to Use the Decision
 
-A sheriff's office is not a suable entity under [§ 1983](/terms-and-concepts/section-1983) in Texas — the proper defendant is the county — and even when the correct entity is named, you must plead specific facts establishing a [policy, custom, or training failure](/terms-and-concepts/monell-liability) that caused the constitutional violation, not just that conditions were bad.
+Make a two-column outline: the judge's reasons in one column and your response to each reason in the other. For post-judgment relief, explain how your request satisfies the specific rule you invoked. Preserve any separate appeal deadline while evaluating that motion.

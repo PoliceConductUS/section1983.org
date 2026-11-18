@@ -18,6 +18,7 @@ interface Props {
   tags?: string[];
   cites?: string[];
   citedBy?: string[];
+  caseTitles: Record<string, string>;
   hubLinks?: HubLink[];
   relatedTermsAndConcepts?: RelatedLink[];
   relatedArticles?: RelatedLink[];
@@ -37,6 +38,7 @@ const {
   tags,
   cites,
   citedBy,
+  caseTitles,
   hubLinks = [],
   relatedTermsAndConcepts = [],
   relatedArticles = [],
@@ -52,6 +54,7 @@ const topicLinks = hubLinks.filter((l) => l.kind === "topic");
 const circuitLink = hubLinks.find((l) => l.kind === "circuit");
 
 const formattedDate = dateDecided.toLocaleDateString("en-US", {
+  timeZone: "UTC",
   year: "numeric",
   month: "long",
   day: "numeric",
@@ -219,7 +222,7 @@ const structuredData = {
               href={`/cases/${slug}`}
               class="text-sm chip-link bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors italic"
             >
-              {slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
+              {caseTitles[slug]}
             </a>
           ))}
         </div>
@@ -235,7 +238,7 @@ const structuredData = {
               href={`/cases/${slug}`}
               class="text-sm chip-link bg-slate-100 hover:bg-gold hover:text-navy px-3 py-1 rounded transition-colors italic"
             >
-              {slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
+              {caseTitles[slug]}
             </a>
           ))}
         </div>

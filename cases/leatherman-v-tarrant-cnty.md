@@ -5,7 +5,7 @@ court: "U.S. Supreme Court"
 dateDecided: 1993-03-03
 docketNumber: "91-1657"
 courtlistener: "https://www.courtlistener.com/opinion/112867/leatherman-v-tarrant-county-narcotics-intelligence-coordination-unit/"
-holding: "Federal courts may not apply a heightened pleading standard to § 1983 claims alleging municipal liability — the ordinary notice pleading requirements of Federal Rule 8(a)(2) apply."
+holding: "The ordinary Rule 8 pleading requirements apply to § 1983 municipal-liability claims; a special heightened pleading standard is improper."
 tags:
   - "national"
   - "case-dismissed"
@@ -13,39 +13,34 @@ tags:
   - "landmark"
   - "suing-the-city"
 cites:
-  - "monell-v-department-of-social-services"
+  - "monell-v-dep-t-of-soc-servs"
 citedBy:
   - "ashcroft-v-iqbal"
   - "littell-v-hous-indep-sch-dist"
 ---
 
-## What This Case Is About
+## What Happened
 
-Homeowners whose houses were raided by narcotics officers sued Tarrant County and local municipalities under [§ 1983](/terms-and-concepts/section-1983), alleging [Fourth Amendment](/terms-and-concepts/fourth-amendment) violations and [failure to train](/terms-and-concepts/failure-to-train). The Fifth Circuit dismissed the complaints for failing to meet a "heightened pleading standard." The Supreme Court reversed, holding that no heightened pleading standard applies to [§ 1983](/terms-and-concepts/section-1983) claims against municipalities.
+Homeowners sued Tarrant County and local municipalities after narcotics raids, alleging unconstitutional searches and inadequate training. The lower courts dismissed their complaints under a special heightened pleading standard for municipal civil-rights claims.
 
-## The Facts
-
-Two separate incidents involved narcotics officers forcibly entering homes based on the detection of odors associated with drug manufacturing. In one case, the homeowner alleged he was assaulted after the officers entered. In the other, the homeowner alleged the police entered her home while she was absent and killed her two dogs. The plaintiffs sued Tarrant County and two municipal corporations, asserting that the officers' conduct violated the [Fourth Amendment](/terms-and-concepts/fourth-amendment) and that the municipalities were liable under [_Monell_](/cases/monell-v-department-of-social-services) for failing to adequately train their officers.
-
-The district court dismissed both complaints for failing to meet the Fifth Circuit's "heightened pleading standard" — a judge-made rule requiring § 1983 plaintiffs to plead "with factual detail and particularity the basis for the claim." The Fifth Circuit affirmed.
+The Supreme Court unanimously reversed. [Read the opinion, 507 U.S. 163–169](https://www.govinfo.gov/content/pkg/USREPORTS-507/pdf/USREPORTS-507-163.pdf).
 
 ## What the Court Decided
 
-The Supreme Court unanimously reversed. Chief Justice Rehnquist wrote that the heightened pleading standard was "impossible to square" with the "liberal system of 'notice pleading' set up by the Federal Rules." Rule 8(a)(2) requires only "a short and plain statement of the claim showing that the pleader is entitled to relief."
+The ordinary requirements of Federal Rule of Civil Procedure 8(a)(2) governed these complaints. Courts could not demand extra factual particularity simply because the defendants were municipalities sued under § 1983.
 
-The Court rejected two arguments for the heightened standard. First, it rejected the argument that municipalities' freedom from [respondeat superior](/terms-and-concepts/respondeat-superior) liability implies immunity from suit. The Court noted that while municipalities cannot be held liable under respondeat superior, they do not enjoy [qualified immunity](/terms-and-concepts/qualified-immunity) or any other immunity from suit under § 1983.
+Municipalities remained subject to suit despite the limits on employer liability under [Monell](/cases/monell-v-dep-t-of-soc-servs). The Court explained that a special pleading rule would require a change through the rulemaking process. It also identified summary judgment and control of discovery as tools for addressing unsupported claims.
 
-Second, the Court rejected the argument that the complexity of _Monell_ liability justifies more detailed pleading. Rule 9(b) imposes heightened pleading only for fraud and mistake — and does not mention § 1983 claims. If the Rules were to be changed to require more specificity for municipal liability claims, that change must come through the rulemaking process, not judicial interpretation.
+## How the Rule Applies Now
 
-## Why This Case Matters for Your § 1983 Case
+Your municipal claim follows the ordinary Rule 8 standard. The later decisions in [Twombly](/cases/bell-atlantic-corp-v-twombly) and [Iqbal](/cases/ashcroft-v-iqbal) require facts that plausibly support liability. [Leatherman](/cases/leatherman-v-tarrant-cnty) prevents a special, more demanding pleading rule for municipal claims; it leaves the judge able to dismiss a complaint that fails the ordinary standard.
 
-_Leatherman_ is foundational for every [§ 1983](/terms-and-concepts/section-1983) plaintiff suing a municipality:
+## What the Defense Will Say
 
-- **No heightened pleading for Monell claims**: Your complaint against a city or county need only meet the standard Rule 8(a) requirements. You do not need to plead a detailed evidentiary case in your complaint.
-- **Important caveat**: While _Leatherman_ prohibits heightened pleading, the later decisions in [_Twombly_](/cases/bell-atlantic-corp-v-twombly) and [_Iqbal_](/cases/ashcroft-v-iqbal) raised the general pleading bar for all cases by requiring "plausibility." So while there is no _special_ heightened standard for § 1983 municipal claims, the general standard is now higher than pure notice pleading.
-- **Defense strategy**: Defendants may still try to argue that your [Monell](/terms-and-concepts/monell-liability) allegations are too conclusory under _Iqbal_. The response is that _Leatherman_ bars any standard more demanding than what _Iqbal_ requires for all civil claims.
-- **Summary judgment and discovery**: The Court noted that "summary judgment and control of discovery" — not heightened pleading — are the proper tools to weed out unmeritorious claims.
+The defense will argue that labels such as “policy,” “custom,” or “failure to train” lack supporting facts. Identify the alleged practice, the basis for attributing it to the municipality, and how it caused the violation.
 
-## Key Takeaway
+The judge should apply the same pleading framework used for other claims while evaluating the particular elements of municipal liability. Explain those facts in your complaint and distinguish a demand for evidence from a legitimate challenge to missing allegations.
 
-Municipalities are not entitled to a heightened [pleading standard](/terms-and-concepts/plausibility-pleading) for [§ 1983](/terms-and-concepts/section-1983) claims — the ordinary requirements of Rule 8(a)(2) apply, and courts must rely on [summary judgment](/terms-and-concepts/summary-judgment) and [discovery](/terms-and-concepts/discovery) management, not dismissal at the pleading stage, to address weak municipal liability claims.
+## How to Use the Decision
+
+Compare the standard the defense requests with Rule 8 and the current plausibility cases. Use [Leatherman](/cases/leatherman-v-tarrant-cnty) against an extra municipal-claim pleading requirement, while addressing the actual factual gaps the motion identifies.
