@@ -27,12 +27,12 @@ The product has one voice and its existing copy establishes it. A local edit doe
 
 A multi-step flow uses one vocabulary throughout: "Get started" to enter, either "Continue" or "Next" to advance, "Done" to finish. Tone flexes with the stakes:
 
-| Context                           | Tone                          |
-| --------------------------------- | ----------------------------- |
-| Success, onboarding, empty states | Warm, can be light            |
-| Routine actions, settings         | Neutral, minimal              |
+| Context | Tone |
+| --- | --- |
+| Success, onboarding, empty states | Warm, can be light |
+| Routine actions, settings | Neutral, minimal |
 | Errors, destructive confirmations | Calm, plain, zero playfulness |
-| Data loss, security               | Serious, explicit             |
+| Data loss, security | Serious, explicit |
 
 ## Address the reader directly
 
@@ -48,7 +48,7 @@ Skip unnecessary gender: "Subscribers can post recipes", not "each subscriber ca
 
 ## Build strings whole
 
-Never assemble a sentence from fragments around a variable (`"You have " + n + " new messages"`), because word order changes per language. Write one message with placeholders, and use the locale's plural rules rather than `n === 1 ? "" : "s"`. Many languages have more than two plural forms. Format numbers, dates and lists through `Intl`. Recipes are in [patterns.md](patterns.md#plurals-and-placeholders).
+Never assemble a sentence from fragments around a variable (`"You have " + n + " new messages"`), because word order changes per language. Write one message with placeholders, and use the locale's plural rules rather than `n === 1 ? "" : "s"`. Many languages have more than two plural forms. Format numbers, dates and lists through `Intl`. Recipes are in patterns.md under [plurals](patterns.md#plurals-and-placeholders) and [locale formatting](patterns.md#locale-formatting).
 
 ## Verb-first buttons
 
@@ -76,10 +76,10 @@ Link straight to a referenced setting rather than describing the path to it: a "
 
 An error is an instruction, and it belongs beside the field that failed:
 
-| Bad                         | Good                                                 |
-| --------------------------- | ---------------------------------------------------- |
-| That password is too short  | Choose a password with at least 8 characters         |
-| Invalid date                | Enter a date as DD/MM/YYYY                           |
+| Bad | Good |
+| --- | --- |
+| That password is too short | Choose a password with at least 8 characters |
+| Invalid date | Enter a date as DD/MM/YYYY |
 | Oops! Something went wrong. | Unable to save. Check your connection and try again. |
 
 No blame, no "oops" and no exclamation marks. Phrase hints positively, as in "Use at least 8 characters" rather than "Don't use fewer than 8". Show a known requirement as helper text before input, not only in the error. When the same error keeps firing, redesign the interaction so it cannot happen.
@@ -107,9 +107,7 @@ An empty state says what this place is and how to fill it, and offers one clear 
 
 <!-- Good: orientation plus a next step -->
 <p class="font-medium">No projects yet</p>
-<p class="text-sm text-zinc-500">
-  Projects keep your tasks and files together.
-</p>
+<p class="text-sm text-zinc-500">Projects keep your tasks and files together.</p>
 <button class="mt-4">Create a project</button>
 ```
 
@@ -123,31 +121,22 @@ A placeholder shows a realistic example in the format the field accepts, `name@e
 
 ## Before you finish
 
-| Detection pattern                                                                  | Fix                                               |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------- |
-| `Click here`, a link reading `here` or two identical `Learn more` links            | Name the destination                              |
-| `Oops`, `Something went wrong` or `!` in an error string                           | Say what failed and the next step                 |
-| `" + n + "`, a template literal holding a sentence fragment, or `=== 1 ? "" : "s"` | One ICU message with a plural argument            |
-| `>OK<`, `>Yes<` or `>No<` on a dialog button                                       | Verb plus object                                  |
-| `Are you sure`                                                                     | Name the action and the object                    |
-| `successfully`                                                                     | Cut it: "Changes saved"                           |
-| `Please` in a routine instruction                                                  | Cut it                                            |
-| A toggle label starting `Don't`, `Disable` or `Hide`                               | Describe the ON state                             |
-| `aria-label="Trash"`, `"Close icon"` or `"X"`                                      | Name the action: "Delete project", "Close dialog" |
-| `toLocaleDateString()` with no locale, or a date built from `getMonth()`           | `Intl.DateTimeFormat` with the user's locale      |
-| `Save Changes` beside `Discard changes`                                            | One case per element type                         |
+| Detection pattern | Fix |
+| --- | --- |
+| `Click here`, a link reading `here` or two identical `Learn more` links | Name the destination |
+| `Oops`, `Something went wrong` or `!` in an error string | Say what failed and the next step |
+| `" + n + "`, a template literal holding a sentence fragment, or `=== 1 ? "" : "s"` | One message with a plural argument |
+| `>OK<`, `>Yes<` or `>No<` on a dialog button | Verb plus object |
+| `Are you sure` | Name the action and the object |
+| `successfully` | Cut it: "Changes saved" |
+| `Please` in a routine instruction | Cut it |
+| A toggle label starting `Don't`, `Disable` or `Hide` | Describe the ON state |
+| `aria-label="Trash"`, `"Close icon"` or `"X"` | Name the action: "Delete project", "Close dialog" |
+| `toLocaleDateString()` with no locale, or a date built from `getMonth()` | `Intl.DateTimeFormat` with the user's locale |
+| `Save Changes` beside `Discard changes` | One case per element type |
 
 ## Reporting
 
-**Severity.** `HIGH` misleads the user or hides how to recover from an error. An error that names no way to recover is always `HIGH`, as is a destructive action with neither confirmation nor undo. `MEDIUM` breaks voice, terminology or capitalization consistency. `LOW` is isolated wording polish.
-
 **Verification.** Check every label against the action it invokes, every error for a stated fix and every term against the inventory. Read locale files as well as components. Report strings supplied by the server or a CMS that you could not see as `Not verified`.
 
-**Format.** Group findings under the principle each violates, ordered by severity, one row per root cause listing every location it appears in:
-
-| Severity | Location | Before | After | Why |
-| -------- | -------- | ------ | ----- | --- |
-
-`Location` is `path/to/file:line`. `Why` names the principle and the user impact.
-
-End with `Block` when any `HIGH` remains, `Approve` otherwise, leaving the rest in the table as work to do. Never `Approve` coverage you did not inspect. With nothing to report, state "No actionable writing findings" and report verification.
+A standalone review takes its severity ladder and format from [reporting.md](reporting.md).

@@ -13,11 +13,11 @@ No ARIA is better than bad ARIA. A screen reader trusts your roles, so a wrong o
 
 ## Button vs link vs div
 
-| Element         | Use for                                                     | Why                                                                   |
-| --------------- | ----------------------------------------------------------- | --------------------------------------------------------------------- |
-| `<a href>`      | Navigation: anything that goes somewhere or changes the URL | Free Cmd/Ctrl/middle-click, right-click → copy link, Enter activation |
-| `<button>`      | Actions: submit, toggle, open, delete                       | Free focus, Enter _and_ Space activation, form semantics              |
-| `<div onClick>` | Nothing                                                     | No role, no focus, no keyboard; screen readers see plain text         |
+| Element | Use for | Why |
+| --- | --- | --- |
+| `<a href>` | Navigation: anything that goes somewhere or changes the URL | Free Cmd/Ctrl/middle-click, right-click → copy link, Enter activation |
+| `<button>` | Actions: submit, toggle, open, delete | Free focus, Enter *and* Space activation, form semantics |
+| `<div onClick>` | Nothing | No role, no focus, no keyboard; screen readers see plain text |
 
 ```tsx
 // Bad: invisible to keyboard and screen readers
@@ -62,12 +62,12 @@ Keeping brand names and code tokens out of auto-translation with `translate="no"
 
 ## Common ARIA mistakes
 
-| Mistake                                                       | Why it fails                                                                         |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| `aria-label` on a plain `<div>` or `<span>`                   | ARIA 1.2 prohibits naming the `generic` role, and most screen readers ignore it      |
-| `<button role="button">`                                      | Redundant role; adds noise, no benefit                                               |
-| `aria-labelledby`/`aria-describedby` pointing at a missing ID | Silently produces no name or description                                             |
-| `role="menu"` on a nav list                                   | `menu` promises app-style arrow-key behavior; site navigation is `<nav>` with a list |
+| Mistake | Why it fails |
+| --- | --- |
+| `aria-label` on a plain `<div>` or `<span>` | ARIA 1.2 prohibits naming the `generic` role, and most screen readers ignore it |
+| `<button role="button">` | Redundant role; adds noise, no benefit |
+| `aria-labelledby`/`aria-describedby` pointing at a missing ID | Silently produces no name or description |
+| `role="menu"` on a nav list | `menu` promises app-style arrow-key behavior; site navigation is `<nav>` with a list |
 
 ## Disabled states
 
@@ -75,7 +75,5 @@ Native `disabled` supplies the platform's complete disabled behavior. It removes
 
 - Never disable submit to gate validation. Validate on submit instead ([forms.md](forms.md)).
 - A natively `disabled` control suppresses pointer events and leaves the tab order, so a tooltip on it never opens for keyboard or touch users. Put the reason in visible text beside the control, or switch to `aria-disabled="true"`, which keeps it focusable and hoverable.
-- Use `aria-disabled="true"` where keeping a control discoverable in the tab order is intentional, or where a custom control cannot use native `disabled`.
-- With `aria-disabled="true"`, block pointer and keyboard activation in the handler and prevent form submission where applicable. Add explicit styling, including forced-colors support, and explain nearby why the action is unavailable.
+- `aria-disabled="true"` also covers a custom control that cannot use native `disabled`. Style it explicitly, forced-colors mode included, and explain nearby why the action is unavailable.
 - Never set both `disabled` and `aria-disabled` on the same element.
-- Disabled controls are exempt from contrast minimums.

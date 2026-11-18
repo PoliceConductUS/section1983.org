@@ -3,59 +3,59 @@
   "skills": {
     "afk": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/afk/SKILL.md",
-      "computedHash": "ce5b7348ecd357db6c0c162375f1fe171dbd02f2cff35b49cd81e4390438859f"
+      "computedHash": "36877a032a45a6659b596031d530706c71bd062f294b8c106ad7b8b4570f542d"
     },
     "better-accessibility": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/better-accessibility/SKILL.md",
-      "computedHash": "e610b7be067fb62bc09094ebabcaaef429dde4398900b340e29f00a0217a5731"
+      "computedHash": "52f710d167c6244377a7ddab4d3ec39668bd0980d7975bcf7b5004e98fa0c09f"
     },
     "better-colors": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/better-colors/SKILL.md",
-      "computedHash": "d114ace9df09574564a14316882d80501b48bea636017dc7e4c0ad53053d6319"
+      "computedHash": "6bd97cb922230031c416da89e3e30f31856e7c397d4595c951cced9350a2e0c6"
     },
     "better-interface": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/better-interface/SKILL.md",
-      "computedHash": "37ae068dc11f7548c3064848cb6d97f4e4626e689ad374c192ddc05d11641c04"
+      "computedHash": "b9752ca6ad3fb856aed9f66159e73494eba05fbe8e8db68b4b72d0f19ee69f86"
     },
     "better-layout": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/better-layout/SKILL.md",
-      "computedHash": "c00f4b9a36a561d2b5f63ce318467f6e522294bdd217684d3c12c7ec7ce86ea1"
+      "computedHash": "132862dbdc0ca8cc2016257f2db6f0845bc13d0f66cd715b57a62f8529e9bc4c"
     },
     "better-typography": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/better-typography/SKILL.md",
-      "computedHash": "85b6c26d65e0bcf11fb97f03ec91c057d5adc5d87bdffdee2eb14e0fac59c0a8"
+      "computedHash": "46b9c3a581e240b1e3e9f2a34469bfd8fceb075149cadb6ff670e4ee74ab7622"
     },
     "better-ui": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/better-ui/SKILL.md",
-      "computedHash": "abfdcb9c08248aa0f1ed413ff5390574fa799b6dcb9237fe7e7ce965598a0753"
+      "computedHash": "1b0a17b7b2675ed2bf79ca7120fbc3c37b0f3955d1750293b215ebb6edb5bab3"
     },
     "better-writing": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/better-writing/SKILL.md",
-      "computedHash": "1a0f637280dfd4d2a3245ab6a0dad4b48b22a4a2ced64915eb51876012cf46f0"
+      "computedHash": "2a1272ec964d55720f0aa7b95bf198aa488099950f52f4dbd975906438b955af"
     },
     "brainstorming": {
       "source": "obra/superpowers",
@@ -66,14 +66,14 @@
     },
     "break": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/break/SKILL.md",
-      "computedHash": "4dc3ebcbe19fde77ea97f01bd85c43e9091e54cab5f818fc51ccae8ead60f9ec"
+      "computedHash": "041fe26ec8552f3e9114fd21a006a91cc82f30fb7561694ab12601c0a8b42cc9"
     },
     "build-design": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/build-design/SKILL.md",
       "computedHash": "9935cc12c9138b34c3cb8f1827d30286e87a3b274fd7f194b97cf6d94a5a79f0"
@@ -101,10 +101,10 @@
     },
     "explain-interface": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/explain-interface/SKILL.md",
-      "computedHash": "027b08c97bb30e38a4498612dd1a8d1ff5424ae535dd9eec61c5de62b5df5b7a"
+      "computedHash": "21ac62910306392f1ba935a1fd1d80dfd87e4ba0d83fefcfc3206043fd8d2c2e"
     },
     "finishing-a-development-branch": {
       "source": "obra/superpowers",
@@ -115,10 +115,10 @@
     },
     "interface-review": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/interface-review/SKILL.md",
-      "computedHash": "635ca1213ec840ddbe45d21463f8122dad06cd92643610e09a0304bf2563388a"
+      "computedHash": "7a7f252460de0a466482dc9ee101d6e1c9556d865ffc476877be2053ec0931ac"
     },
     "receiving-code-review": {
       "source": "obra/superpowers",
@@ -136,10 +136,10 @@
     },
     "state-machine": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/state-machine/SKILL.md",
-      "computedHash": "17ec370138b8959afdcf60f6e0a4765497cbcc723269225745f9ac5c11677ec2"
+      "computedHash": "36cc762e0b394918deb6785ece94a416996194f1c51df785ccea978fd6321625"
     },
     "subagent-driven-development": {
       "source": "obra/superpowers",
@@ -162,6 +162,13 @@
       "skillPath": "skills/test-driven-development/SKILL.md",
       "computedHash": "2782702b2cf69ace085ed30d067b6f8bfd2d777ad51770fc5bdae9cb5c1b5c04"
     },
+    "upskill": {
+      "source": "jakubkrehel/skills",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
+      "sourceType": "github",
+      "skillPath": "skills/upskill/SKILL.md",
+      "computedHash": "cb4f49e8a667c2499f459edcf3c0e1b0b61dc211cebb02e1f262d740ecfa9cb5"
+    },
     "using-git-worktrees": {
       "source": "obra/superpowers",
       "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
@@ -178,10 +185,10 @@
     },
     "variant": {
       "source": "jakubkrehel/skills",
-      "commit": "6c2120103600407a1a9986afd834e73144ef8998",
+      "commit": "276449adf5fa509adaab842b3559cb375ca868a4",
       "sourceType": "github",
       "skillPath": "skills/variant/SKILL.md",
-      "computedHash": "3f761b70ef27b2c7e19451c00f5d70877ac9d296967b1363c97254f747ac23dc"
+      "computedHash": "9e37b7199cbb585cf6019cd66ee4dfa4abcf5ce27948fe0ccdcc98ca3705fa38"
     },
     "verification-before-completion": {
       "source": "obra/superpowers",

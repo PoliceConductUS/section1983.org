@@ -10,6 +10,11 @@ Try `refs/remotes/origin/HEAD`, then `gh repo view --json defaultBranchRef`. If 
 
 Accepted targets are `working`, `staged`, `branch`, `pr <n>`, a bare `<ref>` and an explicit `<a>..<b>` or `<a>...<b>` range. Anything else in the invocation is a `<ref>`.
 
+- `working` is every uncommitted change against `HEAD`, staged or not, plus untracked files.
+- `staged` is the index against `HEAD`, from `git diff --cached`. Read its files with `git show :path/to/file`.
+- `branch` is the merge base with the default branch to `HEAD`, plus uncommitted changes.
+- A bare `<ref>` is everything since that ref, up to the current checkout with its uncommitted changes.
+
 Diff a branch against the **merge base**, with three dots. Two dots reports every upstream commit that landed on the base branch as part of the change.
 
 But use the dots the user wrote when they wrote a range. `<a>..<b>` compares the endpoints; `<a>...<b>` compares `merge-base(<a>, <b>)` with `<b>`. Rewriting `release..feature` to three dots drops everything between `release` and the merge base, which is often exactly what was asked for. State the resolved range in the scope block.
@@ -56,14 +61,14 @@ Review a rename as a move, not a delete plus an add. Everything that survived th
 
 Exclude these and name what you excluded in the scope block. They are machine-authored and carry no interface rules.
 
-| Category               | Patterns                                                                                                                                             |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Lockfiles              | `package-lock.json`, `pnpm-lock.yaml`, `yarn.lock`, `bun.lock`, `bun.lockb`, `Cargo.lock`, `composer.lock`, `Gemfile.lock`, `poetry.lock`, `uv.lock` |
-| Snapshots and fixtures | `__snapshots__/`, `*.snap`, `*.approved.*`, `test-results/`, `playwright-report/`                                                                    |
-| Generated output       | `dist/`, `build/`, `out/`, `.next/`, `.turbo/`, `.svelte-kit/`, `coverage/`, `storybook-static/`, `*.min.js`, `*.min.css`, `*.map`                   |
-| Generated sources      | `*.gen.ts`, `*.generated.*`, `*.d.ts` emitted by a build, GraphQL and Prisma client output                                                           |
-| Vendored code          | `vendor/`, `third_party/`, `node_modules/`                                                                                                           |
-| Binaries and media     | `*.png`, `*.jpg`, `*.webp`, `*.avif`, `*.woff2`, `*.mp4`, `*.pdf`                                                                                    |
+| Category | Patterns |
+| --- | --- |
+| Lockfiles | `package-lock.json`, `pnpm-lock.yaml`, `yarn.lock`, `bun.lock`, `bun.lockb`, `Cargo.lock`, `composer.lock`, `Gemfile.lock`, `poetry.lock`, `uv.lock` |
+| Snapshots and fixtures | `__snapshots__/`, `*.snap`, `*.approved.*`, `test-results/`, `playwright-report/` |
+| Generated output | `dist/`, `build/`, `out/`, `.next/`, `.turbo/`, `.svelte-kit/`, `coverage/`, `storybook-static/`, `*.min.js`, `*.min.css`, `*.map` |
+| Generated sources | `*.gen.ts`, `*.generated.*`, `*.d.ts` emitted by a build, GraphQL and Prisma client output |
+| Vendored code | `vendor/`, `third_party/`, `node_modules/` |
+| Binaries and media | `*.png`, `*.jpg`, `*.webp`, `*.avif`, `*.woff2`, `*.mp4`, `*.pdf` |
 
 Two exceptions stay in scope. A **font file** added or swapped is a `better-typography` change. An **image** added to a component is a `better-ui` and `better-accessibility` change, through its outline and its `alt` text. Review the code that references them, not the bytes.
 

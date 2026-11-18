@@ -8,23 +8,15 @@ Users read a near-miss in hue as a slightly different shade, not as a different 
 
 ```css
 /* Bad: the accent means both "link" and "decorative heading" */
-a {
-  color: #3b82f6;
-}
-.section-title {
-  color: #4f8ef7;
-}
+a { color: #3b82f6; }
+.section-title { color: #4f8ef7; }
 
 /* Good: interactive elements own the accent; headings stay neutral */
-a {
-  color: var(--color-accent-text);
-}
-.section-title {
-  color: var(--color-text-primary);
-}
+a { color: var(--color-accent-text); }
+.section-title { color: var(--color-text-primary); }
 ```
 
-The rule runs both ways. A color must not be _absent_ where its meaning occurs. If the accent means interactive, an interactive element rendered neutral is just as misleading.
+The rule runs both ways. A color must not be *absent* where its meaning occurs. If the accent means interactive, an interactive element rendered neutral is just as misleading.
 
 ## Use tokens in their role
 
@@ -32,14 +24,10 @@ A value that happens to work in two roles stops working in both at the next them
 
 ```css
 /* Bad: separator token repurposed as a text color because it looked right */
-.caption {
-  color: var(--color-border);
-}
+.caption { color: var(--color-border); }
 
 /* Bad: text token repurposed as a background */
-.tag {
-  background: var(--color-text-secondary);
-}
+.tag { background: var(--color-text-secondary); }
 ```
 
 The role inventory in [token-naming.md](token-naming.md) is the list of roles a system needs.
@@ -61,7 +49,7 @@ Selected states may use the accent on the glyph and label. An active tab or a ch
 
 ## Gradients
 
-**The interpolation space is a look, not a correctness setting.** Three are worth knowing, and the difference between them is most visible in the middle of the gradient:
+Three interpolation spaces are worth knowing, and the difference between them is most visible in the middle of the gradient:
 
 ```css
 /* sRGB: the default and the classic. Midpoint darkens and mutes. */
@@ -106,22 +94,16 @@ When the product ships a dark appearance, every custom color needs a dark varian
 }
 
 @media (prefers-contrast: more) {
-  :root {
-    --color-accent-solid: var(--blue-900);
-  }
+  :root { --color-accent-solid: var(--blue-900); }
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --color-accent-solid: var(--blue-400);
-  }
+  :root { --color-accent-solid: var(--blue-400); }
 }
 
 @media (prefers-color-scheme: dark) and (prefers-contrast: more) {
-  :root {
-    --color-accent-solid: var(--blue-200);
-  }
+  :root { --color-accent-solid: var(--blue-200); }
 }
 ```
 
-A single `prefers-contrast` block shared by both appearances darkens the color on a dark background too, lowering contrast there. The increased-contrast variant widens the gap to its background by at least `0.15` of OKLCH `L` over the default. Remeasure it, aiming for Lc 90 on body text. Widening the gap without remeasuring is not fixing it.
+A single `prefers-contrast` block shared by both appearances darkens the color on a dark background too, lowering contrast there. The increased-contrast variant widens the gap to its background by at least `0.15` of OKLCH `L` over the default. Remeasure it, aiming for Lc 90 on body text.

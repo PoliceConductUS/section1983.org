@@ -33,15 +33,10 @@ Work down this list and stop at the first match:
 
 1. **Focus moves there anyway**, as with an opened modal or the first invalid field. Nothing extra needed; the focus move is the announcement.
 2. **Tied to a specific control**, such as a field error or character count: `aria-describedby` on the control, announced with the field.
-3. **Non-urgent, not tied to a control**, such as a toast, "Saved", a result count or a loading state: a polite live region, `role="status"`.
-4. **Urgent and not tied to a control**, such as a form-level failure or session expiry: `role="alert"`.
+3. **Non-urgent, not tied to a control**, such as a toast, "Saved", a result count or a loading state: `role="status"`. It equals `aria-live="polite"` plus `aria-atomic="true"` and waits for a pause.
+4. **Urgent and not tied to a control**, such as a form-level failure or session expiry: `role="alert"`. It equals `aria-live="assertive"` plus `aria-atomic="true"` and interrupts at once.
 
 ## Live regions
-
-| Mechanism                                                         | Politeness             | Use for                                         |
-| ----------------------------------------------------------------- | ---------------------- | ----------------------------------------------- |
-| `role="status"` (= `aria-live="polite"` + `aria-atomic="true"`)   | Waits for a pause      | Toasts, "Saved", result counts, loading updates |
-| `role="alert"` (= `aria-live="assertive"` + `aria-atomic="true"`) | Interrupts immediately | Errors and urgent problems only                 |
 
 Rules for reliable announcements:
 
@@ -68,13 +63,13 @@ For loading states: set `aria-busy="true"` on the updating region, announce "Loa
 
 Choose by purpose, not by what the image looks like:
 
-| Purpose                                     | Alt                                                         | Example                                                    |
-| ------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------- |
-| Decorative, or redundant with adjacent text | `alt=""` (empty, but present)                               | Logo next to the company name in text                      |
-| Informative                                 | Describe the meaning it adds                                | `alt="Ticket QR code"`                                     |
-| Functional (image is the link/button)       | Describe the action or destination                          | Search icon → `alt="Search"`, not `alt="magnifying glass"` |
-| Image of text                               | The exact text (better: use real text)                      | `alt="50% off everything"`                                 |
-| Complex (chart, diagram)                    | Short summary in `alt`, full data as a table or text nearby | `alt="Revenue by quarter, described below"`                |
+| Purpose | Alt | Example |
+| --- | --- | --- |
+| Decorative, or redundant with adjacent text | `alt=""` (empty, but present) | Logo next to the company name in text |
+| Informative | Describe the meaning it adds | `alt="Ticket QR code"` |
+| Functional (image is the link/button) | Describe the action or destination | Search icon → `alt="Search"`, not `alt="magnifying glass"` |
+| Image of text | The exact text (better: use real text) | `alt="50% off everything"` |
+| Complex (chart, diagram) | Short summary in `alt`, full data as a table or text nearby | `alt="Revenue by quarter, described below"` |
 
 A missing `alt` is worse than an empty one, because screen readers fall back to reading the file name.
 

@@ -6,30 +6,28 @@ What a color system is made of, before any values exist. For computing the value
 
 Most products need three kinds of ramp and nothing else:
 
-| Ramp    | How many | Notes                                                                                  |
-| ------- | -------- | -------------------------------------------------------------------------------------- |
-| Neutral | 1        | Carries 80–90% of the interface: backgrounds, borders, body text                       |
-| Accent  | 1        | The brand hue. Interactive and selected states                                         |
-| Status  | 0–4      | `danger`, `warning`, `success`, `info`. Add one only when the product shows that state |
+| Ramp | How many | Notes |
+| --- | --- | --- |
+| Neutral | 1 | Carries 80–90% of the interface: backgrounds, borders, body text |
+| Accent | 1 | The brand hue. Interactive and selected states |
+| Status | 0–4 | `danger`, `warning`, `success`, `info`. Add one only when the product shows that state |
 
 ## Every step has a job
 
-Each step maps to a role. Generate the steps the roles below call for and skip the rest.
-
-| Role                        | Tailwind | Radix |
-| --------------------------- | -------- | ----- |
-| Page background             | `50`     | `1`   |
-| Subtle background           | `50`     | `2`   |
-| Component background        | `100`    | `3`   |
-| Component hover             | `200`    | `4`   |
-| Component active / selected | `200`    | `5`   |
-| Subtle border, separator    | `200`    | `6`   |
-| Border, focus ring          | `300`    | `7`   |
-| Hovered border              | `400`    | `8`   |
-| Solid fill                  | `600`    | `9`   |
-| Solid fill hover            | `700`    | `10`  |
-| Low-contrast text           | `700`    | `11`  |
-| High-contrast text          | `900`    | `12`  |
+| Role | Tailwind | Radix |
+| --- | --- | --- |
+| Page background | `50` | `1` |
+| Subtle background | `50` | `2` |
+| Component background | `100` | `3` |
+| Component hover | `200` | `4` |
+| Component active / selected | `200` | `5` |
+| Subtle border, separator | `200` | `6` |
+| Border, focus ring | `300` | `7` |
+| Hovered border | `400` | `8` |
+| Solid fill | `600` | `9` |
+| Solid fill hover | `700` | `10` |
+| Low-contrast text | `700` | `11` |
+| High-contrast text | `900` | `12` |
 
 The two conventions differ in kind, not only in numbering:
 
@@ -38,7 +36,7 @@ The two conventions differ in kind, not only in numbering:
 
 Match whichever the project uses. For a new system prefer Radix's model, because a role-defined step survives a theme change that a lightness-defined step does not. On Tailwind, keep `50`–`950` and put the role mapping in the semantic tier.
 
-Solid fill sits on `600` because white text on most Tailwind `500` hues fails 4.5:1. Where the table repeats a step, those roles render identically. A design that needs, say, component hover and subtle border to differ needs a 12-step ramp.
+Solid fill sits on `600` because white text on most Tailwind `500` hues fails 4.5:1. Several hues, green and amber among them, still fail at `600`, so measure the pair. The border rows are decorative edges; an input boundary or a focus ring needs 3:1, which `300` on white does not reach. Where the table repeats a step, those roles render identically. A design that needs, say, component hover and subtle border to differ needs a 12-step ramp.
 
 ## Neutrals
 

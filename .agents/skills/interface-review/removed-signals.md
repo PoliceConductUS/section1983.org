@@ -2,19 +2,19 @@
 
 What to look for on the `-` side of a hunk and which skill owns the judgement.
 
-| Removed from the `-` side                                                           | Owner                  | What to check                                                               |
-| ----------------------------------------------------------------------------------- | ---------------------- | --------------------------------------------------------------------------- |
-| `aria-label`, `aria-labelledby`, `aria-describedby`, `aria-live`, `role=`           | `better-accessibility` | The control or region lost its accessible name, description or announcement |
-| `alt=`, `<label`, `for=`, `htmlFor`, `scope=`                                       | `better-accessibility` | Image, field or table cell lost its programmatic association                |
-| `<button>`, `<a>`, `<nav>`, `<main>`, `<ul>` replaced by `div` or `span`            | `better-accessibility` | Keyboard and assistive-technology behavior was traded for styling           |
-| `:focus-visible`, `:focus`, `outline`, `tabindex`                                   | `better-accessibility` | Keyboard users lost the focus indicator or the element left the tab order   |
-| `prefers-reduced-motion`                                                            | `better-accessibility` | Motion now ignores the user's system preference                             |
-| `prefers-contrast`                                                                  | `better-colors`        | Colors now ignore the user's contrast preference                            |
-| Logical properties swapped for `left` / `right`                                     | `better-layout`        | Direction-aware layout was dropped                                          |
-| `lang=`, `dir=`                                                                     | `better-typography`    | Language metadata or text direction was dropped                             |
-| `text-wrap`, `line-clamp`, `overflow-wrap`, `tabular-nums`, `font-feature-settings` | `better-typography`    | Text rendering, wrapping or numeral alignment silently changed              |
-| A color token swapped for a literal, or a token swapped for a lighter one           | `better-colors`        | The rendered contrast pair may now fail; measure it                         |
-| A user-facing string deleted or shortened                                           | `better-writing`       | A label, error or empty state lost the information it carried               |
+| Removed from the `-` side | Owner | What to check |
+| --- | --- | --- |
+| `aria-label`, `aria-labelledby`, `aria-describedby`, `aria-live`, `role=` | `better-accessibility` | The control or region lost its accessible name, description or announcement |
+| `alt=`, `<label`, `for=`, `htmlFor`, `scope=` | `better-accessibility` | Image, field or table cell lost its programmatic association |
+| `<button>`, `<a>`, `<nav>`, `<main>`, `<ul>` replaced by `div` or `span` | `better-accessibility` | Keyboard and assistive-technology behavior was traded for styling |
+| `:focus-visible`, `:focus`, `outline`, `tabindex` | `better-accessibility` | Keyboard users lost the focus indicator or the element left the tab order |
+| `prefers-reduced-motion` | `better-accessibility` | Motion now ignores the user's system preference |
+| `prefers-contrast` | `better-colors` | Colors now ignore the user's contrast preference |
+| Logical properties swapped for `left` / `right` | `better-layout` | Direction-aware layout was dropped |
+| `lang=`, `dir=` | `better-typography` | Language metadata or text direction was dropped |
+| `text-wrap`, `line-clamp`, `overflow-wrap`, `tabular-nums`, `font-feature-settings` | `better-typography` | Text rendering, wrapping or numeral alignment silently changed |
+| A color token swapped for a literal, or a token swapped for a lighter one | `better-colors` | The rendered contrast pair may now fail; measure it |
+| A user-facing string deleted or shortened | `better-writing` | A label, error or empty state lost the information it carried |
 
 ## Equivalent replacements
 
@@ -35,7 +35,7 @@ Restrict the search to deleted lines so additions do not mask a removal. Pass th
 ```bash
 git diff -U0 "$BASE" <head-ref> -- . <exclusions> \
   | grep -E '^-' | grep -vE '^--- (a/|/dev/null)' \
-  | grep -E 'aria-|role=|alt=|htmlFor|for=|scope=|focus|outline|tabindex|prefers-|lang=|dir=|text-wrap|line-clamp|overflow-wrap|tabular-nums|font-feature|inset-|-inline|-block'
+  | grep -E 'aria-|role=|alt=|htmlFor|for=|scope=|focus|outline|tabindex|prefers-|lang=|dir=|text-wrap|line-clamp|overflow-wrap|tabular-nums|font-feature|inset-|-inline|-block|<label|<button|<a[ >]|<nav|<main|<ul|motion-safe|motion-reduce'
 ```
 
 Leave `<head-ref>` off for a target that includes uncommitted work, so the diff runs against the working tree. Removed strings and swapped color tokens have no pattern; read those hunks.

@@ -73,13 +73,11 @@ Start the icon side at `2px` less padding than the text side, then judge by eye.
 
 ### Play button triangles
 
-A triangle's geometric center sits left of its visual center, so shift it toward its point:
+A triangle centered by its bounding box looks pushed toward its flat side, so shift it toward its point:
 
 ```css
 .play-button svg {
-  transform: translateX(
-    2px
-  ); /* physical on purpose: playback icons never mirror */
+  transform: translateX(2px); /* physical on purpose: playback icons never mirror */
 }
 ```
 
@@ -102,10 +100,12 @@ Three layers. The first acts as a 1px ring, the second adds lift and the third a
 ```css
 :root {
   --shadow-border:
-    0px 0px 0px 1px oklch(0 0 0 / 0.06), 0px 1px 2px -1px oklch(0 0 0 / 0.06),
+    0px 0px 0px 1px oklch(0 0 0 / 0.06),
+    0px 1px 2px -1px oklch(0 0 0 / 0.06),
     0px 2px 4px 0px oklch(0 0 0 / 0.04);
   --shadow-border-hover:
-    0px 0px 0px 1px oklch(0 0 0 / 0.08), 0px 1px 2px -1px oklch(0 0 0 / 0.08),
+    0px 0px 0px 1px oklch(0 0 0 / 0.08),
+    0px 1px 2px -1px oklch(0 0 0 / 0.08),
     0px 2px 4px 0px oklch(0 0 0 / 0.06);
 }
 ```
