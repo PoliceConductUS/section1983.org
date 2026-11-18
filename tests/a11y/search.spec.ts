@@ -1,5 +1,25 @@
 import { expect, test } from "./pages";
 
+test("a typed search survives reload and returning from a result", async ({
+  page,
+}) => {
+  await page.goto("/search/?source=test#search-results");
+  await page.locator("#search-input").fill("tased");
+  await expect(page.locator("#search-results a").first()).toBeVisible();
+  await expect(page).toHaveURL(/source=test&q=tased#search-results$/);
+
+  await page.reload();
+  await expect(page.locator("#search-input")).toHaveValue("tased");
+  await page.locator("#search-results a").first().click();
+  await page.goBack();
+  await expect(page.locator("#search-input")).toHaveValue("tased");
+  await expect(page.locator("#search-results a").first()).toBeVisible();
+
+  await page.locator("#search-input").fill("");
+  await expect(page).toHaveURL(/\/search\/\?source=test#search-results$/);
+  await expect(page.locator("#search-results a")).toHaveCount(0);
+});
+
 test("typing during the initial search uses one index request and the latest query", async ({
   page,
 }) => {

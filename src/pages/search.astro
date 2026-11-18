@@ -166,6 +166,10 @@ const structuredData = {
 
     let debounce;
     input.addEventListener("input", () => {
+      const url = new URL(window.location.href);
+      if (input.value.trim()) url.searchParams.set("q", input.value);
+      else url.searchParams.delete("q");
+      history.replaceState(null, "", url);
       clearTimeout(debounce);
       debounce = setTimeout(updateResults, 150);
     });
