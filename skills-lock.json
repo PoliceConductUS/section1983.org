@@ -92,6 +92,62 @@
       "skillPath": "skills/dispatching-parallel-agents/SKILL.md",
       "computedHash": "d799e464fdfb0edc80b3b7ad7cce03e64ee07fc5db231c988688a81438503659"
     },
+    "egm-bootstrap": {
+      "source": "google/elephant-goldfish-model",
+      "commit": "70406c4d22cc7ea8299637c2c5b44625c48b3f08",
+      "sourceType": "github",
+      "skillPath": "skills/egm-bootstrap/SKILL.md",
+      "computedHash": "1a82412f5d0ff047b04214ef2b03db78178c6a4ea4dff10c5df3a9f81d3617cc"
+    },
+    "egm-brainstorm": {
+      "source": "google/elephant-goldfish-model",
+      "commit": "70406c4d22cc7ea8299637c2c5b44625c48b3f08",
+      "sourceType": "github",
+      "skillPath": "skills/egm-brainstorm/SKILL.md",
+      "computedHash": "fe81f6ae1ebcb38dc01a75628d077237be158dc886fb9c461bcd0328fe5b8133"
+    },
+    "egm-draft": {
+      "source": "google/elephant-goldfish-model",
+      "commit": "70406c4d22cc7ea8299637c2c5b44625c48b3f08",
+      "sourceType": "github",
+      "skillPath": "skills/egm-draft/SKILL.md",
+      "computedHash": "3ed3216f24ba0efd6405f611ca1006236be27cec30c2cf45e1ecf2b3b3bbceac"
+    },
+    "egm-drift-report": {
+      "source": "google/elephant-goldfish-model",
+      "commit": "70406c4d22cc7ea8299637c2c5b44625c48b3f08",
+      "sourceType": "github",
+      "skillPath": "skills/egm-drift-report/SKILL.md",
+      "computedHash": "bfd4486d437704941cb6b5957de03f3ed1ab4c76d6d2eb48436382ed811cbd18"
+    },
+    "egm-lite": {
+      "source": "google/elephant-goldfish-model",
+      "commit": "70406c4d22cc7ea8299637c2c5b44625c48b3f08",
+      "sourceType": "github",
+      "skillPath": "skills/egm-lite/SKILL.md",
+      "computedHash": "7db787428b17d44cff998467940f790aeca42f0aff43388b27b3199aaae0b000"
+    },
+    "egm-resolve": {
+      "source": "google/elephant-goldfish-model",
+      "commit": "70406c4d22cc7ea8299637c2c5b44625c48b3f08",
+      "sourceType": "github",
+      "skillPath": "skills/egm-resolve/SKILL.md",
+      "computedHash": "370621e7942f608b2bd30a717f74484970cd61cace0f57245721f391db08b6e2"
+    },
+    "egm-review": {
+      "source": "google/elephant-goldfish-model",
+      "commit": "70406c4d22cc7ea8299637c2c5b44625c48b3f08",
+      "sourceType": "github",
+      "skillPath": "skills/egm-review/SKILL.md",
+      "computedHash": "cc645bdfd3a17d2723bb0a83e5cc97d14de1c013af53d160d353abe77b7b9111"
+    },
+    "egm-review-loop": {
+      "source": "google/elephant-goldfish-model",
+      "commit": "70406c4d22cc7ea8299637c2c5b44625c48b3f08",
+      "sourceType": "github",
+      "skillPath": "skills/egm-review-loop/SKILL.md",
+      "computedHash": "adf093987b616ef849517980180a0a1dcc1f9276ae3ff295874faa78ecf77ecf"
+    },
     "executing-plans": {
       "source": "obra/superpowers",
       "commit": "22f0b463e7a5e579904dd6211a520321035526f7",

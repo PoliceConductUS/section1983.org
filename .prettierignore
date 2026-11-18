@@ -6,4 +6,5 @@ public/diagrams/
 
 # Imported skills and bridge templates retain upstream formatting.
 .agents/skills/
+.agents/egm/
 openspec/schemas/superpowers-bridge/
