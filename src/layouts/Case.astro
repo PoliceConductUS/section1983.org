@@ -52,6 +52,7 @@ const topicLinks = hubLinks.filter((l) => l.kind === "topic");
 const circuitLink = hubLinks.find((l) => l.kind === "circuit");
 
 const formattedDate = dateDecided.toLocaleDateString("en-US", {
+  timeZone: "UTC",
   year: "numeric",
   month: "long",
   day: "numeric",
