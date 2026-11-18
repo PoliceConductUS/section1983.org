@@ -1,0 +1,49 @@
+---
+import Base from "../../layouts/Base.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+
+const title = "MacCloskey v. City of Dallas: Summary Withdrawn";
+const canonicalUrl =
+  "https://www.section1983.org/cases/maccloskey-v-city-of-dallas/";
+const crumbs = [
+  { label: "Home", href: "/" },
+  { label: "Case Law Library", href: "/cases/" },
+  { label: "Summary correction" },
+];
+---
+
+<Base
+  title={title}
+  description="The previous case summary was withdrawn after its docket number was found to identify a different proceeding."
+  canonicalUrl={canonicalUrl}
+>
+  <Breadcrumbs crumbs={crumbs} />
+  <article class="prose prose-slate max-w-none">
+    <h1 class="text-3xl font-bold text-navy mb-6">{title}</h1>
+    <p>
+      The previous summary has been withdrawn. Its docket number, 3:19-CV-02063,
+      identifies a different proceeding in the Northern District of Texas. The{" "}
+      <a href="https://www.govinfo.gov/content/pkg/USCOURTS-txnd-3_19-cv-02063/pdf/USCOURTS-txnd-3_19-cv-02063-2.pdf">
+        official court order
+      </a>{" "}
+      confirms the mismatch.
+    </p>
+    <p>
+      We have been unable to verify an opinion matching the caption, decision
+      date, facts, and holding previously presented here. Treat the former
+      summary as unsupported and remove it from any research notes or draft that
+      relies on it as authority.
+    </p>
+    <p>
+      For the municipal-liability issue the former page discussed, start with{" "}
+      <a href="/cases/monell-v-dep-t-of-soc-servs/">
+        Monell v. Department of Social Services
+      </a>{" "}
+      and the{" "}
+      <a href="/articles/monell-what-a-monell-claim-is-and-how-to-plead-it/">
+        guide to pleading a Monell claim
+      </a>
+      .
+    </p>
+  </article>
+</Base>

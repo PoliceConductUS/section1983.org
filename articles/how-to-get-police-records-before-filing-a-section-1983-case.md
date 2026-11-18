@@ -1,6 +1,6 @@
 ---
 title: "How to Get Police Records Before Filing a § 1983 Case"
-description: "Use FOIA and state open-records laws to get body-camera footage, reports, policies, and complaint data before filing a Section 1983 lawsuit."
+description: "Find the right records law, request police evidence, challenge withholding, and preserve records while tracking your civil-rights filing deadline."
 pubDate: 2026-02-05
 author: "Institute for Police Conduct, Inc."
 tags:
@@ -8,235 +8,158 @@ tags:
 draft: false
 ---
 
-You need records. Body camera footage. Arrest data. Use-of-force reports. Complaint histories. Department policies. The documents that will turn your [complaint](/articles/how-to-write-a-section-1983-complaint) from conclusory allegations into the kind of specific, sourced factual claims that survive [_Iqbal_](/cases/ashcroft-v-iqbal). They are also what let you plead a real [Monell claim](/terms-and-concepts/monell-liability) instead of a boilerplate one. If that is your goal, read this together with [Monell: What a Monell Claim Is and How to Plead It](/articles/monell-what-a-monell-claim-is-and-how-to-plead-it).
+Police records can help you reconstruct what happened and write a [complaint](/articles/how-to-write-a-section-1983-complaint) with specific facts. Start with the records closest to the incident: body-camera footage, dispatch audio, reports, and the policies in effect that day.
 
-The good news: these records are legally public in most states. The bad news: the agencies that hold them don't want you to have them — and they have a playbook for making sure you don't. If you are still in the pre-filing stage, this article should be read before [how to stress-test a § 1983 case before filing](/articles/how-to-stress-test-your-case-before-filing), because the records you obtain are what let you test your story against the paper trail. They are also what let you draft better examples of the facts section, like the one in the [sample Section 1983 complaint for a false arrest case](/articles/sample-section-1983-complaint-for-a-false-arrest-case).
+The law that governs your request depends on who holds the records. Federal Freedom of Information Act (FOIA) requests go to federal agencies. For a city police department, county sheriff, or state agency, use the applicable state records law. Disclosure rules, fees, and review procedures differ. [FOIA.gov explains this federal/state boundary](https://www.foia.gov/faq.html).
 
-This guide covers how to get police records strategically, what agencies do to block you, and what your options are when they refuse.
+This guide helps you request evidence before filing. Track your civil-rights [filing deadline](/terms-and-concepts/statute-of-limitations) separately while requests and appeals are pending.
 
-## The strategic problem: get records without tipping your hand
+## What you should be able to do
 
-Here's the tension most people miss. You need records _before_ you file your § 1983 lawsuit because the records make the lawsuit stronger. But the records request itself can alert the agency that litigation is coming — giving them time to prepare, circle wagons, coordinate stories, and in some cases, destroy or "lose" evidence.
+After reading, you should be able to:
 
-You need to get the records without telegraphing the lawsuit.
+- Identify the agency, records law, and records needed to test your account.
+- Evaluate a fee estimate or withholding explanation and choose the next review step.
+- Preserve evidence and organize a request history without losing track of your filing deadline.
 
-### What tips your hand
+## Choose the records and the agency
 
-- **Mentioning an attorney.** Don't reference legal representation in your request. You're a citizen requesting public records. That's it.
-- **Requesting records for "litigation purposes."** Some state laws ask why you want the records. In most states, you don't have to explain. If your state requires a stated purpose, use something neutral: "personal records," "public accountability," or "journalism." Check your state's law — some (like Texas) explicitly say you don't need to state a purpose.
-- **Requesting only records about yourself.** A request for "all records related to [your name]" screams pre-litigation. Instead, request by date, location, or incident number. "All body-worn camera footage from officers responding to [address] on [date] between [times]" doesn't identify you as the subject.
-- **Requesting everything at once.** One massive, highly specific request draws attention. Multiple smaller requests spread over time look like routine public interest.
-- **Sending the request from a lawyer's office.** If you have an attorney, have them advise you on what to request — but send the request yourself, from your personal email.
+Turn each factual question into a request for an existing record. For example, to check when an officer arrived, request dispatch event logs and recordings for the incident. To compare the officer's account with what happened, request the report and footage from each responding officer.
 
-### What doesn't tip your hand
+| Question you need to answer                  | Records to look for                                                                          |
+| -------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Who responded, and when?                     | Dispatch audio, computer-aided dispatch (CAD) event logs, unit assignments                   |
+| What happened during the encounter?          | Body-camera and dash-camera footage, incident reports, photographs                           |
+| What happened after arrest?                  | Booking logs, custody records, medical requests, release records                             |
+| What did the agency instruct officers to do? | Policies and training materials in effect on the incident date                               |
+| Was the problem recurring?                   | Existing complaint, discipline, investigation, and use-of-force records for a defined period |
 
-- **Requesting department-wide statistical data.** "All use-of-force reports filed in 2023" doesn't single you out. Neither does "arrest data by officer for the past three years." This looks like a journalist or researcher request. Agencies process these regularly.
-- **Requesting policies.** "Current use-of-force policy" is a routine request. It tells the agency nothing about your intentions.
-- **Using your state's online portal.** Many agencies have online request forms. They're processed by clerks, not the officers involved in your incident. The request is less likely to be flagged.
-- **Spacing requests out.** The BWC footage request this week. The statistical data request next week. The complaint history request the week after. No single request reveals the full picture.
+A police department, jail, dispatch center, and prosecutor may hold different records from the same event. Check each agency's records page for its submission method and custodian. Save a copy of the instructions you used.
 
-### The timing calculation
+For a [Monell claim](/terms-and-concepts/monell-liability), which seeks to hold a city or county responsible for its own policy or practice, connect the broader records to a specific theory. Read [how to plead a Monell claim](/articles/monell-what-a-monell-claim-is-and-how-to-plead-it) before requesting years of unrelated material.
 
-You want to balance two competing concerns:
+## Write a request the agency can search
 
-1. **Get records before they know you're coming.** Once litigation is anticipated, agencies may invoke exemptions more aggressively, slow-walk responses, or (in bad-faith cases) alter or destroy records.
-2. **Don't wait so long that the [statute of limitations](/terms-and-concepts/statute-of-limitations) becomes a problem.** If you're spending 6 months on records requests and your SOL is 2 years, you've used a quarter of your time.
+Include the date, location, incident number if known, record types, and a useful time range. Ask for electronic copies in an available format. Include enough identifying information to locate the incident; agencies may require identity verification for access to certain personal records.
 
-A reasonable timeline: start records requests within 2–4 weeks of the incident. Pursue them aggressively for 2–3 months. File suit when you have enough to write a strong complaint — or when the SOL forces your hand.
+For example:
 
-## What police public-records requests usually cost
+> Please provide the body-camera recordings, incident report, and CAD event log for officers responding to [location] on [date] between [times], incident number [number, if known]. Please provide electronic copies and identify the legal basis for any withholding or redaction.
 
-Most records requests are cheap. Some are deliberately expensive. Agencies sometimes use cost as a weapon to discourage requests they'd rather not fulfill.
+Request existing records or data rather than asking the records office to investigate your claim. Under federal FOIA, agencies generally have no duty to create a new record or answer research questions. [FOIA.gov describes how to make a request](https://www.foia.gov/faq.html).
 
-### Typical costs
+Keep your description factual. If a form asks for a purpose, check whether the law requires it and answer truthfully. For example, Texas generally limits inquiries about why you want records under [Government Code § 552.222](https://statutes.capitol.texas.gov/docs/GV/pdf/GV.552.pdf). A fee-waiver request or a request for specially protected records may require additional information.
 
-| Record type                 | Typical cost      | Notes                                        |
-| --------------------------- | ----------------- | -------------------------------------------- |
-| Incident/arrest reports     | Free – $0.25/page | Many agencies provide digital copies free    |
-| Body camera footage         | Free – $25        | Some agencies charge for media/duplication   |
-| Department policies         | Free              | Often already on the agency's website        |
-| Dispatch/CAD logs           | Free – $5         | Usually just a printout                      |
-| Statistical/aggregate data  | Free – $50        | May involve search time charges              |
-| Personnel/complaint records | $0 – $200+        | Agencies often charge maximum allowable fees |
-| Large data sets (3+ years)  | $50 – $500+       | Search time + duplication fees               |
+## Preserve evidence and track deadlines from the start
 
-### When cost becomes a weapon
+Send requests promptly. Footage and electronic logs may be subject to retention schedules, so seek preservation while you pursue access. A preservation request asks the custodian to retain evidence; a public-records request asks the agency to disclose it. Keep a record of both.
 
-Some agencies will quote you hundreds or thousands of dollars for records they don't want to produce. Common tactics:
+A preservation letter should identify the incident, the anticipated dispute, and the specific footage, audio, logs, reports, and communications to retain. Send it to the appropriate custodian and agency legal office using a method that gives you proof of delivery. Ask for confirmation and keep the response.
 
-- **Inflated search time estimates.** "This request will require 40 hours of staff time at $35/hour." Often wildly exaggerated. Challenge the estimate and ask for an itemized breakdown of how they calculated it.
-- **Charging for review time.** Some states allow agencies to charge for time spent reviewing records for exempt material. Others don't. Know your state's law. Under federal FOIA, review time is only chargeable to commercial requesters.
-- **Refusing to provide electronic copies.** Paper copies at $0.25/page for a 500-page production is $125. The same records as a PDF email attachment is free. If your state law allows electronic delivery (most do), insist on it.
-- **Requiring prepayment.** Legitimate for large requests, but sometimes used to stall. Pay it if the records are important. Fight it if the estimate is inflated.
+The letter can help establish notice. A later [spoliation](/terms-and-concepts/spoliation) dispute—whether evidence was lost in breach of a preservation duty—requires additional proof. For electronic evidence, Federal Rule of Civil Procedure 37(e) addresses the duty to preserve, reasonable preservation steps, loss, and whether the information can be restored or replaced. The most severe measures, including an instruction that the jury may infer the evidence was unfavorable, require intent to deprive another party of its use. [Read Rule 37(e)](https://www.uscourts.gov/forms-rules/current-rules-practice-procedure/federal-rules-civil-procedure).
 
-### Fee waivers
+Record your civil-rights filing deadline, records-response deadlines, and appeal deadlines separately. Assume the civil-rights deadline keeps running unless you have identified a rule that pauses it in your circumstances. Use the [state filing-period guide](/statute-of-limitations/) as a starting point and verify the rule that applies to your claim.
 
-Both federal FOIA and many state laws allow fee waivers when disclosure serves the public interest. The standard varies, but common qualifying factors include:
+## Check costs before authorizing the work
 
-- The records concern government operations or activities
-- Disclosure will contribute to public understanding
-- You're not requesting for commercial purposes
-- You have the ability and intention to disseminate the information
+Ask for the agency's fee schedule and an itemized estimate. Check which charges the governing law permits: search time, review time, copying, media, or delivery. Electronic delivery may reduce copying costs while leaving other lawful charges in place.
 
-If you plan to share findings publicly — through a website, social media, community organization, or news outlet — say so in your fee waiver request. You don't need to be a professional journalist.
+If the estimate is too high, ask which part of the request creates the expense. A narrower date range or a specific record type may reduce the cost. You can set a spending limit and ask the agency to contact you before exceeding it. Check any deadline for accepting an estimate or paying a required deposit.
 
-## How police agencies fight public-records requests
+Federal FOIA fee categories depend on the requester and intended use. Commercial-use requesters may be charged search, review, and duplication fees; other categories receive different treatment. A public-interest fee waiver requires an explanation of how disclosure would significantly inform the public about government activity and why the request is not primarily commercial. A personal need for the records or inability to pay, by itself, does not satisfy that standard. [DOJ's reference guide explains federal fees and waivers](https://www.justice.gov/oip/department-justice-freedom-information-act-reference-guide).
 
-### Tactic 1: Ignore the request
+For state requests, check the state statute and the agency's authorized fee schedule before relying on federal rules.
 
-The most common response to a records request is no response at all. The agency simply doesn't reply, hoping you'll go away.
+## What the agency may say, and what to check
 
-**What to do:**
+An **exemption** is a legal ground for withholding a record or part of it. Ask the agency to identify the provision it relies on and explain how it applies to the requested material.
 
-1. Send a follow-up referencing the statutory deadline: "My request dated [date] is now past the [X]-business-day response deadline under [state code section]. I request an immediate response."
-2. CC a supervisor or the agency's legal department.
-3. If still no response, file an administrative complaint with the oversight body (attorney general, records ombudsman, or open records commission, depending on your state).
-4. Document every communication and non-response. This record becomes evidence of obstruction if you later file a [FOIA lawsuit](#when-you-have-to-sue-for-the-records).
+### An investigation is pending
 
-### Tactic 2: Claim a records exemption
+Ask which exemption applies and what connection the records have to the proceeding. Under federal FOIA Exemption 7(A), the question is whether disclosure could reasonably be expected to interfere with enforcement proceedings. Other protections, including privacy and confidential-source exemptions, can remain relevant after a proceeding ends. [DOJ explains the separate law-enforcement exemptions](https://www.justice.gov/oip/foia-guide/exemption_7/dl).
 
-Every open records law has exemptions — categories of records that agencies can withhold. The most commonly invoked exemptions in police records requests:
+A dismissed charge may help you challenge a particular rationale. Compare that fact with the actual exemption and any remaining proceeding rather than treating dismissal as a guarantee of release.
 
-**"Ongoing investigation"** — The agency claims the records are part of an active investigation and therefore exempt.
+### Privacy, personnel, or confidential information is involved
 
-- **Challenge it:** In most states, this exemption is limited to records that would _genuinely interfere_ with an ongoing investigation. If your case was dismissed, charges were dropped, or the investigation is clearly closed, this exemption doesn't apply. Ask for the specific statutory provision they're relying on and whether the investigation is still active.
+Look for the exact state or federal rule covering the record. Footage can contain medical information, minors, witnesses, or private locations. Complaint and discipline records may have their own disclosure rules.
 
-**"Personnel records"** — The agency claims complaint histories, disciplinary records, or training records are exempt personnel files.
+Ask whether the agency can release portions after removing protected information. Under federal FOIA, reasonably segregable nonexempt material must be released; that means material that can be separated from what the law protects. [See 5 U.S.C. § 552(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title5/pdf/USCODE-2024-title5-partI-chap5-subchapII-sec552.pdf).
 
-- **Challenge it:** This exemption varies enormously by state. Some states (like California, after SB 1421) have opened significant categories of police personnel records. Others remain more restrictive. Even in restrictive states, _aggregate_ data (number of complaints, outcomes by category) is often not exempt even if individual complaint files are. Request the non-exempt portions separately.
+### The agency claims attorney-client privilege
 
-**"Law enforcement sensitive"** — A catch-all claim that releasing the records would compromise law enforcement operations.
+Ask what communication or material is protected and why. An existing factual record and a confidential request for legal advice can require different analysis. The agency's lawyer being involved in the dispute does not resolve whether a particular record is privileged.
 
-- **Challenge it:** This exemption is supposed to apply to things like undercover officer identities, confidential informant information, and active surveillance techniques. It doesn't apply to body camera footage of a completed arrest, publicly available arrest data, or department policies that are already distributed to every officer. Push back with specificity.
+### The agency produces heavily redacted records
 
-**"Privacy"** — The agency claims the records contain personal information about officers or third parties.
+Save the production exactly as received and make a separate list of disputed redactions. Identify the page or timestamp, the exemption claimed, and the reason you think it was applied incorrectly.
 
-- **Challenge it:** In most states, officers performing their duties in public have limited privacy expectations in those records. Bodycam footage of a public arrest is not private. Redaction of genuinely private information (Social Security numbers, home addresses) is appropriate — but redaction should be targeted, not used as an excuse to withhold the entire document.
+In federal FOIA litigation, an agency may justify withholding through a **Vaughn index**, a record-by-record or category-based explanation, and supporting declarations. A requester has no automatic right to that litigation index during the administrative request or appeal. [DOJ's litigation guide explains the distinction](https://www.justice.gov/oip/media/1341066/dl?inline=).
 
-**"Attorney-client privilege"** — The agency's lawyer claims the records are privileged communications.
+### The response is delayed or says no records were found
 
-- **Challenge it:** This applies to communications _between the agency and its attorney_ for legal advice. It doesn't apply to incident reports, BWC footage, arrest data, or department policies — none of which were created for the purpose of seeking legal advice. If an agency claims privilege over a factual report, they're misusing the exemption.
+Save the acknowledgment and tracking number. Check whether the applicable deadline concerns an acknowledgment, a determination, or production. Federal FOIA ordinarily provides 20 working days for a determination, subject to statutory provisions affecting that period; that is different from a promise to deliver every record within 20 days. [DOJ explains request timing](https://www.justice.gov/oip/department-justice-freedom-information-act-reference-guide).
 
-### Tactic 3: Over-redact the records
-
-The agency produces records but blacks out large portions — sometimes entire pages.
-
-**What to do:**
-
-1. Request a [Vaughn index](https://www.rcfp.org/resources/foia-101/) — a document-by-document list of what was redacted and the specific exemption claimed for each redaction. Under federal FOIA, agencies are required to provide this on appeal. Some states have similar requirements.
-2. Challenge overbroad redactions. If the agency redacted an officer's name from a use-of-force report, but the officer's name is already on the publicly filed arrest report, the redaction is indefensible.
-3. Appeal each improper redaction specifically, citing the exact redaction and why the claimed exemption doesn't apply.
-
-### Tactic 4: Slow-walk the production
-
-The agency acknowledges your request but takes weeks or months to produce records, sending extension notices and "processing" updates indefinitely.
-
-**What to do:**
-
-1. Note the statutory deadline in every follow-up.
-2. Narrow your request if the agency claims the scope is the problem. Sometimes this is legitimate — "all records related to Officer Smith" is genuinely broad. But if you requested one specific BWC video and they're claiming it takes 3 months, that's obstruction.
-3. File an administrative appeal after the statutory deadline passes.
-4. Document the delay timeline. If you eventually sue, the court will want to see that you gave the agency a reasonable opportunity to comply.
-
-### Tactic 5: Refer the dispute to the attorney general
-
-In some states, agencies can (or must) consult the state attorney general before releasing certain records. This adds weeks or months of delay and often results in a formal AG opinion that the agency then uses to justify denial.
-
-**What to do:**
-
-1. Track the referral. Ask for the date it was referred and the AG's expected response timeline.
-2. Research prior AG opinions in your state on similar records. If the AG has previously ruled that similar records are public, cite that opinion in your correspondence.
-3. If the AG sides with the agency, you still have the option to [file suit](#when-you-have-to-sue-for-the-records). AG opinions are advisory in most states — a court can disagree.
-
-### Tactic 6: Claim there are no responsive records
-
-The agency claims no records exist that match your request — even when you know they do.
-
-**What to do:**
-
-1. Be specific about why you believe records exist. "I was arrested on [date] at [location]. An arrest generates an arrest report. Body camera policy requires activation during arrests. I am requesting those records."
-2. Reference the agency's own policies. If their BWC policy requires recording during arrests, and they claim no BWC footage exists, ask them to explain the discrepancy.
-3. File a preservation demand. If you suspect records may have been destroyed, send a written demand to preserve all records related to the incident. Use the word "litigation hold" — it triggers legal obligations, and destruction after a preservation demand is [spoliation](/terms-and-concepts/spoliation).
+For a no-records response, identify a concrete reason to question the search: another report references a recording, a dispatch log lists another unit, or the request went to an office that may lack custody. Ask which locations or systems were searched and request any applicable retention policy or existing deletion record. A recording policy shows what should have happened; it does not by itself prove a recording was made or retained.
 
 ## How to appeal a denied records request
 
-Almost every records denial can be appealed. The process varies by state:
-
-**Administrative appeal:** Most states have a first-level appeal — either to a supervisor within the agency, to a state records ombudsman, or to the attorney general. This is usually free and relatively fast (10–30 days for a decision).
-
-**What to include in your appeal:**
-
-1. The original request (attach it)
-2. The agency's response or non-response
-3. The specific statutory provision that makes the records public
-4. Why each claimed exemption doesn't apply
-5. Any evidence that the records exist (references in other public documents, the agency's own policies)
-
-**Be specific, not angry.** Appeals are decided by people reading paper. A clear, specific legal argument gets better results than an emotional complaint about government transparency. Cite the statute. Cite prior decisions. Explain exactly why the exemption doesn't apply to these specific records.
-
-## When you have to sue for the records
-
-Sometimes agencies simply refuse. They ignore appeals, invoke bogus exemptions, and wait for you to give up. Most people do give up. That's the strategy.
-
-If your administrative remedies are exhausted and the records are important to your case, you can file a lawsuit to compel disclosure. This is separate from your § 1983 case — it's an action under your state's open records law (or federal FOIA for federal agencies).
-
-### Is suing for records worth it?
-
-**Arguments for suing:**
-
-- The records may be critical to your § 1983 complaint's survival at [motion to dismiss](/process/rule-12-motions)
-- Many state open records laws award [attorney's fees](/terms-and-concepts/attorneys-fees) to successful requesters — meaning if you win, the agency pays your costs
-- A court order to produce creates a record of the agency's obstruction, which may be relevant to your § 1983 case (pattern of concealment, [deliberate indifference](/terms-and-concepts/deliberate-indifference) to transparency)
-- Winning establishes precedent that helps future requesters
-
-**Arguments against:**
-
-- It takes time — months to over a year, depending on the court
-- It costs money if you hire an attorney (though fee-shifting may make this viable on contingency)
-- It delays your § 1983 filing while the SOL clock runs
-- The records may not contain what you hope
-
-### Filing the open-records case pro se
-
-You can file an open records lawsuit [pro se](/terms-and-concepts/pro-se). These cases are simpler than § 1983 litigation — the question is binary: are the records public under the statute, or aren't they? You don't need to prove constitutional violations or navigate [qualified immunity](/terms-and-concepts/qualified-immunity). You need to show you made a valid request, it was denied, and the denial was improper.
-
-Many courts handle these on expedited schedules, and some states have specific courts or procedures for open records disputes.
-
-### Ask for in camera review
-
-If you sue and the agency claims an exemption, you can ask the court to review the disputed records _in camera_ — meaning the judge looks at the actual records privately to determine whether the exemption applies. This is powerful because it prevents the agency from hiding behind vague claims. The judge sees what they're withholding and decides whether the exemption is legitimate.
-
-## Preservation: protect evidence you might never receive
-
-Even before you receive records — and especially if you suspect they might be destroyed — send a written preservation demand to the agency. Address it to the chief of police, the city attorney, and the records custodian.
+Read the denial notice and governing procedure. Identify who reviews the decision, what deadline applies, and how to submit the appeal. State systems differ: some use an agency appeal, an attorney general, a commission, an ombudsman, or a court procedure.
 
 Include:
 
-- The incident date, location, and any identifying information
-- A specific list of records to be preserved (BWC footage, dispatch audio, CAD logs, reports, communications)
-- A statement that you anticipate litigation and that destruction of responsive records would constitute [spoliation](/terms-and-concepts/spoliation)
-- A request for written confirmation of the preservation hold
+1. Your request, proof of submission, and tracking number.
+2. The agency's response and the records or redactions you dispute.
+3. The legal provision and facts supporting your challenge.
+4. The specific result you seek, such as a further search or release of separable portions.
 
-Send it by certified mail, return receipt requested. Keep the receipt. This creates a dated, provable record that the agency was on notice to preserve evidence. If records later "disappear," you have the foundation for a spoliation argument — which can result in adverse inference instructions at trial (the jury is told they can assume the destroyed evidence was unfavorable to the agency).
+For federal FOIA, the [Office of Government Information Services](https://www.archives.gov/ogis/mediation-program/request-assistance) can help resolve disputes. Its assistance supplements the administrative appeal process. Keep the appeal deadline on your calendar: [contacting OGIS does not stop that clock](https://www.archives.gov/ogis/advisory-opinions/2018-01-agency-comms-with-requesters).
 
-## State-by-state public-records resources
+## When you have to sue for the records
 
-Open records laws vary significantly. The best free resource is the **[Reporters Committee for Freedom of the Press Open Government Guide](https://www.rcfp.org/open-government-guide/)** — a state-by-state breakdown of public records laws, exemptions, procedures, fees, and enforcement mechanisms.
+A disclosure lawsuit asks a court to enforce the applicable records law. It is separate from a § 1983 claim for a constitutional violation. Before filing, check the required request and appeal steps, the proper defendant and court, and any filing deadline.
 
-For federal FOIA specifically, the **[Office of Government Information Services (OGIS)](https://www.archives.gov/ogis)** serves as a FOIA ombudsman and can mediate disputes between requesters and federal agencies.
+The judge may need to decide whether the agency searched adequately, whether exemptions cover the withheld material, and whether additional portions can be released. The agency will defend its search and exemption explanations. Your request history and specific objections give the judge something concrete to evaluate.
 
-## Key takeaways on getting police records before filing
+Federal FOIA permits a court to examine disputed records privately, called **in camera review**, and authorizes certain fee and cost awards when the statutory conditions are met. The court decides whether those measures are appropriate. A fee-shifting provision is not a promise of free litigation or recovery of the value of your own work as a [pro se](/terms-and-concepts/pro-se) requester. [See 5 U.S.C. § 552(a)(4)(B), (E)](https://www.govinfo.gov/content/pkg/USCODE-2024-title5/pdf/USCODE-2024-title5-partI-chap5-subchapII-sec552.pdf).
 
-1. **Request early, request smart.** Get records before the agency knows litigation is coming.
-2. **Don't tip your hand.** Request by date/location, not by your name. Space out requests. Don't mention attorneys or lawsuits.
-3. **Expect resistance.** Agencies have a playbook for denying requests. Know the playbook and have a response for each tactic.
-4. **Appeal everything.** Initial denials are often wrong. The appeals process exists because agencies over-withhold.
-5. **Document everything.** Every request, every response, every delay, every denial. This record has value beyond the records themselves.
-6. **Be willing to sue.** Sometimes it's the only way. Fee-shifting provisions mean it may cost you nothing if you win.
-7. **Preserve evidence.** Send a litigation hold letter early. Make it provable. If records disappear after your demand, that's powerful evidence.
+Weigh the records' likely value against the cost and time of this separate case. Continue tracking the civil-rights filing deadline while pursuing disclosure.
 
-The agencies that violated your rights are the same agencies holding the evidence of those violations. They know what's in those files. Getting access requires persistence, strategy, and sometimes a court order — but the records you obtain will be the foundation of everything that comes next.
+## Check your understanding
 
----
+### 1. Which law and office should you start with?
 
-_Ready to organize what you've gathered? Read [Organizing Your War Room](/process/organizing-your-war-room) for the folder structure and strategy documents that will keep your case manageable. Then move to [how to write a § 1983 complaint](/articles/how-to-write-a-section-1983-complaint) and the full [process overview](/process) to see where the records fit in the bigger litigation timeline._
+You need footage from a city officer and booking logs from a county jail. Would a federal FOIA request to the FBI normally obtain those local agencies' records?
+
+<details>
+<summary>Check your answer</summary>
+
+Start with the city and county custodians under the applicable state records law. Identify who holds each record and follow that office's submission requirements.
+
+</details>
+
+### 2. What would help the judge evaluate a denial?
+
+Your charge was dismissed, but the agency withholds the entire file under a law-enforcement exemption. What should your challenge address?
+
+<details>
+<summary>Check your answer</summary>
+
+Identify the specific exemption, the agency's explanation, and why the dismissal affects that explanation. Also ask whether other exemptions apply and whether nonexempt portions can be released.
+
+</details>
+
+### 3. What should your own tracking sheet contain?
+
+You sent a preservation letter and are waiting for an appeal decision. What dates and documents would help protect the next steps?
+
+<details>
+<summary>Check your answer</summary>
+
+A strong answer would list the request and delivery records, responses, appeal deadline, retention concerns, and the separate civil-rights filing deadline. The preservation letter helps document notice; later sanctions depend on the applicable rule and evidence of loss.
+
+</details>
+
+## What to read next
+
+Use [Organizing Your War Room](/process/organizing-your-war-room) to keep the original records and a request log. Then [stress-test your case](/articles/how-to-stress-test-your-case-before-filing) against what the records show before drafting your [§ 1983 complaint](/articles/how-to-write-a-section-1983-complaint).

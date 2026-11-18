@@ -1,6 +1,6 @@
 ---
 title: "Skyy v. City of Arlington"
-citation: "No. 17-10529 (5th Cir. 2017)"
+citation: "712 F. App'x 396 (5th Cir. 2017)"
 court: "United States Court of Appeals for the Fifth Circuit"
 dateDecided: 2017-11-09
 docketNumber: "17-10529"
@@ -25,36 +25,28 @@ cites:
 citedBy: []
 ---
 
-## What This Case Is About
+## What Happened
 
-Michelle Skyy and Sean Valdez, proceeding [pro se](/terms-and-concepts/pro-se), sued the City of Arlington under [§ 1983](/terms-and-concepts/section-1983) after officers entered their home without a warrant or consent, searched their vehicle, arrested Skyy, and held her in jail without adequate food or medical care. The Fifth Circuit affirmed dismissal because the plaintiffs' claims were based on [respondeat superior](/terms-and-concepts/respondeat-superior)—that city employees violated city policies—rather than on a municipal policy or custom that caused the constitutional violations.
+Michelle Skyy and Sean Valdez sued the City of Arlington after a police response to a domestic dispute. Their complaint alleged unlawful entry and searches, an arrest, and inadequate treatment during detention. The Fifth Circuit described those events as allegations when reviewing dismissal, rather than deciding that each alleged violation occurred.
 
-## The Facts
-
-On April 29, 2015, Skyy and Valdez agreed to divorce. While Skyy was packing to leave, a dispute arose over money on a coffee table and Valdez's AR-15 rifle. Valdez grabbed Skyy's arm when she picked up the rifle. After Valdez took the gun inside, Skyy called police. Officers from the Arlington Police Department responded.
-
-After Valdez left the home and was arrested, officers asked both Skyy and Valdez for permission to enter the home—both refused. Without a warrant or consent, APD officers entered the home and searched it. They left warrants on the coffee table but never showed them to the plaintiffs before entering. The officers also entered Skyy's vehicle without permission and had her Hummer towed.
-
-Skyy was arrested and taken to jail. Despite informing the check-in officer of her medical conditions (Celiac Sprue Disease and Endometriosis) and inability to eat all day, she was never provided food despite two assurances that someone would bring her some. She was kept in a small holding cell for over six hours with no restroom or water, causing severe abdominal pains. She lost six pounds over two days.
+The plaintiffs argued that city employees violated procedures in the city's personnel manual. They sought to hold the city responsible for those employee actions. [Read the opinion, pages 2–4](https://www.ca5.uscourts.gov/Opinions/unpub/17/17-10529.0.pdf).
 
 ## What the Court Decided
 
-The Fifth Circuit affirmed dismissal of all claims. On the [Monell](/terms-and-concepts/monell-liability) claim, the court held that the plaintiffs fundamentally misconstrued the showing necessary to impose [municipal liability](/terms-and-concepts/municipal-liability). Their argument—that the City should be liable because its officers are directed to follow certain procedures and failed to do so—is a textbook respondeat superior theory, which § 1983 prohibits.
+The court affirmed dismissal because the allegations failed to establish the city's own responsibility under [Monell](/cases/monell-v-dep-t-of-soc-servs). Showing that employees broke city rules left the required municipal cause unexplained.
 
-To hold a city liable, a plaintiff must show an official policy or widespread [custom](/terms-and-concepts/custom) that was the [moving force](/terms-and-concepts/moving-force-causation) behind the constitutional violation. Pointing to a single incident involving specific officers, without identifying similar incidents demonstrating a persistent practice, fails to allege a custom. The City's personnel manual requiring employees to obey the law does not itself create municipal liability when individual officers violate it.
+The opinion recognized that liability can arise from a policy, a widespread custom, or a qualifying decision by a final policymaker. It also explained that a policy lawful on its face can still support liability when adopted with the required deliberate indifference. These plaintiffs failed to supply the facts supporting those routes. See opinion pages 5–8.
 
-The court also affirmed dismissal of punitive damages against the City under [City of Newport v. Fact Concerts, Inc.](/cases/city-of-newport-v-fact-concerts-inc), which bars punitive damages against municipalities in § 1983 actions.
+The court also affirmed dismissal of punitive damages against the city under [City of Newport v. Fact Concerts, Inc.](/cases/city-of-newport-v-fact-concerts-inc). The decision is unpublished.
 
-## Why This Case Matters for Your § 1983 Case
+## What the Judge and Defense Will Examine
 
-**You cannot sue a city just because its employees broke the law.** [Monell](/terms-and-concepts/monell-liability) requires more than showing that city employees violated your rights. You must identify a specific municipal policy or widespread custom that caused the violation.
+Identify the municipal policy, practice, or policymaking decision that caused your injury. The defense will argue that the complaint describes employee misconduct without connecting it to the city.
 
-**Personnel manual violations are not enough.** Showing that officers violated the city's own rules does not establish municipal liability. In fact, pointing to a policy that forbids the very conduct you complain of actually undermines your Monell claim—it shows the city's policy was constitutional, and the officers simply didn't follow it.
+A widespread practice contrary to a written rule, or a training failure, may require separate analysis. Compare the written rule with evidence of how the city actually operated, the relevant notice to policymakers, and the connection to your injury.
 
-**Single incidents rarely establish custom.** One bad experience with police officers typically cannot establish the "persistent, widespread practice" required to prove a municipal custom. You generally need evidence of similar incidents occurring repeatedly.
+## How to Use the Decision
 
-**No punitive damages against cities.** Even if you succeed in proving municipal liability, you cannot recover punitive damages from a municipality under § 1983.
+Explain the municipal theory you are pursuing and the facts supporting it. For a custom theory, identify the pattern you allege. For a policymaker-decision theory, identify the decision and the legal basis for treating it as municipal policy.
 
-## Key Takeaway
-
-If city police officers violate your constitutional rights, holding the city itself liable requires much more than showing the officers broke the rules. You must identify a specific city policy that is itself unconstitutional, or a widespread custom of constitutional violations so pervasive that it effectively represents city policy. Arguing that officers failed to follow their own training manual actually helps the city—it shows the policy was fine, and the failure was individual, not institutional.
+[Skyy](/cases/skyy-v-city-of-arlington) shows why an allegation that employees violated a manual can fall short. A claim supported by facts about a contrary custom or a qualifying policymaker decision presents a different municipal-liability question.

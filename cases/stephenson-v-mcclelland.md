@@ -1,52 +1,44 @@
 ---
 title: "Stephenson v. McClelland"
-citation: "No. 3:20-CV-3599-S (N.D. Tex.)"
-court: "United States District Court for the Northern District of Texas"
-dateDecided: 2022-01-01
-docketNumber: "3:20-CV-3599-S"
-holding: "Addressed qualified immunity and pleading standards in a § 1983 excessive force and false arrest case, emphasizing the plaintiff's burden to allege facts sufficient to overcome the qualified immunity defense at the motion to dismiss stage."
+citation: "632 F. App'x 177 (5th Cir. 2015)"
+court: "United States Court of Appeals for the Fifth Circuit"
+dateDecided: 2015-12-04
+docketNumber: "15-20182"
+holding: "The Fifth Circuit affirmed summary judgment on the parents' claims concerning their detention, handcuffing, the shooting of their dog, and municipal liability; their son's claims were outside the appeal."
 officers:
   - name: "Officer Duncan"
   - name: "Sergeant McCray"
   - name: "Chief Charles McClelland"
 tags:
-  - "beaten-by-police"
   - "case-dismissed"
   - "fourth-amendment"
-  - "how-to-plead"
-  - "qi-defeated"
   - "qualified-immunity"
   - "texas"
   - "wrongful-arrest"
-cites:
-  - "ashcroft-v-iqbal"
-  - "bell-atlantic-corp-v-twombly"
-  - "graham-v-connor"
+cites: []
 citedBy: []
 ---
 
-## What This Case Is About
+## What Happened
 
-This [§ 1983](/terms-and-concepts/section-1983) case addressed the [pleading standards](/terms-and-concepts/plausibility-pleading) a plaintiff must meet to overcome a [qualified immunity](/terms-and-concepts/qualified-immunity) defense at the [motion to dismiss](/terms-and-concepts/motion-to-dismiss) stage. The court examined whether the plaintiff's allegations of [excessive force](/terms-and-concepts/excessive-force) and [false arrest](/terms-and-concepts/false-arrest) were sufficient to state a claim that overcame the officers' assertion of qualified immunity.
+Houston officers responded to a report involving a gun. Officer Duncan encountered sixteen-year-old Karlton Stephenson and shot the family's dog during the encounter. Karlton's parents were later detained after disregarding directions to stay clear. The family disputed aspects of the officers' account, including whether the dog jumped at Duncan.
 
-## The Facts
-
-The plaintiff brought § 1983 claims against officers, alleging violations of the [Fourth Amendment](/terms-and-concepts/fourth-amendment) through false arrest and excessive force. The officers moved to dismiss based on qualified immunity, arguing that the plaintiff's complaint failed to allege facts sufficient to show a violation of clearly established constitutional rights.
+The parents appealed after the Southern District of Texas granted [summary judgment](/terms-and-concepts/summary-judgment). The Fifth Circuit reviewed the evidence and the [qualified-immunity](/terms-and-concepts/qualified-immunity) rulings. This was an evidence-stage appeal, rather than a decision about the initial complaint. [Read the official opinion, pages 2–6](https://www.ca5.uscourts.gov/opinions/unpub/15/15-20182.0.pdf).
 
 ## What the Court Decided
 
-The court applied the two-step qualified immunity framework: (1) whether the facts alleged show the officer's conduct violated a constitutional right; and (2) whether the right at issue was [clearly established](/terms-and-concepts/clearly-established-law) at the time of the conduct. Applying the [plausibility pleading](/terms-and-concepts/plausibility-pleading) standard from [Ashcroft v. Iqbal](/cases/ashcroft-v-iqbal) and [Bell Atlantic Corp. v. Twombly](/cases/bell-atlantic-corp-v-twombly), the court evaluated whether the complaint contained sufficient factual allegations—as opposed to mere legal conclusions—to make the claims plausible.
+The court affirmed judgment on the parents' detention and handcuffing claims and upheld qualified immunity concerning the dog. In reviewing the dog's shooting, it considered the plaintiffs' favorable version of the disputed facts and still found the governing immunity standard unsatisfied. See opinion pages 7–12.
 
-For the excessive force claim, the court applied the [Graham v. Connor](/cases/graham-v-connor) factors: the severity of the crime, whether the suspect posed an immediate threat, and whether the suspect was resisting or fleeing. The court assessed whether the plaintiff alleged specific facts addressing these factors that would render the officers' conduct objectively unreasonable.
+The parents' [municipal-liability](/terms-and-concepts/municipal-liability) theory also failed. They had shown no injury to themselves from the alleged policy concerning unsupported evading-arrest charges. The court lacked appellate jurisdiction over Karlton's claims because those claims had not been appealed. See pages 5–6 and 12–13.
 
-## Why This Case Matters for Your § 1983 Case
+The opinion is unpublished and states the limits on its precedential effect under Fifth Circuit Rule 47.5.
 
-**Pleading must be specific.** To survive a motion to dismiss when officers assert qualified immunity, your complaint must contain specific factual allegations—not just conclusions—that show the officers' conduct was objectively unreasonable under clearly established law.
+## What the Judge and Defense Will Examine
 
-**Address the Graham factors in your complaint.** When alleging excessive force, your complaint should specifically address: what crime you were suspected of, whether you posed a threat, and whether you were resisting. These facts drive the constitutional analysis.
+At summary judgment, identify the evidence supporting each plaintiff's claim and explain why a disputed fact changes the legal result. A disagreement about what happened matters when resolving it in your favor would affect the claim or immunity analysis.
 
-**Qualified immunity is tested early.** Unlike most defenses, qualified immunity can be raised at the motion to dismiss stage. Your complaint must be detailed enough to overcome it from the start.
+The defense will argue that it wins even on your supported version of events. Address that argument with the law in effect at the time and facts relevant to each defendant's actions. For a city claim, also connect the challenged policy to your own injury.
 
-## Key Takeaway
+## How to Use the Decision
 
-In a § 1983 case against police officers, your complaint must do more than state legal conclusions about excessive force or false arrest. It must allege specific facts showing what the officers did, what you were doing at the time, and why their conduct was objectively unreasonable under the circumstances. Vague or conclusory allegations will be dismissed, especially when officers invoke qualified immunity.
+Use the opinion to compare the evidence, the immunity analysis, and the scope of the appeal. Keep each plaintiff's claims and appeal papers separate. Their adult son needed to appeal his own claims to bring them before the appellate court.
