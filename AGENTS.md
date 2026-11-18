@@ -70,3 +70,11 @@ OpenSpec records intended behavior. Superpowers supplies the execution skills. T
 - Superpowers skills are installed in `.agents/skills/`. A bridge reference such as `superpowers:brainstorming` refers to the local `brainstorming` skill; read its `SKILL.md` when the agent has no namespaced skill command.
 - Run CLI examples from imported skills through `npm run openspec -- <arguments>` to use the pinned project version.
 - Use `npm run openspec -- status --change <change-name>` to inspect progress and `npm run validate:openspec` to validate OpenSpec artifacts. Repository instructions and explicit user directions take precedence over imported skill defaults.
+
+## Elephant-Goldfish Model
+
+- EGM supplies brainstorming, drafting, document review, and drift review skills alongside OpenSpec and Superpowers. Use the `egm-*` skills for those tasks when requested.
+- The pinned EGM bundle is in `.agents/egm/`. Resolve skill symlinks before following relative links; resolve bundled `agents/`, `resources/`, and `docs/` paths against that bundle root. Read its `docs/codex.md` in Codex or `docs/claude.md` in Claude Code.
+- Claude Code loads the complete plugin through `.claude/skills/egm`, including its reviewer adapters. Invoke its skills as `/egm:egm-review` and the corresponding `/egm:egm-*` commands.
+- For an active OpenSpec change, keep EGM briefs, drafts, and reports in `openspec/changes/<change-name>/`. Set `EGM artifact directory: openspec/changes/<change-name>/` in the task prompt and pass that directory to reviewers that write reports.
+- Goldfish reviewers receive fresh conversation contexts and the explicitly selected documents. In Codex, use `fork_turns: "none"`. Repository instructions and explicit user directions take precedence over imported EGM defaults.

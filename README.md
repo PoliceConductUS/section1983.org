@@ -85,6 +85,32 @@ The bridge schema and templates match `project-template` commit
 `741d97a7bc8e4adc56911389cfec25acfc58bcbc`; its source is
 [JiangWay/openspec-schemas](https://github.com/JiangWay/openspec-schemas).
 
+### Elephant-Goldfish Model
+
+Use [EGM](https://github.com/google/elephant-goldfish-model) to develop ideas,
+draft designs, and review documents with fresh-context reviewers. Its eight
+skills and supporting reviewer prompts, standards, and host integrations are
+checked into `.agents/egm/`. The bundle is version `0.1.1`, pinned to upstream
+commit `70406c4d22cc7ea8299637c2c5b44625c48b3f08`. The skill entries and hashes
+are recorded in `skills-lock.json`. Imported files retain upstream formatting.
+
+Codex discovers the skills through `.agents/skills/`; Hermes and the shared
+`skills/` directory link to the same files. Claude Code loads the whole plugin
+through `.claude/skills/egm`, preserving its reviewer adapters and plugin paths.
+Start a new session from this checkout after installation. Claude Code requires
+you to trust the checkout before loading its project plugin. See the
+[Claude Code loading reference](https://code.claude.com/docs/en/plugins/loading#plugins-shared-through-a-repository).
+
+In Codex, invoke `$egm-review <document-path>`; in Claude Code, use
+`/egm:egm-review <document-path>`. The other skills are `egm-brainstorm`,
+`egm-draft`, `egm-resolve`, `egm-review-loop`, `egm-lite`, `egm-bootstrap`, and
+`egm-drift-report`. Goldfish reviews require a host with fresh-context subagents.
+
+OpenSpec continues to record intended behavior, and Superpowers supplies the
+execution workflow. When using EGM for an OpenSpec change, include
+`EGM artifact directory: openspec/changes/<change-name>/` in your prompt to keep
+its briefs, drafts, and reports with the change.
+
 ## Infrastructure
 
 Single Terraform entrypoint:
