@@ -1,0 +1,56 @@
+name: Accessibility
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: accessibility-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "26.13.1"
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install browsers
+        run: npx playwright install --with-deps chromium webkit
+
+      # Placeholder Sentry values: the tests block every request that leaves
+      # the local server, so nothing is reported.
+      - name: Build
+        run: npx astro build
+        env:
+          GIT_COMMIT_SHA: ${{ github.sha }}
+          GIT_COMMIT_DIRTY: "0"
+          PUBLIC_SENTRY_DSN: https://public@example.invalid/1
+          PUBLIC_SENTRY_ENVIRONMENT: test
+
+      - name: Run accessibility tests on every page
+        run: npx playwright test
+        env:
+          A11Y_FULL: "1"
+
+      - name: Upload failure traces
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: accessibility-test-results
+          path: test-results/
+          retention-days: 7

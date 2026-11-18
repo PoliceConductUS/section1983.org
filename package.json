@@ -12,12 +12,26 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "analytics:pull": "node scripts/analytics-config.mjs pull",
-    "analytics:push": "node scripts/analytics-config.mjs push",
-    "analytics:compare": "node scripts/analytics-config.mjs compare",
+    "format:validate": "prettier --check .",
+    "typecheck": "astro check && tsc --noEmit",
+    "validate": "npm run format:validate && npm run lint && npm run typecheck && npm run infra:format:validate && npm run test:infra && npm run test:analytics-config && npm run test:consent",
+    "analytics:pull": "bash scripts/analytics.sh pull",
+    "analytics:push": "bash scripts/analytics.sh push",
+    "analytics:compare": "bash scripts/analytics.sh compare",
+    "infra:apply": "bash scripts/infra.sh apply",
+    "infra:diff": "bash scripts/infra.sh diff",
+    "infra:refresh": "bash scripts/infra.sh refresh",
+    "infra:add:secret": "bash scripts/infra.sh add:secret",
+    "infra:outputs": "bash scripts/infra.sh outputs",
+    "infra:doctor": "bash scripts/infra.sh doctor",
+    "infra:format:validate": "bash scripts/infra.sh format:validate",
+    "infra:format": "bash scripts/infra.sh format",
+    "infra:setup-user": "bash scripts/infra.sh setup-user",
     "test:analytics-config": "node --test scripts/analytics-config.test.mjs scripts/analytics-plan.test.mjs",
-    "test:consent": "node --test scripts/consent-preferences.test.mjs scripts/google-consent.test.mjs"
+    "test:consent": "node --test scripts/consent-preferences.test.mjs scripts/google-consent.test.mjs",
+    "test:infra": "node --test scripts/terraform-account.test.mjs scripts/require-approved-terraform-destroys.test.mjs scripts/parameter-store-secrets.test.mjs scripts/terraform-tracked-inputs.test.mjs scripts/terraform-reviewed-apply.test.mjs scripts/deploy-infra.test.mjs",
+    "test:a11y": "npm run build && playwright test",
+    "test:a11y:full": "npm run build && A11Y_FULL=1 playwright test"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.10",
@@ -29,12 +43,17 @@
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@axe-core/playwright": "^4.14.0",
     "@mermaid-js/mermaid-cli": "^12.2.0",
+    "@playwright/test": "^1.65.1",
     "@typescript-eslint/parser": "^8.57.1",
     "eslint": "^10.1.0",
     "eslint-plugin-astro": "^3.2.1",
+    "playwright-core": "^1.65.1",
     "prettier": "^3.8.1",
-    "prettier-plugin-astro": "^1.1.2"
+    "prettier-plugin-astro": "^1.1.2",
+    "typescript": "^6.0.3"
   },
   "engines": {
     "node": "26.13.1"
@@ -46,6 +65,9 @@
   "overrides": {
     "@typescript-eslint/typescript-estree": {
       "minimatch": "11.0.8"
+    },
+    "@zenuml/core": {
+      "playwright-core": "$playwright-core"
     }
   }
 }

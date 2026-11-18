@@ -12,6 +12,7 @@ const snakeCase = (value) =>
 export function createAnalyticsAdminClient({
   config,
   token,
+  quotaProject,
   fetchImpl = fetch,
 }) {
   if (typeof token !== "string" || !token.trim())
@@ -32,6 +33,11 @@ export function createAnalyticsAdminClient({
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
+          // User credentials from the Cloud CLI need a project to bill
+          // quota to; without it Google falls back to the CLI's own default.
+          ...(quotaProject?.trim()
+            ? { "x-goog-user-project": quotaProject.trim() }
+            : {}),
         },
         ...(body ? { body: JSON.stringify(body) } : {}),
       });

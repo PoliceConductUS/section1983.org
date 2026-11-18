@@ -11,6 +11,14 @@ npm run test:analytics-config
 
 Supply an OAuth access token using the `GOOGLE_ANALYTICS_ACCESS_TOKEN` environment variable through your secret manager or shell session. Keep tokens out of files and command history. The Analytics Admin API must be enabled, and the token's account must have property access. Pull and compare need `analytics.readonly` or `analytics.edit`; push needs `analytics.edit` and property edit permission. These tasks use the token directly and do not change Cloud CLI accounts or store credentials.
 
+The npm tasks read the Google Cloud project that API quota is billed to from AWS Systems Manager Parameter Store, at `/policeconduct/config/default/GOOGLE_CLOUD_PROJECT`, and send it as the quota project on every request. Every PoliceConductUS repository reads the same parameter, so the project is set in one place. A value stored for one environment, such as `/policeconduct/config/preview/GOOGLE_CLOUD_PROJECT`, overrides the default when `PARAMETER_STORE_ENVIRONMENT` names that environment. The tasks need AWS access for that read: set `AWS_PROFILE` in the shell or in `.env`. To point the Cloud CLI at the same project, run:
+
+```bash
+source scripts/parameter-store-secrets.sh
+load_parameter_store_config GOOGLE_CLOUD_PROJECT
+gcloud auth application-default set-quota-project "$GOOGLE_CLOUD_PROJECT"
+```
+
 Pull fetches all pages of the supported collections and the supported singleton settings, validates the result, then atomically replaces the local configuration. Review `git diff -- config/analytics.json` before committing. A failed read leaves the local file intact. Pull deliberately replaces local desired values with remote values; commit any local edits you want to retain first.
 
 Compare exits 0 for matching managed fields, 1 for drift, and 2 for errors. Push reads and plans all changes before writing, applies only changed managed fields, then reads back to verify. Push exits 0 only for a verified result, and 2 for errors. If a write fails partway through, earlier writes may have succeeded: compare again before retrying. These tasks run explicitly, separately from build and deployment.

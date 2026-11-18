@@ -80,12 +80,15 @@
   import { applyGoogleConsent } from "../lib/client/google-consent.js";
 
   document.querySelectorAll("[data-cookie-settings]").forEach((root) => {
-    initializeConsentControls(root, consentPreferences, (choices) =>
-      applyGoogleConsent(choices, {
-        gtag: window.gtag,
-        hostname: window.location.hostname,
-        document,
-      }),
+    initializeConsentControls(
+      root,
+      consentPreferences,
+      (choices: Record<string, string> | null) =>
+        applyGoogleConsent(choices, {
+          gtag: window.gtag,
+          hostname: window.location.hostname,
+          document,
+        }),
     );
   });
 </script>

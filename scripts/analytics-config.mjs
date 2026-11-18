@@ -22,12 +22,18 @@ const describeChange = ({ method, resource, mask, body }) => {
 export async function reconcileAnalytics({
   config,
   token,
+  quotaProject,
   fetchImpl = fetch,
   apply = false,
   pull = false,
 }) {
   validateConfig(config);
-  const client = createAnalyticsAdminClient({ config, token, fetchImpl });
+  const client = createAnalyticsAdminClient({
+    config,
+    token,
+    quotaProject,
+    fetchImpl,
+  });
   const state = await client.readState();
   if (pull) return { changes: [], config: snapshotAnalytics(config, state) };
   const operations = planAnalytics(config, state);
@@ -71,6 +77,7 @@ export async function runCli(
     const result = await reconcileAnalytics({
       config,
       token: env.GOOGLE_ANALYTICS_ACCESS_TOKEN,
+      quotaProject: env.GOOGLE_CLOUD_PROJECT,
       fetchImpl,
       apply: ["apply", "push"].includes(args[0]),
       pull: args[0] === "pull",
