@@ -59,6 +59,9 @@ const caseText = [entry.data.title, entry.data.holding, entry.body || ""]
   .toLowerCase();
 
 const allCases = await getCollection("cases");
+const caseTitles = Object.fromEntries(
+  allCases.map((c) => [c.id, c.data.title]),
+);
 const hubIndex = buildHubIndex(
   allCases.map((c) => ({
     id: c.id,
@@ -141,6 +144,7 @@ const relatedArticles = selectRelatedEntries(
   {...entry.data}
   canonicalUrl={canonicalUrl}
   updatedDate={updatedDate}
+  caseTitles={caseTitles}
   hubLinks={hubLinks}
   relatedTermsAndConcepts={relatedTermsAndConcepts}
   relatedArticles={relatedArticles}
