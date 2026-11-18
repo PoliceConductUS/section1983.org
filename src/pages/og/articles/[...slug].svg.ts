@@ -46,6 +46,7 @@ export async function GET({ props }: APIContext<Props>) {
   const tags = (article.data.tags || []).slice(0, 3).map(escapeXml);
   const date = article.data.pubDate
     ? new Intl.DateTimeFormat("en-US", {
+        timeZone: "UTC",
         year: "numeric",
         month: "short",
         day: "numeric",
