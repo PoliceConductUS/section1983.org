@@ -1,5 +1,33 @@
 import { expect, test } from "./pages";
 
+test("removing a case filter keeps keyboard focus in the filters", async ({
+  page,
+}) => {
+  await page.goto("/cases/?tags=texas%2Cqi-defeated");
+
+  await page
+    .getByRole("button", { name: "Remove filter texas", exact: true })
+    .focus();
+  await page.keyboard.press("Enter");
+  await expect(
+    page.getByRole("button", {
+      name: "Remove filter qi defeated",
+      exact: true,
+    }),
+  ).toBeFocused();
+
+  await page.keyboard.press("Enter");
+  await expect(page.locator('[data-tag="all"]')).toBeFocused();
+  await expect(page.locator("#active-filters")).toBeHidden();
+});
+
+test("clearing case filters returns focus to All", async ({ page }) => {
+  await page.goto("/cases/?tags=texas%2Cqi-defeated");
+  await page.getByRole("button", { name: "clear all", exact: true }).focus();
+  await page.keyboard.press("Enter");
+  await expect(page.locator('[data-tag="all"]')).toBeFocused();
+});
+
 test("case filter URLs render markup as text", async ({ page }) => {
   const tag =
     '<img src=x onerror="document.documentElement.dataset.injected=1">';

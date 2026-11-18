@@ -633,6 +633,7 @@ const structuredData = {
       clearBtn?.addEventListener("click", () => {
         activeTags.clear();
         updateDisplay();
+        document.querySelector<HTMLElement>('[data-tag="all"]')?.focus();
       });
 
       // Load tags from URL on page load
@@ -681,8 +682,15 @@ const structuredData = {
               pill.title = "Remove filter";
               pill.textContent = `${label} ✕`;
               pill.addEventListener("click", () => {
+                const position = [...activeTags].indexOf(tag);
                 activeTags.delete(tag);
                 updateDisplay();
+                const remaining =
+                  tagsListEl.querySelectorAll<HTMLButtonElement>("button");
+                const nextFocus =
+                  remaining[Math.min(position, remaining.length - 1)] ??
+                  document.querySelector<HTMLElement>('[data-tag="all"]');
+                nextFocus?.focus();
               });
               tagsListEl.append(pill);
             });
