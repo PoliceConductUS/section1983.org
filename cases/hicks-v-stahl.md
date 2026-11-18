@@ -53,7 +53,7 @@ The court (Judge Jorge A. Solis) granted all three defense motions to dismiss, a
 
 **§ 1983 claims against the City**: Dismissed with prejudice under [_Monell_](/cases/monell-v-dep-t-of-soc-servs). Hicks alleged only that the City had a "negligent practice and custom of allowing its Police Department to Violate Individuals Civil Rights," but failed to identify a policymaker, an official policy, or a pattern of conduct. The court emphasized that conclusory allegations are insufficient—specific facts about the policy, custom, or training deficiency are required.
 
-**§ 1983 claims against the officers**: Dismissed under [_Heck v. Humphrey_](/terms-and-concepts/heck-bar). Because Hicks had been convicted of marijuana possession based on evidence obtained during the First Incident, a finding that the officers lacked probable cause or used false warrants would necessarily invalidate her conviction. Under _Heck_, she could not maintain a § 1983 suit until her conviction was reversed, expunged, or invalidated through proper channels (direct appeal or habeas corpus).
+**§ 1983 claims against the officers**: Dismissed under [_Heck v. Humphrey_](/terms-and-concepts/heck-doctrine). Because Hicks had been convicted of marijuana possession based on evidence obtained during the First Incident, a finding that the officers lacked probable cause or used false warrants would necessarily invalidate her conviction. Under _Heck_, she could not maintain a § 1983 suit until her conviction was reversed, expunged, or invalidated through proper channels (direct appeal or habeas corpus).
 
 ## Why This Case Matters for Your § 1983 Case
 

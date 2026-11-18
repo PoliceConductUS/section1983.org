@@ -27,7 +27,7 @@ citedBy: []
 
 ## What This Case Is About
 
-Michelle Skyy and Sean Valdez, proceeding [pro se](/terms-and-concepts/pro-se-litigation), sued the City of Arlington under [§ 1983](/terms-and-concepts/section-1983) after officers entered their home without a warrant or consent, searched their vehicle, arrested Skyy, and held her in jail without adequate food or medical care. The Fifth Circuit affirmed dismissal because the plaintiffs' claims were based on [respondeat superior](/terms-and-concepts/respondeat-superior)—that city employees violated city policies—rather than on a municipal policy or custom that caused the constitutional violations.
+Michelle Skyy and Sean Valdez, proceeding [pro se](/terms-and-concepts/pro-se), sued the City of Arlington under [§ 1983](/terms-and-concepts/section-1983) after officers entered their home without a warrant or consent, searched their vehicle, arrested Skyy, and held her in jail without adequate food or medical care. The Fifth Circuit affirmed dismissal because the plaintiffs' claims were based on [respondeat superior](/terms-and-concepts/respondeat-superior)—that city employees violated city policies—rather than on a municipal policy or custom that caused the constitutional violations.
 
 ## The Facts
 

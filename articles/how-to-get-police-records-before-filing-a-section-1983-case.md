@@ -91,7 +91,7 @@ The most common response to a records request is no response at all. The agency 
 1. Send a follow-up referencing the statutory deadline: "My request dated [date] is now past the [X]-business-day response deadline under [state code section]. I request an immediate response."
 2. CC a supervisor or the agency's legal department.
 3. If still no response, file an administrative complaint with the oversight body (attorney general, records ombudsman, or open records commission, depending on your state).
-4. Document every communication and non-response. This record becomes evidence of obstruction if you later file a [FOIA lawsuit](#when-you-have-to-sue).
+4. Document every communication and non-response. This record becomes evidence of obstruction if you later file a [FOIA lawsuit](#when-you-have-to-sue-for-the-records).
 
 ### Tactic 2: Claim a records exemption
 
@@ -146,7 +146,7 @@ In some states, agencies can (or must) consult the state attorney general before
 
 1. Track the referral. Ask for the date it was referred and the AG's expected response timeline.
 2. Research prior AG opinions in your state on similar records. If the AG has previously ruled that similar records are public, cite that opinion in your correspondence.
-3. If the AG sides with the agency, you still have the option to [file suit](#when-you-have-to-sue). AG opinions are advisory in most states — a court can disagree.
+3. If the AG sides with the agency, you still have the option to [file suit](#when-you-have-to-sue-for-the-records). AG opinions are advisory in most states — a court can disagree.
 
 ### Tactic 6: Claim there are no responsive records
 

@@ -13,7 +13,7 @@ tags:
   - "suing-the-city"
   - "texas"
 cites:
-  - "monell-v-department-of-social-services"
+  - "monell-v-dep-t-of-soc-servs"
   - "ashcroft-v-iqbal"
   - "bell-atlantic-corp-v-twombly"
   - "city-of-canton-v-harris"
@@ -26,7 +26,7 @@ A student (or the student's parent) sued the Mesquite Independent School Distric
 
 ## The Facts
 
-The plaintiff alleged that a school resource officer employed by or assigned to the Mesquite Independent School District used excessive physical force against a student. The complaint sought to hold the school district liable under [_Monell_](/cases/monell-v-department-of-social-services) on the theory that the district failed to adequately train or supervise its school resource officers regarding the constitutional limits on the use of force against students.
+The plaintiff alleged that a school resource officer employed by or assigned to the Mesquite Independent School District used excessive physical force against a student. The complaint sought to hold the school district liable under [_Monell_](/cases/monell-v-dep-t-of-soc-servs) on the theory that the district failed to adequately train or supervise its school resource officers regarding the constitutional limits on the use of force against students.
 
 ## What the Court Decided
 

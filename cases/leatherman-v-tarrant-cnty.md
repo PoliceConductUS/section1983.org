@@ -13,7 +13,7 @@ tags:
   - "landmark"
   - "suing-the-city"
 cites:
-  - "monell-v-department-of-social-services"
+  - "monell-v-dep-t-of-soc-servs"
 citedBy:
   - "ashcroft-v-iqbal"
   - "littell-v-hous-indep-sch-dist"
@@ -25,7 +25,7 @@ Homeowners whose houses were raided by narcotics officers sued Tarrant County an
 
 ## The Facts
 
-Two separate incidents involved narcotics officers forcibly entering homes based on the detection of odors associated with drug manufacturing. In one case, the homeowner alleged he was assaulted after the officers entered. In the other, the homeowner alleged the police entered her home while she was absent and killed her two dogs. The plaintiffs sued Tarrant County and two municipal corporations, asserting that the officers' conduct violated the [Fourth Amendment](/terms-and-concepts/fourth-amendment) and that the municipalities were liable under [_Monell_](/cases/monell-v-department-of-social-services) for failing to adequately train their officers.
+Two separate incidents involved narcotics officers forcibly entering homes based on the detection of odors associated with drug manufacturing. In one case, the homeowner alleged he was assaulted after the officers entered. In the other, the homeowner alleged the police entered her home while she was absent and killed her two dogs. The plaintiffs sued Tarrant County and two municipal corporations, asserting that the officers' conduct violated the [Fourth Amendment](/terms-and-concepts/fourth-amendment) and that the municipalities were liable under [_Monell_](/cases/monell-v-dep-t-of-soc-servs) for failing to adequately train their officers.
 
 The district court dismissed both complaints for failing to meet the Fifth Circuit's "heightened pleading standard" — a judge-made rule requiring § 1983 plaintiffs to plead "with factual detail and particularity the basis for the claim." The Fifth Circuit affirmed.
 

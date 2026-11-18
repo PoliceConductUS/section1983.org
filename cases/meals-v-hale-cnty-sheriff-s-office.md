@@ -7,7 +7,7 @@ docketNumber: "2:20-CV-00145"
 holding: "A pretrial detainee's § 1983 claims against a county sheriff's office were dismissed where the plaintiff sued a non-suable entity and failed to allege specific facts supporting Monell liability against the county."
 tags: []
 cites:
-  - "monell-v-department-of-social-services"
+  - "monell-v-dep-t-of-soc-servs"
 citedBy: []
 ---
 

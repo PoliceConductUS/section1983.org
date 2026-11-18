@@ -18,7 +18,7 @@ tags:
   - "survived-mtd"
 cites:
   - "city-of-canton-v-harris"
-  - "monell-v-department-of-social-services"
+  - "monell-v-dep-t-of-soc-servs"
   - "ashcroft-v-iqbal"
   - "leatherman-v-tarrant-cnty"
 citedBy: []

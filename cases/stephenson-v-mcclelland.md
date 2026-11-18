@@ -27,7 +27,7 @@ citedBy: []
 
 ## What This Case Is About
 
-This [§ 1983](/terms-and-concepts/section-1983) case addressed the [pleading standards](/terms-and-concepts/pleading-standards) a plaintiff must meet to overcome a [qualified immunity](/terms-and-concepts/qualified-immunity) defense at the [motion to dismiss](/terms-and-concepts/motion-to-dismiss) stage. The court examined whether the plaintiff's allegations of [excessive force](/terms-and-concepts/excessive-force) and [false arrest](/terms-and-concepts/false-arrest) were sufficient to state a claim that overcame the officers' assertion of qualified immunity.
+This [§ 1983](/terms-and-concepts/section-1983) case addressed the [pleading standards](/terms-and-concepts/plausibility-pleading) a plaintiff must meet to overcome a [qualified immunity](/terms-and-concepts/qualified-immunity) defense at the [motion to dismiss](/terms-and-concepts/motion-to-dismiss) stage. The court examined whether the plaintiff's allegations of [excessive force](/terms-and-concepts/excessive-force) and [false arrest](/terms-and-concepts/false-arrest) were sufficient to state a claim that overcame the officers' assertion of qualified immunity.
 
 ## The Facts
 

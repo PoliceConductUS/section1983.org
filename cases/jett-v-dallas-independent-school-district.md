@@ -12,7 +12,7 @@ tags:
   - "school-case"
   - "suing-the-city"
 cites:
-  - "monell-v-department-of-social-services"
+  - "monell-v-dep-t-of-soc-servs"
 citedBy: []
 ---
 
@@ -22,7 +22,7 @@ Norman Jett, a white teacher, athletic director, and head football coach at a pr
 
 ## The Facts
 
-Jett repeatedly clashed with his principal, Todd, over school policies and the football program. Todd recommended that Jett be relieved of his coaching and athletic director duties. Superintendent Wright affirmed the recommendation and reassigned Jett to a teaching position at another school with no coaching duties. Jett alleged that Todd's recommendation was racially motivated and that the school district discriminated against him on the basis of race in violation of § 1981, § 1983, and the Equal Protection Clause. A jury found in Jett's favor on all counts. The Fifth Circuit reversed in part, finding that the jury instructions on [municipal liability](/terms-and-concepts/municipal-liability) were deficient under [_Monell_](/cases/monell-v-department-of-social-services).
+Jett repeatedly clashed with his principal, Todd, over school policies and the football program. Todd recommended that Jett be relieved of his coaching and athletic director duties. Superintendent Wright affirmed the recommendation and reassigned Jett to a teaching position at another school with no coaching duties. Jett alleged that Todd's recommendation was racially motivated and that the school district discriminated against him on the basis of race in violation of § 1981, § 1983, and the Equal Protection Clause. A jury found in Jett's favor on all counts. The Fifth Circuit reversed in part, finding that the jury instructions on [municipal liability](/terms-and-concepts/municipal-liability) were deficient under [_Monell_](/cases/monell-v-dep-t-of-soc-servs).
 
 ## What the Court Decided
 
@@ -40,4 +40,4 @@ _Jett_ is essential for understanding the relationship between § 1981 and [§ 1
 
 ## Key Takeaway
 
-When suing a municipality or school district for racial discrimination, [§ 1983](/terms-and-concepts/section-1983) is the exclusive federal damages remedy — and the [_Monell_](/cases/monell-v-department-of-social-services) framework applies, meaning you must prove a policy, custom, or [final policymaker](/terms-and-concepts/final-policymaker) decision rather than relying on [respondeat superior](/terms-and-concepts/respondeat-superior).
+When suing a municipality or school district for racial discrimination, [§ 1983](/terms-and-concepts/section-1983) is the exclusive federal damages remedy — and the [_Monell_](/cases/monell-v-dep-t-of-soc-servs) framework applies, meaning you must prove a policy, custom, or [final policymaker](/terms-and-concepts/final-policymaker) decision rather than relying on [respondeat superior](/terms-and-concepts/respondeat-superior).

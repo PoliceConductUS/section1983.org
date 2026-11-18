@@ -9,7 +9,7 @@ officers:
   - name: "Deputy Sheriff William Wilkinson"
 tags: []
 cites:
-  - "monell-v-department-of-social-services"
+  - "monell-v-dep-t-of-soc-servs"
 citedBy: []
 ---
 
@@ -25,7 +25,7 @@ Harrison's family presented contradictory evidence: no gunpowder residue was fou
 
 ## What the Court Decided
 
-The Fifth Circuit affirmed judgment for the county. The court held that even assuming the deputy used excessive force, the plaintiffs failed to establish [municipal liability](/terms-and-concepts/municipal-liability) under [_Monell_](/cases/monell-v-department-of-social-services). To hold a municipality liable, the plaintiffs needed to show that an official policy or [custom](/terms-and-concepts/custom) was the "[moving force](/terms-and-concepts/moving-force-causation)" behind the constitutional violation.
+The Fifth Circuit affirmed judgment for the county. The court held that even assuming the deputy used excessive force, the plaintiffs failed to establish [municipal liability](/terms-and-concepts/municipal-liability) under [_Monell_](/cases/monell-v-dep-t-of-soc-servs). To hold a municipality liable, the plaintiffs needed to show that an official policy or [custom](/terms-and-concepts/custom) was the "[moving force](/terms-and-concepts/moving-force-causation)" behind the constitutional violation.
 
 The court found the evidence insufficient to establish that the sheriff's investigation practices — even if inadequate — were the moving force behind Wilkinson's decision to shoot Harrison. The plaintiffs could not show that Wilkinson was aware of or influenced by the department's investigation practices when he made his split-second decision to use deadly force. The causal chain between inadequate investigations and this particular shooting was too attenuated.
 
