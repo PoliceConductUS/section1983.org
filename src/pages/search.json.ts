@@ -35,6 +35,7 @@ export async function GET(_context: APIContext) {
       description: c.data.holding ?? "",
       url: `/cases/${c.id}/`,
       tags: c.data.tags ?? [],
+      keywords: [c.data.citation, c.data.docketNumber],
     })),
   ];
 

@@ -113,7 +113,9 @@ const structuredData = {
           " " +
           item.description +
           " " +
-          (item.tags || []).join(" ")
+          (item.tags || []).join(" ") +
+          " " +
+          (item.keywords || []).join(" ")
         ).toLowerCase();
         return terms.every((t) => haystack.includes(t));
       });

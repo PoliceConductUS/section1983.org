@@ -1,5 +1,19 @@
 import { expect, test } from "./pages";
 
+for (const query of ["436 U.S. 658", "75-1914"]) {
+  test(`find a case by its citation or docket: ${query}`, async ({ page }) => {
+    await page.goto(`/search/?q=${encodeURIComponent(query)}`);
+    const result = page.locator(
+      '#search-results a[href="/cases/monell-v-dep-t-of-soc-servs/"]',
+    );
+    await expect(result).toBeVisible();
+    await result.click();
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+      "Monell v. Department of Social Services",
+    );
+  });
+}
+
 test("a typed search survives reload and returning from a result", async ({
   page,
 }) => {
