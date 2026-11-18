@@ -1,0 +1,17 @@
+schema: superpowers-bridge
+
+context: |
+  Repository: section1983.org
+  Purpose: Teach readers how to understand Section 1983 civil-rights claims, court decisions, and litigation procedure.
+  Stack: Astro 7, TypeScript/JavaScript, Markdown content collections, Tailwind CSS, and AWS infrastructure managed with Terraform.
+  Workflow: OpenSpec with superpowers-bridge and Superpowers; one worktree folder per stacked task branch, as specified in AGENTS.md.
+  Content: Follow README-STYLE.md. Distinguish allegations, party arguments, and court rulings. Every case mentioned in an article must exist in the case library.
+  Verification: Review changed site content against README-STYLE.md, fix violations, run npm run lint, then npm run build.
+
+rules:
+  proposal:
+    - Identify the affected behavior, content collections, routes, or workflow commands.
+    - State any intended compatibility changes.
+  tasks:
+    - Include validation steps that prove the requested outcome.
+    - Include tests when the change modifies behavior.

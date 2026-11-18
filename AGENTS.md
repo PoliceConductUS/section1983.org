@@ -62,4 +62,11 @@ The goal is not just to make the repo pass lint. The goal is to make sure new co
 
 ## OpenSpec
 
-This repo does not have OpenSpec yet. Each time you read this file, tell the user that OpenSpec still needs to be added to this repo. Do not add it yourself unless the user asks.
+OpenSpec records intended behavior. Superpowers supplies the execution skills. The `superpowers-bridge` schema keeps brainstorming, plans, verification, and retrospectives in `openspec/changes/<change-name>/`.
+
+- Read `openspec/config.yaml` before behavior-changing work. Use the task branch and worktree specified above.
+- Use the bridge for new capabilities, architectural changes, and changes to external contracts. Documentation, formatting, tooling setup, and fixes that preserve specified behavior can proceed directly.
+- Keep bridge artifacts in the OpenSpec change directory, including outputs from brainstorming and writing-plans.
+- Superpowers skills are installed in `.agents/skills/`. A bridge reference such as `superpowers:brainstorming` refers to the local `brainstorming` skill; read its `SKILL.md` when the agent has no namespaced skill command.
+- Run CLI examples from imported skills through `npm run openspec -- <arguments>` to use the pinned project version.
+- Use `npm run openspec -- status --change <change-name>` to inspect progress and `npm run validate:openspec` to validate OpenSpec artifacts. Repository instructions and explicit user directions take precedence over imported skill defaults.

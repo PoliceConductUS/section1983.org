@@ -3,3 +3,7 @@ node_modules/
 .astro/
 public/diagrams/
 .worktrees/
+
+# Imported skills and bridge templates retain upstream formatting.
+.agents/skills/
+openspec/schemas/superpowers-bridge/
